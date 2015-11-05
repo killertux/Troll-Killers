@@ -22,11 +22,10 @@ class Connection{
 	void *packetData;
 	int peerID;
 	
+	void perror(std::string error);
 	public:
 	Connection();
 	~Connection();
-	
-	void perror(std::string error);
 	
 	void create_server(int port,int num_peers);
 	void send_packet_reliable(void *data, int ID);
