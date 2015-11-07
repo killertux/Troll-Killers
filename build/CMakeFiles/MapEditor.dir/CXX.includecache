@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/clemente/projects/Troll-Killers/MapEditor.cpp
+MapEditor.hpp
+/home/clemente/projects/Troll-Killers/MapEditor.hpp
+
+/home/clemente/projects/Troll-Killers/MapEditor.hpp
+allegro5/allegro.h
+-
+allegro5/allegro_primitives.h
+-
+
+/home/clemente/projects/Troll-Killers/editorMain.cpp
+MapEditor.hpp
+/home/clemente/projects/Troll-Killers/MapEditor.hpp
+

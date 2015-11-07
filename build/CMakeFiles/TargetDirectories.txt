@@ -1,0 +1,1 @@
+/home/clemente/projects/Troll-Killers/build/CMakeFiles/MapEditor.dir

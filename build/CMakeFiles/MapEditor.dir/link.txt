@@ -1,0 +1,1 @@
+/usr/bin/c++   -g   CMakeFiles/MapEditor.dir/editorMain.cpp.o CMakeFiles/MapEditor.dir/MapEditor.cpp.o  -o MapEditor -rdynamic -lallegro -lallegro_primitives 
