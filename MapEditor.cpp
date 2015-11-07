@@ -58,6 +58,7 @@ void MapEditor::mainLoop(){
 		if(redraw && al_is_event_queue_empty(event_queue)){
 			map->draw_map();
 			al_flip_display();
+			
 		}
 
 	}
