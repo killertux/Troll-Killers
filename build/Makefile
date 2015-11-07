@@ -167,6 +167,33 @@ MapEditor/fast:
 	$(MAKE) -f CMakeFiles/MapEditor.dir/build.make CMakeFiles/MapEditor.dir/build
 .PHONY : MapEditor/fast
 
+Map.o: Map.cpp.o
+
+.PHONY : Map.o
+
+# target to build an object file
+Map.cpp.o:
+	$(MAKE) -f CMakeFiles/MapEditor.dir/build.make CMakeFiles/MapEditor.dir/Map.cpp.o
+.PHONY : Map.cpp.o
+
+Map.i: Map.cpp.i
+
+.PHONY : Map.i
+
+# target to preprocess a source file
+Map.cpp.i:
+	$(MAKE) -f CMakeFiles/MapEditor.dir/build.make CMakeFiles/MapEditor.dir/Map.cpp.i
+.PHONY : Map.cpp.i
+
+Map.s: Map.cpp.s
+
+.PHONY : Map.s
+
+# target to generate assembly for a file
+Map.cpp.s:
+	$(MAKE) -f CMakeFiles/MapEditor.dir/build.make CMakeFiles/MapEditor.dir/Map.cpp.s
+.PHONY : Map.cpp.s
+
 MapEditor.o: MapEditor.cpp.o
 
 .PHONY : MapEditor.o
@@ -234,6 +261,9 @@ help:
 	@echo "... install/strip"
 	@echo "... install/local"
 	@echo "... edit_cache"
+	@echo "... Map.o"
+	@echo "... Map.i"
+	@echo "... Map.s"
 	@echo "... MapEditor.o"
 	@echo "... MapEditor.i"
 	@echo "... MapEditor.s"

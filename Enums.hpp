@@ -1,0 +1,4 @@
+enum ObjectType {
+	CIRCLE,
+	RECTANGLE
+};

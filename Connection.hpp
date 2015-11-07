@@ -1,3 +1,10 @@
+/*
+ * MapEditor.hpp
+ *
+ *  Created on: 4 de nov de 2015
+ *      Author: clemente
+ */
+
 //Class that handle connection
 
 #ifndef CONNECTION_HPP

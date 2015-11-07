@@ -1,6 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/MapEditor.dir/editorMain.cpp.o"
   "CMakeFiles/MapEditor.dir/MapEditor.cpp.o"
+  "CMakeFiles/MapEditor.dir/Map.cpp.o"
   "MapEditor.pdb"
   "MapEditor"
 )

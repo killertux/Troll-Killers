@@ -25,9 +25,12 @@ MapEditor::MapEditor() {
 	al_register_event_source(event_queue,al_get_timer_event_source(timer));
 
 	al_hide_mouse_cursor(display);
+	
+	map = new Map("MapaTeste",MAX_OBJECTS,LENGTH,WIDTH);
 }
 
 MapEditor::~MapEditor() {
+	delete map;
 	al_destroy_display(display);
 	al_destroy_event_queue(event_queue);
 	al_destroy_timer(timer);
