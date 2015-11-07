@@ -15,16 +15,17 @@
 #include <fstream>
 #include <allegro5/allegro.h>
 #include <allegro5/allegro_primitives.h>
+#include <cstring>
 
 class Map{
 private:
-	std::string Name;
+	std::string name;
 	_object *objects;
 	int length, width;
 	int max_objects;
 	int n_object;
 public:
-	Map(std::string Name,int max_objects,int length,int width);
+	Map(std::string name,int max_objects,int length,int width);
 	Map();
 	void new_object(_object object);
 	void destroy_object(float x,float y);

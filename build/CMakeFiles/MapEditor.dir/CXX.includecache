@@ -25,6 +25,8 @@ allegro5/allegro.h
 -
 allegro5/allegro_primitives.h
 -
+cstring
+-
 
 /home/clemente/projects/Troll-Killers/MapEditor.cpp
 MapEditor.hpp

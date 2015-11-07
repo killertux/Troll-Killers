@@ -4,8 +4,8 @@ Map::Map(){
 	n_object=0;
 }
 
-Map::Map(std::string Name, int max_objects, int length, int width){
-	this->Name=Name;
+Map::Map(std::string name, int max_objects, int length, int width){
+	this->name=name;
 	this->max_objects=max_objects;
 	this->length=length;
 	this->width=width;
@@ -43,10 +43,45 @@ void Map::draw_map(){
 }
 
 bool Map::save_map(std::string pathname){
-	std::ofstream(pathname.c_str(),std::ios::in | std::ios::binary);
+	std::ofstream file(pathname.c_str(),std::ios::out | std::ios::binary);
+	file.write(name.c_str(),50);
+	file.write((char*)&length,2);
+	file.write((char*)&width,2);
+	file.write((char*)&max_objects,2);
+	file.write((char*)&n_object,2);
+	for(int i=0;i<n_object;i++){
+		file.write((char*)&objects[i].type,1);
+		file.write((char*)&objects[i].x,2);
+		file.write((char*)&objects[i].y,2);
+		file.write((char*)&objects[i].radius,2);
+		file.write((char*)&objects[i].length,2);
+		file.write((char*)&objects[i].width,2);
+		file.write((char*)&objects[i].r,2);
+		file.write((char*)&objects[i].g,2);
+		file.write((char*)&objects[i].b,2);
+	}
+	file.close();
 }
 
 bool Map::load_map(std::string pathname)
 {
-
+	char buffer[51];
+	std::ifstream file(pathname.c_str(),std::ios::in | std::ios::binary);
+	file.read(buffer,50);
+	name=buffer;
+	file.read((char*)&length,2);
+	file.read((char*)&width,2);
+	file.read((char*)&max_objects,2);
+	file.read((char*)&n_object,2);
+	for(int i=0;i<n_object;i++){
+		file.read((char*)&objects[i].type,1);
+		file.read((char*)&objects[i].x,2);
+		file.read((char*)&objects[i].y,2);
+		file.read((char*)&objects[i].radius,2);
+		file.read((char*)&objects[i].length,2);
+		file.read((char*)&objects[i].width,2);
+		file.read((char*)&objects[i].r,2);
+		file.read((char*)&objects[i].g,2);
+		file.read((char*)&objects[i].b,2);
+	}
 }
