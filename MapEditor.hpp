@@ -34,6 +34,7 @@ public:
 	~MapEditor();
 
 	void mainLoop();
+	
 };
 
 #endif /* MAPEDITOR_HPP_ */
