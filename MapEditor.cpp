@@ -47,10 +47,16 @@ void MapEditor::mainLoop(){
 
 		if(ev.type == ALLEGRO_EVENT_DISPLAY_CLOSE)
 			done=true;
+		else if(ev.type == ALLEGRO_EVENT_KEY_DOWN){
+			if(ev.keyboard.keycode == ALLEGRO_KEY_ESCAPE){
+				exit(0);
+			}
+		} 
 		else if(ev.type == ALLEGRO_EVENT_TIMER)
 			redraw=true;
 		
 		if(redraw && al_is_event_queue_empty(event_queue)){
+			map->draw_map();
 			al_flip_display();
 		}
 
