@@ -33,6 +33,7 @@ void Map::destroy_object(float x, float y){		//Delete an object that is in the x
 }
 
 void Map::draw_map(){
+	al_clear_to_color(al_map_rgb(255,255,255));
 	for(int i=0;i<n_object;i++){
 		if(objects[i].type==RECTANGLE)
 			al_draw_filled_rectangle(objects[i].x,objects[i].y,objects[i].x+objects[i].length,
