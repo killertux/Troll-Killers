@@ -1,7 +1,7 @@
 #include "Map.hpp"
 
-Map::Map(std::string path){
-
+Map::Map(){
+	n_object=0;
 }
 
 Map::Map(std::string Name, int max_objects, int length, int width){
@@ -36,8 +36,17 @@ void Map::draw_map(){
 	for(int i=0;i<n_object;i++){
 		if(objects[i].type==RECTANGLE)
 			al_draw_filled_rectangle(objects[i].x,objects[i].y,objects[i].x+objects[i].length,
-							 objects[i].y+objects[i].width,objects[i].color);
+					objects[i].y+objects[i].width,al_map_rgb(objects[i].r,objects[i].g,objects[i].b));
 		else if (objects[i].type==CIRCLE)
-			al_draw_filled_circle(objects[i].x,objects[i].y,objects[i].radius,objects[i].color);
+			al_draw_filled_circle(objects[i].x,objects[i].y,objects[i].radius,al_map_rgb(objects[i].r,objects[i].g,objects[i].b));
 	}
+}
+
+bool Map::save_map(std::string pathname){
+	std::ofstream(pathname.c_str(),std::ios::in | std::ios::binary);
+}
+
+bool Map::load_map(std::string pathname)
+{
+
 }

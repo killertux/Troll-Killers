@@ -19,6 +19,8 @@ _object.hpp
 /home/clemente/projects/Troll-Killers/_object.hpp
 string
 -
+fstream
+-
 allegro5/allegro.h
 -
 allegro5/allegro_primitives.h

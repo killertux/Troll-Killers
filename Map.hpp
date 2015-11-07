@@ -12,6 +12,7 @@
 #include "_object.hpp"
 
 #include <string>
+#include <fstream>
 #include <allegro5/allegro.h>
 #include <allegro5/allegro_primitives.h>
 
@@ -24,10 +25,12 @@ private:
 	int n_object;
 public:
 	Map(std::string Name,int max_objects,int length,int width);
-	Map(std::string path);
+	Map();
 	void new_object(_object object);
 	void destroy_object(float x,float y);
 	void draw_map();
+	virtual bool save_map(std::string pathname);
+	virtual bool load_map(std::string pathname);
 	~Map();
 };
 
