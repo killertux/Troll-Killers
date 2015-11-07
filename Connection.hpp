@@ -33,7 +33,7 @@ class Connection{
 	void broadcast_packet(void *data);
 	void send_flush();
 
-	void event_service(int timer);
+	int event_service(int timer);
 
 	bool event_type_connect();
 	bool event_type_receive();

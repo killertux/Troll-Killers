@@ -61,9 +61,10 @@ void Connection::send_flush(){
     enet_host_flush(conn);
 }
 
-void Connection::event_service(int timer){
-	if(!enet_host_check_events (conn,&event))			//Get an event from the stack.
-		enet_host_service(conn, &event,timer);			//If one is not avalible, wait 'timer' miliseconds for one.
+int Connection::event_service(int timer){
+	int retr;
+	if(!(retr=enet_host_check_events (conn,&event)))			//Get an event from the stack.
+		retr=enet_host_service(conn, &event,timer);			//If one is not avalible, wait 'timer' miliseconds for one.
 	if(event.type==ENET_EVENT_TYPE_CONNECT){
 		lastConnection.host = event.peer -> address.host;
 		lastConnection.port = event.peer -> address.port;
@@ -80,6 +81,7 @@ void Connection::event_service(int timer){
 		lastConnection.port = event.peer -> address.port;
 		peerID=event.peer -> incomingPeerID;
 	}
+	return retr;
 }
 
 void Connection::perror(std::string error){
