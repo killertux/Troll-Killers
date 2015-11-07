@@ -86,3 +86,4 @@ bool Map::load_map(std::string pathname)
 		file.read((char*)&objects[i].b,2);
 	}
 }
+

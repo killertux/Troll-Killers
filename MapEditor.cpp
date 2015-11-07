@@ -63,3 +63,4 @@ void MapEditor::mainLoop(){
 
 	}
 }
+
