@@ -11,14 +11,11 @@
 #include <allegro5/allegro.h>
 #include <allegro5/allegro_primitives.h>
 #include "Map.hpp"
-
-#define RES_X 1360
-#define RES_Y 768
-#define FPS 60.0
+#include "Defines.hpp"
 
 #define MAX_OBJECTS 500
-#define LENGTH 4*1360
-#define WIDTH 4*768
+#define LENGTH 300
+#define WIDTH 200
 
 class MapEditor {
 private:

@@ -1,3 +1,6 @@
+[Buildset]
+BuildItems=@Variant(\x00\x00\x00\t\x00\x00\x00\x00\x01\x00\x00\x00\x0b\x00\x00\x00\x00\x01\x00\x00\x00\x1a\x00T\x00r\x00o\x00l\x00l\x00-\x00K\x00i\x00l\x00l\x00e\x00r\x00s)
+
 [CMake]
 Build Directory Count=1
 Current Build Directory Index=0
@@ -22,7 +25,7 @@ Launch Configurations=Launch Configuration 0
 [Launch][Launch Configuration 0]
 Configured Launch Modes=execute
 Configured Launchers=nativeAppLauncher
-Name=Novo lançador Binário compilado
+Name=MapEditor
 Type=Native Application
 
 [Launch][Launch Configuration 0][Data]
@@ -30,9 +33,9 @@ Arguments=
 Dependencies=@Variant(\x00\x00\x00\t\x00\x00\x00\x00\x00)
 Dependency Action=Nothing
 EnvironmentGroup=
-Executable=file:///home/clemente/projects/Troll-Killers/
+Executable=file:///home/clemente/projects/Troll-Killers/build/MapEditor
 External Terminal=xterm -hold -e %exe
-Project Target=
+Project Target=Troll-Killers,MapEditor
 Use External Terminal=false
 Working Directory=
 isExecutable=true

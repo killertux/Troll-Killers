@@ -52,8 +52,10 @@ void MapEditor::mainLoop(){
 				exit(0);
 			}
 		} 
-		else if(ev.type == ALLEGRO_EVENT_TIMER)
+		else if(ev.type == ALLEGRO_EVENT_TIMER){
+			
 			redraw=true;
+		}
 		
 		if(redraw && al_is_event_queue_empty(event_queue)){
 			map->draw_map();
