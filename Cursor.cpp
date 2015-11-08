@@ -13,8 +13,8 @@ Cursor::Cursor(int x, int y, int resX, int resY, int timer){
 
 
 void Cursor::draw_cursor(){
-	al_draw_line(x-10,y,x+10,y,al_map_rgb(0,0,0),4);
-	al_draw_line(x,y-10,x,y+10,al_map_rgb(0,0,0),4);
+	al_draw_line(x-10,y,x+10,y,al_map_rgb(0,0,100),4);
+	al_draw_line(x,y-10,x,y+10,al_map_rgb(0,0,100),4);
 }
 
 void Cursor::move_cursor(ALLEGRO_KEYBOARD_STATE keyState){

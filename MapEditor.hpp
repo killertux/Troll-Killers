@@ -34,6 +34,7 @@ public:
 	~MapEditor();
 
 	void main_loop();
+	void draw_grid();
 };
 
 #endif /* MAPEDITOR_HPP_ */

@@ -64,6 +64,7 @@ void MapEditor::main_loop(){
 		if(redraw && al_is_event_queue_empty(event_queue)){
 			map->draw_map();
 			cursor->draw_cursor();;
+			draw_grid();
 			al_flip_display();
 			
 		}
@@ -71,3 +72,9 @@ void MapEditor::main_loop(){
 	}
 }
 
+void MapEditor::draw_grid(){
+	for(int i=0;i<LENGTH*GRID;i+=GRID)
+		al_draw_line(i,0,i,WIDTH*GRID,al_map_rgb(0,0,0),2);
+	for(int j=0;j<WIDTH*GRID;j+=GRID)
+		al_draw_line(0,j,LENGTH*GRID,j,al_map_rgb(0,0,0),2);
+}
