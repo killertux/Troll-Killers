@@ -167,6 +167,33 @@ MapEditor/fast:
 	$(MAKE) -f CMakeFiles/MapEditor.dir/build.make CMakeFiles/MapEditor.dir/build
 .PHONY : MapEditor/fast
 
+Cursor.o: Cursor.cpp.o
+
+.PHONY : Cursor.o
+
+# target to build an object file
+Cursor.cpp.o:
+	$(MAKE) -f CMakeFiles/MapEditor.dir/build.make CMakeFiles/MapEditor.dir/Cursor.cpp.o
+.PHONY : Cursor.cpp.o
+
+Cursor.i: Cursor.cpp.i
+
+.PHONY : Cursor.i
+
+# target to preprocess a source file
+Cursor.cpp.i:
+	$(MAKE) -f CMakeFiles/MapEditor.dir/build.make CMakeFiles/MapEditor.dir/Cursor.cpp.i
+.PHONY : Cursor.cpp.i
+
+Cursor.s: Cursor.cpp.s
+
+.PHONY : Cursor.s
+
+# target to generate assembly for a file
+Cursor.cpp.s:
+	$(MAKE) -f CMakeFiles/MapEditor.dir/build.make CMakeFiles/MapEditor.dir/Cursor.cpp.s
+.PHONY : Cursor.cpp.s
+
 Map.o: Map.cpp.o
 
 .PHONY : Map.o
@@ -261,6 +288,9 @@ help:
 	@echo "... install/strip"
 	@echo "... install/local"
 	@echo "... edit_cache"
+	@echo "... Cursor.o"
+	@echo "... Cursor.i"
+	@echo "... Cursor.s"
 	@echo "... Map.o"
 	@echo "... Map.i"
 	@echo "... Map.s"

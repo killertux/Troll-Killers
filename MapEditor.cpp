@@ -27,10 +27,12 @@ MapEditor::MapEditor() {
 	al_hide_mouse_cursor(display);
 	
 	map = new Map("MapaTeste",MAX_OBJECTS,LENGTH*GRID,WIDTH*GRID);
+	cursor = new Cursor(GRID*5,GRID*5,RES_X,RES_Y,10);
 }
 
 MapEditor::~MapEditor() {
 	delete map;
+	delete cursor;
 	al_destroy_display(display);
 	al_destroy_event_queue(event_queue);
 	al_destroy_timer(timer);
@@ -53,12 +55,15 @@ void MapEditor::main_loop(){
 			}
 		} 
 		else if(ev.type == ALLEGRO_EVENT_TIMER){
+			al_get_keyboard_state(&keyState);
+			cursor->move_cursor(keyState);
 			
 			redraw=true;
 		}
 		
 		if(redraw && al_is_event_queue_empty(event_queue)){
 			map->draw_map();
+			cursor->draw_cursor();;
 			al_flip_display();
 			
 		}
@@ -66,5 +71,3 @@ void MapEditor::main_loop(){
 	}
 }
 
-void MapEditor::draw_cursor(){
-}

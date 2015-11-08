@@ -12,6 +12,7 @@
 #include <allegro5/allegro_primitives.h>
 #include "Map.hpp"
 #include "Defines.hpp"
+#include "Cursor.hpp"
 
 #define MAX_OBJECTS 500
 #define LENGTH 300
@@ -25,13 +26,14 @@ private:
 	ALLEGRO_KEYBOARD_STATE keyState;
 	ALLEGRO_EVENT ev;
 	
+	Cursor *cursor;
+	
 	Map *map;
 public:
 	MapEditor();
 	~MapEditor();
 
 	void main_loop();
-	void draw_cursor();
 };
 
 #endif /* MAPEDITOR_HPP_ */

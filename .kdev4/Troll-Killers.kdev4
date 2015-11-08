@@ -36,7 +36,7 @@ EnvironmentGroup=
 Executable=file:///home/clemente/projects/Troll-Killers/build/MapEditor
 External Terminal=xterm -hold -e %exe
 Project Target=Troll-Killers,MapEditor
-Use External Terminal=false
+Use External Terminal=true
 Working Directory=
 isExecutable=true
 
