@@ -14,6 +14,7 @@ private:
 	int cTimer;
 	
 	Direction dir;
+	bool moved;
 public:
 	Cursor(int x,int y,int resX,int resY,int timer);
 	void draw_cursor();
