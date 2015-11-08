@@ -26,7 +26,7 @@ MapEditor::MapEditor() {
 
 	al_hide_mouse_cursor(display);
 	
-	map = new Map("MapaTeste",MAX_OBJECTS,LENGTH,WIDTH);
+	map = new Map("MapaTeste",MAX_OBJECTS,LENGTH*GRID,WIDTH*GRID);
 }
 
 MapEditor::~MapEditor() {
@@ -36,7 +36,7 @@ MapEditor::~MapEditor() {
 	al_destroy_timer(timer);
 }
 
-void MapEditor::mainLoop(){
+void MapEditor::main_loop(){
 	bool done=false;
 	bool redraw=false;
 
@@ -66,3 +66,5 @@ void MapEditor::mainLoop(){
 	}
 }
 
+void MapEditor::draw_cursor(){
+}

@@ -6,6 +6,8 @@
 
 #IncludeRegexTransform: 
 
+/home/clemente/projects/Troll-Killers/Defines.hpp
+
 /home/clemente/projects/Troll-Killers/Enums.hpp
 
 /home/clemente/projects/Troll-Killers/Map.cpp
@@ -39,6 +41,8 @@ allegro5/allegro_primitives.h
 -
 Map.hpp
 /home/clemente/projects/Troll-Killers/Map.hpp
+Defines.hpp
+/home/clemente/projects/Troll-Killers/Defines.hpp
 
 /home/clemente/projects/Troll-Killers/_object.hpp
 allegro5/allegro.h

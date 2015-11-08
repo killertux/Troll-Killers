@@ -8,7 +8,7 @@
 
 int main(){
 	MapEditor editor;
-	editor.mainLoop();
+	editor.main_loop();
 	return 0;
 }
 

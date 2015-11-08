@@ -6,12 +6,14 @@ CMakeFiles/MapEditor.dir/Map.cpp.o: ../Map.cpp
 CMakeFiles/MapEditor.dir/Map.cpp.o: ../Map.hpp
 CMakeFiles/MapEditor.dir/Map.cpp.o: ../_object.hpp
 
+CMakeFiles/MapEditor.dir/MapEditor.cpp.o: ../Defines.hpp
 CMakeFiles/MapEditor.dir/MapEditor.cpp.o: ../Enums.hpp
 CMakeFiles/MapEditor.dir/MapEditor.cpp.o: ../Map.hpp
 CMakeFiles/MapEditor.dir/MapEditor.cpp.o: ../MapEditor.cpp
 CMakeFiles/MapEditor.dir/MapEditor.cpp.o: ../MapEditor.hpp
 CMakeFiles/MapEditor.dir/MapEditor.cpp.o: ../_object.hpp
 
+CMakeFiles/MapEditor.dir/editorMain.cpp.o: ../Defines.hpp
 CMakeFiles/MapEditor.dir/editorMain.cpp.o: ../Enums.hpp
 CMakeFiles/MapEditor.dir/editorMain.cpp.o: ../Map.hpp
 CMakeFiles/MapEditor.dir/editorMain.cpp.o: ../MapEditor.hpp

@@ -30,8 +30,8 @@ public:
 	MapEditor();
 	~MapEditor();
 
-	void mainLoop();
-	
+	void main_loop();
+	void draw_cursor();
 };
 
 #endif /* MAPEDITOR_HPP_ */
