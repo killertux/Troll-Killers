@@ -21,7 +21,7 @@ private:
 	bool moved;
 	
 	_object objCursor;
-	bool objSelected;
+	ObjectType objSelected;
 public:
 	Cursor(int x,int y,int resX,int resY,int timer);
 	void draw_cursor();
@@ -32,10 +32,10 @@ public:
 	void setX(int x){this->x=x;}
 	void setY(int y){this->y=y;}
 	
-	void change_cursor();
+	void change_cursor(int i);
 	void increase_object(Direction incDir);
 	_object getObject(int mapX,int mapY){objCursor.x+=mapX;objCursor.y+=mapY;return objCursor;}
-	bool object_selected(){return objSelected;}
+	bool object_selected(){return (objSelected!=NONE)?true:false;}
 };
 
 #endif

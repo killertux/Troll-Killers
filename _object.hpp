@@ -1,5 +1,6 @@
 #ifndef _OBJECT_HPP
 #define _OBJECT_HPP
+#include <stdint.h>
 
 struct _object{
 	int8_t type;

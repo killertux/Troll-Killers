@@ -3,7 +3,8 @@
 
 enum ObjectType {
 	CIRCLE=1,
-	RECTANGLE=2
+	RECTANGLE=2,
+	NONE=0
 };
 
 enum Direction {

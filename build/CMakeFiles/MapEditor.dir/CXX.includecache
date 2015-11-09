@@ -65,6 +65,8 @@ iostream
 -
 
 /home/clemente/projects/Troll-Killers/_object.hpp
+stdint.h
+-
 
 /home/clemente/projects/Troll-Killers/editorMain.cpp
 MapEditor.hpp

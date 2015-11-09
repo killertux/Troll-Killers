@@ -60,9 +60,11 @@ void MapEditor::main_loop(){
 			}
 			
 			//Cursor Comands;
-			if((ev.keyboard.keycode == ALLEGRO_KEY_LEFT  || ev.keyboard.keycode == ALLEGRO_KEY_RIGHT) && storeKeys[ALLEGRO_KEY_LCTRL]){
-				cursor->change_cursor();
-			}
+			if(ev.keyboard.keycode == ALLEGRO_KEY_LEFT  && storeKeys[ALLEGRO_KEY_LCTRL])
+				cursor->change_cursor(-1);
+			if(ev.keyboard.keycode == ALLEGRO_KEY_RIGHT  && storeKeys[ALLEGRO_KEY_LCTRL])
+				cursor->change_cursor(-1);
+			
 			if(ev.keyboard.keycode == ALLEGRO_KEY_RIGHT && storeKeys[ALLEGRO_KEY_ALT])
 				cursor->increase_object(RIGHT);
 			if(ev.keyboard.keycode == ALLEGRO_KEY_LEFT && storeKeys[ALLEGRO_KEY_ALT])
@@ -74,7 +76,7 @@ void MapEditor::main_loop(){
 			if(ev.keyboard.keycode == ALLEGRO_KEY_ENTER && cursor->object_selected())
 				map->new_object(cursor->getObject(mapX,mapY));
 			if(ev.keyboard.keycode == ALLEGRO_KEY_DELETE)
-				map->destroy_object(cursor->getX(),cursor->getY());
+				map->destroy_object(cursor->getX()+mapX,cursor->getY()+mapY);
 			
 			//Save and Load
 			if(ev.keyboard.keycode == ALLEGRO_KEY_S){

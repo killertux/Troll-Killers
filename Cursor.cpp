@@ -9,13 +9,15 @@ Cursor::Cursor(int x, int y, int resX, int resY, int timer){
 	cTimer=0;
 	dir=STOPED;
 	moved=true;
-	objSelected=false;
+	objSelected=NONE;
 }
 
 void Cursor::draw_cursor(){
-	if(objSelected)
+	if(objSelected==RECTANGLE)
 		al_draw_filled_rectangle(objCursor.x,objCursor.y,objCursor.x+objCursor.length,
 						 objCursor.y+objCursor.width,al_map_rgb(objCursor.r,objCursor.g,objCursor.b));
+	else if(objSelected==CIRCLE)
+		al_draw_filled_circle(objCursor.x,objCursor.y,objCursor.radius,al_map_rgb(objCursor.r,objCursor.g,objCursor.b));
 	else {
 		al_draw_line(x-10,y,x+10,y,al_map_rgb(0,0,100),4);
 		al_draw_line(x,y-10,x,y+10,al_map_rgb(0,0,100),4);
@@ -72,19 +74,46 @@ void Cursor::move_cursor(ALLEGRO_KEYBOARD_STATE keyState){
 			x+=GRID;
 		cTimer=timer*2;
 	}
-	objCursor.x=x;
-	objCursor.y=y;
+	
+	if(objSelected==RECTANGLE){
+		objCursor.x=x;
+		objCursor.y=y;
+	}
+	else if(objSelected==CIRCLE){
+		objCursor.x=x+GRID/2;
+		objCursor.y=y+GRID/2;
+	}
 }
 
-void Cursor::change_cursor(){
-	objSelected=!objSelected;
-	if(objSelected){
+void Cursor::change_cursor(int i){
+	if(objSelected==RECTANGLE && i>0)
+		objSelected=NONE;
+	else if(objSelected==CIRCLE && i>0)
+		objSelected=RECTANGLE;
+	else if(objSelected==NONE && i>0)
+		objSelected=CIRCLE;
+	else if(objSelected==RECTANGLE && i<0)
+		objSelected=CIRCLE;
+	else if(objSelected==CIRCLE && i<0)
+		objSelected=NONE;
+	else if(objSelected==NONE && i<0)
+		objSelected=RECTANGLE;
+	
+	if(objSelected==RECTANGLE){
 		objCursor.type=RECTANGLE;
 		objCursor.x=x;
 		objCursor.y=y;
 		objCursor.length=GRID;
 		objCursor.width=GRID;
 		objCursor.r=objCursor.g=objCursor.b=0;
+	}
+	else if (objSelected==CIRCLE){
+		objCursor.type=CIRCLE;
+		objCursor.x=x+GRID/2;
+		objCursor.y=y+GRID/2;
+		objCursor.radius=GRID/2-6;
+		objCursor.r=255;
+		objCursor.g=objCursor.b=0;
 	}
 	lengthInc=1;
 	widthInc=1;
