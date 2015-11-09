@@ -5,6 +5,7 @@ CMakeFiles/MapEditor.dir/Cursor.cpp.o: ../Cursor.cpp
 CMakeFiles/MapEditor.dir/Cursor.cpp.o: ../Cursor.hpp
 CMakeFiles/MapEditor.dir/Cursor.cpp.o: ../Defines.hpp
 CMakeFiles/MapEditor.dir/Cursor.cpp.o: ../Enums.hpp
+CMakeFiles/MapEditor.dir/Cursor.cpp.o: ../_object.hpp
 
 CMakeFiles/MapEditor.dir/Map.cpp.o: ../Enums.hpp
 CMakeFiles/MapEditor.dir/Map.cpp.o: ../Map.cpp

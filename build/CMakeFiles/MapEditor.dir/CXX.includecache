@@ -19,6 +19,8 @@ Defines.hpp
 /home/clemente/projects/Troll-Killers/Defines.hpp
 Enums.hpp
 /home/clemente/projects/Troll-Killers/Enums.hpp
+_object.hpp
+/home/clemente/projects/Troll-Killers/_object.hpp
 
 /home/clemente/projects/Troll-Killers/Defines.hpp
 
@@ -59,6 +61,8 @@ Defines.hpp
 /home/clemente/projects/Troll-Killers/Defines.hpp
 Cursor.hpp
 /home/clemente/projects/Troll-Killers/Cursor.hpp
+iostream
+-
 
 /home/clemente/projects/Troll-Killers/_object.hpp
 allegro5/allegro.h

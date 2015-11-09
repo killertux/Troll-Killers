@@ -1,5 +1,6 @@
 #include "Map.hpp"
 
+
 Map::Map(){
 	n_object=0;
 }

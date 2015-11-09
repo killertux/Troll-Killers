@@ -14,6 +14,8 @@
 #include "Defines.hpp"
 #include "Cursor.hpp"
 
+#include <iostream>
+
 #define MAX_OBJECTS 500
 #define LENGTH 300
 #define WIDTH 200
@@ -27,6 +29,7 @@ private:
 	ALLEGRO_EVENT ev;
 	
 	Cursor *cursor;
+	bool storeKeys[ALLEGRO_KEY_MAX];
 	
 	Map *map;
 public:

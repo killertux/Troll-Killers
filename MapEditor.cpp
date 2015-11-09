@@ -28,6 +28,9 @@ MapEditor::MapEditor() {
 	
 	map = new Map("MapaTeste",MAX_OBJECTS,LENGTH*GRID,WIDTH*GRID);
 	cursor = new Cursor(GRID*5,GRID*5,RES_X,RES_Y,5);
+	
+	for(int i=0;i<ALLEGRO_KEY_MAX;i++)
+		storeKeys[i]=false;
 }
 
 MapEditor::~MapEditor() {
@@ -50,10 +53,31 @@ void MapEditor::main_loop(){
 		if(ev.type == ALLEGRO_EVENT_DISPLAY_CLOSE)
 			done=true;
 		else if(ev.type == ALLEGRO_EVENT_KEY_DOWN){
+			storeKeys[ev.keyboard.keycode]=true;
 			if(ev.keyboard.keycode == ALLEGRO_KEY_ESCAPE){
 				exit(0);
 			}
-		} 
+			
+			//Cursor Comands;
+			if((ev.keyboard.keycode == ALLEGRO_KEY_LEFT  || ev.keyboard.keycode == ALLEGRO_KEY_RIGHT) && storeKeys[ALLEGRO_KEY_LCTRL]){
+				cursor->change_cursor();
+			}
+			if(ev.keyboard.keycode == ALLEGRO_KEY_RIGHT && storeKeys[ALLEGRO_KEY_ALT])
+				cursor->increase_object(RIGHT);
+			if(ev.keyboard.keycode == ALLEGRO_KEY_LEFT && storeKeys[ALLEGRO_KEY_ALT])
+				cursor->increase_object(LEFT);
+			if(ev.keyboard.keycode == ALLEGRO_KEY_DOWN && storeKeys[ALLEGRO_KEY_ALT])
+				cursor->increase_object(DOWN);
+			if(ev.keyboard.keycode == ALLEGRO_KEY_UP && storeKeys[ALLEGRO_KEY_ALT])
+				cursor->increase_object(UP);
+			if(ev.keyboard.keycode == ALLEGRO_KEY_ENTER && cursor->object_selected()){
+				map->new_object(cursor->getObject());
+			}
+			if(ev.keyboard.keycode == ALLEGRO_KEY_DELETE)
+				map->destroy_object(cursor->getX(),cursor->getY());
+		}
+		else if(ev.type == ALLEGRO_EVENT_KEY_UP)
+			storeKeys[ev.keyboard.keycode]=false;
 		else if(ev.type == ALLEGRO_EVENT_TIMER){
 			al_get_keyboard_state(&keyState);
 			cursor->move_cursor(keyState);
