@@ -34,7 +34,7 @@ public:
 	
 	void change_cursor();
 	void increase_object(Direction incDir);
-	_object getObject(){return objCursor;}
+	_object getObject(int mapX,int mapY){objCursor.x+=mapX;objCursor.y+=mapY;return objCursor;}
 	bool object_selected(){return objSelected;}
 };
 

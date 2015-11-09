@@ -71,12 +71,8 @@ void MapEditor::main_loop(){
 				cursor->increase_object(DOWN);
 			if(ev.keyboard.keycode == ALLEGRO_KEY_UP && storeKeys[ALLEGRO_KEY_ALT])
 				cursor->increase_object(UP);
-			if(ev.keyboard.keycode == ALLEGRO_KEY_ENTER && cursor->object_selected()){
-				_object temp=cursor->getObject();
-				temp.x+=mapX;
-				temp.y+=mapY;
-				map->new_object(temp);
-			}
+			if(ev.keyboard.keycode == ALLEGRO_KEY_ENTER && cursor->object_selected())
+				map->new_object(cursor->getObject(mapX,mapY));
 			if(ev.keyboard.keycode == ALLEGRO_KEY_DELETE)
 				map->destroy_object(cursor->getX(),cursor->getY());
 			

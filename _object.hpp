@@ -1,6 +1,5 @@
 #ifndef _OBJECT_HPP
 #define _OBJECT_HPP
-#include <allegro5/allegro.h>
 
 struct _object{
 	int8_t type;

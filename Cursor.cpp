@@ -12,7 +12,6 @@ Cursor::Cursor(int x, int y, int resX, int resY, int timer){
 	objSelected=false;
 }
 
-
 void Cursor::draw_cursor(){
 	if(objSelected)
 		al_draw_filled_rectangle(objCursor.x,objCursor.y,objCursor.x+objCursor.length,

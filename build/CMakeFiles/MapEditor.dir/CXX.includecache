@@ -65,8 +65,6 @@ iostream
 -
 
 /home/clemente/projects/Troll-Killers/_object.hpp
-allegro5/allegro.h
--
 
 /home/clemente/projects/Troll-Killers/editorMain.cpp
 MapEditor.hpp
