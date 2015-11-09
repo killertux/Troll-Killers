@@ -3,7 +3,7 @@
 #include <allegro5/allegro.h>
 
 struct _object{
-	ObjectType type;
+	int8_t type;
 	int16_t x,y;
 	int16_t radius;
 	int16_t length, width;

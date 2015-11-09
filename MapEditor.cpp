@@ -31,6 +31,7 @@ MapEditor::MapEditor() {
 	
 	for(int i=0;i<ALLEGRO_KEY_MAX;i++)
 		storeKeys[i]=false;
+	mapX=mapY=0;
 }
 
 MapEditor::~MapEditor() {
@@ -71,10 +72,25 @@ void MapEditor::main_loop(){
 			if(ev.keyboard.keycode == ALLEGRO_KEY_UP && storeKeys[ALLEGRO_KEY_ALT])
 				cursor->increase_object(UP);
 			if(ev.keyboard.keycode == ALLEGRO_KEY_ENTER && cursor->object_selected()){
-				map->new_object(cursor->getObject());
+				_object temp=cursor->getObject();
+				temp.x+=mapX;
+				temp.y+=mapY;
+				map->new_object(temp);
 			}
 			if(ev.keyboard.keycode == ALLEGRO_KEY_DELETE)
 				map->destroy_object(cursor->getX(),cursor->getY());
+			
+			//Save and Load
+			if(ev.keyboard.keycode == ALLEGRO_KEY_S){
+				map->save_map((std::string)MAP_FILE);
+				std::cout << "Map saved as " << MAP_FILE << std::endl;
+			}
+			if(ev.keyboard.keycode == ALLEGRO_KEY_L){
+				map->load_map((std::string)MAP_FILE);
+				std::cout << "Map " << MAP_FILE << " loaded!\n";
+				
+			}
+			
 		}
 		else if(ev.type == ALLEGRO_EVENT_KEY_UP)
 			storeKeys[ev.keyboard.keycode]=false;
@@ -82,11 +98,28 @@ void MapEditor::main_loop(){
 			al_get_keyboard_state(&keyState);
 			cursor->move_cursor(keyState);
 			
+			if(cursor->getX()>RES_X-2*GRID && mapX<LENGTH*GRID){
+				mapX+=GRID;
+				cursor->setX(cursor->getX()-GRID);
+			}
+			if(cursor->getX()<GRID && mapX>0){
+				mapX-=GRID;
+				cursor->setX(cursor->getX()+GRID);
+			}
+			if(cursor->getY()>RES_Y-2*GRID && mapY<WIDTH*GRID){
+				mapY+=GRID;
+				cursor->setY(cursor->getY()-GRID);
+			}
+			if(cursor->getY()<GRID && mapY>0){
+				mapY-=GRID;
+				cursor->setY(cursor->getY()+GRID);
+			}
+			
 			redraw=true;
 		}
 		
 		if(redraw && al_is_event_queue_empty(event_queue)){
-			map->draw_map();
+			map->draw_map(mapX,mapY);
 			cursor->draw_cursor();;
 			draw_grid();
 			al_flip_display();

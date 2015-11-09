@@ -17,8 +17,10 @@
 #include <iostream>
 
 #define MAX_OBJECTS 500
-#define LENGTH 300
-#define WIDTH 200
+#define LENGTH 30
+#define WIDTH 20
+
+#define MAP_FILE "mapa.data"
 
 class MapEditor {
 private:
@@ -30,6 +32,8 @@ private:
 	
 	Cursor *cursor;
 	bool storeKeys[ALLEGRO_KEY_MAX];
+	
+	int mapX,mapY;
 	
 	Map *map;
 public:

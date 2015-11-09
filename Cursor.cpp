@@ -30,7 +30,7 @@ void Cursor::move_cursor(ALLEGRO_KEYBOARD_STATE keyState){
 				y-=GRID;
 				dir=UP;
 			}
-			else if(al_key_down(&keyState, ALLEGRO_KEY_DOWN) && y<resY){
+			else if(al_key_down(&keyState, ALLEGRO_KEY_DOWN) && y<resY-GRID){
 				y+=GRID;
 				dir=DOWN;
 			}
@@ -38,7 +38,7 @@ void Cursor::move_cursor(ALLEGRO_KEYBOARD_STATE keyState){
 				x-=GRID;
 				dir=LEFT;
 			}
-			else if(al_key_down(&keyState, ALLEGRO_KEY_RIGHT) && x<resX){
+			else if(al_key_down(&keyState, ALLEGRO_KEY_RIGHT) && x<resX-GRID){
 				x+=GRID;
 				dir=RIGHT;
 			}
@@ -49,11 +49,11 @@ void Cursor::move_cursor(ALLEGRO_KEYBOARD_STATE keyState){
 		cTimer++;
 		if(al_key_down(&keyState, ALLEGRO_KEY_UP) && y>0)
 			dir=UP;
-		else if(al_key_down(&keyState, ALLEGRO_KEY_DOWN) && y<resY)
+		else if(al_key_down(&keyState, ALLEGRO_KEY_DOWN) && y<resY-GRID)
 			dir=DOWN;
 		else if(al_key_down(&keyState, ALLEGRO_KEY_LEFT) && x>0)
 			dir=LEFT;
-		else if(al_key_down(&keyState, ALLEGRO_KEY_RIGHT) && x<resX)
+		else if(al_key_down(&keyState, ALLEGRO_KEY_RIGHT) && x<resX-GRID)
 			dir=RIGHT;
 		else {
 			dir=STOPED;

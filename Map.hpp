@@ -28,8 +28,8 @@ public:
 	Map(std::string name,int max_objects,int length,int width);
 	Map();
 	void new_object(_object object);
-	void destroy_object(float x,float y);
-	void draw_map();
+	void destroy_object(int x,int y);
+	void draw_map(int x,int y);
 	virtual bool save_map(std::string pathname);
 	virtual bool load_map(std::string pathname);
 	~Map();

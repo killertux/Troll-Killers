@@ -1,6 +1,5 @@
 #include "Map.hpp"
 
-
 Map::Map(){
 	n_object=0;
 }
@@ -24,7 +23,7 @@ void Map::new_object(_object object){			//Add a new object to the map.
 	n_object++;
 }
 
-void Map::destroy_object(float x, float y){		//Delete an object that is in the x,y position.
+void Map::destroy_object(int x, int y){		//Delete an object that is in the x,y position.
 	for(int i=0;i<n_object;i++)
 		if(objects[i].x==x && objects[i].y==y){
 			for(int j=i;j<n_object;j++)
@@ -33,14 +32,14 @@ void Map::destroy_object(float x, float y){		//Delete an object that is in the x
 		}
 }
 
-void Map::draw_map(){
+void Map::draw_map(int x,int y){
 	al_clear_to_color(al_map_rgb(255,255,255));
 	for(int i=0;i<n_object;i++){
 		if(objects[i].type==RECTANGLE)
-			al_draw_filled_rectangle(objects[i].x,objects[i].y,objects[i].x+objects[i].length,
-					objects[i].y+objects[i].width,al_map_rgb(objects[i].r,objects[i].g,objects[i].b));
+			al_draw_filled_rectangle(objects[i].x-x,objects[i].y-y,objects[i].x-x+objects[i].length,
+					objects[i].y-y+objects[i].width,al_map_rgb(objects[i].r,objects[i].g,objects[i].b));
 		else if (objects[i].type==CIRCLE)
-			al_draw_filled_circle(objects[i].x,objects[i].y,objects[i].radius,al_map_rgb(objects[i].r,objects[i].g,objects[i].b));
+			al_draw_filled_circle(objects[i].x-x,objects[i].y-y,objects[i].radius,al_map_rgb(objects[i].r,objects[i].g,objects[i].b));
 	}
 }
 
@@ -58,9 +57,9 @@ bool Map::save_map(std::string pathname){
 		file.write((char*)&objects[i].radius,2);
 		file.write((char*)&objects[i].length,2);
 		file.write((char*)&objects[i].width,2);
-		file.write((char*)&objects[i].r,2);
-		file.write((char*)&objects[i].g,2);
-		file.write((char*)&objects[i].b,2);
+		file.write((char*)&objects[i].r,1);
+		file.write((char*)&objects[i].g,1);
+		file.write((char*)&objects[i].b,1);
 	}
 	file.close();
 }
@@ -82,9 +81,9 @@ bool Map::load_map(std::string pathname)
 		file.read((char*)&objects[i].radius,2);
 		file.read((char*)&objects[i].length,2);
 		file.read((char*)&objects[i].width,2);
-		file.read((char*)&objects[i].r,2);
-		file.read((char*)&objects[i].g,2);
-		file.read((char*)&objects[i].b,2);
+		file.read((char*)&objects[i].r,1);
+		file.read((char*)&objects[i].g,1);
+		file.read((char*)&objects[i].b,1);
 	}
 }
 

@@ -2,8 +2,8 @@
 #define ENUMS_HPP
 
 enum ObjectType {
-	CIRCLE,
-	RECTANGLE
+	CIRCLE=1,
+	RECTANGLE=2
 };
 
 enum Direction {
