@@ -10,6 +10,7 @@ Cursor::Cursor(int x, int y, int resX, int resY, int timer){
 	dir=STOPED;
 	moved=true;
 	objSelected=NONE;
+	team=RED;
 }
 
 void Cursor::draw_cursor(){
@@ -112,11 +113,29 @@ void Cursor::change_cursor(int i){
 		objCursor.x=x+GRID/2;
 		objCursor.y=y+GRID/2;
 		objCursor.radius=GRID/2-6;
-		objCursor.r=255;
-		objCursor.g=objCursor.b=0;
+		
+		if(team==RED){		
+			objCursor.r=255;
+			objCursor.g=objCursor.b=0;
+		} else if(team==BLUE){
+			objCursor.b=255;
+			objCursor.g=objCursor.r=0;
+		}
 	}
 	lengthInc=1;
 	widthInc=1;
+}
+
+void Cursor::change_team(){
+	if(team==RED){
+		team=BLUE;
+		objCursor.b=255;
+		objCursor.g=objCursor.r=0;
+	} else if (team==BLUE){
+		team=RED;
+		objCursor.r=255;
+		objCursor.g=objCursor.b=0;
+	}
 }
 
 void Cursor::increase_object(Direction incDir){

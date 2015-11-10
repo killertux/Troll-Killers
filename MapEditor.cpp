@@ -13,7 +13,7 @@ MapEditor::MapEditor() {
 	al_init_primitives_addon();
 	al_install_keyboard();
 
-	al_set_new_display_flags(ALLEGRO_FULLSCREEN);
+	//al_set_new_display_flags(ALLEGRO_FULLSCREEN);
 
 
 	display=al_create_display(RES_X,RES_Y);
@@ -77,6 +77,8 @@ void MapEditor::main_loop(){
 				map->new_object(cursor->getObject(mapX,mapY));
 			if(ev.keyboard.keycode == ALLEGRO_KEY_DELETE)
 				map->destroy_object(cursor->getX()+mapX,cursor->getY()+mapY);
+			if(ev.keyboard.keycode == ALLEGRO_KEY_T)
+				cursor->change_team();
 			
 			//Save and Load
 			if(ev.keyboard.keycode == ALLEGRO_KEY_S){

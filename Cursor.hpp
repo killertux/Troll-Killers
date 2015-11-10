@@ -19,7 +19,8 @@ private:
 	
 	Direction dir;
 	bool moved;
-	
+		
+	Team team;
 	_object objCursor;
 	ObjectType objSelected;
 public:
@@ -33,6 +34,7 @@ public:
 	void setY(int y){this->y=y;}
 	
 	void change_cursor(int i);
+	void change_team();
 	void increase_object(Direction incDir);
 	_object getObject(int mapX,int mapY){objCursor.x+=mapX;objCursor.y+=mapY;return objCursor;}
 	bool object_selected(){return (objSelected!=NONE)?true:false;}

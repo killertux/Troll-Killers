@@ -15,4 +15,9 @@ enum Direction {
 	STOPED
 };
 
+enum Team{
+	RED,
+	BLUE
+};
+
 #endif
