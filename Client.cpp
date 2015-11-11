@@ -19,10 +19,8 @@ Client::Client(){
 	
 	al_hide_mouse_cursor(display);
 	
-	if(map.load_map("mapa.data"))
-		std::cout << MAP_FILE << std::endl;
-	else
-		std::cout << "Fudeu\n";
+	if(map.load_map("../mapa.data"))
+
 	
 	for(int i=0;i<ALLEGRO_KEY_MAX;i++)
 		storeKeys[i]=false;

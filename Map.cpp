@@ -1,8 +1,8 @@
 #include "Map.hpp"
-#include <iostream>
 
 Map::Map(){
-	n_object=0;
+	n_object=length=width=max_objects=0;
+	objects=NULL;
 }
 
 Map::~Map(){
@@ -45,11 +45,11 @@ bool Map::load_map(std::string pathname)
 	file.read((char*)&width,2);
 	file.read((char*)&max_objects,2);
 	file.read((char*)&n_object,2);
-	std::cout << n_object<<std::endl;
+	if(objects!=NULL)
+		delete [] objects;
+	objects=new _object[max_objects];
 	for(int i=0;i<n_object;i++){
-		std::cout << "ola\n";
 		file.read((char*)&objects[i].type,1);
-		std::cout << i << std::endl;
 		file.read((char*)&objects[i].x,2);
 		file.read((char*)&objects[i].y,2);
 		file.read((char*)&objects[i].radius,2);
