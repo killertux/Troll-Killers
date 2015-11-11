@@ -6,6 +6,28 @@
 
 #IncludeRegexTransform: 
 
+/home/clemente/projects/Troll-Killers/CMap.cpp
+CMap.hpp
+/home/clemente/projects/Troll-Killers/CMap.hpp
+
+/home/clemente/projects/Troll-Killers/CMap.hpp
+Enums.hpp
+/home/clemente/projects/Troll-Killers/Enums.hpp
+_object.hpp
+/home/clemente/projects/Troll-Killers/_object.hpp
+Map.hpp
+/home/clemente/projects/Troll-Killers/Map.hpp
+string
+-
+fstream
+-
+allegro5/allegro.h
+-
+allegro5/allegro_primitives.h
+-
+cstring
+-
+
 /home/clemente/projects/Troll-Killers/Cursor.cpp
 Cursor.hpp
 /home/clemente/projects/Troll-Killers/Cursor.hpp
@@ -39,12 +61,6 @@ string
 -
 fstream
 -
-allegro5/allegro.h
--
-allegro5/allegro_primitives.h
--
-cstring
--
 
 /home/clemente/projects/Troll-Killers/MapEditor.cpp
 MapEditor.hpp
@@ -55,8 +71,8 @@ allegro5/allegro.h
 -
 allegro5/allegro_primitives.h
 -
-Map.hpp
-/home/clemente/projects/Troll-Killers/Map.hpp
+CMap.hpp
+/home/clemente/projects/Troll-Killers/CMap.hpp
 Defines.hpp
 /home/clemente/projects/Troll-Killers/Defines.hpp
 Cursor.hpp

@@ -1,10 +1,12 @@
 #include "Server.hpp"
 
 Server::Server(){
+	std::cout << "Creating the server...\n";
 	conn.create_server(PORT,MAX_USERS);
+	std::cout << "Server created! \nListening to the port " << PORT << std::endl;
 }
 
-Server::~Sever(){
+Server::~Server(){
 }
 
 void Server::main_loop(){

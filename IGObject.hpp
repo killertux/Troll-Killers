@@ -1,5 +1,5 @@
-#ifndef ICHARACTER_HPP
-#define ICHARACTER_HPP
+#ifndef IGOBJECT_HPP
+#define IGOBJECT_HPP
 
 #include "Enums.hpp"
 #include "_data.hpp"

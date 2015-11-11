@@ -10,7 +10,7 @@
 
 #include <allegro5/allegro.h>
 #include <allegro5/allegro_primitives.h>
-#include "Map.hpp"
+#include "CMap.hpp"
 #include "Defines.hpp"
 #include "Cursor.hpp"
 
@@ -35,7 +35,7 @@ private:
 	
 	int mapX,mapY;
 	
-	Map *map;
+	CMap *map;
 public:
 	MapEditor();
 	~MapEditor();

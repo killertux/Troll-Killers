@@ -26,7 +26,7 @@ MapEditor::MapEditor() {
 
 	al_hide_mouse_cursor(display);
 	
-	map = new Map("MapaTeste",MAX_OBJECTS,LENGTH*GRID,WIDTH*GRID);
+	map = new CMap("MapaTeste",MAX_OBJECTS,LENGTH*GRID,WIDTH*GRID);
 	cursor = new Cursor(GRID*5,GRID*5,RES_X,RES_Y,5);
 	
 	for(int i=0;i<ALLEGRO_KEY_MAX;i++)

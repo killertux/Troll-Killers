@@ -17,6 +17,7 @@ private:
 	Team team;
 public:
 	SCharacter(_data *data);
+	~SCharacter();
 	int getId(){return id;}
 	int getX(){player.x;}
 	int getY(){player.y;}

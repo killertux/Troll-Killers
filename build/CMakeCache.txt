@@ -114,7 +114,7 @@ CMAKE_OBJCOPY:FILEPATH=/usr/bin/objcopy
 CMAKE_OBJDUMP:FILEPATH=/usr/bin/objdump
 
 //Value Computed by CMake
-CMAKE_PROJECT_NAME:STATIC=MapEditor
+CMAKE_PROJECT_NAME:STATIC=Server
 
 //Path to a program.
 CMAKE_RANLIB:FILEPATH=/usr/bin/ranlib
@@ -173,6 +173,12 @@ MapEditor_BINARY_DIR:STATIC=/home/clemente/projects/Troll-Killers/build
 
 //Value Computed by CMake
 MapEditor_SOURCE_DIR:STATIC=/home/clemente/projects/Troll-Killers
+
+//Value Computed by CMake
+Server_BINARY_DIR:STATIC=/home/clemente/projects/Troll-Killers/build
+
+//Value Computed by CMake
+Server_SOURCE_DIR:STATIC=/home/clemente/projects/Troll-Killers
 
 //Value Computed by CMake
 cellsgame_BINARY_DIR:STATIC=/home/clemente/projects/Troll-Killers/build

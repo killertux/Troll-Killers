@@ -4,20 +4,24 @@
 #include <thread>
 #include <mutex>
 #include "Connection.hpp"
+#include "Map.hpp"
+#include "IGObject.hpp"
+#include "SCharacter.hpp"
 
 #define PORT 4665
 #define MAX_USERS 16
-#define BUFFER_SIZE 1024
 #define WAIT_TIMER 1500 
 
 class Server{
 private:
 	Connection conn;
-	char buffer[BUFFER_SIZE];
 	std::thread writeThread;
 	std::thread cmdThread;
 	std::mutex dataMu;
 	std::mutex cmdMu;
+	
+	Map map;
+	SCharacter **players;
 
 public:
 	Server();

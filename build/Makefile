@@ -89,6 +89,17 @@ rebuild_cache/fast: rebuild_cache
 
 .PHONY : rebuild_cache/fast
 
+# Special rule for the target edit_cache
+edit_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
+	/usr/bin/ccmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : edit_cache
+
+# Special rule for the target edit_cache
+edit_cache/fast: edit_cache
+
+.PHONY : edit_cache/fast
+
 # Special rule for the target install/strip
 install/strip: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
@@ -110,17 +121,6 @@ install/local: preinstall
 install/local/fast: install/local
 
 .PHONY : install/local/fast
-
-# Special rule for the target edit_cache
-edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
-	/usr/bin/ccmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : edit_cache
-
-# Special rule for the target edit_cache
-edit_cache/fast: edit_cache
-
-.PHONY : edit_cache/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -167,6 +167,73 @@ MapEditor/fast:
 	$(MAKE) -f CMakeFiles/MapEditor.dir/build.make CMakeFiles/MapEditor.dir/build
 .PHONY : MapEditor/fast
 
+#=============================================================================
+# Target rules for targets named Server
+
+# Build rule for target.
+Server: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 Server
+.PHONY : Server
+
+# fast build rule for target.
+Server/fast:
+	$(MAKE) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/build
+.PHONY : Server/fast
+
+CMap.o: CMap.cpp.o
+
+.PHONY : CMap.o
+
+# target to build an object file
+CMap.cpp.o:
+	$(MAKE) -f CMakeFiles/MapEditor.dir/build.make CMakeFiles/MapEditor.dir/CMap.cpp.o
+.PHONY : CMap.cpp.o
+
+CMap.i: CMap.cpp.i
+
+.PHONY : CMap.i
+
+# target to preprocess a source file
+CMap.cpp.i:
+	$(MAKE) -f CMakeFiles/MapEditor.dir/build.make CMakeFiles/MapEditor.dir/CMap.cpp.i
+.PHONY : CMap.cpp.i
+
+CMap.s: CMap.cpp.s
+
+.PHONY : CMap.s
+
+# target to generate assembly for a file
+CMap.cpp.s:
+	$(MAKE) -f CMakeFiles/MapEditor.dir/build.make CMakeFiles/MapEditor.dir/CMap.cpp.s
+.PHONY : CMap.cpp.s
+
+Connection.o: Connection.cpp.o
+
+.PHONY : Connection.o
+
+# target to build an object file
+Connection.cpp.o:
+	$(MAKE) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/Connection.cpp.o
+.PHONY : Connection.cpp.o
+
+Connection.i: Connection.cpp.i
+
+.PHONY : Connection.i
+
+# target to preprocess a source file
+Connection.cpp.i:
+	$(MAKE) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/Connection.cpp.i
+.PHONY : Connection.cpp.i
+
+Connection.s: Connection.cpp.s
+
+.PHONY : Connection.s
+
+# target to generate assembly for a file
+Connection.cpp.s:
+	$(MAKE) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/Connection.cpp.s
+.PHONY : Connection.cpp.s
+
 Cursor.o: Cursor.cpp.o
 
 .PHONY : Cursor.o
@@ -201,6 +268,7 @@ Map.o: Map.cpp.o
 # target to build an object file
 Map.cpp.o:
 	$(MAKE) -f CMakeFiles/MapEditor.dir/build.make CMakeFiles/MapEditor.dir/Map.cpp.o
+	$(MAKE) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/Map.cpp.o
 .PHONY : Map.cpp.o
 
 Map.i: Map.cpp.i
@@ -210,6 +278,7 @@ Map.i: Map.cpp.i
 # target to preprocess a source file
 Map.cpp.i:
 	$(MAKE) -f CMakeFiles/MapEditor.dir/build.make CMakeFiles/MapEditor.dir/Map.cpp.i
+	$(MAKE) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/Map.cpp.i
 .PHONY : Map.cpp.i
 
 Map.s: Map.cpp.s
@@ -219,6 +288,7 @@ Map.s: Map.cpp.s
 # target to generate assembly for a file
 Map.cpp.s:
 	$(MAKE) -f CMakeFiles/MapEditor.dir/build.make CMakeFiles/MapEditor.dir/Map.cpp.s
+	$(MAKE) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/Map.cpp.s
 .PHONY : Map.cpp.s
 
 MapEditor.o: MapEditor.cpp.o
@@ -248,6 +318,60 @@ MapEditor.cpp.s:
 	$(MAKE) -f CMakeFiles/MapEditor.dir/build.make CMakeFiles/MapEditor.dir/MapEditor.cpp.s
 .PHONY : MapEditor.cpp.s
 
+SCharacter.o: SCharacter.cpp.o
+
+.PHONY : SCharacter.o
+
+# target to build an object file
+SCharacter.cpp.o:
+	$(MAKE) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/SCharacter.cpp.o
+.PHONY : SCharacter.cpp.o
+
+SCharacter.i: SCharacter.cpp.i
+
+.PHONY : SCharacter.i
+
+# target to preprocess a source file
+SCharacter.cpp.i:
+	$(MAKE) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/SCharacter.cpp.i
+.PHONY : SCharacter.cpp.i
+
+SCharacter.s: SCharacter.cpp.s
+
+.PHONY : SCharacter.s
+
+# target to generate assembly for a file
+SCharacter.cpp.s:
+	$(MAKE) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/SCharacter.cpp.s
+.PHONY : SCharacter.cpp.s
+
+Server.o: Server.cpp.o
+
+.PHONY : Server.o
+
+# target to build an object file
+Server.cpp.o:
+	$(MAKE) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/Server.cpp.o
+.PHONY : Server.cpp.o
+
+Server.i: Server.cpp.i
+
+.PHONY : Server.i
+
+# target to preprocess a source file
+Server.cpp.i:
+	$(MAKE) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/Server.cpp.i
+.PHONY : Server.cpp.i
+
+Server.s: Server.cpp.s
+
+.PHONY : Server.s
+
+# target to generate assembly for a file
+Server.cpp.s:
+	$(MAKE) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/Server.cpp.s
+.PHONY : Server.cpp.s
+
 editorMain.o: editorMain.cpp.o
 
 .PHONY : editorMain.o
@@ -275,6 +399,33 @@ editorMain.cpp.s:
 	$(MAKE) -f CMakeFiles/MapEditor.dir/build.make CMakeFiles/MapEditor.dir/editorMain.cpp.s
 .PHONY : editorMain.cpp.s
 
+mainServer.o: mainServer.cpp.o
+
+.PHONY : mainServer.o
+
+# target to build an object file
+mainServer.cpp.o:
+	$(MAKE) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/mainServer.cpp.o
+.PHONY : mainServer.cpp.o
+
+mainServer.i: mainServer.cpp.i
+
+.PHONY : mainServer.i
+
+# target to preprocess a source file
+mainServer.cpp.i:
+	$(MAKE) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/mainServer.cpp.i
+.PHONY : mainServer.cpp.i
+
+mainServer.s: mainServer.cpp.s
+
+.PHONY : mainServer.s
+
+# target to generate assembly for a file
+mainServer.cpp.s:
+	$(MAKE) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/mainServer.cpp.s
+.PHONY : mainServer.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -284,10 +435,17 @@ help:
 	@echo "... install"
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
+	@echo "... edit_cache"
 	@echo "... MapEditor"
+	@echo "... Server"
 	@echo "... install/strip"
 	@echo "... install/local"
-	@echo "... edit_cache"
+	@echo "... CMap.o"
+	@echo "... CMap.i"
+	@echo "... CMap.s"
+	@echo "... Connection.o"
+	@echo "... Connection.i"
+	@echo "... Connection.s"
 	@echo "... Cursor.o"
 	@echo "... Cursor.i"
 	@echo "... Cursor.s"
@@ -297,9 +455,18 @@ help:
 	@echo "... MapEditor.o"
 	@echo "... MapEditor.i"
 	@echo "... MapEditor.s"
+	@echo "... SCharacter.o"
+	@echo "... SCharacter.i"
+	@echo "... SCharacter.s"
+	@echo "... Server.o"
+	@echo "... Server.i"
+	@echo "... Server.s"
 	@echo "... editorMain.o"
 	@echo "... editorMain.i"
 	@echo "... editorMain.s"
+	@echo "... mainServer.o"
+	@echo "... mainServer.i"
+	@echo "... mainServer.s"
 .PHONY : help
 
 
