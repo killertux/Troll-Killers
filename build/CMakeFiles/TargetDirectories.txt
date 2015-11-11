@@ -1,2 +1,3 @@
+/home/clemente/projects/Troll-Killers/build/CMakeFiles/Client.dir
 /home/clemente/projects/Troll-Killers/build/CMakeFiles/Server.dir
 /home/clemente/projects/Troll-Killers/build/CMakeFiles/MapEditor.dir

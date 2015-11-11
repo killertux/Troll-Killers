@@ -19,11 +19,14 @@
 #include <cstring>
 
 class CMap:public Map{
+	bool drawCircles;
 public:
 	CMap(std::string name,int max_objects,int length,int width);
+	CMap();
 	void new_object(_object object);
 	void destroy_object(int x,int y);
 	void draw_map(int x,int y);
+	void setDrawCircles(bool drawCircles){this->drawCircles=drawCircles;}
 	~CMap();
 };
 

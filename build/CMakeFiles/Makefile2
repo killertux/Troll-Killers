@@ -60,13 +60,50 @@ CMAKE_SOURCE_DIR = /home/clemente/projects/Troll-Killers
 CMAKE_BINARY_DIR = /home/clemente/projects/Troll-Killers/build
 
 #=============================================================================
+# Target rules for target CMakeFiles/Client.dir
+
+# All Build rule for target.
+CMakeFiles/Client.dir/all:
+	$(MAKE) -f CMakeFiles/Client.dir/build.make CMakeFiles/Client.dir/depend
+	$(MAKE) -f CMakeFiles/Client.dir/build.make CMakeFiles/Client.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/clemente/projects/Troll-Killers/build/CMakeFiles --progress-num=1,2,3,4,5,6 "Built target Client"
+.PHONY : CMakeFiles/Client.dir/all
+
+# Include target in all.
+all: CMakeFiles/Client.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/Client.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/clemente/projects/Troll-Killers/build/CMakeFiles 6
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/Client.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/clemente/projects/Troll-Killers/build/CMakeFiles 0
+.PHONY : CMakeFiles/Client.dir/rule
+
+# Convenience name for target.
+Client: CMakeFiles/Client.dir/rule
+
+.PHONY : Client
+
+# clean rule for target.
+CMakeFiles/Client.dir/clean:
+	$(MAKE) -f CMakeFiles/Client.dir/build.make CMakeFiles/Client.dir/clean
+.PHONY : CMakeFiles/Client.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/Client.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
 # Target rules for target CMakeFiles/MapEditor.dir
 
 # All Build rule for target.
 CMakeFiles/MapEditor.dir/all:
 	$(MAKE) -f CMakeFiles/MapEditor.dir/build.make CMakeFiles/MapEditor.dir/depend
 	$(MAKE) -f CMakeFiles/MapEditor.dir/build.make CMakeFiles/MapEditor.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/clemente/projects/Troll-Killers/build/CMakeFiles --progress-num=1,2,3,4,5,6 "Built target MapEditor"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/clemente/projects/Troll-Killers/build/CMakeFiles --progress-num=7,8,9,10,11,12 "Built target MapEditor"
 .PHONY : CMakeFiles/MapEditor.dir/all
 
 # Include target in all.
@@ -103,7 +140,7 @@ clean: CMakeFiles/MapEditor.dir/clean
 CMakeFiles/Server.dir/all:
 	$(MAKE) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/depend
 	$(MAKE) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/clemente/projects/Troll-Killers/build/CMakeFiles --progress-num=7,8,9,10,11,12 "Built target Server"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/clemente/projects/Troll-Killers/build/CMakeFiles --progress-num=13,14,15,16,17,18 "Built target Server"
 .PHONY : CMakeFiles/Server.dir/all
 
 # Include target in all.

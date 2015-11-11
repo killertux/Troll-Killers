@@ -1,5 +1,7 @@
 #include "SCharacter.hpp"
 
+//A lot of work to do
+
 SCharacter::SCharacter(_data* data){
 
 }

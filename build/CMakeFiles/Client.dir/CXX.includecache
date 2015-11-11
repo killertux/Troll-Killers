@@ -28,21 +28,37 @@ allegro5/allegro_primitives.h
 cstring
 -
 
-/home/clemente/projects/Troll-Killers/Cursor.cpp
-Cursor.hpp
-/home/clemente/projects/Troll-Killers/Cursor.hpp
+/home/clemente/projects/Troll-Killers/Client.cpp
+Client.hpp
+/home/clemente/projects/Troll-Killers/Client.hpp
 
-/home/clemente/projects/Troll-Killers/Cursor.hpp
+/home/clemente/projects/Troll-Killers/Client.hpp
 allegro5/allegro.h
 -
 allegro5/allegro_primitives.h
 -
+CMap.hpp
+/home/clemente/projects/Troll-Killers/CMap.hpp
 Defines.hpp
 /home/clemente/projects/Troll-Killers/Defines.hpp
+Connection.hpp
+/home/clemente/projects/Troll-Killers/Connection.hpp
 Enums.hpp
 /home/clemente/projects/Troll-Killers/Enums.hpp
-_object.hpp
-/home/clemente/projects/Troll-Killers/_object.hpp
+iostream
+-
+
+/home/clemente/projects/Troll-Killers/Connection.cpp
+Connection.hpp
+/home/clemente/projects/Troll-Killers/Connection.hpp
+
+/home/clemente/projects/Troll-Killers/Connection.hpp
+enet/enet.h
+-
+iostream
+-
+string
+-
 
 /home/clemente/projects/Troll-Killers/Defines.hpp
 
@@ -64,29 +80,11 @@ string
 fstream
 -
 
-/home/clemente/projects/Troll-Killers/MapEditor.cpp
-MapEditor.hpp
-/home/clemente/projects/Troll-Killers/MapEditor.hpp
-
-/home/clemente/projects/Troll-Killers/MapEditor.hpp
-allegro5/allegro.h
--
-allegro5/allegro_primitives.h
--
-CMap.hpp
-/home/clemente/projects/Troll-Killers/CMap.hpp
-Defines.hpp
-/home/clemente/projects/Troll-Killers/Defines.hpp
-Cursor.hpp
-/home/clemente/projects/Troll-Killers/Cursor.hpp
-iostream
--
-
 /home/clemente/projects/Troll-Killers/_object.hpp
 stdint.h
 -
 
-/home/clemente/projects/Troll-Killers/editorMain.cpp
-MapEditor.hpp
-/home/clemente/projects/Troll-Killers/MapEditor.hpp
+/home/clemente/projects/Troll-Killers/mainClient.cpp
+Client.hpp
+/home/clemente/projects/Troll-Killers/Client.hpp
 

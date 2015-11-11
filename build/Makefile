@@ -56,28 +56,6 @@ CMAKE_BINARY_DIR = /home/clemente/projects/Troll-Killers/build
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target install
-install: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/usr/bin/cmake -P cmake_install.cmake
-.PHONY : install
-
-# Special rule for the target install
-install/fast: preinstall/fast
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/usr/bin/cmake -P cmake_install.cmake
-.PHONY : install/fast
-
-# Special rule for the target list_install_components
-list_install_components:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
-.PHONY : list_install_components
-
-# Special rule for the target list_install_components
-list_install_components/fast: list_install_components
-
-.PHONY : list_install_components/fast
-
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
@@ -100,6 +78,17 @@ edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
 
+# Special rule for the target install/local
+install/local: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local
+
+# Special rule for the target install/local
+install/local/fast: install/local
+
+.PHONY : install/local/fast
+
 # Special rule for the target install/strip
 install/strip: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
@@ -111,16 +100,27 @@ install/strip/fast: install/strip
 
 .PHONY : install/strip/fast
 
-# Special rule for the target install/local
-install/local: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
-.PHONY : install/local
+# Special rule for the target install
+install: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/usr/bin/cmake -P cmake_install.cmake
+.PHONY : install
 
-# Special rule for the target install/local
-install/local/fast: install/local
+# Special rule for the target install
+install/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/usr/bin/cmake -P cmake_install.cmake
+.PHONY : install/fast
 
-.PHONY : install/local/fast
+# Special rule for the target list_install_components
+list_install_components:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
+.PHONY : list_install_components
+
+# Special rule for the target list_install_components
+list_install_components/fast: list_install_components
+
+.PHONY : list_install_components/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -155,6 +155,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named Client
+
+# Build rule for target.
+Client: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 Client
+.PHONY : Client
+
+# fast build rule for target.
+Client/fast:
+	$(MAKE) -f CMakeFiles/Client.dir/build.make CMakeFiles/Client.dir/build
+.PHONY : Client/fast
+
+#=============================================================================
 # Target rules for targets named MapEditor
 
 # Build rule for target.
@@ -186,6 +199,7 @@ CMap.o: CMap.cpp.o
 
 # target to build an object file
 CMap.cpp.o:
+	$(MAKE) -f CMakeFiles/Client.dir/build.make CMakeFiles/Client.dir/CMap.cpp.o
 	$(MAKE) -f CMakeFiles/MapEditor.dir/build.make CMakeFiles/MapEditor.dir/CMap.cpp.o
 .PHONY : CMap.cpp.o
 
@@ -195,6 +209,7 @@ CMap.i: CMap.cpp.i
 
 # target to preprocess a source file
 CMap.cpp.i:
+	$(MAKE) -f CMakeFiles/Client.dir/build.make CMakeFiles/Client.dir/CMap.cpp.i
 	$(MAKE) -f CMakeFiles/MapEditor.dir/build.make CMakeFiles/MapEditor.dir/CMap.cpp.i
 .PHONY : CMap.cpp.i
 
@@ -204,8 +219,36 @@ CMap.s: CMap.cpp.s
 
 # target to generate assembly for a file
 CMap.cpp.s:
+	$(MAKE) -f CMakeFiles/Client.dir/build.make CMakeFiles/Client.dir/CMap.cpp.s
 	$(MAKE) -f CMakeFiles/MapEditor.dir/build.make CMakeFiles/MapEditor.dir/CMap.cpp.s
 .PHONY : CMap.cpp.s
+
+Client.o: Client.cpp.o
+
+.PHONY : Client.o
+
+# target to build an object file
+Client.cpp.o:
+	$(MAKE) -f CMakeFiles/Client.dir/build.make CMakeFiles/Client.dir/Client.cpp.o
+.PHONY : Client.cpp.o
+
+Client.i: Client.cpp.i
+
+.PHONY : Client.i
+
+# target to preprocess a source file
+Client.cpp.i:
+	$(MAKE) -f CMakeFiles/Client.dir/build.make CMakeFiles/Client.dir/Client.cpp.i
+.PHONY : Client.cpp.i
+
+Client.s: Client.cpp.s
+
+.PHONY : Client.s
+
+# target to generate assembly for a file
+Client.cpp.s:
+	$(MAKE) -f CMakeFiles/Client.dir/build.make CMakeFiles/Client.dir/Client.cpp.s
+.PHONY : Client.cpp.s
 
 Connection.o: Connection.cpp.o
 
@@ -213,6 +256,7 @@ Connection.o: Connection.cpp.o
 
 # target to build an object file
 Connection.cpp.o:
+	$(MAKE) -f CMakeFiles/Client.dir/build.make CMakeFiles/Client.dir/Connection.cpp.o
 	$(MAKE) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/Connection.cpp.o
 .PHONY : Connection.cpp.o
 
@@ -222,6 +266,7 @@ Connection.i: Connection.cpp.i
 
 # target to preprocess a source file
 Connection.cpp.i:
+	$(MAKE) -f CMakeFiles/Client.dir/build.make CMakeFiles/Client.dir/Connection.cpp.i
 	$(MAKE) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/Connection.cpp.i
 .PHONY : Connection.cpp.i
 
@@ -231,6 +276,7 @@ Connection.s: Connection.cpp.s
 
 # target to generate assembly for a file
 Connection.cpp.s:
+	$(MAKE) -f CMakeFiles/Client.dir/build.make CMakeFiles/Client.dir/Connection.cpp.s
 	$(MAKE) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/Connection.cpp.s
 .PHONY : Connection.cpp.s
 
@@ -267,6 +313,7 @@ Map.o: Map.cpp.o
 
 # target to build an object file
 Map.cpp.o:
+	$(MAKE) -f CMakeFiles/Client.dir/build.make CMakeFiles/Client.dir/Map.cpp.o
 	$(MAKE) -f CMakeFiles/MapEditor.dir/build.make CMakeFiles/MapEditor.dir/Map.cpp.o
 	$(MAKE) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/Map.cpp.o
 .PHONY : Map.cpp.o
@@ -277,6 +324,7 @@ Map.i: Map.cpp.i
 
 # target to preprocess a source file
 Map.cpp.i:
+	$(MAKE) -f CMakeFiles/Client.dir/build.make CMakeFiles/Client.dir/Map.cpp.i
 	$(MAKE) -f CMakeFiles/MapEditor.dir/build.make CMakeFiles/MapEditor.dir/Map.cpp.i
 	$(MAKE) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/Map.cpp.i
 .PHONY : Map.cpp.i
@@ -287,6 +335,7 @@ Map.s: Map.cpp.s
 
 # target to generate assembly for a file
 Map.cpp.s:
+	$(MAKE) -f CMakeFiles/Client.dir/build.make CMakeFiles/Client.dir/Map.cpp.s
 	$(MAKE) -f CMakeFiles/MapEditor.dir/build.make CMakeFiles/MapEditor.dir/Map.cpp.s
 	$(MAKE) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/Map.cpp.s
 .PHONY : Map.cpp.s
@@ -399,6 +448,33 @@ editorMain.cpp.s:
 	$(MAKE) -f CMakeFiles/MapEditor.dir/build.make CMakeFiles/MapEditor.dir/editorMain.cpp.s
 .PHONY : editorMain.cpp.s
 
+mainClient.o: mainClient.cpp.o
+
+.PHONY : mainClient.o
+
+# target to build an object file
+mainClient.cpp.o:
+	$(MAKE) -f CMakeFiles/Client.dir/build.make CMakeFiles/Client.dir/mainClient.cpp.o
+.PHONY : mainClient.cpp.o
+
+mainClient.i: mainClient.cpp.i
+
+.PHONY : mainClient.i
+
+# target to preprocess a source file
+mainClient.cpp.i:
+	$(MAKE) -f CMakeFiles/Client.dir/build.make CMakeFiles/Client.dir/mainClient.cpp.i
+.PHONY : mainClient.cpp.i
+
+mainClient.s: mainClient.cpp.s
+
+.PHONY : mainClient.s
+
+# target to generate assembly for a file
+mainClient.cpp.s:
+	$(MAKE) -f CMakeFiles/Client.dir/build.make CMakeFiles/Client.dir/mainClient.cpp.s
+.PHONY : mainClient.cpp.s
+
 mainServer.o: mainServer.cpp.o
 
 .PHONY : mainServer.o
@@ -432,17 +508,21 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... install"
-	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... MapEditor"
-	@echo "... Server"
-	@echo "... install/strip"
 	@echo "... install/local"
+	@echo "... install/strip"
+	@echo "... Server"
+	@echo "... install"
+	@echo "... list_install_components"
+	@echo "... Client"
 	@echo "... CMap.o"
 	@echo "... CMap.i"
 	@echo "... CMap.s"
+	@echo "... Client.o"
+	@echo "... Client.i"
+	@echo "... Client.s"
 	@echo "... Connection.o"
 	@echo "... Connection.i"
 	@echo "... Connection.s"
@@ -464,6 +544,9 @@ help:
 	@echo "... editorMain.o"
 	@echo "... editorMain.i"
 	@echo "... editorMain.s"
+	@echo "... mainClient.o"
+	@echo "... mainClient.i"
+	@echo "... mainClient.s"
 	@echo "... mainServer.o"
 	@echo "... mainServer.i"
 	@echo "... mainServer.s"

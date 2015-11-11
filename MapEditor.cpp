@@ -29,6 +29,8 @@ MapEditor::MapEditor() {
 	map = new CMap("MapaTeste",MAX_OBJECTS,LENGTH*GRID,WIDTH*GRID);
 	cursor = new Cursor(GRID*5,GRID*5,RES_X,RES_Y,5);
 	
+	map->setDrawCircles(true);
+	
 	for(int i=0;i<ALLEGRO_KEY_MAX;i++)
 		storeKeys[i]=false;
 	mapX=mapY=0;

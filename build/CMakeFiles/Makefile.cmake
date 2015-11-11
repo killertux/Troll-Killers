@@ -42,4 +42,5 @@ set(CMAKE_MAKEFILE_PRODUCTS
 set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/MapEditor.dir/DependInfo.cmake"
   "CMakeFiles/Server.dir/DependInfo.cmake"
+  "CMakeFiles/Client.dir/DependInfo.cmake"
   )

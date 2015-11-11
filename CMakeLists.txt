@@ -7,6 +7,8 @@ target_link_libraries(MapEditor -lallegro -lallegro_primitives)
 
 install(TARGETS MapEditor RUNTIME DESTINATION bin)
 
+
+
 project(Server)
 
 add_executable(Server mainServer.cpp Map.cpp Server.cpp Connection.cpp SCharacter.cpp)
@@ -16,3 +18,13 @@ target_link_libraries(Server -lenet)
 SET_TARGET_PROPERTIES(Server PROPERTIES COMPILE_FLAGS "-std=c++11")
 
 install(TARGETS Server RUNTIME DESTINATION bin)
+
+
+
+project(Client)
+
+add_executable(Client mainClient.cpp CMap.cpp Map.cpp Client.cpp Connection.cpp)
+
+target_link_libraries(Client -lallegro -lallegro_primitives -lenet)
+
+install(TARGETS Client RUNTIME DESTINATION bin)

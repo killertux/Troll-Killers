@@ -6,9 +6,15 @@ CMap::CMap(std::string name, int max_objects, int length, int width){
 	this->length=length;
 	this->width=width;
 	objects=new _object[max_objects];
-	
+	drawCircles=false;
 	n_object=0;
 }
+
+CMap::CMap(){
+	drawCircles=false;
+	n_object=0;
+}
+
 
 CMap::~CMap(){
 	delete [] objects;
@@ -34,7 +40,7 @@ void CMap::draw_map(int x,int y){
 		if(objects[i].type==RECTANGLE)
 			al_draw_filled_rectangle(objects[i].x-x,objects[i].y-y,objects[i].x-x+objects[i].length,
 					objects[i].y-y+objects[i].width,al_map_rgb(objects[i].r,objects[i].g,objects[i].b));
-		else if (objects[i].type==CIRCLE)
+		else if (objects[i].type==CIRCLE && drawCircles==true)
 			al_draw_filled_circle(objects[i].x-x,objects[i].y-y,objects[i].radius,al_map_rgb(objects[i].r,objects[i].g,objects[i].b));
 	}
 }
