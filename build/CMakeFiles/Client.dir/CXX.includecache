@@ -6,6 +6,24 @@
 
 #IncludeRegexTransform: 
 
+/home/clemente/projects/Troll-Killers/CCharacter.cpp
+CCharacter.hpp
+/home/clemente/projects/Troll-Killers/CCharacter.hpp
+
+/home/clemente/projects/Troll-Killers/CCharacter.hpp
+IGObject.hpp
+/home/clemente/projects/Troll-Killers/IGObject.hpp
+Enums.hpp
+/home/clemente/projects/Troll-Killers/Enums.hpp
+_object.hpp
+/home/clemente/projects/Troll-Killers/_object.hpp
+_data.hpp
+/home/clemente/projects/Troll-Killers/_data.hpp
+allegro5/allegro.h
+-
+allegro5/allegro_primitives.h
+-
+
 /home/clemente/projects/Troll-Killers/CMap.cpp
 CMap.hpp
 /home/clemente/projects/Troll-Killers/CMap.hpp
@@ -45,6 +63,8 @@ Connection.hpp
 /home/clemente/projects/Troll-Killers/Connection.hpp
 Enums.hpp
 /home/clemente/projects/Troll-Killers/Enums.hpp
+CCharacter.hpp
+/home/clemente/projects/Troll-Killers/CCharacter.hpp
 iostream
 -
 
@@ -64,6 +84,12 @@ string
 
 /home/clemente/projects/Troll-Killers/Enums.hpp
 
+/home/clemente/projects/Troll-Killers/IGObject.hpp
+Enums.hpp
+/home/clemente/projects/Troll-Killers/Enums.hpp
+_data.hpp
+/home/clemente/projects/Troll-Killers/_data.hpp
+
 /home/clemente/projects/Troll-Killers/Map.cpp
 Map.hpp
 /home/clemente/projects/Troll-Killers/Map.hpp
@@ -77,6 +103,10 @@ string
 -
 fstream
 -
+
+/home/clemente/projects/Troll-Killers/_data.hpp
+stdint.h
+/home/clemente/projects/Troll-Killers/stdint.h
 
 /home/clemente/projects/Troll-Killers/_object.hpp
 stdint.h

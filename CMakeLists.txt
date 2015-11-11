@@ -23,7 +23,7 @@ install(TARGETS Server RUNTIME DESTINATION bin)
 
 project(Client)
 
-add_executable(Client mainClient.cpp CMap.cpp Map.cpp Client.cpp Connection.cpp)
+add_executable(Client mainClient.cpp CMap.cpp Map.cpp Client.cpp Connection.cpp CCharacter.cpp)
 
 target_link_libraries(Client -lallegro -lallegro_primitives -lenet)
 

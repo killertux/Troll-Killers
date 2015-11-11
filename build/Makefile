@@ -193,6 +193,33 @@ Server/fast:
 	$(MAKE) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/build
 .PHONY : Server/fast
 
+CCharacter.o: CCharacter.cpp.o
+
+.PHONY : CCharacter.o
+
+# target to build an object file
+CCharacter.cpp.o:
+	$(MAKE) -f CMakeFiles/Client.dir/build.make CMakeFiles/Client.dir/CCharacter.cpp.o
+.PHONY : CCharacter.cpp.o
+
+CCharacter.i: CCharacter.cpp.i
+
+.PHONY : CCharacter.i
+
+# target to preprocess a source file
+CCharacter.cpp.i:
+	$(MAKE) -f CMakeFiles/Client.dir/build.make CMakeFiles/Client.dir/CCharacter.cpp.i
+.PHONY : CCharacter.cpp.i
+
+CCharacter.s: CCharacter.cpp.s
+
+.PHONY : CCharacter.s
+
+# target to generate assembly for a file
+CCharacter.cpp.s:
+	$(MAKE) -f CMakeFiles/Client.dir/build.make CMakeFiles/Client.dir/CCharacter.cpp.s
+.PHONY : CCharacter.cpp.s
+
 CMap.o: CMap.cpp.o
 
 .PHONY : CMap.o
@@ -517,6 +544,9 @@ help:
 	@echo "... install"
 	@echo "... list_install_components"
 	@echo "... Client"
+	@echo "... CCharacter.o"
+	@echo "... CCharacter.i"
+	@echo "... CCharacter.s"
 	@echo "... CMap.o"
 	@echo "... CMap.i"
 	@echo "... CMap.s"

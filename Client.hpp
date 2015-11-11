@@ -7,6 +7,7 @@
 #include "Defines.hpp"
 #include "Connection.hpp"
 #include "Enums.hpp"
+#include "CCharacter.hpp"
 
 #include <iostream>
 
@@ -22,6 +23,7 @@ private:
 	
 	Connection conn;
 	CMap map;
+	CCharacter **players;
 	
 	bool storeKeys[ALLEGRO_KEY_MAX];
 	int mapX,mapY;
