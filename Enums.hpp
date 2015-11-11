@@ -12,12 +12,17 @@ enum Direction {
 	DOWN,
 	LEFT,
 	RIGHT,
-	STOPED
+	STOPED,
+	UL,		//Up and left
+	UR,		//Up and right
+	DL,		//Down and left
+	DR		//Down and right
 };
 
 enum Team{
 	RED,
-	BLUE
+	BLUE,
+	NONE
 };
 
 #endif
