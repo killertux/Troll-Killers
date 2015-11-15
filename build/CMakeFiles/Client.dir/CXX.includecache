@@ -65,6 +65,10 @@ Enums.hpp
 /home/clemente/projects/Troll-Killers/Enums.hpp
 CCharacter.hpp
 /home/clemente/projects/Troll-Killers/CCharacter.hpp
+cstdio
+-
+cstring
+-
 iostream
 -
 
@@ -99,6 +103,14 @@ Enums.hpp
 /home/clemente/projects/Troll-Killers/Enums.hpp
 _object.hpp
 /home/clemente/projects/Troll-Killers/_object.hpp
+_data.hpp
+/home/clemente/projects/Troll-Killers/_data.hpp
+cstdio
+/home/clemente/projects/Troll-Killers/cstdio
+sstream
+-
+Defines.hpp
+/home/clemente/projects/Troll-Killers/Defines.hpp
 string
 -
 fstream
@@ -107,6 +119,8 @@ fstream
 /home/clemente/projects/Troll-Killers/_data.hpp
 stdint.h
 /home/clemente/projects/Troll-Killers/stdint.h
+cstring
+/home/clemente/projects/Troll-Killers/cstring
 
 /home/clemente/projects/Troll-Killers/_object.hpp
 stdint.h

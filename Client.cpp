@@ -20,7 +20,7 @@ Client::Client(){
 	al_hide_mouse_cursor(display);
 	
 	if(map.load_map("../mapa.data"))
-
+	maxClients=0;
 	
 	for(int i=0;i<ALLEGRO_KEY_MAX;i++)
 		storeKeys[i]=false;
@@ -66,3 +66,23 @@ void Client::main_loop(){
 	}
 }
 
+bool Client::connect(){
+	char stdBuffer[255];
+	if(!conn.create_client("127.0.0.1",PORT))
+		return false;
+	while(conn.event_service(10000)!=0){
+		if(conn.event_type_receive()){
+		//	std::memset(&dataBuffer,0,sizeof(_data));
+			recieverBuffer=(_data*)conn.getPacketData();
+			if(recieverBuffer->type==PROTOCOL_N_PEERS){
+				maxClients=recieverBuffer->buffer[0];
+				myId=recieverBuffer->buffer[1];
+				players=new CCharacter*[maxClients];
+				//connected. Now I want the map;
+				
+				return true;
+			}
+		}
+	}
+	return false;
+}

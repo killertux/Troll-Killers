@@ -2,6 +2,10 @@
 
 int main(){
 	Client client;
-	client.main_loop();
+	if(!client.connect()){
+		std::cout << "Deu merda!\n";
+		
+	} else
+		client.main_loop();
 	return 0;
 }

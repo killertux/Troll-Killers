@@ -6,6 +6,7 @@ Map::Map(){
 }
 
 Map::~Map(){
+	delete buffer;
 	delete [] objects;
 }
 
@@ -63,3 +64,36 @@ bool Map::load_map(std::string pathname)
 	return 1;
 }
 
+_data *Map::send_serial(){
+	buffer=new _data;
+	std::ostringstream bufferStream;
+	
+	bufferStream.write(name.c_str(),50);
+	bufferStream.write((char*)&length,2);
+	bufferStream.write((char*)&width,2);
+	bufferStream.write((char*)&max_objects,2);
+	bufferStream.write((char*)&n_object,2);
+	for(int i=0;i<n_object;i++){
+		bufferStream.write((char*)&objects[i].type,1);
+		bufferStream.write((char*)&objects[i].x,2);
+		bufferStream.write((char*)&objects[i].y,2);
+		bufferStream.write((char*)&objects[i].radius,2);
+		bufferStream.write((char*)&objects[i].length,2);
+		bufferStream.write((char*)&objects[i].width,2);
+		bufferStream.write((char*)&objects[i].r,1);
+		bufferStream.write((char*)&objects[i].g,1);	
+		bufferStream.write((char*)&objects[i].b,1);
+	}
+	std::string tmp=bufferStream.str();
+	memcpy(buffer->buffer,tmp.c_str(),tmp.size());
+	buffer->type=PROTOCOL_MAP_FILE;
+	
+	return buffer;
+}
+
+void Map::get_serial(_data &buffer){
+	std::ostringstream bufferStream;
+	std::string tmp;
+	memcpy(tmp.data(),buffer.buffer,sizeof(buffer));
+
+}

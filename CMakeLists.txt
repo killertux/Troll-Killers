@@ -13,7 +13,7 @@ project(Server)
 
 add_executable(Server mainServer.cpp Map.cpp Server.cpp Connection.cpp SCharacter.cpp)
 
-target_link_libraries(Server -lenet)
+target_link_libraries(Server -lenet  -pthread)
 
 SET_TARGET_PROPERTIES(Server PROPERTIES COMPILE_FLAGS "-std=c++11")
 

@@ -4,9 +4,11 @@
 CMakeFiles/Server.dir/Connection.cpp.o: ../Connection.cpp
 CMakeFiles/Server.dir/Connection.cpp.o: ../Connection.hpp
 
+CMakeFiles/Server.dir/Map.cpp.o: ../Defines.hpp
 CMakeFiles/Server.dir/Map.cpp.o: ../Enums.hpp
 CMakeFiles/Server.dir/Map.cpp.o: ../Map.cpp
 CMakeFiles/Server.dir/Map.cpp.o: ../Map.hpp
+CMakeFiles/Server.dir/Map.cpp.o: ../_data.hpp
 CMakeFiles/Server.dir/Map.cpp.o: ../_object.hpp
 
 CMakeFiles/Server.dir/SCharacter.cpp.o: ../Enums.hpp
@@ -17,6 +19,7 @@ CMakeFiles/Server.dir/SCharacter.cpp.o: ../_data.hpp
 CMakeFiles/Server.dir/SCharacter.cpp.o: ../_object.hpp
 
 CMakeFiles/Server.dir/Server.cpp.o: ../Connection.hpp
+CMakeFiles/Server.dir/Server.cpp.o: ../Defines.hpp
 CMakeFiles/Server.dir/Server.cpp.o: ../Enums.hpp
 CMakeFiles/Server.dir/Server.cpp.o: ../IGObject.hpp
 CMakeFiles/Server.dir/Server.cpp.o: ../Map.hpp
@@ -27,6 +30,7 @@ CMakeFiles/Server.dir/Server.cpp.o: ../_data.hpp
 CMakeFiles/Server.dir/Server.cpp.o: ../_object.hpp
 
 CMakeFiles/Server.dir/mainServer.cpp.o: ../Connection.hpp
+CMakeFiles/Server.dir/mainServer.cpp.o: ../Defines.hpp
 CMakeFiles/Server.dir/mainServer.cpp.o: ../Enums.hpp
 CMakeFiles/Server.dir/mainServer.cpp.o: ../IGObject.hpp
 CMakeFiles/Server.dir/mainServer.cpp.o: ../Map.hpp

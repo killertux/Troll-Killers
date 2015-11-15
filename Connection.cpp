@@ -31,12 +31,13 @@ void Connection::create_server(int port,int num_peers){
 	if (conn == NULL)
 		perror("Enet creating server error!");
 	client=false;
+	connS=conn;
 }
 
 void Connection::send_packet_reliable(void *data,int ID){
 	ENetPacket *packet = enet_packet_create (data, sizeof(data), ENET_PACKET_FLAG_RELIABLE);
 	if(!client)
-		enet_peer_send (&conn->peers[ID], 0, packet);
+		enet_peer_send (&connS->peers[ID], 0, packet);
 	else
 		enet_peer_send(peer,0,packet);
 }
@@ -44,7 +45,7 @@ void Connection::send_packet_reliable(void *data,int ID){
 void Connection::send_packet_unreliable(void *data,int ID){
 	ENetPacket *packet = enet_packet_create (data, sizeof(data), ENET_PACKET_FLAG_UNRELIABLE_FRAGMENT);
 	if(!client)
-		enet_peer_send (&conn->peers[ID], 0, packet);
+		enet_peer_send (&connS->peers[ID], 0, packet);
 	else
 		enet_peer_send(peer,0,packet);
 }
@@ -52,13 +53,13 @@ void Connection::send_packet_unreliable(void *data,int ID){
 void Connection::broadcast_packet(void *data){
 	if(!client){
 		ENetPacket *packet = enet_packet_create (data, sizeof(data), ENET_PACKET_FLAG_RELIABLE);
-		enet_host_broadcast (conn, 0, packet);
+		enet_host_broadcast (connS, 0, packet);
 	} else
 		std::cout << "Warn! Client can't broadcast!\n";
 }
 
 void Connection::send_flush(){
-    enet_host_flush(conn);
+    enet_host_flush(connS);
 }
 
 int Connection::event_service(int timer){
@@ -123,4 +124,5 @@ bool Connection::create_client(std::string ip,int port){
 		return true;
 	} else
 		return false;
+	connS=conn;
 }

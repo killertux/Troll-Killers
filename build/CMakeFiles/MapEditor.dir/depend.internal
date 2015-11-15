@@ -4,8 +4,10 @@
 CMakeFiles/MapEditor.dir/CMap.cpp.o
  /home/clemente/projects/Troll-Killers/CMap.cpp
  /home/clemente/projects/Troll-Killers/CMap.hpp
+ /home/clemente/projects/Troll-Killers/Defines.hpp
  /home/clemente/projects/Troll-Killers/Enums.hpp
  /home/clemente/projects/Troll-Killers/Map.hpp
+ /home/clemente/projects/Troll-Killers/_data.hpp
  /home/clemente/projects/Troll-Killers/_object.hpp
 CMakeFiles/MapEditor.dir/Cursor.cpp.o
  /home/clemente/projects/Troll-Killers/Cursor.cpp
@@ -14,9 +16,11 @@ CMakeFiles/MapEditor.dir/Cursor.cpp.o
  /home/clemente/projects/Troll-Killers/Enums.hpp
  /home/clemente/projects/Troll-Killers/_object.hpp
 CMakeFiles/MapEditor.dir/Map.cpp.o
+ /home/clemente/projects/Troll-Killers/Defines.hpp
  /home/clemente/projects/Troll-Killers/Enums.hpp
  /home/clemente/projects/Troll-Killers/Map.cpp
  /home/clemente/projects/Troll-Killers/Map.hpp
+ /home/clemente/projects/Troll-Killers/_data.hpp
  /home/clemente/projects/Troll-Killers/_object.hpp
 CMakeFiles/MapEditor.dir/MapEditor.cpp.o
  /home/clemente/projects/Troll-Killers/CMap.hpp
@@ -26,6 +30,7 @@ CMakeFiles/MapEditor.dir/MapEditor.cpp.o
  /home/clemente/projects/Troll-Killers/Map.hpp
  /home/clemente/projects/Troll-Killers/MapEditor.cpp
  /home/clemente/projects/Troll-Killers/MapEditor.hpp
+ /home/clemente/projects/Troll-Killers/_data.hpp
  /home/clemente/projects/Troll-Killers/_object.hpp
 CMakeFiles/MapEditor.dir/editorMain.cpp.o
  /home/clemente/projects/Troll-Killers/CMap.hpp
@@ -34,5 +39,6 @@ CMakeFiles/MapEditor.dir/editorMain.cpp.o
  /home/clemente/projects/Troll-Killers/Enums.hpp
  /home/clemente/projects/Troll-Killers/Map.hpp
  /home/clemente/projects/Troll-Killers/MapEditor.hpp
+ /home/clemente/projects/Troll-Killers/_data.hpp
  /home/clemente/projects/Troll-Killers/_object.hpp
  /home/clemente/projects/Troll-Killers/editorMain.cpp

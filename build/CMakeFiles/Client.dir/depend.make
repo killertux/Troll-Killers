@@ -10,8 +10,10 @@ CMakeFiles/Client.dir/CCharacter.cpp.o: ../_object.hpp
 
 CMakeFiles/Client.dir/CMap.cpp.o: ../CMap.cpp
 CMakeFiles/Client.dir/CMap.cpp.o: ../CMap.hpp
+CMakeFiles/Client.dir/CMap.cpp.o: ../Defines.hpp
 CMakeFiles/Client.dir/CMap.cpp.o: ../Enums.hpp
 CMakeFiles/Client.dir/CMap.cpp.o: ../Map.hpp
+CMakeFiles/Client.dir/CMap.cpp.o: ../_data.hpp
 CMakeFiles/Client.dir/CMap.cpp.o: ../_object.hpp
 
 CMakeFiles/Client.dir/Client.cpp.o: ../CCharacter.hpp
@@ -29,9 +31,11 @@ CMakeFiles/Client.dir/Client.cpp.o: ../_object.hpp
 CMakeFiles/Client.dir/Connection.cpp.o: ../Connection.cpp
 CMakeFiles/Client.dir/Connection.cpp.o: ../Connection.hpp
 
+CMakeFiles/Client.dir/Map.cpp.o: ../Defines.hpp
 CMakeFiles/Client.dir/Map.cpp.o: ../Enums.hpp
 CMakeFiles/Client.dir/Map.cpp.o: ../Map.cpp
 CMakeFiles/Client.dir/Map.cpp.o: ../Map.hpp
+CMakeFiles/Client.dir/Map.cpp.o: ../_data.hpp
 CMakeFiles/Client.dir/Map.cpp.o: ../_object.hpp
 
 CMakeFiles/Client.dir/mainClient.cpp.o: ../CCharacter.hpp

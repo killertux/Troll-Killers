@@ -10,6 +10,10 @@
 
 #include "Enums.hpp"
 #include "_object.hpp"
+#include "_data.hpp"
+#include "cstdio"
+#include <sstream>
+#include "Defines.hpp"
 
 #include <string>
 #include <fstream>
@@ -18,6 +22,7 @@ class Map{
 protected:
 	std::string name;
 	_object *objects;
+	_data *buffer;
 	int length, width;
 	int max_objects;
 	int n_object;
@@ -25,6 +30,11 @@ public:
 	Map();
 	virtual bool save_map(std::string pathname);
 	virtual bool load_map(std::string pathname);
+	
+	virtual _data* send_serial();
+	virtual void get_serial(_data &buffer);
+	
+	std::string getName(){return name;}
 	~Map();
 };
 

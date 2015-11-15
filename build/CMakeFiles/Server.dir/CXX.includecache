@@ -18,6 +18,8 @@ iostream
 string
 -
 
+/home/clemente/projects/Troll-Killers/Defines.hpp
+
 /home/clemente/projects/Troll-Killers/Enums.hpp
 
 /home/clemente/projects/Troll-Killers/IGObject.hpp
@@ -35,6 +37,14 @@ Enums.hpp
 /home/clemente/projects/Troll-Killers/Enums.hpp
 _object.hpp
 /home/clemente/projects/Troll-Killers/_object.hpp
+_data.hpp
+/home/clemente/projects/Troll-Killers/_data.hpp
+cstdio
+/home/clemente/projects/Troll-Killers/cstdio
+sstream
+-
+Defines.hpp
+/home/clemente/projects/Troll-Killers/Defines.hpp
 string
 -
 fstream
@@ -71,10 +81,18 @@ IGObject.hpp
 /home/clemente/projects/Troll-Killers/IGObject.hpp
 SCharacter.hpp
 /home/clemente/projects/Troll-Killers/SCharacter.hpp
+cstring
+-
+Defines.hpp
+/home/clemente/projects/Troll-Killers/Defines.hpp
+string
+-
 
 /home/clemente/projects/Troll-Killers/_data.hpp
 stdint.h
 /home/clemente/projects/Troll-Killers/stdint.h
+cstring
+/home/clemente/projects/Troll-Killers/cstring
 
 /home/clemente/projects/Troll-Killers/_object.hpp
 stdint.h

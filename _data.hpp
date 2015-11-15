@@ -4,11 +4,12 @@
 #define _DATA_HPP
 
 #include "stdint.h"
-#define BUFFER_SIZE 1024
+#include "cstring"
+#define BUFFER_SIZE 2048
 
 struct _data{
 	int8_t type;
-	char buffer[BUFFER_SIZE];
+	unsigned char buffer[BUFFER_SIZE];
 };
 
 #endif

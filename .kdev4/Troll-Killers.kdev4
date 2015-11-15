@@ -37,7 +37,7 @@ Executable=file:///home/clemente/projects/Troll-Killers/build/MapEditor
 External Terminal=xterm -hold -e %exe
 Project Target=Troll-Killers,MapEditor
 Use External Terminal=true
-Working Directory=
+Working Directory=file:///home/clemente/projects/Troll-Killers
 isExecutable=true
 
 [Launch][Launch Configuration 1]
@@ -55,7 +55,7 @@ Executable=file:///home/clemente/projects/Troll-Killers/build/Server
 External Terminal=xterm -hold -e %exe
 Project Target=Troll-Killers,MapEditor
 Use External Terminal=true
-Working Directory=
+Working Directory=file:///home/clemente/projects/Troll-Killers
 isExecutable=true
 
 [Launch][Launch Configuration 2]
@@ -73,7 +73,7 @@ Executable=file:///home/clemente/projects/Troll-Killers/build/Client
 External Terminal=xterm -hold -e %exe
 Project Target=Troll-Killers,MapEditor
 Use External Terminal=true
-Working Directory=
+Working Directory=file:///home/clemente/projects/Troll-Killers
 isExecutable=true
 
 [Project]

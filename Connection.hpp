@@ -17,7 +17,7 @@
 class Connection{
 	private:
 	ENetAddress address;
-	ENetHost *conn;
+	ENetHost *conn,*connS;
 	ENetEvent event;
 	bool client; //True if a client was made
 

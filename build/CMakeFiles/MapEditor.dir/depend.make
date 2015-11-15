@@ -3,8 +3,10 @@
 
 CMakeFiles/MapEditor.dir/CMap.cpp.o: ../CMap.cpp
 CMakeFiles/MapEditor.dir/CMap.cpp.o: ../CMap.hpp
+CMakeFiles/MapEditor.dir/CMap.cpp.o: ../Defines.hpp
 CMakeFiles/MapEditor.dir/CMap.cpp.o: ../Enums.hpp
 CMakeFiles/MapEditor.dir/CMap.cpp.o: ../Map.hpp
+CMakeFiles/MapEditor.dir/CMap.cpp.o: ../_data.hpp
 CMakeFiles/MapEditor.dir/CMap.cpp.o: ../_object.hpp
 
 CMakeFiles/MapEditor.dir/Cursor.cpp.o: ../Cursor.cpp
@@ -13,9 +15,11 @@ CMakeFiles/MapEditor.dir/Cursor.cpp.o: ../Defines.hpp
 CMakeFiles/MapEditor.dir/Cursor.cpp.o: ../Enums.hpp
 CMakeFiles/MapEditor.dir/Cursor.cpp.o: ../_object.hpp
 
+CMakeFiles/MapEditor.dir/Map.cpp.o: ../Defines.hpp
 CMakeFiles/MapEditor.dir/Map.cpp.o: ../Enums.hpp
 CMakeFiles/MapEditor.dir/Map.cpp.o: ../Map.cpp
 CMakeFiles/MapEditor.dir/Map.cpp.o: ../Map.hpp
+CMakeFiles/MapEditor.dir/Map.cpp.o: ../_data.hpp
 CMakeFiles/MapEditor.dir/Map.cpp.o: ../_object.hpp
 
 CMakeFiles/MapEditor.dir/MapEditor.cpp.o: ../CMap.hpp
@@ -25,6 +29,7 @@ CMakeFiles/MapEditor.dir/MapEditor.cpp.o: ../Enums.hpp
 CMakeFiles/MapEditor.dir/MapEditor.cpp.o: ../Map.hpp
 CMakeFiles/MapEditor.dir/MapEditor.cpp.o: ../MapEditor.cpp
 CMakeFiles/MapEditor.dir/MapEditor.cpp.o: ../MapEditor.hpp
+CMakeFiles/MapEditor.dir/MapEditor.cpp.o: ../_data.hpp
 CMakeFiles/MapEditor.dir/MapEditor.cpp.o: ../_object.hpp
 
 CMakeFiles/MapEditor.dir/editorMain.cpp.o: ../CMap.hpp
@@ -33,6 +38,7 @@ CMakeFiles/MapEditor.dir/editorMain.cpp.o: ../Defines.hpp
 CMakeFiles/MapEditor.dir/editorMain.cpp.o: ../Enums.hpp
 CMakeFiles/MapEditor.dir/editorMain.cpp.o: ../Map.hpp
 CMakeFiles/MapEditor.dir/editorMain.cpp.o: ../MapEditor.hpp
+CMakeFiles/MapEditor.dir/editorMain.cpp.o: ../_data.hpp
 CMakeFiles/MapEditor.dir/editorMain.cpp.o: ../_object.hpp
 CMakeFiles/MapEditor.dir/editorMain.cpp.o: ../editorMain.cpp
 
