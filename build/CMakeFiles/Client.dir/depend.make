@@ -31,6 +31,9 @@ CMakeFiles/Client.dir/Client.cpp.o: ../_object.hpp
 CMakeFiles/Client.dir/Connection.cpp.o: ../Connection.cpp
 CMakeFiles/Client.dir/Connection.cpp.o: ../Connection.hpp
 
+CMakeFiles/Client.dir/Data.cpp.o: ../Data.cpp
+CMakeFiles/Client.dir/Data.cpp.o: ../_data.hpp
+
 CMakeFiles/Client.dir/Map.cpp.o: ../Defines.hpp
 CMakeFiles/Client.dir/Map.cpp.o: ../Enums.hpp
 CMakeFiles/Client.dir/Map.cpp.o: ../Map.cpp

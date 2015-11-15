@@ -334,6 +334,39 @@ Cursor.cpp.s:
 	$(MAKE) -f CMakeFiles/MapEditor.dir/build.make CMakeFiles/MapEditor.dir/Cursor.cpp.s
 .PHONY : Cursor.cpp.s
 
+Data.o: Data.cpp.o
+
+.PHONY : Data.o
+
+# target to build an object file
+Data.cpp.o:
+	$(MAKE) -f CMakeFiles/Client.dir/build.make CMakeFiles/Client.dir/Data.cpp.o
+	$(MAKE) -f CMakeFiles/MapEditor.dir/build.make CMakeFiles/MapEditor.dir/Data.cpp.o
+	$(MAKE) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/Data.cpp.o
+.PHONY : Data.cpp.o
+
+Data.i: Data.cpp.i
+
+.PHONY : Data.i
+
+# target to preprocess a source file
+Data.cpp.i:
+	$(MAKE) -f CMakeFiles/Client.dir/build.make CMakeFiles/Client.dir/Data.cpp.i
+	$(MAKE) -f CMakeFiles/MapEditor.dir/build.make CMakeFiles/MapEditor.dir/Data.cpp.i
+	$(MAKE) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/Data.cpp.i
+.PHONY : Data.cpp.i
+
+Data.s: Data.cpp.s
+
+.PHONY : Data.s
+
+# target to generate assembly for a file
+Data.cpp.s:
+	$(MAKE) -f CMakeFiles/Client.dir/build.make CMakeFiles/Client.dir/Data.cpp.s
+	$(MAKE) -f CMakeFiles/MapEditor.dir/build.make CMakeFiles/MapEditor.dir/Data.cpp.s
+	$(MAKE) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/Data.cpp.s
+.PHONY : Data.cpp.s
+
 Map.o: Map.cpp.o
 
 .PHONY : Map.o
@@ -559,6 +592,9 @@ help:
 	@echo "... Cursor.o"
 	@echo "... Cursor.i"
 	@echo "... Cursor.s"
+	@echo "... Data.o"
+	@echo "... Data.i"
+	@echo "... Data.s"
 	@echo "... Map.o"
 	@echo "... Map.i"
 	@echo "... Map.s"

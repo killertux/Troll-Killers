@@ -15,6 +15,9 @@ CMakeFiles/MapEditor.dir/Cursor.cpp.o: ../Defines.hpp
 CMakeFiles/MapEditor.dir/Cursor.cpp.o: ../Enums.hpp
 CMakeFiles/MapEditor.dir/Cursor.cpp.o: ../_object.hpp
 
+CMakeFiles/MapEditor.dir/Data.cpp.o: ../Data.cpp
+CMakeFiles/MapEditor.dir/Data.cpp.o: ../_data.hpp
+
 CMakeFiles/MapEditor.dir/Map.cpp.o: ../Defines.hpp
 CMakeFiles/MapEditor.dir/Map.cpp.o: ../Enums.hpp
 CMakeFiles/MapEditor.dir/Map.cpp.o: ../Map.cpp

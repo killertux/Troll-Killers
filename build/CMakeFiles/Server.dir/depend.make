@@ -4,6 +4,9 @@
 CMakeFiles/Server.dir/Connection.cpp.o: ../Connection.cpp
 CMakeFiles/Server.dir/Connection.cpp.o: ../Connection.hpp
 
+CMakeFiles/Server.dir/Data.cpp.o: ../Data.cpp
+CMakeFiles/Server.dir/Data.cpp.o: ../_data.hpp
+
 CMakeFiles/Server.dir/Map.cpp.o: ../Defines.hpp
 CMakeFiles/Server.dir/Map.cpp.o: ../Enums.hpp
 CMakeFiles/Server.dir/Map.cpp.o: ../Map.cpp

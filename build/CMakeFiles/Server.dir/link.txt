@@ -1,1 +1,1 @@
-/usr/bin/c++   -g   CMakeFiles/Server.dir/mainServer.cpp.o CMakeFiles/Server.dir/Map.cpp.o CMakeFiles/Server.dir/Server.cpp.o CMakeFiles/Server.dir/Connection.cpp.o CMakeFiles/Server.dir/SCharacter.cpp.o  -o Server -rdynamic -lenet -pthread 
+/usr/bin/c++   -g   CMakeFiles/Server.dir/mainServer.cpp.o CMakeFiles/Server.dir/Map.cpp.o CMakeFiles/Server.dir/Server.cpp.o CMakeFiles/Server.dir/Connection.cpp.o CMakeFiles/Server.dir/SCharacter.cpp.o CMakeFiles/Server.dir/Data.cpp.o  -o Server -rdynamic -lenet -pthread 

@@ -19,7 +19,7 @@ Client::Client(){
 	
 	al_hide_mouse_cursor(display);
 	
-	if(map.load_map("../mapa.data"))
+	//if(map.load_map("../mapa.data"))
 	maxClients=0;
 	
 	for(int i=0;i<ALLEGRO_KEY_MAX;i++)
@@ -79,7 +79,10 @@ bool Client::connect(){
 				myId=recieverBuffer->buffer[1];
 				players=new CCharacter*[maxClients];
 				//connected. Now I want the map;
-				
+			}
+			if(recieverBuffer->type==PROTOCOL_MAP_FILE);{
+				map.get_serial(*recieverBuffer);
+				std::cout <<map.getName() << std::endl;
 				return true;
 			}
 		}

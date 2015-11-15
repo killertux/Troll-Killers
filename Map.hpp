@@ -22,16 +22,15 @@ class Map{
 protected:
 	std::string name;
 	_object *objects;
-	_data *buffer;
-	int length, width;
-	int max_objects;
-	int n_object;
+	int16_t length, width;
+	int16_t max_objects;
+	int16_t n_object;
 public:
 	Map();
 	virtual bool save_map(std::string pathname);
 	virtual bool load_map(std::string pathname);
 	
-	virtual _data* send_serial();
+	virtual _data send_serial();
 	virtual void get_serial(_data &buffer);
 	
 	std::string getName(){return name;}

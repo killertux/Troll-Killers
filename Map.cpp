@@ -1,4 +1,6 @@
 #include "Map.hpp"
+#include <stdio.h>
+#include "iostream"
 
 Map::Map(){
 	n_object=length=width=max_objects=0;
@@ -6,7 +8,6 @@ Map::Map(){
 }
 
 Map::~Map(){
-	delete buffer;
 	delete [] objects;
 }
 
@@ -64,36 +65,55 @@ bool Map::load_map(std::string pathname)
 	return 1;
 }
 
-_data *Map::send_serial(){
-	buffer=new _data;
-	std::ostringstream bufferStream;
+_data Map::send_serial(){
+	_data buffer;
+	memset(buffer.buffer,0,sizeof(buffer));
+	std::sprintf(buffer.buffer,"%s",name);
 	
-	bufferStream.write(name.c_str(),50);
-	bufferStream.write((char*)&length,2);
-	bufferStream.write((char*)&width,2);
-	bufferStream.write((char*)&max_objects,2);
-	bufferStream.write((char*)&n_object,2);
+	data::int_copy(buffer.buffer,length,50,2);
+	data::int_copy(buffer.buffer,width,52,2);
+	data::int_copy(buffer.buffer,max_objects,54,2);
+	data::int_copy(buffer.buffer,n_object,56,2);
+	printf("%x%x\n",buffer.buffer[56],buffer.buffer[57]);
+	std::cout << "N object="<<n_object<<"\n";
 	for(int i=0;i<n_object;i++){
-		bufferStream.write((char*)&objects[i].type,1);
-		bufferStream.write((char*)&objects[i].x,2);
-		bufferStream.write((char*)&objects[i].y,2);
-		bufferStream.write((char*)&objects[i].radius,2);
-		bufferStream.write((char*)&objects[i].length,2);
-		bufferStream.write((char*)&objects[i].width,2);
-		bufferStream.write((char*)&objects[i].r,1);
-		bufferStream.write((char*)&objects[i].g,1);	
-		bufferStream.write((char*)&objects[i].b,1);
+		data::int_copy(buffer.buffer,objects[i].type,58,1);
+		data::int_copy(buffer.buffer,objects[i].x,59,2);
+		data::int_copy(buffer.buffer,objects[i].y,61,2);
+		data::int_copy(buffer.buffer,objects[i].radius,63,2);
+		data::int_copy(buffer.buffer,objects[i].length,65,2);
+		data::int_copy(buffer.buffer,objects[i].width,67,2);
+		data::int_copy(buffer.buffer,objects[i].r,69,1);
+		data::int_copy(buffer.buffer,objects[i].g,70,1);
+		data::int_copy(buffer.buffer,objects[i].b,71,1);
 	}
-	std::string tmp=bufferStream.str();
-	memcpy(buffer->buffer,tmp.c_str(),tmp.size());
-	buffer->type=PROTOCOL_MAP_FILE;
+	buffer.type=PROTOCOL_MAP_FILE;
 	
 	return buffer;
 }
 
 void Map::get_serial(_data &buffer){
-	std::ostringstream bufferStream;
-	std::string tmp;
-	memcpy(tmp.data(),buffer.buffer,sizeof(buffer));
-
+	char c_buffer[51];
+	memcpy(c_buffer,buffer.buffer,50);
+	name=c_buffer;
+	std::cout << c_buffer << std::endl;
+	length=data::int_get(buffer.buffer,50,2);
+	width=data::int_get(buffer.buffer,52,2);
+	max_objects=data::int_get(buffer.buffer,54,2);
+	n_object=data::int_get(buffer.buffer,56,2);
+	printf("%d %d %d %d\n",length,width,max_objects,n_object);
+	if(objects!=NULL)
+		delete [] objects;
+	objects=new _object[max_objects];
+	for(int i=0;i<n_object;i++){
+		objects[i].type=data::int_get(buffer.buffer,58,1);
+		objects[i].x=data::int_get(buffer.buffer,59,2);
+		objects[i].y=data::int_get(buffer.buffer,61,2);
+		objects[i].radius=data::int_get(buffer.buffer,63,2);
+		objects[i].length=data::int_get(buffer.buffer,65,2);
+		objects[i].width=data::int_get(buffer.buffer,67,2);
+		objects[i].r=data::int_get(buffer.buffer,69,1);
+		objects[i].g=data::int_get(buffer.buffer,70,1);
+		objects[i].b=data::int_get(buffer.buffer,71,1);
+	}
 }

@@ -4,6 +4,9 @@
 CMakeFiles/Server.dir/Connection.cpp.o
  /home/clemente/projects/Troll-Killers/Connection.cpp
  /home/clemente/projects/Troll-Killers/Connection.hpp
+CMakeFiles/Server.dir/Data.cpp.o
+ /home/clemente/projects/Troll-Killers/Data.cpp
+ /home/clemente/projects/Troll-Killers/_data.hpp
 CMakeFiles/Server.dir/Map.cpp.o
  /home/clemente/projects/Troll-Killers/Defines.hpp
  /home/clemente/projects/Troll-Killers/Enums.hpp

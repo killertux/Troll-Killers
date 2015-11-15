@@ -18,6 +18,12 @@ iostream
 string
 -
 
+/home/clemente/projects/Troll-Killers/Data.cpp
+_data.hpp
+/home/clemente/projects/Troll-Killers/_data.hpp
+stdio.h
+/home/clemente/projects/Troll-Killers/stdio.h
+
 /home/clemente/projects/Troll-Killers/Defines.hpp
 
 /home/clemente/projects/Troll-Killers/Enums.hpp
@@ -31,6 +37,10 @@ _data.hpp
 /home/clemente/projects/Troll-Killers/Map.cpp
 Map.hpp
 /home/clemente/projects/Troll-Killers/Map.hpp
+stdio.h
+-
+iostream
+/home/clemente/projects/Troll-Killers/iostream
 
 /home/clemente/projects/Troll-Killers/Map.hpp
 Enums.hpp

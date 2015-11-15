@@ -3,6 +3,7 @@
 
 #include <allegro5/allegro.h>
 #include <allegro5/allegro_primitives.h>
+#include "_data.hpp"
 #include "CMap.hpp"
 #include "Defines.hpp"
 #include "Connection.hpp"
