@@ -65,7 +65,7 @@ bool Map::load_map(std::string pathname)
 }
 
 
-int Map::serielize(char* buffer){
+int Map::serialize(char* buffer){
 	std::stringstream stream;
 	std::string tmp;
 	stream << type << " "<<length << " "<<width << " "<<max_objects<< " " << n_object;
@@ -78,13 +78,11 @@ int Map::serielize(char* buffer){
 		sprintf(buffer,"%s%s",buffer,stream.str().c_str());
 		stream.str(std::string());
 	}
-	std::cout << buffer <<std::endl;
 	return std::strlen(buffer);
 }
 
-void Map::deserielize(char* buffer){
+void Map::deserialize(char* buffer){
 	std::stringstream stream;
-	std::cout << buffer << std::endl;
 	stream << buffer;
 	stream >> type >>length >>width >>max_objects >> n_object;
 	if(objects!=NULL)
@@ -93,8 +91,5 @@ void Map::deserielize(char* buffer){
 	for(int i=0;i<n_object;i++){
 		stream >>objects[i].type>> objects[i].x>> objects[i].y>> objects[i].radius>> objects[i].length>> objects[i].width>> objects[i].r>> objects[i].g >>objects[i].b;
 	}
-	std::cout << objects[0].r << std::endl;
-	std::cout << objects[0].g << std::endl;
-	std::cout << objects[0].b << std::endl;
 }
 

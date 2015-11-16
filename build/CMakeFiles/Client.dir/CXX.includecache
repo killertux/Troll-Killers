@@ -19,6 +19,8 @@ _object.hpp
 /home/clemente/projects/Troll-Killers/_object.hpp
 _data.hpp
 /home/clemente/projects/Troll-Killers/_data.hpp
+Defines.hpp
+/home/clemente/projects/Troll-Killers/Defines.hpp
 allegro5/allegro.h
 -
 allegro5/allegro_primitives.h

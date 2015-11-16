@@ -9,6 +9,8 @@ Server::Server(){
 		players=NULL;
 	
 	map.load_map(MAP_FILE);
+	blueTeamN=0;
+	redTeamN=0;
 }
 
 Server::~Server(){
@@ -40,8 +42,51 @@ void Server::new_user(int id){
 	senderBuffer.buffer[1]=id & 0xff;
 	conn.send_packet_reliable(&senderBuffer,sizeof(senderBuffer),id);
 	std::cout << "Sending the map...\n";
-	size=map.serielize(buffer);
+	size=map.serialize(buffer);
 	//std::cout << size << " - " << buffer << std::endl;
 	conn.send_packet_reliable(buffer,size,id);
+	
+	//Get the spawn area
+	newMu.lock();
+	std::cout << "Sending the spawn...\n";
+	_object* spawn;
+	map.calculateSpawn();
+	if(blueTeamN>redTeamN){
+		bool done=false;
+		redTeamN++;
+		while(!done){
+			spawn=map.getSpaw();
+			if(spawn->r!=0){
+				if(map.useSpawn(spawn)){
+					std::stringstream stream;
+					senderBuffer.type=PROTOCOL_SET_POS_TEAM;
+					stream << spawn->x << " " << spawn->y<< " "<<(int16_t)RED<<" ";
+					std::sprintf(senderBuffer.buffer,"%s",stream.str().c_str());
+					conn.send_packet_reliable(&senderBuffer,(int)sizeof(senderBuffer),id);
+					done=true;
+				}
+			}
+			
+		}
+	} else {
+		bool done=false;
+		blueTeamN++;
+		while(!done){
+			spawn=map.getSpaw();
+			if(spawn->b!=0){
+				if(map.useSpawn(spawn)){
+					std::stringstream stream;
+					senderBuffer.type=PROTOCOL_SET_POS_TEAM;
+					stream << spawn->x << " " << spawn->y<< " "<<(int16_t)BLUE<<" ";
+					std::sprintf(senderBuffer.buffer,"%s",stream.str().c_str());
+					conn.send_packet_reliable(&senderBuffer,(int)sizeof(senderBuffer),id);
+					done=true;
+				}
+			}
+			
+		}
+	}
+	newMu.unlock();
+	std::cout << "Client ready to play\n";
 	conn.send_flush();
 }

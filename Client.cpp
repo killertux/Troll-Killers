@@ -19,7 +19,6 @@ Client::Client(){
 	
 	al_hide_mouse_cursor(display);
 	
-	//if(map.load_map("../mapa.data"))
 	maxClients=0;
 	
 	for(int i=0;i<ALLEGRO_KEY_MAX;i++)
@@ -59,6 +58,9 @@ void Client::main_loop(){
 		
 		if(redraw && al_is_event_queue_empty(event_queue)){
 			map.draw_map(mapX,mapY);
+			for(int i=0;i<maxClients;i++)
+				if(players[i]!=NULL)
+					players[i]->draw(0,0);
 			al_flip_display();
 			
 		}
@@ -79,9 +81,24 @@ bool Client::connect(){
 				maxClients=recieverBuffer->buffer[0];
 				myId=recieverBuffer->buffer[1];
 				players=new CCharacter*[maxClients];
+				for(int i=0;i<maxClients;i++)
+					players[i]=NULL;
+				players[myId]=new CCharacter;
 				//connected. Now I want the map;
 			}else if(buffer[0]==PROTOCOL_MAP_FILE){
-				map.deserielize(buffer);
+				map.deserialize(buffer);
+				//Now i need to know my position
+			}else if(buffer[0]==PROTOCOL_SET_POS_TEAM){
+				std::cout  << "hola\n";
+				std::stringstream stream;
+				recieverBuffer=(_data*)conn.getPacketData();
+				int x,y;
+				int16_t team;
+				stream << recieverBuffer->buffer;
+				stream >> x >> y >> team;
+				players[myId]->setX(x);
+				players[myId]->setY(y);
+				players[myId]->setTeam((Team)team);
 				return true;
 			}
 		}

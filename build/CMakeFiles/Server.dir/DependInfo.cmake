@@ -8,6 +8,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/clemente/projects/Troll-Killers/Data.cpp" "/home/clemente/projects/Troll-Killers/build/CMakeFiles/Server.dir/Data.cpp.o"
   "/home/clemente/projects/Troll-Killers/Map.cpp" "/home/clemente/projects/Troll-Killers/build/CMakeFiles/Server.dir/Map.cpp.o"
   "/home/clemente/projects/Troll-Killers/SCharacter.cpp" "/home/clemente/projects/Troll-Killers/build/CMakeFiles/Server.dir/SCharacter.cpp.o"
+  "/home/clemente/projects/Troll-Killers/SMap.cpp" "/home/clemente/projects/Troll-Killers/build/CMakeFiles/Server.dir/SMap.cpp.o"
   "/home/clemente/projects/Troll-Killers/Server.cpp" "/home/clemente/projects/Troll-Killers/build/CMakeFiles/Server.dir/Server.cpp.o"
   "/home/clemente/projects/Troll-Killers/mainServer.cpp" "/home/clemente/projects/Troll-Killers/build/CMakeFiles/Server.dir/mainServer.cpp.o"
   )

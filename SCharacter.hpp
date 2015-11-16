@@ -11,22 +11,25 @@
 class SCharacter:public IGObject{
 private:
 	_object player;
-	int velocity;
-	int id;
-	Direction dir;
-	Team team;
+	int16_t velocity;
+	int16_t id;
+	int16_t dir;		//Instead of using Direction and Team (enums)
+	int16_t team;		//We are using int16_t because of the endianes
 public:
-	SCharacter(_data *data);
+	SCharacter(int id);
 	~SCharacter();
 	int getId(){return id;}
 	int getX(){player.x;}
 	int getY(){player.y;}
 	int getVelocity(){return velocity;}
-	Team getTeam(){return team;}
-	Direction getDir(){return dir;}
+	Team getTeam(){return (Team)team;}
+	Direction getDir(){return (Direction)dir;}
 	void setDir(Direction dir){this->dir=dir;}
-	_data serialize();
+	int serialize(char *buffer);
 	
+	void setX(int x){this->player.x=x;}
+	void setY(int y){this->player.y=y;}
+	void setTeam(Team team){this->team=(int16_t)team;}
 };
 
 #endif

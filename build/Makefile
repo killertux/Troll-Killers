@@ -454,6 +454,33 @@ SCharacter.cpp.s:
 	$(MAKE) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/SCharacter.cpp.s
 .PHONY : SCharacter.cpp.s
 
+SMap.o: SMap.cpp.o
+
+.PHONY : SMap.o
+
+# target to build an object file
+SMap.cpp.o:
+	$(MAKE) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/SMap.cpp.o
+.PHONY : SMap.cpp.o
+
+SMap.i: SMap.cpp.i
+
+.PHONY : SMap.i
+
+# target to preprocess a source file
+SMap.cpp.i:
+	$(MAKE) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/SMap.cpp.i
+.PHONY : SMap.cpp.i
+
+SMap.s: SMap.cpp.s
+
+.PHONY : SMap.s
+
+# target to generate assembly for a file
+SMap.cpp.s:
+	$(MAKE) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/SMap.cpp.s
+.PHONY : SMap.cpp.s
+
 Server.o: Server.cpp.o
 
 .PHONY : Server.o
@@ -604,6 +631,9 @@ help:
 	@echo "... SCharacter.o"
 	@echo "... SCharacter.i"
 	@echo "... SCharacter.s"
+	@echo "... SMap.o"
+	@echo "... SMap.i"
+	@echo "... SMap.s"
 	@echo "... Server.o"
 	@echo "... Server.i"
 	@echo "... Server.s"

@@ -39,8 +39,8 @@ public:
 	virtual bool save_map(std::string pathname);
 	virtual bool load_map(std::string pathname);
 	
-	virtual int serielize(char *buffer);
-	virtual void deserielize(char *buffer);
+	virtual int serialize(char *buffer);
+	virtual void deserialize(char *buffer);
 	
 	std::string getName(){return name;}
 	~Map();

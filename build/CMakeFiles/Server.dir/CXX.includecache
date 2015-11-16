@@ -72,6 +72,14 @@ _object.hpp
 _data.hpp
 /home/clemente/projects/Troll-Killers/_data.hpp
 
+/home/clemente/projects/Troll-Killers/SMap.cpp
+SMap.hpp
+/home/clemente/projects/Troll-Killers/SMap.hpp
+
+/home/clemente/projects/Troll-Killers/SMap.hpp
+Map.hpp
+/home/clemente/projects/Troll-Killers/Map.hpp
+
 /home/clemente/projects/Troll-Killers/Server.cpp
 Server.hpp
 /home/clemente/projects/Troll-Killers/Server.hpp
@@ -83,8 +91,8 @@ mutex
 -
 Connection.hpp
 /home/clemente/projects/Troll-Killers/Connection.hpp
-Map.hpp
-/home/clemente/projects/Troll-Killers/Map.hpp
+SMap.hpp
+/home/clemente/projects/Troll-Killers/SMap.hpp
 IGObject.hpp
 /home/clemente/projects/Troll-Killers/IGObject.hpp
 SCharacter.hpp

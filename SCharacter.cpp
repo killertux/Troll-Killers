@@ -2,16 +2,16 @@
 
 //A lot of work to do
 
-SCharacter::SCharacter(_data* data){
-
+SCharacter::SCharacter(int id){
+	velocity=0;
+	this->id=id;
 }
 
 SCharacter::~SCharacter(){
 
 }
 
-
-_data SCharacter::serialize(){
+int SCharacter::serialize(char* buffer){
 
 }
 

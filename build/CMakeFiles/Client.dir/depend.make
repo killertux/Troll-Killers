@@ -3,6 +3,7 @@
 
 CMakeFiles/Client.dir/CCharacter.cpp.o: ../CCharacter.cpp
 CMakeFiles/Client.dir/CCharacter.cpp.o: ../CCharacter.hpp
+CMakeFiles/Client.dir/CCharacter.cpp.o: ../Defines.hpp
 CMakeFiles/Client.dir/CCharacter.cpp.o: ../Enums.hpp
 CMakeFiles/Client.dir/CCharacter.cpp.o: ../IGObject.hpp
 CMakeFiles/Client.dir/CCharacter.cpp.o: ../_data.hpp

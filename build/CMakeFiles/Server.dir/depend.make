@@ -21,12 +21,21 @@ CMakeFiles/Server.dir/SCharacter.cpp.o: ../SCharacter.hpp
 CMakeFiles/Server.dir/SCharacter.cpp.o: ../_data.hpp
 CMakeFiles/Server.dir/SCharacter.cpp.o: ../_object.hpp
 
+CMakeFiles/Server.dir/SMap.cpp.o: ../Defines.hpp
+CMakeFiles/Server.dir/SMap.cpp.o: ../Enums.hpp
+CMakeFiles/Server.dir/SMap.cpp.o: ../Map.hpp
+CMakeFiles/Server.dir/SMap.cpp.o: ../SMap.cpp
+CMakeFiles/Server.dir/SMap.cpp.o: ../SMap.hpp
+CMakeFiles/Server.dir/SMap.cpp.o: ../_data.hpp
+CMakeFiles/Server.dir/SMap.cpp.o: ../_object.hpp
+
 CMakeFiles/Server.dir/Server.cpp.o: ../Connection.hpp
 CMakeFiles/Server.dir/Server.cpp.o: ../Defines.hpp
 CMakeFiles/Server.dir/Server.cpp.o: ../Enums.hpp
 CMakeFiles/Server.dir/Server.cpp.o: ../IGObject.hpp
 CMakeFiles/Server.dir/Server.cpp.o: ../Map.hpp
 CMakeFiles/Server.dir/Server.cpp.o: ../SCharacter.hpp
+CMakeFiles/Server.dir/Server.cpp.o: ../SMap.hpp
 CMakeFiles/Server.dir/Server.cpp.o: ../Server.cpp
 CMakeFiles/Server.dir/Server.cpp.o: ../Server.hpp
 CMakeFiles/Server.dir/Server.cpp.o: ../_data.hpp
@@ -38,6 +47,7 @@ CMakeFiles/Server.dir/mainServer.cpp.o: ../Enums.hpp
 CMakeFiles/Server.dir/mainServer.cpp.o: ../IGObject.hpp
 CMakeFiles/Server.dir/mainServer.cpp.o: ../Map.hpp
 CMakeFiles/Server.dir/mainServer.cpp.o: ../SCharacter.hpp
+CMakeFiles/Server.dir/mainServer.cpp.o: ../SMap.hpp
 CMakeFiles/Server.dir/mainServer.cpp.o: ../Server.hpp
 CMakeFiles/Server.dir/mainServer.cpp.o: ../_data.hpp
 CMakeFiles/Server.dir/mainServer.cpp.o: ../_object.hpp

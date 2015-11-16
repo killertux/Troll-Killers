@@ -11,7 +11,7 @@ install(TARGETS MapEditor RUNTIME DESTINATION bin)
 
 project(Server)
 
-add_executable(Server mainServer.cpp Map.cpp Server.cpp Connection.cpp SCharacter.cpp Data.cpp)
+add_executable(Server mainServer.cpp Map.cpp Server.cpp Connection.cpp SCharacter.cpp Data.cpp SMap.cpp)
 
 target_link_libraries(Server -lenet  -pthread)
 

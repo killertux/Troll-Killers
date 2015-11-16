@@ -4,7 +4,7 @@
 #include <thread>
 #include <mutex>
 #include "Connection.hpp"
-#include "Map.hpp"
+#include "SMap.hpp"
 #include "IGObject.hpp"
 #include "SCharacter.hpp"
 #include <cstring>
@@ -22,10 +22,14 @@ private:
 	std::thread writeThread;
 	std::thread cmdThread;
 	std::mutex dataMu;
+	std::mutex newMu;
 	std::mutex cmdMu;
 	
-	Map map;
+	SMap map;
 	SCharacter **players;
+	
+	int redTeamN;
+	int blueTeamN;
 	
 	_data *recieverBuffer;
 	_data senderBuffer;

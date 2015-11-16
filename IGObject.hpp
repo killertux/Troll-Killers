@@ -12,7 +12,11 @@ public:
 	virtual int getVelocity() = 0;
 	virtual Team getTeam() = 0;
 	virtual Direction getDir() = 0;
-	virtual _data serialize()=0;
+	virtual int serialize(char *buffer)=0;
+	
+	virtual void setX(int x)=0;
+	virtual void setY(int y)=0;
+	virtual void setTeam(Team team)=0;
 	
 	virtual ~IGObject(){}
 };
