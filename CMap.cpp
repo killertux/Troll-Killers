@@ -1,7 +1,7 @@
 #include "CMap.hpp"
 
 CMap::CMap(std::string name, int max_objects, int length, int width){
-	this->name=name;
+	sprintf(this->name,"%s",name.c_str());
 	this->max_objects=max_objects;
 	this->length=length;
 	this->width=width;

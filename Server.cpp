@@ -32,15 +32,16 @@ void Server::main_loop(){
 
 void Server::new_user(int id){
 	//players[id]=new SCharacter;
+	char buffer[2048];
+	int size;
 	std::cout << "Someone connected! Id="<<id <<std::endl;
 	senderBuffer.type=PROTOCOL_N_PEERS;
 	senderBuffer.buffer[0]=MAX_USERS & 0xff;
 	senderBuffer.buffer[1]=id & 0xff;
-	conn.send_packet_reliable(&senderBuffer,id);
+	conn.send_packet_reliable(&senderBuffer,sizeof(senderBuffer),id);
 	std::cout << "Sending the map...\n";
-	_data tmp=map.send_serial();
-	printf("%x%x\n",tmp.buffer[50],tmp.buffer[51]);
-	map.get_serial(tmp);
-	conn.send_packet_reliable(&tmp,id);
+	size=map.serielize(buffer);
+	//std::cout << size << " - " << buffer << std::endl;
+	conn.send_packet_reliable(buffer,size,id);
 	conn.send_flush();
 }

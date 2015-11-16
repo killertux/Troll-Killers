@@ -20,7 +20,7 @@
 #define LENGTH 30
 #define WIDTH 20
 
-#define MAP_FILE "mapa.data"
+#define MAP_FILE "Maps/mapa.data"
 
 class MapEditor {
 private:

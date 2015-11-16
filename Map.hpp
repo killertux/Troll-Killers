@@ -11,16 +11,25 @@
 #include "Enums.hpp"
 #include "_object.hpp"
 #include "_data.hpp"
-#include "cstdio"
 #include <sstream>
 #include "Defines.hpp"
+#include <arpa/inet.h>
 
-#include <string>
 #include <fstream>
+
+struct _nMap{
+	int8_t type;			//Reserved to network usage
+	char name[50];			//We are not using std::String to be portable.
+	_object *objects;
+	int16_t length, width;
+	int16_t max_objects;
+	int16_t n_object;
+};
 
 class Map{
 protected:
-	std::string name;
+	int8_t type;			//Reserved to network usage
+	char name[50];			//We are not using std::String to be portable.
 	_object *objects;
 	int16_t length, width;
 	int16_t max_objects;
@@ -30,8 +39,8 @@ public:
 	virtual bool save_map(std::string pathname);
 	virtual bool load_map(std::string pathname);
 	
-	virtual _data send_serial();
-	virtual void get_serial(_data &buffer);
+	virtual int serielize(char *buffer);
+	virtual void deserielize(char *buffer);
 	
 	std::string getName(){return name;}
 	~Map();

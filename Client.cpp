@@ -67,22 +67,21 @@ void Client::main_loop(){
 }
 
 bool Client::connect(){
-	char stdBuffer[255];
+	char *buffer;
+	int v=0;
 	if(!conn.create_client("127.0.0.1",PORT))
 		return false;
 	while(conn.event_service(10000)!=0){
 		if(conn.event_type_receive()){
-		//	std::memset(&dataBuffer,0,sizeof(_data));
-			recieverBuffer=(_data*)conn.getPacketData();
-			if(recieverBuffer->type==PROTOCOL_N_PEERS){
+			buffer=(char*)conn.getPacketData();
+			if(buffer[0]==PROTOCOL_N_PEERS){
+				recieverBuffer=(_data*)conn.getPacketData();
 				maxClients=recieverBuffer->buffer[0];
 				myId=recieverBuffer->buffer[1];
 				players=new CCharacter*[maxClients];
 				//connected. Now I want the map;
-			}
-			if(recieverBuffer->type==PROTOCOL_MAP_FILE);{
-				map.get_serial(*recieverBuffer);
-				std::cout <<map.getName() << std::endl;
+			}else if(buffer[0]==PROTOCOL_MAP_FILE){
+				map.deserielize(buffer);
 				return true;
 			}
 		}

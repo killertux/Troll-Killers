@@ -27,4 +27,6 @@ add_executable(Client mainClient.cpp CMap.cpp Map.cpp Client.cpp Connection.cpp 
 
 target_link_libraries(Client -lallegro -lallegro_primitives -lenet)
 
+SET_TARGET_PROPERTIES(Server PROPERTIES COMPILE_FLAGS "-std=c++11")
+
 install(TARGETS Client RUNTIME DESTINATION bin)

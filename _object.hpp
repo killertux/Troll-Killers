@@ -7,9 +7,9 @@ struct _object{
 	int16_t x,y;
 	int16_t radius;
 	int16_t length, width;
-	int8_t r;
-	int8_t g;
-	int8_t b;
+	int16_t r;
+	int16_t g;
+	int16_t b;
 };
 
 #endif

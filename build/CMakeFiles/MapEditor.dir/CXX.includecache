@@ -69,13 +69,11 @@ _object.hpp
 /home/clemente/projects/Troll-Killers/_object.hpp
 _data.hpp
 /home/clemente/projects/Troll-Killers/_data.hpp
-cstdio
-/home/clemente/projects/Troll-Killers/cstdio
 sstream
 -
 Defines.hpp
 /home/clemente/projects/Troll-Killers/Defines.hpp
-string
+arpa/inet.h
 -
 fstream
 -

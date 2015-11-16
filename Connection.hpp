@@ -35,9 +35,9 @@ class Connection{
 	~Connection();
 	
 	void create_server(int port,int num_peers);
-	void send_packet_reliable(void *data, int ID);
-	void send_packet_unreliable(void *data, int ID);
-	void broadcast_packet(void *data);
+	void send_packet_reliable(void *data,int size, int ID);
+	void send_packet_unreliable(void *data,int size, int ID);
+	void broadcast_packet(void *data,int size);
 	void send_flush();
 
 	int event_service(int timer);

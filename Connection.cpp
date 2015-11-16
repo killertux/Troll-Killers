@@ -34,25 +34,25 @@ void Connection::create_server(int port,int num_peers){
 	connS=conn;
 }
 
-void Connection::send_packet_reliable(void *data,int ID){
-	ENetPacket *packet = enet_packet_create (data, sizeof(data), ENET_PACKET_FLAG_RELIABLE);
+void Connection::send_packet_reliable(void *data,int size,int ID){
+	ENetPacket *packet = enet_packet_create (data, size, ENET_PACKET_FLAG_RELIABLE);
 	if(!client)
 		enet_peer_send (&connS->peers[ID], 0, packet);
 	else
 		enet_peer_send(peer,0,packet);
 }
 
-void Connection::send_packet_unreliable(void *data,int ID){
-	ENetPacket *packet = enet_packet_create (data, sizeof(data), ENET_PACKET_FLAG_UNRELIABLE_FRAGMENT);
+void Connection::send_packet_unreliable(void *data,int size,int ID){
+	ENetPacket *packet = enet_packet_create (data, size, ENET_PACKET_FLAG_UNRELIABLE_FRAGMENT);
 	if(!client)
 		enet_peer_send (&connS->peers[ID], 0, packet);
 	else
 		enet_peer_send(peer,0,packet);
 }
 
-void Connection::broadcast_packet(void *data){
+void Connection::broadcast_packet(void *data,int size){
 	if(!client){
-		ENetPacket *packet = enet_packet_create (data, sizeof(data), ENET_PACKET_FLAG_RELIABLE);
+		ENetPacket *packet = enet_packet_create (data, size, ENET_PACKET_FLAG_RELIABLE);
 		enet_host_broadcast (connS, 0, packet);
 	} else
 		std::cout << "Warn! Client can't broadcast!\n";
