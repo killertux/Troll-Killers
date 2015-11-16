@@ -5,6 +5,7 @@
 SCharacter::SCharacter(int id){
 	velocity=0;
 	this->id=id;
+	dir=(int16_t)DOWN;
 }
 
 SCharacter::~SCharacter(){

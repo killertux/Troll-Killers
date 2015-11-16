@@ -71,6 +71,8 @@ _object.hpp
 /home/clemente/projects/Troll-Killers/_object.hpp
 _data.hpp
 /home/clemente/projects/Troll-Killers/_data.hpp
+iostream
+-
 
 /home/clemente/projects/Troll-Killers/SMap.cpp
 SMap.hpp

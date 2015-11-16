@@ -7,6 +7,7 @@
 #include "Enums.hpp"
 #include "_object.hpp"
 #include "_data.hpp"
+#include <iostream>
 
 class SCharacter:public IGObject{
 private:
@@ -18,17 +19,17 @@ private:
 public:
 	SCharacter(int id);
 	~SCharacter();
-	int getId(){return id;}
-	int getX(){player.x;}
-	int getY(){player.y;}
-	int getVelocity(){return velocity;}
+	int16_t getId(){return id;}
+	int16_t getX(){player.x;}
+	int16_t getY(){player.y;}
+	int16_t getVelocity(){return velocity;}
 	Team getTeam(){return (Team)team;}
 	Direction getDir(){return (Direction)dir;}
 	void setDir(Direction dir){this->dir=dir;}
 	int serialize(char *buffer);
 	
-	void setX(int x){this->player.x=x;}
-	void setY(int y){this->player.y=y;}
+	void setX(int16_t x){player.x=x;}
+	void setY(int16_t y){player.y=y;}
 	void setTeam(Team team){this->team=(int16_t)team;}
 };
 

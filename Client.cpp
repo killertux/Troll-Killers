@@ -53,6 +53,9 @@ void Client::main_loop(){
 			storeKeys[ev.keyboard.keycode]=false;
 		else if(ev.type == ALLEGRO_EVENT_TIMER){
 			al_get_keyboard_state(&keyState);
+			mapX=players[myId]->getX()/2;
+			mapY=players[myId]->getY()/2;
+			std::cout << players[myId]->getX()/2 << " " <<players[myId]->getY()/2 << std::endl;
 			redraw=true;
 		}
 		
@@ -60,7 +63,7 @@ void Client::main_loop(){
 			map.draw_map(mapX,mapY);
 			for(int i=0;i<maxClients;i++)
 				if(players[i]!=NULL)
-					players[i]->draw(0,0);
+					players[i]->draw(mapX,mapY);
 			al_flip_display();
 			
 		}
@@ -84,21 +87,23 @@ bool Client::connect(){
 				for(int i=0;i<maxClients;i++)
 					players[i]=NULL;
 				players[myId]=new CCharacter;
+				std::cout << "I wad created\n";
 				//connected. Now I want the map;
 			}else if(buffer[0]==PROTOCOL_MAP_FILE){
 				map.deserialize(buffer);
+				std::cout << "Now I have the map\n";
 				//Now i need to know my position
 			}else if(buffer[0]==PROTOCOL_SET_POS_TEAM){
-				std::cout  << "hola\n";
 				std::stringstream stream;
 				recieverBuffer=(_data*)conn.getPacketData();
-				int x,y;
+				int16_t x,y;
 				int16_t team;
 				stream << recieverBuffer->buffer;
 				stream >> x >> y >> team;
 				players[myId]->setX(x);
 				players[myId]->setY(y);
 				players[myId]->setTeam((Team)team);
+				std::cout << "Now I know where I should be\n";
 				return true;
 			}
 		}
