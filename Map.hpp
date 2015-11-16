@@ -1,5 +1,5 @@
 /*
- * Map.hpp -- Thats the clietn map class
+ * Map.hpp -- Thats the client map class
  *
  *  Created on: 7 de nov de 2015
  *      Author: clemente
@@ -38,10 +38,10 @@ public:
 	Map();
 	virtual bool save_map(std::string pathname);
 	virtual bool load_map(std::string pathname);
-	
+
 	virtual int serialize(char *buffer);
 	virtual void deserialize(char *buffer);
-	
+
 	std::string getName(){return name;}
 	~Map();
 };

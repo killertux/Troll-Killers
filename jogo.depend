@@ -1,0 +1,57 @@
+# depslib dependency file v1.0
+1446947346 source:c:\users\usuário\desktop\facul\programação\trabalhoprog2\connection.cpp
+	"Connection.hpp"
+
+1446947346 c:\users\usuário\desktop\facul\programação\trabalhoprog2\connection.hpp
+	<enet/enet.h>
+	<iostream>
+	<string>
+
+1447029735 source:c:\users\usuário\desktop\facul\programação\trabalhoprog2\editormain.cpp
+	"MapEditor.hpp"
+
+1447711828 c:\users\usuário\desktop\facul\programação\trabalhoprog2\mapeditor.hpp
+	<allegro5/allegro.h>
+	<allegro5/allegro_primitives.h>
+	"CMap.hpp"
+	"Defines.hpp"
+	"Cursor.hpp"
+	<iostream>
+
+1447711828 c:\users\usuário\desktop\facul\programação\trabalhoprog2\cmap.hpp
+	"Enums.hpp"
+	"_object.hpp"
+	"Map.hpp"
+	<string>
+	<fstream>
+	<allegro5/allegro.h>
+	<allegro5/allegro_primitives.h>
+	<cstring>
+
+1447287461 c:\users\usuário\desktop\facul\programação\trabalhoprog2\enums.hpp
+
+1447711828 c:\users\usuário\desktop\facul\programação\trabalhoprog2\_object.hpp
+	<stdint.h>
+
+1447713375 c:\users\usuário\desktop\facul\programação\trabalhoprog2\map.hpp
+	"Enums.hpp"
+	"_object.hpp"
+	"_data.hpp"
+	<sstream>
+	"Defines.hpp"
+	<arpa/inet.h>
+	<fstream>
+
+1447711828 c:\users\usuário\desktop\facul\programação\trabalhoprog2\_data.hpp
+	"stdint.h"
+	"cstring"
+
+1447711828 c:\users\usuário\desktop\facul\programação\trabalhoprog2\defines.hpp
+
+1447287461 c:\users\usuário\desktop\facul\programação\trabalhoprog2\cursor.hpp
+	<allegro5/allegro.h>
+	<allegro5/allegro_primitives.h>
+	"Defines.hpp"
+	"Enums.hpp"
+	"_object.hpp"
+
