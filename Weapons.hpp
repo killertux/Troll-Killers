@@ -6,27 +6,38 @@ class Weapon{
     int dmg;
     ALLEGRO_BITMAP *gun = NULL;
 public:
-    setposx (int x){
+    void setposx (int x){
         pos_x = x;
     }
-    setposy (int y){
+    void setposy (int y){
         pos_y = y;
     }
-    setangx(int x){
+    void setangx(int x){
         ang_x = x;
     }
-    setangy(int y){
+    void setangy(int y){
         ang_y = y;
     }
-    Weapon(ALLEGRO_BITMAP img){
-
+    void rotation (){
+        float imageWidth, imageHeight;
+        imageWidth = al_get_bitmap_width (gun);
+        imageHeight = al_get_bitmap_height (gun);
+        al_draw_rotated_bitmap(ALLEGRO_BITMAP *gun, imageWidth / 2 ,  imageHeight / 2 ,  dx,  dy, angle, 0) //preencher dx, dy e angle
     }
 };
 
-class pistol : public Weapon{
+class Pistol : public Weapon{
     dmg = 20;
+public:
+    Pistol (){
+        gun = al_load_bitmap("Weapons\\pistol.jpg");
+    }
 };
 
-class rifle : public Weapon{
+class Rifle : public Weapon{
     dmg = 50;
+public:
+    Rifle(){
+        gun = al_load_bitmap("Weapons\\rifle.jpg");
+    }
 };
