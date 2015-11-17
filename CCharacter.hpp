@@ -23,8 +23,8 @@ public:
 	CCharacter();
 	~CCharacter();
 	int16_t getId(){return id;}
-	int16_t getX(){player.x;}
-	int16_t getY(){player.y;}
+	int16_t getX(){return player.x;}
+	int16_t getY(){return player.y;}
 	int16_t getVelocity(){return velocity;}
 	Team getTeam(){return (Team)team;}
 	Direction getDir(){return (Direction)dir;}

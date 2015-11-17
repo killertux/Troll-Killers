@@ -53,9 +53,8 @@ void Client::main_loop(){
 			storeKeys[ev.keyboard.keycode]=false;
 		else if(ev.type == ALLEGRO_EVENT_TIMER){
 			al_get_keyboard_state(&keyState);
-			mapX=players[myId]->getX()/2;
-			mapY=players[myId]->getY()/2;
-			std::cout << players[myId]->getX()/2 << " " <<players[myId]->getY()/2 << std::endl;
+			mapX=players[myId]->getX()-RES_X/2;
+			mapY=players[myId]->getY()-RES_Y/2;
 			redraw=true;
 		}
 		
@@ -87,7 +86,7 @@ bool Client::connect(){
 				for(int i=0;i<maxClients;i++)
 					players[i]=NULL;
 				players[myId]=new CCharacter;
-				std::cout << "I wad created\n";
+				std::cout << "I was created\n";
 				//connected. Now I want the map;
 			}else if(buffer[0]==PROTOCOL_MAP_FILE){
 				map.deserialize(buffer);

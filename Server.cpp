@@ -28,6 +28,7 @@ void Server::main_loop(){
 				newUser.detach();
 			}
 			else if(conn.event_type_disconnect()){
+				std::cout << "Someone disconected!\n";
 				delete players[conn.getPeerId()];
 				players[conn.getPeerId()]=NULL;
 			}
@@ -109,8 +110,6 @@ void Server::new_user(int id){
 	}
 	players[id]->setX(spawn->x);
 	players[id]->setY(spawn->y);
-	std::cout << sizeof(spawn->x) << " " << spawn->y << std::endl;
-	std::cout << players[id]->getX() << " " << players[id]->getY() << std::endl;
 	conn.send_flush();
 	newMu.unlock();
 	std::cout << "Client ready to play\n";
