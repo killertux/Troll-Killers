@@ -11,6 +11,7 @@
 #include "CCharacter.hpp"
 #include <cstdio>
 #include <cstring>
+#include <sstream>
 
 #include <iostream>
 
@@ -33,6 +34,7 @@ private:
 	_data *recieverBuffer;
 	_data senderBuffer;
 	int myId;
+	int tmhPacket;
 	
 	bool storeKeys[ALLEGRO_KEY_MAX];
 	int mapX,mapY;

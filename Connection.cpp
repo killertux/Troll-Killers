@@ -59,7 +59,7 @@ void Connection::broadcast_packet(void *data,int size){
 }
 
 void Connection::send_flush(){
-    enet_host_flush(connS);
+    enet_host_flush(conn);
 }
 
 int Connection::event_service(int timer){

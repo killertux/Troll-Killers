@@ -8,6 +8,7 @@
 #include "_object.hpp"
 #include "_data.hpp"
 #include "Defines.hpp"
+#include <sstream>
 
 #include <allegro5/allegro.h>
 #include <allegro5/allegro_primitives.h>

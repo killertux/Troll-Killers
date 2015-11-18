@@ -14,6 +14,7 @@ CMakeFiles/Server.dir/Map.cpp.o: ../Map.hpp
 CMakeFiles/Server.dir/Map.cpp.o: ../_data.hpp
 CMakeFiles/Server.dir/Map.cpp.o: ../_object.hpp
 
+CMakeFiles/Server.dir/SCharacter.cpp.o: ../Defines.hpp
 CMakeFiles/Server.dir/SCharacter.cpp.o: ../Enums.hpp
 CMakeFiles/Server.dir/SCharacter.cpp.o: ../IGObject.hpp
 CMakeFiles/Server.dir/SCharacter.cpp.o: ../SCharacter.cpp

@@ -15,11 +15,14 @@ Server::Server(){
 }
 
 Server::~Server(){
+	delete writeThread;
 	delete [] players;
 }
 
 void Server::main_loop(){
+	_msg msgTmp;
 	bool done=false;
+	writeThread=new std::thread(&Server::user_handle,this);
 	while(!done){
 		while(conn.event_service(WAIT_TIMER)>0){
 			dataMu.lock();
@@ -33,6 +36,9 @@ void Server::main_loop(){
 				players[conn.getPeerId()]=NULL;
 			}
 			else if(conn.event_type_receive()){
+				std::cout << "Received a message\n";
+				std::sprintf(msgTmp.buffer,"%s",conn.getPacketData());
+				msgTmp.id=conn.getPeerId();
 			}
 			dataMu.unlock();
 		}
@@ -112,5 +118,10 @@ void Server::new_user(int id){
 	players[id]->setY(spawn->y);
 	conn.send_flush();
 	newMu.unlock();
+	players[id]->make_ready();
 	std::cout << "Client ready to play\n";
+}
+
+void Server::user_handle(){
+
 }

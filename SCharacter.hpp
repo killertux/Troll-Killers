@@ -8,6 +8,7 @@
 #include "_object.hpp"
 #include "_data.hpp"
 #include <iostream>
+#include "Defines.hpp"
 
 class SCharacter:public IGObject{
 private:
@@ -16,6 +17,7 @@ private:
 	int16_t id;
 	int16_t dir;		//Instead of using Direction and Team (enums)
 	int16_t team;		//We are using int16_t because of the endianes
+	bool ready;
 public:
 	SCharacter(int id);
 	~SCharacter();
@@ -28,6 +30,7 @@ public:
 	void setDir(Direction dir){this->dir=dir;}
 	int serialize(char *buffer);
 	
+	void make_ready();
 	void setX(int16_t x){player.x=x;}
 	void setY(int16_t y){player.y=y;}
 	void setTeam(Team team){this->team=(int16_t)team;}

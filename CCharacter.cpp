@@ -14,7 +14,9 @@ CCharacter::~CCharacter(){
 
 int CCharacter::serialize(char* buffer)
 {
-
+	std::stringstream stream;
+	stream << player.x << player.y << dir << " ";
+	return stream.str().size();
 }
 
 void CCharacter::draw(int x,int y){

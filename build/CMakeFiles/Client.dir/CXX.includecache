@@ -21,6 +21,8 @@ _data.hpp
 /home/clemente/projects/Troll-Killers/_data.hpp
 Defines.hpp
 /home/clemente/projects/Troll-Killers/Defines.hpp
+sstream
+-
 allegro5/allegro.h
 -
 allegro5/allegro_primitives.h
@@ -72,6 +74,8 @@ CCharacter.hpp
 cstdio
 -
 cstring
+-
+sstream
 -
 iostream
 -
