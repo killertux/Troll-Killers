@@ -36,9 +36,9 @@ void Server::main_loop(){
 				players[conn.getPeerId()]=NULL;
 			}
 			else if(conn.event_type_receive()){
-				std::cout << "Received a message\n";
 				std::sprintf(msgTmp.buffer,"%s",conn.getPacketData());
 				msgTmp.id=conn.getPeerId();
+				msgs.push(msgTmp);
 			}
 			dataMu.unlock();
 		}
@@ -124,7 +124,32 @@ void Server::new_user(int id){
 
 void Server::user_handle(){
 	bool done=false;
-	dataMu.lock();
-	
+	_msg msgTmp;
 
+			//I know, I shouldn't do that.... But fuck that shit.
+	while(!done){
+		dataMu.lock();
+		while(msgs.size()>0){
+			msgTmp=msgs.top();
+			msgs.pop();
+			if(msgTmp.buffer[0]==PROTOCOL_CHARACTER){
+				int16_t x,y,dir;
+				std::stringstream stream;
+				stream << ((_data*)msgTmp.buffer)->buffer;
+				stream >>x >> y >> dir;
+				players[msgTmp.id]->setX(x);
+				players[msgTmp.id]->setY(y);
+				players[msgTmp.id]->setDir((Direction)dir);
+				stream=std::stringstream("");
+				for(int i=0;i<MAX_USERS;i++)
+					if(i!=msgTmp.id && players[i]!=NULL){
+						senderBuffer.type=PROTOCOL_CHARACTER;
+						stream << x << " " << y << " " << dir << " " << msgTmp.id << " ";
+						std::sprintf(senderBuffer.buffer,"%s",stream.str().c_str());
+						conn.send_packet_unreliable(senderBuffer.buffer,std::strlen(senderBuffer.buffer)+1,i);
+					}
+			}
+		}
+		dataMu.unlock();
+	}
 }

@@ -23,6 +23,10 @@ Defines.hpp
 /home/clemente/projects/Troll-Killers/Defines.hpp
 sstream
 -
+math.h
+-
+iostream
+-
 allegro5/allegro.h
 -
 allegro5/allegro_primitives.h

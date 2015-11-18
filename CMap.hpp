@@ -27,6 +27,8 @@ public:
 	void destroy_object(int x,int y);
 	void draw_map(int x,int y);
 	void setDrawCircles(bool drawCircles){this->drawCircles=drawCircles;}
+	_object *getObjects(){return this->objects;}
+	int getNobject(){return n_object;}
 	~CMap();
 };
 
