@@ -52,9 +52,22 @@ void Client::main_loop(){
 		else if(ev.type == ALLEGRO_EVENT_KEY_UP)
 			storeKeys[ev.keyboard.keycode]=false;
 		else if(ev.type == ALLEGRO_EVENT_TIMER){
-			al_get_keyboard_state(&keyState);
+			if(storeKeys[ALLEGRO_KEY_UP])
+				players[myId]->setDir(UP);
+			else if(storeKeys[ALLEGRO_KEY_DOWN])
+				players[myId]->setDir(DOWN);
+			else if(storeKeys[ALLEGRO_KEY_LEFT])
+				players[myId]->setDir(LEFT);
+			else if(storeKeys[ALLEGRO_KEY_RIGHT])
+				players[myId]->setDir(RIGHT);
+			else
+				players[myId]->setDir(STOPED);
+			
 			mapX=players[myId]->getX()-RES_X/2;
 			mapY=players[myId]->getY()-RES_Y/2;
+			for(int i=0;i<maxClients;i++)
+				if(players[i]!=NULL)
+					players[i]->move();
 			redraw=true;
 		}
 		

@@ -32,6 +32,7 @@ public:
 	int serialize(char *buffer);
 	
 	void draw(int x,int y);
+	void move();
 	
 	void setX(int16_t x){this->player.x=x;}
 	void setY(int16_t y){this->player.y=y;}

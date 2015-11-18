@@ -6,7 +6,7 @@
 #define FPS 60.0
 #define GRID 60
 
-#define PLAYER_VELOCITY 10
+#define PLAYER_VELOCITY 8
 
 //Network protocol
 
