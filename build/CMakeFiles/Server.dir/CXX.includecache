@@ -73,6 +73,8 @@ _data.hpp
 /home/clemente/projects/Troll-Killers/_data.hpp
 iostream
 -
+Defines.hpp
+/home/clemente/projects/Troll-Killers/Defines.hpp
 
 /home/clemente/projects/Troll-Killers/SMap.cpp
 SMap.hpp
@@ -104,6 +106,8 @@ cstring
 Defines.hpp
 /home/clemente/projects/Troll-Killers/Defines.hpp
 string
+-
+stack
 -
 
 /home/clemente/projects/Troll-Killers/_data.hpp

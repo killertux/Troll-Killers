@@ -40,6 +40,8 @@ void Client::main_loop(){
 	al_start_timer(timer);
 	while(!done){
 		al_wait_for_event(event_queue, &ev);
+		while(conn.event_service(0)!=0){
+		}
 		
 		if(ev.type == ALLEGRO_EVENT_DISPLAY_CLOSE)
 			done=true;
@@ -68,6 +70,11 @@ void Client::main_loop(){
 			for(int i=0;i<maxClients;i++)
 				if(players[i]!=NULL)
 					players[i]->move();
+				
+				senderBuffer.type=PROTOCOL_CHARACTER;
+				tmhPacket=players[myId]->serialize(senderBuffer.buffer);
+				conn.send_packet_unreliable(senderBuffer.buffer,tmhPacket,0);
+				conn.send_flush();
 			redraw=true;
 		}
 		
