@@ -48,6 +48,7 @@
 		<Unit filename="SCharacter.hpp" />
 		<Unit filename="Server.cpp" />
 		<Unit filename="Server.hpp" />
+		<Unit filename="Weapons.cpp" />
 		<Unit filename="Weapons.hpp" />
 		<Unit filename="_data.hpp" />
 		<Unit filename="_object.hpp" />

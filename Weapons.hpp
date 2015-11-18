@@ -18,26 +18,17 @@ public:
     void setangy(int y){
         ang_y = y;
     }
-    void rotation (){
-        float imageWidth, imageHeight;
-        imageWidth = al_get_bitmap_width (gun);
-        imageHeight = al_get_bitmap_height (gun);
-        al_draw_rotated_bitmap(ALLEGRO_BITMAP *gun, imageWidth / 2 ,  imageHeight / 2 ,  dx,  dy, angle, 0) //preencher dx, dy e angle
-    }
+    void rotation ();
 };
 
 class Pistol : public Weapon{
     dmg = 20;
 public:
-    Pistol (){
-        gun = al_load_bitmap("Weapons\\pistol.jpg");
-    }
+    Pistol ();
 };
 
 class Rifle : public Weapon{
     dmg = 50;
 public:
-    Rifle(){
-        gun = al_load_bitmap("Weapons\\rifle.jpg");
-    }
+    Rifle();
 };
