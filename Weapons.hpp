@@ -1,10 +1,8 @@
-#include <allegro5/allegro.h>
-#include <allegro5/allegro_image.h>
 
 class Weapon{
+protected:
     int pos_x , pos_y, ang_x, ang_y;
     int dmg;
-    ALLEGRO_BITMAP *gun = NULL;
 public:
     void setposx (int x){
         pos_x = x;
@@ -19,16 +17,4 @@ public:
         ang_y = y;
     }
     void rotation ();
-};
-
-class Pistol : public Weapon{
-    dmg = 20;
-public:
-    Pistol ();
-};
-
-class Rifle : public Weapon{
-    dmg = 50;
-public:
-    Rifle();
 };

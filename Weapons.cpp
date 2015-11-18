@@ -7,10 +7,3 @@ void Weapon::rotation (){
         al_draw_rotated_bitmap(ALLEGRO_BITMAP *gun, imageWidth / 2 ,  imageHeight / 2 ,  dx,  dy, angle, 0) //preencher dx, dy e angle
     }
 
-Pistol::Pistol(){
-    gun = al_load_bitmap("Weapons\\pistol.jpg");
-}
-
-Rifle::Rifle(){
-    gun = al_load_bitmap("Weapons\\rifle.jpg");
-}
