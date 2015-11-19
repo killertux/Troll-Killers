@@ -70,11 +70,13 @@ void Client::main_loop(){
 			for(int i=0;i<maxClients;i++)
 				if(players[i]!=NULL)
 					players[i]->move();
-				
-				senderBuffer.type=PROTOCOL_CHARACTER;
-				tmhPacket=players[myId]->serialize(senderBuffer.buffer);
-				conn.send_packet_unreliable(senderBuffer.buffer,tmhPacket,0);
-				conn.send_flush();
+			
+			players[myId]->colision(map.getObjects(),map.getNobject());
+			
+			senderBuffer.type=PROTOCOL_CHARACTER;
+			tmhPacket=players[myId]->serialize(senderBuffer.buffer);
+			conn.send_packet_unreliable(senderBuffer.buffer,tmhPacket,0);
+			//conn.send_flush();
 			redraw=true;
 		}
 		

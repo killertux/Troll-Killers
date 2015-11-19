@@ -9,6 +9,9 @@
 #include "_data.hpp"
 #include "Defines.hpp"
 #include <sstream>
+#include <math.h>
+
+#include <iostream>
 
 #include <allegro5/allegro.h>
 #include <allegro5/allegro_primitives.h>
@@ -20,6 +23,8 @@ private:
 	int16_t id;
 	int16_t dir;		//Instead of using Direction and Team (enums)
 	int16_t team;
+	
+	float distance(int x1,int x2);
 public:
 	CCharacter();
 	~CCharacter();
@@ -34,6 +39,8 @@ public:
 	
 	void draw(int x,int y);
 	void move();
+	
+	void colision(_object *objects,int n);
 	
 	void setX(int16_t x){this->player.x=x;}
 	void setY(int16_t y){this->player.y=y;}

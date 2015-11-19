@@ -25,7 +25,7 @@ project(Client)
 
 add_executable(Client mainClient.cpp CMap.cpp Map.cpp Client.cpp Connection.cpp CCharacter.cpp Data.cpp)
 
-target_link_libraries(Client -lallegro -lallegro_primitives -lenet)
+target_link_libraries(Client -lallegro -lallegro_primitives -lenet -lm)
 
 SET_TARGET_PROPERTIES(Server PROPERTIES COMPILE_FLAGS "-std=c++11")
 
