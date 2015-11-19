@@ -123,5 +123,8 @@ void Server::new_user(int id){
 }
 
 void Server::user_handle(){
+	bool done=false;
+	dataMu.lock();
+	
 
 }

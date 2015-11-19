@@ -12,8 +12,8 @@ MenuArmas::MenuArmas(){
     bot1 = al_load_bitmap("Menu Img\\pistol1");
     bot2 = al_load_bitmap("Menu Img\\rifle1");
     bot3 = al_load_bitmap("Menu Img \\quit1");
-<<<<<<< HEAD
 }
-=======
+
+Menu::print_menu(){
+
 }
->>>>>>> e208a66599ef31eaff8db1160c30be7372f27528

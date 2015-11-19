@@ -1,23 +1,24 @@
 #include <allegro5/allegro.h>
 #include <allegro5/allegro_image.h>
 
-class Menu {
-protected:
-    ALLEGRO_BITMAP *fundo = NULL;
-    ALLEGRO_BITMAP *bot1 = NULL;
-    ALLEGRO_BITMAP *bot2 = NULL;
+class IMenu {
 public:
-    Menu();
-    void print_menu();
+	virtual void print_menu()=0;
+	virtual ~IMenu(){}
 };
 
-class MenuPrinc : public Menu{
+class MenuPrinc : public IMenu{
+	ALLEGRO_BITMAP *fundo;
+	ALLEGRO_BITMAP *bot1;
+	ALLEGRO_BITMAP *bot2;
 public:
-    MenuPrinc();
+	MenuPrinc();
 };
 
-class MenuArmas : public Menu{
-    ALLEGRO_BITMAP *bot3 = NULL;
+class MenuArmas : public IMenu{
+	ALLEGRO_BITMAP *fundo;
+	ALLEGRO_BITMAP *bot1;
+	ALLEGRO_BITMAP *bot3;
 public:
-    MenuArmas();
+	MenuArmas();
 };
