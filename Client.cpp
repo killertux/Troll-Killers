@@ -59,12 +59,14 @@ void Client::main_loop(){
 					players[id]->setTeam((Team)team);
 				} else if(buffer[0]==PROTOCOL_CHARACTER){
 					int16_t id,x,y,dir;
+					float angle;
 					std::stringstream stream;
 					stream << ((_data*)buffer)->buffer;
-					stream >> id >> x >> y >> dir;
+					stream >> id >> x >> y >> dir >> angle;
 					players[id]->setX(x);
 					players[id]->setY(y);
 					players[id]->setDir((Direction)dir);
+					players[id]->setWeaponAngle(angle);
 					moved[id]=true;
 				}
 			}

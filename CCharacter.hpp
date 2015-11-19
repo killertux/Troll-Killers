@@ -46,11 +46,12 @@ public:
 	
 	void colision(_object *objects,int n);
 	
-	void setX(int16_t x){this->player.x=x;}
-	void setY(int16_t y){this->player.y=y;}
+	void setX(int16_t x){this->player.x=x;weapon->setX(x);}
+	void setY(int16_t y){this->player.y=y;weapon->setY(y);}
 	void setTeam(Team team);
 	
 	void weaponAngle(int mapX,int mapY,int mouseX,int mouseY);
+	void setWeaponAngle(float angle){weapon->setAngle(angle);}
 };
 
 #endif

@@ -15,6 +15,7 @@ public:
 	void setX(int16_t x){this->x=x;}
 	void setY(int16_t y){this->y=y;}
 	void setRadius(int16_t radius){this->radius=radius;}
+	void setAngle(float angle){this->angle=angle;}
 	int16_t getX(){return x;}
 	int16_t getY(){return y;}
 	float getAngle(){return angle;}

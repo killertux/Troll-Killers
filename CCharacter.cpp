@@ -16,7 +16,7 @@ CCharacter::~CCharacter(){
 
 void CCharacter::serialize(char* buffer){
 	std::stringstream stream;
-	stream << player.x << " " << player.y << " "<< dir << " ";
+	stream << player.x << " " << player.y << " "<< dir << " " << weapon->getAngle() << " ";
 	std::sprintf(buffer,"%s",stream.str().c_str());
 }
 

@@ -168,9 +168,10 @@ void Server::user_handle(){
 			msgs.pop();
 			if(((_data*)msgTmp.buffer)->type==PROTOCOL_CHARACTER){
 				int16_t x,y,dir;
+				float angle;
 				std::stringstream stream;
 				stream << ((_data*)msgTmp.buffer)->buffer;
-				stream >> x >> y >> dir;
+				stream >> x >> y >> dir >> angle;
 				players[msgTmp.id]->setX(x);
 				players[msgTmp.id]->setY(y);
 				players[msgTmp.id]->setDir((Direction)dir);
@@ -178,7 +179,7 @@ void Server::user_handle(){
 				for(int i=0;i<MAX_USERS;i++)
 					if(i!=msgTmp.id && players[i]!=NULL && players[i]->getReady()){
 						senderBuffer.type=PROTOCOL_CHARACTER;
-						stream << msgTmp.id << " " << x << " " << y << " " << dir << " " ;
+						stream << msgTmp.id << " " << x << " " << y << " " << dir << " " << angle << " ";
 						std::sprintf(senderBuffer.buffer,"%s",stream.str().c_str());
 						conn.send_packet_unreliable(&senderBuffer,strlen(senderBuffer.buffer)+2,i);
 					}
