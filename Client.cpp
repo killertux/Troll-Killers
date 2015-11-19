@@ -4,7 +4,9 @@ Client::Client(){
 	if(!al_init())
 		exit(-1);
 	al_init_primitives_addon();
+	al_init_image_addon();
 	al_install_keyboard();
+	al_install_mouse();
 	
 	//al_set_new_display_flags(ALLEGRO_FULLSCREEN);
 	
@@ -15,9 +17,10 @@ Client::Client(){
 	
 	al_register_event_source(event_queue,al_get_display_event_source(display));
 	al_register_event_source(event_queue,al_get_keyboard_event_source());
+	al_register_event_source(event_queue,al_get_mouse_event_source());
 	al_register_event_source(event_queue,al_get_timer_event_source(timer));
 	
-	al_hide_mouse_cursor(display);
+	//al_hide_mouse_cursor(display);
 	
 	maxClients=0;
 	
@@ -100,6 +103,9 @@ void Client::main_loop(){
 					moved[i]=false;
 			
 			players[myId]->colision(map.getObjects(),map.getNobject());
+			
+			al_get_mouse_state(&mouseState);
+			players[myId]->weaponAngle(mapX,mapY,mouseState.x,mouseState.y);
 			
 			senderBuffer.type=PROTOCOL_CHARACTER;
 			players[myId]->serialize(senderBuffer.buffer);

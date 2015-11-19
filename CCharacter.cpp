@@ -6,10 +6,12 @@ CCharacter::CCharacter(){
 	player.radius=GRID/2-2;
 	dir=(int16_t) STOPED;
 	velocity=PLAYER_VELOCITY;
+	weapon = new Rifle;
+	weapon->setRadius(player.radius);
 }
 
 CCharacter::~CCharacter(){
-	
+	delete weapon;
 }
 
 void CCharacter::serialize(char* buffer){
@@ -34,6 +36,7 @@ void CCharacter::setTeam(Team team){
 
 void CCharacter::draw(int x,int y){
 	al_draw_filled_circle(player.x-x,player.y-y,player.radius,al_map_rgb(player.r,player.g,player.b));
+	weapon->draw(x,y);
 }
 
 void CCharacter::move(){
@@ -45,6 +48,8 @@ void CCharacter::move(){
 		player.x-=velocity;
 	if(dir==RIGHT)
 		player.x+=velocity;
+	weapon->setX(player.x);
+	weapon->setY(player.y);
 }
 
 void CCharacter::colision(_object *objects,int n){
@@ -72,6 +77,8 @@ void CCharacter::colision(_object *objects,int n){
 				
 				if(!(distance(centerX,player.x)<hDistance && distance(centerY,player.y)<vDistance)){
 					done=true;
+					weapon->setX(player.x);
+					weapon->setY(player.y);
 					dir=(int16_t)STOPED;
 				}
 			}
@@ -83,5 +90,9 @@ void CCharacter::colision(_object *objects,int n){
 
 float CCharacter::distance(int x1, int x2){
 	return sqrt(pow(x1-x2,2));
+}
+
+void CCharacter::weaponAngle(int mapX,int mapY,int mouseX, int mouseY){
+	weapon->calculateAngle(mapX,mapY,mouseX,mouseY);
 }
 

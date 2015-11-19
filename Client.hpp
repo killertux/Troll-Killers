@@ -25,7 +25,7 @@ private:
 	ALLEGRO_DISPLAY *display;
 	ALLEGRO_EVENT_QUEUE *event_queue;
 	ALLEGRO_TIMER *timer;
-	ALLEGRO_KEYBOARD_STATE keyState;
+	ALLEGRO_MOUSE_STATE mouseState;
 	ALLEGRO_EVENT ev;
 	
 	Connection conn;

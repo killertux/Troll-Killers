@@ -427,6 +427,33 @@ MapEditor.cpp.s:
 	$(MAKE) -f CMakeFiles/MapEditor.dir/build.make CMakeFiles/MapEditor.dir/MapEditor.cpp.s
 .PHONY : MapEditor.cpp.s
 
+Rifle.o: Rifle.cpp.o
+
+.PHONY : Rifle.o
+
+# target to build an object file
+Rifle.cpp.o:
+	$(MAKE) -f CMakeFiles/Client.dir/build.make CMakeFiles/Client.dir/Rifle.cpp.o
+.PHONY : Rifle.cpp.o
+
+Rifle.i: Rifle.cpp.i
+
+.PHONY : Rifle.i
+
+# target to preprocess a source file
+Rifle.cpp.i:
+	$(MAKE) -f CMakeFiles/Client.dir/build.make CMakeFiles/Client.dir/Rifle.cpp.i
+.PHONY : Rifle.cpp.i
+
+Rifle.s: Rifle.cpp.s
+
+.PHONY : Rifle.s
+
+# target to generate assembly for a file
+Rifle.cpp.s:
+	$(MAKE) -f CMakeFiles/Client.dir/build.make CMakeFiles/Client.dir/Rifle.cpp.s
+.PHONY : Rifle.cpp.s
+
 SCharacter.o: SCharacter.cpp.o
 
 .PHONY : SCharacter.o
@@ -507,6 +534,33 @@ Server.s: Server.cpp.s
 Server.cpp.s:
 	$(MAKE) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/Server.cpp.s
 .PHONY : Server.cpp.s
+
+Weapons.o: Weapons.cpp.o
+
+.PHONY : Weapons.o
+
+# target to build an object file
+Weapons.cpp.o:
+	$(MAKE) -f CMakeFiles/Client.dir/build.make CMakeFiles/Client.dir/Weapons.cpp.o
+.PHONY : Weapons.cpp.o
+
+Weapons.i: Weapons.cpp.i
+
+.PHONY : Weapons.i
+
+# target to preprocess a source file
+Weapons.cpp.i:
+	$(MAKE) -f CMakeFiles/Client.dir/build.make CMakeFiles/Client.dir/Weapons.cpp.i
+.PHONY : Weapons.cpp.i
+
+Weapons.s: Weapons.cpp.s
+
+.PHONY : Weapons.s
+
+# target to generate assembly for a file
+Weapons.cpp.s:
+	$(MAKE) -f CMakeFiles/Client.dir/build.make CMakeFiles/Client.dir/Weapons.cpp.s
+.PHONY : Weapons.cpp.s
 
 editorMain.o: editorMain.cpp.o
 
@@ -628,6 +682,9 @@ help:
 	@echo "... MapEditor.o"
 	@echo "... MapEditor.i"
 	@echo "... MapEditor.s"
+	@echo "... Rifle.o"
+	@echo "... Rifle.i"
+	@echo "... Rifle.s"
 	@echo "... SCharacter.o"
 	@echo "... SCharacter.i"
 	@echo "... SCharacter.s"
@@ -637,6 +694,9 @@ help:
 	@echo "... Server.o"
 	@echo "... Server.i"
 	@echo "... Server.s"
+	@echo "... Weapons.o"
+	@echo "... Weapons.i"
+	@echo "... Weapons.s"
 	@echo "... editorMain.o"
 	@echo "... editorMain.i"
 	@echo "... editorMain.s"

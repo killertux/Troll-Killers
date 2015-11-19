@@ -2,10 +2,12 @@
 #include "CWeapons.hpp"
 
 Pistol::Pistol(){
-    gun = al_load_bitmap("Weapons\\pistol.jpg");
+	dmg=20;
+	gun = al_load_bitmap("Weapons\\pistol.jpg");
 }
 
 Rifle::Rifle(){
-    gun = al_load_bitmap("Weapons\\rifle.jpg");
+	dmg=50;
+	gun = al_load_bitmap("Weapons\\rifle.jpg");
 }
 

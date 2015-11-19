@@ -1,9 +1,11 @@
 #include "Weapons.hpp"
 
-void Weapon::rotation (){
-        float imageWidth, imageHeight;
-        imageWidth = al_get_bitmap_width (gun);
-        imageHeight = al_get_bitmap_height (gun);
-        al_draw_rotated_bitmap(ALLEGRO_BITMAP *gun, imageWidth / 2 ,  imageHeight / 2 ,  dx,  dy, angle, 0) //preencher dx, dy e angle
-    }
+#include <iostream>
+void Weapons::calculateAngle(int mapX,int mapY,int mouseX, int mouseY){
+	//int dist=sqrt(pow(x-mapX-mouseX))
+	angle=atan(((float)(y-mapY-mouseY))/(x-mapX-mouseX));
+	if(x-mapX-mouseX>=0)
+		angle-=M_PI;
 
+	std::cout << mouseX <<" " << mouseY << " " << angle << std::endl;
+}

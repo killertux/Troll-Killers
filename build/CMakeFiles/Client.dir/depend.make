@@ -6,6 +6,8 @@ CMakeFiles/Client.dir/CCharacter.cpp.o: ../CCharacter.hpp
 CMakeFiles/Client.dir/CCharacter.cpp.o: ../Defines.hpp
 CMakeFiles/Client.dir/CCharacter.cpp.o: ../Enums.hpp
 CMakeFiles/Client.dir/CCharacter.cpp.o: ../IGObject.hpp
+CMakeFiles/Client.dir/CCharacter.cpp.o: ../Rifle.hpp
+CMakeFiles/Client.dir/CCharacter.cpp.o: ../Weapons.hpp
 CMakeFiles/Client.dir/CCharacter.cpp.o: ../_data.hpp
 CMakeFiles/Client.dir/CCharacter.cpp.o: ../_object.hpp
 
@@ -26,6 +28,8 @@ CMakeFiles/Client.dir/Client.cpp.o: ../Defines.hpp
 CMakeFiles/Client.dir/Client.cpp.o: ../Enums.hpp
 CMakeFiles/Client.dir/Client.cpp.o: ../IGObject.hpp
 CMakeFiles/Client.dir/Client.cpp.o: ../Map.hpp
+CMakeFiles/Client.dir/Client.cpp.o: ../Rifle.hpp
+CMakeFiles/Client.dir/Client.cpp.o: ../Weapons.hpp
 CMakeFiles/Client.dir/Client.cpp.o: ../_data.hpp
 CMakeFiles/Client.dir/Client.cpp.o: ../_object.hpp
 
@@ -42,6 +46,13 @@ CMakeFiles/Client.dir/Map.cpp.o: ../Map.hpp
 CMakeFiles/Client.dir/Map.cpp.o: ../_data.hpp
 CMakeFiles/Client.dir/Map.cpp.o: ../_object.hpp
 
+CMakeFiles/Client.dir/Rifle.cpp.o: ../Rifle.cpp
+CMakeFiles/Client.dir/Rifle.cpp.o: ../Rifle.hpp
+CMakeFiles/Client.dir/Rifle.cpp.o: ../Weapons.hpp
+
+CMakeFiles/Client.dir/Weapons.cpp.o: ../Weapons.cpp
+CMakeFiles/Client.dir/Weapons.cpp.o: ../Weapons.hpp
+
 CMakeFiles/Client.dir/mainClient.cpp.o: ../CCharacter.hpp
 CMakeFiles/Client.dir/mainClient.cpp.o: ../CMap.hpp
 CMakeFiles/Client.dir/mainClient.cpp.o: ../Client.hpp
@@ -50,6 +61,8 @@ CMakeFiles/Client.dir/mainClient.cpp.o: ../Defines.hpp
 CMakeFiles/Client.dir/mainClient.cpp.o: ../Enums.hpp
 CMakeFiles/Client.dir/mainClient.cpp.o: ../IGObject.hpp
 CMakeFiles/Client.dir/mainClient.cpp.o: ../Map.hpp
+CMakeFiles/Client.dir/mainClient.cpp.o: ../Rifle.hpp
+CMakeFiles/Client.dir/mainClient.cpp.o: ../Weapons.hpp
 CMakeFiles/Client.dir/mainClient.cpp.o: ../_data.hpp
 CMakeFiles/Client.dir/mainClient.cpp.o: ../_object.hpp
 CMakeFiles/Client.dir/mainClient.cpp.o: ../mainClient.cpp

@@ -22,9 +22,9 @@ install(TARGETS Server RUNTIME DESTINATION bin)
 
 project(Client)
 
-add_executable(Client mainClient.cpp CMap.cpp Map.cpp Client.cpp Connection.cpp CCharacter.cpp Data.cpp)
+add_executable(Client mainClient.cpp CMap.cpp Map.cpp Client.cpp Connection.cpp CCharacter.cpp Data.cpp Weapons.cpp Rifle.cpp)
 
-target_link_libraries(Client -lallegro -lallegro_primitives -lenet -lm)
+target_link_libraries(Client -lallegro -lallegro_primitives -lallegro_image -lenet -lm)
 
 SET_TARGET_PROPERTIES(Server PROPERTIES COMPILE_FLAGS "-std=c++11")
 
