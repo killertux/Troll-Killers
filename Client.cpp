@@ -27,6 +27,8 @@ Client::Client(){
 }
 
 Client::~Client(){
+	delete [] players;
+	delete [] moved;
 	al_destroy_display(display);
 	al_destroy_event_queue(event_queue);
 	al_destroy_timer(timer);
@@ -40,7 +42,7 @@ void Client::main_loop(){
 	al_start_timer(timer);
 	while(!done){
 		al_wait_for_event(event_queue, &ev);
-		while(conn.event_service(0)!=0){
+		while(conn.event_service(0)>0){
 			if(conn.event_type_receive()){
 				buffer=(char*)conn.getPacketData();
 				if(buffer[0]==PROTOCOL_NEW_USER){
@@ -53,17 +55,14 @@ void Client::main_loop(){
 					players[id]->setY(y);
 					players[id]->setTeam((Team)team);
 				} else if(buffer[0]==PROTOCOL_CHARACTER){
-					std::cout << "Someone moved\n";
 					int16_t id,x,y,dir;
 					std::stringstream stream;
 					stream << ((_data*)buffer)->buffer;
 					stream >> id >> x >> y >> dir;
-					std::cout << ((_data*)buffer)->buffer << std::endl;
-					if(players[id]->getDir()!=dir){
-						players[id]->setX(x);
-						players[id]->setY(y);
-						players[id]->setDir((Direction)dir);
-					}
+					players[id]->setX(x);
+					players[id]->setY(y);
+					players[id]->setDir((Direction)dir);
+					moved[id]=true;
 				}
 			}
 			else if(conn.event_type_disconnect())
@@ -95,14 +94,16 @@ void Client::main_loop(){
 			mapX=players[myId]->getX()-RES_X/2;
 			mapY=players[myId]->getY()-RES_Y/2;
 			for(int i=0;i<maxClients;i++)
-				if(players[i]!=NULL)
+				if(players[i]!=NULL && !moved[i])
 					players[i]->move();
+				else if (moved[i])				// So it doesn't move to times
+					moved[i]=false;
 			
 			players[myId]->colision(map.getObjects(),map.getNobject());
 			
 			senderBuffer.type=PROTOCOL_CHARACTER;
 			players[myId]->serialize(senderBuffer.buffer);
-			conn.send_packet_unreliable(&senderBuffer,sizeof(senderBuffer),0);
+			conn.send_packet_unreliable(&senderBuffer,strlen(senderBuffer.buffer)+2,0);
 
 			redraw=true;
 		}
@@ -110,10 +111,10 @@ void Client::main_loop(){
 		if(redraw && al_is_event_queue_empty(event_queue)){
 			map.draw_map(mapX,mapY);
 			for(int i=0;i<maxClients;i++)
-				if(players[i]!=NULL && i==myId)
+				if(players[i]!=NULL/* && i==myId*/)
 					players[i]->draw(mapX,mapY);
-				else if (players[i]!=NULL)
-					players[i]->draw(0,0);
+			/*	else if (players[i]!=NULL)
+					players[i]->draw(0,0);*/
 			al_flip_display();
 		}
 		
@@ -133,8 +134,11 @@ bool Client::connect(){
 				maxClients=recieverBuffer->buffer[0];
 				myId=recieverBuffer->buffer[1];
 				players=new CCharacter*[maxClients];
-				for(int i=0;i<maxClients;i++)
+				moved=new bool[maxClients];
+				for(int i=0;i<maxClients;i++){
 					players[i]=NULL;
+					moved[i]=false;
+				}
 				players[myId]=new CCharacter;
 				std::cout << "I was created\n";
 				//connected. Now I want the map;

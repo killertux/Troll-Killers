@@ -17,6 +17,8 @@ iostream
 -
 string
 -
+cstring
+-
 
 /home/clemente/projects/Troll-Killers/Data.cpp
 _data.hpp

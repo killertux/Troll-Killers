@@ -36,6 +36,7 @@ private:
 	int myId;
 	char *buffer;
 	
+	bool *moved;
 	bool storeKeys[ALLEGRO_KEY_MAX];
 	int mapX,mapY;
 	int maxClients;

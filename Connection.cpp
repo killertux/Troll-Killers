@@ -59,7 +59,10 @@ void Connection::broadcast_packet(void *data,int size){
 }
 
 void Connection::send_flush(){
-    enet_host_flush(connS);
+	if(!client)
+		enet_host_flush(connS);
+	else
+		enet_host_flush(conn);
 }
 
 int Connection::event_service(int timer){
@@ -76,7 +79,9 @@ int Connection::event_service(int timer){
 		peerID=event.peer -> incomingPeerID;
 
 		packetLength = event.packet -> dataLength;
-		packetData = event.packet -> data;
+		memcpy(packetBuffer,event.packet->data,packetLength);
+		packetData=(void*)packetBuffer;
+		enet_packet_destroy(event.packet);
 	} else if(event.type==ENET_EVENT_TYPE_DISCONNECT){
 		lastConnection.host = event.peer -> address.host;
 		lastConnection.port = event.peer -> address.port;

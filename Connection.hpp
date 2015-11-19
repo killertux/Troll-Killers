@@ -13,6 +13,9 @@
 #include <enet/enet.h>
 #include <iostream>
 #include <string>
+#include <cstring>
+
+#define SIZE 4000
 
 class Connection{
 	private:
@@ -27,6 +30,7 @@ class Connection{
 	ENetAddress lastConnection;
 	unsigned int packetLength;
 	void *packetData;
+	char packetBuffer[SIZE];
 	int peerID;
 	
 	void perror(std::string error);

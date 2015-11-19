@@ -52,6 +52,7 @@ void CCharacter::colision(_object *objects,int n){
 	int centerY;
 	int hDistance;
 	int vDistance;
+	bool done=false;
 	for(int i=0;i<n;i++){
 		centerX=objects[i].x+objects[i].length/2;
 		centerY=objects[i].y+objects[i].width/2;
@@ -59,7 +60,6 @@ void CCharacter::colision(_object *objects,int n){
 		vDistance=objects[i].width/2+player.radius;
 		if(objects[i].type==RECTANGLE && distance(centerX,player.x)<hDistance&& 
 			distance(centerY,player.y)<vDistance){
-			bool done=false;
 			while(!done){
 				if(dir==(int16_t)UP)
 					player.y++;
@@ -70,10 +70,14 @@ void CCharacter::colision(_object *objects,int n){
 				else if(dir==(int16_t)RIGHT)
 					player.x--;
 				
-				if(!(distance(centerX,player.x)<hDistance && distance(centerY,player.y)<vDistance))
+				if(!(distance(centerX,player.x)<hDistance && distance(centerY,player.y)<vDistance)){
 					done=true;
+					dir=(int16_t)STOPED;
+				}
 			}
 		}
+		if(done)
+			break;
 	}
 }
 

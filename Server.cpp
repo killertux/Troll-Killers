@@ -24,24 +24,26 @@ void Server::main_loop(){
 	bool done=false;
 	writeThread=new boost::thread(&Server::user_handle,this);
 	while(!done){
-		while(conn.event_service(WAIT_TIMER)>0){
-			dataMu.lock();
+		dataMu.lock();
+		while(conn.event_service(1/FPS)>0){
+			newMu.lock();
+			if(conn.event_type_receive() && players[conn.getPeerId()]!=NULL && players[conn.getPeerId()]->getReady()){
+				newMu.unlock();
+				std::sprintf(msgTmp.buffer,"%s",conn.getPacketData());
+				msgTmp.id=conn.getPeerId();
+				msgs.push(msgTmp);
+			} else newMu.unlock();
 			if(conn.event_type_connect()){
 				boost::thread newUser(&Server::new_user,this,conn.getPeerId());
 				newUser.detach();				//Id we don't do this. The main thread will shutdown after the newUser thread is closed;
 			}
-			else if(conn.event_type_disconnect()){
+			if(conn.event_type_disconnect()){
 				std::cout << "Someone disconected!\n";
 				delete players[conn.getPeerId()];
 				players[conn.getPeerId()]=NULL;
 			}
-			else if(conn.event_type_receive() && players[conn.getPeerId()]!=NULL && players[conn.getPeerId()]->getReady()){
-				std::sprintf(msgTmp.buffer,"%s",conn.getPacketData());
-				msgTmp.id=conn.getPeerId();
-				msgs.push(msgTmp);
-			}
-			dataMu.unlock();
 		}
+		dataMu.unlock();
 	}
 	writeThread->join();
 }
@@ -60,9 +62,7 @@ void Server::new_user(int id){
 	
 	dataMu.lock();
 	conn.send_packet_reliable(&senderBuffer,sizeof(senderBuffer),id);
-	newMu.lock();
 	players[id]=new SCharacter(id);
-	newMu.unlock();
 	dataMu.unlock();
 	std::cout << "Sending the map...\n";
 	size=map.serialize(buffer);
@@ -73,13 +73,14 @@ void Server::new_user(int id){
 	dataMu.unlock();
 	
 	//Get the spawn area
-	newMu.lock();
 	std::cout << "Sending the spawn...\n";
 	_object* spawn;
 	if(blueTeamN>redTeamN){
 		bool done=false;
 		redTeamN++;
+		newMu.lock();
 		players[id]->setTeam(RED);
+		newMu.unlock();
 		while(!done){
 			spawn=map.getSpaw();
 			if(spawn->r!=0){
@@ -99,7 +100,9 @@ void Server::new_user(int id){
 	} else {
 		bool done=false;
 		blueTeamN++;
+		newMu.lock();
 		players[id]->setTeam(BLUE);
+		newMu.unlock();
 		while(!done){
 			spawn=map.getSpaw();
 			if(spawn->b!=0){
@@ -143,10 +146,10 @@ void Server::new_user(int id){
 	conn.send_flush();
 	dataMu.unlock();
 	
+	newMu.lock();
 	players[id]->setX(spawn->x);
 	players[id]->setY(spawn->y);
 	players[id]->make_ready();
-
 	newMu.unlock();
 	std::cout << "Client ready to play\n";
 }
@@ -163,7 +166,6 @@ void Server::user_handle(){
 		while(msgs.size()>0){
 			msgTmp=msgs.top();
 			msgs.pop();
-			//std::cout <<msgTmp.buffer[0]<<std::endl;
 			if(((_data*)msgTmp.buffer)->type==PROTOCOL_CHARACTER){
 				int16_t x,y,dir;
 				std::stringstream stream;
@@ -178,7 +180,7 @@ void Server::user_handle(){
 						senderBuffer.type=PROTOCOL_CHARACTER;
 						stream << msgTmp.id << " " << x << " " << y << " " << dir << " " ;
 						std::sprintf(senderBuffer.buffer,"%s",stream.str().c_str());
-						conn.send_packet_unreliable(&senderBuffer,sizeof(senderBuffer),i);
+						conn.send_packet_unreliable(&senderBuffer,strlen(senderBuffer.buffer)+2,i);
 					}
 				conn.send_flush();
 			}
