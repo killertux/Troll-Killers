@@ -1,8 +1,8 @@
 #ifndef SERVER_HPP
 #define SERVER_HPP
 
-#include <thread>
-#include <mutex>
+#include <boost/thread.hpp>
+#include <boost/thread/mutex.hpp>
 #include "Connection.hpp"
 #include "SMap.hpp"
 #include "IGObject.hpp"
@@ -16,6 +16,7 @@
 #define MAX_USERS 16
 #define WAIT_TIMER 1500
 #define MAP_FILE "../Maps/mapa.data"
+//#define MAP_FILE "Maps/mapa.data"
 
 struct _msg{
 	char buffer[BUFFER_SIZE];
@@ -25,11 +26,11 @@ struct _msg{
 class Server{
 private:
 	Connection conn;
-	std::thread *writeThread;
-	std::thread *cmdThread;
-	std::mutex dataMu;
-	std::mutex newMu;
-	std::mutex cmdMu;
+	boost::thread *writeThread;
+	boost::thread *cmdThread;
+	boost::mutex dataMu;
+	boost::mutex newMu;
+	boost::mutex cmdMu;
 	
 	SMap map;
 	SCharacter **players;
@@ -38,8 +39,6 @@ private:
 	int blueTeamN;
 	
 	std::stack<_msg> msgs;
-	_data *recieverBuffer;
-	_data senderBuffer;
 	void new_user(int id);
 	void user_handle();
 public:

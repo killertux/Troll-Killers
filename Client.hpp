@@ -34,7 +34,7 @@ private:
 	_data *recieverBuffer;
 	_data senderBuffer;
 	int myId;
-	int tmhPacket;
+	char *buffer;
 	
 	bool storeKeys[ALLEGRO_KEY_MAX];
 	int mapX,mapY;

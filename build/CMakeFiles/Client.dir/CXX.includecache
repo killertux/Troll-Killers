@@ -25,6 +25,8 @@ sstream
 -
 math.h
 -
+cstdio
+-
 iostream
 -
 allegro5/allegro.h

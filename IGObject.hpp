@@ -12,7 +12,7 @@ public:
 	virtual int16_t getVelocity() = 0;
 	virtual Team getTeam() = 0;
 	virtual Direction getDir() = 0;
-	virtual int serialize(char *buffer)=0;
+	virtual void serialize(char *buffer)=0;
 	
 	virtual void setX(int16_t x)=0;
 	virtual void setY(int16_t y)=0;

@@ -28,7 +28,8 @@ public:
 	Team getTeam(){return (Team)team;}
 	Direction getDir(){return (Direction)dir;}
 	void setDir(Direction dir){this->dir=dir;}
-	int serialize(char *buffer);
+	void serialize(char *buffer);
+	bool getReady(){return ready;}
 	
 	void make_ready();
 	void setX(int16_t x){player.x=x;}

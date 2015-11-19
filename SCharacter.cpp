@@ -17,7 +17,7 @@ SCharacter::~SCharacter(){
 
 }
 
-int SCharacter::serialize(char* buffer){
+void SCharacter::serialize(char* buffer){
 
 }
 

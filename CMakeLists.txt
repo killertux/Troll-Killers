@@ -13,9 +13,8 @@ project(Server)
 
 add_executable(Server mainServer.cpp Map.cpp Server.cpp Connection.cpp SCharacter.cpp Data.cpp SMap.cpp)
 
-target_link_libraries(Server -lenet  -pthread)
+target_link_libraries(Server -lenet  -pthread -lboost_system -lboost_thread)
 
-SET_TARGET_PROPERTIES(Server PROPERTIES COMPILE_FLAGS "-std=c++11")
 
 install(TARGETS Server RUNTIME DESTINATION bin)
 

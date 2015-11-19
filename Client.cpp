@@ -41,6 +41,33 @@ void Client::main_loop(){
 	while(!done){
 		al_wait_for_event(event_queue, &ev);
 		while(conn.event_service(0)!=0){
+			if(conn.event_type_receive()){
+				buffer=(char*)conn.getPacketData();
+				if(buffer[0]==PROTOCOL_NEW_USER){
+					int16_t id,x,y,team;
+					std::stringstream stream;
+					stream << ((_data*)buffer)->buffer;
+					stream >> id >> x >> y >> team;
+					players[id]=new CCharacter();
+					players[id]->setX(x);
+					players[id]->setY(y);
+					players[id]->setTeam((Team)team);
+				} else if(buffer[0]==PROTOCOL_CHARACTER){
+					std::cout << "Someone moved\n";
+					int16_t id,x,y,dir;
+					std::stringstream stream;
+					stream << ((_data*)buffer)->buffer;
+					stream >> id >> x >> y >> dir;
+					std::cout << ((_data*)buffer)->buffer << std::endl;
+					if(players[id]->getDir()!=dir){
+						players[id]->setX(x);
+						players[id]->setY(y);
+						players[id]->setDir((Direction)dir);
+					}
+				}
+			}
+			else if(conn.event_type_disconnect())
+				exit(-1);
 		}
 		
 		if(ev.type == ALLEGRO_EVENT_DISPLAY_CLOSE)
@@ -74,19 +101,20 @@ void Client::main_loop(){
 			players[myId]->colision(map.getObjects(),map.getNobject());
 			
 			senderBuffer.type=PROTOCOL_CHARACTER;
-			tmhPacket=players[myId]->serialize(senderBuffer.buffer);
-			conn.send_packet_unreliable(senderBuffer.buffer,tmhPacket,0);
-			//conn.send_flush();
+			players[myId]->serialize(senderBuffer.buffer);
+			conn.send_packet_unreliable(&senderBuffer,sizeof(senderBuffer),0);
+
 			redraw=true;
 		}
 		
 		if(redraw && al_is_event_queue_empty(event_queue)){
 			map.draw_map(mapX,mapY);
 			for(int i=0;i<maxClients;i++)
-				if(players[i]!=NULL)
+				if(players[i]!=NULL && i==myId)
 					players[i]->draw(mapX,mapY);
+				else if (players[i]!=NULL)
+					players[i]->draw(0,0);
 			al_flip_display();
-			
 		}
 		
 	}

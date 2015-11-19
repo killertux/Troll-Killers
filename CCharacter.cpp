@@ -12,11 +12,25 @@ CCharacter::~CCharacter(){
 	
 }
 
-int CCharacter::serialize(char* buffer){
+void CCharacter::serialize(char* buffer){
 	std::stringstream stream;
-	stream << player.x << player.y << dir << " ";
-	return stream.str().size();
+	stream << player.x << " " << player.y << " "<< dir << " ";
+	std::sprintf(buffer,"%s",stream.str().c_str());
 }
+
+void CCharacter::setTeam(Team team){
+	this->team=(int16_t)team;
+	if(team==RED){
+		player.r=255;
+		player.g=0;
+		player.b=0;
+	} else if(team==BLUE){
+		player.r=0;
+		player.g=0;
+		player.b=255;
+	}
+}
+
 
 void CCharacter::draw(int x,int y){
 	al_draw_filled_circle(player.x-x,player.y-y,player.radius,al_map_rgb(player.r,player.g,player.b));

@@ -10,6 +10,7 @@
 #include "Defines.hpp"
 #include <sstream>
 #include <math.h>
+#include <cstdio>
 
 #include <iostream>
 
@@ -35,7 +36,7 @@ public:
 	Team getTeam(){return (Team)team;}
 	Direction getDir(){return (Direction)dir;}
 	void setDir(Direction dir){this->dir=dir;}
-	int serialize(char *buffer);
+	void serialize(char *buffer);
 	
 	void draw(int x,int y);
 	void move();
@@ -44,7 +45,7 @@ public:
 	
 	void setX(int16_t x){this->player.x=x;}
 	void setY(int16_t y){this->player.y=y;}
-	void setTeam(Team team){this->team=(int16_t)team;}
+	void setTeam(Team team);
 };
 
 #endif

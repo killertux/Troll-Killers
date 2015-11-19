@@ -1,8 +1,8 @@
 #ifndef DEFINES_HPP
 #define DEFINES_HPP
 
-#define RES_X 1360
-#define RES_Y 768
+#define RES_X 800
+#define RES_Y 420
 #define FPS 60.0
 #define GRID 60
 
@@ -14,5 +14,6 @@
 #define PROTOCOL_MAP_FILE 0x02
 #define PROTOCOL_SET_POS_TEAM 0x03
 #define PROTOCOL_CHARACTER 0x04
+#define PROTOCOL_NEW_USER 0x05
 
 #endif

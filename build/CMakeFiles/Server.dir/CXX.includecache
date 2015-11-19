@@ -89,9 +89,9 @@ Server.hpp
 /home/clemente/projects/Troll-Killers/Server.hpp
 
 /home/clemente/projects/Troll-Killers/Server.hpp
-thread
+boost/thread.hpp
 -
-mutex
+boost/thread/mutex.hpp
 -
 Connection.hpp
 /home/clemente/projects/Troll-Killers/Connection.hpp

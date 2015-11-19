@@ -20,9 +20,9 @@ enum Direction {
 };
 
 enum Team{
-	RED,
-	BLUE,
-	TNONE
+	RED=0x1,
+	BLUE=0x2,
+	TNONE=0x3
 };
 
 #endif
