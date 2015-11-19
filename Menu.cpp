@@ -14,6 +14,6 @@ MenuArmas::MenuArmas(){
     bot3 = al_load_bitmap("Menu Img \\quit1");
 }
 
-Menu::print_menu(){
+MenuArmas::print_menu(){
 
 }

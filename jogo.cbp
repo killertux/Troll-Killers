@@ -33,6 +33,8 @@
 		</Compiler>
 		<Unit filename="CMap.cpp" />
 		<Unit filename="CMap.hpp" />
+		<Unit filename="CWeapons.cpp" />
+		<Unit filename="CWeapons.hpp" />
 		<Unit filename="Connection.cpp" />
 		<Unit filename="Connection.hpp" />
 		<Unit filename="Cursor.cpp" />
@@ -44,6 +46,8 @@
 		<Unit filename="Map.hpp" />
 		<Unit filename="MapEditor.cpp" />
 		<Unit filename="MapEditor.hpp" />
+		<Unit filename="Menu.cpp" />
+		<Unit filename="Menu.hpp" />
 		<Unit filename="SCharacter.cpp" />
 		<Unit filename="SCharacter.hpp" />
 		<Unit filename="Server.cpp" />

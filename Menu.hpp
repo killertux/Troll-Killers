@@ -8,7 +8,7 @@ protected:
     ALLEGRO_BITMAP *bot2 = NULL;
 public:
     Menu();
-void print_menu();
+    void print_menu();
 };
 
 class MenuPrinc : public Menu{
