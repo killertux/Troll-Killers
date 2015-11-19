@@ -3,9 +3,13 @@
 
 class IMenu {
 public:
+<<<<<<< HEAD
+    Menu();
+    void print_menu();
+=======
 	virtual void print_menu()=0;
 	virtual ~IMenu(){}
-	virtual void botao()=0;
+>>>>>>> e208a66599ef31eaff8db1160c30be7372f27528
 };
 
 class MenuPrinc : public IMenu{
@@ -19,7 +23,6 @@ public:
 class MenuArmas : public IMenu{
 	ALLEGRO_BITMAP *fundo;
 	ALLEGRO_BITMAP *bot1;
-	ALLEGRO_BITMAP *bot2;
 	ALLEGRO_BITMAP *bot3;
 public:
 	MenuArmas();
