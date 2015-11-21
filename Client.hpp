@@ -16,6 +16,8 @@
 #include <iostream>
 
 #define MAP_FILE "Maps/mapa.data"
+#define MYWEAPON RIFLE
+//#define MYWEAPON PISTOL
 
 #define IP "127.0.0.1"
 #define PORT 4665

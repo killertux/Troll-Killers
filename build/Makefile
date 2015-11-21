@@ -427,6 +427,33 @@ MapEditor.cpp.s:
 	$(MAKE) -f CMakeFiles/MapEditor.dir/build.make CMakeFiles/MapEditor.dir/MapEditor.cpp.s
 .PHONY : MapEditor.cpp.s
 
+Pistol.o: Pistol.cpp.o
+
+.PHONY : Pistol.o
+
+# target to build an object file
+Pistol.cpp.o:
+	$(MAKE) -f CMakeFiles/Client.dir/build.make CMakeFiles/Client.dir/Pistol.cpp.o
+.PHONY : Pistol.cpp.o
+
+Pistol.i: Pistol.cpp.i
+
+.PHONY : Pistol.i
+
+# target to preprocess a source file
+Pistol.cpp.i:
+	$(MAKE) -f CMakeFiles/Client.dir/build.make CMakeFiles/Client.dir/Pistol.cpp.i
+.PHONY : Pistol.cpp.i
+
+Pistol.s: Pistol.cpp.s
+
+.PHONY : Pistol.s
+
+# target to generate assembly for a file
+Pistol.cpp.s:
+	$(MAKE) -f CMakeFiles/Client.dir/build.make CMakeFiles/Client.dir/Pistol.cpp.s
+.PHONY : Pistol.cpp.s
+
 Rifle.o: Rifle.cpp.o
 
 .PHONY : Rifle.o
@@ -682,6 +709,9 @@ help:
 	@echo "... MapEditor.o"
 	@echo "... MapEditor.i"
 	@echo "... MapEditor.s"
+	@echo "... Pistol.o"
+	@echo "... Pistol.i"
+	@echo "... Pistol.s"
 	@echo "... Rifle.o"
 	@echo "... Rifle.i"
 	@echo "... Rifle.s"

@@ -17,6 +17,7 @@ private:
 	int16_t id;
 	int16_t dir;		//Instead of using Direction and Team (enums)
 	int16_t team;		//We are using int16_t because of the endianes
+	int16_t myWeapon;
 	bool ready;
 public:
 	SCharacter(int id);
@@ -25,6 +26,7 @@ public:
 	int16_t getX(){return player.x;}
 	int16_t getY(){return player.y;}
 	int16_t getVelocity(){return velocity;}
+	int16_t getMyWeapon(){return myWeapon;}
 	Team getTeam(){return (Team)team;}
 	Direction getDir(){return (Direction)dir;}
 	void setDir(Direction dir){this->dir=dir;}
@@ -35,6 +37,7 @@ public:
 	void setX(int16_t x){player.x=x;}
 	void setY(int16_t y){player.y=y;}
 	void setTeam(Team team){this->team=(int16_t)team;}
+	void setMyWeapon(Weapon myWeapon){this->myWeapon=(int16_t)myWeapon;}
 };
 
 #endif

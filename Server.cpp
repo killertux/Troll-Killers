@@ -27,7 +27,7 @@ void Server::main_loop(){
 		dataMu.lock();
 		while(conn.event_service(1/FPS)>0){
 			newMu.lock();
-			if(conn.event_type_receive() && players[conn.getPeerId()]!=NULL && players[conn.getPeerId()]->getReady()){
+			if(conn.event_type_receive()){
 				newMu.unlock();
 				std::sprintf(msgTmp.buffer,"%s",conn.getPacketData());
 				msgTmp.id=conn.getPeerId();
@@ -49,7 +49,8 @@ void Server::main_loop(){
 }
 
 void Server::new_user(int id){
-	//players[id]=new SCharacter;
+	bool done=false;
+	_msg msgTmp;
 	_data *recieverBuffer;
 	_data senderBuffer;
 	char buffer[2048];
@@ -64,10 +65,35 @@ void Server::new_user(int id){
 	conn.send_packet_reliable(&senderBuffer,sizeof(senderBuffer),id);
 	players[id]=new SCharacter(id);
 	dataMu.unlock();
+	
+	std::cout << "Waiting for his gun..\n";
+	
+	
+	while(!done){
+		dataMu.lock();		
+		//while(msgs.size()>0){
+		if(msgs.size()>0){
+			msgTmp=msgs.top();
+			if(((_data*)msgTmp.buffer)->type==PROTOCOL_MY_WEAPON && msgTmp.id==id){
+				std::stringstream stream;
+				int16_t myWeapon;
+				stream <<((_data*)msgTmp.buffer)->buffer;
+				stream >> myWeapon;
+				
+				players[id]->setMyWeapon((Weapon)myWeapon);
+				msgs.pop();
+				done=true;
+			}
+		}
+		dataMu.unlock();
+	}
+	
+	
 	std::cout << "Sending the map...\n";
 	size=map.serialize(buffer);
 	//std::cout << size << " - " << buffer << std::endl;
 	
+	std::cout << "Lol";
 	dataMu.lock();
 	conn.send_packet_reliable(buffer,size,id);
 	dataMu.unlock();
@@ -123,8 +149,13 @@ void Server::new_user(int id){
 	//send to everyone else that I exist;
 	std::stringstream stream;
 	senderBuffer.type=PROTOCOL_NEW_USER;
-	stream << (int16_t)id << " "  << spawn->x << " " << spawn->y<< " "<<(int16_t)players[id]->getTeam()<<" ";
+	stream << (int16_t)id << " "  << spawn->x << " " << spawn->y<< " "<<(int16_t)players[id]->getTeam()<<" "<<players[id]->getMyWeapon()<<" ";
 	std::sprintf(senderBuffer.buffer,"%s",stream.str().c_str());
+	
+	if(players[id]->getMyWeapon()==(int16_t)PISTOL)
+		std::cout << "Pistol!\n";
+	if(players[id]->getMyWeapon()==(int16_t)RIFLE)
+		std::cout << "Rifle!\n";
 	
 	dataMu.lock();
 	for(int i=0;i<MAX_USERS;i++)
@@ -133,19 +164,20 @@ void Server::new_user(int id){
 		}
 	dataMu.unlock();
 	
+	//Send who else exists
 	senderBuffer.type=PROTOCOL_NEW_USER;
 	dataMu.lock();
 	for(int i=0;i<MAX_USERS;i++)
 		if(players[i]!=NULL && players[i]->getReady()){
 			stream=std::stringstream("");
-			stream << players[i]->getId() << " "  << players[i]->getX() << " " << players[i]->getY() << " "<<(int16_t)players[i]->getTeam()<<" ";
+			stream << players[i]->getId() << " "  << players[i]->getX() << " " << players[i]->getY() << " "<<(int16_t)players[i]->getTeam()<<" "<<players[i]->getMyWeapon()<<" ";
 			std::sprintf(senderBuffer.buffer,"%s",stream.str().c_str());
 			conn.send_packet_reliable(&senderBuffer,(int)sizeof(senderBuffer),id);
 		}
 	
 	conn.send_flush();
 	dataMu.unlock();
-	
+	\
 	newMu.lock();
 	players[id]->setX(spawn->x);
 	players[id]->setY(spawn->y);
@@ -163,9 +195,9 @@ void Server::user_handle(){
 			
 	while(!done){
 		dataMu.lock();		//I know, I shouldn't do that.... But fuck that shit.
-		while(msgs.size()>0){
+		//while(msgs.size()>0){
+		if(msgs.size()>0){
 			msgTmp=msgs.top();
-			msgs.pop();
 			if(((_data*)msgTmp.buffer)->type==PROTOCOL_CHARACTER){
 				int16_t x,y,dir;
 				float angle;
@@ -183,6 +215,7 @@ void Server::user_handle(){
 						std::sprintf(senderBuffer.buffer,"%s",stream.str().c_str());
 						conn.send_packet_unreliable(&senderBuffer,strlen(senderBuffer.buffer)+2,i);
 					}
+				msgs.pop();
 				conn.send_flush();
 			}
 		}

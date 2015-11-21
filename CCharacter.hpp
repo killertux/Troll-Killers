@@ -9,6 +9,7 @@
 #include "_data.hpp"
 #include "Defines.hpp"
 #include "Rifle.hpp"
+#include "Pistol.hpp"
 #include <sstream>
 #include <math.h>
 #include <cstdio>
@@ -25,12 +26,13 @@ private:
 	int16_t id;
 	int16_t dir;		//Instead of using Direction and Team (enums)
 	int16_t team;
+	int16_t myWeapon;		//Name my weapon
 	
 	Weapons *weapon;
 	
 	float distance(int x1,int x2);
 public:
-	CCharacter();
+	CCharacter(Weapon myWeapon);
 	~CCharacter();
 	int16_t getId(){return id;}
 	int16_t getX(){return player.x;}

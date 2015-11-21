@@ -49,11 +49,11 @@ void Client::main_loop(){
 			if(conn.event_type_receive()){
 				buffer=(char*)conn.getPacketData();
 				if(buffer[0]==PROTOCOL_NEW_USER){
-					int16_t id,x,y,team;
+					int16_t id,x,y,team,myWeapon;;
 					std::stringstream stream;
 					stream << ((_data*)buffer)->buffer;
-					stream >> id >> x >> y >> team;
-					players[id]=new CCharacter();
+					stream >> id >> x >> y >> team >> myWeapon;
+					players[id]=new CCharacter((Weapon)myWeapon);
 					players[id]->setX(x);
 					players[id]->setY(y);
 					players[id]->setTeam((Team)team);
@@ -132,6 +132,8 @@ void Client::main_loop(){
 bool Client::connect(){
 	char *buffer;
 	int v=0;
+	bool bPeers,bMap,bSpawn;
+	bPeers=bMap=bSpawn=false;
 	if(!conn.create_client("127.0.0.1",PORT))
 		return false;
 	while(conn.event_service(10000)!=0){
@@ -147,12 +149,20 @@ bool Client::connect(){
 					players[i]=NULL;
 					moved[i]=false;
 				}
-				players[myId]=new CCharacter;
+				players[myId]=new CCharacter(MYWEAPON);
+				//Now I will respond the server with my Weapon;
+				std::stringstream stream;
+				stream <<(int16_t)MYWEAPON <<" ";
+				senderBuffer.type=PROTOCOL_MY_WEAPON;
+				std::sprintf(senderBuffer.buffer,"%s",stream.str().c_str());
+				conn.send_packet_reliable(&senderBuffer,strlen(senderBuffer.buffer)+2,0);
 				std::cout << "I was created\n";
+				bPeers=true;
 				//connected. Now I want the map;
 			}else if(buffer[0]==PROTOCOL_MAP_FILE){
 				map.deserialize(buffer);
 				std::cout << "Now I have the map\n";
+				bMap=true;
 				//Now i need to know my position
 			}else if(buffer[0]==PROTOCOL_SET_POS_TEAM){
 				std::stringstream stream;
@@ -165,9 +175,11 @@ bool Client::connect(){
 				players[myId]->setY(y);
 				players[myId]->setTeam((Team)team);
 				std::cout << "Now I know where I should be\n";
-				return true;
+				bSpawn=true;
 			}
 		}
+		if(bPeers && bMap && bSpawn)
+			return true;
 	}
 	return false;
 }

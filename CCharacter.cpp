@@ -2,11 +2,15 @@
 
 //A lot of work to do
 
-CCharacter::CCharacter(){
+CCharacter::CCharacter(Weapon myWeapon){
 	player.radius=GRID/2-2;
 	dir=(int16_t) STOPED;
 	velocity=PLAYER_VELOCITY;
-	weapon = new Rifle;
+	this->myWeapon=(int16_t)myWeapon;
+	if(myWeapon==PISTOL)
+		weapon = new Pistol;
+	else if(myWeapon == RIFLE)
+		weapon = new Rifle;
 	weapon->setRadius(player.radius);
 }
 

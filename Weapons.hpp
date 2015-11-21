@@ -22,7 +22,7 @@ public:
 	
 	void calculateAngle(int mapX,int mapY,int mouseX,int mouseY);
 	
-	virtual void draw(int mapX,int mapY)=0;
+	virtual void draw(int mapX,int mapY);
 	virtual void shoot()=0;
 	virtual ~Weapons(){al_destroy_bitmap(gun);}
 };

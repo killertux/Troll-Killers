@@ -23,6 +23,8 @@ Defines.hpp
 /home/clemente/projects/Troll-Killers/Defines.hpp
 Rifle.hpp
 /home/clemente/projects/Troll-Killers/Rifle.hpp
+Pistol.hpp
+/home/clemente/projects/Troll-Killers/Pistol.hpp
 sstream
 -
 math.h
@@ -140,6 +142,16 @@ Defines.hpp
 arpa/inet.h
 -
 fstream
+-
+
+/home/clemente/projects/Troll-Killers/Pistol.cpp
+Pistol.hpp
+/home/clemente/projects/Troll-Killers/Pistol.hpp
+
+/home/clemente/projects/Troll-Killers/Pistol.hpp
+Weapons.hpp
+/home/clemente/projects/Troll-Killers/Weapons.hpp
+iostream
 -
 
 /home/clemente/projects/Troll-Killers/Rifle.cpp

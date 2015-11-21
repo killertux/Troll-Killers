@@ -25,4 +25,9 @@ enum Team{
 	TNONE=0x3
 };
 
+enum Weapon{
+	RIFLE,
+	PISTOL
+};
+
 #endif

@@ -1,12 +1,12 @@
-#ifndef RIFLE_HPP
-#define RIFLE_HPP
+#ifndef PISTOL_HPP
+#define PISTOL_HPP
 
 #include "Weapons.hpp"
 #include <iostream>
 
-class Rifle : public Weapons{
+class Pistol : public Weapons{
 public:
-	Rifle();
+	Pistol();
 	virtual void shoot();
 };
 
