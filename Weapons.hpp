@@ -7,8 +7,9 @@
 #include "Enums.hpp"
 #include <cmath>
 #include "CProjectile.hpp"
-
-#define SCREEN_PROJECTILES 150		//Max number of projectiles on the screen;
+#include "Connection.hpp"
+#include <sstream>
+#include <cstdio>
 
 class Weapons{
 protected:
@@ -34,13 +35,14 @@ public:
 	int16_t getY(){return y;}
 	int16_t getWeaponTipX();
 	int16_t getWeaponTipY();
+	int16_t getDmg(){return dmg;}
 	float getAngle(){return angle;}
 	Projectile **getProjectiles(){return (Projectile**)projectiles;}
 	
 	void calculateAngle(int mapX,int mapY,int mouseX,int mouseY);
 	
 	virtual void draw(int mapX,int mapY);
-	virtual void shoot(ALLEGRO_MOUSE_STATE &mouseState)=0;
+	virtual void shoot(ALLEGRO_MOUSE_STATE &mouseState,Connection *conn)=0;
 };
 
 #endif

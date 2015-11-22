@@ -5,6 +5,7 @@ CMakeFiles/Client.dir/CCharacter.cpp.o
  /home/clemente/projects/Troll-Killers/CCharacter.cpp
  /home/clemente/projects/Troll-Killers/CCharacter.hpp
  /home/clemente/projects/Troll-Killers/CProjectile.hpp
+ /home/clemente/projects/Troll-Killers/Connection.hpp
  /home/clemente/projects/Troll-Killers/Defines.hpp
  /home/clemente/projects/Troll-Killers/Enums.hpp
  /home/clemente/projects/Troll-Killers/IGObject.hpp
@@ -36,23 +37,26 @@ CMakeFiles/Client.dir/Client.cpp.o
  /home/clemente/projects/Troll-Killers/CProjectile.hpp
  /home/clemente/projects/Troll-Killers/Client.cpp
  /home/clemente/projects/Troll-Killers/Client.hpp
+ /home/clemente/projects/Troll-Killers/Configuration.hpp
  /home/clemente/projects/Troll-Killers/Connection.hpp
  /home/clemente/projects/Troll-Killers/Defines.hpp
  /home/clemente/projects/Troll-Killers/Enums.hpp
  /home/clemente/projects/Troll-Killers/IGObject.hpp
  /home/clemente/projects/Troll-Killers/Map.hpp
+ /home/clemente/projects/Troll-Killers/Menu.hpp
+ /home/clemente/projects/Troll-Killers/MenuManager.hpp
  /home/clemente/projects/Troll-Killers/Pistol.hpp
  /home/clemente/projects/Troll-Killers/Projectile.hpp
  /home/clemente/projects/Troll-Killers/Rifle.hpp
  /home/clemente/projects/Troll-Killers/Weapons.hpp
  /home/clemente/projects/Troll-Killers/_data.hpp
  /home/clemente/projects/Troll-Killers/_object.hpp
+CMakeFiles/Client.dir/Configuration.cpp.o
+ /home/clemente/projects/Troll-Killers/Configuration.cpp
+ /home/clemente/projects/Troll-Killers/Configuration.hpp
 CMakeFiles/Client.dir/Connection.cpp.o
  /home/clemente/projects/Troll-Killers/Connection.cpp
  /home/clemente/projects/Troll-Killers/Connection.hpp
-CMakeFiles/Client.dir/Data.cpp.o
- /home/clemente/projects/Troll-Killers/Data.cpp
- /home/clemente/projects/Troll-Killers/_data.hpp
 CMakeFiles/Client.dir/Map.cpp.o
  /home/clemente/projects/Troll-Killers/Defines.hpp
  /home/clemente/projects/Troll-Killers/Enums.hpp
@@ -60,8 +64,33 @@ CMakeFiles/Client.dir/Map.cpp.o
  /home/clemente/projects/Troll-Killers/Map.hpp
  /home/clemente/projects/Troll-Killers/_data.hpp
  /home/clemente/projects/Troll-Killers/_object.hpp
+CMakeFiles/Client.dir/Menu.cpp.o
+ /home/clemente/projects/Troll-Killers/Defines.hpp
+ /home/clemente/projects/Troll-Killers/Menu.cpp
+ /home/clemente/projects/Troll-Killers/Menu.hpp
+CMakeFiles/Client.dir/MenuManager.cpp.o
+ /home/clemente/projects/Troll-Killers/CCharacter.hpp
+ /home/clemente/projects/Troll-Killers/CMap.hpp
+ /home/clemente/projects/Troll-Killers/CProjectile.hpp
+ /home/clemente/projects/Troll-Killers/Client.hpp
+ /home/clemente/projects/Troll-Killers/Configuration.hpp
+ /home/clemente/projects/Troll-Killers/Connection.hpp
+ /home/clemente/projects/Troll-Killers/Defines.hpp
+ /home/clemente/projects/Troll-Killers/Enums.hpp
+ /home/clemente/projects/Troll-Killers/IGObject.hpp
+ /home/clemente/projects/Troll-Killers/Map.hpp
+ /home/clemente/projects/Troll-Killers/Menu.hpp
+ /home/clemente/projects/Troll-Killers/MenuManager.cpp
+ /home/clemente/projects/Troll-Killers/MenuManager.hpp
+ /home/clemente/projects/Troll-Killers/Pistol.hpp
+ /home/clemente/projects/Troll-Killers/Projectile.hpp
+ /home/clemente/projects/Troll-Killers/Rifle.hpp
+ /home/clemente/projects/Troll-Killers/Weapons.hpp
+ /home/clemente/projects/Troll-Killers/_data.hpp
+ /home/clemente/projects/Troll-Killers/_object.hpp
 CMakeFiles/Client.dir/Pistol.cpp.o
  /home/clemente/projects/Troll-Killers/CProjectile.hpp
+ /home/clemente/projects/Troll-Killers/Connection.hpp
  /home/clemente/projects/Troll-Killers/Defines.hpp
  /home/clemente/projects/Troll-Killers/Enums.hpp
  /home/clemente/projects/Troll-Killers/IGObject.hpp
@@ -80,6 +109,7 @@ CMakeFiles/Client.dir/Projectile.cpp.o
  /home/clemente/projects/Troll-Killers/_object.hpp
 CMakeFiles/Client.dir/Rifle.cpp.o
  /home/clemente/projects/Troll-Killers/CProjectile.hpp
+ /home/clemente/projects/Troll-Killers/Connection.hpp
  /home/clemente/projects/Troll-Killers/Defines.hpp
  /home/clemente/projects/Troll-Killers/Enums.hpp
  /home/clemente/projects/Troll-Killers/IGObject.hpp
@@ -91,6 +121,7 @@ CMakeFiles/Client.dir/Rifle.cpp.o
  /home/clemente/projects/Troll-Killers/_object.hpp
 CMakeFiles/Client.dir/Weapons.cpp.o
  /home/clemente/projects/Troll-Killers/CProjectile.hpp
+ /home/clemente/projects/Troll-Killers/Connection.hpp
  /home/clemente/projects/Troll-Killers/Defines.hpp
  /home/clemente/projects/Troll-Killers/Enums.hpp
  /home/clemente/projects/Troll-Killers/IGObject.hpp
@@ -104,11 +135,14 @@ CMakeFiles/Client.dir/mainClient.cpp.o
  /home/clemente/projects/Troll-Killers/CMap.hpp
  /home/clemente/projects/Troll-Killers/CProjectile.hpp
  /home/clemente/projects/Troll-Killers/Client.hpp
+ /home/clemente/projects/Troll-Killers/Configuration.hpp
  /home/clemente/projects/Troll-Killers/Connection.hpp
  /home/clemente/projects/Troll-Killers/Defines.hpp
  /home/clemente/projects/Troll-Killers/Enums.hpp
  /home/clemente/projects/Troll-Killers/IGObject.hpp
  /home/clemente/projects/Troll-Killers/Map.hpp
+ /home/clemente/projects/Troll-Killers/Menu.hpp
+ /home/clemente/projects/Troll-Killers/MenuManager.hpp
  /home/clemente/projects/Troll-Killers/Pistol.hpp
  /home/clemente/projects/Troll-Killers/Projectile.hpp
  /home/clemente/projects/Troll-Killers/Rifle.hpp

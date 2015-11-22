@@ -177,33 +177,9 @@ CMakeFiles/Server.dir/SCharacter.cpp.o.provides: CMakeFiles/Server.dir/SCharacte
 CMakeFiles/Server.dir/SCharacter.cpp.o.provides.build: CMakeFiles/Server.dir/SCharacter.cpp.o
 
 
-CMakeFiles/Server.dir/Data.cpp.o: CMakeFiles/Server.dir/flags.make
-CMakeFiles/Server.dir/Data.cpp.o: ../Data.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/clemente/projects/Troll-Killers/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/Server.dir/Data.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Server.dir/Data.cpp.o -c /home/clemente/projects/Troll-Killers/Data.cpp
-
-CMakeFiles/Server.dir/Data.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Server.dir/Data.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/clemente/projects/Troll-Killers/Data.cpp > CMakeFiles/Server.dir/Data.cpp.i
-
-CMakeFiles/Server.dir/Data.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Server.dir/Data.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/clemente/projects/Troll-Killers/Data.cpp -o CMakeFiles/Server.dir/Data.cpp.s
-
-CMakeFiles/Server.dir/Data.cpp.o.requires:
-
-.PHONY : CMakeFiles/Server.dir/Data.cpp.o.requires
-
-CMakeFiles/Server.dir/Data.cpp.o.provides: CMakeFiles/Server.dir/Data.cpp.o.requires
-	$(MAKE) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/Data.cpp.o.provides.build
-.PHONY : CMakeFiles/Server.dir/Data.cpp.o.provides
-
-CMakeFiles/Server.dir/Data.cpp.o.provides.build: CMakeFiles/Server.dir/Data.cpp.o
-
-
 CMakeFiles/Server.dir/SMap.cpp.o: CMakeFiles/Server.dir/flags.make
 CMakeFiles/Server.dir/SMap.cpp.o: ../SMap.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/clemente/projects/Troll-Killers/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/Server.dir/SMap.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/clemente/projects/Troll-Killers/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/Server.dir/SMap.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Server.dir/SMap.cpp.o -c /home/clemente/projects/Troll-Killers/SMap.cpp
 
 CMakeFiles/Server.dir/SMap.cpp.i: cmake_force
@@ -225,6 +201,30 @@ CMakeFiles/Server.dir/SMap.cpp.o.provides: CMakeFiles/Server.dir/SMap.cpp.o.requ
 CMakeFiles/Server.dir/SMap.cpp.o.provides.build: CMakeFiles/Server.dir/SMap.cpp.o
 
 
+CMakeFiles/Server.dir/Configuration.cpp.o: CMakeFiles/Server.dir/flags.make
+CMakeFiles/Server.dir/Configuration.cpp.o: ../Configuration.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/clemente/projects/Troll-Killers/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/Server.dir/Configuration.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Server.dir/Configuration.cpp.o -c /home/clemente/projects/Troll-Killers/Configuration.cpp
+
+CMakeFiles/Server.dir/Configuration.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Server.dir/Configuration.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/clemente/projects/Troll-Killers/Configuration.cpp > CMakeFiles/Server.dir/Configuration.cpp.i
+
+CMakeFiles/Server.dir/Configuration.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Server.dir/Configuration.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/clemente/projects/Troll-Killers/Configuration.cpp -o CMakeFiles/Server.dir/Configuration.cpp.s
+
+CMakeFiles/Server.dir/Configuration.cpp.o.requires:
+
+.PHONY : CMakeFiles/Server.dir/Configuration.cpp.o.requires
+
+CMakeFiles/Server.dir/Configuration.cpp.o.provides: CMakeFiles/Server.dir/Configuration.cpp.o.requires
+	$(MAKE) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/Configuration.cpp.o.provides.build
+.PHONY : CMakeFiles/Server.dir/Configuration.cpp.o.provides
+
+CMakeFiles/Server.dir/Configuration.cpp.o.provides.build: CMakeFiles/Server.dir/Configuration.cpp.o
+
+
 # Object files for target Server
 Server_OBJECTS = \
 "CMakeFiles/Server.dir/mainServer.cpp.o" \
@@ -232,8 +232,8 @@ Server_OBJECTS = \
 "CMakeFiles/Server.dir/Server.cpp.o" \
 "CMakeFiles/Server.dir/Connection.cpp.o" \
 "CMakeFiles/Server.dir/SCharacter.cpp.o" \
-"CMakeFiles/Server.dir/Data.cpp.o" \
-"CMakeFiles/Server.dir/SMap.cpp.o"
+"CMakeFiles/Server.dir/SMap.cpp.o" \
+"CMakeFiles/Server.dir/Configuration.cpp.o"
 
 # External object files for target Server
 Server_EXTERNAL_OBJECTS =
@@ -243,8 +243,8 @@ Server: CMakeFiles/Server.dir/Map.cpp.o
 Server: CMakeFiles/Server.dir/Server.cpp.o
 Server: CMakeFiles/Server.dir/Connection.cpp.o
 Server: CMakeFiles/Server.dir/SCharacter.cpp.o
-Server: CMakeFiles/Server.dir/Data.cpp.o
 Server: CMakeFiles/Server.dir/SMap.cpp.o
+Server: CMakeFiles/Server.dir/Configuration.cpp.o
 Server: CMakeFiles/Server.dir/build.make
 Server: CMakeFiles/Server.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/clemente/projects/Troll-Killers/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable Server"
@@ -260,8 +260,8 @@ CMakeFiles/Server.dir/requires: CMakeFiles/Server.dir/Map.cpp.o.requires
 CMakeFiles/Server.dir/requires: CMakeFiles/Server.dir/Server.cpp.o.requires
 CMakeFiles/Server.dir/requires: CMakeFiles/Server.dir/Connection.cpp.o.requires
 CMakeFiles/Server.dir/requires: CMakeFiles/Server.dir/SCharacter.cpp.o.requires
-CMakeFiles/Server.dir/requires: CMakeFiles/Server.dir/Data.cpp.o.requires
 CMakeFiles/Server.dir/requires: CMakeFiles/Server.dir/SMap.cpp.o.requires
+CMakeFiles/Server.dir/requires: CMakeFiles/Server.dir/Configuration.cpp.o.requires
 
 .PHONY : CMakeFiles/Server.dir/requires
 

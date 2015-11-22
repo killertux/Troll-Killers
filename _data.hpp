@@ -11,8 +11,4 @@ struct _data{
 	int8_t type;
 	char buffer[BUFFER_SIZE];
 };
-namespace data{
-	void int_copy(char *buffer,int n1,int bytesI,int nBytes);
-	int int_get(char *buffer,int bytesI,int nBytes);
-}
 #endif

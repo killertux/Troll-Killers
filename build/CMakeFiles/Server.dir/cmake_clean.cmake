@@ -4,8 +4,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/Server.dir/Server.cpp.o"
   "CMakeFiles/Server.dir/Connection.cpp.o"
   "CMakeFiles/Server.dir/SCharacter.cpp.o"
-  "CMakeFiles/Server.dir/Data.cpp.o"
   "CMakeFiles/Server.dir/SMap.cpp.o"
+  "CMakeFiles/Server.dir/Configuration.cpp.o"
   "Server.pdb"
   "Server"
 )

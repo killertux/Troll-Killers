@@ -41,6 +41,7 @@ public:
 
 	virtual int serialize(char *buffer);
 	virtual void deserialize(char *buffer);
+	_object *getObjects(){return objects;}
 
 	std::string getName(){return name;}
 	~Map();

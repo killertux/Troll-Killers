@@ -3,19 +3,18 @@
 
 #include <boost/thread.hpp>
 #include <boost/thread/mutex.hpp>
+#include <string>
+#include <stack>
+#include <cstring>
+
 #include "Connection.hpp"
 #include "SMap.hpp"
 #include "IGObject.hpp"
 #include "SCharacter.hpp"
-#include <cstring>
+#include "Configuration.hpp"
 #include "Defines.hpp"
-#include <string>
-#include <stack>
 
-#define PORT 4665
-#define MAX_USERS 16
-#define WAIT_TIMER 1500
-#define MAP_FILE "../Maps/mapa.data"
+#define MAP_FILE "Maps/mapa.data"
 //#define MAP_FILE "Maps/mapa.data"
 
 struct _msg{
@@ -34,9 +33,11 @@ private:
 	
 	SMap map;
 	SCharacter **players;
+	Configuration config;
 	
 	int redTeamN;
 	int blueTeamN;
+	int port,users;
 	
 	std::stack<_msg> msgs;
 	void new_user(int id);

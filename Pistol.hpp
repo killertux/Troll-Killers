@@ -8,7 +8,7 @@ class Pistol : public Weapons{
 	bool shooted;
 public:
 	Pistol();
-	virtual void shoot(ALLEGRO_MOUSE_STATE &mouseState);
+	virtual void shoot(ALLEGRO_MOUSE_STATE &mouseState,Connection *conn);
 };
 
 #endif

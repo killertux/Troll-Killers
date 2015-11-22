@@ -22,11 +22,14 @@ public:
 	int16_t getY(){return y;}
 	float getAngle(){return angle;}
 	int16_t getVelocity(){return velocity;}
+	int16_t getLength(){return length;}
 	void serialize(char *buffer);
 	
 	void setX(int16_t x){this->x=x;}
 	void setY(int16_t y){this->y=y;}
 	void setAngle(float angle){this->angle=angle;}
+	
+	static bool collide(Projectile *projectile,_object &object);
 	
 	void move();
 };

@@ -4,8 +4,8 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
+  "/home/clemente/projects/Troll-Killers/Configuration.cpp" "/home/clemente/projects/Troll-Killers/build/CMakeFiles/Server.dir/Configuration.cpp.o"
   "/home/clemente/projects/Troll-Killers/Connection.cpp" "/home/clemente/projects/Troll-Killers/build/CMakeFiles/Server.dir/Connection.cpp.o"
-  "/home/clemente/projects/Troll-Killers/Data.cpp" "/home/clemente/projects/Troll-Killers/build/CMakeFiles/Server.dir/Data.cpp.o"
   "/home/clemente/projects/Troll-Killers/Map.cpp" "/home/clemente/projects/Troll-Killers/build/CMakeFiles/Server.dir/Map.cpp.o"
   "/home/clemente/projects/Troll-Killers/SCharacter.cpp" "/home/clemente/projects/Troll-Killers/build/CMakeFiles/Server.dir/SCharacter.cpp.o"
   "/home/clemente/projects/Troll-Killers/SMap.cpp" "/home/clemente/projects/Troll-Killers/build/CMakeFiles/Server.dir/SMap.cpp.o"

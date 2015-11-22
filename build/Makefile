@@ -304,6 +304,36 @@ Client.cpp.s:
 	$(MAKE) -f CMakeFiles/Client.dir/build.make CMakeFiles/Client.dir/Client.cpp.s
 .PHONY : Client.cpp.s
 
+Configuration.o: Configuration.cpp.o
+
+.PHONY : Configuration.o
+
+# target to build an object file
+Configuration.cpp.o:
+	$(MAKE) -f CMakeFiles/Client.dir/build.make CMakeFiles/Client.dir/Configuration.cpp.o
+	$(MAKE) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/Configuration.cpp.o
+.PHONY : Configuration.cpp.o
+
+Configuration.i: Configuration.cpp.i
+
+.PHONY : Configuration.i
+
+# target to preprocess a source file
+Configuration.cpp.i:
+	$(MAKE) -f CMakeFiles/Client.dir/build.make CMakeFiles/Client.dir/Configuration.cpp.i
+	$(MAKE) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/Configuration.cpp.i
+.PHONY : Configuration.cpp.i
+
+Configuration.s: Configuration.cpp.s
+
+.PHONY : Configuration.s
+
+# target to generate assembly for a file
+Configuration.cpp.s:
+	$(MAKE) -f CMakeFiles/Client.dir/build.make CMakeFiles/Client.dir/Configuration.cpp.s
+	$(MAKE) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/Configuration.cpp.s
+.PHONY : Configuration.cpp.s
+
 Connection.o: Connection.cpp.o
 
 .PHONY : Connection.o
@@ -360,39 +390,6 @@ Cursor.s: Cursor.cpp.s
 Cursor.cpp.s:
 	$(MAKE) -f CMakeFiles/MapEditor.dir/build.make CMakeFiles/MapEditor.dir/Cursor.cpp.s
 .PHONY : Cursor.cpp.s
-
-Data.o: Data.cpp.o
-
-.PHONY : Data.o
-
-# target to build an object file
-Data.cpp.o:
-	$(MAKE) -f CMakeFiles/Client.dir/build.make CMakeFiles/Client.dir/Data.cpp.o
-	$(MAKE) -f CMakeFiles/MapEditor.dir/build.make CMakeFiles/MapEditor.dir/Data.cpp.o
-	$(MAKE) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/Data.cpp.o
-.PHONY : Data.cpp.o
-
-Data.i: Data.cpp.i
-
-.PHONY : Data.i
-
-# target to preprocess a source file
-Data.cpp.i:
-	$(MAKE) -f CMakeFiles/Client.dir/build.make CMakeFiles/Client.dir/Data.cpp.i
-	$(MAKE) -f CMakeFiles/MapEditor.dir/build.make CMakeFiles/MapEditor.dir/Data.cpp.i
-	$(MAKE) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/Data.cpp.i
-.PHONY : Data.cpp.i
-
-Data.s: Data.cpp.s
-
-.PHONY : Data.s
-
-# target to generate assembly for a file
-Data.cpp.s:
-	$(MAKE) -f CMakeFiles/Client.dir/build.make CMakeFiles/Client.dir/Data.cpp.s
-	$(MAKE) -f CMakeFiles/MapEditor.dir/build.make CMakeFiles/MapEditor.dir/Data.cpp.s
-	$(MAKE) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/Data.cpp.s
-.PHONY : Data.cpp.s
 
 Map.o: Map.cpp.o
 
@@ -453,6 +450,60 @@ MapEditor.s: MapEditor.cpp.s
 MapEditor.cpp.s:
 	$(MAKE) -f CMakeFiles/MapEditor.dir/build.make CMakeFiles/MapEditor.dir/MapEditor.cpp.s
 .PHONY : MapEditor.cpp.s
+
+Menu.o: Menu.cpp.o
+
+.PHONY : Menu.o
+
+# target to build an object file
+Menu.cpp.o:
+	$(MAKE) -f CMakeFiles/Client.dir/build.make CMakeFiles/Client.dir/Menu.cpp.o
+.PHONY : Menu.cpp.o
+
+Menu.i: Menu.cpp.i
+
+.PHONY : Menu.i
+
+# target to preprocess a source file
+Menu.cpp.i:
+	$(MAKE) -f CMakeFiles/Client.dir/build.make CMakeFiles/Client.dir/Menu.cpp.i
+.PHONY : Menu.cpp.i
+
+Menu.s: Menu.cpp.s
+
+.PHONY : Menu.s
+
+# target to generate assembly for a file
+Menu.cpp.s:
+	$(MAKE) -f CMakeFiles/Client.dir/build.make CMakeFiles/Client.dir/Menu.cpp.s
+.PHONY : Menu.cpp.s
+
+MenuManager.o: MenuManager.cpp.o
+
+.PHONY : MenuManager.o
+
+# target to build an object file
+MenuManager.cpp.o:
+	$(MAKE) -f CMakeFiles/Client.dir/build.make CMakeFiles/Client.dir/MenuManager.cpp.o
+.PHONY : MenuManager.cpp.o
+
+MenuManager.i: MenuManager.cpp.i
+
+.PHONY : MenuManager.i
+
+# target to preprocess a source file
+MenuManager.cpp.i:
+	$(MAKE) -f CMakeFiles/Client.dir/build.make CMakeFiles/Client.dir/MenuManager.cpp.i
+.PHONY : MenuManager.cpp.i
+
+MenuManager.s: MenuManager.cpp.s
+
+.PHONY : MenuManager.s
+
+# target to generate assembly for a file
+MenuManager.cpp.s:
+	$(MAKE) -f CMakeFiles/Client.dir/build.make CMakeFiles/Client.dir/MenuManager.cpp.s
+.PHONY : MenuManager.cpp.s
 
 Pistol.o: Pistol.cpp.o
 
@@ -751,21 +802,27 @@ help:
 	@echo "... Client.o"
 	@echo "... Client.i"
 	@echo "... Client.s"
+	@echo "... Configuration.o"
+	@echo "... Configuration.i"
+	@echo "... Configuration.s"
 	@echo "... Connection.o"
 	@echo "... Connection.i"
 	@echo "... Connection.s"
 	@echo "... Cursor.o"
 	@echo "... Cursor.i"
 	@echo "... Cursor.s"
-	@echo "... Data.o"
-	@echo "... Data.i"
-	@echo "... Data.s"
 	@echo "... Map.o"
 	@echo "... Map.i"
 	@echo "... Map.s"
 	@echo "... MapEditor.o"
 	@echo "... MapEditor.i"
 	@echo "... MapEditor.s"
+	@echo "... Menu.o"
+	@echo "... Menu.i"
+	@echo "... Menu.s"
+	@echo "... MenuManager.o"
+	@echo "... MenuManager.i"
+	@echo "... MenuManager.s"
 	@echo "... Pistol.o"
 	@echo "... Pistol.i"
 	@echo "... Pistol.s"

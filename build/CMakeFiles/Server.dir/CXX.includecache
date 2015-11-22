@@ -6,6 +6,16 @@
 
 #IncludeRegexTransform: 
 
+/home/clemente/projects/Troll-Killers/Configuration.cpp
+Configuration.hpp
+/home/clemente/projects/Troll-Killers/Configuration.hpp
+
+/home/clemente/projects/Troll-Killers/Configuration.hpp
+stdio.h
+-
+string.h
+-
+
 /home/clemente/projects/Troll-Killers/Connection.cpp
 Connection.hpp
 /home/clemente/projects/Troll-Killers/Connection.hpp
@@ -19,12 +29,6 @@ string
 -
 cstring
 -
-
-/home/clemente/projects/Troll-Killers/Data.cpp
-_data.hpp
-/home/clemente/projects/Troll-Killers/_data.hpp
-stdio.h
-/home/clemente/projects/Troll-Killers/stdio.h
 
 /home/clemente/projects/Troll-Killers/Defines.hpp
 
@@ -95,6 +99,12 @@ boost/thread.hpp
 -
 boost/thread/mutex.hpp
 -
+string
+-
+stack
+-
+cstring
+-
 Connection.hpp
 /home/clemente/projects/Troll-Killers/Connection.hpp
 SMap.hpp
@@ -103,14 +113,10 @@ IGObject.hpp
 /home/clemente/projects/Troll-Killers/IGObject.hpp
 SCharacter.hpp
 /home/clemente/projects/Troll-Killers/SCharacter.hpp
-cstring
--
+Configuration.hpp
+/home/clemente/projects/Troll-Killers/Configuration.hpp
 Defines.hpp
 /home/clemente/projects/Troll-Killers/Defines.hpp
-string
--
-stack
--
 
 /home/clemente/projects/Troll-Killers/_data.hpp
 stdint.h

@@ -12,6 +12,12 @@ CCharacter::CCharacter(Weapon myWeapon){
 	else if(myWeapon == RIFLE)
 		weapon = new Rifle;
 	weapon->setRadius(player.radius);
+	dead=false;
+	xSpawn=0;
+	ySpawn=0;
+	life=100;
+	player.type=CIRCLE;
+	internalSpawnTimer=0;
 }
 
 CCharacter::~CCharacter(){
@@ -39,8 +45,10 @@ void CCharacter::setTeam(Team team){
 
 
 void CCharacter::draw(int x,int y){
-	al_draw_filled_circle(player.x-x,player.y-y,player.radius,al_map_rgb(player.r,player.g,player.b));
-	weapon->draw(x,y);
+	if(!dead){
+		al_draw_filled_circle(player.x-x,player.y-y,player.radius,al_map_rgb(player.r,player.g,player.b));
+		weapon->draw(x,y);
+	}
 }
 
 void CCharacter::move(){
@@ -98,5 +106,25 @@ float CCharacter::distance(int x1, int x2){
 
 void CCharacter::weaponAngle(int mapX,int mapY,int mouseX, int mouseY){
 	weapon->calculateAngle(mapX,mapY,mouseX,mouseY);
+}
+
+bool CCharacter::tryToRevive(){
+	internalSpawnTimer++;
+	if(internalSpawnTimer>RESPAWN_TIMER){
+		internalSpawnTimer=0;
+		setX(xSpawn);
+		setY(ySpawn);
+		dead=false;
+		life=100;
+		return true;
+	}
+	return false;
+}
+
+void CCharacter::revive(int16_t x, int16_t y){
+	setX(x);
+	setY(y);
+	dead=false;
+	life=100;
 }
 

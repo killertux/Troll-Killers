@@ -31,6 +31,8 @@ math.h
 -
 cstdio
 -
+Connection.hpp
+/home/clemente/projects/Troll-Killers/Connection.hpp
 iostream
 -
 allegro5/allegro.h
@@ -85,6 +87,14 @@ allegro5/allegro.h
 -
 allegro5/allegro_primitives.h
 -
+cstdio
+-
+cstring
+-
+sstream
+-
+iostream
+-
 _data.hpp
 /home/clemente/projects/Troll-Killers/_data.hpp
 CMap.hpp
@@ -97,13 +107,19 @@ Enums.hpp
 /home/clemente/projects/Troll-Killers/Enums.hpp
 CCharacter.hpp
 /home/clemente/projects/Troll-Killers/CCharacter.hpp
-cstdio
+MenuManager.hpp
+/home/clemente/projects/Troll-Killers/MenuManager.hpp
+Configuration.hpp
+/home/clemente/projects/Troll-Killers/Configuration.hpp
+
+/home/clemente/projects/Troll-Killers/Configuration.cpp
+Configuration.hpp
+/home/clemente/projects/Troll-Killers/Configuration.hpp
+
+/home/clemente/projects/Troll-Killers/Configuration.hpp
+stdio.h
 -
-cstring
--
-sstream
--
-iostream
+string.h
 -
 
 /home/clemente/projects/Troll-Killers/Connection.cpp
@@ -119,12 +135,6 @@ string
 -
 cstring
 -
-
-/home/clemente/projects/Troll-Killers/Data.cpp
-_data.hpp
-/home/clemente/projects/Troll-Killers/_data.hpp
-stdio.h
-/home/clemente/projects/Troll-Killers/stdio.h
 
 /home/clemente/projects/Troll-Killers/Defines.hpp
 
@@ -159,6 +169,34 @@ arpa/inet.h
 -
 fstream
 -
+
+/home/clemente/projects/Troll-Killers/Menu.cpp
+Menu.hpp
+/home/clemente/projects/Troll-Killers/Menu.hpp
+
+/home/clemente/projects/Troll-Killers/Menu.hpp
+allegro5/allegro.h
+-
+allegro5/allegro_image.h
+-
+Defines.hpp
+/home/clemente/projects/Troll-Killers/Defines.hpp
+iostream
+-
+
+/home/clemente/projects/Troll-Killers/MenuManager.cpp
+MenuManager.hpp
+/home/clemente/projects/Troll-Killers/MenuManager.hpp
+
+/home/clemente/projects/Troll-Killers/MenuManager.hpp
+allegro5/allegro.h
+-
+Menu.hpp
+/home/clemente/projects/Troll-Killers/Menu.hpp
+Enums.hpp
+/home/clemente/projects/Troll-Killers/Enums.hpp
+Client.hpp
+/home/clemente/projects/Troll-Killers/Client.hpp
 
 /home/clemente/projects/Troll-Killers/Pistol.cpp
 Pistol.hpp
@@ -211,6 +249,12 @@ cmath
 -
 CProjectile.hpp
 /home/clemente/projects/Troll-Killers/CProjectile.hpp
+Connection.hpp
+/home/clemente/projects/Troll-Killers/Connection.hpp
+sstream
+-
+cstdio
+-
 
 /home/clemente/projects/Troll-Killers/_data.hpp
 stdint.h

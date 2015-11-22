@@ -20,6 +20,9 @@
 #define LENGTH 30
 #define WIDTH 20
 
+#define RES_X 1024
+#define RES_Y 768
+
 #define MAP_FILE "Maps/mapa.data"
 
 class MapEditor {
