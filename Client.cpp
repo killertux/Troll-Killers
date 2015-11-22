@@ -108,6 +108,7 @@ void Client::main_loop(){
 			
 			al_get_mouse_state(&mouseState);
 			players[myId]->weaponAngle(mapX,mapY,mouseState.x,mouseState.y);
+			players[myId]->shoot(mouseState);
 			
 			senderBuffer.type=PROTOCOL_CHARACTER;
 			players[myId]->serialize(senderBuffer.buffer);

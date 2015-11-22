@@ -250,6 +250,33 @@ CMap.cpp.s:
 	$(MAKE) -f CMakeFiles/MapEditor.dir/build.make CMakeFiles/MapEditor.dir/CMap.cpp.s
 .PHONY : CMap.cpp.s
 
+CProjectile.o: CProjectile.cpp.o
+
+.PHONY : CProjectile.o
+
+# target to build an object file
+CProjectile.cpp.o:
+	$(MAKE) -f CMakeFiles/Client.dir/build.make CMakeFiles/Client.dir/CProjectile.cpp.o
+.PHONY : CProjectile.cpp.o
+
+CProjectile.i: CProjectile.cpp.i
+
+.PHONY : CProjectile.i
+
+# target to preprocess a source file
+CProjectile.cpp.i:
+	$(MAKE) -f CMakeFiles/Client.dir/build.make CMakeFiles/Client.dir/CProjectile.cpp.i
+.PHONY : CProjectile.cpp.i
+
+CProjectile.s: CProjectile.cpp.s
+
+.PHONY : CProjectile.s
+
+# target to generate assembly for a file
+CProjectile.cpp.s:
+	$(MAKE) -f CMakeFiles/Client.dir/build.make CMakeFiles/Client.dir/CProjectile.cpp.s
+.PHONY : CProjectile.cpp.s
+
 Client.o: Client.cpp.o
 
 .PHONY : Client.o
@@ -453,6 +480,33 @@ Pistol.s: Pistol.cpp.s
 Pistol.cpp.s:
 	$(MAKE) -f CMakeFiles/Client.dir/build.make CMakeFiles/Client.dir/Pistol.cpp.s
 .PHONY : Pistol.cpp.s
+
+Projectile.o: Projectile.cpp.o
+
+.PHONY : Projectile.o
+
+# target to build an object file
+Projectile.cpp.o:
+	$(MAKE) -f CMakeFiles/Client.dir/build.make CMakeFiles/Client.dir/Projectile.cpp.o
+.PHONY : Projectile.cpp.o
+
+Projectile.i: Projectile.cpp.i
+
+.PHONY : Projectile.i
+
+# target to preprocess a source file
+Projectile.cpp.i:
+	$(MAKE) -f CMakeFiles/Client.dir/build.make CMakeFiles/Client.dir/Projectile.cpp.i
+.PHONY : Projectile.cpp.i
+
+Projectile.s: Projectile.cpp.s
+
+.PHONY : Projectile.s
+
+# target to generate assembly for a file
+Projectile.cpp.s:
+	$(MAKE) -f CMakeFiles/Client.dir/build.make CMakeFiles/Client.dir/Projectile.cpp.s
+.PHONY : Projectile.cpp.s
 
 Rifle.o: Rifle.cpp.o
 
@@ -691,6 +745,9 @@ help:
 	@echo "... CMap.o"
 	@echo "... CMap.i"
 	@echo "... CMap.s"
+	@echo "... CProjectile.o"
+	@echo "... CProjectile.i"
+	@echo "... CProjectile.s"
 	@echo "... Client.o"
 	@echo "... Client.i"
 	@echo "... Client.s"
@@ -712,6 +769,9 @@ help:
 	@echo "... Pistol.o"
 	@echo "... Pistol.i"
 	@echo "... Pistol.s"
+	@echo "... Projectile.o"
+	@echo "... Projectile.i"
+	@echo "... Projectile.s"
 	@echo "... Rifle.o"
 	@echo "... Rifle.i"
 	@echo "... Rifle.s"
