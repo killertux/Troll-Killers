@@ -297,6 +297,54 @@ CMakeFiles/Client.dir/Pistol.cpp.o.provides: CMakeFiles/Client.dir/Pistol.cpp.o.
 CMakeFiles/Client.dir/Pistol.cpp.o.provides.build: CMakeFiles/Client.dir/Pistol.cpp.o
 
 
+CMakeFiles/Client.dir/Projectile.cpp.o: CMakeFiles/Client.dir/flags.make
+CMakeFiles/Client.dir/Projectile.cpp.o: ../Projectile.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/clemente/projects/Troll-Killers/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/Client.dir/Projectile.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Client.dir/Projectile.cpp.o -c /home/clemente/projects/Troll-Killers/Projectile.cpp
+
+CMakeFiles/Client.dir/Projectile.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Client.dir/Projectile.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/clemente/projects/Troll-Killers/Projectile.cpp > CMakeFiles/Client.dir/Projectile.cpp.i
+
+CMakeFiles/Client.dir/Projectile.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Client.dir/Projectile.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/clemente/projects/Troll-Killers/Projectile.cpp -o CMakeFiles/Client.dir/Projectile.cpp.s
+
+CMakeFiles/Client.dir/Projectile.cpp.o.requires:
+
+.PHONY : CMakeFiles/Client.dir/Projectile.cpp.o.requires
+
+CMakeFiles/Client.dir/Projectile.cpp.o.provides: CMakeFiles/Client.dir/Projectile.cpp.o.requires
+	$(MAKE) -f CMakeFiles/Client.dir/build.make CMakeFiles/Client.dir/Projectile.cpp.o.provides.build
+.PHONY : CMakeFiles/Client.dir/Projectile.cpp.o.provides
+
+CMakeFiles/Client.dir/Projectile.cpp.o.provides.build: CMakeFiles/Client.dir/Projectile.cpp.o
+
+
+CMakeFiles/Client.dir/CProjectile.cpp.o: CMakeFiles/Client.dir/flags.make
+CMakeFiles/Client.dir/CProjectile.cpp.o: ../CProjectile.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/clemente/projects/Troll-Killers/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/Client.dir/CProjectile.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Client.dir/CProjectile.cpp.o -c /home/clemente/projects/Troll-Killers/CProjectile.cpp
+
+CMakeFiles/Client.dir/CProjectile.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Client.dir/CProjectile.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/clemente/projects/Troll-Killers/CProjectile.cpp > CMakeFiles/Client.dir/CProjectile.cpp.i
+
+CMakeFiles/Client.dir/CProjectile.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Client.dir/CProjectile.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/clemente/projects/Troll-Killers/CProjectile.cpp -o CMakeFiles/Client.dir/CProjectile.cpp.s
+
+CMakeFiles/Client.dir/CProjectile.cpp.o.requires:
+
+.PHONY : CMakeFiles/Client.dir/CProjectile.cpp.o.requires
+
+CMakeFiles/Client.dir/CProjectile.cpp.o.provides: CMakeFiles/Client.dir/CProjectile.cpp.o.requires
+	$(MAKE) -f CMakeFiles/Client.dir/build.make CMakeFiles/Client.dir/CProjectile.cpp.o.provides.build
+.PHONY : CMakeFiles/Client.dir/CProjectile.cpp.o.provides
+
+CMakeFiles/Client.dir/CProjectile.cpp.o.provides.build: CMakeFiles/Client.dir/CProjectile.cpp.o
+
+
 # Object files for target Client
 Client_OBJECTS = \
 "CMakeFiles/Client.dir/mainClient.cpp.o" \
@@ -308,7 +356,9 @@ Client_OBJECTS = \
 "CMakeFiles/Client.dir/Data.cpp.o" \
 "CMakeFiles/Client.dir/Weapons.cpp.o" \
 "CMakeFiles/Client.dir/Rifle.cpp.o" \
-"CMakeFiles/Client.dir/Pistol.cpp.o"
+"CMakeFiles/Client.dir/Pistol.cpp.o" \
+"CMakeFiles/Client.dir/Projectile.cpp.o" \
+"CMakeFiles/Client.dir/CProjectile.cpp.o"
 
 # External object files for target Client
 Client_EXTERNAL_OBJECTS =
@@ -323,9 +373,11 @@ Client: CMakeFiles/Client.dir/Data.cpp.o
 Client: CMakeFiles/Client.dir/Weapons.cpp.o
 Client: CMakeFiles/Client.dir/Rifle.cpp.o
 Client: CMakeFiles/Client.dir/Pistol.cpp.o
+Client: CMakeFiles/Client.dir/Projectile.cpp.o
+Client: CMakeFiles/Client.dir/CProjectile.cpp.o
 Client: CMakeFiles/Client.dir/build.make
 Client: CMakeFiles/Client.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/clemente/projects/Troll-Killers/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Linking CXX executable Client"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/clemente/projects/Troll-Killers/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Linking CXX executable Client"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Client.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -343,6 +395,8 @@ CMakeFiles/Client.dir/requires: CMakeFiles/Client.dir/Data.cpp.o.requires
 CMakeFiles/Client.dir/requires: CMakeFiles/Client.dir/Weapons.cpp.o.requires
 CMakeFiles/Client.dir/requires: CMakeFiles/Client.dir/Rifle.cpp.o.requires
 CMakeFiles/Client.dir/requires: CMakeFiles/Client.dir/Pistol.cpp.o.requires
+CMakeFiles/Client.dir/requires: CMakeFiles/Client.dir/Projectile.cpp.o.requires
+CMakeFiles/Client.dir/requires: CMakeFiles/Client.dir/CProjectile.cpp.o.requires
 
 .PHONY : CMakeFiles/Client.dir/requires
 

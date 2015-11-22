@@ -5,9 +5,10 @@
 #include <iostream>
 
 class Pistol : public Weapons{
+	bool shooted;
 public:
 	Pistol();
-	virtual void shoot();
+	virtual void shoot(ALLEGRO_MOUSE_STATE &mouseState);
 };
 
 #endif

@@ -9,6 +9,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/Client.dir/Weapons.cpp.o"
   "CMakeFiles/Client.dir/Rifle.cpp.o"
   "CMakeFiles/Client.dir/Pistol.cpp.o"
+  "CMakeFiles/Client.dir/Projectile.cpp.o"
+  "CMakeFiles/Client.dir/CProjectile.cpp.o"
   "Client.pdb"
   "Client"
 )

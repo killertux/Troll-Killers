@@ -54,6 +54,7 @@ public:
 	
 	void weaponAngle(int mapX,int mapY,int mouseX,int mouseY);
 	void setWeaponAngle(float angle){weapon->setAngle(angle);}
+	void shoot(ALLEGRO_MOUSE_STATE &mouseState){weapon->shoot(mouseState);}
 };
 
 #endif

@@ -6,11 +6,13 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_CHECK_CXX
   "/home/clemente/projects/Troll-Killers/CCharacter.cpp" "/home/clemente/projects/Troll-Killers/build/CMakeFiles/Client.dir/CCharacter.cpp.o"
   "/home/clemente/projects/Troll-Killers/CMap.cpp" "/home/clemente/projects/Troll-Killers/build/CMakeFiles/Client.dir/CMap.cpp.o"
+  "/home/clemente/projects/Troll-Killers/CProjectile.cpp" "/home/clemente/projects/Troll-Killers/build/CMakeFiles/Client.dir/CProjectile.cpp.o"
   "/home/clemente/projects/Troll-Killers/Client.cpp" "/home/clemente/projects/Troll-Killers/build/CMakeFiles/Client.dir/Client.cpp.o"
   "/home/clemente/projects/Troll-Killers/Connection.cpp" "/home/clemente/projects/Troll-Killers/build/CMakeFiles/Client.dir/Connection.cpp.o"
   "/home/clemente/projects/Troll-Killers/Data.cpp" "/home/clemente/projects/Troll-Killers/build/CMakeFiles/Client.dir/Data.cpp.o"
   "/home/clemente/projects/Troll-Killers/Map.cpp" "/home/clemente/projects/Troll-Killers/build/CMakeFiles/Client.dir/Map.cpp.o"
   "/home/clemente/projects/Troll-Killers/Pistol.cpp" "/home/clemente/projects/Troll-Killers/build/CMakeFiles/Client.dir/Pistol.cpp.o"
+  "/home/clemente/projects/Troll-Killers/Projectile.cpp" "/home/clemente/projects/Troll-Killers/build/CMakeFiles/Client.dir/Projectile.cpp.o"
   "/home/clemente/projects/Troll-Killers/Rifle.cpp" "/home/clemente/projects/Troll-Killers/build/CMakeFiles/Client.dir/Rifle.cpp.o"
   "/home/clemente/projects/Troll-Killers/Weapons.cpp" "/home/clemente/projects/Troll-Killers/build/CMakeFiles/Client.dir/Weapons.cpp.o"
   "/home/clemente/projects/Troll-Killers/mainClient.cpp" "/home/clemente/projects/Troll-Killers/build/CMakeFiles/Client.dir/mainClient.cpp.o"

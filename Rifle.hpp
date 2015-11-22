@@ -7,7 +7,7 @@
 class Rifle : public Weapons{
 public:
 	Rifle();
-	virtual void shoot();
+	virtual void shoot(ALLEGRO_MOUSE_STATE &mouseState);
 };
 
 #endif

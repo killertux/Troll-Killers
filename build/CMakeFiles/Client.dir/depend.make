@@ -3,10 +3,12 @@
 
 CMakeFiles/Client.dir/CCharacter.cpp.o: ../CCharacter.cpp
 CMakeFiles/Client.dir/CCharacter.cpp.o: ../CCharacter.hpp
+CMakeFiles/Client.dir/CCharacter.cpp.o: ../CProjectile.hpp
 CMakeFiles/Client.dir/CCharacter.cpp.o: ../Defines.hpp
 CMakeFiles/Client.dir/CCharacter.cpp.o: ../Enums.hpp
 CMakeFiles/Client.dir/CCharacter.cpp.o: ../IGObject.hpp
 CMakeFiles/Client.dir/CCharacter.cpp.o: ../Pistol.hpp
+CMakeFiles/Client.dir/CCharacter.cpp.o: ../Projectile.hpp
 CMakeFiles/Client.dir/CCharacter.cpp.o: ../Rifle.hpp
 CMakeFiles/Client.dir/CCharacter.cpp.o: ../Weapons.hpp
 CMakeFiles/Client.dir/CCharacter.cpp.o: ../_data.hpp
@@ -20,8 +22,17 @@ CMakeFiles/Client.dir/CMap.cpp.o: ../Map.hpp
 CMakeFiles/Client.dir/CMap.cpp.o: ../_data.hpp
 CMakeFiles/Client.dir/CMap.cpp.o: ../_object.hpp
 
+CMakeFiles/Client.dir/CProjectile.cpp.o: ../CProjectile.cpp
+CMakeFiles/Client.dir/CProjectile.cpp.o: ../CProjectile.hpp
+CMakeFiles/Client.dir/CProjectile.cpp.o: ../Enums.hpp
+CMakeFiles/Client.dir/CProjectile.cpp.o: ../IGObject.hpp
+CMakeFiles/Client.dir/CProjectile.cpp.o: ../Projectile.hpp
+CMakeFiles/Client.dir/CProjectile.cpp.o: ../_data.hpp
+CMakeFiles/Client.dir/CProjectile.cpp.o: ../_object.hpp
+
 CMakeFiles/Client.dir/Client.cpp.o: ../CCharacter.hpp
 CMakeFiles/Client.dir/Client.cpp.o: ../CMap.hpp
+CMakeFiles/Client.dir/Client.cpp.o: ../CProjectile.hpp
 CMakeFiles/Client.dir/Client.cpp.o: ../Client.cpp
 CMakeFiles/Client.dir/Client.cpp.o: ../Client.hpp
 CMakeFiles/Client.dir/Client.cpp.o: ../Connection.hpp
@@ -30,6 +41,7 @@ CMakeFiles/Client.dir/Client.cpp.o: ../Enums.hpp
 CMakeFiles/Client.dir/Client.cpp.o: ../IGObject.hpp
 CMakeFiles/Client.dir/Client.cpp.o: ../Map.hpp
 CMakeFiles/Client.dir/Client.cpp.o: ../Pistol.hpp
+CMakeFiles/Client.dir/Client.cpp.o: ../Projectile.hpp
 CMakeFiles/Client.dir/Client.cpp.o: ../Rifle.hpp
 CMakeFiles/Client.dir/Client.cpp.o: ../Weapons.hpp
 CMakeFiles/Client.dir/Client.cpp.o: ../_data.hpp
@@ -48,19 +60,48 @@ CMakeFiles/Client.dir/Map.cpp.o: ../Map.hpp
 CMakeFiles/Client.dir/Map.cpp.o: ../_data.hpp
 CMakeFiles/Client.dir/Map.cpp.o: ../_object.hpp
 
+CMakeFiles/Client.dir/Pistol.cpp.o: ../CProjectile.hpp
+CMakeFiles/Client.dir/Pistol.cpp.o: ../Defines.hpp
+CMakeFiles/Client.dir/Pistol.cpp.o: ../Enums.hpp
+CMakeFiles/Client.dir/Pistol.cpp.o: ../IGObject.hpp
 CMakeFiles/Client.dir/Pistol.cpp.o: ../Pistol.cpp
 CMakeFiles/Client.dir/Pistol.cpp.o: ../Pistol.hpp
+CMakeFiles/Client.dir/Pistol.cpp.o: ../Projectile.hpp
 CMakeFiles/Client.dir/Pistol.cpp.o: ../Weapons.hpp
+CMakeFiles/Client.dir/Pistol.cpp.o: ../_data.hpp
+CMakeFiles/Client.dir/Pistol.cpp.o: ../_object.hpp
 
+CMakeFiles/Client.dir/Projectile.cpp.o: ../Enums.hpp
+CMakeFiles/Client.dir/Projectile.cpp.o: ../IGObject.hpp
+CMakeFiles/Client.dir/Projectile.cpp.o: ../Projectile.cpp
+CMakeFiles/Client.dir/Projectile.cpp.o: ../Projectile.hpp
+CMakeFiles/Client.dir/Projectile.cpp.o: ../_data.hpp
+CMakeFiles/Client.dir/Projectile.cpp.o: ../_object.hpp
+
+CMakeFiles/Client.dir/Rifle.cpp.o: ../CProjectile.hpp
+CMakeFiles/Client.dir/Rifle.cpp.o: ../Defines.hpp
+CMakeFiles/Client.dir/Rifle.cpp.o: ../Enums.hpp
+CMakeFiles/Client.dir/Rifle.cpp.o: ../IGObject.hpp
+CMakeFiles/Client.dir/Rifle.cpp.o: ../Projectile.hpp
 CMakeFiles/Client.dir/Rifle.cpp.o: ../Rifle.cpp
 CMakeFiles/Client.dir/Rifle.cpp.o: ../Rifle.hpp
 CMakeFiles/Client.dir/Rifle.cpp.o: ../Weapons.hpp
+CMakeFiles/Client.dir/Rifle.cpp.o: ../_data.hpp
+CMakeFiles/Client.dir/Rifle.cpp.o: ../_object.hpp
 
+CMakeFiles/Client.dir/Weapons.cpp.o: ../CProjectile.hpp
+CMakeFiles/Client.dir/Weapons.cpp.o: ../Defines.hpp
+CMakeFiles/Client.dir/Weapons.cpp.o: ../Enums.hpp
+CMakeFiles/Client.dir/Weapons.cpp.o: ../IGObject.hpp
+CMakeFiles/Client.dir/Weapons.cpp.o: ../Projectile.hpp
 CMakeFiles/Client.dir/Weapons.cpp.o: ../Weapons.cpp
 CMakeFiles/Client.dir/Weapons.cpp.o: ../Weapons.hpp
+CMakeFiles/Client.dir/Weapons.cpp.o: ../_data.hpp
+CMakeFiles/Client.dir/Weapons.cpp.o: ../_object.hpp
 
 CMakeFiles/Client.dir/mainClient.cpp.o: ../CCharacter.hpp
 CMakeFiles/Client.dir/mainClient.cpp.o: ../CMap.hpp
+CMakeFiles/Client.dir/mainClient.cpp.o: ../CProjectile.hpp
 CMakeFiles/Client.dir/mainClient.cpp.o: ../Client.hpp
 CMakeFiles/Client.dir/mainClient.cpp.o: ../Connection.hpp
 CMakeFiles/Client.dir/mainClient.cpp.o: ../Defines.hpp
@@ -68,6 +109,7 @@ CMakeFiles/Client.dir/mainClient.cpp.o: ../Enums.hpp
 CMakeFiles/Client.dir/mainClient.cpp.o: ../IGObject.hpp
 CMakeFiles/Client.dir/mainClient.cpp.o: ../Map.hpp
 CMakeFiles/Client.dir/mainClient.cpp.o: ../Pistol.hpp
+CMakeFiles/Client.dir/mainClient.cpp.o: ../Projectile.hpp
 CMakeFiles/Client.dir/mainClient.cpp.o: ../Rifle.hpp
 CMakeFiles/Client.dir/mainClient.cpp.o: ../Weapons.hpp
 CMakeFiles/Client.dir/mainClient.cpp.o: ../_data.hpp
