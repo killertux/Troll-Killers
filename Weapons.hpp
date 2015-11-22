@@ -35,6 +35,7 @@ public:
 	int16_t getWeaponTipX();
 	int16_t getWeaponTipY();
 	float getAngle(){return angle;}
+	Projectile **getProjectiles(){return (Projectile**)projectiles;}
 	
 	void calculateAngle(int mapX,int mapY,int mouseX,int mouseY);
 	

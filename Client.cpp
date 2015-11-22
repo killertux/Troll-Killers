@@ -108,6 +108,12 @@ void Client::main_loop(){
 			
 			al_get_mouse_state(&mouseState);
 			players[myId]->weaponAngle(mapX,mapY,mouseState.x,mouseState.y);
+			
+			Projectile **projectiles=players[myId]->getProjectiles();
+			for(int i=0;i<SCREEN_PROJECTILES;i++)
+				if(projectiles[i]!=NULL)
+					projectiles[i]->move();
+			
 			players[myId]->shoot(mouseState);
 			
 			senderBuffer.type=PROTOCOL_CHARACTER;

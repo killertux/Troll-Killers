@@ -19,4 +19,6 @@ void Projectile::move(){
 	int endX,endY;
 	endX=(length+velocity)*cos(angle);
 	endY=(length+velocity)*sin(angle);
+	x=x+endX;
+	y=y+endY;
 }
