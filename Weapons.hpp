@@ -3,6 +3,7 @@
 
 #include <allegro5/allegro.h>
 #include <allegro5/allegro_image.h>
+#include <allegro5/allegro_audio.h>
 #include "Defines.hpp"
 #include "Enums.hpp"
 #include <cmath>
@@ -14,6 +15,8 @@
 class Weapons{
 protected:
 	ALLEGRO_BITMAP *gun;
+	ALLEGRO_SAMPLE *sound;
+	
 	int16_t type;				//What Type of gun am I?
 	int16_t x,y,radius;			//This radius is from the player;
 	float angle;
@@ -38,6 +41,7 @@ public:
 	int16_t getDmg(){return dmg;}
 	float getAngle(){return angle;}
 	Projectile **getProjectiles(){return (Projectile**)projectiles;}
+	void play_sound(float distance);
 	
 	void calculateAngle(int mapX,int mapY,int mouseX,int mouseY);
 	

@@ -128,3 +128,9 @@ void CCharacter::revive(int16_t x, int16_t y){
 	life=100;
 }
 
+void CCharacter::sound_shoot(int x, int y){
+	float distance=sqrt(pow(x-player.x,2)+pow(y-player.y,2));
+	weapon->play_sound(distance);
+}
+
+

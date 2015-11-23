@@ -1,7 +1,5 @@
 #include "Pistol.hpp"
 
-
-
 Pistol::Pistol(){
 	type=(int16_t)PISTOL;
 	dmg=20;
@@ -16,11 +14,13 @@ Pistol::Pistol(){
 		std::cout << "Pistol image problem!\n";
 		exit(-1);
 	}
+	sound= al_load_sample("Sounds/pistol.ogg");
 }
 
 void Pistol::shoot(ALLEGRO_MOUSE_STATE &mouseState,Connection *conn){
 	if((mouseState.buttons & 1) && !shooted){
 		_data senderBuffer;
+		al_play_sample(sound,1.0,0.0,1.0,ALLEGRO_PLAYMODE_ONCE,NULL);
 		shooted=true;
 		for(int i=0;i<SCREEN_PROJECTILES;i++)
 			if(projectiles[i]==NULL){

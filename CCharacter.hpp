@@ -74,6 +74,7 @@ public:
 	void setWeaponAngle(float angle){weapon->setAngle(angle);}
 	void shoot(ALLEGRO_MOUSE_STATE &mouseState,Connection *conn){weapon->shoot(mouseState,conn);}
 	int getWeaponDmg(){return weapon->getDmg();}
+	void sound_shoot(int x,int y);
 	Projectile **getProjectiles(){return weapon->getProjectiles();}
 };
 

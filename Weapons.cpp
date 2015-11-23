@@ -10,6 +10,7 @@ Weapons::Weapons(){
 Weapons::~Weapons(){
 	delete [] projectiles;
 	al_destroy_bitmap(gun);
+	al_destroy_sample(sound);
 }
 
 
@@ -46,4 +47,12 @@ int16_t Weapons::getWeaponTipY(){
 	int tangle=angle+M_PI/2;
 	int d=sin(angle)*my+cos(angle)*mx;
 	return y+sin(tangle)*radius+cos(tangle)+d;
+}
+
+void Weapons::play_sound(float distance){
+	float volume=2*exp(-pow(distance,2)/pow(800,2));
+	if(volume >1)
+		volume=1;
+	std::cout << volume <<std::endl;
+	al_play_sample(sound,volume,0.0,1.0,ALLEGRO_PLAYMODE_ONCE,NULL);
 }

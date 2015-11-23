@@ -8,6 +8,11 @@ Client::Client(){
 	al_init_image_addon();
 	al_install_keyboard();
 	al_install_mouse();
+	al_install_audio();
+	al_init_acodec_addon();
+	al_reserve_samples(16);
+	
+	soundtrack=al_load_sample("Sounds/main.ogg");
 
 	config.config_load("client.cfg");
 	config.config_get(buffer,"Port");
@@ -34,7 +39,8 @@ Client::Client(){
 	al_register_event_source(event_queue,al_get_keyboard_event_source());
 	al_register_event_source(event_queue,al_get_mouse_event_source());
 	al_register_event_source(event_queue,al_get_timer_event_source(timer));
-
+	
+	al_play_sample(soundtrack,0.7,0.0,1.0,ALLEGRO_PLAYMODE_LOOP,NULL);
 	//al_hide_mouse_cursor(display);
 
 	maxClients=0;
@@ -49,6 +55,7 @@ Client::~Client(){
 	delete [] players;
 	delete [] moved;
 	delete menus;
+	al_destroy_sample(soundtrack);
 	al_destroy_display(display);
 	al_destroy_event_queue(event_queue);
 	al_destroy_timer(timer);
@@ -100,6 +107,7 @@ void Client::main_loop(){
 					stream >> id >> bulletId >>x >> y >>length >>velocity >> angle;
 					Projectile **projectiles=players[id]->getProjectiles();
 					projectiles[bulletId]=new CProjectile(x,y,length,velocity,angle);
+					players[id]->sound_shoot(players[myId]->getX(),players[myId]->getY());
 				} else if(((_data*)buffer)->type==PROTOCOL_DELETE_BULLET){
 					int16_t id,bulletId;
 					std::stringstream stream;

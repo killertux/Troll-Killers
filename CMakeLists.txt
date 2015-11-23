@@ -24,7 +24,7 @@ project(Client)
 
 add_executable(Client mainClient.cpp CMap.cpp Map.cpp Client.cpp Configuration.cpp Connection.cpp CCharacter.cpp Weapons.cpp Rifle.cpp Pistol.cpp Projectile.cpp CProjectile.cpp Menu.cpp MenuManager.cpp)
 
-target_link_libraries(Client -lallegro -lallegro_primitives -lallegro_image -lenet -lm)
+target_link_libraries(Client -lallegro -lallegro_primitives -lallegro_image -lallegro_audio -lallegro_acodec -lenet -lm)
 
 SET_TARGET_PROPERTIES(Server PROPERTIES COMPILE_FLAGS "-std=c++11")
 

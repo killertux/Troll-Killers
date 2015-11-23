@@ -3,6 +3,7 @@
 
 #include "Weapons.hpp"
 #include <iostream>
+#include <math.h>
 
 class Pistol : public Weapons{
 	bool shooted;

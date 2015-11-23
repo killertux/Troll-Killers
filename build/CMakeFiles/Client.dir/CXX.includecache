@@ -87,6 +87,10 @@ allegro5/allegro.h
 -
 allegro5/allegro_primitives.h
 -
+allegro5/allegro_audio.h
+-
+allegro5/allegro_acodec.h
+-
 cstdio
 -
 cstring
@@ -205,6 +209,8 @@ Weapons.hpp
 /home/clemente/projects/Troll-Killers/Weapons.hpp
 iostream
 -
+math.h
+-
 
 /home/clemente/projects/Troll-Killers/Projectile.cpp
 Projectile.hpp
@@ -238,6 +244,8 @@ iostream
 allegro5/allegro.h
 -
 allegro5/allegro_image.h
+-
+allegro5/allegro_audio.h
 -
 Defines.hpp
 /home/clemente/projects/Troll-Killers/Defines.hpp

@@ -3,6 +3,8 @@
 
 #include <allegro5/allegro.h>
 #include <allegro5/allegro_primitives.h>
+#include <allegro5/allegro_audio.h>
+#include <allegro5/allegro_acodec.h>
 #include <cstdio>
 #include <cstring>
 #include <sstream>
@@ -24,6 +26,7 @@ private:
 	ALLEGRO_TIMER *timer;
 	ALLEGRO_MOUSE_STATE mouseState;
 	ALLEGRO_EVENT ev;
+	ALLEGRO_SAMPLE *soundtrack;
 	MenuManager *menus;
 	
 	Connection conn;
