@@ -52,7 +52,7 @@ MenuArmas::~MenuArmas(){
 
 void MenuPrinc::print_menu(){
 	al_clear_to_color(al_map_rgb(255,255,255));
-	al_draw_bitmap(fundo, 0, 0, 0);
+	al_draw_bitmap(fundo, (res_x - al_get_bitmap_width(fundo)), 0, 0);
 	if(bot1S)
 		al_draw_bitmap(bot1_s,(res_x / 2), (res_y /3),0);
 	else
@@ -122,7 +122,7 @@ void MenuArmas::botao(ALLEGRO_MOUSE_STATE *mouseState){
 
 void MenuArmas::print_menu(){
 	al_clear_to_color(al_map_rgb(255,255,255));
-	al_draw_bitmap(fundo, 0, 0, 0);
+	al_draw_bitmap(fundo, (res_x/2 - al_get_bitmap_width(fundo)), 0, 0);
 	if(bot1S)
 		al_draw_bitmap(bot1_s,(res_x / 3), (res_y /2),0);
 	else
