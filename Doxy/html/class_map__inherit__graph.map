@@ -1,0 +1,4 @@
+<map id="Map" name="Map">
+<area shape="rect" id="node2" href="$class_c_map.html" title="{CMap\n||+ CMap()\l+ CMap()\l+ new_object()\l+ destroy_object()\l+ draw_map()\l+ setDrawCircles()\l+ getObjects()\l+ getNobject()\l+ ~CMap()\l}" alt="" coords="5,307,137,501"/>
+<area shape="rect" id="node3" href="$class_s_map.html" title="{SMap\n||+ calculateSpawn()\l+ getSpaw()\l+ useSpawn()\l}" alt="" coords="161,351,296,457"/>
+</map>

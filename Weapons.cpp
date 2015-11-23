@@ -53,6 +53,5 @@ void Weapons::play_sound(float distance){
 	float volume=2*exp(-pow(distance,2)/pow(800,2));
 	if(volume >1)
 		volume=1;
-	std::cout << volume <<std::endl;
 	al_play_sample(sound,volume,0.0,1.0,ALLEGRO_PLAYMODE_ONCE,NULL);
 }

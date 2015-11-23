@@ -1,0 +1,495 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.10">
+  <compounddef id="class_connection" kind="class" language="C++" prot="public">
+    <compoundname>Connection</compoundname>
+    <includes refid="_connection_8hpp" local="no">Connection.hpp</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_connection_1af3d9b458d147a2b4519158fda3ca646a" prot="private" static="no" mutable="no">
+        <type>ENetAddress</type>
+        <definition>ENetAddress Connection::address</definition>
+        <argsstring></argsstring>
+        <name>address</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/Connection.hpp" line="22" column="1" bodyfile="/home/clemente/projects/Troll-Killers/Connection.hpp" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_connection_1a1a8583d4b7ee2d8e7d0dc5bbf19c5b2d" prot="private" static="no" mutable="no">
+        <type>ENetHost *</type>
+        <definition>ENetHost* Connection::conn</definition>
+        <argsstring></argsstring>
+        <name>conn</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/Connection.hpp" line="23" column="1" bodyfile="/home/clemente/projects/Troll-Killers/Connection.hpp" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_connection_1a550cfafb366255611e04742850311034" prot="private" static="no" mutable="no">
+        <type>ENetHost *</type>
+        <definition>ENetHost * Connection::connS</definition>
+        <argsstring></argsstring>
+        <name>connS</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/Connection.hpp" line="23" column="1" bodyfile="/home/clemente/projects/Troll-Killers/Connection.hpp" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_connection_1a145978da681ae68f47ba1eb047ee52bb" prot="private" static="no" mutable="no">
+        <type>ENetEvent</type>
+        <definition>ENetEvent Connection::event</definition>
+        <argsstring></argsstring>
+        <name>event</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/Connection.hpp" line="24" column="1" bodyfile="/home/clemente/projects/Troll-Killers/Connection.hpp" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_connection_1a074418e059d4e969b83a1a6502dc608e" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Connection::client</definition>
+        <argsstring></argsstring>
+        <name>client</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/Connection.hpp" line="25" column="1" bodyfile="/home/clemente/projects/Troll-Killers/Connection.hpp" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_connection_1aaa882417cf6e0999a3728e52c269a2cc" prot="private" static="no" mutable="no">
+        <type>ENetPeer *</type>
+        <definition>ENetPeer* Connection::peer</definition>
+        <argsstring></argsstring>
+        <name>peer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/Connection.hpp" line="27" column="1" bodyfile="/home/clemente/projects/Troll-Killers/Connection.hpp" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_connection_1ab4f2a78ee8c689035a2ed4a46a219d7a" prot="private" static="no" mutable="no">
+        <type>ENetAddress</type>
+        <definition>ENetAddress Connection::lastConnection</definition>
+        <argsstring></argsstring>
+        <name>lastConnection</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/Connection.hpp" line="30" column="1" bodyfile="/home/clemente/projects/Troll-Killers/Connection.hpp" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_connection_1a15a2e9946fd3abb17f8c4c7cd8ebcc27" prot="private" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int Connection::packetLength</definition>
+        <argsstring></argsstring>
+        <name>packetLength</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/Connection.hpp" line="31" column="1" bodyfile="/home/clemente/projects/Troll-Killers/Connection.hpp" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_connection_1ae9bf27d20f26cb6c3c80ff44ad648632" prot="private" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* Connection::packetData</definition>
+        <argsstring></argsstring>
+        <name>packetData</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/Connection.hpp" line="32" column="1" bodyfile="/home/clemente/projects/Troll-Killers/Connection.hpp" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_connection_1a0af9f92dbe2d73fd2618e5f2da994463" prot="private" static="no" mutable="no">
+        <type>char</type>
+        <definition>char Connection::packetBuffer[SIZE]</definition>
+        <argsstring>[SIZE]</argsstring>
+        <name>packetBuffer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/Connection.hpp" line="33" column="1" bodyfile="/home/clemente/projects/Troll-Killers/Connection.hpp" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_connection_1a77b262e1a938295da640ba3b843814e6" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Connection::peerID</definition>
+        <argsstring></argsstring>
+        <name>peerID</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/Connection.hpp" line="34" column="1" bodyfile="/home/clemente/projects/Troll-Killers/Connection.hpp" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_connection_1a912b14110edc6995d6a0eb51737f0103" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Connection::perror</definition>
+        <argsstring>(std::string error)</argsstring>
+        <name>perror</name>
+        <param>
+          <type>std::string</type>
+          <declname>error</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/Connection.hpp" line="36" column="1" bodyfile="/home/clemente/projects/Troll-Killers/Connection.cpp" bodystart="93" bodyend="96"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_connection_1a9de94289ca6259f94ef6aeba3b134a77" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Connection::Connection</definition>
+        <argsstring>()</argsstring>
+        <name>Connection</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/Connection.hpp" line="38" column="1" bodyfile="/home/clemente/projects/Troll-Killers/Connection.cpp" bodystart="5" bodyend="9"/>
+      </memberdef>
+      <memberdef kind="function" id="class_connection_1a2e4352edf667bea83001569e9da8a24d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Connection::~Connection</definition>
+        <argsstring>()</argsstring>
+        <name>~Connection</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/Connection.hpp" line="39" column="1" bodyfile="/home/clemente/projects/Troll-Killers/Connection.cpp" bodystart="11" bodyend="23"/>
+      </memberdef>
+      <memberdef kind="function" id="class_connection_1acdb1c6f1844698b2688cb611f7029d7c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Connection::create_server</definition>
+        <argsstring>(int port, int num_peers)</argsstring>
+        <name>create_server</name>
+        <param>
+          <type>int</type>
+          <declname>port</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>num_peers</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/Connection.hpp" line="41" column="1" bodyfile="/home/clemente/projects/Troll-Killers/Connection.cpp" bodystart="27" bodyend="35"/>
+        <referencedby refid="class_server_1ad5ec9462b520e59f7ea831e157ee5e59" compoundref="_server_8cpp" startline="3" endline="26">Server::Server</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_connection_1a3dda26c4c789d0f5e54fb50cae606022" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Connection::send_packet_reliable</definition>
+        <argsstring>(void *data, int size, int ID)</argsstring>
+        <name>send_packet_reliable</name>
+        <param>
+          <type>void *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>size</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>ID</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/Connection.hpp" line="42" column="1" bodyfile="/home/clemente/projects/Troll-Killers/Connection.cpp" bodystart="37" bodyend="43"/>
+        <referencedby refid="class_client_1a9fbb2f61b005ee6ab3f73b9f449d95eb" compoundref="_client_8cpp" startline="64" endline="264">Client::main_loop</referencedby>
+        <referencedby refid="class_client_1abccb976632db0b3b5df925875b80b2e7" compoundref="_client_8cpp" startline="266" endline="320">Client::connect</referencedby>
+        <referencedby refid="class_pistol_1a0e99963f771cc143c32a0c72158e74f1" compoundref="_pistol_8cpp" startline="20" endline="38">Pistol::shoot</referencedby>
+        <referencedby refid="class_rifle_1a9cb3a65794113297417d2b96e7103784" compoundref="_rifle_8cpp" startline="20" endline="37">Rifle::shoot</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_connection_1a194e26770302ecac113375475df57e42" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Connection::send_packet_unreliable</definition>
+        <argsstring>(void *data, int size, int ID)</argsstring>
+        <name>send_packet_unreliable</name>
+        <param>
+          <type>void *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>size</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>ID</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/Connection.hpp" line="43" column="1" bodyfile="/home/clemente/projects/Troll-Killers/Connection.cpp" bodystart="45" bodyend="51"/>
+        <referencedby refid="class_client_1a9fbb2f61b005ee6ab3f73b9f449d95eb" compoundref="_client_8cpp" startline="64" endline="264">Client::main_loop</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_connection_1a2d554f43b1e9d4a71acdd1ba297fc11b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Connection::broadcast_packet</definition>
+        <argsstring>(void *data, int size)</argsstring>
+        <name>broadcast_packet</name>
+        <param>
+          <type>void *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/Connection.hpp" line="44" column="1" bodyfile="/home/clemente/projects/Troll-Killers/Connection.cpp" bodystart="53" bodyend="59"/>
+        <referencedby refid="class_server_1a47beb8398c78f8ce814d8f3961880add" compoundref="_server_8cpp" startline="33" endline="68">Server::main_loop</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_connection_1ace9a66bd4a77270df4587df1405d4033" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Connection::send_flush</definition>
+        <argsstring>()</argsstring>
+        <name>send_flush</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/Connection.hpp" line="45" column="1" bodyfile="/home/clemente/projects/Troll-Killers/Connection.cpp" bodystart="61" bodyend="66"/>
+      </memberdef>
+      <memberdef kind="function" id="class_connection_1a67a66948fd3b286a0a4faaaedb69e56e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Connection::event_service</definition>
+        <argsstring>(int timer)</argsstring>
+        <name>event_service</name>
+        <param>
+          <type>int</type>
+          <declname>timer</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/Connection.hpp" line="47" column="1" bodyfile="/home/clemente/projects/Troll-Killers/Connection.cpp" bodystart="68" bodyend="91"/>
+        <referencedby refid="class_client_1a9fbb2f61b005ee6ab3f73b9f449d95eb" compoundref="_client_8cpp" startline="64" endline="264">Client::main_loop</referencedby>
+        <referencedby refid="class_client_1abccb976632db0b3b5df925875b80b2e7" compoundref="_client_8cpp" startline="266" endline="320">Client::connect</referencedby>
+        <referencedby refid="class_server_1a47beb8398c78f8ce814d8f3961880add" compoundref="_server_8cpp" startline="33" endline="68">Server::main_loop</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_connection_1a75f10c526b51675497a81e1f2c26ba9e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Connection::event_type_connect</definition>
+        <argsstring>()</argsstring>
+        <name>event_type_connect</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/Connection.hpp" line="49" column="1" bodyfile="/home/clemente/projects/Troll-Killers/Connection.cpp" bodystart="98" bodyend="102"/>
+        <referencedby refid="class_server_1a47beb8398c78f8ce814d8f3961880add" compoundref="_server_8cpp" startline="33" endline="68">Server::main_loop</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_connection_1ab0db0e5c8463aca4ec668107b1a46349" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Connection::event_type_receive</definition>
+        <argsstring>()</argsstring>
+        <name>event_type_receive</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/Connection.hpp" line="50" column="1" bodyfile="/home/clemente/projects/Troll-Killers/Connection.cpp" bodystart="104" bodyend="108"/>
+        <referencedby refid="class_client_1a9fbb2f61b005ee6ab3f73b9f449d95eb" compoundref="_client_8cpp" startline="64" endline="264">Client::main_loop</referencedby>
+        <referencedby refid="class_client_1abccb976632db0b3b5df925875b80b2e7" compoundref="_client_8cpp" startline="266" endline="320">Client::connect</referencedby>
+        <referencedby refid="class_server_1a47beb8398c78f8ce814d8f3961880add" compoundref="_server_8cpp" startline="33" endline="68">Server::main_loop</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_connection_1a58f2ca9fedd8369ebdf61725f31123ef" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Connection::event_type_disconnect</definition>
+        <argsstring>()</argsstring>
+        <name>event_type_disconnect</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/Connection.hpp" line="51" column="1" bodyfile="/home/clemente/projects/Troll-Killers/Connection.cpp" bodystart="110" bodyend="114"/>
+        <referencedby refid="class_client_1a9fbb2f61b005ee6ab3f73b9f449d95eb" compoundref="_client_8cpp" startline="64" endline="264">Client::main_loop</referencedby>
+        <referencedby refid="class_server_1a47beb8398c78f8ce814d8f3961880add" compoundref="_server_8cpp" startline="33" endline="68">Server::main_loop</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_connection_1a8e9748ced0d65d12e5781ef21b1e7928" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Connection::create_client</definition>
+        <argsstring>(std::string ip, int port)</argsstring>
+        <name>create_client</name>
+        <param>
+          <type>std::string</type>
+          <declname>ip</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>port</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/Connection.hpp" line="52" column="1" bodyfile="/home/clemente/projects/Troll-Killers/Connection.cpp" bodystart="116" bodyend="133"/>
+        <referencedby refid="class_client_1abccb976632db0b3b5df925875b80b2e7" compoundref="_client_8cpp" startline="266" endline="320">Client::connect</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_connection_1a4eec19a6b526fafaf4fa87a433a0a2d4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>ENetAddress</type>
+        <definition>ENetAddress Connection::getLastConnection</definition>
+        <argsstring>()</argsstring>
+        <name>getLastConnection</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/Connection.hpp" line="54" column="1" bodyfile="/home/clemente/projects/Troll-Killers/Connection.hpp" bodystart="54" bodyend="54"/>
+      </memberdef>
+      <memberdef kind="function" id="class_connection_1ab1a9ae7a0dea88ea63ea4a2d1cbec4d9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>unsigned int</type>
+        <definition>unsigned int Connection::getPacketLength</definition>
+        <argsstring>()</argsstring>
+        <name>getPacketLength</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/Connection.hpp" line="55" column="1" bodyfile="/home/clemente/projects/Troll-Killers/Connection.hpp" bodystart="55" bodyend="55"/>
+      </memberdef>
+      <memberdef kind="function" id="class_connection_1a2431e1403029cf660aa897eba8ec978a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void *</type>
+        <definition>void* Connection::getPacketData</definition>
+        <argsstring>()</argsstring>
+        <name>getPacketData</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/Connection.hpp" line="56" column="1" bodyfile="/home/clemente/projects/Troll-Killers/Connection.hpp" bodystart="56" bodyend="56"/>
+        <referencedby refid="class_client_1a9fbb2f61b005ee6ab3f73b9f449d95eb" compoundref="_client_8cpp" startline="64" endline="264">Client::main_loop</referencedby>
+        <referencedby refid="class_client_1abccb976632db0b3b5df925875b80b2e7" compoundref="_client_8cpp" startline="266" endline="320">Client::connect</referencedby>
+        <referencedby refid="class_server_1a47beb8398c78f8ce814d8f3961880add" compoundref="_server_8cpp" startline="33" endline="68">Server::main_loop</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_connection_1a6a9cbc7d881550fcc0e768e3ee7bf171" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int Connection::getPeerId</definition>
+        <argsstring>()</argsstring>
+        <name>getPeerId</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/Connection.hpp" line="57" column="1" bodyfile="/home/clemente/projects/Troll-Killers/Connection.hpp" bodystart="57" bodyend="57"/>
+        <referencedby refid="class_server_1a47beb8398c78f8ce814d8f3961880add" compoundref="_server_8cpp" startline="33" endline="68">Server::main_loop</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="119">
+        <label>Connection</label>
+        <link refid="class_connection"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/clemente/projects/Troll-Killers/Connection.hpp" line="20" column="1" bodyfile="/home/clemente/projects/Troll-Killers/Connection.hpp" bodystart="20" bodyend="58"/>
+    <listofallmembers>
+      <member refid="class_connection_1af3d9b458d147a2b4519158fda3ca646a" prot="private" virt="non-virtual"><scope>Connection</scope><name>address</name></member>
+      <member refid="class_connection_1a2d554f43b1e9d4a71acdd1ba297fc11b" prot="public" virt="non-virtual"><scope>Connection</scope><name>broadcast_packet</name></member>
+      <member refid="class_connection_1a074418e059d4e969b83a1a6502dc608e" prot="private" virt="non-virtual"><scope>Connection</scope><name>client</name></member>
+      <member refid="class_connection_1a1a8583d4b7ee2d8e7d0dc5bbf19c5b2d" prot="private" virt="non-virtual"><scope>Connection</scope><name>conn</name></member>
+      <member refid="class_connection_1a9de94289ca6259f94ef6aeba3b134a77" prot="public" virt="non-virtual"><scope>Connection</scope><name>Connection</name></member>
+      <member refid="class_connection_1a550cfafb366255611e04742850311034" prot="private" virt="non-virtual"><scope>Connection</scope><name>connS</name></member>
+      <member refid="class_connection_1a8e9748ced0d65d12e5781ef21b1e7928" prot="public" virt="non-virtual"><scope>Connection</scope><name>create_client</name></member>
+      <member refid="class_connection_1acdb1c6f1844698b2688cb611f7029d7c" prot="public" virt="non-virtual"><scope>Connection</scope><name>create_server</name></member>
+      <member refid="class_connection_1a145978da681ae68f47ba1eb047ee52bb" prot="private" virt="non-virtual"><scope>Connection</scope><name>event</name></member>
+      <member refid="class_connection_1a67a66948fd3b286a0a4faaaedb69e56e" prot="public" virt="non-virtual"><scope>Connection</scope><name>event_service</name></member>
+      <member refid="class_connection_1a75f10c526b51675497a81e1f2c26ba9e" prot="public" virt="non-virtual"><scope>Connection</scope><name>event_type_connect</name></member>
+      <member refid="class_connection_1a58f2ca9fedd8369ebdf61725f31123ef" prot="public" virt="non-virtual"><scope>Connection</scope><name>event_type_disconnect</name></member>
+      <member refid="class_connection_1ab0db0e5c8463aca4ec668107b1a46349" prot="public" virt="non-virtual"><scope>Connection</scope><name>event_type_receive</name></member>
+      <member refid="class_connection_1a4eec19a6b526fafaf4fa87a433a0a2d4" prot="public" virt="non-virtual"><scope>Connection</scope><name>getLastConnection</name></member>
+      <member refid="class_connection_1a2431e1403029cf660aa897eba8ec978a" prot="public" virt="non-virtual"><scope>Connection</scope><name>getPacketData</name></member>
+      <member refid="class_connection_1ab1a9ae7a0dea88ea63ea4a2d1cbec4d9" prot="public" virt="non-virtual"><scope>Connection</scope><name>getPacketLength</name></member>
+      <member refid="class_connection_1a6a9cbc7d881550fcc0e768e3ee7bf171" prot="public" virt="non-virtual"><scope>Connection</scope><name>getPeerId</name></member>
+      <member refid="class_connection_1ab4f2a78ee8c689035a2ed4a46a219d7a" prot="private" virt="non-virtual"><scope>Connection</scope><name>lastConnection</name></member>
+      <member refid="class_connection_1a0af9f92dbe2d73fd2618e5f2da994463" prot="private" virt="non-virtual"><scope>Connection</scope><name>packetBuffer</name></member>
+      <member refid="class_connection_1ae9bf27d20f26cb6c3c80ff44ad648632" prot="private" virt="non-virtual"><scope>Connection</scope><name>packetData</name></member>
+      <member refid="class_connection_1a15a2e9946fd3abb17f8c4c7cd8ebcc27" prot="private" virt="non-virtual"><scope>Connection</scope><name>packetLength</name></member>
+      <member refid="class_connection_1aaa882417cf6e0999a3728e52c269a2cc" prot="private" virt="non-virtual"><scope>Connection</scope><name>peer</name></member>
+      <member refid="class_connection_1a77b262e1a938295da640ba3b843814e6" prot="private" virt="non-virtual"><scope>Connection</scope><name>peerID</name></member>
+      <member refid="class_connection_1a912b14110edc6995d6a0eb51737f0103" prot="private" virt="non-virtual"><scope>Connection</scope><name>perror</name></member>
+      <member refid="class_connection_1ace9a66bd4a77270df4587df1405d4033" prot="public" virt="non-virtual"><scope>Connection</scope><name>send_flush</name></member>
+      <member refid="class_connection_1a3dda26c4c789d0f5e54fb50cae606022" prot="public" virt="non-virtual"><scope>Connection</scope><name>send_packet_reliable</name></member>
+      <member refid="class_connection_1a194e26770302ecac113375475df57e42" prot="public" virt="non-virtual"><scope>Connection</scope><name>send_packet_unreliable</name></member>
+      <member refid="class_connection_1a2e4352edf667bea83001569e9da8a24d" prot="public" virt="non-virtual"><scope>Connection</scope><name>~Connection</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,265 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.10">
+  <compounddef id="__object_8hpp" kind="file" language="C++">
+    <compoundname>_object.hpp</compoundname>
+    <includes local="no">stdint.h</includes>
+    <includedby refid="_c_character_8hpp" local="yes">/home/clemente/projects/Troll-Killers/CCharacter.hpp</includedby>
+    <includedby refid="_projectile_8hpp" local="yes">/home/clemente/projects/Troll-Killers/Projectile.hpp</includedby>
+    <includedby refid="_c_map_8hpp" local="yes">/home/clemente/projects/Troll-Killers/CMap.hpp</includedby>
+    <includedby refid="_map_8hpp" local="yes">/home/clemente/projects/Troll-Killers/Map.hpp</includedby>
+    <includedby refid="_cursor_8hpp" local="yes">/home/clemente/projects/Troll-Killers/Cursor.hpp</includedby>
+    <includedby refid="_s_character_8hpp" local="yes">/home/clemente/projects/Troll-Killers/SCharacter.hpp</includedby>
+    <incdepgraph>
+      <node id="1054">
+        <label>stdint.h</label>
+      </node>
+      <node id="1053">
+        <label>/home/clemente/projects/Troll-Killers/_object.hpp</label>
+        <link refid="_object.hpp"/>
+        <childnode refid="1054" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1075">
+        <label>/home/clemente/projects/Troll-Killers/MapEditor.hpp</label>
+        <link refid="_map_editor_8hpp"/>
+        <childnode refid="1076" relation="include">
+        </childnode>
+        <childnode refid="1077" relation="include">
+        </childnode>
+      </node>
+      <node id="1068">
+        <label>/home/clemente/projects/Troll-Killers/Pistol.hpp</label>
+        <link refid="_pistol_8hpp"/>
+        <childnode refid="1056" relation="include">
+        </childnode>
+        <childnode refid="1069" relation="include">
+        </childnode>
+      </node>
+      <node id="1076">
+        <label>/home/clemente/projects/Troll-Killers/editorMain.cpp</label>
+        <link refid="editor_main_8cpp"/>
+      </node>
+      <node id="1057">
+        <label>/home/clemente/projects/Troll-Killers/CCharacter.cpp</label>
+        <link refid="_c_character_8cpp"/>
+      </node>
+      <node id="1064">
+        <label>/home/clemente/projects/Troll-Killers/CProjectile.hpp</label>
+        <link refid="_c_projectile_8hpp"/>
+        <childnode refid="1065" relation="include">
+        </childnode>
+        <childnode refid="1071" relation="include">
+        </childnode>
+      </node>
+      <node id="1060">
+        <label>/home/clemente/projects/Troll-Killers/MenuManager.hpp</label>
+        <link refid="_menu_manager_8hpp"/>
+        <childnode refid="1058" relation="include">
+        </childnode>
+        <childnode refid="1061" relation="include">
+        </childnode>
+      </node>
+      <node id="1082">
+        <label>/home/clemente/projects/Troll-Killers/Server.cpp</label>
+        <link refid="_server_8cpp"/>
+      </node>
+      <node id="1074">
+        <label>/home/clemente/projects/Troll-Killers/CMap.cpp</label>
+        <link refid="_c_map_8cpp"/>
+      </node>
+      <node id="1055">
+        <label>/home/clemente/projects/Troll-Killers/_object.hpp</label>
+        <link refid="_object.hpp"/>
+        <childnode refid="1056" relation="include">
+        </childnode>
+        <childnode refid="1063" relation="include">
+        </childnode>
+        <childnode refid="1073" relation="include">
+        </childnode>
+        <childnode refid="1078" relation="include">
+        </childnode>
+        <childnode refid="1085" relation="include">
+        </childnode>
+        <childnode refid="1087" relation="include">
+        </childnode>
+      </node>
+      <node id="1059">
+        <label>/home/clemente/projects/Troll-Killers/Client.cpp</label>
+        <link refid="_client_8cpp"/>
+      </node>
+      <node id="1071">
+        <label>/home/clemente/projects/Troll-Killers/CProjectile.cpp</label>
+        <link refid="_c_projectile_8cpp"/>
+      </node>
+      <node id="1088">
+        <label>/home/clemente/projects/Troll-Killers/SCharacter.cpp</label>
+        <link refid="_s_character_8cpp"/>
+      </node>
+      <node id="1070">
+        <label>/home/clemente/projects/Troll-Killers/Weapons.cpp</label>
+        <link refid="_weapons_8cpp"/>
+      </node>
+      <node id="1080">
+        <label>/home/clemente/projects/Troll-Killers/Server.hpp</label>
+        <link refid="_server_8hpp"/>
+        <childnode refid="1081" relation="include">
+        </childnode>
+        <childnode refid="1082" relation="include">
+        </childnode>
+      </node>
+      <node id="1063">
+        <label>/home/clemente/projects/Troll-Killers/Projectile.hpp</label>
+        <link refid="_projectile_8hpp"/>
+        <childnode refid="1064" relation="include">
+        </childnode>
+        <childnode refid="1072" relation="include">
+        </childnode>
+      </node>
+      <node id="1073">
+        <label>/home/clemente/projects/Troll-Killers/CMap.hpp</label>
+        <link refid="_c_map_8hpp"/>
+        <childnode refid="1058" relation="include">
+        </childnode>
+        <childnode refid="1074" relation="include">
+        </childnode>
+        <childnode refid="1075" relation="include">
+        </childnode>
+      </node>
+      <node id="1078">
+        <label>/home/clemente/projects/Troll-Killers/Map.hpp</label>
+        <link refid="_map_8hpp"/>
+        <childnode refid="1073" relation="include">
+        </childnode>
+        <childnode refid="1079" relation="include">
+        </childnode>
+        <childnode refid="1084" relation="include">
+        </childnode>
+      </node>
+      <node id="1058">
+        <label>/home/clemente/projects/Troll-Killers/Client.hpp</label>
+        <link refid="_client_8hpp"/>
+        <childnode refid="1059" relation="include">
+        </childnode>
+        <childnode refid="1060" relation="include">
+        </childnode>
+        <childnode refid="1062" relation="include">
+        </childnode>
+      </node>
+      <node id="1086">
+        <label>/home/clemente/projects/Troll-Killers/Cursor.cpp</label>
+        <link refid="_cursor_8cpp"/>
+      </node>
+      <node id="1087">
+        <label>/home/clemente/projects/Troll-Killers/SCharacter.hpp</label>
+        <link refid="_s_character_8hpp"/>
+        <childnode refid="1080" relation="include">
+        </childnode>
+        <childnode refid="1088" relation="include">
+        </childnode>
+      </node>
+      <node id="1065">
+        <label>/home/clemente/projects/Troll-Killers/Weapons.hpp</label>
+        <link refid="_weapons_8hpp"/>
+        <childnode refid="1066" relation="include">
+        </childnode>
+        <childnode refid="1068" relation="include">
+        </childnode>
+        <childnode refid="1070" relation="include">
+        </childnode>
+      </node>
+      <node id="1066">
+        <label>/home/clemente/projects/Troll-Killers/Rifle.hpp</label>
+        <link refid="_rifle_8hpp"/>
+        <childnode refid="1056" relation="include">
+        </childnode>
+        <childnode refid="1067" relation="include">
+        </childnode>
+      </node>
+      <node id="1072">
+        <label>/home/clemente/projects/Troll-Killers/Projectile.cpp</label>
+        <link refid="_projectile_8cpp"/>
+      </node>
+      <node id="1084">
+        <label>/home/clemente/projects/Troll-Killers/Map.cpp</label>
+        <link refid="_map_8cpp"/>
+      </node>
+      <node id="1079">
+        <label>/home/clemente/projects/Troll-Killers/SMap.hpp</label>
+        <link refid="_s_map_8hpp"/>
+        <childnode refid="1080" relation="include">
+        </childnode>
+        <childnode refid="1083" relation="include">
+        </childnode>
+      </node>
+      <node id="1077">
+        <label>/home/clemente/projects/Troll-Killers/MapEditor.cpp</label>
+        <link refid="_map_editor_8cpp"/>
+      </node>
+      <node id="1069">
+        <label>/home/clemente/projects/Troll-Killers/Pistol.cpp</label>
+        <link refid="_pistol_8cpp"/>
+      </node>
+      <node id="1085">
+        <label>/home/clemente/projects/Troll-Killers/Cursor.hpp</label>
+        <link refid="_cursor_8hpp"/>
+        <childnode refid="1086" relation="include">
+        </childnode>
+        <childnode refid="1075" relation="include">
+        </childnode>
+      </node>
+      <node id="1056">
+        <label>/home/clemente/projects/Troll-Killers/CCharacter.hpp</label>
+        <link refid="_c_character_8hpp"/>
+        <childnode refid="1057" relation="include">
+        </childnode>
+        <childnode refid="1058" relation="include">
+        </childnode>
+      </node>
+      <node id="1081">
+        <label>/home/clemente/projects/Troll-Killers/mainServer.cpp</label>
+        <link refid="main_server_8cpp"/>
+      </node>
+      <node id="1067">
+        <label>/home/clemente/projects/Troll-Killers/Rifle.cpp</label>
+        <link refid="_rifle_8cpp"/>
+      </node>
+      <node id="1062">
+        <label>/home/clemente/projects/Troll-Killers/mainClient.cpp</label>
+        <link refid="main_client_8cpp"/>
+      </node>
+      <node id="1061">
+        <label>/home/clemente/projects/Troll-Killers/MenuManager.cpp</label>
+        <link refid="_menu_manager_8cpp"/>
+      </node>
+      <node id="1083">
+        <label>/home/clemente/projects/Troll-Killers/SMap.cpp</label>
+        <link refid="_s_map_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="struct__object" prot="public">_object</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>_OBJECT_HPP</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>_OBJECT_HPP</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdint.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5" refid="struct__object" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct__object" kindref="compound">_object</ref>{</highlight></codeline>
+<codeline lineno="6" refid="struct__object_1a4ffae0568ef6772f8ebefa0997f79243" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>int8_t<sp/><ref refid="struct__object_1a4ffae0568ef6772f8ebefa0997f79243" kindref="member">type</ref>;</highlight></codeline>
+<codeline lineno="7" refid="struct__object_1a48f88904fef6cb2f4ea22029174d76bc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>int16_t<sp/><ref refid="struct__object_1adb6e178c2aa0bc48f5db6d85106c1680" kindref="member">x</ref>,<ref refid="struct__object_1a48f88904fef6cb2f4ea22029174d76bc" kindref="member">y</ref>;</highlight></codeline>
+<codeline lineno="8" refid="struct__object_1a870a8b24b7b3dc9244f543f096e9dae6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>int16_t<sp/><ref refid="struct__object_1a870a8b24b7b3dc9244f543f096e9dae6" kindref="member">radius</ref>;</highlight></codeline>
+<codeline lineno="9" refid="struct__object_1a7dff64a3cc71a49786c1052bb6c250ca" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>int16_t<sp/><ref refid="struct__object_1a9d23dfa35b2571bf0b89d4ca75f5c155" kindref="member">length</ref>,<sp/><ref refid="struct__object_1a7dff64a3cc71a49786c1052bb6c250ca" kindref="member">width</ref>;</highlight></codeline>
+<codeline lineno="10" refid="struct__object_1af5318fcc501c7951e1bf261de6c29b3b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>int16_t<sp/><ref refid="struct__object_1af5318fcc501c7951e1bf261de6c29b3b" kindref="member">r</ref>;<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Unfortunatly<sp/>stringstreams<sp/>do<sp/>not<sp/>recognise<sp/>int8_t</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11" refid="struct__object_1a89ebce79c5f2acba52f871e6833977ff" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>int16_t<sp/><ref refid="struct__object_1a89ebce79c5f2acba52f871e6833977ff" kindref="member">g</ref>;<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//So<sp/>we<sp/>are<sp/>overkilling<sp/>using<sp/>int16_t</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12" refid="struct__object_1a104af22ae68294943efb54edb7a46b0e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>int16_t<sp/><ref refid="struct__object_1a104af22ae68294943efb54edb7a46b0e" kindref="member">b</ref>;<sp/><sp/></highlight></codeline>
+<codeline lineno="13"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/home/clemente/projects/Troll-Killers/_object.hpp"/>
+  </compounddef>
+</doxygen>

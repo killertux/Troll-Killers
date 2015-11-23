@@ -1,0 +1,109 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.10">
+  <compounddef id="_c_projectile_8cpp" kind="file" language="C++">
+    <compoundname>CProjectile.cpp</compoundname>
+    <includes refid="_c_projectile_8hpp" local="yes">CProjectile.hpp</includes>
+    <includes local="no">iostream</includes>
+    <incdepgraph>
+      <node id="1314">
+        <label>IGObject.hpp</label>
+        <link refid="_i_g_object_8hpp"/>
+        <childnode refid="1315" relation="include">
+        </childnode>
+        <childnode refid="1316" relation="include">
+        </childnode>
+      </node>
+      <node id="1312">
+        <label>CProjectile.hpp</label>
+        <link refid="_c_projectile_8hpp"/>
+        <childnode refid="1313" relation="include">
+        </childnode>
+        <childnode refid="1321" relation="include">
+        </childnode>
+        <childnode refid="1322" relation="include">
+        </childnode>
+        <childnode refid="1320" relation="include">
+        </childnode>
+      </node>
+      <node id="1317">
+        <label>stdint.h</label>
+      </node>
+      <node id="1315">
+        <label>Enums.hpp</label>
+        <link refid="_enums_8hpp"/>
+      </node>
+      <node id="1319">
+        <label>_object.hpp</label>
+        <link refid="__object_8hpp"/>
+        <childnode refid="1317" relation="include">
+        </childnode>
+      </node>
+      <node id="1322">
+        <label>allegro5/allegro_primitives.h</label>
+      </node>
+      <node id="1311">
+        <label>/home/clemente/projects/Troll-Killers/CProjectile.cpp</label>
+        <link refid="CProjectile.cpp"/>
+        <childnode refid="1312" relation="include">
+        </childnode>
+        <childnode refid="1323" relation="include">
+        </childnode>
+      </node>
+      <node id="1313">
+        <label>Projectile.hpp</label>
+        <link refid="_projectile_8hpp"/>
+        <childnode refid="1314" relation="include">
+        </childnode>
+        <childnode refid="1319" relation="include">
+        </childnode>
+        <childnode refid="1320" relation="include">
+        </childnode>
+      </node>
+      <node id="1321">
+        <label>allegro5/allegro.h</label>
+      </node>
+      <node id="1316">
+        <label>_data.hpp</label>
+        <link refid="__data_8hpp"/>
+        <childnode refid="1317" relation="include">
+        </childnode>
+        <childnode refid="1318" relation="include">
+        </childnode>
+      </node>
+      <node id="1320">
+        <label>math.h</label>
+      </node>
+      <node id="1323">
+        <label>iostream</label>
+      </node>
+      <node id="1318">
+        <label>cstring</label>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_c_projectile_8hpp" kindref="compound">CProjectile.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;iostream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5" refid="class_c_projectile_1a164f1820536f396cc7118c0ab9bec69f" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_c_projectile_1a164f1820536f396cc7118c0ab9bec69f" kindref="member">CProjectile::draw</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>mapX,</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>mapY){</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>endX,endY;</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><sp/><sp/><sp/><sp/>endX=<ref refid="class_projectile_1a123f18a0665fd6ae48dcbd900647defb" kindref="member">length</ref>*cos(<ref refid="class_projectile_1a5c3f2c4e44bd0607dbdb55ebfb86f88b" kindref="member">angle</ref>)+<ref refid="class_projectile_1a706363cbafcbe19aa68853b2821e63b5" kindref="member">x</ref>;</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/>endY=<ref refid="class_projectile_1a123f18a0665fd6ae48dcbd900647defb" kindref="member">length</ref>*sin(<ref refid="class_projectile_1a5c3f2c4e44bd0607dbdb55ebfb86f88b" kindref="member">angle</ref>)+<ref refid="class_projectile_1a19d3eab0725a2679d39c6d316e3681ca" kindref="member">y</ref>;</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/>al_draw_line(x-mapX,y-mapY,endX-mapX,endY-mapY,al_map_rgb(0,0,0),2);</highlight></codeline>
+<codeline lineno="10"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12" refid="class_c_projectile_1af1fb343501445d3353584cb78545c7e0" refkind="member"><highlight class="normal"><ref refid="class_c_projectile_1af1fb343501445d3353584cb78545c7e0" kindref="member">CProjectile::CProjectile</ref>(int16_t<sp/>x,<sp/>int16_t<sp/>y,<sp/>int16_t<sp/>length,<sp/>int16_t<sp/>velocity,</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>angle){</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;velocity=<ref refid="class_projectile_1a0f40006b298e765555e5494f3bbdc929" kindref="member">velocity</ref>;</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;x=<ref refid="class_projectile_1a706363cbafcbe19aa68853b2821e63b5" kindref="member">x</ref>;</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;y=<ref refid="class_projectile_1a19d3eab0725a2679d39c6d316e3681ca" kindref="member">y</ref>;</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;length=<ref refid="class_projectile_1a123f18a0665fd6ae48dcbd900647defb" kindref="member">length</ref>;</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;angle=<ref refid="class_projectile_1a5c3f2c4e44bd0607dbdb55ebfb86f88b" kindref="member">angle</ref>;</highlight></codeline>
+<codeline lineno="18"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="/home/clemente/projects/Troll-Killers/CProjectile.cpp"/>
+  </compounddef>
+</doxygen>

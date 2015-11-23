@@ -1,0 +1,422 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.10">
+  <compounddef id="class_s_character" kind="class" language="C++" prot="public">
+    <compoundname>SCharacter</compoundname>
+    <basecompoundref refid="class_i_g_object" prot="public" virt="non-virtual">IGObject</basecompoundref>
+    <includes refid="_s_character_8hpp" local="no">SCharacter.hpp</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_s_character_1a04d83fcbde630fbd0248010a4a0fb94e" prot="private" static="no" mutable="no">
+        <type><ref refid="struct__object" kindref="compound">_object</ref></type>
+        <definition>_object SCharacter::player</definition>
+        <argsstring></argsstring>
+        <name>player</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/SCharacter.hpp" line="15" column="1" bodyfile="/home/clemente/projects/Troll-Killers/SCharacter.hpp" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_character_1a26344f63cf2d8b8e0bf8ba14a97d95be" prot="private" static="no" mutable="no">
+        <type>int16_t</type>
+        <definition>int16_t SCharacter::velocity</definition>
+        <argsstring></argsstring>
+        <name>velocity</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/SCharacter.hpp" line="16" column="1" bodyfile="/home/clemente/projects/Troll-Killers/SCharacter.hpp" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_character_1a57437ebd550f7ae62c4f0478ad102361" prot="private" static="no" mutable="no">
+        <type>int16_t</type>
+        <definition>int16_t SCharacter::id</definition>
+        <argsstring></argsstring>
+        <name>id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/SCharacter.hpp" line="17" column="1" bodyfile="/home/clemente/projects/Troll-Killers/SCharacter.hpp" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_character_1a5a49e3d66d33b9692909d0a942748a93" prot="private" static="no" mutable="no">
+        <type>int16_t</type>
+        <definition>int16_t SCharacter::dir</definition>
+        <argsstring></argsstring>
+        <name>dir</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/SCharacter.hpp" line="18" column="1" bodyfile="/home/clemente/projects/Troll-Killers/SCharacter.hpp" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_character_1a0abd856412eb8320fc86e8bb5ebef4d4" prot="private" static="no" mutable="no">
+        <type>int16_t</type>
+        <definition>int16_t SCharacter::team</definition>
+        <argsstring></argsstring>
+        <name>team</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/SCharacter.hpp" line="19" column="1" bodyfile="/home/clemente/projects/Troll-Killers/SCharacter.hpp" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_character_1ab1267dbad2f82ab8f63ce5649978fba0" prot="private" static="no" mutable="no">
+        <type>int16_t</type>
+        <definition>int16_t SCharacter::myWeapon</definition>
+        <argsstring></argsstring>
+        <name>myWeapon</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/SCharacter.hpp" line="20" column="1" bodyfile="/home/clemente/projects/Troll-Killers/SCharacter.hpp" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_character_1afa4f6b488ce644985532d73016854e46" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool SCharacter::ready</definition>
+        <argsstring></argsstring>
+        <name>ready</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/SCharacter.hpp" line="21" column="1" bodyfile="/home/clemente/projects/Troll-Killers/SCharacter.hpp" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_s_character_1aaa56aee926cdedadae1db5335f047cd1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>SCharacter::SCharacter</definition>
+        <argsstring>(int id)</argsstring>
+        <name>SCharacter</name>
+        <param>
+          <type>int</type>
+          <declname>id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/SCharacter.hpp" line="23" column="1" bodyfile="/home/clemente/projects/Troll-Killers/SCharacter.cpp" bodystart="5" bodyend="10"/>
+        <references refid="_defines_8hpp_1a05710e80db10fe76fa57f629ca32b7e5" compoundref="_defines_8hpp" startline="10">PLAYER_VELOCITY</references>
+        <references refid="_enums_8hpp_1a224b9163917ac32fc95a60d8c1eec3aaa851e6f177be6e7d7bf0bc7408e932f1b" compoundref="_enums_8hpp" startline="15">STOPED</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_character_1aafb443599efbd749337eb0190fc5eabe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>SCharacter::~SCharacter</definition>
+        <argsstring>()</argsstring>
+        <name>~SCharacter</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/SCharacter.hpp" line="24" column="1" bodyfile="/home/clemente/projects/Troll-Killers/SCharacter.cpp" bodystart="16" bodyend="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_character_1aed3654ba330a24ac0990047e56bccd32" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>int16_t</type>
+        <definition>int16_t SCharacter::getId</definition>
+        <argsstring>()</argsstring>
+        <name>getId</name>
+        <reimplements refid="class_i_g_object_1a40fdbe0db5e995e22996567d77bf45c6">getId</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/SCharacter.hpp" line="25" column="1" bodyfile="/home/clemente/projects/Troll-Killers/SCharacter.hpp" bodystart="25" bodyend="25"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_character_1a023df9332c559507d8986facbb37dcad" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>int16_t</type>
+        <definition>int16_t SCharacter::getX</definition>
+        <argsstring>()</argsstring>
+        <name>getX</name>
+        <reimplements refid="class_i_g_object_1aa6ae1f7bd99277a3558a8e90d833fa7a">getX</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/SCharacter.hpp" line="26" column="1" bodyfile="/home/clemente/projects/Troll-Killers/SCharacter.hpp" bodystart="26" bodyend="26"/>
+        <references refid="struct__object_1adb6e178c2aa0bc48f5db6d85106c1680" compoundref="__object_8hpp" startline="7">_object::x</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_character_1acbdd136e3a70a94f2f08c7158f042de6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>int16_t</type>
+        <definition>int16_t SCharacter::getY</definition>
+        <argsstring>()</argsstring>
+        <name>getY</name>
+        <reimplements refid="class_i_g_object_1a3491bdb3a6b6ba8d66e07443a5b5951d">getY</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/SCharacter.hpp" line="27" column="1" bodyfile="/home/clemente/projects/Troll-Killers/SCharacter.hpp" bodystart="27" bodyend="27"/>
+        <references refid="struct__object_1a48f88904fef6cb2f4ea22029174d76bc" compoundref="__object_8hpp" startline="7">_object::y</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_character_1af36a0d74ed25de0dc9e29213b46f7928" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>int16_t</type>
+        <definition>int16_t SCharacter::getVelocity</definition>
+        <argsstring>()</argsstring>
+        <name>getVelocity</name>
+        <reimplements refid="class_i_g_object_1afc8764ec832e6a60c58dace401d65b32">getVelocity</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/SCharacter.hpp" line="28" column="1" bodyfile="/home/clemente/projects/Troll-Killers/SCharacter.hpp" bodystart="28" bodyend="28"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_character_1ab1ffdf2103c6277f1ff34c7b48920320" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int16_t</type>
+        <definition>int16_t SCharacter::getMyWeapon</definition>
+        <argsstring>()</argsstring>
+        <name>getMyWeapon</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/SCharacter.hpp" line="29" column="1" bodyfile="/home/clemente/projects/Troll-Killers/SCharacter.hpp" bodystart="29" bodyend="29"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_character_1a4384f9f73da73ddb603d4d85fdae00d7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="_enums_8hpp_1a9c13bb5b1d69698f9b47900990eaa598" kindref="member">Team</ref></type>
+        <definition>Team SCharacter::getTeam</definition>
+        <argsstring>()</argsstring>
+        <name>getTeam</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/SCharacter.hpp" line="30" column="1" bodyfile="/home/clemente/projects/Troll-Killers/SCharacter.hpp" bodystart="30" bodyend="30"/>
+        <referencedby refid="class_server_1a47beb8398c78f8ce814d8f3961880add" compoundref="_server_8cpp" startline="33" endline="68">Server::main_loop</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_s_character_1a4c4daa4601c62ada0af0dccef8680c60" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="_enums_8hpp_1a224b9163917ac32fc95a60d8c1eec3aa" kindref="member">Direction</ref></type>
+        <definition>Direction SCharacter::getDir</definition>
+        <argsstring>()</argsstring>
+        <name>getDir</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/SCharacter.hpp" line="31" column="1" bodyfile="/home/clemente/projects/Troll-Killers/SCharacter.hpp" bodystart="31" bodyend="31"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_character_1a435234e99c79e6094daa3c554033d4ae" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SCharacter::setDir</definition>
+        <argsstring>(Direction dir)</argsstring>
+        <name>setDir</name>
+        <param>
+          <type><ref refid="_enums_8hpp_1a224b9163917ac32fc95a60d8c1eec3aa" kindref="member">Direction</ref></type>
+          <declname>dir</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/SCharacter.hpp" line="32" column="1" bodyfile="/home/clemente/projects/Troll-Killers/SCharacter.hpp" bodystart="32" bodyend="32"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_character_1ab99fa7f23b8c7c9ca45d78d5e9bb8742" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void SCharacter::serialize</definition>
+        <argsstring>(char *buffer)</argsstring>
+        <name>serialize</name>
+        <reimplements refid="class_i_g_object_1a6e2dd93acb47fc77668e2571bff3481e">serialize</reimplements>
+        <param>
+          <type>char *</type>
+          <declname>buffer</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/SCharacter.hpp" line="33" column="1" bodyfile="/home/clemente/projects/Troll-Killers/SCharacter.cpp" bodystart="20" bodyend="22"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_character_1a84075df93e0ad219264a349a247b6986" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool SCharacter::getReady</definition>
+        <argsstring>()</argsstring>
+        <name>getReady</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/SCharacter.hpp" line="34" column="1" bodyfile="/home/clemente/projects/Troll-Killers/SCharacter.hpp" bodystart="34" bodyend="34"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_character_1a4537343129f515509139a762f4d04390" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SCharacter::make_ready</definition>
+        <argsstring>()</argsstring>
+        <name>make_ready</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/SCharacter.hpp" line="36" column="1" bodyfile="/home/clemente/projects/Troll-Killers/SCharacter.cpp" bodystart="11" bodyend="13"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_character_1a410a1a3d599fc8e91252805ce4c50f10" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>void SCharacter::setX</definition>
+        <argsstring>(int16_t x)</argsstring>
+        <name>setX</name>
+        <reimplements refid="class_i_g_object_1a4b810d1b4a785d7532104113ef5cf0ba">setX</reimplements>
+        <param>
+          <type>int16_t</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/SCharacter.hpp" line="37" column="1" bodyfile="/home/clemente/projects/Troll-Killers/SCharacter.hpp" bodystart="37" bodyend="37"/>
+        <references refid="struct__object_1adb6e178c2aa0bc48f5db6d85106c1680" compoundref="__object_8hpp" startline="7">_object::x</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_character_1a7034f78acd75a886ecd02912b20ddcde" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>void SCharacter::setY</definition>
+        <argsstring>(int16_t y)</argsstring>
+        <name>setY</name>
+        <reimplements refid="class_i_g_object_1a5092ff8b79a61c3856510adb0543f229">setY</reimplements>
+        <param>
+          <type>int16_t</type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/SCharacter.hpp" line="38" column="1" bodyfile="/home/clemente/projects/Troll-Killers/SCharacter.hpp" bodystart="38" bodyend="38"/>
+        <references refid="struct__object_1a48f88904fef6cb2f4ea22029174d76bc" compoundref="__object_8hpp" startline="7">_object::y</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_character_1a50249c9fdf9c98080fce5d9ff0e944ca" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SCharacter::setTeam</definition>
+        <argsstring>(Team team)</argsstring>
+        <name>setTeam</name>
+        <param>
+          <type><ref refid="_enums_8hpp_1a9c13bb5b1d69698f9b47900990eaa598" kindref="member">Team</ref></type>
+          <declname>team</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/SCharacter.hpp" line="39" column="1" bodyfile="/home/clemente/projects/Troll-Killers/SCharacter.hpp" bodystart="39" bodyend="39"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_character_1a91f39c3163ed5bbadf6d49c6b69d52f6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SCharacter::setMyWeapon</definition>
+        <argsstring>(Weapon myWeapon)</argsstring>
+        <name>setMyWeapon</name>
+        <param>
+          <type><ref refid="_enums_8hpp_1ad9700e9db9d62004af4a04e4e13912c5" kindref="member">Weapon</ref></type>
+          <declname>myWeapon</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/SCharacter.hpp" line="40" column="1" bodyfile="/home/clemente/projects/Troll-Killers/SCharacter.hpp" bodystart="40" bodyend="40"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="175">
+        <label>IGObject</label>
+        <link refid="class_i_g_object"/>
+      </node>
+      <node id="174">
+        <label>SCharacter</label>
+        <link refid="class_s_character"/>
+        <childnode refid="175" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="177">
+        <label>IGObject</label>
+        <link refid="class_i_g_object"/>
+      </node>
+      <node id="176">
+        <label>SCharacter</label>
+        <link refid="class_s_character"/>
+        <childnode refid="177" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/clemente/projects/Troll-Killers/SCharacter.hpp" line="13" column="1" bodyfile="/home/clemente/projects/Troll-Killers/SCharacter.hpp" bodystart="13" bodyend="41"/>
+    <listofallmembers>
+      <member refid="class_s_character_1a5a49e3d66d33b9692909d0a942748a93" prot="private" virt="non-virtual"><scope>SCharacter</scope><name>dir</name></member>
+      <member refid="class_s_character_1a4c4daa4601c62ada0af0dccef8680c60" prot="public" virt="non-virtual"><scope>SCharacter</scope><name>getDir</name></member>
+      <member refid="class_s_character_1aed3654ba330a24ac0990047e56bccd32" prot="public" virt="virtual"><scope>SCharacter</scope><name>getId</name></member>
+      <member refid="class_s_character_1ab1ffdf2103c6277f1ff34c7b48920320" prot="public" virt="non-virtual"><scope>SCharacter</scope><name>getMyWeapon</name></member>
+      <member refid="class_s_character_1a84075df93e0ad219264a349a247b6986" prot="public" virt="non-virtual"><scope>SCharacter</scope><name>getReady</name></member>
+      <member refid="class_s_character_1a4384f9f73da73ddb603d4d85fdae00d7" prot="public" virt="non-virtual"><scope>SCharacter</scope><name>getTeam</name></member>
+      <member refid="class_s_character_1af36a0d74ed25de0dc9e29213b46f7928" prot="public" virt="virtual"><scope>SCharacter</scope><name>getVelocity</name></member>
+      <member refid="class_s_character_1a023df9332c559507d8986facbb37dcad" prot="public" virt="virtual"><scope>SCharacter</scope><name>getX</name></member>
+      <member refid="class_s_character_1acbdd136e3a70a94f2f08c7158f042de6" prot="public" virt="virtual"><scope>SCharacter</scope><name>getY</name></member>
+      <member refid="class_s_character_1a57437ebd550f7ae62c4f0478ad102361" prot="private" virt="non-virtual"><scope>SCharacter</scope><name>id</name></member>
+      <member refid="class_s_character_1a4537343129f515509139a762f4d04390" prot="public" virt="non-virtual"><scope>SCharacter</scope><name>make_ready</name></member>
+      <member refid="class_s_character_1ab1267dbad2f82ab8f63ce5649978fba0" prot="private" virt="non-virtual"><scope>SCharacter</scope><name>myWeapon</name></member>
+      <member refid="class_s_character_1a04d83fcbde630fbd0248010a4a0fb94e" prot="private" virt="non-virtual"><scope>SCharacter</scope><name>player</name></member>
+      <member refid="class_s_character_1afa4f6b488ce644985532d73016854e46" prot="private" virt="non-virtual"><scope>SCharacter</scope><name>ready</name></member>
+      <member refid="class_s_character_1aaa56aee926cdedadae1db5335f047cd1" prot="public" virt="non-virtual"><scope>SCharacter</scope><name>SCharacter</name></member>
+      <member refid="class_s_character_1ab99fa7f23b8c7c9ca45d78d5e9bb8742" prot="public" virt="virtual"><scope>SCharacter</scope><name>serialize</name></member>
+      <member refid="class_s_character_1a435234e99c79e6094daa3c554033d4ae" prot="public" virt="non-virtual"><scope>SCharacter</scope><name>setDir</name></member>
+      <member refid="class_s_character_1a91f39c3163ed5bbadf6d49c6b69d52f6" prot="public" virt="non-virtual"><scope>SCharacter</scope><name>setMyWeapon</name></member>
+      <member refid="class_s_character_1a50249c9fdf9c98080fce5d9ff0e944ca" prot="public" virt="non-virtual"><scope>SCharacter</scope><name>setTeam</name></member>
+      <member refid="class_s_character_1a410a1a3d599fc8e91252805ce4c50f10" prot="public" virt="virtual"><scope>SCharacter</scope><name>setX</name></member>
+      <member refid="class_s_character_1a7034f78acd75a886ecd02912b20ddcde" prot="public" virt="virtual"><scope>SCharacter</scope><name>setY</name></member>
+      <member refid="class_s_character_1a0abd856412eb8320fc86e8bb5ebef4d4" prot="private" virt="non-virtual"><scope>SCharacter</scope><name>team</name></member>
+      <member refid="class_s_character_1a26344f63cf2d8b8e0bf8ba14a97d95be" prot="private" virt="non-virtual"><scope>SCharacter</scope><name>velocity</name></member>
+      <member refid="class_i_g_object_1a9e22adafd5adb2ed8dcb20a90ea6df6d" prot="public" virt="virtual"><scope>SCharacter</scope><name>~IGObject</name></member>
+      <member refid="class_s_character_1aafb443599efbd749337eb0190fc5eabe" prot="public" virt="non-virtual"><scope>SCharacter</scope><name>~SCharacter</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

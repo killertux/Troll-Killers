@@ -1,0 +1,917 @@
+\begin{theindex}
+
+  \item {/home/clemente/projects/\+Troll-\/\+Killers/\+C\+Character.\+cpp}, 
+		\hyperpage{95}
+  \item {/home/clemente/projects/\+Troll-\/\+Killers/\+C\+Character.\+hpp}, 
+		\hyperpage{95}
+  \item {/home/clemente/projects/\+Troll-\/\+Killers/\+C\+Map.\+cpp}, 
+		\hyperpage{97}
+  \item {/home/clemente/projects/\+Troll-\/\+Killers/\+C\+Map.\+hpp}, 
+		\hyperpage{98}
+  \item {/home/clemente/projects/\+Troll-\/\+Killers/\+C\+Projectile.\+cpp}, 
+		\hyperpage{101}
+  \item {/home/clemente/projects/\+Troll-\/\+Killers/\+C\+Projectile.\+hpp}, 
+		\hyperpage{102}
+  \item {/home/clemente/projects/\+Troll-\/\+Killers/\+Client.\+cpp}, 
+		\hyperpage{96}
+  \item {/home/clemente/projects/\+Troll-\/\+Killers/\+Client.\+hpp}, 
+		\hyperpage{96}
+  \item {/home/clemente/projects/\+Troll-\/\+Killers/\+Configuration.\+cpp}, 
+		\hyperpage{99}
+  \item {/home/clemente/projects/\+Troll-\/\+Killers/\+Configuration.\+hpp}, 
+		\hyperpage{99}
+  \item {/home/clemente/projects/\+Troll-\/\+Killers/\+Connection.\+cpp}, 
+		\hyperpage{100}
+  \item {/home/clemente/projects/\+Troll-\/\+Killers/\+Connection.\+hpp}, 
+		\hyperpage{100}
+  \item {/home/clemente/projects/\+Troll-\/\+Killers/\+Cursor.\+cpp}, 
+		\hyperpage{103}
+  \item {/home/clemente/projects/\+Troll-\/\+Killers/\+Cursor.\+hpp}, 
+		\hyperpage{104}
+  \item {/home/clemente/projects/\+Troll-\/\+Killers/\+Defines.\+hpp}, 
+		\hyperpage{105}
+  \item {/home/clemente/projects/\+Troll-\/\+Killers/\+Enums.\+hpp}, 
+		\hyperpage{108}
+  \item {/home/clemente/projects/\+Troll-\/\+Killers/\+I\+G\+Object.\+hpp}, 
+		\hyperpage{109}
+  \item {/home/clemente/projects/\+Troll-\/\+Killers/\+Map.\+cpp}, 
+		\hyperpage{113}
+  \item {/home/clemente/projects/\+Troll-\/\+Killers/\+Map.\+hpp}, 
+		\hyperpage{113}
+  \item {/home/clemente/projects/\+Troll-\/\+Killers/\+Map\+Editor.\+cpp}, 
+		\hyperpage{114}
+  \item {/home/clemente/projects/\+Troll-\/\+Killers/\+Map\+Editor.\+hpp}, 
+		\hyperpage{114}
+  \item {/home/clemente/projects/\+Troll-\/\+Killers/\+Menu.\+cpp}, 
+		\hyperpage{116}
+  \item {/home/clemente/projects/\+Troll-\/\+Killers/\+Menu.\+hpp}, 
+		\hyperpage{116}
+  \item {/home/clemente/projects/\+Troll-\/\+Killers/\+Menu\+Manager.\+cpp}, 
+		\hyperpage{117}
+  \item {/home/clemente/projects/\+Troll-\/\+Killers/\+Menu\+Manager.\+hpp}, 
+		\hyperpage{118}
+  \item {/home/clemente/projects/\+Troll-\/\+Killers/\+Pistol.\+cpp}, 
+		\hyperpage{119}
+  \item {/home/clemente/projects/\+Troll-\/\+Killers/\+Pistol.\+hpp}, 
+		\hyperpage{119}
+  \item {/home/clemente/projects/\+Troll-\/\+Killers/\+Projectile.\+cpp}, 
+		\hyperpage{120}
+  \item {/home/clemente/projects/\+Troll-\/\+Killers/\+Projectile.\+hpp}, 
+		\hyperpage{121}
+  \item {/home/clemente/projects/\+Troll-\/\+Killers/\+R\+E\+A\+D\+M\+E.\+md}, 
+		\hyperpage{123}
+  \item {/home/clemente/projects/\+Troll-\/\+Killers/\+Rifle.\+cpp}, 
+		\hyperpage{123}
+  \item {/home/clemente/projects/\+Troll-\/\+Killers/\+Rifle.\+hpp}, 
+		\hyperpage{123}
+  \item {/home/clemente/projects/\+Troll-\/\+Killers/\+S\+Character.\+cpp}, 
+		\hyperpage{124}
+  \item {/home/clemente/projects/\+Troll-\/\+Killers/\+S\+Character.\+hpp}, 
+		\hyperpage{125}
+  \item {/home/clemente/projects/\+Troll-\/\+Killers/\+S\+Map.\+cpp}, 
+		\hyperpage{127}
+  \item {/home/clemente/projects/\+Troll-\/\+Killers/\+S\+Map.\+hpp}, 
+		\hyperpage{128}
+  \item {/home/clemente/projects/\+Troll-\/\+Killers/\+Server.\+cpp}, 
+		\hyperpage{126}
+  \item {/home/clemente/projects/\+Troll-\/\+Killers/\+Server.\+hpp}, 
+		\hyperpage{126}
+  \item {/home/clemente/projects/\+Troll-\/\+Killers/\+Weapons.\+cpp}, 
+		\hyperpage{129}
+  \item {/home/clemente/projects/\+Troll-\/\+Killers/\+Weapons.\+hpp}, 
+		\hyperpage{129}
+  \item {/home/clemente/projects/\+Troll-\/\+Killers/\+\_\+data.\+hpp}, 
+		\hyperpage{93}
+  \item {/home/clemente/projects/\+Troll-\/\+Killers/\+\_\+object.\+hpp}, 
+		\hyperpage{94}
+  \item {/home/clemente/projects/\+Troll-\/\+Killers/editor\+Main.\+cpp}, 
+		\hyperpage{106}
+  \item {/home/clemente/projects/\+Troll-\/\+Killers/main\+Client.\+cpp}, 
+		\hyperpage{110}
+  \item {/home/clemente/projects/\+Troll-\/\+Killers/main\+Server.\+cpp}, 
+		\hyperpage{112}
+  \item {\+\_\+data}, \hyperpage{9}
+    \subitem {buffer}, \hyperpage{9}
+    \subitem {type}, \hyperpage{9}
+  \item {\+\_\+data.\+hpp}
+    \subitem {B\+U\+F\+F\+E\+R\+\_\+\+S\+I\+Z\+E}, \hyperpage{94}
+  \item {\+\_\+msg}, \hyperpage{9}
+    \subitem {buffer}, \hyperpage{10}
+    \subitem {id}, \hyperpage{10}
+  \item {\+\_\+n\+Map}, \hyperpage{10}
+    \subitem {length}, \hyperpage{11}
+    \subitem {max\+\_\+objects}, \hyperpage{11}
+    \subitem {n\+\_\+object}, \hyperpage{11}
+    \subitem {name}, \hyperpage{11}
+    \subitem {objects}, \hyperpage{11}
+    \subitem {type}, \hyperpage{12}
+    \subitem {width}, \hyperpage{12}
+  \item {\+\_\+object}, \hyperpage{12}
+    \subitem {b}, \hyperpage{12}
+    \subitem {g}, \hyperpage{12}
+    \subitem {length}, \hyperpage{12}
+    \subitem {r}, \hyperpage{13}
+    \subitem {radius}, \hyperpage{13}
+    \subitem {type}, \hyperpage{13}
+    \subitem {width}, \hyperpage{13}
+    \subitem {x}, \hyperpage{13}
+    \subitem {y}, \hyperpage{13}
+  \item {$\sim$\+C\+Character}
+    \subitem {C\+Character}, \hyperpage{16}
+  \item {$\sim$\+C\+Map}
+    \subitem {C\+Map}, \hyperpage{34}
+  \item {$\sim$\+Client}
+    \subitem {Client}, \hyperpage{26}
+  \item {$\sim$\+Configuration}
+    \subitem {Configuration}, \hyperpage{36}
+  \item {$\sim$\+Connection}
+    \subitem {Connection}, \hyperpage{38}
+  \item {$\sim$\+I\+G\+Object}
+    \subitem {I\+G\+Object}, \hyperpage{49}
+  \item {$\sim$\+I\+Menu}
+    \subitem {I\+Menu}, \hyperpage{51}
+  \item {$\sim$\+Map}
+    \subitem {Map}, \hyperpage{55}
+  \item {$\sim$\+Map\+Editor}
+    \subitem {Map\+Editor}, \hyperpage{57}
+  \item {$\sim$\+Menu\+Armas}
+    \subitem {Menu\+Armas}, \hyperpage{61}
+  \item {$\sim$\+Menu\+Princ}
+    \subitem {Menu\+Princ}, \hyperpage{65}
+  \item {$\sim$\+S\+Character}
+    \subitem {S\+Character}, \hyperpage{79}
+  \item {$\sim$\+Server}
+    \subitem {Server}, \hyperpage{81}
+  \item {$\sim$\+Weapons}
+    \subitem {Weapons}, \hyperpage{88}
+
+  \indexspace
+
+  \item {angle}
+    \subitem {Projectile}, \hyperpage{73}
+    \subitem {Weapons}, \hyperpage{92}
+
+  \indexspace
+
+  \item {b}
+    \subitem {\+\_\+object}, \hyperpage{12}
+  \item {B\+L\+U\+E}
+    \subitem {Enums.\+hpp}, \hyperpage{109}
+  \item {B\+U\+F\+F\+E\+R\+\_\+\+S\+I\+Z\+E}
+    \subitem {\+\_\+data.\+hpp}, \hyperpage{94}
+  \item {botao}
+    \subitem {I\+Menu}, \hyperpage{51}
+    \subitem {Menu\+Armas}, \hyperpage{61}
+    \subitem {Menu\+Princ}, \hyperpage{65}
+  \item {botao\+\_\+action}
+    \subitem {I\+Menu}, \hyperpage{51}
+    \subitem {Menu\+Armas}, \hyperpage{61}
+    \subitem {Menu\+Princ}, \hyperpage{65}
+  \item {broadcast\+\_\+packet}
+    \subitem {Connection}, \hyperpage{38}
+  \item {buffer}
+    \subitem {\+\_\+data}, \hyperpage{9}
+    \subitem {\+\_\+msg}, \hyperpage{10}
+
+  \indexspace
+
+  \item {C\+Character}, \hyperpage{13}
+    \subitem {$\sim$\+C\+Character}, \hyperpage{16}
+    \subitem {C\+Character}, \hyperpage{16}
+    \subitem {colision}, \hyperpage{16}
+    \subitem {damage}, \hyperpage{17}
+    \subitem {die}, \hyperpage{17}
+    \subitem {draw}, \hyperpage{17}
+    \subitem {get\+Dead}, \hyperpage{17}
+    \subitem {get\+Dir}, \hyperpage{18}
+    \subitem {get\+Id}, \hyperpage{18}
+    \subitem {get\+Life}, \hyperpage{18}
+    \subitem {get\+Player}, \hyperpage{18}
+    \subitem {get\+Projectiles}, \hyperpage{18}
+    \subitem {get\+Team}, \hyperpage{18}
+    \subitem {get\+Velocity}, \hyperpage{18}
+    \subitem {get\+Weapon\+Dmg}, \hyperpage{18}
+    \subitem {get\+X}, \hyperpage{19}
+    \subitem {get\+Y}, \hyperpage{19}
+    \subitem {move}, \hyperpage{19}
+    \subitem {revive}, \hyperpage{20}
+    \subitem {serialize}, \hyperpage{20}
+    \subitem {set\+Dir}, \hyperpage{21}
+    \subitem {set\+Spawn\+X}, \hyperpage{21}
+    \subitem {set\+Spawn\+Y}, \hyperpage{21}
+    \subitem {set\+Team}, \hyperpage{21}
+    \subitem {set\+Weapon\+Angle}, \hyperpage{22}
+    \subitem {set\+X}, \hyperpage{22}
+    \subitem {set\+Y}, \hyperpage{23}
+    \subitem {shoot}, \hyperpage{23}
+    \subitem {sound\+\_\+shoot}, \hyperpage{24}
+    \subitem {try\+To\+Revive}, \hyperpage{24}
+    \subitem {weapon\+Angle}, \hyperpage{24}
+  \item {C\+Character.\+hpp}
+    \subitem {R\+E\+S\+P\+A\+W\+N\+\_\+\+T\+I\+M\+E\+R}, \hyperpage{96}
+  \item {C\+H\+A\+N\+G\+E\+\_\+\+M\+E\+N\+U}
+    \subitem {Menu.\+hpp}, \hyperpage{117}
+  \item {C\+I\+R\+C\+L\+E}
+    \subitem {Enums.\+hpp}, \hyperpage{108}
+  \item {C\+Map}, \hyperpage{31}
+    \subitem {$\sim$\+C\+Map}, \hyperpage{34}
+    \subitem {C\+Map}, \hyperpage{34}
+    \subitem {destroy\+\_\+object}, \hyperpage{34}
+    \subitem {draw\+\_\+map}, \hyperpage{34}
+    \subitem {get\+Nobject}, \hyperpage{34}
+    \subitem {get\+Objects}, \hyperpage{34}
+    \subitem {new\+\_\+object}, \hyperpage{35}
+    \subitem {set\+Draw\+Circles}, \hyperpage{35}
+  \item {C\+Projectile}, \hyperpage{41}
+    \subitem {C\+Projectile}, \hyperpage{44}
+    \subitem {draw}, \hyperpage{44}
+  \item {calculate\+Angle}
+    \subitem {Weapons}, \hyperpage{88}
+  \item {calculate\+Spawn}
+    \subitem {S\+Map}, \hyperpage{85}
+  \item {change\+\_\+cursor}
+    \subitem {Cursor}, \hyperpage{45}
+  \item {change\+\_\+team}
+    \subitem {Cursor}, \hyperpage{45}
+  \item {Client}, \hyperpage{25}
+    \subitem {$\sim$\+Client}, \hyperpage{26}
+    \subitem {Client}, \hyperpage{26}
+    \subitem {connect}, \hyperpage{26}
+    \subitem {main\+\_\+loop}, \hyperpage{27}
+    \subitem {menu}, \hyperpage{29}
+    \subitem {set\+Weapon}, \hyperpage{31}
+  \item {colision}
+    \subitem {C\+Character}, \hyperpage{16}
+  \item {collide}
+    \subitem {Projectile}, \hyperpage{71}
+  \item {config\+\_\+create}
+    \subitem {Configuration}, \hyperpage{36}
+  \item {config\+\_\+found}
+    \subitem {Configuration}, \hyperpage{36}
+  \item {config\+\_\+get}
+    \subitem {Configuration}, \hyperpage{36}
+  \item {config\+\_\+insert}
+    \subitem {Configuration}, \hyperpage{37}
+  \item {config\+\_\+load}
+    \subitem {Configuration}, \hyperpage{37}
+  \item {config\+\_\+remove}
+    \subitem {Configuration}, \hyperpage{37}
+  \item {config\+\_\+save}
+    \subitem {Configuration}, \hyperpage{37}
+  \item {Configuration}, \hyperpage{35}
+    \subitem {$\sim$\+Configuration}, \hyperpage{36}
+    \subitem {config\+\_\+create}, \hyperpage{36}
+    \subitem {config\+\_\+found}, \hyperpage{36}
+    \subitem {config\+\_\+get}, \hyperpage{36}
+    \subitem {config\+\_\+insert}, \hyperpage{37}
+    \subitem {config\+\_\+load}, \hyperpage{37}
+    \subitem {config\+\_\+remove}, \hyperpage{37}
+    \subitem {config\+\_\+save}, \hyperpage{37}
+    \subitem {Configuration}, \hyperpage{36}
+  \item {connect}
+    \subitem {Client}, \hyperpage{26}
+  \item {Connection}, \hyperpage{37}
+    \subitem {$\sim$\+Connection}, \hyperpage{38}
+    \subitem {broadcast\+\_\+packet}, \hyperpage{38}
+    \subitem {Connection}, \hyperpage{38}
+    \subitem {create\+\_\+client}, \hyperpage{39}
+    \subitem {create\+\_\+server}, \hyperpage{39}
+    \subitem {event\+\_\+service}, \hyperpage{39}
+    \subitem {event\+\_\+type\+\_\+connect}, \hyperpage{39}
+    \subitem {event\+\_\+type\+\_\+disconnect}, \hyperpage{40}
+    \subitem {event\+\_\+type\+\_\+receive}, \hyperpage{40}
+    \subitem {get\+Last\+Connection}, \hyperpage{40}
+    \subitem {get\+Packet\+Data}, \hyperpage{40}
+    \subitem {get\+Packet\+Length}, \hyperpage{41}
+    \subitem {get\+Peer\+Id}, \hyperpage{41}
+    \subitem {send\+\_\+flush}, \hyperpage{41}
+    \subitem {send\+\_\+packet\+\_\+reliable}, \hyperpage{41}
+    \subitem {send\+\_\+packet\+\_\+unreliable}, \hyperpage{41}
+  \item {Connection.\+hpp}
+    \subitem {S\+I\+Z\+E}, \hyperpage{101}
+  \item {create\+\_\+client}
+    \subitem {Connection}, \hyperpage{39}
+  \item {create\+\_\+server}
+    \subitem {Connection}, \hyperpage{39}
+  \item {Cursor}, \hyperpage{44}
+    \subitem {change\+\_\+cursor}, \hyperpage{45}
+    \subitem {change\+\_\+team}, \hyperpage{45}
+    \subitem {Cursor}, \hyperpage{45}
+    \subitem {draw\+\_\+cursor}, \hyperpage{45}
+    \subitem {get\+Object}, \hyperpage{46}
+    \subitem {get\+X}, \hyperpage{46}
+    \subitem {get\+Y}, \hyperpage{46}
+    \subitem {increase\+\_\+object}, \hyperpage{46}
+    \subitem {move\+\_\+cursor}, \hyperpage{46}
+    \subitem {object\+\_\+selected}, \hyperpage{47}
+    \subitem {set\+X}, \hyperpage{47}
+    \subitem {set\+Y}, \hyperpage{47}
+
+  \indexspace
+
+  \item {D\+L}
+    \subitem {Enums.\+hpp}, \hyperpage{108}
+  \item {D\+O\+W\+N}
+    \subitem {Enums.\+hpp}, \hyperpage{108}
+  \item {D\+R}
+    \subitem {Enums.\+hpp}, \hyperpage{108}
+  \item {damage}
+    \subitem {C\+Character}, \hyperpage{17}
+  \item {Defines.\+hpp}
+    \subitem {F\+P\+S}, \hyperpage{105}
+    \subitem {G\+R\+I\+D}, \hyperpage{105}
+    \subitem {P\+L\+A\+Y\+E\+R\+\_\+\+V\+E\+L\+O\+C\+I\+T\+Y}, 
+		\hyperpage{105}
+    \subitem {P\+R\+O\+T\+O\+C\+O\+L\+\_\+\+C\+H\+A\+R\+A\+C\+T\+E\+R}, 
+		\hyperpage{105}
+    \subitem {P\+R\+O\+T\+O\+C\+O\+L\+\_\+\+D\+E\+L\+E\+T\+E\+\_\+\+B\+U\+L\+L\+E\+T}, 
+		\hyperpage{105}
+    \subitem {P\+R\+O\+T\+O\+C\+O\+L\+\_\+\+D\+I\+S\+C\+O\+N\+N\+E\+C\+T}, 
+		\hyperpage{105}
+    \subitem {P\+R\+O\+T\+O\+C\+O\+L\+\_\+\+H\+I\+T}, \hyperpage{105}
+    \subitem {P\+R\+O\+T\+O\+C\+O\+L\+\_\+\+M\+A\+P\+\_\+\+F\+I\+L\+E}, 
+		\hyperpage{105}
+    \subitem {P\+R\+O\+T\+O\+C\+O\+L\+\_\+\+M\+Y\+\_\+\+W\+E\+A\+P\+O\+N}, 
+		\hyperpage{105}
+    \subitem {P\+R\+O\+T\+O\+C\+O\+L\+\_\+\+N\+\_\+\+P\+E\+E\+R\+S}, 
+		\hyperpage{105}
+    \subitem {P\+R\+O\+T\+O\+C\+O\+L\+\_\+\+N\+E\+W\+\_\+\+S\+H\+O\+O\+T}, 
+		\hyperpage{105}
+    \subitem {P\+R\+O\+T\+O\+C\+O\+L\+\_\+\+N\+E\+W\+\_\+\+U\+S\+E\+R}, 
+		\hyperpage{106}
+    \subitem {P\+R\+O\+T\+O\+C\+O\+L\+\_\+\+R\+E\+V\+I\+V\+E}, 
+		\hyperpage{106}
+    \subitem {P\+R\+O\+T\+O\+C\+O\+L\+\_\+\+S\+E\+T\+\_\+\+P\+O\+S\+\_\+\+T\+E\+A\+M}, 
+		\hyperpage{106}
+    \subitem {S\+C\+R\+E\+E\+N\+\_\+\+P\+R\+O\+J\+E\+C\+T\+I\+L\+E\+S}, 
+		\hyperpage{106}
+  \item {deserialize}
+    \subitem {Map}, \hyperpage{55}
+  \item {destroy\+\_\+object}
+    \subitem {C\+Map}, \hyperpage{34}
+  \item {die}
+    \subitem {C\+Character}, \hyperpage{17}
+  \item {Direction}
+    \subitem {Enums.\+hpp}, \hyperpage{108}
+  \item {dispersion}
+    \subitem {Weapons}, \hyperpage{92}
+  \item {dmg}
+    \subitem {Weapons}, \hyperpage{92}
+  \item {draw}
+    \subitem {C\+Character}, \hyperpage{17}
+    \subitem {C\+Projectile}, \hyperpage{44}
+    \subitem {Weapons}, \hyperpage{88}
+  \item {draw\+\_\+cursor}
+    \subitem {Cursor}, \hyperpage{45}
+  \item {draw\+\_\+grid}
+    \subitem {Map\+Editor}, \hyperpage{57}
+  \item {draw\+\_\+map}
+    \subitem {C\+Map}, \hyperpage{34}
+
+  \indexspace
+
+  \item {E\+X\+I\+T}
+    \subitem {Menu.\+hpp}, \hyperpage{117}
+  \item {editor\+Main.\+cpp}
+    \subitem {main}, \hyperpage{106}
+  \item {Enums.\+hpp}
+    \subitem {B\+L\+U\+E}, \hyperpage{109}
+    \subitem {C\+I\+R\+C\+L\+E}, \hyperpage{108}
+    \subitem {D\+L}, \hyperpage{108}
+    \subitem {D\+O\+W\+N}, \hyperpage{108}
+    \subitem {D\+R}, \hyperpage{108}
+    \subitem {Direction}, \hyperpage{108}
+    \subitem {L\+E\+F\+T}, \hyperpage{108}
+    \subitem {N\+O\+N\+E}, \hyperpage{108}
+    \subitem {Object\+Type}, \hyperpage{108}
+    \subitem {P\+I\+S\+T\+O\+L}, \hyperpage{109}
+    \subitem {R\+E\+C\+T\+A\+N\+G\+L\+E}, \hyperpage{108}
+    \subitem {R\+E\+D}, \hyperpage{109}
+    \subitem {R\+I\+F\+L\+E}, \hyperpage{109}
+    \subitem {R\+I\+G\+H\+T}, \hyperpage{108}
+    \subitem {S\+T\+O\+P\+E\+D}, \hyperpage{108}
+    \subitem {T\+N\+O\+N\+E}, \hyperpage{109}
+    \subitem {Team}, \hyperpage{108}
+    \subitem {U\+L}, \hyperpage{108}
+    \subitem {U\+P}, \hyperpage{108}
+    \subitem {U\+R}, \hyperpage{108}
+    \subitem {Weapon}, \hyperpage{109}
+  \item {event\+\_\+service}
+    \subitem {Connection}, \hyperpage{39}
+  \item {event\+\_\+type\+\_\+connect}
+    \subitem {Connection}, \hyperpage{39}
+  \item {event\+\_\+type\+\_\+disconnect}
+    \subitem {Connection}, \hyperpage{40}
+  \item {event\+\_\+type\+\_\+receive}
+    \subitem {Connection}, \hyperpage{40}
+
+  \indexspace
+
+  \item {F\+P\+S}
+    \subitem {Defines.\+hpp}, \hyperpage{105}
+
+  \indexspace
+
+  \item {g}
+    \subitem {\+\_\+object}, \hyperpage{12}
+  \item {G\+R\+I\+D}
+    \subitem {Defines.\+hpp}, \hyperpage{105}
+  \item {get\+Angle}
+    \subitem {Projectile}, \hyperpage{72}
+    \subitem {Weapons}, \hyperpage{89}
+  \item {get\+Dead}
+    \subitem {C\+Character}, \hyperpage{17}
+  \item {get\+Dir}
+    \subitem {C\+Character}, \hyperpage{18}
+    \subitem {S\+Character}, \hyperpage{79}
+  \item {get\+Dmg}
+    \subitem {Weapons}, \hyperpage{89}
+  \item {get\+Id}
+    \subitem {C\+Character}, \hyperpage{18}
+    \subitem {I\+G\+Object}, \hyperpage{49}
+    \subitem {Projectile}, \hyperpage{72}
+    \subitem {S\+Character}, \hyperpage{79}
+  \item {get\+Last\+Connection}
+    \subitem {Connection}, \hyperpage{40}
+  \item {get\+Length}
+    \subitem {Projectile}, \hyperpage{72}
+  \item {get\+Life}
+    \subitem {C\+Character}, \hyperpage{18}
+  \item {get\+My\+Weapon}
+    \subitem {S\+Character}, \hyperpage{79}
+  \item {get\+Nobject}
+    \subitem {C\+Map}, \hyperpage{34}
+  \item {get\+Object}
+    \subitem {Cursor}, \hyperpage{46}
+  \item {get\+Objects}
+    \subitem {C\+Map}, \hyperpage{34}
+    \subitem {Map}, \hyperpage{55}
+  \item {get\+Packet\+Data}
+    \subitem {Connection}, \hyperpage{40}
+  \item {get\+Packet\+Length}
+    \subitem {Connection}, \hyperpage{41}
+  \item {get\+Peer\+Id}
+    \subitem {Connection}, \hyperpage{41}
+  \item {get\+Player}
+    \subitem {C\+Character}, \hyperpage{18}
+  \item {get\+Projectiles}
+    \subitem {C\+Character}, \hyperpage{18}
+    \subitem {Weapons}, \hyperpage{89}
+  \item {get\+Ready}
+    \subitem {S\+Character}, \hyperpage{79}
+  \item {get\+Spaw}
+    \subitem {S\+Map}, \hyperpage{85}
+  \item {get\+Team}
+    \subitem {C\+Character}, \hyperpage{18}
+    \subitem {S\+Character}, \hyperpage{79}
+  \item {get\+Velocity}
+    \subitem {C\+Character}, \hyperpage{18}
+    \subitem {I\+G\+Object}, \hyperpage{49}
+    \subitem {Projectile}, \hyperpage{72}
+    \subitem {S\+Character}, \hyperpage{79}
+  \item {get\+Weapon\+Dmg}
+    \subitem {C\+Character}, \hyperpage{18}
+  \item {get\+Weapon\+Tip\+X}
+    \subitem {Weapons}, \hyperpage{89}
+  \item {get\+Weapon\+Tip\+Y}
+    \subitem {Weapons}, \hyperpage{90}
+  \item {get\+X}
+    \subitem {C\+Character}, \hyperpage{19}
+    \subitem {Cursor}, \hyperpage{46}
+    \subitem {I\+G\+Object}, \hyperpage{49}
+    \subitem {Projectile}, \hyperpage{72}
+    \subitem {S\+Character}, \hyperpage{79}
+    \subitem {Weapons}, \hyperpage{90}
+  \item {get\+Y}
+    \subitem {C\+Character}, \hyperpage{19}
+    \subitem {Cursor}, \hyperpage{46}
+    \subitem {I\+G\+Object}, \hyperpage{49}
+    \subitem {Projectile}, \hyperpage{72}
+    \subitem {S\+Character}, \hyperpage{79}
+    \subitem {Weapons}, \hyperpage{90}
+  \item {gun}
+    \subitem {Weapons}, \hyperpage{92}
+
+  \indexspace
+
+  \item {I\+G\+Object}, \hyperpage{48}
+    \subitem {$\sim$\+I\+G\+Object}, \hyperpage{49}
+    \subitem {get\+Id}, \hyperpage{49}
+    \subitem {get\+Velocity}, \hyperpage{49}
+    \subitem {get\+X}, \hyperpage{49}
+    \subitem {get\+Y}, \hyperpage{49}
+    \subitem {serialize}, \hyperpage{49}
+    \subitem {set\+X}, \hyperpage{50}
+    \subitem {set\+Y}, \hyperpage{50}
+  \item {I\+Menu}, \hyperpage{50}
+    \subitem {$\sim$\+I\+Menu}, \hyperpage{51}
+    \subitem {botao}, \hyperpage{51}
+    \subitem {botao\+\_\+action}, \hyperpage{51}
+    \subitem {print\+\_\+menu}, \hyperpage{52}
+  \item {id}
+    \subitem {\+\_\+msg}, \hyperpage{10}
+    \subitem {Projectile}, \hyperpage{73}
+  \item {increase\+\_\+object}
+    \subitem {Cursor}, \hyperpage{46}
+
+  \indexspace
+
+  \item {L\+E\+F\+T}
+    \subitem {Enums.\+hpp}, \hyperpage{108}
+  \item {L\+E\+N\+G\+T\+H}
+    \subitem {Map\+Editor.\+hpp}, \hyperpage{115}
+  \item {length}
+    \subitem {\+\_\+n\+Map}, \hyperpage{11}
+    \subitem {\+\_\+object}, \hyperpage{12}
+    \subitem {Map}, \hyperpage{56}
+    \subitem {Projectile}, \hyperpage{73}
+  \item {load\+\_\+map}
+    \subitem {Map}, \hyperpage{55}
+
+  \indexspace
+
+  \item {M\+A\+P\+\_\+\+F\+I\+L\+E}
+    \subitem {Map\+Editor.\+hpp}, \hyperpage{115}
+    \subitem {Server.\+hpp}, \hyperpage{127}
+  \item {M\+A\+X\+\_\+\+O\+B\+J\+E\+C\+T\+S}
+    \subitem {Map\+Editor.\+hpp}, \hyperpage{115}
+  \item {M\+E\+N\+U\+\_\+\+P\+I\+S\+T\+O\+L}
+    \subitem {Menu.\+hpp}, \hyperpage{117}
+  \item {M\+E\+N\+U\+\_\+\+R\+I\+F\+L\+E}
+    \subitem {Menu.\+hpp}, \hyperpage{117}
+  \item {mag\+Size}
+    \subitem {Weapons}, \hyperpage{92}
+  \item {main}
+    \subitem {editor\+Main.\+cpp}, \hyperpage{106}
+    \subitem {main\+Client.\+cpp}, \hyperpage{110}
+    \subitem {main\+Server.\+cpp}, \hyperpage{112}
+  \item {main\+\_\+loop}
+    \subitem {Client}, \hyperpage{27}
+    \subitem {Map\+Editor}, \hyperpage{58}
+    \subitem {Menu\+Manager}, \hyperpage{62}
+    \subitem {Server}, \hyperpage{81}
+  \item {main\+Client.\+cpp}
+    \subitem {main}, \hyperpage{110}
+  \item {main\+Server.\+cpp}
+    \subitem {main}, \hyperpage{112}
+  \item {make\+\_\+ready}
+    \subitem {S\+Character}, \hyperpage{79}
+  \item {Map}, \hyperpage{52}
+    \subitem {$\sim$\+Map}, \hyperpage{55}
+    \subitem {deserialize}, \hyperpage{55}
+    \subitem {get\+Objects}, \hyperpage{55}
+    \subitem {length}, \hyperpage{56}
+    \subitem {load\+\_\+map}, \hyperpage{55}
+    \subitem {Map}, \hyperpage{55}
+    \subitem {max\+\_\+objects}, \hyperpage{56}
+    \subitem {n\+\_\+object}, \hyperpage{56}
+    \subitem {name}, \hyperpage{56}
+    \subitem {objects}, \hyperpage{56}
+    \subitem {save\+\_\+map}, \hyperpage{55}
+    \subitem {serialize}, \hyperpage{56}
+    \subitem {type}, \hyperpage{56}
+    \subitem {width}, \hyperpage{56}
+  \item {Map\+Editor}, \hyperpage{56}
+    \subitem {$\sim$\+Map\+Editor}, \hyperpage{57}
+    \subitem {draw\+\_\+grid}, \hyperpage{57}
+    \subitem {main\+\_\+loop}, \hyperpage{58}
+    \subitem {Map\+Editor}, \hyperpage{57}
+  \item {Map\+Editor.\+hpp}
+    \subitem {L\+E\+N\+G\+T\+H}, \hyperpage{115}
+    \subitem {M\+A\+P\+\_\+\+F\+I\+L\+E}, \hyperpage{115}
+    \subitem {M\+A\+X\+\_\+\+O\+B\+J\+E\+C\+T\+S}, \hyperpage{115}
+    \subitem {R\+E\+S\+\_\+\+X}, \hyperpage{115}
+    \subitem {R\+E\+S\+\_\+\+Y}, \hyperpage{116}
+    \subitem {W\+I\+D\+T\+H}, \hyperpage{116}
+  \item {max\+\_\+objects}
+    \subitem {\+\_\+n\+Map}, \hyperpage{11}
+    \subitem {Map}, \hyperpage{56}
+  \item {menu}
+    \subitem {Client}, \hyperpage{29}
+  \item {Menu.\+hpp}
+    \subitem {C\+H\+A\+N\+G\+E\+\_\+\+M\+E\+N\+U}, \hyperpage{117}
+    \subitem {E\+X\+I\+T}, \hyperpage{117}
+    \subitem {M\+E\+N\+U\+\_\+\+P\+I\+S\+T\+O\+L}, \hyperpage{117}
+    \subitem {M\+E\+N\+U\+\_\+\+R\+I\+F\+L\+E}, \hyperpage{117}
+  \item {Menu\+Armas}, \hyperpage{60}
+    \subitem {$\sim$\+Menu\+Armas}, \hyperpage{61}
+    \subitem {botao}, \hyperpage{61}
+    \subitem {botao\+\_\+action}, \hyperpage{61}
+    \subitem {Menu\+Armas}, \hyperpage{61}
+    \subitem {print\+\_\+menu}, \hyperpage{61}
+  \item {Menu\+Manager}, \hyperpage{62}
+    \subitem {main\+\_\+loop}, \hyperpage{62}
+    \subitem {Menu\+Manager}, \hyperpage{62}
+  \item {Menu\+Princ}, \hyperpage{64}
+    \subitem {$\sim$\+Menu\+Princ}, \hyperpage{65}
+    \subitem {botao}, \hyperpage{65}
+    \subitem {botao\+\_\+action}, \hyperpage{65}
+    \subitem {Menu\+Princ}, \hyperpage{65}
+    \subitem {print\+\_\+menu}, \hyperpage{65}
+  \item {move}
+    \subitem {C\+Character}, \hyperpage{19}
+    \subitem {Projectile}, \hyperpage{73}
+  \item {move\+\_\+cursor}
+    \subitem {Cursor}, \hyperpage{46}
+
+  \indexspace
+
+  \item {n\+\_\+object}
+    \subitem {\+\_\+n\+Map}, \hyperpage{11}
+    \subitem {Map}, \hyperpage{56}
+  \item {N\+O\+N\+E}
+    \subitem {Enums.\+hpp}, \hyperpage{108}
+  \item {n\+Projectile}
+    \subitem {Weapons}, \hyperpage{92}
+  \item {name}
+    \subitem {\+\_\+n\+Map}, \hyperpage{11}
+    \subitem {Map}, \hyperpage{56}
+  \item {new\+\_\+object}
+    \subitem {C\+Map}, \hyperpage{35}
+
+  \indexspace
+
+  \item {object\+\_\+selected}
+    \subitem {Cursor}, \hyperpage{47}
+  \item {Object\+Type}
+    \subitem {Enums.\+hpp}, \hyperpage{108}
+  \item {objects}
+    \subitem {\+\_\+n\+Map}, \hyperpage{11}
+    \subitem {Map}, \hyperpage{56}
+
+  \indexspace
+
+  \item {P\+I\+S\+T\+O\+L}
+    \subitem {Enums.\+hpp}, \hyperpage{109}
+  \item {P\+L\+A\+Y\+E\+R\+\_\+\+V\+E\+L\+O\+C\+I\+T\+Y}
+    \subitem {Defines.\+hpp}, \hyperpage{105}
+  \item {P\+R\+O\+T\+O\+C\+O\+L\+\_\+\+C\+H\+A\+R\+A\+C\+T\+E\+R}
+    \subitem {Defines.\+hpp}, \hyperpage{105}
+  \item {P\+R\+O\+T\+O\+C\+O\+L\+\_\+\+D\+E\+L\+E\+T\+E\+\_\+\+B\+U\+L\+L\+E\+T}
+    \subitem {Defines.\+hpp}, \hyperpage{105}
+  \item {P\+R\+O\+T\+O\+C\+O\+L\+\_\+\+D\+I\+S\+C\+O\+N\+N\+E\+C\+T}
+    \subitem {Defines.\+hpp}, \hyperpage{105}
+  \item {P\+R\+O\+T\+O\+C\+O\+L\+\_\+\+H\+I\+T}
+    \subitem {Defines.\+hpp}, \hyperpage{105}
+  \item {P\+R\+O\+T\+O\+C\+O\+L\+\_\+\+M\+A\+P\+\_\+\+F\+I\+L\+E}
+    \subitem {Defines.\+hpp}, \hyperpage{105}
+  \item {P\+R\+O\+T\+O\+C\+O\+L\+\_\+\+M\+Y\+\_\+\+W\+E\+A\+P\+O\+N}
+    \subitem {Defines.\+hpp}, \hyperpage{105}
+  \item {P\+R\+O\+T\+O\+C\+O\+L\+\_\+\+N\+\_\+\+P\+E\+E\+R\+S}
+    \subitem {Defines.\+hpp}, \hyperpage{105}
+  \item {P\+R\+O\+T\+O\+C\+O\+L\+\_\+\+N\+E\+W\+\_\+\+S\+H\+O\+O\+T}
+    \subitem {Defines.\+hpp}, \hyperpage{105}
+  \item {P\+R\+O\+T\+O\+C\+O\+L\+\_\+\+N\+E\+W\+\_\+\+U\+S\+E\+R}
+    \subitem {Defines.\+hpp}, \hyperpage{106}
+  \item {P\+R\+O\+T\+O\+C\+O\+L\+\_\+\+R\+E\+V\+I\+V\+E}
+    \subitem {Defines.\+hpp}, \hyperpage{106}
+  \item {P\+R\+O\+T\+O\+C\+O\+L\+\_\+\+S\+E\+T\+\_\+\+P\+O\+S\+\_\+\+T\+E\+A\+M}
+    \subitem {Defines.\+hpp}, \hyperpage{106}
+  \item {Pistol}, \hyperpage{66}
+    \subitem {Pistol}, \hyperpage{68}
+    \subitem {shoot}, \hyperpage{68}
+  \item {play\+\_\+sound}
+    \subitem {Weapons}, \hyperpage{90}
+  \item {print\+\_\+menu}
+    \subitem {I\+Menu}, \hyperpage{52}
+    \subitem {Menu\+Armas}, \hyperpage{61}
+    \subitem {Menu\+Princ}, \hyperpage{65}
+  \item {Projectile}, \hyperpage{68}
+    \subitem {angle}, \hyperpage{73}
+    \subitem {collide}, \hyperpage{71}
+    \subitem {get\+Angle}, \hyperpage{72}
+    \subitem {get\+Id}, \hyperpage{72}
+    \subitem {get\+Length}, \hyperpage{72}
+    \subitem {get\+Velocity}, \hyperpage{72}
+    \subitem {get\+X}, \hyperpage{72}
+    \subitem {get\+Y}, \hyperpage{72}
+    \subitem {id}, \hyperpage{73}
+    \subitem {length}, \hyperpage{73}
+    \subitem {move}, \hyperpage{73}
+    \subitem {Projectile}, \hyperpage{71}
+    \subitem {serialize}, \hyperpage{73}
+    \subitem {set\+Angle}, \hyperpage{73}
+    \subitem {set\+X}, \hyperpage{73}
+    \subitem {set\+Y}, \hyperpage{73}
+    \subitem {velocity}, \hyperpage{73}
+    \subitem {x}, \hyperpage{73}
+    \subitem {y}, \hyperpage{73}
+  \item {projectiles}
+    \subitem {Weapons}, \hyperpage{92}
+
+  \indexspace
+
+  \item {r}
+    \subitem {\+\_\+object}, \hyperpage{13}
+  \item {R\+E\+C\+T\+A\+N\+G\+L\+E}
+    \subitem {Enums.\+hpp}, \hyperpage{108}
+  \item {R\+E\+D}
+    \subitem {Enums.\+hpp}, \hyperpage{109}
+  \item {R\+E\+S\+\_\+\+X}
+    \subitem {Map\+Editor.\+hpp}, \hyperpage{115}
+  \item {R\+E\+S\+\_\+\+Y}
+    \subitem {Map\+Editor.\+hpp}, \hyperpage{116}
+  \item {R\+E\+S\+P\+A\+W\+N\+\_\+\+T\+I\+M\+E\+R}
+    \subitem {C\+Character.\+hpp}, \hyperpage{96}
+  \item {R\+I\+F\+L\+E}
+    \subitem {Enums.\+hpp}, \hyperpage{109}
+  \item {R\+I\+G\+H\+T}
+    \subitem {Enums.\+hpp}, \hyperpage{108}
+  \item {radius}
+    \subitem {\+\_\+object}, \hyperpage{13}
+    \subitem {Weapons}, \hyperpage{92}
+  \item {revive}
+    \subitem {C\+Character}, \hyperpage{20}
+  \item {Rifle}, \hyperpage{74}
+    \subitem {Rifle}, \hyperpage{76}
+    \subitem {shoot}, \hyperpage{76}
+
+  \indexspace
+
+  \item {S\+C\+R\+E\+E\+N\+\_\+\+P\+R\+O\+J\+E\+C\+T\+I\+L\+E\+S}
+    \subitem {Defines.\+hpp}, \hyperpage{106}
+  \item {S\+Character}, \hyperpage{76}
+    \subitem {$\sim$\+S\+Character}, \hyperpage{79}
+    \subitem {get\+Dir}, \hyperpage{79}
+    \subitem {get\+Id}, \hyperpage{79}
+    \subitem {get\+My\+Weapon}, \hyperpage{79}
+    \subitem {get\+Ready}, \hyperpage{79}
+    \subitem {get\+Team}, \hyperpage{79}
+    \subitem {get\+Velocity}, \hyperpage{79}
+    \subitem {get\+X}, \hyperpage{79}
+    \subitem {get\+Y}, \hyperpage{79}
+    \subitem {make\+\_\+ready}, \hyperpage{79}
+    \subitem {S\+Character}, \hyperpage{79}
+    \subitem {serialize}, \hyperpage{79}
+    \subitem {set\+Dir}, \hyperpage{79}
+    \subitem {set\+My\+Weapon}, \hyperpage{80}
+    \subitem {set\+Team}, \hyperpage{80}
+    \subitem {set\+X}, \hyperpage{80}
+    \subitem {set\+Y}, \hyperpage{80}
+  \item {S\+I\+Z\+E}
+    \subitem {Connection.\+hpp}, \hyperpage{101}
+  \item {S\+Map}, \hyperpage{83}
+    \subitem {calculate\+Spawn}, \hyperpage{85}
+    \subitem {get\+Spaw}, \hyperpage{85}
+    \subitem {use\+Spawn}, \hyperpage{85}
+  \item {S\+T\+O\+P\+E\+D}
+    \subitem {Enums.\+hpp}, \hyperpage{108}
+  \item {save\+\_\+map}
+    \subitem {Map}, \hyperpage{55}
+  \item {send\+\_\+flush}
+    \subitem {Connection}, \hyperpage{41}
+  \item {send\+\_\+packet\+\_\+reliable}
+    \subitem {Connection}, \hyperpage{41}
+  \item {send\+\_\+packet\+\_\+unreliable}
+    \subitem {Connection}, \hyperpage{41}
+  \item {serialize}
+    \subitem {C\+Character}, \hyperpage{20}
+    \subitem {I\+G\+Object}, \hyperpage{49}
+    \subitem {Map}, \hyperpage{56}
+    \subitem {Projectile}, \hyperpage{73}
+    \subitem {S\+Character}, \hyperpage{79}
+  \item {Server}, \hyperpage{80}
+    \subitem {$\sim$\+Server}, \hyperpage{81}
+    \subitem {main\+\_\+loop}, \hyperpage{81}
+    \subitem {Server}, \hyperpage{80}
+  \item {Server.\+hpp}
+    \subitem {M\+A\+P\+\_\+\+F\+I\+L\+E}, \hyperpage{127}
+  \item {set\+Angle}
+    \subitem {Projectile}, \hyperpage{73}
+    \subitem {Weapons}, \hyperpage{90}
+  \item {set\+Dir}
+    \subitem {C\+Character}, \hyperpage{21}
+    \subitem {S\+Character}, \hyperpage{79}
+  \item {set\+Draw\+Circles}
+    \subitem {C\+Map}, \hyperpage{35}
+  \item {set\+My\+Weapon}
+    \subitem {S\+Character}, \hyperpage{80}
+  \item {set\+Radius}
+    \subitem {Weapons}, \hyperpage{91}
+  \item {set\+Spawn\+X}
+    \subitem {C\+Character}, \hyperpage{21}
+  \item {set\+Spawn\+Y}
+    \subitem {C\+Character}, \hyperpage{21}
+  \item {set\+Team}
+    \subitem {C\+Character}, \hyperpage{21}
+    \subitem {S\+Character}, \hyperpage{80}
+  \item {set\+Weapon}
+    \subitem {Client}, \hyperpage{31}
+  \item {set\+Weapon\+Angle}
+    \subitem {C\+Character}, \hyperpage{22}
+  \item {set\+X}
+    \subitem {C\+Character}, \hyperpage{22}
+    \subitem {Cursor}, \hyperpage{47}
+    \subitem {I\+G\+Object}, \hyperpage{50}
+    \subitem {Projectile}, \hyperpage{73}
+    \subitem {S\+Character}, \hyperpage{80}
+    \subitem {Weapons}, \hyperpage{91}
+  \item {set\+Y}
+    \subitem {C\+Character}, \hyperpage{23}
+    \subitem {Cursor}, \hyperpage{47}
+    \subitem {I\+G\+Object}, \hyperpage{50}
+    \subitem {Projectile}, \hyperpage{73}
+    \subitem {S\+Character}, \hyperpage{80}
+    \subitem {Weapons}, \hyperpage{91}
+  \item {shoot}
+    \subitem {C\+Character}, \hyperpage{23}
+    \subitem {Pistol}, \hyperpage{68}
+    \subitem {Rifle}, \hyperpage{76}
+    \subitem {Weapons}, \hyperpage{91}
+  \item {shoot\+Timer}
+    \subitem {Weapons}, \hyperpage{92}
+  \item {sound}
+    \subitem {Weapons}, \hyperpage{92}
+  \item {sound\+\_\+shoot}
+    \subitem {C\+Character}, \hyperpage{24}
+
+  \indexspace
+
+  \item {T\+N\+O\+N\+E}
+    \subitem {Enums.\+hpp}, \hyperpage{109}
+  \item {Team}
+    \subitem {Enums.\+hpp}, \hyperpage{108}
+  \item {try\+To\+Revive}
+    \subitem {C\+Character}, \hyperpage{24}
+  \item {type}
+    \subitem {\+\_\+data}, \hyperpage{9}
+    \subitem {\+\_\+n\+Map}, \hyperpage{12}
+    \subitem {\+\_\+object}, \hyperpage{13}
+    \subitem {Map}, \hyperpage{56}
+    \subitem {Weapons}, \hyperpage{92}
+
+  \indexspace
+
+  \item {U\+L}
+    \subitem {Enums.\+hpp}, \hyperpage{108}
+  \item {U\+P}
+    \subitem {Enums.\+hpp}, \hyperpage{108}
+  \item {U\+R}
+    \subitem {Enums.\+hpp}, \hyperpage{108}
+  \item {use\+Spawn}
+    \subitem {S\+Map}, \hyperpage{85}
+
+  \indexspace
+
+  \item {velocity}
+    \subitem {Projectile}, \hyperpage{73}
+
+  \indexspace
+
+  \item {W\+I\+D\+T\+H}
+    \subitem {Map\+Editor.\+hpp}, \hyperpage{116}
+  \item {Weapon}
+    \subitem {Enums.\+hpp}, \hyperpage{109}
+  \item {weapon\+Angle}
+    \subitem {C\+Character}, \hyperpage{24}
+  \item {Weapons}, \hyperpage{85}
+    \subitem {$\sim$\+Weapons}, \hyperpage{88}
+    \subitem {angle}, \hyperpage{92}
+    \subitem {calculate\+Angle}, \hyperpage{88}
+    \subitem {dispersion}, \hyperpage{92}
+    \subitem {dmg}, \hyperpage{92}
+    \subitem {draw}, \hyperpage{88}
+    \subitem {get\+Angle}, \hyperpage{89}
+    \subitem {get\+Dmg}, \hyperpage{89}
+    \subitem {get\+Projectiles}, \hyperpage{89}
+    \subitem {get\+Weapon\+Tip\+X}, \hyperpage{89}
+    \subitem {get\+Weapon\+Tip\+Y}, \hyperpage{90}
+    \subitem {get\+X}, \hyperpage{90}
+    \subitem {get\+Y}, \hyperpage{90}
+    \subitem {gun}, \hyperpage{92}
+    \subitem {mag\+Size}, \hyperpage{92}
+    \subitem {n\+Projectile}, \hyperpage{92}
+    \subitem {play\+\_\+sound}, \hyperpage{90}
+    \subitem {projectiles}, \hyperpage{92}
+    \subitem {radius}, \hyperpage{92}
+    \subitem {set\+Angle}, \hyperpage{90}
+    \subitem {set\+Radius}, \hyperpage{91}
+    \subitem {set\+X}, \hyperpage{91}
+    \subitem {set\+Y}, \hyperpage{91}
+    \subitem {shoot}, \hyperpage{91}
+    \subitem {shoot\+Timer}, \hyperpage{92}
+    \subitem {sound}, \hyperpage{92}
+    \subitem {type}, \hyperpage{92}
+    \subitem {Weapons}, \hyperpage{88}
+    \subitem {x}, \hyperpage{92}
+    \subitem {y}, \hyperpage{92}
+  \item {width}
+    \subitem {\+\_\+n\+Map}, \hyperpage{12}
+    \subitem {\+\_\+object}, \hyperpage{13}
+    \subitem {Map}, \hyperpage{56}
+
+  \indexspace
+
+  \item {x}
+    \subitem {\+\_\+object}, \hyperpage{13}
+    \subitem {Projectile}, \hyperpage{73}
+    \subitem {Weapons}, \hyperpage{92}
+
+  \indexspace
+
+  \item {y}
+    \subitem {\+\_\+object}, \hyperpage{13}
+    \subitem {Projectile}, \hyperpage{73}
+    \subitem {Weapons}, \hyperpage{92}
+
+\end{theindex}

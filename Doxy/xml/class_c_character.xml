@@ -1,0 +1,866 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.10">
+  <compounddef id="class_c_character" kind="class" language="C++" prot="public">
+    <compoundname>CCharacter</compoundname>
+    <basecompoundref refid="class_i_g_object" prot="public" virt="non-virtual">IGObject</basecompoundref>
+    <includes refid="_c_character_8hpp" local="no">CCharacter.hpp</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_c_character_1a38e57d10fe3a3741ef0a7a6cf8378718" prot="private" static="no" mutable="no">
+        <type><ref refid="struct__object" kindref="compound">_object</ref></type>
+        <definition>_object CCharacter::player</definition>
+        <argsstring></argsstring>
+        <name>player</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/CCharacter.hpp" line="27" column="1" bodyfile="/home/clemente/projects/Troll-Killers/CCharacter.hpp" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_c_character_1a7e744691420269e6dc4e524ba9611c85" prot="private" static="no" mutable="no">
+        <type>int16_t</type>
+        <definition>int16_t CCharacter::velocity</definition>
+        <argsstring></argsstring>
+        <name>velocity</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/CCharacter.hpp" line="28" column="1" bodyfile="/home/clemente/projects/Troll-Killers/CCharacter.hpp" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_c_character_1a2db87b3f9168adb8debd9f21e160bc32" prot="private" static="no" mutable="no">
+        <type>int16_t</type>
+        <definition>int16_t CCharacter::id</definition>
+        <argsstring></argsstring>
+        <name>id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/CCharacter.hpp" line="29" column="1" bodyfile="/home/clemente/projects/Troll-Killers/CCharacter.hpp" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_c_character_1a526734092e5bab0b0001fde33ea0135f" prot="private" static="no" mutable="no">
+        <type>int16_t</type>
+        <definition>int16_t CCharacter::dir</definition>
+        <argsstring></argsstring>
+        <name>dir</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/CCharacter.hpp" line="30" column="1" bodyfile="/home/clemente/projects/Troll-Killers/CCharacter.hpp" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_c_character_1a026073b71c94ddb6782eab2d6e47ec24" prot="private" static="no" mutable="no">
+        <type>int16_t</type>
+        <definition>int16_t CCharacter::team</definition>
+        <argsstring></argsstring>
+        <name>team</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/CCharacter.hpp" line="31" column="1" bodyfile="/home/clemente/projects/Troll-Killers/CCharacter.hpp" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_c_character_1aa62c2a83a7e753e57c8f73a2104dbf4e" prot="private" static="no" mutable="no">
+        <type>int16_t</type>
+        <definition>int16_t CCharacter::myWeapon</definition>
+        <argsstring></argsstring>
+        <name>myWeapon</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/CCharacter.hpp" line="32" column="1" bodyfile="/home/clemente/projects/Troll-Killers/CCharacter.hpp" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_c_character_1ab6f3e7a05d630ccb65cdef71b6a2be76" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool CCharacter::dead</definition>
+        <argsstring></argsstring>
+        <name>dead</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/CCharacter.hpp" line="34" column="1" bodyfile="/home/clemente/projects/Troll-Killers/CCharacter.hpp" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_c_character_1a8ee57bcc6f394787a10b21ea8c818d10" prot="private" static="no" mutable="no">
+        <type>int16_t</type>
+        <definition>int16_t CCharacter::xSpawn</definition>
+        <argsstring></argsstring>
+        <name>xSpawn</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/CCharacter.hpp" line="35" column="1" bodyfile="/home/clemente/projects/Troll-Killers/CCharacter.hpp" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_c_character_1a91420cab891f56fa688fef6c297b450b" prot="private" static="no" mutable="no">
+        <type>int16_t</type>
+        <definition>int16_t CCharacter::ySpawn</definition>
+        <argsstring></argsstring>
+        <name>ySpawn</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/CCharacter.hpp" line="36" column="1" bodyfile="/home/clemente/projects/Troll-Killers/CCharacter.hpp" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_c_character_1af10982bf7ee0661ee03b1ea795b03a05" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int CCharacter::internalSpawnTimer</definition>
+        <argsstring></argsstring>
+        <name>internalSpawnTimer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/CCharacter.hpp" line="37" column="1" bodyfile="/home/clemente/projects/Troll-Killers/CCharacter.hpp" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_c_character_1a04024a041ce0367aabedd600b5b2be41" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int CCharacter::life</definition>
+        <argsstring></argsstring>
+        <name>life</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/CCharacter.hpp" line="38" column="1" bodyfile="/home/clemente/projects/Troll-Killers/CCharacter.hpp" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_c_character_1a58be2fddfa5025fc3c20dce359482d7c" prot="private" static="no" mutable="no">
+        <type><ref refid="class_weapons" kindref="compound">Weapons</ref> *</type>
+        <definition>Weapons* CCharacter::weapon</definition>
+        <argsstring></argsstring>
+        <name>weapon</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/CCharacter.hpp" line="40" column="1" bodyfile="/home/clemente/projects/Troll-Killers/CCharacter.hpp" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_c_character_1a9d639da0c8e8d6023825cc105bf07133" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float CCharacter::distance</definition>
+        <argsstring>(int x1, int x2)</argsstring>
+        <name>distance</name>
+        <param>
+          <type>int</type>
+          <declname>x1</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>x2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/CCharacter.hpp" line="42" column="1" bodyfile="/home/clemente/projects/Troll-Killers/CCharacter.cpp" bodystart="103" bodyend="105"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_c_character_1add20c9a63c5c11e8c0919e536d7636a2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>CCharacter::CCharacter</definition>
+        <argsstring>(Weapon myWeapon)</argsstring>
+        <name>CCharacter</name>
+        <param>
+          <type><ref refid="_enums_8hpp_1ad9700e9db9d62004af4a04e4e13912c5" kindref="member">Weapon</ref></type>
+          <declname>myWeapon</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/CCharacter.hpp" line="44" column="1" bodyfile="/home/clemente/projects/Troll-Killers/CCharacter.cpp" bodystart="5" bodyend="21"/>
+        <references refid="struct__object_1a870a8b24b7b3dc9244f543f096e9dae6" compoundref="__object_8hpp" startline="8">_object::radius</references>
+        <references refid="_defines_8hpp_1ac389dbca21e58410d552988f3ec954c3" compoundref="_defines_8hpp" startline="8">GRID</references>
+        <references refid="_enums_8hpp_1a224b9163917ac32fc95a60d8c1eec3aaa851e6f177be6e7d7bf0bc7408e932f1b" compoundref="_enums_8hpp" startline="15">STOPED</references>
+        <references refid="_defines_8hpp_1a05710e80db10fe76fa57f629ca32b7e5" compoundref="_defines_8hpp" startline="10">PLAYER_VELOCITY</references>
+        <references refid="_enums_8hpp_1ad9700e9db9d62004af4a04e4e13912c5aa270a057ccaf7cd6cb766319015e8b3d" compoundref="_enums_8hpp" startline="30">PISTOL</references>
+        <references refid="_enums_8hpp_1ad9700e9db9d62004af4a04e4e13912c5a69c752dd5a2fd5c747410d696d62bae7" compoundref="_enums_8hpp" startline="29">RIFLE</references>
+        <references refid="class_weapons_1a7c8697cb11fa00b90882d14eb8e586df" compoundref="_weapons_8hpp" startline="35" endline="35">Weapons::setRadius</references>
+        <references refid="struct__object_1a4ffae0568ef6772f8ebefa0997f79243" compoundref="__object_8hpp" startline="6">_object::type</references>
+        <references refid="_enums_8hpp_1a842c5e2e69277690b064bf363c017980aa79c827759ea48f0735386c4b1188911" compoundref="_enums_8hpp" startline="5">CIRCLE</references>
+      </memberdef>
+      <memberdef kind="function" id="class_c_character_1a8f8fb8991776a6b6a49c796e79968c91" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>CCharacter::~CCharacter</definition>
+        <argsstring>()</argsstring>
+        <name>~CCharacter</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/CCharacter.hpp" line="45" column="1" bodyfile="/home/clemente/projects/Troll-Killers/CCharacter.cpp" bodystart="23" bodyend="25"/>
+      </memberdef>
+      <memberdef kind="function" id="class_c_character_1a317ea948f11c20c52b4eb915cbc6fd34" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>int16_t</type>
+        <definition>int16_t CCharacter::getId</definition>
+        <argsstring>()</argsstring>
+        <name>getId</name>
+        <reimplements refid="class_i_g_object_1a40fdbe0db5e995e22996567d77bf45c6">getId</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/CCharacter.hpp" line="46" column="1" bodyfile="/home/clemente/projects/Troll-Killers/CCharacter.hpp" bodystart="46" bodyend="46"/>
+      </memberdef>
+      <memberdef kind="function" id="class_c_character_1a27ef2164eae8c8858de7e22b8ae2b356" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>int16_t</type>
+        <definition>int16_t CCharacter::getX</definition>
+        <argsstring>()</argsstring>
+        <name>getX</name>
+        <reimplements refid="class_i_g_object_1aa6ae1f7bd99277a3558a8e90d833fa7a">getX</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/CCharacter.hpp" line="47" column="1" bodyfile="/home/clemente/projects/Troll-Killers/CCharacter.hpp" bodystart="47" bodyend="47"/>
+        <references refid="struct__object_1adb6e178c2aa0bc48f5db6d85106c1680" compoundref="__object_8hpp" startline="7">_object::x</references>
+        <referencedby refid="class_client_1a9fbb2f61b005ee6ab3f73b9f449d95eb" compoundref="_client_8cpp" startline="64" endline="264">Client::main_loop</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_c_character_1a39af09fa51d180f49a58ffce78c9f25b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>int16_t</type>
+        <definition>int16_t CCharacter::getY</definition>
+        <argsstring>()</argsstring>
+        <name>getY</name>
+        <reimplements refid="class_i_g_object_1a3491bdb3a6b6ba8d66e07443a5b5951d">getY</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/CCharacter.hpp" line="48" column="1" bodyfile="/home/clemente/projects/Troll-Killers/CCharacter.hpp" bodystart="48" bodyend="48"/>
+        <references refid="struct__object_1a48f88904fef6cb2f4ea22029174d76bc" compoundref="__object_8hpp" startline="7">_object::y</references>
+        <referencedby refid="class_client_1a9fbb2f61b005ee6ab3f73b9f449d95eb" compoundref="_client_8cpp" startline="64" endline="264">Client::main_loop</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_c_character_1a7074f3d5a24d61766ce4d2fe354679ee" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>int16_t</type>
+        <definition>int16_t CCharacter::getVelocity</definition>
+        <argsstring>()</argsstring>
+        <name>getVelocity</name>
+        <reimplements refid="class_i_g_object_1afc8764ec832e6a60c58dace401d65b32">getVelocity</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/CCharacter.hpp" line="49" column="1" bodyfile="/home/clemente/projects/Troll-Killers/CCharacter.hpp" bodystart="49" bodyend="49"/>
+      </memberdef>
+      <memberdef kind="function" id="class_c_character_1ae2e0ce8242ccb114248134e7d233fe80" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CCharacter::getLife</definition>
+        <argsstring>()</argsstring>
+        <name>getLife</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/CCharacter.hpp" line="50" column="1" bodyfile="/home/clemente/projects/Troll-Killers/CCharacter.hpp" bodystart="50" bodyend="50"/>
+      </memberdef>
+      <memberdef kind="function" id="class_c_character_1af910f0944a8ba3afc92800fb696b7750" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="struct__object" kindref="compound">_object</ref> *</type>
+        <definition>_object* CCharacter::getPlayer</definition>
+        <argsstring>()</argsstring>
+        <name>getPlayer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/CCharacter.hpp" line="51" column="1" bodyfile="/home/clemente/projects/Troll-Killers/CCharacter.hpp" bodystart="51" bodyend="51"/>
+        <referencedby refid="class_client_1a9fbb2f61b005ee6ab3f73b9f449d95eb" compoundref="_client_8cpp" startline="64" endline="264">Client::main_loop</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_c_character_1aba453c8974f67b9a8621a63960263874" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CCharacter::getDead</definition>
+        <argsstring>()</argsstring>
+        <name>getDead</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/CCharacter.hpp" line="52" column="1" bodyfile="/home/clemente/projects/Troll-Killers/CCharacter.hpp" bodystart="52" bodyend="52"/>
+      </memberdef>
+      <memberdef kind="function" id="class_c_character_1a91ff320369ed4985b1c4b1762ce4fd9c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="_enums_8hpp_1a9c13bb5b1d69698f9b47900990eaa598" kindref="member">Team</ref></type>
+        <definition>Team CCharacter::getTeam</definition>
+        <argsstring>()</argsstring>
+        <name>getTeam</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/CCharacter.hpp" line="53" column="1" bodyfile="/home/clemente/projects/Troll-Killers/CCharacter.hpp" bodystart="53" bodyend="53"/>
+      </memberdef>
+      <memberdef kind="function" id="class_c_character_1a367a85d8da544c05088712def127bf43" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="_enums_8hpp_1a224b9163917ac32fc95a60d8c1eec3aa" kindref="member">Direction</ref></type>
+        <definition>Direction CCharacter::getDir</definition>
+        <argsstring>()</argsstring>
+        <name>getDir</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/CCharacter.hpp" line="54" column="1" bodyfile="/home/clemente/projects/Troll-Killers/CCharacter.hpp" bodystart="54" bodyend="54"/>
+      </memberdef>
+      <memberdef kind="function" id="class_c_character_1a23914035239a49f1a2ce26248ce181f7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void CCharacter::setDir</definition>
+        <argsstring>(Direction dir)</argsstring>
+        <name>setDir</name>
+        <param>
+          <type><ref refid="_enums_8hpp_1a224b9163917ac32fc95a60d8c1eec3aa" kindref="member">Direction</ref></type>
+          <declname>dir</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/CCharacter.hpp" line="55" column="1" bodyfile="/home/clemente/projects/Troll-Killers/CCharacter.hpp" bodystart="55" bodyend="55"/>
+        <referencedby refid="class_client_1a9fbb2f61b005ee6ab3f73b9f449d95eb" compoundref="_client_8cpp" startline="64" endline="264">Client::main_loop</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_c_character_1a2a9cb3e98cfe4c36ea292cdc38b999d8" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void CCharacter::serialize</definition>
+        <argsstring>(char *buffer)</argsstring>
+        <name>serialize</name>
+        <reimplements refid="class_i_g_object_1a6e2dd93acb47fc77668e2571bff3481e">serialize</reimplements>
+        <param>
+          <type>char *</type>
+          <declname>buffer</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/CCharacter.hpp" line="56" column="1" bodyfile="/home/clemente/projects/Troll-Killers/CCharacter.cpp" bodystart="27" bodyend="31"/>
+        <references refid="struct__object_1adb6e178c2aa0bc48f5db6d85106c1680" compoundref="__object_8hpp" startline="7">_object::x</references>
+        <references refid="struct__object_1a48f88904fef6cb2f4ea22029174d76bc" compoundref="__object_8hpp" startline="7">_object::y</references>
+        <references refid="class_weapons_1ac408dbb1f31e53b844c07f16206e40f8" compoundref="_weapons_8hpp" startline="42" endline="42">Weapons::getAngle</references>
+        <referencedby refid="class_client_1a9fbb2f61b005ee6ab3f73b9f449d95eb" compoundref="_client_8cpp" startline="64" endline="264">Client::main_loop</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_c_character_1a80e38c97bd4d4fd9b7f017ec121f03a9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CCharacter::draw</definition>
+        <argsstring>(int x, int y)</argsstring>
+        <name>draw</name>
+        <param>
+          <type>int</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/CCharacter.hpp" line="58" column="1" bodyfile="/home/clemente/projects/Troll-Killers/CCharacter.cpp" bodystart="47" bodyend="52"/>
+        <references refid="struct__object_1adb6e178c2aa0bc48f5db6d85106c1680" compoundref="__object_8hpp" startline="7">_object::x</references>
+        <references refid="struct__object_1a48f88904fef6cb2f4ea22029174d76bc" compoundref="__object_8hpp" startline="7">_object::y</references>
+        <references refid="struct__object_1a870a8b24b7b3dc9244f543f096e9dae6" compoundref="__object_8hpp" startline="8">_object::radius</references>
+        <references refid="struct__object_1af5318fcc501c7951e1bf261de6c29b3b" compoundref="__object_8hpp" startline="10">_object::r</references>
+        <references refid="struct__object_1a89ebce79c5f2acba52f871e6833977ff" compoundref="__object_8hpp" startline="11">_object::g</references>
+        <references refid="struct__object_1a104af22ae68294943efb54edb7a46b0e" compoundref="__object_8hpp" startline="12">_object::b</references>
+        <references refid="class_weapons_1af9d9f25b33b8d7e6d649c0325bb2db9f" compoundref="_weapons_8cpp" startline="26" endline="36">Weapons::draw</references>
+        <referencedby refid="class_client_1a9fbb2f61b005ee6ab3f73b9f449d95eb" compoundref="_client_8cpp" startline="64" endline="264">Client::main_loop</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_c_character_1ad602f6042aeb6e500393bca375c4133b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CCharacter::move</definition>
+        <argsstring>()</argsstring>
+        <name>move</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/CCharacter.hpp" line="59" column="1" bodyfile="/home/clemente/projects/Troll-Killers/CCharacter.cpp" bodystart="54" bodyend="65"/>
+        <references refid="_enums_8hpp_1a224b9163917ac32fc95a60d8c1eec3aaaba595d8bca8bc5e67c37c0a9d89becfa" compoundref="_enums_8hpp" startline="11">UP</references>
+        <references refid="struct__object_1a48f88904fef6cb2f4ea22029174d76bc" compoundref="__object_8hpp" startline="7">_object::y</references>
+        <references refid="_enums_8hpp_1a224b9163917ac32fc95a60d8c1eec3aaa9b0b4a95b99523966e0e34ffdadac9da" compoundref="_enums_8hpp" startline="12">DOWN</references>
+        <references refid="_enums_8hpp_1a224b9163917ac32fc95a60d8c1eec3aaadb45120aafd37a973140edee24708065" compoundref="_enums_8hpp" startline="13">LEFT</references>
+        <references refid="struct__object_1adb6e178c2aa0bc48f5db6d85106c1680" compoundref="__object_8hpp" startline="7">_object::x</references>
+        <references refid="_enums_8hpp_1a224b9163917ac32fc95a60d8c1eec3aaaec8379af7490bb9eaaf579cf17876f38" compoundref="_enums_8hpp" startline="14">RIGHT</references>
+        <references refid="class_weapons_1a7ea90e9d30c37ce8fa7258405a944d77" compoundref="_weapons_8hpp" startline="33" endline="33">Weapons::setX</references>
+        <references refid="class_weapons_1a0d95e4fd724cb6c6336ec5d7eaf57842" compoundref="_weapons_8hpp" startline="34" endline="34">Weapons::setY</references>
+        <referencedby refid="class_client_1a9fbb2f61b005ee6ab3f73b9f449d95eb" compoundref="_client_8cpp" startline="64" endline="264">Client::main_loop</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_c_character_1adc71f8353440b2d5450938fa7c418aa7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void CCharacter::die</definition>
+        <argsstring>()</argsstring>
+        <name>die</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/CCharacter.hpp" line="60" column="1" bodyfile="/home/clemente/projects/Troll-Killers/CCharacter.hpp" bodystart="60" bodyend="60"/>
+        <referencedby refid="class_client_1a9fbb2f61b005ee6ab3f73b9f449d95eb" compoundref="_client_8cpp" startline="64" endline="264">Client::main_loop</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_c_character_1afe8285dd94fc52c099fb548840bc4e06" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CCharacter::tryToRevive</definition>
+        <argsstring>()</argsstring>
+        <name>tryToRevive</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/CCharacter.hpp" line="61" column="1" bodyfile="/home/clemente/projects/Troll-Killers/CCharacter.cpp" bodystart="111" bodyend="122"/>
+        <references refid="_c_character_8hpp_1a87d55845fba6b4f31cb5dc142037855d" compoundref="_c_character_8hpp" startline="23">RESPAWN_TIMER</references>
+        <references refid="class_c_character_1a6d92d81e7bd039572e147ebe190fab6c" compoundref="_c_character_8hpp" startline="67" endline="67">setX</references>
+        <references refid="class_c_character_1a670de9c2ba79b716953a1dac2db9e4cf" compoundref="_c_character_8hpp" startline="68" endline="68">setY</references>
+      </memberdef>
+      <memberdef kind="function" id="class_c_character_1ad33d632d180cc5d487b0c39925caf278" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CCharacter::revive</definition>
+        <argsstring>(int16_t x, int16_t y)</argsstring>
+        <name>revive</name>
+        <param>
+          <type>int16_t</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int16_t</type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/CCharacter.hpp" line="62" column="1" bodyfile="/home/clemente/projects/Troll-Killers/CCharacter.cpp" bodystart="124" bodyend="129"/>
+        <references refid="class_c_character_1a6d92d81e7bd039572e147ebe190fab6c" compoundref="_c_character_8hpp" startline="67" endline="67">setX</references>
+        <references refid="class_c_character_1a670de9c2ba79b716953a1dac2db9e4cf" compoundref="_c_character_8hpp" startline="68" endline="68">setY</references>
+        <referencedby refid="class_client_1a9fbb2f61b005ee6ab3f73b9f449d95eb" compoundref="_client_8cpp" startline="64" endline="264">Client::main_loop</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_c_character_1a68c347ad267792fbed8ee9b1bae90967" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void CCharacter::damage</definition>
+        <argsstring>(int dmg)</argsstring>
+        <name>damage</name>
+        <param>
+          <type>int</type>
+          <declname>dmg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/CCharacter.hpp" line="63" column="1" bodyfile="/home/clemente/projects/Troll-Killers/CCharacter.hpp" bodystart="63" bodyend="63"/>
+        <referencedby refid="class_client_1a9fbb2f61b005ee6ab3f73b9f449d95eb" compoundref="_client_8cpp" startline="64" endline="264">Client::main_loop</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_c_character_1a84b44c9ef54291da3e28fb7f9dc05f20" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CCharacter::colision</definition>
+        <argsstring>(_object *objects, int n)</argsstring>
+        <name>colision</name>
+        <param>
+          <type><ref refid="struct__object" kindref="compound">_object</ref> *</type>
+          <declname>objects</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/CCharacter.hpp" line="65" column="1" bodyfile="/home/clemente/projects/Troll-Killers/CCharacter.cpp" bodystart="67" bodyend="101"/>
+        <references refid="struct__object_1adb6e178c2aa0bc48f5db6d85106c1680" compoundref="__object_8hpp" startline="7">_object::x</references>
+        <references refid="struct__object_1a9d23dfa35b2571bf0b89d4ca75f5c155" compoundref="__object_8hpp" startline="9">_object::length</references>
+        <references refid="struct__object_1a48f88904fef6cb2f4ea22029174d76bc" compoundref="__object_8hpp" startline="7">_object::y</references>
+        <references refid="struct__object_1a7dff64a3cc71a49786c1052bb6c250ca" compoundref="__object_8hpp" startline="9">_object::width</references>
+        <references refid="struct__object_1a870a8b24b7b3dc9244f543f096e9dae6" compoundref="__object_8hpp" startline="8">_object::radius</references>
+        <references refid="_enums_8hpp_1a842c5e2e69277690b064bf363c017980ae552ab0a96c0384a6e918e726b7f6102" compoundref="_enums_8hpp" startline="6">RECTANGLE</references>
+        <references refid="_enums_8hpp_1a224b9163917ac32fc95a60d8c1eec3aaaba595d8bca8bc5e67c37c0a9d89becfa" compoundref="_enums_8hpp" startline="11">UP</references>
+        <references refid="_enums_8hpp_1a224b9163917ac32fc95a60d8c1eec3aaa9b0b4a95b99523966e0e34ffdadac9da" compoundref="_enums_8hpp" startline="12">DOWN</references>
+        <references refid="_enums_8hpp_1a224b9163917ac32fc95a60d8c1eec3aaadb45120aafd37a973140edee24708065" compoundref="_enums_8hpp" startline="13">LEFT</references>
+        <references refid="_enums_8hpp_1a224b9163917ac32fc95a60d8c1eec3aaaec8379af7490bb9eaaf579cf17876f38" compoundref="_enums_8hpp" startline="14">RIGHT</references>
+        <references refid="class_weapons_1a7ea90e9d30c37ce8fa7258405a944d77" compoundref="_weapons_8hpp" startline="33" endline="33">Weapons::setX</references>
+        <references refid="class_weapons_1a0d95e4fd724cb6c6336ec5d7eaf57842" compoundref="_weapons_8hpp" startline="34" endline="34">Weapons::setY</references>
+        <references refid="_enums_8hpp_1a224b9163917ac32fc95a60d8c1eec3aaa851e6f177be6e7d7bf0bc7408e932f1b" compoundref="_enums_8hpp" startline="15">STOPED</references>
+        <referencedby refid="class_client_1a9fbb2f61b005ee6ab3f73b9f449d95eb" compoundref="_client_8cpp" startline="64" endline="264">Client::main_loop</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_c_character_1a6d92d81e7bd039572e147ebe190fab6c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>void CCharacter::setX</definition>
+        <argsstring>(int16_t x)</argsstring>
+        <name>setX</name>
+        <reimplements refid="class_i_g_object_1a4b810d1b4a785d7532104113ef5cf0ba">setX</reimplements>
+        <param>
+          <type>int16_t</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/CCharacter.hpp" line="67" column="1" bodyfile="/home/clemente/projects/Troll-Killers/CCharacter.hpp" bodystart="67" bodyend="67"/>
+        <references refid="struct__object_1adb6e178c2aa0bc48f5db6d85106c1680" compoundref="__object_8hpp" startline="7">_object::x</references>
+        <references refid="class_weapons_1a7ea90e9d30c37ce8fa7258405a944d77" compoundref="_weapons_8hpp" startline="33" endline="33">Weapons::setX</references>
+        <referencedby refid="class_c_character_1afe8285dd94fc52c099fb548840bc4e06" compoundref="_c_character_8cpp" startline="111" endline="122">tryToRevive</referencedby>
+        <referencedby refid="class_c_character_1ad33d632d180cc5d487b0c39925caf278" compoundref="_c_character_8cpp" startline="124" endline="129">revive</referencedby>
+        <referencedby refid="class_client_1a9fbb2f61b005ee6ab3f73b9f449d95eb" compoundref="_client_8cpp" startline="64" endline="264">Client::main_loop</referencedby>
+        <referencedby refid="class_client_1abccb976632db0b3b5df925875b80b2e7" compoundref="_client_8cpp" startline="266" endline="320">Client::connect</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_c_character_1a670de9c2ba79b716953a1dac2db9e4cf" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>void CCharacter::setY</definition>
+        <argsstring>(int16_t y)</argsstring>
+        <name>setY</name>
+        <reimplements refid="class_i_g_object_1a5092ff8b79a61c3856510adb0543f229">setY</reimplements>
+        <param>
+          <type>int16_t</type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/CCharacter.hpp" line="68" column="1" bodyfile="/home/clemente/projects/Troll-Killers/CCharacter.hpp" bodystart="68" bodyend="68"/>
+        <references refid="struct__object_1a48f88904fef6cb2f4ea22029174d76bc" compoundref="__object_8hpp" startline="7">_object::y</references>
+        <references refid="class_weapons_1a0d95e4fd724cb6c6336ec5d7eaf57842" compoundref="_weapons_8hpp" startline="34" endline="34">Weapons::setY</references>
+        <referencedby refid="class_c_character_1afe8285dd94fc52c099fb548840bc4e06" compoundref="_c_character_8cpp" startline="111" endline="122">tryToRevive</referencedby>
+        <referencedby refid="class_c_character_1ad33d632d180cc5d487b0c39925caf278" compoundref="_c_character_8cpp" startline="124" endline="129">revive</referencedby>
+        <referencedby refid="class_client_1a9fbb2f61b005ee6ab3f73b9f449d95eb" compoundref="_client_8cpp" startline="64" endline="264">Client::main_loop</referencedby>
+        <referencedby refid="class_client_1abccb976632db0b3b5df925875b80b2e7" compoundref="_client_8cpp" startline="266" endline="320">Client::connect</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_c_character_1abbabbe227437ea99b377e33c569da84c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void CCharacter::setSpawnX</definition>
+        <argsstring>(int16_t x)</argsstring>
+        <name>setSpawnX</name>
+        <param>
+          <type>int16_t</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/CCharacter.hpp" line="69" column="1" bodyfile="/home/clemente/projects/Troll-Killers/CCharacter.hpp" bodystart="69" bodyend="69"/>
+        <referencedby refid="class_client_1abccb976632db0b3b5df925875b80b2e7" compoundref="_client_8cpp" startline="266" endline="320">Client::connect</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_c_character_1a0060a9e93f32488b4496545b9b3ef593" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void CCharacter::setSpawnY</definition>
+        <argsstring>(int16_t y)</argsstring>
+        <name>setSpawnY</name>
+        <param>
+          <type>int16_t</type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/CCharacter.hpp" line="70" column="1" bodyfile="/home/clemente/projects/Troll-Killers/CCharacter.hpp" bodystart="70" bodyend="70"/>
+        <referencedby refid="class_client_1abccb976632db0b3b5df925875b80b2e7" compoundref="_client_8cpp" startline="266" endline="320">Client::connect</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_c_character_1a4af37bf96b4950b67a538d1f5c1bc075" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CCharacter::setTeam</definition>
+        <argsstring>(Team team)</argsstring>
+        <name>setTeam</name>
+        <param>
+          <type><ref refid="_enums_8hpp_1a9c13bb5b1d69698f9b47900990eaa598" kindref="member">Team</ref></type>
+          <declname>team</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/CCharacter.hpp" line="71" column="1" bodyfile="/home/clemente/projects/Troll-Killers/CCharacter.cpp" bodystart="33" bodyend="44"/>
+        <references refid="_enums_8hpp_1a9c13bb5b1d69698f9b47900990eaa598af80f9a890089d211842d59625e561f88" compoundref="_enums_8hpp" startline="23">RED</references>
+        <references refid="struct__object_1af5318fcc501c7951e1bf261de6c29b3b" compoundref="__object_8hpp" startline="10">_object::r</references>
+        <references refid="struct__object_1a89ebce79c5f2acba52f871e6833977ff" compoundref="__object_8hpp" startline="11">_object::g</references>
+        <references refid="struct__object_1a104af22ae68294943efb54edb7a46b0e" compoundref="__object_8hpp" startline="12">_object::b</references>
+        <references refid="_enums_8hpp_1a9c13bb5b1d69698f9b47900990eaa598a35d6719cb4d7577c031b3d79057a1b79" compoundref="_enums_8hpp" startline="24">BLUE</references>
+        <referencedby refid="class_client_1a9fbb2f61b005ee6ab3f73b9f449d95eb" compoundref="_client_8cpp" startline="64" endline="264">Client::main_loop</referencedby>
+        <referencedby refid="class_client_1abccb976632db0b3b5df925875b80b2e7" compoundref="_client_8cpp" startline="266" endline="320">Client::connect</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_c_character_1af64ec95c078f3e969cb6b961db81a488" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CCharacter::weaponAngle</definition>
+        <argsstring>(int mapX, int mapY, int mouseX, int mouseY)</argsstring>
+        <name>weaponAngle</name>
+        <param>
+          <type>int</type>
+          <declname>mapX</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>mapY</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>mouseX</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>mouseY</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/CCharacter.hpp" line="73" column="1" bodyfile="/home/clemente/projects/Troll-Killers/CCharacter.cpp" bodystart="107" bodyend="109"/>
+        <references refid="class_weapons_1ad5123e66ada6a06e3260d4e4fd6fbf31" compoundref="_weapons_8cpp" startline="18" endline="24">Weapons::calculateAngle</references>
+        <referencedby refid="class_client_1a9fbb2f61b005ee6ab3f73b9f449d95eb" compoundref="_client_8cpp" startline="64" endline="264">Client::main_loop</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_c_character_1a8aff509bd2bc8cb3eb7c3847533a3aed" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void CCharacter::setWeaponAngle</definition>
+        <argsstring>(float angle)</argsstring>
+        <name>setWeaponAngle</name>
+        <param>
+          <type>float</type>
+          <declname>angle</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/CCharacter.hpp" line="74" column="1" bodyfile="/home/clemente/projects/Troll-Killers/CCharacter.hpp" bodystart="74" bodyend="74"/>
+        <references refid="class_weapons_1a6dd8f827ee1b9115690fecb2005c8c8d" compoundref="_weapons_8hpp" startline="36" endline="36">Weapons::setAngle</references>
+        <referencedby refid="class_client_1a9fbb2f61b005ee6ab3f73b9f449d95eb" compoundref="_client_8cpp" startline="64" endline="264">Client::main_loop</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_c_character_1a5fa507c6196ecc4132796dc250d7bb1d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void CCharacter::shoot</definition>
+        <argsstring>(ALLEGRO_MOUSE_STATE &amp;mouseState, Connection *conn)</argsstring>
+        <name>shoot</name>
+        <param>
+          <type>ALLEGRO_MOUSE_STATE &amp;</type>
+          <declname>mouseState</declname>
+        </param>
+        <param>
+          <type><ref refid="class_connection" kindref="compound">Connection</ref> *</type>
+          <declname>conn</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/CCharacter.hpp" line="75" column="1" bodyfile="/home/clemente/projects/Troll-Killers/CCharacter.hpp" bodystart="75" bodyend="75"/>
+        <references refid="class_weapons_1a51990dae3d666006b2154cf501758936">Weapons::shoot</references>
+        <referencedby refid="class_client_1a9fbb2f61b005ee6ab3f73b9f449d95eb" compoundref="_client_8cpp" startline="64" endline="264">Client::main_loop</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_c_character_1ac7fd4192681975f1c1adf9933a7193b4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CCharacter::getWeaponDmg</definition>
+        <argsstring>()</argsstring>
+        <name>getWeaponDmg</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/CCharacter.hpp" line="76" column="1" bodyfile="/home/clemente/projects/Troll-Killers/CCharacter.hpp" bodystart="76" bodyend="76"/>
+        <references refid="class_weapons_1a077953983902a53d6346d8f71a769a7d" compoundref="_weapons_8hpp" startline="41" endline="41">Weapons::getDmg</references>
+        <referencedby refid="class_client_1a9fbb2f61b005ee6ab3f73b9f449d95eb" compoundref="_client_8cpp" startline="64" endline="264">Client::main_loop</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_c_character_1a98f733c8be0661e5e6b306d37a1dfeb5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CCharacter::sound_shoot</definition>
+        <argsstring>(int x, int y)</argsstring>
+        <name>sound_shoot</name>
+        <param>
+          <type>int</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/CCharacter.hpp" line="77" column="1" bodyfile="/home/clemente/projects/Troll-Killers/CCharacter.cpp" bodystart="131" bodyend="134"/>
+        <references refid="struct__object_1adb6e178c2aa0bc48f5db6d85106c1680" compoundref="__object_8hpp" startline="7">_object::x</references>
+        <references refid="struct__object_1a48f88904fef6cb2f4ea22029174d76bc" compoundref="__object_8hpp" startline="7">_object::y</references>
+        <references refid="class_weapons_1a0fdaf9f3dee1b5684c993c7304c213b8" compoundref="_weapons_8cpp" startline="52" endline="58">Weapons::play_sound</references>
+        <referencedby refid="class_client_1a9fbb2f61b005ee6ab3f73b9f449d95eb" compoundref="_client_8cpp" startline="64" endline="264">Client::main_loop</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_c_character_1a514a9a531863fe5ba308ec5805111e48" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_projectile" kindref="compound">Projectile</ref> **</type>
+        <definition>Projectile** CCharacter::getProjectiles</definition>
+        <argsstring>()</argsstring>
+        <name>getProjectiles</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/CCharacter.hpp" line="78" column="1" bodyfile="/home/clemente/projects/Troll-Killers/CCharacter.hpp" bodystart="78" bodyend="78"/>
+        <references refid="class_weapons_1ab424ac199565201128616e5a0aa9ff1f" compoundref="_weapons_8hpp" startline="43" endline="43">Weapons::getProjectiles</references>
+        <referencedby refid="class_client_1a9fbb2f61b005ee6ab3f73b9f449d95eb" compoundref="_client_8cpp" startline="64" endline="264">Client::main_loop</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="106">
+        <label>IGObject</label>
+        <link refid="class_i_g_object"/>
+      </node>
+      <node id="105">
+        <label>CCharacter</label>
+        <link refid="class_c_character"/>
+        <childnode refid="106" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="108">
+        <label>IGObject</label>
+        <link refid="class_i_g_object"/>
+      </node>
+      <node id="107">
+        <label>CCharacter</label>
+        <link refid="class_c_character"/>
+        <childnode refid="108" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/clemente/projects/Troll-Killers/CCharacter.hpp" line="25" column="1" bodyfile="/home/clemente/projects/Troll-Killers/CCharacter.hpp" bodystart="25" bodyend="79"/>
+    <listofallmembers>
+      <member refid="class_c_character_1add20c9a63c5c11e8c0919e536d7636a2" prot="public" virt="non-virtual"><scope>CCharacter</scope><name>CCharacter</name></member>
+      <member refid="class_c_character_1a84b44c9ef54291da3e28fb7f9dc05f20" prot="public" virt="non-virtual"><scope>CCharacter</scope><name>colision</name></member>
+      <member refid="class_c_character_1a68c347ad267792fbed8ee9b1bae90967" prot="public" virt="non-virtual"><scope>CCharacter</scope><name>damage</name></member>
+      <member refid="class_c_character_1ab6f3e7a05d630ccb65cdef71b6a2be76" prot="private" virt="non-virtual"><scope>CCharacter</scope><name>dead</name></member>
+      <member refid="class_c_character_1adc71f8353440b2d5450938fa7c418aa7" prot="public" virt="non-virtual"><scope>CCharacter</scope><name>die</name></member>
+      <member refid="class_c_character_1a526734092e5bab0b0001fde33ea0135f" prot="private" virt="non-virtual"><scope>CCharacter</scope><name>dir</name></member>
+      <member refid="class_c_character_1a9d639da0c8e8d6023825cc105bf07133" prot="private" virt="non-virtual"><scope>CCharacter</scope><name>distance</name></member>
+      <member refid="class_c_character_1a80e38c97bd4d4fd9b7f017ec121f03a9" prot="public" virt="non-virtual"><scope>CCharacter</scope><name>draw</name></member>
+      <member refid="class_c_character_1aba453c8974f67b9a8621a63960263874" prot="public" virt="non-virtual"><scope>CCharacter</scope><name>getDead</name></member>
+      <member refid="class_c_character_1a367a85d8da544c05088712def127bf43" prot="public" virt="non-virtual"><scope>CCharacter</scope><name>getDir</name></member>
+      <member refid="class_c_character_1a317ea948f11c20c52b4eb915cbc6fd34" prot="public" virt="virtual"><scope>CCharacter</scope><name>getId</name></member>
+      <member refid="class_c_character_1ae2e0ce8242ccb114248134e7d233fe80" prot="public" virt="non-virtual"><scope>CCharacter</scope><name>getLife</name></member>
+      <member refid="class_c_character_1af910f0944a8ba3afc92800fb696b7750" prot="public" virt="non-virtual"><scope>CCharacter</scope><name>getPlayer</name></member>
+      <member refid="class_c_character_1a514a9a531863fe5ba308ec5805111e48" prot="public" virt="non-virtual"><scope>CCharacter</scope><name>getProjectiles</name></member>
+      <member refid="class_c_character_1a91ff320369ed4985b1c4b1762ce4fd9c" prot="public" virt="non-virtual"><scope>CCharacter</scope><name>getTeam</name></member>
+      <member refid="class_c_character_1a7074f3d5a24d61766ce4d2fe354679ee" prot="public" virt="virtual"><scope>CCharacter</scope><name>getVelocity</name></member>
+      <member refid="class_c_character_1ac7fd4192681975f1c1adf9933a7193b4" prot="public" virt="non-virtual"><scope>CCharacter</scope><name>getWeaponDmg</name></member>
+      <member refid="class_c_character_1a27ef2164eae8c8858de7e22b8ae2b356" prot="public" virt="virtual"><scope>CCharacter</scope><name>getX</name></member>
+      <member refid="class_c_character_1a39af09fa51d180f49a58ffce78c9f25b" prot="public" virt="virtual"><scope>CCharacter</scope><name>getY</name></member>
+      <member refid="class_c_character_1a2db87b3f9168adb8debd9f21e160bc32" prot="private" virt="non-virtual"><scope>CCharacter</scope><name>id</name></member>
+      <member refid="class_c_character_1af10982bf7ee0661ee03b1ea795b03a05" prot="private" virt="non-virtual"><scope>CCharacter</scope><name>internalSpawnTimer</name></member>
+      <member refid="class_c_character_1a04024a041ce0367aabedd600b5b2be41" prot="private" virt="non-virtual"><scope>CCharacter</scope><name>life</name></member>
+      <member refid="class_c_character_1ad602f6042aeb6e500393bca375c4133b" prot="public" virt="non-virtual"><scope>CCharacter</scope><name>move</name></member>
+      <member refid="class_c_character_1aa62c2a83a7e753e57c8f73a2104dbf4e" prot="private" virt="non-virtual"><scope>CCharacter</scope><name>myWeapon</name></member>
+      <member refid="class_c_character_1a38e57d10fe3a3741ef0a7a6cf8378718" prot="private" virt="non-virtual"><scope>CCharacter</scope><name>player</name></member>
+      <member refid="class_c_character_1ad33d632d180cc5d487b0c39925caf278" prot="public" virt="non-virtual"><scope>CCharacter</scope><name>revive</name></member>
+      <member refid="class_c_character_1a2a9cb3e98cfe4c36ea292cdc38b999d8" prot="public" virt="virtual"><scope>CCharacter</scope><name>serialize</name></member>
+      <member refid="class_c_character_1a23914035239a49f1a2ce26248ce181f7" prot="public" virt="non-virtual"><scope>CCharacter</scope><name>setDir</name></member>
+      <member refid="class_c_character_1abbabbe227437ea99b377e33c569da84c" prot="public" virt="non-virtual"><scope>CCharacter</scope><name>setSpawnX</name></member>
+      <member refid="class_c_character_1a0060a9e93f32488b4496545b9b3ef593" prot="public" virt="non-virtual"><scope>CCharacter</scope><name>setSpawnY</name></member>
+      <member refid="class_c_character_1a4af37bf96b4950b67a538d1f5c1bc075" prot="public" virt="non-virtual"><scope>CCharacter</scope><name>setTeam</name></member>
+      <member refid="class_c_character_1a8aff509bd2bc8cb3eb7c3847533a3aed" prot="public" virt="non-virtual"><scope>CCharacter</scope><name>setWeaponAngle</name></member>
+      <member refid="class_c_character_1a6d92d81e7bd039572e147ebe190fab6c" prot="public" virt="virtual"><scope>CCharacter</scope><name>setX</name></member>
+      <member refid="class_c_character_1a670de9c2ba79b716953a1dac2db9e4cf" prot="public" virt="virtual"><scope>CCharacter</scope><name>setY</name></member>
+      <member refid="class_c_character_1a5fa507c6196ecc4132796dc250d7bb1d" prot="public" virt="non-virtual"><scope>CCharacter</scope><name>shoot</name></member>
+      <member refid="class_c_character_1a98f733c8be0661e5e6b306d37a1dfeb5" prot="public" virt="non-virtual"><scope>CCharacter</scope><name>sound_shoot</name></member>
+      <member refid="class_c_character_1a026073b71c94ddb6782eab2d6e47ec24" prot="private" virt="non-virtual"><scope>CCharacter</scope><name>team</name></member>
+      <member refid="class_c_character_1afe8285dd94fc52c099fb548840bc4e06" prot="public" virt="non-virtual"><scope>CCharacter</scope><name>tryToRevive</name></member>
+      <member refid="class_c_character_1a7e744691420269e6dc4e524ba9611c85" prot="private" virt="non-virtual"><scope>CCharacter</scope><name>velocity</name></member>
+      <member refid="class_c_character_1a58be2fddfa5025fc3c20dce359482d7c" prot="private" virt="non-virtual"><scope>CCharacter</scope><name>weapon</name></member>
+      <member refid="class_c_character_1af64ec95c078f3e969cb6b961db81a488" prot="public" virt="non-virtual"><scope>CCharacter</scope><name>weaponAngle</name></member>
+      <member refid="class_c_character_1a8ee57bcc6f394787a10b21ea8c818d10" prot="private" virt="non-virtual"><scope>CCharacter</scope><name>xSpawn</name></member>
+      <member refid="class_c_character_1a91420cab891f56fa688fef6c297b450b" prot="private" virt="non-virtual"><scope>CCharacter</scope><name>ySpawn</name></member>
+      <member refid="class_c_character_1a8f8fb8991776a6b6a49c796e79968c91" prot="public" virt="non-virtual"><scope>CCharacter</scope><name>~CCharacter</name></member>
+      <member refid="class_i_g_object_1a9e22adafd5adb2ed8dcb20a90ea6df6d" prot="public" virt="virtual"><scope>CCharacter</scope><name>~IGObject</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

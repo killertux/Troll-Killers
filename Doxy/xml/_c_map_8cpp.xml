@@ -1,0 +1,147 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.10">
+  <compounddef id="_c_map_8cpp" kind="file" language="C++">
+    <compoundname>CMap.cpp</compoundname>
+    <includes refid="_c_map_8hpp" local="yes">CMap.hpp</includes>
+    <incdepgraph>
+      <node id="1229">
+        <label>stdint.h</label>
+      </node>
+      <node id="1225">
+        <label>/home/clemente/projects/Troll-Killers/CMap.cpp</label>
+        <link refid="CMap.cpp"/>
+        <childnode refid="1226" relation="include">
+        </childnode>
+      </node>
+      <node id="1227">
+        <label>Enums.hpp</label>
+        <link refid="_enums_8hpp"/>
+      </node>
+      <node id="1228">
+        <label>_object.hpp</label>
+        <link refid="__object_8hpp"/>
+        <childnode refid="1229" relation="include">
+        </childnode>
+      </node>
+      <node id="1236">
+        <label>string</label>
+      </node>
+      <node id="1238">
+        <label>allegro5/allegro_primitives.h</label>
+      </node>
+      <node id="1235">
+        <label>fstream</label>
+      </node>
+      <node id="1237">
+        <label>allegro5/allegro.h</label>
+      </node>
+      <node id="1226">
+        <label>CMap.hpp</label>
+        <link refid="_c_map_8hpp"/>
+        <childnode refid="1227" relation="include">
+        </childnode>
+        <childnode refid="1228" relation="include">
+        </childnode>
+        <childnode refid="1230" relation="include">
+        </childnode>
+        <childnode refid="1236" relation="include">
+        </childnode>
+        <childnode refid="1235" relation="include">
+        </childnode>
+        <childnode refid="1237" relation="include">
+        </childnode>
+        <childnode refid="1238" relation="include">
+        </childnode>
+        <childnode refid="1232" relation="include">
+        </childnode>
+      </node>
+      <node id="1230">
+        <label>Map.hpp</label>
+        <link refid="_map_8hpp"/>
+        <childnode refid="1227" relation="include">
+        </childnode>
+        <childnode refid="1228" relation="include">
+        </childnode>
+        <childnode refid="1231" relation="include">
+        </childnode>
+        <childnode refid="1233" relation="include">
+        </childnode>
+        <childnode refid="1234" relation="include">
+        </childnode>
+        <childnode refid="1235" relation="include">
+        </childnode>
+      </node>
+      <node id="1231">
+        <label>_data.hpp</label>
+        <link refid="__data_8hpp"/>
+        <childnode refid="1229" relation="include">
+        </childnode>
+        <childnode refid="1232" relation="include">
+        </childnode>
+      </node>
+      <node id="1233">
+        <label>sstream</label>
+      </node>
+      <node id="1234">
+        <label>Defines.hpp</label>
+        <link refid="_defines_8hpp"/>
+      </node>
+      <node id="1232">
+        <label>cstring</label>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_c_map_8hpp" kindref="compound">CMap.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3" refid="class_c_map_1a57a9b9c9b6d833102dd19852ec3767de" refkind="member"><highlight class="normal"><ref refid="class_c_map_1a7ad71523562247ed2183e57eaed018e8" kindref="member">CMap::CMap</ref>(std::string<sp/>name,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>max_objects,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>length,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>width){</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"><sp/><sp/><sp/><sp/>std::sprintf(this-&gt;name,</highlight><highlight class="stringliteral">&quot;%s&quot;</highlight><highlight class="normal">,name.c_str());</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;max_objects=<ref refid="class_map_1a6cb94f4c91b4634128ccf0219f84d1ab" kindref="member">max_objects</ref>;</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;length=<ref refid="class_map_1a48caa289073dbeff9c89a02cf89a2cc6" kindref="member">length</ref>;</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;width=<ref refid="class_map_1a15981e529cd48e04432898f9185683d3" kindref="member">width</ref>;</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_map_1a1028fa8db721f28473ba471ae70fde09" kindref="member">objects</ref>=</highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="struct__object" kindref="compound">_object</ref>[<ref refid="class_map_1a6cb94f4c91b4634128ccf0219f84d1ab" kindref="member">max_objects</ref>];</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/>drawCircles=</highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_map_1ad428bf938f205ed6d1e7af2ddd09b7ce" kindref="member">n_object</ref>=0;</highlight></codeline>
+<codeline lineno="11"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13" refid="class_c_map_1a7ad71523562247ed2183e57eaed018e8" refkind="member"><highlight class="normal"><ref refid="class_c_map_1a7ad71523562247ed2183e57eaed018e8" kindref="member">CMap::CMap</ref>(){</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/>drawCircles=</highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_map_1ad428bf938f205ed6d1e7af2ddd09b7ce" kindref="member">n_object</ref>=0;</highlight></codeline>
+<codeline lineno="16"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19" refid="class_c_map_1a9419f5696c22e9569612b79db2872e02" refkind="member"><highlight class="normal"><ref refid="class_c_map_1a9419f5696c22e9569612b79db2872e02" kindref="member">CMap::~CMap</ref>(){</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal"><sp/>[]<sp/><ref refid="class_map_1a1028fa8db721f28473ba471ae70fde09" kindref="member">objects</ref>;</highlight></codeline>
+<codeline lineno="21"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23" refid="class_c_map_1abec86992ac01292170213a5d71f17895" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_c_map_1abec86992ac01292170213a5d71f17895" kindref="member">CMap::new_object</ref>(<ref refid="struct__object" kindref="compound">_object</ref><sp/></highlight><highlight class="keywordtype">object</highlight><highlight class="normal">){<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Add<sp/>a<sp/>new<sp/>object<sp/>to<sp/>the<sp/>map.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_map_1a1028fa8db721f28473ba471ae70fde09" kindref="member">objects</ref>[<ref refid="class_map_1ad428bf938f205ed6d1e7af2ddd09b7ce" kindref="member">n_object</ref>]=object;</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_map_1ad428bf938f205ed6d1e7af2ddd09b7ce" kindref="member">n_object</ref>++;</highlight></codeline>
+<codeline lineno="26"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28" refid="class_c_map_1a9e069b9af7a4a243345dd0bfae24121a" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_c_map_1a9e069b9af7a4a243345dd0bfae24121a" kindref="member">CMap::destroy_object</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>x,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>y){<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Delete<sp/>an<sp/>object<sp/>that<sp/>is<sp/>in<sp/>the<sp/>x,y<sp/>position.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i=0;i&lt;<ref refid="class_map_1ad428bf938f205ed6d1e7af2ddd09b7ce" kindref="member">n_object</ref>;i++)</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="class_map_1a1028fa8db721f28473ba471ae70fde09" kindref="member">objects</ref>[i].x==x<sp/>&amp;&amp;<sp/><ref refid="class_map_1a1028fa8db721f28473ba471ae70fde09" kindref="member">objects</ref>[i].y==y){</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>j=i;j&lt;<ref refid="class_map_1ad428bf938f205ed6d1e7af2ddd09b7ce" kindref="member">n_object</ref>;j++)</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_map_1a1028fa8db721f28473ba471ae70fde09" kindref="member">objects</ref>[i]=<ref refid="class_map_1a1028fa8db721f28473ba471ae70fde09" kindref="member">objects</ref>[j];</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>n_object--;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="35"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37" refid="class_c_map_1adedfa138aa67c2924e79809ad1dac85c" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_c_map_1adedfa138aa67c2924e79809ad1dac85c" kindref="member">CMap::draw_map</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>x,</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>y){</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/>al_clear_to_color(al_map_rgb(255,255,255));</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i=0;i&lt;<ref refid="class_map_1ad428bf938f205ed6d1e7af2ddd09b7ce" kindref="member">n_object</ref>;i++){</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="class_map_1a1028fa8db721f28473ba471ae70fde09" kindref="member">objects</ref>[i].<ref refid="class_map_1a6e7ba89e3a0a05633ae7d27dd400190f" kindref="member">type</ref>==<ref refid="_enums_8hpp_1a842c5e2e69277690b064bf363c017980ae552ab0a96c0384a6e918e726b7f6102" kindref="member">RECTANGLE</ref>)</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>al_draw_filled_rectangle(<ref refid="class_map_1a1028fa8db721f28473ba471ae70fde09" kindref="member">objects</ref>[i].x-x,<ref refid="class_map_1a1028fa8db721f28473ba471ae70fde09" kindref="member">objects</ref>[i].y-y,<ref refid="class_map_1a1028fa8db721f28473ba471ae70fde09" kindref="member">objects</ref>[i].x-x+<ref refid="class_map_1a1028fa8db721f28473ba471ae70fde09" kindref="member">objects</ref>[i].<ref refid="class_map_1a48caa289073dbeff9c89a02cf89a2cc6" kindref="member">length</ref>,</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_map_1a1028fa8db721f28473ba471ae70fde09" kindref="member">objects</ref>[i].y-y+<ref refid="class_map_1a1028fa8db721f28473ba471ae70fde09" kindref="member">objects</ref>[i].<ref refid="class_map_1a15981e529cd48e04432898f9185683d3" kindref="member">width</ref>,al_map_rgb(<ref refid="class_map_1a1028fa8db721f28473ba471ae70fde09" kindref="member">objects</ref>[i].r,<ref refid="class_map_1a1028fa8db721f28473ba471ae70fde09" kindref="member">objects</ref>[i].g,<ref refid="class_map_1a1028fa8db721f28473ba471ae70fde09" kindref="member">objects</ref>[i].b));</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="class_map_1a1028fa8db721f28473ba471ae70fde09" kindref="member">objects</ref>[i].<ref refid="class_map_1a6e7ba89e3a0a05633ae7d27dd400190f" kindref="member">type</ref>==<ref refid="_enums_8hpp_1a842c5e2e69277690b064bf363c017980aa79c827759ea48f0735386c4b1188911" kindref="member">CIRCLE</ref><sp/>&amp;&amp;<sp/>drawCircles==</highlight><highlight class="keyword">true</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>al_draw_filled_circle(<ref refid="class_map_1a1028fa8db721f28473ba471ae70fde09" kindref="member">objects</ref>[i].x-x,<ref refid="class_map_1a1028fa8db721f28473ba471ae70fde09" kindref="member">objects</ref>[i].y-y,<ref refid="class_map_1a1028fa8db721f28473ba471ae70fde09" kindref="member">objects</ref>[i].radius,al_map_rgb(<ref refid="class_map_1a1028fa8db721f28473ba471ae70fde09" kindref="member">objects</ref>[i].r,<ref refid="class_map_1a1028fa8db721f28473ba471ae70fde09" kindref="member">objects</ref>[i].g,<ref refid="class_map_1a1028fa8db721f28473ba471ae70fde09" kindref="member">objects</ref>[i].b));</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="46"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="/home/clemente/projects/Troll-Killers/CMap.cpp"/>
+  </compounddef>
+</doxygen>

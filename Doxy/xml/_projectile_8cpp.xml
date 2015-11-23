@@ -1,0 +1,114 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.10">
+  <compounddef id="_projectile_8cpp" kind="file" language="C++">
+    <compoundname>Projectile.cpp</compoundname>
+    <includes refid="_projectile_8hpp" local="yes">Projectile.hpp</includes>
+    <incdepgraph>
+      <node id="1780">
+        <label>IGObject.hpp</label>
+        <link refid="_i_g_object_8hpp"/>
+        <childnode refid="1781" relation="include">
+        </childnode>
+        <childnode refid="1782" relation="include">
+        </childnode>
+      </node>
+      <node id="1783">
+        <label>stdint.h</label>
+      </node>
+      <node id="1781">
+        <label>Enums.hpp</label>
+        <link refid="_enums_8hpp"/>
+      </node>
+      <node id="1785">
+        <label>_object.hpp</label>
+        <link refid="__object_8hpp"/>
+        <childnode refid="1783" relation="include">
+        </childnode>
+      </node>
+      <node id="1779">
+        <label>Projectile.hpp</label>
+        <link refid="_projectile_8hpp"/>
+        <childnode refid="1780" relation="include">
+        </childnode>
+        <childnode refid="1785" relation="include">
+        </childnode>
+        <childnode refid="1786" relation="include">
+        </childnode>
+      </node>
+      <node id="1782">
+        <label>_data.hpp</label>
+        <link refid="__data_8hpp"/>
+        <childnode refid="1783" relation="include">
+        </childnode>
+        <childnode refid="1784" relation="include">
+        </childnode>
+      </node>
+      <node id="1778">
+        <label>/home/clemente/projects/Troll-Killers/Projectile.cpp</label>
+        <link refid="Projectile.cpp"/>
+        <childnode refid="1779" relation="include">
+        </childnode>
+      </node>
+      <node id="1786">
+        <label>math.h</label>
+      </node>
+      <node id="1784">
+        <label>cstring</label>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_projectile_8hpp" kindref="compound">Projectile.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3" refid="class_projectile_1ac536ed2aad56af866a2078b9a85aa16d" refkind="member"><highlight class="normal"><ref refid="class_projectile_1ac536ed2aad56af866a2078b9a85aa16d" kindref="member">Projectile::Projectile</ref>(){</highlight></codeline>
+<codeline lineno="4"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6" refid="class_projectile_1a309d73855dcfacee8421900c4f5e4411" refkind="member"><highlight class="normal"><ref refid="class_projectile_1ac536ed2aad56af866a2078b9a85aa16d" kindref="member">Projectile::Projectile</ref>(int16_t<sp/>x,<sp/>int16_t<sp/>y,<sp/>int16_t<sp/>length,<sp/>int16_t<sp/>velocity,</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>angle){</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;velocity=<ref refid="class_projectile_1a0f40006b298e765555e5494f3bbdc929" kindref="member">velocity</ref>;</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;x=<ref refid="class_projectile_1a706363cbafcbe19aa68853b2821e63b5" kindref="member">x</ref>;</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;y=<ref refid="class_projectile_1a19d3eab0725a2679d39c6d316e3681ca" kindref="member">y</ref>;</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;length=<ref refid="class_projectile_1a123f18a0665fd6ae48dcbd900647defb" kindref="member">length</ref>;</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;angle=<ref refid="class_projectile_1a5c3f2c4e44bd0607dbdb55ebfb86f88b" kindref="member">angle</ref>;</highlight></codeline>
+<codeline lineno="12"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14" refid="class_projectile_1a30ea63ab82a2dc401b8145f61310a9ae" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_projectile_1a30ea63ab82a2dc401b8145f61310a9ae" kindref="member">Projectile::serialize</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>buffer){</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18" refid="class_projectile_1ac5f6d2a73c1f82f2f11ae353d251acef" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_projectile_1ac5f6d2a73c1f82f2f11ae353d251acef" kindref="member">Projectile::move</ref>(){</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>endX,endY;</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/>endX=(<ref refid="class_projectile_1a0f40006b298e765555e5494f3bbdc929" kindref="member">velocity</ref>)*cos(<ref refid="class_projectile_1a5c3f2c4e44bd0607dbdb55ebfb86f88b" kindref="member">angle</ref>);</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/>endY=(<ref refid="class_projectile_1a0f40006b298e765555e5494f3bbdc929" kindref="member">velocity</ref>)*sin(<ref refid="class_projectile_1a5c3f2c4e44bd0607dbdb55ebfb86f88b" kindref="member">angle</ref>);</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_projectile_1a706363cbafcbe19aa68853b2821e63b5" kindref="member">x</ref>=<ref refid="class_projectile_1a706363cbafcbe19aa68853b2821e63b5" kindref="member">x</ref>+endX;</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_projectile_1a19d3eab0725a2679d39c6d316e3681ca" kindref="member">y</ref>=<ref refid="class_projectile_1a19d3eab0725a2679d39c6d316e3681ca" kindref="member">y</ref>+endY;</highlight></codeline>
+<codeline lineno="24"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26" refid="class_projectile_1a50744612baf1cdc972281a99f8e0ac50" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_projectile_1a50744612baf1cdc972281a99f8e0ac50" kindref="member">Projectile::collide</ref>(<ref refid="class_projectile" kindref="compound">Projectile</ref><sp/>*projectile,<ref refid="struct__object" kindref="compound">_object</ref><sp/>&amp;</highlight><highlight class="keywordtype">object</highlight><highlight class="normal">){</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="class_projectile_1a5c3f2c4e44bd0607dbdb55ebfb86f88b" kindref="member">angle</ref>=projectile-&gt;<ref refid="class_projectile_1a58707185f143d76efe3cfcec799a7ea5" kindref="member">getAngle</ref>();</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_projectile_1a706363cbafcbe19aa68853b2821e63b5" kindref="member">x</ref>=projectile-&gt;<ref refid="class_projectile_1a274d46f885207253588d74f54ddb674d" kindref="member">getX</ref>()+(projectile-&gt;<ref refid="class_projectile_1aa75120b722b0078d78e9d8416c0325a7" kindref="member">getLength</ref>()*cos(angle));</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_projectile_1a19d3eab0725a2679d39c6d316e3681ca" kindref="member">y</ref>=projectile-&gt;<ref refid="class_projectile_1a3c5e30132bd9d414514c682e447ef0de" kindref="member">getY</ref>()+(projectile-&gt;<ref refid="class_projectile_1aa75120b722b0078d78e9d8416c0325a7" kindref="member">getLength</ref>()*sin(angle));</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>i,j;</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">object</highlight><highlight class="normal">.type==<ref refid="_enums_8hpp_1a842c5e2e69277690b064bf363c017980ae552ab0a96c0384a6e918e726b7f6102" kindref="member">RECTANGLE</ref>)</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>c=0;c&lt;projectile-&gt;<ref refid="class_projectile_1aa75120b722b0078d78e9d8416c0325a7" kindref="member">getLength</ref>();c++){</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>i=x+(float)c*cos(angle);</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>j=y+(float)c*sin(angle);</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(i&gt;</highlight><highlight class="keywordtype">object</highlight><highlight class="normal">.x<sp/>&amp;&amp;<sp/>i&lt;object.x+object.length<sp/>&amp;&amp;<sp/>j&gt;</highlight><highlight class="keywordtype">object</highlight><highlight class="normal">.y<sp/>&amp;&amp;<sp/>j&lt;</highlight><highlight class="keywordtype">object</highlight><highlight class="normal">.y+</highlight><highlight class="keywordtype">object</highlight><highlight class="normal">.width)</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">object</highlight><highlight class="normal">.type==<ref refid="_enums_8hpp_1a842c5e2e69277690b064bf363c017980aa79c827759ea48f0735386c4b1188911" kindref="member">CIRCLE</ref>)</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>c=0;c&lt;projectile-&gt;<ref refid="class_projectile_1aa75120b722b0078d78e9d8416c0325a7" kindref="member">getLength</ref>();c++){</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>i=x+(float)c*cos(angle);</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>j=y+(float)c*sin(angle);</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(sqrt(pow(i-</highlight><highlight class="keywordtype">object</highlight><highlight class="normal">.x,2)+pow(j-</highlight><highlight class="keywordtype">object</highlight><highlight class="normal">.y,2))&lt;=</highlight><highlight class="keywordtype">object</highlight><highlight class="normal">.radius)</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="46"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/home/clemente/projects/Troll-Killers/Projectile.cpp"/>
+  </compounddef>
+</doxygen>

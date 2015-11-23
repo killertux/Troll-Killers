@@ -19,11 +19,15 @@
 
 #include <allegro5/allegro.h>
 #include <allegro5/allegro_primitives.h>
+#include <allegro5/allegro_audio.h>
 
 #define RESPAWN_TIMER 60*5
 
 class CCharacter:public IGObject{
 private:
+	ALLEGRO_SAMPLE *hit;
+	ALLEGRO_SAMPLE *victory;
+	
 	_object player;
 	int16_t velocity;
 	int16_t id;
@@ -75,6 +79,8 @@ public:
 	void shoot(ALLEGRO_MOUSE_STATE &mouseState,Connection *conn){weapon->shoot(mouseState,conn);}
 	int getWeaponDmg(){return weapon->getDmg();}
 	void sound_shoot(int x,int y);
+	void sound_hit(int x,int y);
+ 	void sound_victory(int x,int y);
 	Projectile **getProjectiles(){return weapon->getProjectiles();}
 };
 

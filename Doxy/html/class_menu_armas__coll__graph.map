@@ -1,0 +1,3 @@
+<map id="MenuArmas" name="MenuArmas">
+<area shape="rect" id="node2" href="$class_i_menu.html" title="{IMenu\n||+ print_menu()\l+ ~IMenu()\l+ botao()\l+ botao_action()\l}" alt="" coords="7,5,123,127"/>
+</map>

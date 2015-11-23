@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.10">
+  <compounddef id="_r_e_a_d_m_e_8md" kind="file" language="Markdown">
+    <compoundname>README.md</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline><highlight class="normal">#<sp/>Troll-Killers</highlight></codeline>
+<codeline><highlight class="normal">A<sp/>2d<sp/>multiplayer<sp/>online<sp/>shooter<sp/>game.</highlight></codeline>
+    </programlisting>
+    <location file="/home/clemente/projects/Troll-Killers/README.md"/>
+  </compounddef>
+</doxygen>

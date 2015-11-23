@@ -39,6 +39,8 @@ allegro5/allegro.h
 -
 allegro5/allegro_primitives.h
 -
+allegro5/allegro_audio.h
+-
 
 /home/clemente/projects/Troll-Killers/CMap.cpp
 CMap.hpp

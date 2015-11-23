@@ -1,0 +1,4 @@
+<map id="SMap" name="SMap">
+<area shape="rect" id="node2" href="$class_map.html" title="{Map\n|# type\l# name\l# length\l# width\l# max_objects\l# n_object\l|+ Map()\l+ save_map()\l+ load_map()\l+ serialize()\l+ deserialize()\l+ getObjects()\l+ ~Map()\l}" alt="" coords="19,263,126,501"/>
+<area shape="rect" id="node3" href="$struct__object.html" title="{_object\n|+ type\l+ x\l+ y\l+ radius\l+ length\l+ width\l+ r\l+ g\l+ b\l|}" alt="" coords="38,5,107,200"/>
+</map>

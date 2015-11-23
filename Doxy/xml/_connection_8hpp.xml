@@ -1,0 +1,238 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.10">
+  <compounddef id="_connection_8hpp" kind="file" language="C++">
+    <compoundname>Connection.hpp</compoundname>
+    <includes local="no">enet/enet.h</includes>
+    <includes local="no">iostream</includes>
+    <includes local="no">string</includes>
+    <includes local="no">cstring</includes>
+    <includedby refid="_weapons_8hpp" local="yes">/home/clemente/projects/Troll-Killers/Weapons.hpp</includedby>
+    <includedby refid="_c_character_8hpp" local="yes">/home/clemente/projects/Troll-Killers/CCharacter.hpp</includedby>
+    <includedby refid="_client_8hpp" local="yes">/home/clemente/projects/Troll-Killers/Client.hpp</includedby>
+    <includedby refid="_connection_8cpp" local="yes">/home/clemente/projects/Troll-Killers/Connection.cpp</includedby>
+    <includedby refid="_server_8hpp" local="yes">/home/clemente/projects/Troll-Killers/Server.hpp</includedby>
+    <incdepgraph>
+      <node id="1291">
+        <label>string</label>
+      </node>
+      <node id="1288">
+        <label>/home/clemente/projects/Troll-Killers/Connection.hpp</label>
+        <link refid="Connection.hpp"/>
+        <childnode refid="1289" relation="include">
+        </childnode>
+        <childnode refid="1290" relation="include">
+        </childnode>
+        <childnode refid="1291" relation="include">
+        </childnode>
+        <childnode refid="1292" relation="include">
+        </childnode>
+      </node>
+      <node id="1290">
+        <label>iostream</label>
+      </node>
+      <node id="1289">
+        <label>enet/enet.h</label>
+      </node>
+      <node id="1292">
+        <label>cstring</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1304">
+        <label>/home/clemente/projects/Troll-Killers/Pistol.hpp</label>
+        <link refid="_pistol_8hpp"/>
+        <childnode refid="1296" relation="include">
+        </childnode>
+        <childnode refid="1305" relation="include">
+        </childnode>
+      </node>
+      <node id="1297">
+        <label>/home/clemente/projects/Troll-Killers/CCharacter.cpp</label>
+        <link refid="_c_character_8cpp"/>
+      </node>
+      <node id="1300">
+        <label>/home/clemente/projects/Troll-Killers/MenuManager.hpp</label>
+        <link refid="_menu_manager_8hpp"/>
+        <childnode refid="1298" relation="include">
+        </childnode>
+        <childnode refid="1301" relation="include">
+        </childnode>
+      </node>
+      <node id="1310">
+        <label>/home/clemente/projects/Troll-Killers/Server.cpp</label>
+        <link refid="_server_8cpp"/>
+      </node>
+      <node id="1299">
+        <label>/home/clemente/projects/Troll-Killers/Client.cpp</label>
+        <link refid="_client_8cpp"/>
+      </node>
+      <node id="1306">
+        <label>/home/clemente/projects/Troll-Killers/Weapons.cpp</label>
+        <link refid="_weapons_8cpp"/>
+      </node>
+      <node id="1307">
+        <label>/home/clemente/projects/Troll-Killers/Connection.cpp</label>
+        <link refid="_connection_8cpp"/>
+      </node>
+      <node id="1308">
+        <label>/home/clemente/projects/Troll-Killers/Server.hpp</label>
+        <link refid="_server_8hpp"/>
+        <childnode refid="1309" relation="include">
+        </childnode>
+        <childnode refid="1310" relation="include">
+        </childnode>
+      </node>
+      <node id="1298">
+        <label>/home/clemente/projects/Troll-Killers/Client.hpp</label>
+        <link refid="_client_8hpp"/>
+        <childnode refid="1299" relation="include">
+        </childnode>
+        <childnode refid="1300" relation="include">
+        </childnode>
+        <childnode refid="1302" relation="include">
+        </childnode>
+      </node>
+      <node id="1294">
+        <label>/home/clemente/projects/Troll-Killers/Weapons.hpp</label>
+        <link refid="_weapons_8hpp"/>
+        <childnode refid="1295" relation="include">
+        </childnode>
+        <childnode refid="1304" relation="include">
+        </childnode>
+        <childnode refid="1306" relation="include">
+        </childnode>
+      </node>
+      <node id="1293">
+        <label>/home/clemente/projects/Troll-Killers/Connection.hpp</label>
+        <link refid="Connection.hpp"/>
+        <childnode refid="1294" relation="include">
+        </childnode>
+        <childnode refid="1296" relation="include">
+        </childnode>
+        <childnode refid="1298" relation="include">
+        </childnode>
+        <childnode refid="1307" relation="include">
+        </childnode>
+        <childnode refid="1308" relation="include">
+        </childnode>
+      </node>
+      <node id="1295">
+        <label>/home/clemente/projects/Troll-Killers/Rifle.hpp</label>
+        <link refid="_rifle_8hpp"/>
+        <childnode refid="1296" relation="include">
+        </childnode>
+        <childnode refid="1303" relation="include">
+        </childnode>
+      </node>
+      <node id="1305">
+        <label>/home/clemente/projects/Troll-Killers/Pistol.cpp</label>
+        <link refid="_pistol_8cpp"/>
+      </node>
+      <node id="1296">
+        <label>/home/clemente/projects/Troll-Killers/CCharacter.hpp</label>
+        <link refid="_c_character_8hpp"/>
+        <childnode refid="1297" relation="include">
+        </childnode>
+        <childnode refid="1298" relation="include">
+        </childnode>
+      </node>
+      <node id="1309">
+        <label>/home/clemente/projects/Troll-Killers/mainServer.cpp</label>
+        <link refid="main_server_8cpp"/>
+      </node>
+      <node id="1303">
+        <label>/home/clemente/projects/Troll-Killers/Rifle.cpp</label>
+        <link refid="_rifle_8cpp"/>
+      </node>
+      <node id="1302">
+        <label>/home/clemente/projects/Troll-Killers/mainClient.cpp</label>
+        <link refid="main_client_8cpp"/>
+      </node>
+      <node id="1301">
+        <label>/home/clemente/projects/Troll-Killers/MenuManager.cpp</label>
+        <link refid="_menu_manager_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_connection" prot="public">Connection</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="_connection_8hpp_1a70ed59adcb4159ac551058053e649640" prot="public" static="no">
+        <name>SIZE</name>
+        <initializer>4000</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/Connection.hpp" line="18" column="9" bodyfile="/home/clemente/projects/Troll-Killers/Connection.hpp" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>MapEditor.hpp</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/><sp/>Created<sp/>on:<sp/>4<sp/>de<sp/>nov<sp/>de<sp/>2015</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>Author:<sp/>clemente</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="comment">//Class<sp/>that<sp/>handle<sp/>connection</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>CONNECTION_HPP</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CONNECTION_HPP</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;enet/enet.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;iostream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cstring&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18" refid="_connection_8hpp_1a70ed59adcb4159ac551058053e649640" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SIZE<sp/>4000</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20" refid="class_connection" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_connection" kindref="compound">Connection</ref>{</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/>ENetAddress<sp/>address;</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/>ENetHost<sp/>*conn,*connS;</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/>ENetEvent<sp/>event;</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>client;<sp/></highlight><highlight class="comment">//True<sp/>if<sp/>a<sp/>client<sp/>was<sp/>made</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/>ENetPeer<sp/>*peer;</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Store<sp/>useful<sp/>information<sp/>of<sp/>the<sp/>last<sp/>comunication.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/>ENetAddress<sp/>lastConnection;</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>packetLength;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*packetData;</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>packetBuffer[<ref refid="_connection_8hpp_1a70ed59adcb4159ac551058053e649640" kindref="member">SIZE</ref>];</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>peerID;</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>perror(std::string<sp/>error);</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_connection_1a9de94289ca6259f94ef6aeba3b134a77" kindref="member">Connection</ref>();</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_connection_1a2e4352edf667bea83001569e9da8a24d" kindref="member">~Connection</ref>();</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_connection_1acdb1c6f1844698b2688cb611f7029d7c" kindref="member">create_server</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>port,</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>num_peers);</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_connection_1a3dda26c4c789d0f5e54fb50cae606022" kindref="member">send_packet_reliable</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*data,</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>size,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>ID);</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_connection_1a194e26770302ecac113375475df57e42" kindref="member">send_packet_unreliable</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*data,</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>size,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>ID);</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_connection_1a2d554f43b1e9d4a71acdd1ba297fc11b" kindref="member">broadcast_packet</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*data,</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>size);</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_connection_1ace9a66bd4a77270df4587df1405d4033" kindref="member">send_flush</ref>();</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_connection_1a67a66948fd3b286a0a4faaaedb69e56e" kindref="member">event_service</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>timer);</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_connection_1a75f10c526b51675497a81e1f2c26ba9e" kindref="member">event_type_connect</ref>();</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_connection_1ab0db0e5c8463aca4ec668107b1a46349" kindref="member">event_type_receive</ref>();</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_connection_1a58f2ca9fedd8369ebdf61725f31123ef" kindref="member">event_type_disconnect</ref>();</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_connection_1a8e9748ced0d65d12e5781ef21b1e7928" kindref="member">create_client</ref>(std::string<sp/>ip,</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>port);</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="54" refid="class_connection_1a4eec19a6b526fafaf4fa87a433a0a2d4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>ENetAddress<sp/><ref refid="class_connection_1a4eec19a6b526fafaf4fa87a433a0a2d4" kindref="member">getLastConnection</ref>(){</highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>lastConnection;}</highlight></codeline>
+<codeline lineno="55" refid="class_connection_1ab1a9ae7a0dea88ea63ea4a2d1cbec4d9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_connection_1ab1a9ae7a0dea88ea63ea4a2d1cbec4d9" kindref="member">getPacketLength</ref>(){</highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>packetLength;}</highlight></codeline>
+<codeline lineno="56" refid="class_connection_1a2431e1403029cf660aa897eba8ec978a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/><ref refid="class_connection_1a2431e1403029cf660aa897eba8ec978a" kindref="member">getPacketData</ref>(){</highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>packetData;}</highlight></codeline>
+<codeline lineno="57" refid="class_connection_1a6a9cbc7d881550fcc0e768e3ee7bf171" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_connection_1a6a9cbc7d881550fcc0e768e3ee7bf171" kindref="member">getPeerId</ref>(){</highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>peerID;}</highlight></codeline>
+<codeline lineno="58"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/home/clemente/projects/Troll-Killers/Connection.hpp"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,6 @@
+<map id="CCharacter::setSpawnY" name="CCharacter::setSpawnY">
+<area shape="rect" id="node2" href="$class_client.html#abccb976632db0b3b5df925875b80b2e7" title="Client::connect" alt="" coords="217,5,328,32"/>
+<area shape="rect" id="node3" href="$class_menu_manager.html#a86de10f125cd9be03d15dd50e381f53d" title="MenuManager::main_loop" alt="" coords="376,5,547,32"/>
+<area shape="rect" id="node4" href="$class_client.html#a8a2de145bff51cff643e5a8d773d35fe" title="Client::menu" alt="" coords="595,5,691,32"/>
+<area shape="rect" id="node5" href="$main_client_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="739,5,789,32"/>
+</map>

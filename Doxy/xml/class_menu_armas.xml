@@ -1,0 +1,300 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.10">
+  <compounddef id="class_menu_armas" kind="class" language="C++" prot="public">
+    <compoundname>MenuArmas</compoundname>
+    <basecompoundref refid="class_i_menu" prot="public" virt="non-virtual">IMenu</basecompoundref>
+    <includes refid="_menu_8hpp" local="no">Menu.hpp</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_menu_armas_1aa73ae25f816957ec9a0432f3f3236eb5" prot="private" static="no" mutable="no">
+        <type>ALLEGRO_BITMAP *</type>
+        <definition>ALLEGRO_BITMAP* MenuArmas::fundo</definition>
+        <argsstring></argsstring>
+        <name>fundo</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/Menu.hpp" line="40" column="1" bodyfile="/home/clemente/projects/Troll-Killers/Menu.hpp" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_menu_armas_1a18d7f70433de3d5f0451147a2c68c8be" prot="private" static="no" mutable="no">
+        <type>ALLEGRO_BITMAP *</type>
+        <definition>ALLEGRO_BITMAP* MenuArmas::bot1</definition>
+        <argsstring></argsstring>
+        <name>bot1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/Menu.hpp" line="41" column="1" bodyfile="/home/clemente/projects/Troll-Killers/Menu.hpp" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_menu_armas_1a7abaff51e7513e01b12e7c7edecd4770" prot="private" static="no" mutable="no">
+        <type>ALLEGRO_BITMAP *</type>
+        <definition>ALLEGRO_BITMAP* MenuArmas::bot2</definition>
+        <argsstring></argsstring>
+        <name>bot2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/Menu.hpp" line="42" column="1" bodyfile="/home/clemente/projects/Troll-Killers/Menu.hpp" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_menu_armas_1a666631937c8a59cd74ccd616cd8f83d6" prot="private" static="no" mutable="no">
+        <type>ALLEGRO_BITMAP *</type>
+        <definition>ALLEGRO_BITMAP* MenuArmas::bot3</definition>
+        <argsstring></argsstring>
+        <name>bot3</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/Menu.hpp" line="43" column="1" bodyfile="/home/clemente/projects/Troll-Killers/Menu.hpp" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_menu_armas_1a20c4d9a40175099489fb575778d5ee84" prot="private" static="no" mutable="no">
+        <type>ALLEGRO_BITMAP *</type>
+        <definition>ALLEGRO_BITMAP* MenuArmas::bot1_s</definition>
+        <argsstring></argsstring>
+        <name>bot1_s</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/Menu.hpp" line="44" column="1" bodyfile="/home/clemente/projects/Troll-Killers/Menu.hpp" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_menu_armas_1ae273d0ce554421476d2ef225c8667eec" prot="private" static="no" mutable="no">
+        <type>ALLEGRO_BITMAP *</type>
+        <definition>ALLEGRO_BITMAP* MenuArmas::bot2_s</definition>
+        <argsstring></argsstring>
+        <name>bot2_s</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/Menu.hpp" line="45" column="1" bodyfile="/home/clemente/projects/Troll-Killers/Menu.hpp" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_menu_armas_1a737a7ab6176716f36293281c92c205dd" prot="private" static="no" mutable="no">
+        <type>ALLEGRO_BITMAP *</type>
+        <definition>ALLEGRO_BITMAP* MenuArmas::bot3_s</definition>
+        <argsstring></argsstring>
+        <name>bot3_s</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/Menu.hpp" line="46" column="1" bodyfile="/home/clemente/projects/Troll-Killers/Menu.hpp" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_menu_armas_1a8298700ef37b5e10292ba8221df78071" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool MenuArmas::bot1S</definition>
+        <argsstring></argsstring>
+        <name>bot1S</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/Menu.hpp" line="47" column="1" bodyfile="/home/clemente/projects/Troll-Killers/Menu.hpp" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_menu_armas_1acea5022bdb2f3800d17ec05e421819ba" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool MenuArmas::bot2S</definition>
+        <argsstring></argsstring>
+        <name>bot2S</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/Menu.hpp" line="47" column="1" bodyfile="/home/clemente/projects/Troll-Killers/Menu.hpp" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_menu_armas_1a83c5e170a9b8515e0bf00fdb6f94fbbe" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool MenuArmas::bot3S</definition>
+        <argsstring></argsstring>
+        <name>bot3S</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/Menu.hpp" line="47" column="1" bodyfile="/home/clemente/projects/Troll-Killers/Menu.hpp" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_menu_armas_1a7c0890bf8615d174fb7057937b9ed23d" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int MenuArmas::res_x</definition>
+        <argsstring></argsstring>
+        <name>res_x</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/Menu.hpp" line="48" column="1" bodyfile="/home/clemente/projects/Troll-Killers/Menu.hpp" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_menu_armas_1a1707c21fbdb11fbae1ba7403af2d168b" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int MenuArmas::res_y</definition>
+        <argsstring></argsstring>
+        <name>res_y</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/Menu.hpp" line="48" column="1" bodyfile="/home/clemente/projects/Troll-Killers/Menu.hpp" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_menu_armas_1ab016179c4b0421f50d67292e915968b1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>MenuArmas::MenuArmas</definition>
+        <argsstring>(int res_x, int res_y)</argsstring>
+        <name>MenuArmas</name>
+        <param>
+          <type>int</type>
+          <declname>res_x</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>res_y</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/Menu.hpp" line="50" column="1" bodyfile="/home/clemente/projects/Troll-Killers/Menu.cpp" bodystart="27" bodyend="41"/>
+      </memberdef>
+      <memberdef kind="function" id="class_menu_armas_1ab467d5debe435a27f146cfd7e3b4c72f" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>MenuArmas::~MenuArmas</definition>
+        <argsstring>()</argsstring>
+        <name>~MenuArmas</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/Menu.hpp" line="51" column="1" bodyfile="/home/clemente/projects/Troll-Killers/Menu.cpp" bodystart="42" bodyend="50"/>
+      </memberdef>
+      <memberdef kind="function" id="class_menu_armas_1afc0b66c4033827b51b26127d40c17645" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void MenuArmas::botao</definition>
+        <argsstring>(ALLEGRO_MOUSE_STATE *mouseState)</argsstring>
+        <name>botao</name>
+        <reimplements refid="class_i_menu_1a492260da0be9c0e8951761547d67e79e">botao</reimplements>
+        <param>
+          <type>ALLEGRO_MOUSE_STATE *</type>
+          <declname>mouseState</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/Menu.hpp" line="52" column="1" bodyfile="/home/clemente/projects/Troll-Killers/Menu.cpp" bodystart="96" bodyend="121"/>
+      </memberdef>
+      <memberdef kind="function" id="class_menu_armas_1a05bc5afc4ad1a0dd6cf35f27de53016b" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void MenuArmas::print_menu</definition>
+        <argsstring>()</argsstring>
+        <name>print_menu</name>
+        <reimplements refid="class_i_menu_1a15171c488ff899861e4c1a435bc79596">print_menu</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/Menu.hpp" line="53" column="1" bodyfile="/home/clemente/projects/Troll-Killers/Menu.cpp" bodystart="123" bodyend="139"/>
+      </memberdef>
+      <memberdef kind="function" id="class_menu_armas_1a1abc753948db8a71cb6543755bb29db6" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>int</type>
+        <definition>int MenuArmas::botao_action</definition>
+        <argsstring>()</argsstring>
+        <name>botao_action</name>
+        <reimplements refid="class_i_menu_1a984d46d1c193c7552580c2d94c7f0aee">botao_action</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/Menu.hpp" line="54" column="1" bodyfile="/home/clemente/projects/Troll-Killers/Menu.cpp" bodystart="140" bodyend="149"/>
+        <references refid="_menu_8hpp_1a42276d6e71bfe225d915a9d172981bc5" compoundref="_menu_8hpp" startline="13">MENU_PISTOL</references>
+        <references refid="_menu_8hpp_1a2f110eaa4eb83e42b813c6ddf343b9ca" compoundref="_menu_8hpp" startline="12">MENU_RIFLE</references>
+        <references refid="_menu_8hpp_1ad111e603bbebe5d87f6bc39264ce4733" compoundref="_menu_8hpp" startline="11">EXIT</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="145">
+        <label>MenuArmas</label>
+        <link refid="class_menu_armas"/>
+        <childnode refid="146" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="146">
+        <label>IMenu</label>
+        <link refid="class_i_menu"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="147">
+        <label>MenuArmas</label>
+        <link refid="class_menu_armas"/>
+        <childnode refid="148" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="148">
+        <label>IMenu</label>
+        <link refid="class_i_menu"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/clemente/projects/Troll-Killers/Menu.hpp" line="39" column="1" bodyfile="/home/clemente/projects/Troll-Killers/Menu.hpp" bodystart="39" bodyend="55"/>
+    <listofallmembers>
+      <member refid="class_menu_armas_1a18d7f70433de3d5f0451147a2c68c8be" prot="private" virt="non-virtual"><scope>MenuArmas</scope><name>bot1</name></member>
+      <member refid="class_menu_armas_1a20c4d9a40175099489fb575778d5ee84" prot="private" virt="non-virtual"><scope>MenuArmas</scope><name>bot1_s</name></member>
+      <member refid="class_menu_armas_1a8298700ef37b5e10292ba8221df78071" prot="private" virt="non-virtual"><scope>MenuArmas</scope><name>bot1S</name></member>
+      <member refid="class_menu_armas_1a7abaff51e7513e01b12e7c7edecd4770" prot="private" virt="non-virtual"><scope>MenuArmas</scope><name>bot2</name></member>
+      <member refid="class_menu_armas_1ae273d0ce554421476d2ef225c8667eec" prot="private" virt="non-virtual"><scope>MenuArmas</scope><name>bot2_s</name></member>
+      <member refid="class_menu_armas_1acea5022bdb2f3800d17ec05e421819ba" prot="private" virt="non-virtual"><scope>MenuArmas</scope><name>bot2S</name></member>
+      <member refid="class_menu_armas_1a666631937c8a59cd74ccd616cd8f83d6" prot="private" virt="non-virtual"><scope>MenuArmas</scope><name>bot3</name></member>
+      <member refid="class_menu_armas_1a737a7ab6176716f36293281c92c205dd" prot="private" virt="non-virtual"><scope>MenuArmas</scope><name>bot3_s</name></member>
+      <member refid="class_menu_armas_1a83c5e170a9b8515e0bf00fdb6f94fbbe" prot="private" virt="non-virtual"><scope>MenuArmas</scope><name>bot3S</name></member>
+      <member refid="class_menu_armas_1afc0b66c4033827b51b26127d40c17645" prot="public" virt="virtual"><scope>MenuArmas</scope><name>botao</name></member>
+      <member refid="class_menu_armas_1a1abc753948db8a71cb6543755bb29db6" prot="public" virt="virtual"><scope>MenuArmas</scope><name>botao_action</name></member>
+      <member refid="class_menu_armas_1aa73ae25f816957ec9a0432f3f3236eb5" prot="private" virt="non-virtual"><scope>MenuArmas</scope><name>fundo</name></member>
+      <member refid="class_menu_armas_1ab016179c4b0421f50d67292e915968b1" prot="public" virt="non-virtual"><scope>MenuArmas</scope><name>MenuArmas</name></member>
+      <member refid="class_menu_armas_1a05bc5afc4ad1a0dd6cf35f27de53016b" prot="public" virt="virtual"><scope>MenuArmas</scope><name>print_menu</name></member>
+      <member refid="class_menu_armas_1a7c0890bf8615d174fb7057937b9ed23d" prot="private" virt="non-virtual"><scope>MenuArmas</scope><name>res_x</name></member>
+      <member refid="class_menu_armas_1a1707c21fbdb11fbae1ba7403af2d168b" prot="private" virt="non-virtual"><scope>MenuArmas</scope><name>res_y</name></member>
+      <member refid="class_i_menu_1a2e8a43e5fa1ed784d97a985eb6a07649" prot="public" virt="virtual"><scope>MenuArmas</scope><name>~IMenu</name></member>
+      <member refid="class_menu_armas_1ab467d5debe435a27f146cfd7e3b4c72f" prot="public" virt="virtual"><scope>MenuArmas</scope><name>~MenuArmas</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

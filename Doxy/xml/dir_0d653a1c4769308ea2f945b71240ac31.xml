@@ -1,0 +1,55 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.10">
+  <compounddef id="dir_0d653a1c4769308ea2f945b71240ac31" kind="dir">
+    <compoundname>/home/clemente/projects/Troll-Killers</compoundname>
+    <innerfile refid="__data_8hpp">_data.hpp</innerfile>
+    <innerfile refid="__object_8hpp">_object.hpp</innerfile>
+    <innerfile refid="_c_character_8cpp">CCharacter.cpp</innerfile>
+    <innerfile refid="_c_character_8hpp">CCharacter.hpp</innerfile>
+    <innerfile refid="_client_8cpp">Client.cpp</innerfile>
+    <innerfile refid="_client_8hpp">Client.hpp</innerfile>
+    <innerfile refid="_c_map_8cpp">CMap.cpp</innerfile>
+    <innerfile refid="_c_map_8hpp">CMap.hpp</innerfile>
+    <innerfile refid="_configuration_8cpp">Configuration.cpp</innerfile>
+    <innerfile refid="_configuration_8hpp">Configuration.hpp</innerfile>
+    <innerfile refid="_connection_8cpp">Connection.cpp</innerfile>
+    <innerfile refid="_connection_8hpp">Connection.hpp</innerfile>
+    <innerfile refid="_c_projectile_8cpp">CProjectile.cpp</innerfile>
+    <innerfile refid="_c_projectile_8hpp">CProjectile.hpp</innerfile>
+    <innerfile refid="_cursor_8cpp">Cursor.cpp</innerfile>
+    <innerfile refid="_cursor_8hpp">Cursor.hpp</innerfile>
+    <innerfile refid="_defines_8hpp">Defines.hpp</innerfile>
+    <innerfile refid="editor_main_8cpp">editorMain.cpp</innerfile>
+    <innerfile refid="_enums_8hpp">Enums.hpp</innerfile>
+    <innerfile refid="_i_g_object_8hpp">IGObject.hpp</innerfile>
+    <innerfile refid="main_client_8cpp">mainClient.cpp</innerfile>
+    <innerfile refid="main_server_8cpp">mainServer.cpp</innerfile>
+    <innerfile refid="_map_8cpp">Map.cpp</innerfile>
+    <innerfile refid="_map_8hpp">Map.hpp</innerfile>
+    <innerfile refid="_map_editor_8cpp">MapEditor.cpp</innerfile>
+    <innerfile refid="_map_editor_8hpp">MapEditor.hpp</innerfile>
+    <innerfile refid="_menu_8cpp">Menu.cpp</innerfile>
+    <innerfile refid="_menu_8hpp">Menu.hpp</innerfile>
+    <innerfile refid="_menu_manager_8cpp">MenuManager.cpp</innerfile>
+    <innerfile refid="_menu_manager_8hpp">MenuManager.hpp</innerfile>
+    <innerfile refid="_pistol_8cpp">Pistol.cpp</innerfile>
+    <innerfile refid="_pistol_8hpp">Pistol.hpp</innerfile>
+    <innerfile refid="_projectile_8cpp">Projectile.cpp</innerfile>
+    <innerfile refid="_projectile_8hpp">Projectile.hpp</innerfile>
+    <innerfile refid="_rifle_8cpp">Rifle.cpp</innerfile>
+    <innerfile refid="_rifle_8hpp">Rifle.hpp</innerfile>
+    <innerfile refid="_s_character_8cpp">SCharacter.cpp</innerfile>
+    <innerfile refid="_s_character_8hpp">SCharacter.hpp</innerfile>
+    <innerfile refid="_server_8cpp">Server.cpp</innerfile>
+    <innerfile refid="_server_8hpp">Server.hpp</innerfile>
+    <innerfile refid="_s_map_8cpp">SMap.cpp</innerfile>
+    <innerfile refid="_s_map_8hpp">SMap.hpp</innerfile>
+    <innerfile refid="_weapons_8cpp">Weapons.cpp</innerfile>
+    <innerfile refid="_weapons_8hpp">Weapons.hpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/clemente/projects/Troll-Killers/"/>
+  </compounddef>
+</doxygen>

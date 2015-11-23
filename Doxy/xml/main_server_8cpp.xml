@@ -1,0 +1,194 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.10">
+  <compounddef id="main_server_8cpp" kind="file" language="C++">
+    <compoundname>mainServer.cpp</compoundname>
+    <includes refid="_server_8hpp" local="yes">Server.hpp</includes>
+    <incdepgraph>
+      <node id="1527">
+        <label>boost/thread/mutex.hpp</label>
+      </node>
+      <node id="1543">
+        <label>IGObject.hpp</label>
+        <link refid="_i_g_object_8hpp"/>
+        <childnode refid="1536" relation="include">
+        </childnode>
+        <childnode refid="1539" relation="include">
+        </childnode>
+      </node>
+      <node id="1538">
+        <label>stdint.h</label>
+      </node>
+      <node id="1536">
+        <label>Enums.hpp</label>
+        <link refid="_enums_8hpp"/>
+      </node>
+      <node id="1537">
+        <label>_object.hpp</label>
+        <link refid="__object_8hpp"/>
+        <childnode refid="1538" relation="include">
+        </childnode>
+      </node>
+      <node id="1528">
+        <label>string</label>
+      </node>
+      <node id="1526">
+        <label>boost/thread.hpp</label>
+      </node>
+      <node id="1542">
+        <label>fstream</label>
+      </node>
+      <node id="1525">
+        <label>Server.hpp</label>
+        <link refid="_server_8hpp"/>
+        <childnode refid="1526" relation="include">
+        </childnode>
+        <childnode refid="1527" relation="include">
+        </childnode>
+        <childnode refid="1528" relation="include">
+        </childnode>
+        <childnode refid="1529" relation="include">
+        </childnode>
+        <childnode refid="1530" relation="include">
+        </childnode>
+        <childnode refid="1531" relation="include">
+        </childnode>
+        <childnode refid="1534" relation="include">
+        </childnode>
+        <childnode refid="1543" relation="include">
+        </childnode>
+        <childnode refid="1544" relation="include">
+        </childnode>
+        <childnode refid="1545" relation="include">
+        </childnode>
+        <childnode refid="1541" relation="include">
+        </childnode>
+      </node>
+      <node id="1535">
+        <label>Map.hpp</label>
+        <link refid="_map_8hpp"/>
+        <childnode refid="1536" relation="include">
+        </childnode>
+        <childnode refid="1537" relation="include">
+        </childnode>
+        <childnode refid="1539" relation="include">
+        </childnode>
+        <childnode refid="1540" relation="include">
+        </childnode>
+        <childnode refid="1541" relation="include">
+        </childnode>
+        <childnode refid="1542" relation="include">
+        </childnode>
+      </node>
+      <node id="1547">
+        <label>string.h</label>
+      </node>
+      <node id="1539">
+        <label>_data.hpp</label>
+        <link refid="__data_8hpp"/>
+        <childnode refid="1538" relation="include">
+        </childnode>
+        <childnode refid="1530" relation="include">
+        </childnode>
+      </node>
+      <node id="1529">
+        <label>stack</label>
+      </node>
+      <node id="1544">
+        <label>SCharacter.hpp</label>
+        <link refid="_s_character_8hpp"/>
+        <childnode refid="1543" relation="include">
+        </childnode>
+        <childnode refid="1536" relation="include">
+        </childnode>
+        <childnode refid="1537" relation="include">
+        </childnode>
+        <childnode refid="1539" relation="include">
+        </childnode>
+        <childnode refid="1533" relation="include">
+        </childnode>
+        <childnode refid="1541" relation="include">
+        </childnode>
+      </node>
+      <node id="1531">
+        <label>Connection.hpp</label>
+        <link refid="_connection_8hpp"/>
+        <childnode refid="1532" relation="include">
+        </childnode>
+        <childnode refid="1533" relation="include">
+        </childnode>
+        <childnode refid="1528" relation="include">
+        </childnode>
+        <childnode refid="1530" relation="include">
+        </childnode>
+      </node>
+      <node id="1540">
+        <label>sstream</label>
+      </node>
+      <node id="1534">
+        <label>SMap.hpp</label>
+        <link refid="_s_map_8hpp"/>
+        <childnode refid="1535" relation="include">
+        </childnode>
+      </node>
+      <node id="1533">
+        <label>iostream</label>
+      </node>
+      <node id="1545">
+        <label>Configuration.hpp</label>
+        <link refid="_configuration_8hpp"/>
+        <childnode refid="1546" relation="include">
+        </childnode>
+        <childnode refid="1547" relation="include">
+        </childnode>
+      </node>
+      <node id="1541">
+        <label>Defines.hpp</label>
+        <link refid="_defines_8hpp"/>
+      </node>
+      <node id="1532">
+        <label>enet/enet.h</label>
+      </node>
+      <node id="1524">
+        <label>/home/clemente/projects/Troll-Killers/mainServer.cpp</label>
+        <link refid="mainServer.cpp"/>
+        <childnode refid="1525" relation="include">
+        </childnode>
+      </node>
+      <node id="1546">
+        <label>stdio.h</label>
+      </node>
+      <node id="1530">
+        <label>cstring</label>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="main_server_8cpp_1ae66f6b31b5ad750f1fe042a706a4e3d4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int main</definition>
+        <argsstring>()</argsstring>
+        <name>main</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/mainServer.cpp" line="3" column="1" bodyfile="/home/clemente/projects/Troll-Killers/mainServer.cpp" bodystart="3" bodyend="6"/>
+        <references refid="class_server_1a47beb8398c78f8ce814d8f3961880add" compoundref="_server_8cpp" startline="33" endline="68">Server::main_loop</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_server_8hpp" kindref="compound">Server.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3" refid="main_server_8cpp_1ae66f6b31b5ad750f1fe042a706a4e3d4" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="main_server_8cpp_1ae66f6b31b5ad750f1fe042a706a4e3d4" kindref="member">main</ref>(){</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_server" kindref="compound">Server</ref><sp/>server;</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"><sp/><sp/><sp/><sp/>server.<ref refid="class_server_1a47beb8398c78f8ce814d8f3961880add" kindref="member">main_loop</ref>();</highlight></codeline>
+<codeline lineno="6"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="/home/clemente/projects/Troll-Killers/mainServer.cpp"/>
+  </compounddef>
+</doxygen>

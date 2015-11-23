@@ -1,0 +1,4 @@
+<map id="Weapons::getWeaponTipX" name="Weapons::getWeaponTipX">
+<area shape="rect" id="node2" href="$class_pistol.html#a0e99963f771cc143c32a0c72158e74f1" title="Pistol::shoot" alt="" coords="232,5,327,32"/>
+<area shape="rect" id="node3" href="$class_rifle.html#a9cb3a65794113297417d2b96e7103784" title="Rifle::shoot" alt="" coords="235,56,324,83"/>
+</map>

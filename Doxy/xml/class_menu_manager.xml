@@ -1,0 +1,127 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.10">
+  <compounddef id="class_menu_manager" kind="class" language="C++" prot="public">
+    <compoundname>MenuManager</compoundname>
+    <includes refid="_menu_manager_8hpp" local="no">MenuManager.hpp</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_menu_manager_1a9a2898f58872785945ccb5b1b258c025" prot="private" static="no" mutable="no">
+        <type><ref refid="class_i_menu" kindref="compound">IMenu</ref> *</type>
+        <definition>IMenu* MenuManager::menu</definition>
+        <argsstring></argsstring>
+        <name>menu</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/MenuManager.hpp" line="13" column="1" bodyfile="/home/clemente/projects/Troll-Killers/MenuManager.hpp" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_menu_manager_1a879829655f8c6bb34aac676dc37f1f32" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int MenuManager::res_x</definition>
+        <argsstring></argsstring>
+        <name>res_x</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/MenuManager.hpp" line="14" column="1" bodyfile="/home/clemente/projects/Troll-Killers/MenuManager.hpp" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_menu_manager_1a8f9d225f69dac6a5813405e4f1ea2317" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int MenuManager::res_y</definition>
+        <argsstring></argsstring>
+        <name>res_y</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/MenuManager.hpp" line="14" column="1" bodyfile="/home/clemente/projects/Troll-Killers/MenuManager.hpp" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_menu_manager_1aebb773931450c858725e371da0d50b73" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>MenuManager::MenuManager</definition>
+        <argsstring>(int res_x, int res_y)</argsstring>
+        <name>MenuManager</name>
+        <param>
+          <type>int</type>
+          <declname>res_x</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>res_y</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/MenuManager.hpp" line="16" column="1" bodyfile="/home/clemente/projects/Troll-Killers/MenuManager.cpp" bodystart="3" bodyend="7"/>
+      </memberdef>
+      <memberdef kind="function" id="class_menu_manager_1a86de10f125cd9be03d15dd50e381f53d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int MenuManager::main_loop</definition>
+        <argsstring>(ALLEGRO_TIMER *timer, ALLEGRO_EVENT_QUEUE *event_queue, Client *myDad)</argsstring>
+        <name>main_loop</name>
+        <param>
+          <type>ALLEGRO_TIMER *</type>
+          <declname>timer</declname>
+        </param>
+        <param>
+          <type>ALLEGRO_EVENT_QUEUE *</type>
+          <declname>event_queue</declname>
+        </param>
+        <param>
+          <type><ref refid="class_client" kindref="compound">Client</ref> *</type>
+          <declname>myDad</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/MenuManager.hpp" line="17" column="1" bodyfile="/home/clemente/projects/Troll-Killers/MenuManager.cpp" bodystart="10" bodyend="66"/>
+        <references refid="class_i_menu_1a984d46d1c193c7552580c2d94c7f0aee">IMenu::botao_action</references>
+        <references refid="_menu_8hpp_1ad111e603bbebe5d87f6bc39264ce4733" compoundref="_menu_8hpp" startline="11">EXIT</references>
+        <references refid="_menu_8hpp_1a4d9d3d58dc5f7930f2e1408d4501590f" compoundref="_menu_8hpp" startline="10">CHANGE_MENU</references>
+        <references refid="_menu_8hpp_1a2f110eaa4eb83e42b813c6ddf343b9ca" compoundref="_menu_8hpp" startline="12">MENU_RIFLE</references>
+        <references refid="class_client_1ab8104db60235ae805fb77a8cb161c4b8" compoundref="_client_8hpp" startline="55" endline="55">Client::setWeapon</references>
+        <references refid="_enums_8hpp_1ad9700e9db9d62004af4a04e4e13912c5a69c752dd5a2fd5c747410d696d62bae7" compoundref="_enums_8hpp" startline="29">RIFLE</references>
+        <references refid="class_client_1abccb976632db0b3b5df925875b80b2e7" compoundref="_client_8cpp" startline="266" endline="320">Client::connect</references>
+        <references refid="class_client_1a9fbb2f61b005ee6ab3f73b9f449d95eb" compoundref="_client_8cpp" startline="64" endline="264">Client::main_loop</references>
+        <references refid="_menu_8hpp_1a42276d6e71bfe225d915a9d172981bc5" compoundref="_menu_8hpp" startline="13">MENU_PISTOL</references>
+        <references refid="_enums_8hpp_1ad9700e9db9d62004af4a04e4e13912c5aa270a057ccaf7cd6cb766319015e8b3d" compoundref="_enums_8hpp" startline="30">PISTOL</references>
+        <references refid="class_i_menu_1a492260da0be9c0e8951761547d67e79e">IMenu::botao</references>
+        <references refid="class_i_menu_1a15171c488ff899861e4c1a435bc79596">IMenu::print_menu</references>
+        <referencedby refid="class_client_1a8a2de145bff51cff643e5a8d773d35fe" compoundref="_client_8hpp" startline="57" endline="57">Client::menu</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="150">
+        <label>MenuManager</label>
+        <link refid="class_menu_manager"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/clemente/projects/Troll-Killers/MenuManager.hpp" line="11" column="1" bodyfile="/home/clemente/projects/Troll-Killers/MenuManager.hpp" bodystart="11" bodyend="18"/>
+    <listofallmembers>
+      <member refid="class_menu_manager_1a86de10f125cd9be03d15dd50e381f53d" prot="public" virt="non-virtual"><scope>MenuManager</scope><name>main_loop</name></member>
+      <member refid="class_menu_manager_1a9a2898f58872785945ccb5b1b258c025" prot="private" virt="non-virtual"><scope>MenuManager</scope><name>menu</name></member>
+      <member refid="class_menu_manager_1aebb773931450c858725e371da0d50b73" prot="public" virt="non-virtual"><scope>MenuManager</scope><name>MenuManager</name></member>
+      <member refid="class_menu_manager_1a879829655f8c6bb34aac676dc37f1f32" prot="private" virt="non-virtual"><scope>MenuManager</scope><name>res_x</name></member>
+      <member refid="class_menu_manager_1a8f9d225f69dac6a5813405e4f1ea2317" prot="private" virt="non-virtual"><scope>MenuManager</scope><name>res_y</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,4 @@
+<map id="CCharacter::draw" name="CCharacter::draw">
+<area shape="rect" id="node2" href="$class_weapons.html#af9d9f25b33b8d7e6d649c0325bb2db9f" title="Weapons::draw" alt="" coords="179,5,292,32"/>
+<area shape="rect" id="node3" href="$class_c_projectile.html#a164f1820536f396cc7118c0ab9bec69f" title="CProjectile::draw" alt="" coords="340,5,463,32"/>
+</map>

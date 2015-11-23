@@ -1,0 +1,3 @@
+<map id="CCharacter::sound_shoot" name="CCharacter::sound_shoot">
+<area shape="rect" id="node2" href="$class_weapons.html#a0fdaf9f3dee1b5684c993c7304c213b8" title="Weapons::play_sound" alt="" coords="224,5,375,32"/>
+</map>

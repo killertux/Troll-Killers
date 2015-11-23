@@ -1,0 +1,5 @@
+<map id="Map::load_map" name="Map::load_map">
+<area shape="rect" id="node2" href="$class_map_editor.html#a5937c9b49b1e342c219f8a87d8e3dd7a" title="MapEditor::main_loop" alt="" coords="164,5,312,32"/>
+<area shape="rect" id="node4" href="$class_server.html#ad5ec9462b520e59f7ea831e157ee5e59" title="Server::Server" alt="" coords="185,56,291,83"/>
+<area shape="rect" id="node3" href="$editor_main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="360,5,411,32"/>
+</map>

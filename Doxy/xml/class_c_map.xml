@@ -1,0 +1,270 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.10">
+  <compounddef id="class_c_map" kind="class" language="C++" prot="public">
+    <compoundname>CMap</compoundname>
+    <basecompoundref refid="class_map" prot="public" virt="non-virtual">Map</basecompoundref>
+    <includes refid="_c_map_8hpp" local="no">CMap.hpp</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_c_map_1a932d73c737c71739669e538ca5fc2f8b" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool CMap::drawCircles</definition>
+        <argsstring></argsstring>
+        <name>drawCircles</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/CMap.hpp" line="22" column="1" bodyfile="/home/clemente/projects/Troll-Killers/CMap.hpp" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_c_map_1a57a9b9c9b6d833102dd19852ec3767de" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>CMap::CMap</definition>
+        <argsstring>(std::string name, int max_objects, int length, int width)</argsstring>
+        <name>CMap</name>
+        <param>
+          <type>std::string</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>max_objects</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>length</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>width</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/CMap.hpp" line="24" column="1" bodyfile="/home/clemente/projects/Troll-Killers/CMap.cpp" bodystart="3" bodyend="11"/>
+        <references refid="class_map_1a6cb94f4c91b4634128ccf0219f84d1ab" compoundref="_map_8hpp" startline="35">Map::max_objects</references>
+        <references refid="class_map_1a48caa289073dbeff9c89a02cf89a2cc6" compoundref="_map_8hpp" startline="34">Map::length</references>
+        <references refid="class_map_1a15981e529cd48e04432898f9185683d3" compoundref="_map_8hpp" startline="34">Map::width</references>
+        <references refid="class_map_1a1028fa8db721f28473ba471ae70fde09" compoundref="_map_8hpp" startline="33">Map::objects</references>
+        <references refid="class_map_1ad428bf938f205ed6d1e7af2ddd09b7ce" compoundref="_map_8hpp" startline="36">Map::n_object</references>
+      </memberdef>
+      <memberdef kind="function" id="class_c_map_1a7ad71523562247ed2183e57eaed018e8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>CMap::CMap</definition>
+        <argsstring>()</argsstring>
+        <name>CMap</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/CMap.hpp" line="25" column="1" bodyfile="/home/clemente/projects/Troll-Killers/CMap.cpp" bodystart="13" bodyend="16"/>
+        <references refid="class_map_1ad428bf938f205ed6d1e7af2ddd09b7ce" compoundref="_map_8hpp" startline="36">Map::n_object</references>
+      </memberdef>
+      <memberdef kind="function" id="class_c_map_1abec86992ac01292170213a5d71f17895" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CMap::new_object</definition>
+        <argsstring>(_object object)</argsstring>
+        <name>new_object</name>
+        <param>
+          <type><ref refid="struct__object" kindref="compound">_object</ref></type>
+          <declname>object</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/CMap.hpp" line="26" column="1" bodyfile="/home/clemente/projects/Troll-Killers/CMap.cpp" bodystart="23" bodyend="26"/>
+        <references refid="class_map_1a1028fa8db721f28473ba471ae70fde09" compoundref="_map_8hpp" startline="33">Map::objects</references>
+        <references refid="class_map_1ad428bf938f205ed6d1e7af2ddd09b7ce" compoundref="_map_8hpp" startline="36">Map::n_object</references>
+        <referencedby refid="class_map_editor_1a5937c9b49b1e342c219f8a87d8e3dd7a" compoundref="_map_editor_8cpp" startline="47" endline="132">MapEditor::main_loop</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_c_map_1a9e069b9af7a4a243345dd0bfae24121a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CMap::destroy_object</definition>
+        <argsstring>(int x, int y)</argsstring>
+        <name>destroy_object</name>
+        <param>
+          <type>int</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/CMap.hpp" line="27" column="1" bodyfile="/home/clemente/projects/Troll-Killers/CMap.cpp" bodystart="28" bodyend="35"/>
+        <references refid="class_map_1ad428bf938f205ed6d1e7af2ddd09b7ce" compoundref="_map_8hpp" startline="36">Map::n_object</references>
+        <references refid="class_map_1a1028fa8db721f28473ba471ae70fde09" compoundref="_map_8hpp" startline="33">Map::objects</references>
+        <referencedby refid="class_map_editor_1a5937c9b49b1e342c219f8a87d8e3dd7a" compoundref="_map_editor_8cpp" startline="47" endline="132">MapEditor::main_loop</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_c_map_1adedfa138aa67c2924e79809ad1dac85c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CMap::draw_map</definition>
+        <argsstring>(int x, int y)</argsstring>
+        <name>draw_map</name>
+        <param>
+          <type>int</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/CMap.hpp" line="28" column="1" bodyfile="/home/clemente/projects/Troll-Killers/CMap.cpp" bodystart="37" bodyend="46"/>
+        <references refid="class_map_1ad428bf938f205ed6d1e7af2ddd09b7ce" compoundref="_map_8hpp" startline="36">Map::n_object</references>
+        <references refid="class_map_1a1028fa8db721f28473ba471ae70fde09" compoundref="_map_8hpp" startline="33">Map::objects</references>
+        <references refid="class_map_1a6e7ba89e3a0a05633ae7d27dd400190f" compoundref="_map_8hpp" startline="31">Map::type</references>
+        <references refid="_enums_8hpp_1a842c5e2e69277690b064bf363c017980ae552ab0a96c0384a6e918e726b7f6102" compoundref="_enums_8hpp" startline="6">RECTANGLE</references>
+        <references refid="class_map_1a48caa289073dbeff9c89a02cf89a2cc6" compoundref="_map_8hpp" startline="34">Map::length</references>
+        <references refid="class_map_1a15981e529cd48e04432898f9185683d3" compoundref="_map_8hpp" startline="34">Map::width</references>
+        <references refid="_enums_8hpp_1a842c5e2e69277690b064bf363c017980aa79c827759ea48f0735386c4b1188911" compoundref="_enums_8hpp" startline="5">CIRCLE</references>
+        <referencedby refid="class_client_1a9fbb2f61b005ee6ab3f73b9f449d95eb" compoundref="_client_8cpp" startline="64" endline="264">Client::main_loop</referencedby>
+        <referencedby refid="class_map_editor_1a5937c9b49b1e342c219f8a87d8e3dd7a" compoundref="_map_editor_8cpp" startline="47" endline="132">MapEditor::main_loop</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_c_map_1a6b9de17f30f934892113c02b4f53779d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void CMap::setDrawCircles</definition>
+        <argsstring>(bool drawCircles)</argsstring>
+        <name>setDrawCircles</name>
+        <param>
+          <type>bool</type>
+          <declname>drawCircles</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/CMap.hpp" line="29" column="1" bodyfile="/home/clemente/projects/Troll-Killers/CMap.hpp" bodystart="29" bodyend="29"/>
+        <referencedby refid="class_map_editor_1a293c325d0b53afcf3924f006cdf60363" compoundref="_map_editor_8cpp" startline="10" endline="37">MapEditor::MapEditor</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_c_map_1aa735d6c214fe5c973edf82f3eaa4431e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="struct__object" kindref="compound">_object</ref> *</type>
+        <definition>_object* CMap::getObjects</definition>
+        <argsstring>()</argsstring>
+        <name>getObjects</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/CMap.hpp" line="30" column="1" bodyfile="/home/clemente/projects/Troll-Killers/CMap.hpp" bodystart="30" bodyend="30"/>
+        <references refid="class_map_1a1028fa8db721f28473ba471ae70fde09" compoundref="_map_8hpp" startline="33">Map::objects</references>
+        <referencedby refid="class_client_1a9fbb2f61b005ee6ab3f73b9f449d95eb" compoundref="_client_8cpp" startline="64" endline="264">Client::main_loop</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_c_map_1a1b1e0a1671eb60396ce30c393173a8a2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CMap::getNobject</definition>
+        <argsstring>()</argsstring>
+        <name>getNobject</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/CMap.hpp" line="31" column="1" bodyfile="/home/clemente/projects/Troll-Killers/CMap.hpp" bodystart="31" bodyend="31"/>
+        <references refid="class_map_1ad428bf938f205ed6d1e7af2ddd09b7ce" compoundref="_map_8hpp" startline="36">Map::n_object</references>
+        <referencedby refid="class_client_1a9fbb2f61b005ee6ab3f73b9f449d95eb" compoundref="_client_8cpp" startline="64" endline="264">Client::main_loop</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_c_map_1a9419f5696c22e9569612b79db2872e02" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>CMap::~CMap</definition>
+        <argsstring>()</argsstring>
+        <name>~CMap</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/CMap.hpp" line="32" column="1" bodyfile="/home/clemente/projects/Troll-Killers/CMap.cpp" bodystart="19" bodyend="21"/>
+        <references refid="class_map_1a1028fa8db721f28473ba471ae70fde09" compoundref="_map_8hpp" startline="33">Map::objects</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="111">
+        <label>CMap</label>
+        <link refid="class_c_map"/>
+        <childnode refid="112" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="112">
+        <label>Map</label>
+        <link refid="class_map"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="115">
+        <label>_object</label>
+        <link refid="struct__object"/>
+      </node>
+      <node id="113">
+        <label>CMap</label>
+        <link refid="class_c_map"/>
+        <childnode refid="114" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="114">
+        <label>Map</label>
+        <link refid="class_map"/>
+        <childnode refid="115" relation="usage">
+          <edgelabel>#objects</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/clemente/projects/Troll-Killers/CMap.hpp" line="21" column="1" bodyfile="/home/clemente/projects/Troll-Killers/CMap.hpp" bodystart="21" bodyend="33"/>
+    <listofallmembers>
+      <member refid="class_c_map_1a57a9b9c9b6d833102dd19852ec3767de" prot="public" virt="non-virtual"><scope>CMap</scope><name>CMap</name></member>
+      <member refid="class_c_map_1a7ad71523562247ed2183e57eaed018e8" prot="public" virt="non-virtual"><scope>CMap</scope><name>CMap</name></member>
+      <member refid="class_map_1a958dfc5b0956b8a4cb1ac03b0ccfdce8" prot="public" virt="virtual"><scope>CMap</scope><name>deserialize</name></member>
+      <member refid="class_c_map_1a9e069b9af7a4a243345dd0bfae24121a" prot="public" virt="non-virtual"><scope>CMap</scope><name>destroy_object</name></member>
+      <member refid="class_c_map_1adedfa138aa67c2924e79809ad1dac85c" prot="public" virt="non-virtual"><scope>CMap</scope><name>draw_map</name></member>
+      <member refid="class_c_map_1a932d73c737c71739669e538ca5fc2f8b" prot="private" virt="non-virtual"><scope>CMap</scope><name>drawCircles</name></member>
+      <member refid="class_c_map_1a1b1e0a1671eb60396ce30c393173a8a2" prot="public" virt="non-virtual"><scope>CMap</scope><name>getNobject</name></member>
+      <member refid="class_c_map_1aa735d6c214fe5c973edf82f3eaa4431e" prot="public" virt="non-virtual"><scope>CMap</scope><name>getObjects</name></member>
+      <member refid="class_map_1a48caa289073dbeff9c89a02cf89a2cc6" prot="protected" virt="non-virtual"><scope>CMap</scope><name>length</name></member>
+      <member refid="class_map_1a259bb70652389b9ecf0bc76ceca656a5" prot="public" virt="virtual"><scope>CMap</scope><name>load_map</name></member>
+      <member refid="class_map_1a0f5ad0fd4563497b4214038cbca8b582" prot="public" virt="non-virtual"><scope>CMap</scope><name>Map</name></member>
+      <member refid="class_map_1a6cb94f4c91b4634128ccf0219f84d1ab" prot="protected" virt="non-virtual"><scope>CMap</scope><name>max_objects</name></member>
+      <member refid="class_map_1ad428bf938f205ed6d1e7af2ddd09b7ce" prot="protected" virt="non-virtual"><scope>CMap</scope><name>n_object</name></member>
+      <member refid="class_map_1abe0a2d1af671ad7ca47651a8d207b23c" prot="protected" virt="non-virtual"><scope>CMap</scope><name>name</name></member>
+      <member refid="class_c_map_1abec86992ac01292170213a5d71f17895" prot="public" virt="non-virtual"><scope>CMap</scope><name>new_object</name></member>
+      <member refid="class_map_1a1028fa8db721f28473ba471ae70fde09" prot="protected" virt="non-virtual"><scope>CMap</scope><name>objects</name></member>
+      <member refid="class_map_1afdd22d2739acb6a6eaf8864ee090107a" prot="public" virt="virtual"><scope>CMap</scope><name>save_map</name></member>
+      <member refid="class_map_1ac85777e48836aa23c8c7adac7ea50ea8" prot="public" virt="virtual"><scope>CMap</scope><name>serialize</name></member>
+      <member refid="class_c_map_1a6b9de17f30f934892113c02b4f53779d" prot="public" virt="non-virtual"><scope>CMap</scope><name>setDrawCircles</name></member>
+      <member refid="class_map_1a6e7ba89e3a0a05633ae7d27dd400190f" prot="protected" virt="non-virtual"><scope>CMap</scope><name>type</name></member>
+      <member refid="class_map_1a15981e529cd48e04432898f9185683d3" prot="protected" virt="non-virtual"><scope>CMap</scope><name>width</name></member>
+      <member refid="class_c_map_1a9419f5696c22e9569612b79db2872e02" prot="public" virt="non-virtual"><scope>CMap</scope><name>~CMap</name></member>
+      <member refid="class_map_1aa403fbe09394ccf39747588f5168e3b2" prot="public" virt="non-virtual"><scope>CMap</scope><name>~Map</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,229 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.10">
+  <compounddef id="_pistol_8hpp" kind="file" language="C++">
+    <compoundname>Pistol.hpp</compoundname>
+    <includes refid="_weapons_8hpp" local="yes">Weapons.hpp</includes>
+    <includes local="no">iostream</includes>
+    <includes local="no">math.h</includes>
+    <includedby refid="_c_character_8hpp" local="yes">/home/clemente/projects/Troll-Killers/CCharacter.hpp</includedby>
+    <includedby refid="_pistol_8cpp" local="yes">/home/clemente/projects/Troll-Killers/Pistol.cpp</includedby>
+    <incdepgraph>
+      <node id="1756">
+        <label>IGObject.hpp</label>
+        <link refid="_i_g_object_8hpp"/>
+        <childnode refid="1752" relation="include">
+        </childnode>
+        <childnode refid="1757" relation="include">
+        </childnode>
+      </node>
+      <node id="1746">
+        <label>/home/clemente/projects/Troll-Killers/Pistol.hpp</label>
+        <link refid="Pistol.hpp"/>
+        <childnode refid="1747" relation="include">
+        </childnode>
+        <childnode refid="1765" relation="include">
+        </childnode>
+        <childnode refid="1761" relation="include">
+        </childnode>
+      </node>
+      <node id="1754">
+        <label>CProjectile.hpp</label>
+        <link refid="_c_projectile_8hpp"/>
+        <childnode refid="1755" relation="include">
+        </childnode>
+        <childnode refid="1748" relation="include">
+        </childnode>
+        <childnode refid="1762" relation="include">
+        </childnode>
+        <childnode refid="1761" relation="include">
+        </childnode>
+      </node>
+      <node id="1749">
+        <label>allegro5/allegro_image.h</label>
+      </node>
+      <node id="1758">
+        <label>stdint.h</label>
+      </node>
+      <node id="1753">
+        <label>cmath</label>
+      </node>
+      <node id="1752">
+        <label>Enums.hpp</label>
+        <link refid="_enums_8hpp"/>
+      </node>
+      <node id="1760">
+        <label>_object.hpp</label>
+        <link refid="__object_8hpp"/>
+        <childnode refid="1758" relation="include">
+        </childnode>
+      </node>
+      <node id="1766">
+        <label>string</label>
+      </node>
+      <node id="1762">
+        <label>allegro5/allegro_primitives.h</label>
+      </node>
+      <node id="1755">
+        <label>Projectile.hpp</label>
+        <link refid="_projectile_8hpp"/>
+        <childnode refid="1756" relation="include">
+        </childnode>
+        <childnode refid="1760" relation="include">
+        </childnode>
+        <childnode refid="1761" relation="include">
+        </childnode>
+      </node>
+      <node id="1748">
+        <label>allegro5/allegro.h</label>
+      </node>
+      <node id="1768">
+        <label>cstdio</label>
+      </node>
+      <node id="1757">
+        <label>_data.hpp</label>
+        <link refid="__data_8hpp"/>
+        <childnode refid="1758" relation="include">
+        </childnode>
+        <childnode refid="1759" relation="include">
+        </childnode>
+      </node>
+      <node id="1747">
+        <label>Weapons.hpp</label>
+        <link refid="_weapons_8hpp"/>
+        <childnode refid="1748" relation="include">
+        </childnode>
+        <childnode refid="1749" relation="include">
+        </childnode>
+        <childnode refid="1750" relation="include">
+        </childnode>
+        <childnode refid="1751" relation="include">
+        </childnode>
+        <childnode refid="1752" relation="include">
+        </childnode>
+        <childnode refid="1753" relation="include">
+        </childnode>
+        <childnode refid="1754" relation="include">
+        </childnode>
+        <childnode refid="1763" relation="include">
+        </childnode>
+        <childnode refid="1767" relation="include">
+        </childnode>
+        <childnode refid="1768" relation="include">
+        </childnode>
+      </node>
+      <node id="1763">
+        <label>Connection.hpp</label>
+        <link refid="_connection_8hpp"/>
+        <childnode refid="1764" relation="include">
+        </childnode>
+        <childnode refid="1765" relation="include">
+        </childnode>
+        <childnode refid="1766" relation="include">
+        </childnode>
+        <childnode refid="1759" relation="include">
+        </childnode>
+      </node>
+      <node id="1767">
+        <label>sstream</label>
+      </node>
+      <node id="1761">
+        <label>math.h</label>
+      </node>
+      <node id="1765">
+        <label>iostream</label>
+      </node>
+      <node id="1751">
+        <label>Defines.hpp</label>
+        <link refid="_defines_8hpp"/>
+      </node>
+      <node id="1764">
+        <label>enet/enet.h</label>
+      </node>
+      <node id="1759">
+        <label>cstring</label>
+      </node>
+      <node id="1750">
+        <label>allegro5/allegro_audio.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1769">
+        <label>/home/clemente/projects/Troll-Killers/Pistol.hpp</label>
+        <link refid="Pistol.hpp"/>
+        <childnode refid="1770" relation="include">
+        </childnode>
+        <childnode refid="1777" relation="include">
+        </childnode>
+      </node>
+      <node id="1771">
+        <label>/home/clemente/projects/Troll-Killers/CCharacter.cpp</label>
+        <link refid="_c_character_8cpp"/>
+      </node>
+      <node id="1774">
+        <label>/home/clemente/projects/Troll-Killers/MenuManager.hpp</label>
+        <link refid="_menu_manager_8hpp"/>
+        <childnode refid="1772" relation="include">
+        </childnode>
+        <childnode refid="1775" relation="include">
+        </childnode>
+      </node>
+      <node id="1773">
+        <label>/home/clemente/projects/Troll-Killers/Client.cpp</label>
+        <link refid="_client_8cpp"/>
+      </node>
+      <node id="1772">
+        <label>/home/clemente/projects/Troll-Killers/Client.hpp</label>
+        <link refid="_client_8hpp"/>
+        <childnode refid="1773" relation="include">
+        </childnode>
+        <childnode refid="1774" relation="include">
+        </childnode>
+        <childnode refid="1776" relation="include">
+        </childnode>
+      </node>
+      <node id="1777">
+        <label>/home/clemente/projects/Troll-Killers/Pistol.cpp</label>
+        <link refid="_pistol_8cpp"/>
+      </node>
+      <node id="1770">
+        <label>/home/clemente/projects/Troll-Killers/CCharacter.hpp</label>
+        <link refid="_c_character_8hpp"/>
+        <childnode refid="1771" relation="include">
+        </childnode>
+        <childnode refid="1772" relation="include">
+        </childnode>
+      </node>
+      <node id="1776">
+        <label>/home/clemente/projects/Troll-Killers/mainClient.cpp</label>
+        <link refid="main_client_8cpp"/>
+      </node>
+      <node id="1775">
+        <label>/home/clemente/projects/Troll-Killers/MenuManager.cpp</label>
+        <link refid="_menu_manager_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_pistol" prot="public">Pistol</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>PISTOL_HPP</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PISTOL_HPP</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_weapons_8hpp" kindref="compound">Weapons.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;iostream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;math.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8" refid="class_pistol" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_pistol" kindref="compound">Pistol</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="class_weapons" kindref="compound">Weapons</ref>{</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>shooted;</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_pistol_1a0715c5243c875aeb8d8114954a463b47" kindref="member">Pistol</ref>();</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_pistol_1a0e99963f771cc143c32a0c72158e74f1" kindref="member">shoot</ref>(ALLEGRO_MOUSE_STATE<sp/>&amp;mouseState,<ref refid="class_connection" kindref="compound">Connection</ref><sp/>*conn);</highlight></codeline>
+<codeline lineno="13"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/home/clemente/projects/Troll-Killers/Pistol.hpp"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,133 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.10">
+  <compounddef id="_cursor_8hpp" kind="file" language="C++">
+    <compoundname>Cursor.hpp</compoundname>
+    <includes local="no">allegro5/allegro.h</includes>
+    <includes local="no">allegro5/allegro_primitives.h</includes>
+    <includes refid="_defines_8hpp" local="yes">Defines.hpp</includes>
+    <includes refid="_enums_8hpp" local="yes">Enums.hpp</includes>
+    <includes refid="__object_8hpp" local="yes">_object.hpp</includes>
+    <includedby refid="_cursor_8cpp" local="yes">/home/clemente/projects/Troll-Killers/Cursor.cpp</includedby>
+    <includedby refid="_map_editor_8hpp" local="yes">/home/clemente/projects/Troll-Killers/MapEditor.hpp</includedby>
+    <incdepgraph>
+      <node id="1366">
+        <label>stdint.h</label>
+      </node>
+      <node id="1364">
+        <label>Enums.hpp</label>
+        <link refid="_enums_8hpp"/>
+      </node>
+      <node id="1365">
+        <label>_object.hpp</label>
+        <link refid="__object_8hpp"/>
+        <childnode refid="1366" relation="include">
+        </childnode>
+      </node>
+      <node id="1362">
+        <label>allegro5/allegro_primitives.h</label>
+      </node>
+      <node id="1361">
+        <label>allegro5/allegro.h</label>
+      </node>
+      <node id="1360">
+        <label>/home/clemente/projects/Troll-Killers/Cursor.hpp</label>
+        <link refid="Cursor.hpp"/>
+        <childnode refid="1361" relation="include">
+        </childnode>
+        <childnode refid="1362" relation="include">
+        </childnode>
+        <childnode refid="1363" relation="include">
+        </childnode>
+        <childnode refid="1364" relation="include">
+        </childnode>
+        <childnode refid="1365" relation="include">
+        </childnode>
+      </node>
+      <node id="1363">
+        <label>Defines.hpp</label>
+        <link refid="_defines_8hpp"/>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1369">
+        <label>/home/clemente/projects/Troll-Killers/MapEditor.hpp</label>
+        <link refid="_map_editor_8hpp"/>
+        <childnode refid="1370" relation="include">
+        </childnode>
+        <childnode refid="1371" relation="include">
+        </childnode>
+      </node>
+      <node id="1370">
+        <label>/home/clemente/projects/Troll-Killers/editorMain.cpp</label>
+        <link refid="editor_main_8cpp"/>
+      </node>
+      <node id="1368">
+        <label>/home/clemente/projects/Troll-Killers/Cursor.cpp</label>
+        <link refid="_cursor_8cpp"/>
+      </node>
+      <node id="1371">
+        <label>/home/clemente/projects/Troll-Killers/MapEditor.cpp</label>
+        <link refid="_map_editor_8cpp"/>
+      </node>
+      <node id="1367">
+        <label>/home/clemente/projects/Troll-Killers/Cursor.hpp</label>
+        <link refid="Cursor.hpp"/>
+        <childnode refid="1368" relation="include">
+        </childnode>
+        <childnode refid="1369" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_cursor" prot="public">Cursor</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>CURSOR_HPP</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CURSOR_HPP</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;allegro5/allegro.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;allegro5/allegro_primitives.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_defines_8hpp" kindref="compound">Defines.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_enums_8hpp" kindref="compound">Enums.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="__object_8hpp" kindref="compound">_object.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10" refid="class_cursor" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_cursor" kindref="compound">Cursor</ref>{</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>x,y;</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>resX,resY;</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>timer;</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>cTimer;</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>lengthInc;</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>widthInc;</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_enums_8hpp_1a224b9163917ac32fc95a60d8c1eec3aa" kindref="member">Direction</ref><sp/>dir;</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>moved;</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_enums_8hpp_1a9c13bb5b1d69698f9b47900990eaa598" kindref="member">Team</ref><sp/>team;</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct__object" kindref="compound">_object</ref><sp/>objCursor;</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_enums_8hpp_1a842c5e2e69277690b064bf363c017980" kindref="member">ObjectType</ref><sp/>objSelected;</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_cursor_1a3cbfae4aa46ddd61a5a8569566899cc2" kindref="member">Cursor</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>x,</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>y,</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>resX,</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>resY,</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>timer);</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_cursor_1a5621772fb10182e95f88d7227f670de4" kindref="member">draw_cursor</ref>();</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_cursor_1a475f603c81c80a68499051bc224e7bb8" kindref="member">move_cursor</ref>(ALLEGRO_KEYBOARD_STATE<sp/>keyState);</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="31" refid="class_cursor_1a32172f293dc42c6256ea95241ac1f1b6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_cursor_1a32172f293dc42c6256ea95241ac1f1b6" kindref="member">getX</ref>(){</highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>x;}</highlight></codeline>
+<codeline lineno="32" refid="class_cursor_1a737cccaafed3d0a03977b9c5f4cfe7cf" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_cursor_1a737cccaafed3d0a03977b9c5f4cfe7cf" kindref="member">getY</ref>(){</highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>y;}</highlight></codeline>
+<codeline lineno="33" refid="class_cursor_1a3f54d9a590dfb9fca1bd390b8a9c7e54" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_cursor_1a3f54d9a590dfb9fca1bd390b8a9c7e54" kindref="member">setX</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>x){this-&gt;x=x;}</highlight></codeline>
+<codeline lineno="34" refid="class_cursor_1ab2314c3d20498cb65a66f5be6c2e74d5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_cursor_1ab2314c3d20498cb65a66f5be6c2e74d5" kindref="member">setY</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>y){this-&gt;y=y;}</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_cursor_1adc6a92102e4c6a08473b0b2745a8ebc4" kindref="member">change_cursor</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i);</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_cursor_1a33ed388e90bb4af04e239b684f156587" kindref="member">change_team</ref>();</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_cursor_1ac01596d8124ec0d1d92b88212ca858e5" kindref="member">increase_object</ref>(<ref refid="_enums_8hpp_1a224b9163917ac32fc95a60d8c1eec3aa" kindref="member">Direction</ref><sp/>incDir);</highlight></codeline>
+<codeline lineno="39" refid="class_cursor_1aaaa6b8912141e20abde48531eec76bba" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct__object" kindref="compound">_object</ref><sp/><ref refid="class_cursor_1aaaa6b8912141e20abde48531eec76bba" kindref="member">getObject</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>mapX,</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>mapY){objCursor.<ref refid="struct__object_1adb6e178c2aa0bc48f5db6d85106c1680" kindref="member">x</ref>+=mapX;objCursor.<ref refid="struct__object_1a48f88904fef6cb2f4ea22029174d76bc" kindref="member">y</ref>+=mapY;</highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>objCursor;}</highlight></codeline>
+<codeline lineno="40" refid="class_cursor_1a166a2e5d9dda3e7c4b1b552a019b7f41" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_cursor_1a166a2e5d9dda3e7c4b1b552a019b7f41" kindref="member">object_selected</ref>(){</highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(objSelected!=<ref refid="_enums_8hpp_1a842c5e2e69277690b064bf363c017980ac157bdf0b85a40d2619cbc8bc1ae5fe2" kindref="member">NONE</ref>)?</highlight><highlight class="keyword">true</highlight><highlight class="normal">:</highlight><highlight class="keyword">false</highlight><highlight class="normal">;}</highlight></codeline>
+<codeline lineno="41"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/home/clemente/projects/Troll-Killers/Cursor.hpp"/>
+  </compounddef>
+</doxygen>

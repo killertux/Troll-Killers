@@ -1,0 +1,317 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.10">
+  <compounddef id="class_server" kind="class" language="C++" prot="public">
+    <compoundname>Server</compoundname>
+    <includes refid="_server_8hpp" local="no">Server.hpp</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_server_1a606bb36ed5bacc5026aea6f6bece3619" prot="private" static="no" mutable="no">
+        <type><ref refid="class_connection" kindref="compound">Connection</ref></type>
+        <definition>Connection Server::conn</definition>
+        <argsstring></argsstring>
+        <name>conn</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/Server.hpp" line="27" column="1" bodyfile="/home/clemente/projects/Troll-Killers/Server.hpp" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_server_1a37c062aaf37464842fefcb23a77bf5b9" prot="private" static="no" mutable="no">
+        <type>boost::thread *</type>
+        <definition>boost::thread* Server::writeThread</definition>
+        <argsstring></argsstring>
+        <name>writeThread</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/Server.hpp" line="28" column="1" bodyfile="/home/clemente/projects/Troll-Killers/Server.hpp" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_server_1a47b1e75d838be2d58750c906fc035156" prot="private" static="no" mutable="no">
+        <type>boost::thread *</type>
+        <definition>boost::thread* Server::cmdThread</definition>
+        <argsstring></argsstring>
+        <name>cmdThread</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/Server.hpp" line="29" column="1" bodyfile="/home/clemente/projects/Troll-Killers/Server.hpp" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_server_1a9d2677701eed2752e8930ba24bf09753" prot="private" static="no" mutable="no">
+        <type>boost::mutex</type>
+        <definition>boost::mutex Server::dataMu</definition>
+        <argsstring></argsstring>
+        <name>dataMu</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/Server.hpp" line="30" column="1" bodyfile="/home/clemente/projects/Troll-Killers/Server.hpp" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_server_1a4a2cc61b0a844c5094949d2675bb078d" prot="private" static="no" mutable="no">
+        <type>boost::mutex</type>
+        <definition>boost::mutex Server::newMu</definition>
+        <argsstring></argsstring>
+        <name>newMu</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/Server.hpp" line="31" column="1" bodyfile="/home/clemente/projects/Troll-Killers/Server.hpp" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_server_1ac4c0b9f27b6bb91d93e978e4b4e9ca40" prot="private" static="no" mutable="no">
+        <type>boost::mutex</type>
+        <definition>boost::mutex Server::cmdMu</definition>
+        <argsstring></argsstring>
+        <name>cmdMu</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/Server.hpp" line="32" column="1" bodyfile="/home/clemente/projects/Troll-Killers/Server.hpp" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_server_1ab2b175f50ef367dad55a931be625b6b8" prot="private" static="no" mutable="no">
+        <type><ref refid="class_s_map" kindref="compound">SMap</ref></type>
+        <definition>SMap Server::map</definition>
+        <argsstring></argsstring>
+        <name>map</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/Server.hpp" line="34" column="1" bodyfile="/home/clemente/projects/Troll-Killers/Server.hpp" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_server_1a536aece90c3305edc1fc3876956984ce" prot="private" static="no" mutable="no">
+        <type><ref refid="class_s_character" kindref="compound">SCharacter</ref> **</type>
+        <definition>SCharacter** Server::players</definition>
+        <argsstring></argsstring>
+        <name>players</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/Server.hpp" line="35" column="1" bodyfile="/home/clemente/projects/Troll-Killers/Server.hpp" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_server_1a08b27061b1d869d9a547248429b288e6" prot="private" static="no" mutable="no">
+        <type><ref refid="class_configuration" kindref="compound">Configuration</ref></type>
+        <definition>Configuration Server::config</definition>
+        <argsstring></argsstring>
+        <name>config</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/Server.hpp" line="36" column="1" bodyfile="/home/clemente/projects/Troll-Killers/Server.hpp" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_server_1ae8ec2d4d5e08cf031f0c781faee820a0" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Server::redTeamN</definition>
+        <argsstring></argsstring>
+        <name>redTeamN</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/Server.hpp" line="38" column="1" bodyfile="/home/clemente/projects/Troll-Killers/Server.hpp" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_server_1a4bf9d78abea2fc89cd5faa5f1dbfe10c" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Server::blueTeamN</definition>
+        <argsstring></argsstring>
+        <name>blueTeamN</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/Server.hpp" line="39" column="1" bodyfile="/home/clemente/projects/Troll-Killers/Server.hpp" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_server_1a926c9dae229a62b6d33fdbb41dca6d82" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Server::port</definition>
+        <argsstring></argsstring>
+        <name>port</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/Server.hpp" line="40" column="1" bodyfile="/home/clemente/projects/Troll-Killers/Server.hpp" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_server_1a6db125a7c251be8475df6536687491de" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Server::users</definition>
+        <argsstring></argsstring>
+        <name>users</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/Server.hpp" line="40" column="1" bodyfile="/home/clemente/projects/Troll-Killers/Server.hpp" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_server_1a1ea220d236455b0847203b6f01e6ae13" prot="private" static="no" mutable="no">
+        <type>std::stack&lt; <ref refid="struct__msg" kindref="compound">_msg</ref> &gt;</type>
+        <definition>std::stack&lt;_msg&gt; Server::msgs</definition>
+        <argsstring></argsstring>
+        <name>msgs</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/Server.hpp" line="42" column="1" bodyfile="/home/clemente/projects/Troll-Killers/Server.hpp" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_server_1a6082277808dd745814bc1c199a03e63a" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Server::new_user</definition>
+        <argsstring>(int id)</argsstring>
+        <name>new_user</name>
+        <param>
+          <type>int</type>
+          <declname>id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/Server.hpp" line="43" column="1" bodyfile="/home/clemente/projects/Troll-Killers/Server.cpp" bodystart="70" bodyend="206"/>
+      </memberdef>
+      <memberdef kind="function" id="class_server_1aa167afe77bf791577c0b33b0a715fafa" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Server::user_handle</definition>
+        <argsstring>()</argsstring>
+        <name>user_handle</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/Server.hpp" line="44" column="1" bodyfile="/home/clemente/projects/Troll-Killers/Server.cpp" bodystart="208" bodyend="307"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_server_1ad5ec9462b520e59f7ea831e157ee5e59" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Server::Server</definition>
+        <argsstring>()</argsstring>
+        <name>Server</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/Server.hpp" line="46" column="1" bodyfile="/home/clemente/projects/Troll-Killers/Server.cpp" bodystart="3" bodyend="26"/>
+        <references refid="class_configuration_1aed21dbeb0bcb1de61389deee612d9074" compoundref="_configuration_8cpp" startline="38" endline="51">Configuration::config_load</references>
+        <references refid="class_configuration_1a8a66e437127dfe28d70690d53f6dfd7f" compoundref="_configuration_8cpp" startline="89" endline="98">Configuration::config_get</references>
+        <references refid="class_connection_1acdb1c6f1844698b2688cb611f7029d7c" compoundref="_connection_8cpp" startline="27" endline="35">Connection::create_server</references>
+        <references refid="class_map_1a259bb70652389b9ecf0bc76ceca656a5" compoundref="_map_8cpp" startline="39" endline="65">Map::load_map</references>
+        <references refid="class_s_map_1a6ef62d8e6b17c21f21c535a4139e230e" compoundref="_s_map_8cpp" startline="3" endline="18">SMap::calculateSpawn</references>
+      </memberdef>
+      <memberdef kind="function" id="class_server_1a4b3aa2579cb1c8cd1d069582c14d0fa6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Server::~Server</definition>
+        <argsstring>()</argsstring>
+        <name>~Server</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/Server.hpp" line="47" column="1" bodyfile="/home/clemente/projects/Troll-Killers/Server.cpp" bodystart="28" bodyend="31"/>
+      </memberdef>
+      <memberdef kind="function" id="class_server_1a47beb8398c78f8ce814d8f3961880add" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Server::main_loop</definition>
+        <argsstring>()</argsstring>
+        <name>main_loop</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/Server.hpp" line="48" column="1" bodyfile="/home/clemente/projects/Troll-Killers/Server.cpp" bodystart="33" bodyend="68"/>
+        <references refid="class_connection_1a67a66948fd3b286a0a4faaaedb69e56e" compoundref="_connection_8cpp" startline="68" endline="91">Connection::event_service</references>
+        <references refid="_defines_8hpp_1ac92ca5ab87034a348decad7ee8d4bd1b" compoundref="_defines_8hpp" startline="7">FPS</references>
+        <references refid="class_connection_1ab0db0e5c8463aca4ec668107b1a46349" compoundref="_connection_8cpp" startline="104" endline="108">Connection::event_type_receive</references>
+        <references refid="struct__msg_1a470db8b42735763fc80e93590da2eaf4" compoundref="_server_8hpp" startline="21">_msg::buffer</references>
+        <references refid="class_connection_1a2431e1403029cf660aa897eba8ec978a" compoundref="_connection_8hpp" startline="56" endline="56">Connection::getPacketData</references>
+        <references refid="struct__msg_1a5319cda008478b61e06ddf06c2cf166e" compoundref="_server_8hpp" startline="22">_msg::id</references>
+        <references refid="class_connection_1a6a9cbc7d881550fcc0e768e3ee7bf171" compoundref="_connection_8hpp" startline="57" endline="57">Connection::getPeerId</references>
+        <references refid="class_connection_1a75f10c526b51675497a81e1f2c26ba9e" compoundref="_connection_8cpp" startline="98" endline="102">Connection::event_type_connect</references>
+        <references refid="class_connection_1a58f2ca9fedd8369ebdf61725f31123ef" compoundref="_connection_8cpp" startline="110" endline="114">Connection::event_type_disconnect</references>
+        <references refid="class_s_character_1a4384f9f73da73ddb603d4d85fdae00d7" compoundref="_s_character_8hpp" startline="30" endline="30">SCharacter::getTeam</references>
+        <references refid="_enums_8hpp_1a9c13bb5b1d69698f9b47900990eaa598af80f9a890089d211842d59625e561f88" compoundref="_enums_8hpp" startline="23">RED</references>
+        <references refid="struct__data_1afa7c65aa86c5c877d1b23746b27f7ccd" compoundref="__data_8hpp" startline="11">_data::type</references>
+        <references refid="_defines_8hpp_1a2141c224a3cefce061389c2790c8108e" compoundref="_defines_8hpp" startline="22">PROTOCOL_DISCONNECT</references>
+        <references refid="struct__data_1abcb37fabf89158d59a0469a376d2d5f8" compoundref="__data_8hpp" startline="12">_data::buffer</references>
+        <references refid="class_connection_1a2d554f43b1e9d4a71acdd1ba297fc11b" compoundref="_connection_8cpp" startline="53" endline="59">Connection::broadcast_packet</references>
+        <referencedby refid="main_server_8cpp_1ae66f6b31b5ad750f1fe042a706a4e3d4" compoundref="main_server_8cpp" startline="3" endline="6">main</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="179">
+        <label>Server</label>
+        <link refid="class_server"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/clemente/projects/Troll-Killers/Server.hpp" line="25" column="1" bodyfile="/home/clemente/projects/Troll-Killers/Server.hpp" bodystart="25" bodyend="49"/>
+    <listofallmembers>
+      <member refid="class_server_1a4bf9d78abea2fc89cd5faa5f1dbfe10c" prot="private" virt="non-virtual"><scope>Server</scope><name>blueTeamN</name></member>
+      <member refid="class_server_1ac4c0b9f27b6bb91d93e978e4b4e9ca40" prot="private" virt="non-virtual"><scope>Server</scope><name>cmdMu</name></member>
+      <member refid="class_server_1a47b1e75d838be2d58750c906fc035156" prot="private" virt="non-virtual"><scope>Server</scope><name>cmdThread</name></member>
+      <member refid="class_server_1a08b27061b1d869d9a547248429b288e6" prot="private" virt="non-virtual"><scope>Server</scope><name>config</name></member>
+      <member refid="class_server_1a606bb36ed5bacc5026aea6f6bece3619" prot="private" virt="non-virtual"><scope>Server</scope><name>conn</name></member>
+      <member refid="class_server_1a9d2677701eed2752e8930ba24bf09753" prot="private" virt="non-virtual"><scope>Server</scope><name>dataMu</name></member>
+      <member refid="class_server_1a47beb8398c78f8ce814d8f3961880add" prot="public" virt="non-virtual"><scope>Server</scope><name>main_loop</name></member>
+      <member refid="class_server_1ab2b175f50ef367dad55a931be625b6b8" prot="private" virt="non-virtual"><scope>Server</scope><name>map</name></member>
+      <member refid="class_server_1a1ea220d236455b0847203b6f01e6ae13" prot="private" virt="non-virtual"><scope>Server</scope><name>msgs</name></member>
+      <member refid="class_server_1a6082277808dd745814bc1c199a03e63a" prot="private" virt="non-virtual"><scope>Server</scope><name>new_user</name></member>
+      <member refid="class_server_1a4a2cc61b0a844c5094949d2675bb078d" prot="private" virt="non-virtual"><scope>Server</scope><name>newMu</name></member>
+      <member refid="class_server_1a536aece90c3305edc1fc3876956984ce" prot="private" virt="non-virtual"><scope>Server</scope><name>players</name></member>
+      <member refid="class_server_1a926c9dae229a62b6d33fdbb41dca6d82" prot="private" virt="non-virtual"><scope>Server</scope><name>port</name></member>
+      <member refid="class_server_1ae8ec2d4d5e08cf031f0c781faee820a0" prot="private" virt="non-virtual"><scope>Server</scope><name>redTeamN</name></member>
+      <member refid="class_server_1ad5ec9462b520e59f7ea831e157ee5e59" prot="public" virt="non-virtual"><scope>Server</scope><name>Server</name></member>
+      <member refid="class_server_1aa167afe77bf791577c0b33b0a715fafa" prot="private" virt="non-virtual"><scope>Server</scope><name>user_handle</name></member>
+      <member refid="class_server_1a6db125a7c251be8475df6536687491de" prot="private" virt="non-virtual"><scope>Server</scope><name>users</name></member>
+      <member refid="class_server_1a37c062aaf37464842fefcb23a77bf5b9" prot="private" virt="non-virtual"><scope>Server</scope><name>writeThread</name></member>
+      <member refid="class_server_1a4b3aa2579cb1c8cd1d069582c14d0fa6" prot="public" virt="non-virtual"><scope>Server</scope><name>~Server</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

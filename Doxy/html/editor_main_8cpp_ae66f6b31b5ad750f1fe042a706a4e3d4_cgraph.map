@@ -1,0 +1,20 @@
+<map id="main" name="main">
+<area shape="rect" id="node2" href="$class_map_editor.html#a5937c9b49b1e342c219f8a87d8e3dd7a" title="MapEditor::main_loop" alt="" coords="104,411,252,437"/>
+<area shape="rect" id="node3" href="$class_cursor.html#adc6a92102e4c6a08473b0b2745a8ebc4" title="Cursor::change_cursor" alt="" coords="303,5,457,32"/>
+<area shape="rect" id="node4" href="$class_cursor.html#ac01596d8124ec0d1d92b88212ca858e5" title="Cursor::increase_object" alt="" coords="300,56,460,83"/>
+<area shape="rect" id="node5" href="$class_cursor.html#a166a2e5d9dda3e7c4b1b552a019b7f41" title="Cursor::object_selected" alt="" coords="300,107,460,133"/>
+<area shape="rect" id="node6" href="$class_c_map.html#abec86992ac01292170213a5d71f17895" title="CMap::new_object" alt="" coords="315,157,445,184"/>
+<area shape="rect" id="node7" href="$class_cursor.html#aaaa6b8912141e20abde48531eec76bba" title="Cursor::getObject" alt="" coords="317,208,443,235"/>
+<area shape="rect" id="node8" href="$class_c_map.html#a9e069b9af7a4a243345dd0bfae24121a" title="CMap::destroy_object" alt="" coords="305,259,455,285"/>
+<area shape="rect" id="node9" href="$class_cursor.html#a32172f293dc42c6256ea95241ac1f1b6" title="Cursor::getX" alt="" coords="332,309,428,336"/>
+<area shape="rect" id="node10" href="$class_cursor.html#a737cccaafed3d0a03977b9c5f4cfe7cf" title="Cursor::getY" alt="" coords="332,360,428,387"/>
+<area shape="rect" id="node11" href="$class_cursor.html#a33ed388e90bb4af04e239b684f156587" title="Cursor::change_team" alt="" coords="307,411,453,437"/>
+<area shape="rect" id="node12" href="$class_map.html#afdd22d2739acb6a6eaf8864ee090107a" title="Map::save_map" alt="" coords="323,461,437,488"/>
+<area shape="rect" id="node13" href="$class_map.html#a259bb70652389b9ecf0bc76ceca656a5" title="Map::load_map" alt="" coords="325,512,435,539"/>
+<area shape="rect" id="node14" href="$class_cursor.html#a475f603c81c80a68499051bc224e7bb8" title="Cursor::move_cursor" alt="" coords="308,563,452,589"/>
+<area shape="rect" id="node15" href="$class_cursor.html#a3f54d9a590dfb9fca1bd390b8a9c7e54" title="Cursor::setX" alt="" coords="332,613,428,640"/>
+<area shape="rect" id="node16" href="$class_cursor.html#ab2314c3d20498cb65a66f5be6c2e74d5" title="Cursor::setY" alt="" coords="332,664,428,691"/>
+<area shape="rect" id="node17" href="$class_c_map.html#adedfa138aa67c2924e79809ad1dac85c" title="CMap::draw_map" alt="" coords="317,715,443,741"/>
+<area shape="rect" id="node18" href="$class_cursor.html#a5621772fb10182e95f88d7227f670de4" title="Cursor::draw_cursor" alt="" coords="310,765,450,792"/>
+<area shape="rect" id="node19" href="$class_map_editor.html#ac956a51214ea40b1423156efda3e6e11" title="MapEditor::draw_grid" alt="" coords="307,816,453,843"/>
+</map>

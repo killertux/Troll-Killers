@@ -1,0 +1,197 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.10">
+  <compounddef id="_menu_8cpp" kind="file" language="C++">
+    <compoundname>Menu.cpp</compoundname>
+    <includes refid="_menu_8hpp" local="yes">Menu.hpp</includes>
+    <incdepgraph>
+      <node id="1628">
+        <label>allegro5/allegro_image.h</label>
+      </node>
+      <node id="1627">
+        <label>allegro5/allegro.h</label>
+      </node>
+      <node id="1626">
+        <label>Menu.hpp</label>
+        <link refid="_menu_8hpp"/>
+        <childnode refid="1627" relation="include">
+        </childnode>
+        <childnode refid="1628" relation="include">
+        </childnode>
+        <childnode refid="1629" relation="include">
+        </childnode>
+        <childnode refid="1630" relation="include">
+        </childnode>
+      </node>
+      <node id="1630">
+        <label>iostream</label>
+      </node>
+      <node id="1629">
+        <label>Defines.hpp</label>
+        <link refid="_defines_8hpp"/>
+      </node>
+      <node id="1625">
+        <label>/home/clemente/projects/Troll-Killers/Menu.cpp</label>
+        <link refid="Menu.cpp"/>
+        <childnode refid="1626" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_menu_8hpp" kindref="compound">Menu.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3" refid="class_menu_princ_1a88bfd033f9794676fa2ccb380d7edf9c" refkind="member"><highlight class="normal"><sp/><ref refid="class_menu_princ_1a88bfd033f9794676fa2ccb380d7edf9c" kindref="member">MenuPrinc::MenuPrinc</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>res_x,</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>res_y){</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;res_x=res_x;</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;res_y=res_y;</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"><sp/><sp/><sp/><sp/>fundo<sp/>=<sp/>al_load_bitmap(</highlight><highlight class="stringliteral">&quot;Menu_Img/fundo1.jpg&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><sp/><sp/><sp/><sp/>bot1<sp/>=<sp/>al_load_bitmap(</highlight><highlight class="stringliteral">&quot;Menu_Img/connect1.jpg&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/>bot2<sp/>=<sp/>al_load_bitmap(</highlight><highlight class="stringliteral">&quot;Menu_Img/quit1.jpg&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/>bot1_s<sp/>=<sp/>al_load_bitmap(</highlight><highlight class="stringliteral">&quot;Menu_Img/connect2.jpg&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/>bot2_s<sp/>=<sp/>al_load_bitmap(</highlight><highlight class="stringliteral">&quot;Menu_Img/quit2.jpg&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(fundo<sp/>==<sp/>NULL<sp/>||<sp/>bot1<sp/>==<sp/>NULL<sp/>||<sp/>bot2<sp/>==<sp/>NULL<sp/>||<sp/>bot1_s<sp/>==<sp/>NULL<sp/>||<sp/>bot2_s<sp/>==<sp/>NULL){</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Problem<sp/>loading<sp/>the<sp/>menu<sp/>images\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>exit(-1);</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="15"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17" refid="class_menu_princ_1a57ac8c3362bd27feab99bcb92d54eaf5" refkind="member"><highlight class="normal"><ref refid="class_menu_princ_1a57ac8c3362bd27feab99bcb92d54eaf5" kindref="member">MenuPrinc::~MenuPrinc</ref>(){</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/>al_destroy_bitmap(fundo);</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/>al_destroy_bitmap(bot1);</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/>al_destroy_bitmap(bot1_s);</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/>al_destroy_bitmap(bot2);</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/>al_destroy_bitmap(bot2_s);</highlight></codeline>
+<codeline lineno="24"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27" refid="class_menu_armas_1ab016179c4b0421f50d67292e915968b1" refkind="member"><highlight class="normal"><ref refid="class_menu_armas_1ab016179c4b0421f50d67292e915968b1" kindref="member">MenuArmas::MenuArmas</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>res_x,</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>res_y){</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;res_x=res_x;</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;res_y=res_y;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/>fundo<sp/>=<sp/>al_load_bitmap(</highlight><highlight class="stringliteral">&quot;Menu_Img/fundo2.jpg&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/>bot1<sp/>=<sp/>al_load_bitmap(</highlight><highlight class="stringliteral">&quot;Menu_Img/pistol1.jpg&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/>bot2<sp/>=<sp/>al_load_bitmap(</highlight><highlight class="stringliteral">&quot;Menu_Img/rifle1.jpg&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/>bot3<sp/>=<sp/>al_load_bitmap(</highlight><highlight class="stringliteral">&quot;Menu_Img/quit1.jpg&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/>bot1_s<sp/>=<sp/>al_load_bitmap(</highlight><highlight class="stringliteral">&quot;Menu_Img/pistol2.jpg&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/>bot2_s<sp/>=<sp/>al_load_bitmap(</highlight><highlight class="stringliteral">&quot;Menu_Img/rifle2.jpg&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/>bot3_s<sp/>=<sp/>al_load_bitmap(</highlight><highlight class="stringliteral">&quot;Menu_Img/quit2.jpg&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(fundo<sp/>==<sp/>NULL<sp/>||<sp/>bot1<sp/>==<sp/>NULL<sp/>||<sp/>bot2<sp/>==<sp/>NULL<sp/>||<sp/>bot3==NULL<sp/>||<sp/>bot1_s<sp/>==<sp/>NULL<sp/>||<sp/>bot2_s<sp/>==<sp/>NULL<sp/>||<sp/>bot3_s<sp/>==<sp/>NULL){</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Problem<sp/>loading<sp/>the<sp/>menu<sp/>images\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>exit(-1);</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="41"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="42" refid="class_menu_armas_1ab467d5debe435a27f146cfd7e3b4c72f" refkind="member"><highlight class="normal"><ref refid="class_menu_armas_1ab467d5debe435a27f146cfd7e3b4c72f" kindref="member">MenuArmas::~MenuArmas</ref>(){</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/>al_destroy_bitmap(fundo);</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/>al_destroy_bitmap(bot1);</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/>al_destroy_bitmap(bot1_s);</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/>al_destroy_bitmap(bot2);</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/>al_destroy_bitmap(bot2_s);</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/>al_destroy_bitmap(bot3);</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/>al_destroy_bitmap(bot3_s);</highlight></codeline>
+<codeline lineno="50"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53" refid="class_menu_princ_1a4dd3850301fa43019bb64c0a79e985d1" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_menu_princ_1a4dd3850301fa43019bb64c0a79e985d1" kindref="member">MenuPrinc::print_menu</ref>(){</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/>al_clear_to_color(al_map_rgb(255,255,255));</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/>al_draw_bitmap(fundo,<sp/>0,<sp/>0,<sp/>0);</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(bot1S)</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>al_draw_bitmap(bot1_s,(res_x<sp/>/<sp/>2),<sp/>(res_y<sp/>/3),0);</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>al_draw_bitmap(bot1,(res_x<sp/>/<sp/>2),<sp/>(res_y<sp/>/3),0);</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(bot2S)</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>al_draw_bitmap(bot2_s,(res_x<sp/>/<sp/>2),<sp/>(res_y<sp/>*2/3),<sp/>0);</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>al_draw_bitmap(bot2,(res_x<sp/>/<sp/>2),<sp/>(res_y<sp/>*2/3),<sp/>0);</highlight></codeline>
+<codeline lineno="64"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66" refid="class_menu_princ_1ad6b330e90af4e4783104d987ae05895f" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_menu_princ_1ad6b330e90af4e4783104d987ae05895f" kindref="member">MenuPrinc::botao</ref>(ALLEGRO_MOUSE_STATE<sp/>*mouseState){</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(mouseState-&gt;x<sp/>&gt;=<sp/>res_x<sp/>/<sp/>2<sp/><sp/>&amp;&amp;</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>mouseState-&gt;x<sp/>&lt;=<sp/>res_x<sp/>/<sp/>2<sp/>+<sp/>al_get_bitmap_width(bot1)<sp/>&amp;&amp;</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>mouseState-&gt;y&gt;=<sp/>res_y<sp/>/<sp/>3<sp/><sp/><sp/>&amp;&amp;</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>mouseState-&gt;y&lt;=<sp/>res_y<sp/>/<sp/>3<sp/>+<sp/>al_get_bitmap_height(bot1))</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bot1S=</highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bot1S=</highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(mouseState-&gt;x<sp/>&gt;=<sp/>res_x<sp/>/<sp/>2<sp/><sp/>&amp;&amp;</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>mouseState-&gt;x<sp/>&lt;=<sp/>res_x<sp/>/<sp/>2<sp/>+<sp/>al_get_bitmap_width(bot2)<sp/>&amp;&amp;</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>mouseState-&gt;y&gt;=<sp/>(res_y<sp/>*2/<sp/>3)<sp/>&amp;&amp;</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>mouseState-&gt;y<sp/>&lt;=<sp/>(res_y<sp/>*2/<sp/>3)<sp/>+<sp/>al_get_bitmap_height(bot2))</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bot2S=</highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bot2S=</highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="83"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight></codeline>
+<codeline lineno="85" refid="class_menu_princ_1a53554f00f838402761766788649037d5" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_menu_princ_1a53554f00f838402761766788649037d5" kindref="member">MenuPrinc::botao_action</ref>()</highlight></codeline>
+<codeline lineno="86"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(bot1S)</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="_menu_8hpp_1a4d9d3d58dc5f7930f2e1408d4501590f" kindref="member">CHANGE_MENU</ref>;</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(bot2S)</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="_menu_8hpp_1ad111e603bbebe5d87f6bc39264ce4733" kindref="member">EXIT</ref>;</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="94"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight></codeline>
+<codeline lineno="96" refid="class_menu_armas_1afc0b66c4033827b51b26127d40c17645" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_menu_armas_1afc0b66c4033827b51b26127d40c17645" kindref="member">MenuArmas::botao</ref>(ALLEGRO_MOUSE_STATE<sp/>*mouseState){</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(mouseState-&gt;x<sp/>&gt;=<sp/>res_x<sp/>/<sp/>3<sp/><sp/>&amp;&amp;</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>mouseState-&gt;x<sp/>&lt;=<sp/>res_x<sp/>/<sp/>3<sp/>+<sp/>al_get_bitmap_width(bot1)<sp/>&amp;&amp;</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>mouseState-&gt;y&gt;=<sp/>res_y<sp/>/2<sp/><sp/>&amp;&amp;</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>mouseState-&gt;y&lt;=<sp/>res_y<sp/>/2+<sp/>al_get_bitmap_height(bot1))</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bot1S=</highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bot1S=</highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(mouseState-&gt;x<sp/>&gt;=<sp/>res_x*2/<sp/>3<sp/><sp/>&amp;&amp;</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>mouseState-&gt;x<sp/>&lt;=<sp/>res_x<sp/>*2/<sp/>3<sp/>+<sp/>al_get_bitmap_width(bot2)<sp/>&amp;&amp;</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>mouseState-&gt;y&gt;=<sp/>(res_y/2)<sp/>&amp;&amp;</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>mouseState-&gt;y<sp/>&lt;=<sp/>(res_y<sp/>/2)<sp/>+<sp/>al_get_bitmap_height(bot2))</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bot2S=</highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bot2S=</highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(mouseState-&gt;x<sp/>&gt;=<sp/>res_x<sp/><sp/>/<sp/>2<sp/><sp/>&amp;&amp;</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>mouseState-&gt;x<sp/>&lt;=<sp/>res_x<sp/><sp/>/<sp/>2<sp/>+<sp/>al_get_bitmap_width(bot2)<sp/>&amp;&amp;</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>mouseState-&gt;y&gt;=<sp/>(res_y<sp/><sp/>*3<sp/>/4)<sp/>&amp;&amp;</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>mouseState-&gt;y<sp/>&lt;=<sp/>(res_y<sp/><sp/>*3<sp/>/4)<sp/>+<sp/>al_get_bitmap_height(bot2))</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bot3S=</highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bot3S=</highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="121"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"></highlight></codeline>
+<codeline lineno="123" refid="class_menu_armas_1a05bc5afc4ad1a0dd6cf35f27de53016b" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_menu_armas_1a05bc5afc4ad1a0dd6cf35f27de53016b" kindref="member">MenuArmas::print_menu</ref>(){</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/>al_clear_to_color(al_map_rgb(255,255,255));</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/>al_draw_bitmap(fundo,<sp/>0,<sp/>0,<sp/>0);</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(bot1S)</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>al_draw_bitmap(bot1_s,(res_x<sp/>/<sp/>3),<sp/>(res_y<sp/>/2),0);</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>al_draw_bitmap(bot1,(res_x<sp/>/<sp/>3),<sp/>(res_y<sp/>/2),0);</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(bot2S)</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>al_draw_bitmap(bot2_s,(res_x<sp/>*2/<sp/>3),<sp/>(res_y<sp/>/2),<sp/>0);</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>al_draw_bitmap(bot2,(res_x<sp/>*2/<sp/>3),<sp/>(res_y<sp/>/2),<sp/>0);</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(bot3S)</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>al_draw_bitmap(bot3_s,(res_x<sp/>/<sp/>2),<sp/>(res_y<sp/>*<sp/>3<sp/>/4),0);</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>al_draw_bitmap(bot3,(res_x<sp/>/<sp/>2),<sp/>(res_y<sp/>*<sp/>3<sp/>/4),0);</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"></highlight></codeline>
+<codeline lineno="139"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="140" refid="class_menu_armas_1a1abc753948db8a71cb6543755bb29db6" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_menu_armas_1a1abc753948db8a71cb6543755bb29db6" kindref="member">MenuArmas::botao_action</ref>()</highlight></codeline>
+<codeline lineno="141"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(bot1S)</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="_menu_8hpp_1a42276d6e71bfe225d915a9d172981bc5" kindref="member">MENU_PISTOL</ref>;</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(bot2S)</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="_menu_8hpp_1a2f110eaa4eb83e42b813c6ddf343b9ca" kindref="member">MENU_RIFLE</ref>;</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(bot3S)</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="_menu_8hpp_1ad111e603bbebe5d87f6bc39264ce4733" kindref="member">EXIT</ref>;</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="149"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/home/clemente/projects/Troll-Killers/Menu.cpp"/>
+  </compounddef>
+</doxygen>

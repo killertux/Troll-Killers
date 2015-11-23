@@ -1,0 +1,302 @@
+\hypertarget{class_connection}{}\section{Connection Class Reference}
+\label{class_connection}\index{Connection@{Connection}}
+
+
+{\ttfamily \#include $<$Connection.\+hpp$>$}
+
+
+
+Collaboration diagram for Connection\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=214pt]{class_connection__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_connection_a9de94289ca6259f94ef6aeba3b134a77}{Connection} ()
+\item 
+\hyperlink{class_connection_a2e4352edf667bea83001569e9da8a24d}{$\sim$\+Connection} ()
+\item 
+void \hyperlink{class_connection_acdb1c6f1844698b2688cb611f7029d7c}{create\+\_\+server} (int port, int num\+\_\+peers)
+\item 
+void \hyperlink{class_connection_a3dda26c4c789d0f5e54fb50cae606022}{send\+\_\+packet\+\_\+reliable} (void $\ast$data, int size, int I\+D)
+\item 
+void \hyperlink{class_connection_a194e26770302ecac113375475df57e42}{send\+\_\+packet\+\_\+unreliable} (void $\ast$data, int size, int I\+D)
+\item 
+void \hyperlink{class_connection_a2d554f43b1e9d4a71acdd1ba297fc11b}{broadcast\+\_\+packet} (void $\ast$data, int size)
+\item 
+void \hyperlink{class_connection_ace9a66bd4a77270df4587df1405d4033}{send\+\_\+flush} ()
+\item 
+int \hyperlink{class_connection_a67a66948fd3b286a0a4faaaedb69e56e}{event\+\_\+service} (int timer)
+\item 
+bool \hyperlink{class_connection_a75f10c526b51675497a81e1f2c26ba9e}{event\+\_\+type\+\_\+connect} ()
+\item 
+bool \hyperlink{class_connection_ab0db0e5c8463aca4ec668107b1a46349}{event\+\_\+type\+\_\+receive} ()
+\item 
+bool \hyperlink{class_connection_a58f2ca9fedd8369ebdf61725f31123ef}{event\+\_\+type\+\_\+disconnect} ()
+\item 
+bool \hyperlink{class_connection_a8e9748ced0d65d12e5781ef21b1e7928}{create\+\_\+client} (std\+::string ip, int port)
+\item 
+E\+Net\+Address \hyperlink{class_connection_a4eec19a6b526fafaf4fa87a433a0a2d4}{get\+Last\+Connection} ()
+\item 
+unsigned int \hyperlink{class_connection_ab1a9ae7a0dea88ea63ea4a2d1cbec4d9}{get\+Packet\+Length} ()
+\item 
+void $\ast$ \hyperlink{class_connection_a2431e1403029cf660aa897eba8ec978a}{get\+Packet\+Data} ()
+\item 
+int \hyperlink{class_connection_a6a9cbc7d881550fcc0e768e3ee7bf171}{get\+Peer\+Id} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_connection_a9de94289ca6259f94ef6aeba3b134a77}{}\index{Connection@{Connection}!Connection@{Connection}}
+\index{Connection@{Connection}!Connection@{Connection}}
+\subsubsection[{Connection()}]{\setlength{\rightskip}{0pt plus 5cm}Connection\+::\+Connection (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_connection_a9de94289ca6259f94ef6aeba3b134a77}
+\hypertarget{class_connection_a2e4352edf667bea83001569e9da8a24d}{}\index{Connection@{Connection}!````~Connection@{$\sim$\+Connection}}
+\index{````~Connection@{$\sim$\+Connection}!Connection@{Connection}}
+\subsubsection[{$\sim$\+Connection()}]{\setlength{\rightskip}{0pt plus 5cm}Connection\+::$\sim$\+Connection (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_connection_a2e4352edf667bea83001569e9da8a24d}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_connection_a2d554f43b1e9d4a71acdd1ba297fc11b}{}\index{Connection@{Connection}!broadcast\+\_\+packet@{broadcast\+\_\+packet}}
+\index{broadcast\+\_\+packet@{broadcast\+\_\+packet}!Connection@{Connection}}
+\subsubsection[{broadcast\+\_\+packet(void $\ast$data, int size)}]{\setlength{\rightskip}{0pt plus 5cm}void Connection\+::broadcast\+\_\+packet (
+\begin{DoxyParamCaption}
+\item[{void $\ast$}]{data, }
+\item[{int}]{size}
+\end{DoxyParamCaption}
+)}\label{class_connection_a2d554f43b1e9d4a71acdd1ba297fc11b}
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_connection_a2d554f43b1e9d4a71acdd1ba297fc11b_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_connection_a8e9748ced0d65d12e5781ef21b1e7928}{}\index{Connection@{Connection}!create\+\_\+client@{create\+\_\+client}}
+\index{create\+\_\+client@{create\+\_\+client}!Connection@{Connection}}
+\subsubsection[{create\+\_\+client(std\+::string ip, int port)}]{\setlength{\rightskip}{0pt plus 5cm}bool Connection\+::create\+\_\+client (
+\begin{DoxyParamCaption}
+\item[{std\+::string}]{ip, }
+\item[{int}]{port}
+\end{DoxyParamCaption}
+)}\label{class_connection_a8e9748ced0d65d12e5781ef21b1e7928}
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_connection_a8e9748ced0d65d12e5781ef21b1e7928_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_connection_acdb1c6f1844698b2688cb611f7029d7c}{}\index{Connection@{Connection}!create\+\_\+server@{create\+\_\+server}}
+\index{create\+\_\+server@{create\+\_\+server}!Connection@{Connection}}
+\subsubsection[{create\+\_\+server(int port, int num\+\_\+peers)}]{\setlength{\rightskip}{0pt plus 5cm}void Connection\+::create\+\_\+server (
+\begin{DoxyParamCaption}
+\item[{int}]{port, }
+\item[{int}]{num\+\_\+peers}
+\end{DoxyParamCaption}
+)}\label{class_connection_acdb1c6f1844698b2688cb611f7029d7c}
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=295pt]{class_connection_acdb1c6f1844698b2688cb611f7029d7c_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_connection_a67a66948fd3b286a0a4faaaedb69e56e}{}\index{Connection@{Connection}!event\+\_\+service@{event\+\_\+service}}
+\index{event\+\_\+service@{event\+\_\+service}!Connection@{Connection}}
+\subsubsection[{event\+\_\+service(int timer)}]{\setlength{\rightskip}{0pt plus 5cm}int Connection\+::event\+\_\+service (
+\begin{DoxyParamCaption}
+\item[{int}]{timer}
+\end{DoxyParamCaption}
+)}\label{class_connection_a67a66948fd3b286a0a4faaaedb69e56e}
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_connection_a67a66948fd3b286a0a4faaaedb69e56e_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_connection_a75f10c526b51675497a81e1f2c26ba9e}{}\index{Connection@{Connection}!event\+\_\+type\+\_\+connect@{event\+\_\+type\+\_\+connect}}
+\index{event\+\_\+type\+\_\+connect@{event\+\_\+type\+\_\+connect}!Connection@{Connection}}
+\subsubsection[{event\+\_\+type\+\_\+connect()}]{\setlength{\rightskip}{0pt plus 5cm}bool Connection\+::event\+\_\+type\+\_\+connect (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_connection_a75f10c526b51675497a81e1f2c26ba9e}
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_connection_a75f10c526b51675497a81e1f2c26ba9e_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_connection_a58f2ca9fedd8369ebdf61725f31123ef}{}\index{Connection@{Connection}!event\+\_\+type\+\_\+disconnect@{event\+\_\+type\+\_\+disconnect}}
+\index{event\+\_\+type\+\_\+disconnect@{event\+\_\+type\+\_\+disconnect}!Connection@{Connection}}
+\subsubsection[{event\+\_\+type\+\_\+disconnect()}]{\setlength{\rightskip}{0pt plus 5cm}bool Connection\+::event\+\_\+type\+\_\+disconnect (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_connection_a58f2ca9fedd8369ebdf61725f31123ef}
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_connection_a58f2ca9fedd8369ebdf61725f31123ef_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_connection_ab0db0e5c8463aca4ec668107b1a46349}{}\index{Connection@{Connection}!event\+\_\+type\+\_\+receive@{event\+\_\+type\+\_\+receive}}
+\index{event\+\_\+type\+\_\+receive@{event\+\_\+type\+\_\+receive}!Connection@{Connection}}
+\subsubsection[{event\+\_\+type\+\_\+receive()}]{\setlength{\rightskip}{0pt plus 5cm}bool Connection\+::event\+\_\+type\+\_\+receive (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_connection_ab0db0e5c8463aca4ec668107b1a46349}
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_connection_ab0db0e5c8463aca4ec668107b1a46349_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_connection_a4eec19a6b526fafaf4fa87a433a0a2d4}{}\index{Connection@{Connection}!get\+Last\+Connection@{get\+Last\+Connection}}
+\index{get\+Last\+Connection@{get\+Last\+Connection}!Connection@{Connection}}
+\subsubsection[{get\+Last\+Connection()}]{\setlength{\rightskip}{0pt plus 5cm}E\+Net\+Address Connection\+::get\+Last\+Connection (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_connection_a4eec19a6b526fafaf4fa87a433a0a2d4}
+\hypertarget{class_connection_a2431e1403029cf660aa897eba8ec978a}{}\index{Connection@{Connection}!get\+Packet\+Data@{get\+Packet\+Data}}
+\index{get\+Packet\+Data@{get\+Packet\+Data}!Connection@{Connection}}
+\subsubsection[{get\+Packet\+Data()}]{\setlength{\rightskip}{0pt plus 5cm}void$\ast$ Connection\+::get\+Packet\+Data (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_connection_a2431e1403029cf660aa897eba8ec978a}
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_connection_a2431e1403029cf660aa897eba8ec978a_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_connection_ab1a9ae7a0dea88ea63ea4a2d1cbec4d9}{}\index{Connection@{Connection}!get\+Packet\+Length@{get\+Packet\+Length}}
+\index{get\+Packet\+Length@{get\+Packet\+Length}!Connection@{Connection}}
+\subsubsection[{get\+Packet\+Length()}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int Connection\+::get\+Packet\+Length (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_connection_ab1a9ae7a0dea88ea63ea4a2d1cbec4d9}
+\hypertarget{class_connection_a6a9cbc7d881550fcc0e768e3ee7bf171}{}\index{Connection@{Connection}!get\+Peer\+Id@{get\+Peer\+Id}}
+\index{get\+Peer\+Id@{get\+Peer\+Id}!Connection@{Connection}}
+\subsubsection[{get\+Peer\+Id()}]{\setlength{\rightskip}{0pt plus 5cm}int Connection\+::get\+Peer\+Id (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_connection_a6a9cbc7d881550fcc0e768e3ee7bf171}
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_connection_a6a9cbc7d881550fcc0e768e3ee7bf171_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_connection_ace9a66bd4a77270df4587df1405d4033}{}\index{Connection@{Connection}!send\+\_\+flush@{send\+\_\+flush}}
+\index{send\+\_\+flush@{send\+\_\+flush}!Connection@{Connection}}
+\subsubsection[{send\+\_\+flush()}]{\setlength{\rightskip}{0pt plus 5cm}void Connection\+::send\+\_\+flush (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_connection_ace9a66bd4a77270df4587df1405d4033}
+\hypertarget{class_connection_a3dda26c4c789d0f5e54fb50cae606022}{}\index{Connection@{Connection}!send\+\_\+packet\+\_\+reliable@{send\+\_\+packet\+\_\+reliable}}
+\index{send\+\_\+packet\+\_\+reliable@{send\+\_\+packet\+\_\+reliable}!Connection@{Connection}}
+\subsubsection[{send\+\_\+packet\+\_\+reliable(void $\ast$data, int size, int I\+D)}]{\setlength{\rightskip}{0pt plus 5cm}void Connection\+::send\+\_\+packet\+\_\+reliable (
+\begin{DoxyParamCaption}
+\item[{void $\ast$}]{data, }
+\item[{int}]{size, }
+\item[{int}]{I\+D}
+\end{DoxyParamCaption}
+)}\label{class_connection_a3dda26c4c789d0f5e54fb50cae606022}
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_connection_a3dda26c4c789d0f5e54fb50cae606022_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_connection_a194e26770302ecac113375475df57e42}{}\index{Connection@{Connection}!send\+\_\+packet\+\_\+unreliable@{send\+\_\+packet\+\_\+unreliable}}
+\index{send\+\_\+packet\+\_\+unreliable@{send\+\_\+packet\+\_\+unreliable}!Connection@{Connection}}
+\subsubsection[{send\+\_\+packet\+\_\+unreliable(void $\ast$data, int size, int I\+D)}]{\setlength{\rightskip}{0pt plus 5cm}void Connection\+::send\+\_\+packet\+\_\+unreliable (
+\begin{DoxyParamCaption}
+\item[{void $\ast$}]{data, }
+\item[{int}]{size, }
+\item[{int}]{I\+D}
+\end{DoxyParamCaption}
+)}\label{class_connection_a194e26770302ecac113375475df57e42}
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_connection_a194e26770302ecac113375475df57e42_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/clemente/projects/\+Troll-\/\+Killers/\hyperlink{_connection_8hpp}{Connection.\+hpp}\item 
+/home/clemente/projects/\+Troll-\/\+Killers/\hyperlink{_connection_8cpp}{Connection.\+cpp}\end{DoxyCompactItemize}

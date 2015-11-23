@@ -1,0 +1,176 @@
+\hypertarget{class_map}{}\section{Map Class Reference}
+\label{class_map}\index{Map@{Map}}
+
+
+{\ttfamily \#include $<$Map.\+hpp$>$}
+
+
+
+Inheritance diagram for Map\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=298pt]{class_map__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Map\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=160pt]{class_map__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_map_a0f5ad0fd4563497b4214038cbca8b582}{Map} ()
+\item 
+virtual bool \hyperlink{class_map_afdd22d2739acb6a6eaf8864ee090107a}{save\+\_\+map} (std\+::string pathname)
+\item 
+virtual bool \hyperlink{class_map_a259bb70652389b9ecf0bc76ceca656a5}{load\+\_\+map} (std\+::string pathname)
+\item 
+virtual int \hyperlink{class_map_ac85777e48836aa23c8c7adac7ea50ea8}{serialize} (char $\ast$buffer)
+\item 
+virtual void \hyperlink{class_map_a958dfc5b0956b8a4cb1ac03b0ccfdce8}{deserialize} (char $\ast$buffer)
+\item 
+\hyperlink{struct__object}{\+\_\+object} $\ast$ \hyperlink{class_map_a3e692a4d7e5ce0687bf4b93254714edf}{get\+Objects} ()
+\item 
+\hyperlink{class_map_aa403fbe09394ccf39747588f5168e3b2}{$\sim$\+Map} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int8\+\_\+t \hyperlink{class_map_a6e7ba89e3a0a05633ae7d27dd400190f}{type}
+\item 
+char \hyperlink{class_map_abe0a2d1af671ad7ca47651a8d207b23c}{name} \mbox{[}50\mbox{]}
+\item 
+\hyperlink{struct__object}{\+\_\+object} $\ast$ \hyperlink{class_map_a1028fa8db721f28473ba471ae70fde09}{objects}
+\item 
+int16\+\_\+t \hyperlink{class_map_a48caa289073dbeff9c89a02cf89a2cc6}{length}
+\item 
+int16\+\_\+t \hyperlink{class_map_a15981e529cd48e04432898f9185683d3}{width}
+\item 
+int16\+\_\+t \hyperlink{class_map_a6cb94f4c91b4634128ccf0219f84d1ab}{max\+\_\+objects}
+\item 
+int16\+\_\+t \hyperlink{class_map_ad428bf938f205ed6d1e7af2ddd09b7ce}{n\+\_\+object}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_map_a0f5ad0fd4563497b4214038cbca8b582}{}\index{Map@{Map}!Map@{Map}}
+\index{Map@{Map}!Map@{Map}}
+\subsubsection[{Map()}]{\setlength{\rightskip}{0pt plus 5cm}Map\+::\+Map (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_map_a0f5ad0fd4563497b4214038cbca8b582}
+\hypertarget{class_map_aa403fbe09394ccf39747588f5168e3b2}{}\index{Map@{Map}!````~Map@{$\sim$\+Map}}
+\index{````~Map@{$\sim$\+Map}!Map@{Map}}
+\subsubsection[{$\sim$\+Map()}]{\setlength{\rightskip}{0pt plus 5cm}Map\+::$\sim$\+Map (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_map_aa403fbe09394ccf39747588f5168e3b2}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_map_a958dfc5b0956b8a4cb1ac03b0ccfdce8}{}\index{Map@{Map}!deserialize@{deserialize}}
+\index{deserialize@{deserialize}!Map@{Map}}
+\subsubsection[{deserialize(char $\ast$buffer)}]{\setlength{\rightskip}{0pt plus 5cm}void Map\+::deserialize (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{buffer}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_map_a958dfc5b0956b8a4cb1ac03b0ccfdce8}
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_map_a958dfc5b0956b8a4cb1ac03b0ccfdce8_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_map_a3e692a4d7e5ce0687bf4b93254714edf}{}\index{Map@{Map}!get\+Objects@{get\+Objects}}
+\index{get\+Objects@{get\+Objects}!Map@{Map}}
+\subsubsection[{get\+Objects()}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \+\_\+object}$\ast$ Map\+::get\+Objects (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_map_a3e692a4d7e5ce0687bf4b93254714edf}
+\hypertarget{class_map_a259bb70652389b9ecf0bc76ceca656a5}{}\index{Map@{Map}!load\+\_\+map@{load\+\_\+map}}
+\index{load\+\_\+map@{load\+\_\+map}!Map@{Map}}
+\subsubsection[{load\+\_\+map(std\+::string pathname)}]{\setlength{\rightskip}{0pt plus 5cm}bool Map\+::load\+\_\+map (
+\begin{DoxyParamCaption}
+\item[{std\+::string}]{pathname}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_map_a259bb70652389b9ecf0bc76ceca656a5}
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_map_a259bb70652389b9ecf0bc76ceca656a5_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_map_afdd22d2739acb6a6eaf8864ee090107a}{}\index{Map@{Map}!save\+\_\+map@{save\+\_\+map}}
+\index{save\+\_\+map@{save\+\_\+map}!Map@{Map}}
+\subsubsection[{save\+\_\+map(std\+::string pathname)}]{\setlength{\rightskip}{0pt plus 5cm}bool Map\+::save\+\_\+map (
+\begin{DoxyParamCaption}
+\item[{std\+::string}]{pathname}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_map_afdd22d2739acb6a6eaf8864ee090107a}
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_map_afdd22d2739acb6a6eaf8864ee090107a_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_map_ac85777e48836aa23c8c7adac7ea50ea8}{}\index{Map@{Map}!serialize@{serialize}}
+\index{serialize@{serialize}!Map@{Map}}
+\subsubsection[{serialize(char $\ast$buffer)}]{\setlength{\rightskip}{0pt plus 5cm}int Map\+::serialize (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{buffer}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_map_ac85777e48836aa23c8c7adac7ea50ea8}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_map_a48caa289073dbeff9c89a02cf89a2cc6}{}\index{Map@{Map}!length@{length}}
+\index{length@{length}!Map@{Map}}
+\subsubsection[{length}]{\setlength{\rightskip}{0pt plus 5cm}int16\+\_\+t Map\+::length\hspace{0.3cm}{\ttfamily [protected]}}\label{class_map_a48caa289073dbeff9c89a02cf89a2cc6}
+\hypertarget{class_map_a6cb94f4c91b4634128ccf0219f84d1ab}{}\index{Map@{Map}!max\+\_\+objects@{max\+\_\+objects}}
+\index{max\+\_\+objects@{max\+\_\+objects}!Map@{Map}}
+\subsubsection[{max\+\_\+objects}]{\setlength{\rightskip}{0pt plus 5cm}int16\+\_\+t Map\+::max\+\_\+objects\hspace{0.3cm}{\ttfamily [protected]}}\label{class_map_a6cb94f4c91b4634128ccf0219f84d1ab}
+\hypertarget{class_map_ad428bf938f205ed6d1e7af2ddd09b7ce}{}\index{Map@{Map}!n\+\_\+object@{n\+\_\+object}}
+\index{n\+\_\+object@{n\+\_\+object}!Map@{Map}}
+\subsubsection[{n\+\_\+object}]{\setlength{\rightskip}{0pt plus 5cm}int16\+\_\+t Map\+::n\+\_\+object\hspace{0.3cm}{\ttfamily [protected]}}\label{class_map_ad428bf938f205ed6d1e7af2ddd09b7ce}
+\hypertarget{class_map_abe0a2d1af671ad7ca47651a8d207b23c}{}\index{Map@{Map}!name@{name}}
+\index{name@{name}!Map@{Map}}
+\subsubsection[{name}]{\setlength{\rightskip}{0pt plus 5cm}char Map\+::name\mbox{[}50\mbox{]}\hspace{0.3cm}{\ttfamily [protected]}}\label{class_map_abe0a2d1af671ad7ca47651a8d207b23c}
+\hypertarget{class_map_a1028fa8db721f28473ba471ae70fde09}{}\index{Map@{Map}!objects@{objects}}
+\index{objects@{objects}!Map@{Map}}
+\subsubsection[{objects}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \+\_\+object}$\ast$ Map\+::objects\hspace{0.3cm}{\ttfamily [protected]}}\label{class_map_a1028fa8db721f28473ba471ae70fde09}
+\hypertarget{class_map_a6e7ba89e3a0a05633ae7d27dd400190f}{}\index{Map@{Map}!type@{type}}
+\index{type@{type}!Map@{Map}}
+\subsubsection[{type}]{\setlength{\rightskip}{0pt plus 5cm}int8\+\_\+t Map\+::type\hspace{0.3cm}{\ttfamily [protected]}}\label{class_map_a6e7ba89e3a0a05633ae7d27dd400190f}
+\hypertarget{class_map_a15981e529cd48e04432898f9185683d3}{}\index{Map@{Map}!width@{width}}
+\index{width@{width}!Map@{Map}}
+\subsubsection[{width}]{\setlength{\rightskip}{0pt plus 5cm}int16\+\_\+t Map\+::width\hspace{0.3cm}{\ttfamily [protected]}}\label{class_map_a15981e529cd48e04432898f9185683d3}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/clemente/projects/\+Troll-\/\+Killers/\hyperlink{_map_8hpp}{Map.\+hpp}\item 
+/home/clemente/projects/\+Troll-\/\+Killers/\hyperlink{_map_8cpp}{Map.\+cpp}\end{DoxyCompactItemize}

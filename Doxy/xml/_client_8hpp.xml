@@ -1,0 +1,424 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.10">
+  <compounddef id="_client_8hpp" kind="file" language="C++">
+    <compoundname>Client.hpp</compoundname>
+    <includes local="no">allegro5/allegro.h</includes>
+    <includes local="no">allegro5/allegro_primitives.h</includes>
+    <includes local="no">allegro5/allegro_audio.h</includes>
+    <includes local="no">allegro5/allegro_acodec.h</includes>
+    <includes local="no">cstdio</includes>
+    <includes local="no">cstring</includes>
+    <includes local="no">sstream</includes>
+    <includes local="no">iostream</includes>
+    <includes refid="__data_8hpp" local="yes">_data.hpp</includes>
+    <includes refid="_c_map_8hpp" local="yes">CMap.hpp</includes>
+    <includes refid="_defines_8hpp" local="yes">Defines.hpp</includes>
+    <includes refid="_connection_8hpp" local="yes">Connection.hpp</includes>
+    <includes refid="_enums_8hpp" local="yes">Enums.hpp</includes>
+    <includes refid="_c_character_8hpp" local="yes">CCharacter.hpp</includes>
+    <includes refid="_menu_manager_8hpp" local="yes">MenuManager.hpp</includes>
+    <includes refid="_configuration_8hpp" local="yes">Configuration.hpp</includes>
+    <includedby refid="_client_8cpp" local="yes">/home/clemente/projects/Troll-Killers/Client.cpp</includedby>
+    <includedby refid="_menu_manager_8hpp" local="yes">/home/clemente/projects/Troll-Killers/MenuManager.hpp</includedby>
+    <includedby refid="main_client_8cpp" local="yes">/home/clemente/projects/Troll-Killers/mainClient.cpp</includedby>
+    <incdepgraph>
+      <node id="1206">
+        <label>IGObject.hpp</label>
+        <link refid="_i_g_object_8hpp"/>
+        <childnode refid="1197" relation="include">
+        </childnode>
+        <childnode refid="1194" relation="include">
+        </childnode>
+      </node>
+      <node id="1214">
+        <label>Pistol.hpp</label>
+        <link refid="_pistol_8hpp"/>
+        <childnode refid="1208" relation="include">
+        </childnode>
+        <childnode refid="1193" relation="include">
+        </childnode>
+        <childnode refid="1213" relation="include">
+        </childnode>
+      </node>
+      <node id="1211">
+        <label>CProjectile.hpp</label>
+        <link refid="_c_projectile_8hpp"/>
+        <childnode refid="1212" relation="include">
+        </childnode>
+        <childnode refid="1186" relation="include">
+        </childnode>
+        <childnode refid="1187" relation="include">
+        </childnode>
+        <childnode refid="1213" relation="include">
+        </childnode>
+      </node>
+      <node id="1209">
+        <label>allegro5/allegro_image.h</label>
+      </node>
+      <node id="1195">
+        <label>stdint.h</label>
+      </node>
+      <node id="1215">
+        <label>MenuManager.hpp</label>
+        <link refid="_menu_manager_8hpp"/>
+        <childnode refid="1186" relation="include">
+        </childnode>
+        <childnode refid="1216" relation="include">
+        </childnode>
+        <childnode refid="1197" relation="include">
+        </childnode>
+        <childnode refid="1185" relation="include">
+        </childnode>
+      </node>
+      <node id="1210">
+        <label>cmath</label>
+      </node>
+      <node id="1197">
+        <label>Enums.hpp</label>
+        <link refid="_enums_8hpp"/>
+      </node>
+      <node id="1198">
+        <label>_object.hpp</label>
+        <link refid="__object_8hpp"/>
+        <childnode refid="1195" relation="include">
+        </childnode>
+      </node>
+      <node id="1202">
+        <label>string</label>
+      </node>
+      <node id="1187">
+        <label>allegro5/allegro_primitives.h</label>
+      </node>
+      <node id="1201">
+        <label>fstream</label>
+      </node>
+      <node id="1212">
+        <label>Projectile.hpp</label>
+        <link refid="_projectile_8hpp"/>
+        <childnode refid="1206" relation="include">
+        </childnode>
+        <childnode refid="1198" relation="include">
+        </childnode>
+        <childnode refid="1213" relation="include">
+        </childnode>
+      </node>
+      <node id="1186">
+        <label>allegro5/allegro.h</label>
+      </node>
+      <node id="1189">
+        <label>allegro5/allegro_acodec.h</label>
+      </node>
+      <node id="1196">
+        <label>CMap.hpp</label>
+        <link refid="_c_map_8hpp"/>
+        <childnode refid="1197" relation="include">
+        </childnode>
+        <childnode refid="1198" relation="include">
+        </childnode>
+        <childnode refid="1199" relation="include">
+        </childnode>
+        <childnode refid="1202" relation="include">
+        </childnode>
+        <childnode refid="1201" relation="include">
+        </childnode>
+        <childnode refid="1186" relation="include">
+        </childnode>
+        <childnode refid="1187" relation="include">
+        </childnode>
+        <childnode refid="1191" relation="include">
+        </childnode>
+      </node>
+      <node id="1199">
+        <label>Map.hpp</label>
+        <link refid="_map_8hpp"/>
+        <childnode refid="1197" relation="include">
+        </childnode>
+        <childnode refid="1198" relation="include">
+        </childnode>
+        <childnode refid="1194" relation="include">
+        </childnode>
+        <childnode refid="1192" relation="include">
+        </childnode>
+        <childnode refid="1200" relation="include">
+        </childnode>
+        <childnode refid="1201" relation="include">
+        </childnode>
+      </node>
+      <node id="1185">
+        <label>/home/clemente/projects/Troll-Killers/Client.hpp</label>
+        <link refid="Client.hpp"/>
+        <childnode refid="1186" relation="include">
+        </childnode>
+        <childnode refid="1187" relation="include">
+        </childnode>
+        <childnode refid="1188" relation="include">
+        </childnode>
+        <childnode refid="1189" relation="include">
+        </childnode>
+        <childnode refid="1190" relation="include">
+        </childnode>
+        <childnode refid="1191" relation="include">
+        </childnode>
+        <childnode refid="1192" relation="include">
+        </childnode>
+        <childnode refid="1193" relation="include">
+        </childnode>
+        <childnode refid="1194" relation="include">
+        </childnode>
+        <childnode refid="1196" relation="include">
+        </childnode>
+        <childnode refid="1200" relation="include">
+        </childnode>
+        <childnode refid="1203" relation="include">
+        </childnode>
+        <childnode refid="1197" relation="include">
+        </childnode>
+        <childnode refid="1205" relation="include">
+        </childnode>
+        <childnode refid="1215" relation="include">
+        </childnode>
+        <childnode refid="1217" relation="include">
+        </childnode>
+      </node>
+      <node id="1219">
+        <label>string.h</label>
+      </node>
+      <node id="1190">
+        <label>cstdio</label>
+      </node>
+      <node id="1194">
+        <label>_data.hpp</label>
+        <link refid="__data_8hpp"/>
+        <childnode refid="1195" relation="include">
+        </childnode>
+        <childnode refid="1191" relation="include">
+        </childnode>
+      </node>
+      <node id="1208">
+        <label>Weapons.hpp</label>
+        <link refid="_weapons_8hpp"/>
+        <childnode refid="1186" relation="include">
+        </childnode>
+        <childnode refid="1209" relation="include">
+        </childnode>
+        <childnode refid="1188" relation="include">
+        </childnode>
+        <childnode refid="1200" relation="include">
+        </childnode>
+        <childnode refid="1197" relation="include">
+        </childnode>
+        <childnode refid="1210" relation="include">
+        </childnode>
+        <childnode refid="1211" relation="include">
+        </childnode>
+        <childnode refid="1203" relation="include">
+        </childnode>
+        <childnode refid="1192" relation="include">
+        </childnode>
+        <childnode refid="1190" relation="include">
+        </childnode>
+      </node>
+      <node id="1203">
+        <label>Connection.hpp</label>
+        <link refid="_connection_8hpp"/>
+        <childnode refid="1204" relation="include">
+        </childnode>
+        <childnode refid="1193" relation="include">
+        </childnode>
+        <childnode refid="1202" relation="include">
+        </childnode>
+        <childnode refid="1191" relation="include">
+        </childnode>
+      </node>
+      <node id="1216">
+        <label>Menu.hpp</label>
+        <link refid="_menu_8hpp"/>
+        <childnode refid="1186" relation="include">
+        </childnode>
+        <childnode refid="1209" relation="include">
+        </childnode>
+        <childnode refid="1200" relation="include">
+        </childnode>
+        <childnode refid="1193" relation="include">
+        </childnode>
+      </node>
+      <node id="1192">
+        <label>sstream</label>
+      </node>
+      <node id="1207">
+        <label>Rifle.hpp</label>
+        <link refid="_rifle_8hpp"/>
+        <childnode refid="1208" relation="include">
+        </childnode>
+        <childnode refid="1193" relation="include">
+        </childnode>
+      </node>
+      <node id="1213">
+        <label>math.h</label>
+      </node>
+      <node id="1193">
+        <label>iostream</label>
+      </node>
+      <node id="1217">
+        <label>Configuration.hpp</label>
+        <link refid="_configuration_8hpp"/>
+        <childnode refid="1218" relation="include">
+        </childnode>
+        <childnode refid="1219" relation="include">
+        </childnode>
+      </node>
+      <node id="1205">
+        <label>CCharacter.hpp</label>
+        <link refid="_c_character_8hpp"/>
+        <childnode refid="1206" relation="include">
+        </childnode>
+        <childnode refid="1197" relation="include">
+        </childnode>
+        <childnode refid="1198" relation="include">
+        </childnode>
+        <childnode refid="1194" relation="include">
+        </childnode>
+        <childnode refid="1200" relation="include">
+        </childnode>
+        <childnode refid="1207" relation="include">
+        </childnode>
+        <childnode refid="1214" relation="include">
+        </childnode>
+        <childnode refid="1192" relation="include">
+        </childnode>
+        <childnode refid="1213" relation="include">
+        </childnode>
+        <childnode refid="1190" relation="include">
+        </childnode>
+        <childnode refid="1203" relation="include">
+        </childnode>
+        <childnode refid="1193" relation="include">
+        </childnode>
+        <childnode refid="1186" relation="include">
+        </childnode>
+        <childnode refid="1187" relation="include">
+        </childnode>
+      </node>
+      <node id="1200">
+        <label>Defines.hpp</label>
+        <link refid="_defines_8hpp"/>
+      </node>
+      <node id="1204">
+        <label>enet/enet.h</label>
+      </node>
+      <node id="1218">
+        <label>stdio.h</label>
+      </node>
+      <node id="1191">
+        <label>cstring</label>
+      </node>
+      <node id="1188">
+        <label>allegro5/allegro_audio.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1222">
+        <label>/home/clemente/projects/Troll-Killers/MenuManager.hpp</label>
+        <link refid="_menu_manager_8hpp"/>
+        <childnode refid="1220" relation="include">
+        </childnode>
+        <childnode refid="1223" relation="include">
+        </childnode>
+      </node>
+      <node id="1221">
+        <label>/home/clemente/projects/Troll-Killers/Client.cpp</label>
+        <link refid="_client_8cpp"/>
+      </node>
+      <node id="1220">
+        <label>/home/clemente/projects/Troll-Killers/Client.hpp</label>
+        <link refid="Client.hpp"/>
+        <childnode refid="1221" relation="include">
+        </childnode>
+        <childnode refid="1222" relation="include">
+        </childnode>
+        <childnode refid="1224" relation="include">
+        </childnode>
+      </node>
+      <node id="1224">
+        <label>/home/clemente/projects/Troll-Killers/mainClient.cpp</label>
+        <link refid="main_client_8cpp"/>
+      </node>
+      <node id="1223">
+        <label>/home/clemente/projects/Troll-Killers/MenuManager.cpp</label>
+        <link refid="_menu_manager_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_client" prot="public">Client</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>CLIENT_HPP</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CLIENT_HPP</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;allegro5/allegro.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;allegro5/allegro_primitives.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;allegro5/allegro_audio.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;allegro5/allegro_acodec.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cstdio&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cstring&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;sstream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;iostream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="__data_8hpp" kindref="compound">_data.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_c_map_8hpp" kindref="compound">CMap.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_defines_8hpp" kindref="compound">Defines.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_connection_8hpp" kindref="compound">Connection.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_enums_8hpp" kindref="compound">Enums.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_c_character_8hpp" kindref="compound">CCharacter.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_menu_manager_8hpp" kindref="compound">MenuManager.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_configuration_8hpp" kindref="compound">Configuration.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22" refid="class_client" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_client" kindref="compound">Client</ref>{</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/>ALLEGRO_DISPLAY<sp/>*display;</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/>ALLEGRO_EVENT_QUEUE<sp/>*event_queue;</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/>ALLEGRO_TIMER<sp/>*timer;</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/>ALLEGRO_MOUSE_STATE<sp/>mouseState;</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/>ALLEGRO_EVENT<sp/>ev;</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/>ALLEGRO_SAMPLE<sp/>*soundtrack;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_menu_manager" kindref="compound">MenuManager</ref><sp/>*menus;</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_connection" kindref="compound">Connection</ref><sp/>conn;</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_configuration" kindref="compound">Configuration</ref><sp/>config;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_c_map" kindref="compound">CMap</ref><sp/>map;</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_c_character" kindref="compound">CCharacter</ref><sp/>**players;</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct__data" kindref="compound">_data</ref><sp/>*recieverBuffer;</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct__data" kindref="compound">_data</ref><sp/>senderBuffer;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>myId;</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*buffer;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_enums_8hpp_1ad9700e9db9d62004af4a04e4e13912c5" kindref="member">Weapon</ref><sp/>myWeapon;</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>res_x,res_y;</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>port;</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/>ip;</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>*moved;</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>storeKeys[ALLEGRO_KEY_MAX];</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>mapX,mapY;</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>maxClients;</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_client_1ae51af7aa6b8f591496a8f6a4a87a14bf" kindref="member">Client</ref>();</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_client_1a840e519ca781888cbd54181572ebe3a7" kindref="member">~Client</ref>();</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="55" refid="class_client_1ab8104db60235ae805fb77a8cb161c4b8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_client_1ab8104db60235ae805fb77a8cb161c4b8" kindref="member">setWeapon</ref>(<ref refid="_enums_8hpp_1ad9700e9db9d62004af4a04e4e13912c5" kindref="member">Weapon</ref><sp/>myWeapon){this-&gt;myWeapon=myWeapon;}</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="57" refid="class_client_1a8a2de145bff51cff643e5a8d773d35fe" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_client_1a8a2de145bff51cff643e5a8d773d35fe" kindref="member">menu</ref>(){menus-&gt;<ref refid="class_menu_manager_1a86de10f125cd9be03d15dd50e381f53d" kindref="member">main_loop</ref>(timer,event_queue,</highlight><highlight class="keyword">this</highlight><highlight class="normal">);}</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_client_1abccb976632db0b3b5df925875b80b2e7" kindref="member">connect</ref>();</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_client_1a9fbb2f61b005ee6ab3f73b9f449d95eb" kindref="member">main_loop</ref>();</highlight></codeline>
+<codeline lineno="62"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/home/clemente/projects/Troll-Killers/Client.hpp"/>
+  </compounddef>
+</doxygen>

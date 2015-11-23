@@ -1,0 +1,134 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.10">
+  <compounddef id="_configuration_8hpp" kind="file" language="C++">
+    <compoundname>Configuration.hpp</compoundname>
+    <includes local="no">stdio.h</includes>
+    <includes local="no">string.h</includes>
+    <includedby refid="_client_8hpp" local="yes">/home/clemente/projects/Troll-Killers/Client.hpp</includedby>
+    <includedby refid="_configuration_8cpp" local="yes">/home/clemente/projects/Troll-Killers/Configuration.cpp</includedby>
+    <includedby refid="_server_8hpp" local="yes">/home/clemente/projects/Troll-Killers/Server.hpp</includedby>
+    <incdepgraph>
+      <node id="1270">
+        <label>string.h</label>
+      </node>
+      <node id="1268">
+        <label>/home/clemente/projects/Troll-Killers/Configuration.hpp</label>
+        <link refid="Configuration.hpp"/>
+        <childnode refid="1269" relation="include">
+        </childnode>
+        <childnode refid="1270" relation="include">
+        </childnode>
+      </node>
+      <node id="1269">
+        <label>stdio.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1274">
+        <label>/home/clemente/projects/Troll-Killers/MenuManager.hpp</label>
+        <link refid="_menu_manager_8hpp"/>
+        <childnode refid="1272" relation="include">
+        </childnode>
+        <childnode refid="1275" relation="include">
+        </childnode>
+      </node>
+      <node id="1280">
+        <label>/home/clemente/projects/Troll-Killers/Server.cpp</label>
+        <link refid="_server_8cpp"/>
+      </node>
+      <node id="1273">
+        <label>/home/clemente/projects/Troll-Killers/Client.cpp</label>
+        <link refid="_client_8cpp"/>
+      </node>
+      <node id="1278">
+        <label>/home/clemente/projects/Troll-Killers/Server.hpp</label>
+        <link refid="_server_8hpp"/>
+        <childnode refid="1279" relation="include">
+        </childnode>
+        <childnode refid="1280" relation="include">
+        </childnode>
+      </node>
+      <node id="1277">
+        <label>/home/clemente/projects/Troll-Killers/Configuration.cpp</label>
+        <link refid="_configuration_8cpp"/>
+      </node>
+      <node id="1272">
+        <label>/home/clemente/projects/Troll-Killers/Client.hpp</label>
+        <link refid="_client_8hpp"/>
+        <childnode refid="1273" relation="include">
+        </childnode>
+        <childnode refid="1274" relation="include">
+        </childnode>
+        <childnode refid="1276" relation="include">
+        </childnode>
+      </node>
+      <node id="1271">
+        <label>/home/clemente/projects/Troll-Killers/Configuration.hpp</label>
+        <link refid="Configuration.hpp"/>
+        <childnode refid="1272" relation="include">
+        </childnode>
+        <childnode refid="1277" relation="include">
+        </childnode>
+        <childnode refid="1278" relation="include">
+        </childnode>
+      </node>
+      <node id="1279">
+        <label>/home/clemente/projects/Troll-Killers/mainServer.cpp</label>
+        <link refid="main_server_8cpp"/>
+      </node>
+      <node id="1276">
+        <label>/home/clemente/projects/Troll-Killers/mainClient.cpp</label>
+        <link refid="main_client_8cpp"/>
+      </node>
+      <node id="1275">
+        <label>/home/clemente/projects/Troll-Killers/MenuManager.cpp</label>
+        <link refid="_menu_manager_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_configuration" prot="public">Configuration</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//This<sp/>is<sp/>very<sp/>old</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//I<sp/>need<sp/>to<sp/>redo</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>CONFIG_HPP</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CONFIG_HPP</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdio.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10" refid="class_configuration" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_configuration" kindref="compound">Configuration</ref><sp/>{</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/>FILE<sp/>*ptr;</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>buffer[255],configFile[255];</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>configLine[255][2][255];</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>configLines;</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>count;</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>configChanged;</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>get_word(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*,</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*,</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_configuration_1a779947337bf652f0e773cb29f37f14ba" kindref="member">Configuration</ref>();</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_configuration_1a0dd0fa189e239f4c9a036303f641441e" kindref="member">~Configuration</ref>();</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_configuration_1a9eb938cc99deddd6b9730ee10576b55a" kindref="member">config_found</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*);</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_configuration_1a19490e0e191f69330f1f3efa988ed99a" kindref="member">config_create</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*);</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_configuration_1aed21dbeb0bcb1de61389deee612d9074" kindref="member">config_load</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*);</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_configuration_1aea42a72a64052e67db46c0369d731a5e" kindref="member">config_save</ref>();</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_configuration_1aa73dc1019f3fe1678ff56321d2e32960" kindref="member">config_insert</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*,</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*);</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_configuration_1a8a66e437127dfe28d70690d53f6dfd7f" kindref="member">config_get</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*,</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*);</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_configuration_1a971a8c8fdd4e21f63c76e21ce19d7b61" kindref="member">config_remove</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*);</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/home/clemente/projects/Troll-Killers/Configuration.hpp"/>
+  </compounddef>
+</doxygen>

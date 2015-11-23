@@ -1,0 +1,200 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.10">
+  <compounddef id="class_i_g_object" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>IGObject</compoundname>
+    <derivedcompoundref refid="class_c_character" prot="public" virt="non-virtual">CCharacter</derivedcompoundref>
+    <derivedcompoundref refid="class_projectile" prot="public" virt="non-virtual">Projectile</derivedcompoundref>
+    <derivedcompoundref refid="class_s_character" prot="public" virt="non-virtual">SCharacter</derivedcompoundref>
+    <includes refid="_i_g_object_8hpp" local="no">IGObject.hpp</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_i_g_object_1a40fdbe0db5e995e22996567d77bf45c6" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>int16_t</type>
+        <definition>virtual int16_t IGObject::getId</definition>
+        <argsstring>()=0</argsstring>
+        <name>getId</name>
+        <reimplementedby refid="class_projectile_1a359ade45d958b4817e63fc06b25f55af">getId</reimplementedby>
+        <reimplementedby refid="class_s_character_1aed3654ba330a24ac0990047e56bccd32">getId</reimplementedby>
+        <reimplementedby refid="class_c_character_1a317ea948f11c20c52b4eb915cbc6fd34">getId</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/IGObject.hpp" line="9" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_i_g_object_1aa6ae1f7bd99277a3558a8e90d833fa7a" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>int16_t</type>
+        <definition>virtual int16_t IGObject::getX</definition>
+        <argsstring>()=0</argsstring>
+        <name>getX</name>
+        <reimplementedby refid="class_projectile_1a274d46f885207253588d74f54ddb674d">getX</reimplementedby>
+        <reimplementedby refid="class_s_character_1a023df9332c559507d8986facbb37dcad">getX</reimplementedby>
+        <reimplementedby refid="class_c_character_1a27ef2164eae8c8858de7e22b8ae2b356">getX</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/IGObject.hpp" line="10" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_i_g_object_1a3491bdb3a6b6ba8d66e07443a5b5951d" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>int16_t</type>
+        <definition>virtual int16_t IGObject::getY</definition>
+        <argsstring>()=0</argsstring>
+        <name>getY</name>
+        <reimplementedby refid="class_projectile_1a3c5e30132bd9d414514c682e447ef0de">getY</reimplementedby>
+        <reimplementedby refid="class_s_character_1acbdd136e3a70a94f2f08c7158f042de6">getY</reimplementedby>
+        <reimplementedby refid="class_c_character_1a39af09fa51d180f49a58ffce78c9f25b">getY</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/IGObject.hpp" line="11" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_i_g_object_1afc8764ec832e6a60c58dace401d65b32" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>int16_t</type>
+        <definition>virtual int16_t IGObject::getVelocity</definition>
+        <argsstring>()=0</argsstring>
+        <name>getVelocity</name>
+        <reimplementedby refid="class_projectile_1a0417e5c4b9fca6aae57844c57bd78fc0">getVelocity</reimplementedby>
+        <reimplementedby refid="class_s_character_1af36a0d74ed25de0dc9e29213b46f7928">getVelocity</reimplementedby>
+        <reimplementedby refid="class_c_character_1a7074f3d5a24d61766ce4d2fe354679ee">getVelocity</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/IGObject.hpp" line="12" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_i_g_object_1a6e2dd93acb47fc77668e2571bff3481e" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void IGObject::serialize</definition>
+        <argsstring>(char *buffer)=0</argsstring>
+        <name>serialize</name>
+        <reimplementedby refid="class_projectile_1a30ea63ab82a2dc401b8145f61310a9ae">serialize</reimplementedby>
+        <reimplementedby refid="class_s_character_1ab99fa7f23b8c7c9ca45d78d5e9bb8742">serialize</reimplementedby>
+        <reimplementedby refid="class_c_character_1a2a9cb3e98cfe4c36ea292cdc38b999d8">serialize</reimplementedby>
+        <param>
+          <type>char *</type>
+          <declname>buffer</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/IGObject.hpp" line="14" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_i_g_object_1a4b810d1b4a785d7532104113ef5cf0ba" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void IGObject::setX</definition>
+        <argsstring>(int16_t x)=0</argsstring>
+        <name>setX</name>
+        <reimplementedby refid="class_projectile_1a0ed37ed97cd4b930da3f7bffbc5e3aa6">setX</reimplementedby>
+        <reimplementedby refid="class_s_character_1a410a1a3d599fc8e91252805ce4c50f10">setX</reimplementedby>
+        <reimplementedby refid="class_c_character_1a6d92d81e7bd039572e147ebe190fab6c">setX</reimplementedby>
+        <param>
+          <type>int16_t</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/IGObject.hpp" line="16" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_i_g_object_1a5092ff8b79a61c3856510adb0543f229" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void IGObject::setY</definition>
+        <argsstring>(int16_t y)=0</argsstring>
+        <name>setY</name>
+        <reimplementedby refid="class_projectile_1a11e50cf592b5db73cf90a1f18ec5fe1b">setY</reimplementedby>
+        <reimplementedby refid="class_s_character_1a7034f78acd75a886ecd02912b20ddcde">setY</reimplementedby>
+        <reimplementedby refid="class_c_character_1a670de9c2ba79b716953a1dac2db9e4cf">setY</reimplementedby>
+        <param>
+          <type>int16_t</type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/IGObject.hpp" line="17" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_i_g_object_1a9e22adafd5adb2ed8dcb20a90ea6df6d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual IGObject::~IGObject</definition>
+        <argsstring>()</argsstring>
+        <name>~IGObject</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/IGObject.hpp" line="19" column="1" bodyfile="/home/clemente/projects/Troll-Killers/IGObject.hpp" bodystart="19" bodyend="19"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="130">
+        <label>Projectile</label>
+        <link refid="class_projectile"/>
+        <childnode refid="128" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="128">
+        <label>IGObject</label>
+        <link refid="class_i_g_object"/>
+      </node>
+      <node id="129">
+        <label>CCharacter</label>
+        <link refid="class_c_character"/>
+        <childnode refid="128" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="132">
+        <label>SCharacter</label>
+        <link refid="class_s_character"/>
+        <childnode refid="128" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="131">
+        <label>CProjectile</label>
+        <link refid="class_c_projectile"/>
+        <childnode refid="130" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="133">
+        <label>IGObject</label>
+        <link refid="class_i_g_object"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/clemente/projects/Troll-Killers/IGObject.hpp" line="7" column="1" bodyfile="/home/clemente/projects/Troll-Killers/IGObject.hpp" bodystart="7" bodyend="20"/>
+    <listofallmembers>
+      <member refid="class_i_g_object_1a40fdbe0db5e995e22996567d77bf45c6" prot="public" virt="pure-virtual"><scope>IGObject</scope><name>getId</name></member>
+      <member refid="class_i_g_object_1afc8764ec832e6a60c58dace401d65b32" prot="public" virt="pure-virtual"><scope>IGObject</scope><name>getVelocity</name></member>
+      <member refid="class_i_g_object_1aa6ae1f7bd99277a3558a8e90d833fa7a" prot="public" virt="pure-virtual"><scope>IGObject</scope><name>getX</name></member>
+      <member refid="class_i_g_object_1a3491bdb3a6b6ba8d66e07443a5b5951d" prot="public" virt="pure-virtual"><scope>IGObject</scope><name>getY</name></member>
+      <member refid="class_i_g_object_1a6e2dd93acb47fc77668e2571bff3481e" prot="public" virt="pure-virtual"><scope>IGObject</scope><name>serialize</name></member>
+      <member refid="class_i_g_object_1a4b810d1b4a785d7532104113ef5cf0ba" prot="public" virt="pure-virtual"><scope>IGObject</scope><name>setX</name></member>
+      <member refid="class_i_g_object_1a5092ff8b79a61c3856510adb0543f229" prot="public" virt="pure-virtual"><scope>IGObject</scope><name>setY</name></member>
+      <member refid="class_i_g_object_1a9e22adafd5adb2ed8dcb20a90ea6df6d" prot="public" virt="virtual"><scope>IGObject</scope><name>~IGObject</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

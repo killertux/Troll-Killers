@@ -1,0 +1,273 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.10">
+  <compounddef id="_map_editor_8cpp" kind="file" language="C++">
+    <compoundname>MapEditor.cpp</compoundname>
+    <includes refid="_map_editor_8hpp" local="yes">MapEditor.hpp</includes>
+    <incdepgraph>
+      <node id="1589">
+        <label>MapEditor.hpp</label>
+        <link refid="_map_editor_8hpp"/>
+        <childnode refid="1590" relation="include">
+        </childnode>
+        <childnode refid="1591" relation="include">
+        </childnode>
+        <childnode refid="1592" relation="include">
+        </childnode>
+        <childnode refid="1600" relation="include">
+        </childnode>
+        <childnode refid="1603" relation="include">
+        </childnode>
+        <childnode refid="1604" relation="include">
+        </childnode>
+      </node>
+      <node id="1595">
+        <label>stdint.h</label>
+      </node>
+      <node id="1593">
+        <label>Enums.hpp</label>
+        <link refid="_enums_8hpp"/>
+      </node>
+      <node id="1594">
+        <label>_object.hpp</label>
+        <link refid="__object_8hpp"/>
+        <childnode refid="1595" relation="include">
+        </childnode>
+      </node>
+      <node id="1602">
+        <label>string</label>
+      </node>
+      <node id="1591">
+        <label>allegro5/allegro_primitives.h</label>
+      </node>
+      <node id="1601">
+        <label>fstream</label>
+      </node>
+      <node id="1590">
+        <label>allegro5/allegro.h</label>
+      </node>
+      <node id="1592">
+        <label>CMap.hpp</label>
+        <link refid="_c_map_8hpp"/>
+        <childnode refid="1593" relation="include">
+        </childnode>
+        <childnode refid="1594" relation="include">
+        </childnode>
+        <childnode refid="1596" relation="include">
+        </childnode>
+        <childnode refid="1602" relation="include">
+        </childnode>
+        <childnode refid="1601" relation="include">
+        </childnode>
+        <childnode refid="1590" relation="include">
+        </childnode>
+        <childnode refid="1591" relation="include">
+        </childnode>
+        <childnode refid="1598" relation="include">
+        </childnode>
+      </node>
+      <node id="1596">
+        <label>Map.hpp</label>
+        <link refid="_map_8hpp"/>
+        <childnode refid="1593" relation="include">
+        </childnode>
+        <childnode refid="1594" relation="include">
+        </childnode>
+        <childnode refid="1597" relation="include">
+        </childnode>
+        <childnode refid="1599" relation="include">
+        </childnode>
+        <childnode refid="1600" relation="include">
+        </childnode>
+        <childnode refid="1601" relation="include">
+        </childnode>
+      </node>
+      <node id="1597">
+        <label>_data.hpp</label>
+        <link refid="__data_8hpp"/>
+        <childnode refid="1595" relation="include">
+        </childnode>
+        <childnode refid="1598" relation="include">
+        </childnode>
+      </node>
+      <node id="1599">
+        <label>sstream</label>
+      </node>
+      <node id="1604">
+        <label>iostream</label>
+      </node>
+      <node id="1588">
+        <label>/home/clemente/projects/Troll-Killers/MapEditor.cpp</label>
+        <link refid="MapEditor.cpp"/>
+        <childnode refid="1589" relation="include">
+        </childnode>
+      </node>
+      <node id="1603">
+        <label>Cursor.hpp</label>
+        <link refid="_cursor_8hpp"/>
+        <childnode refid="1590" relation="include">
+        </childnode>
+        <childnode refid="1591" relation="include">
+        </childnode>
+        <childnode refid="1600" relation="include">
+        </childnode>
+        <childnode refid="1593" relation="include">
+        </childnode>
+        <childnode refid="1594" relation="include">
+        </childnode>
+      </node>
+      <node id="1600">
+        <label>Defines.hpp</label>
+        <link refid="_defines_8hpp"/>
+      </node>
+      <node id="1598">
+        <label>cstring</label>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>MapEditor.cpp</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/><sp/>Created<sp/>on:<sp/>4<sp/>de<sp/>nov<sp/>de<sp/>2015</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>Author:<sp/>clemente</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_map_editor_8hpp" kindref="compound">MapEditor.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10" refid="class_map_editor_1a293c325d0b53afcf3924f006cdf60363" refkind="member"><highlight class="normal"><ref refid="class_map_editor_1a293c325d0b53afcf3924f006cdf60363" kindref="member">MapEditor::MapEditor</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(!al_init())</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>exit(-1);</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/>al_init_primitives_addon();</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/>al_install_keyboard();</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//al_set_new_display_flags(ALLEGRO_FULLSCREEN);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/>display=al_create_display(<ref refid="_map_editor_8hpp_1aa2c4ae08448fa684506564b4c128d47a" kindref="member">RES_X</ref>,<ref refid="_map_editor_8hpp_1a16e53f6b916d898e45d90f8e59baeb8a" kindref="member">RES_Y</ref>);</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/>event_queue=al_create_event_queue();</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/>timer=al_create_timer(1/<ref refid="_defines_8hpp_1ac92ca5ab87034a348decad7ee8d4bd1b" kindref="member">FPS</ref>);</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/>al_register_event_source(event_queue,al_get_display_event_source(display));</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/>al_register_event_source(event_queue,al_get_keyboard_event_source());</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/>al_register_event_source(event_queue,al_get_timer_event_source(timer));</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/>al_hide_mouse_cursor(display);</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/>map<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_c_map" kindref="compound">CMap</ref>(</highlight><highlight class="stringliteral">&quot;MapaTeste&quot;</highlight><highlight class="normal">,<ref refid="_map_editor_8hpp_1acdc7844fbd4d45737d4aa56834d37829" kindref="member">MAX_OBJECTS</ref>,<ref refid="_map_editor_8hpp_1a30362161c93e3f1a4ee4c673f535b5a8" kindref="member">LENGTH</ref>*<ref refid="_defines_8hpp_1ac389dbca21e58410d552988f3ec954c3" kindref="member">GRID</ref>,<ref refid="_map_editor_8hpp_1a241aeeb764887ae5e3de58b98f04b16d" kindref="member">WIDTH</ref>*GRID);</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/>cursor<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_cursor" kindref="compound">Cursor</ref>(GRID*5,GRID*5,<ref refid="_map_editor_8hpp_1aa2c4ae08448fa684506564b4c128d47a" kindref="member">RES_X</ref>,<ref refid="_map_editor_8hpp_1a16e53f6b916d898e45d90f8e59baeb8a" kindref="member">RES_Y</ref>,5);</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/>map-&gt;<ref refid="class_c_map_1a6b9de17f30f934892113c02b4f53779d" kindref="member">setDrawCircles</ref>(</highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i=0;i&lt;ALLEGRO_KEY_MAX;i++)</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>storeKeys[i]=</highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/>mapX=mapY=0;</highlight></codeline>
+<codeline lineno="37"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39" refid="class_map_editor_1a46fe3ce9d636bc72461d00f4c2d6e594" refkind="member"><highlight class="normal"><ref refid="class_map_editor_1a46fe3ce9d636bc72461d00f4c2d6e594" kindref="member">MapEditor::~MapEditor</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal"><sp/>map;</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal"><sp/>cursor;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/>al_destroy_display(display);</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/>al_destroy_event_queue(event_queue);</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/>al_destroy_timer(timer);</highlight></codeline>
+<codeline lineno="45"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47" refid="class_map_editor_1a5937c9b49b1e342c219f8a87d8e3dd7a" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_map_editor_1a5937c9b49b1e342c219f8a87d8e3dd7a" kindref="member">MapEditor::main_loop</ref>(){</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>done=</highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>redraw=</highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/>al_clear_to_color(al_map_rgb(255,255,255));</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/>al_start_timer(timer);</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal">(!done){</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>al_wait_for_event(event_queue,<sp/>&amp;ev);</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(ev.type<sp/>==<sp/>ALLEGRO_EVENT_DISPLAY_CLOSE)</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>done=</highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(ev.type<sp/>==<sp/>ALLEGRO_EVENT_KEY_DOWN){</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>storeKeys[ev.keyboard.keycode]=</highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(ev.keyboard.keycode<sp/>==<sp/>ALLEGRO_KEY_ESCAPE){</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>exit(0);</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Cursor<sp/>Comands;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(ev.keyboard.keycode<sp/>==<sp/>ALLEGRO_KEY_LEFT<sp/><sp/>&amp;&amp;<sp/>storeKeys[ALLEGRO_KEY_LCTRL])</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cursor-&gt;<ref refid="class_cursor_1adc6a92102e4c6a08473b0b2745a8ebc4" kindref="member">change_cursor</ref>(-1);</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(ev.keyboard.keycode<sp/>==<sp/>ALLEGRO_KEY_RIGHT<sp/><sp/>&amp;&amp;<sp/>storeKeys[ALLEGRO_KEY_LCTRL])</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cursor-&gt;<ref refid="class_cursor_1adc6a92102e4c6a08473b0b2745a8ebc4" kindref="member">change_cursor</ref>(-1);</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(ev.keyboard.keycode<sp/>==<sp/>ALLEGRO_KEY_RIGHT<sp/>&amp;&amp;<sp/>storeKeys[ALLEGRO_KEY_ALT])</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cursor-&gt;<ref refid="class_cursor_1ac01596d8124ec0d1d92b88212ca858e5" kindref="member">increase_object</ref>(<ref refid="_enums_8hpp_1a224b9163917ac32fc95a60d8c1eec3aaaec8379af7490bb9eaaf579cf17876f38" kindref="member">RIGHT</ref>);</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(ev.keyboard.keycode<sp/>==<sp/>ALLEGRO_KEY_LEFT<sp/>&amp;&amp;<sp/>storeKeys[ALLEGRO_KEY_ALT])</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cursor-&gt;<ref refid="class_cursor_1ac01596d8124ec0d1d92b88212ca858e5" kindref="member">increase_object</ref>(<ref refid="_enums_8hpp_1a224b9163917ac32fc95a60d8c1eec3aaadb45120aafd37a973140edee24708065" kindref="member">LEFT</ref>);</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(ev.keyboard.keycode<sp/>==<sp/>ALLEGRO_KEY_DOWN<sp/>&amp;&amp;<sp/>storeKeys[ALLEGRO_KEY_ALT])</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cursor-&gt;<ref refid="class_cursor_1ac01596d8124ec0d1d92b88212ca858e5" kindref="member">increase_object</ref>(<ref refid="_enums_8hpp_1a224b9163917ac32fc95a60d8c1eec3aaa9b0b4a95b99523966e0e34ffdadac9da" kindref="member">DOWN</ref>);</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(ev.keyboard.keycode<sp/>==<sp/>ALLEGRO_KEY_UP<sp/>&amp;&amp;<sp/>storeKeys[ALLEGRO_KEY_ALT])</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cursor-&gt;<ref refid="class_cursor_1ac01596d8124ec0d1d92b88212ca858e5" kindref="member">increase_object</ref>(<ref refid="_enums_8hpp_1a224b9163917ac32fc95a60d8c1eec3aaaba595d8bca8bc5e67c37c0a9d89becfa" kindref="member">UP</ref>);</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(ev.keyboard.keycode<sp/>==<sp/>ALLEGRO_KEY_ENTER<sp/>&amp;&amp;<sp/>cursor-&gt;<ref refid="class_cursor_1a166a2e5d9dda3e7c4b1b552a019b7f41" kindref="member">object_selected</ref>())</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>map-&gt;<ref refid="class_c_map_1abec86992ac01292170213a5d71f17895" kindref="member">new_object</ref>(cursor-&gt;<ref refid="class_cursor_1aaaa6b8912141e20abde48531eec76bba" kindref="member">getObject</ref>(mapX,mapY));</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(ev.keyboard.keycode<sp/>==<sp/>ALLEGRO_KEY_DELETE)</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>map-&gt;<ref refid="class_c_map_1a9e069b9af7a4a243345dd0bfae24121a" kindref="member">destroy_object</ref>(cursor-&gt;<ref refid="class_cursor_1a32172f293dc42c6256ea95241ac1f1b6" kindref="member">getX</ref>()+mapX,cursor-&gt;<ref refid="class_cursor_1a737cccaafed3d0a03977b9c5f4cfe7cf" kindref="member">getY</ref>()+mapY);</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(ev.keyboard.keycode<sp/>==<sp/>ALLEGRO_KEY_T)</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cursor-&gt;<ref refid="class_cursor_1a33ed388e90bb4af04e239b684f156587" kindref="member">change_team</ref>();</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Save<sp/>and<sp/>Load</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(ev.keyboard.keycode<sp/>==<sp/>ALLEGRO_KEY_S){</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>map-&gt;<ref refid="class_map_1afdd22d2739acb6a6eaf8864ee090107a" kindref="member">save_map</ref>((std::string)<ref refid="_map_editor_8hpp_1a238feed3512d8b21b3854d082dcae6f4" kindref="member">MAP_FILE</ref>);</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Map<sp/>saved<sp/>as<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>MAP_FILE<sp/>&lt;&lt;<sp/>std::endl;</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(ev.keyboard.keycode<sp/>==<sp/>ALLEGRO_KEY_L){</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>map-&gt;<ref refid="class_map_1a259bb70652389b9ecf0bc76ceca656a5" kindref="member">load_map</ref>((std::string)<ref refid="_map_editor_8hpp_1a238feed3512d8b21b3854d082dcae6f4" kindref="member">MAP_FILE</ref>);</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Map<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>MAP_FILE<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>loaded!\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(ev.type<sp/>==<sp/>ALLEGRO_EVENT_KEY_UP)</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>storeKeys[ev.keyboard.keycode]=</highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(ev.type<sp/>==<sp/>ALLEGRO_EVENT_TIMER){</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>al_get_keyboard_state(&amp;keyState);</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cursor-&gt;<ref refid="class_cursor_1a475f603c81c80a68499051bc224e7bb8" kindref="member">move_cursor</ref>(keyState);</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(cursor-&gt;<ref refid="class_cursor_1a32172f293dc42c6256ea95241ac1f1b6" kindref="member">getX</ref>()&gt;<ref refid="_map_editor_8hpp_1aa2c4ae08448fa684506564b4c128d47a" kindref="member">RES_X</ref>-2*<ref refid="_defines_8hpp_1ac389dbca21e58410d552988f3ec954c3" kindref="member">GRID</ref><sp/>&amp;&amp;<sp/>mapX&lt;<ref refid="_map_editor_8hpp_1a30362161c93e3f1a4ee4c673f535b5a8" kindref="member">LENGTH</ref>*<ref refid="_defines_8hpp_1ac389dbca21e58410d552988f3ec954c3" kindref="member">GRID</ref>){</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>mapX+=<ref refid="_defines_8hpp_1ac389dbca21e58410d552988f3ec954c3" kindref="member">GRID</ref>;</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cursor-&gt;<ref refid="class_cursor_1a3f54d9a590dfb9fca1bd390b8a9c7e54" kindref="member">setX</ref>(cursor-&gt;<ref refid="class_cursor_1a32172f293dc42c6256ea95241ac1f1b6" kindref="member">getX</ref>()-<ref refid="_defines_8hpp_1ac389dbca21e58410d552988f3ec954c3" kindref="member">GRID</ref>);</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(cursor-&gt;<ref refid="class_cursor_1a32172f293dc42c6256ea95241ac1f1b6" kindref="member">getX</ref>()&lt;<ref refid="_defines_8hpp_1ac389dbca21e58410d552988f3ec954c3" kindref="member">GRID</ref><sp/>&amp;&amp;<sp/>mapX&gt;0){</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>mapX-=<ref refid="_defines_8hpp_1ac389dbca21e58410d552988f3ec954c3" kindref="member">GRID</ref>;</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cursor-&gt;<ref refid="class_cursor_1a3f54d9a590dfb9fca1bd390b8a9c7e54" kindref="member">setX</ref>(cursor-&gt;<ref refid="class_cursor_1a32172f293dc42c6256ea95241ac1f1b6" kindref="member">getX</ref>()+<ref refid="_defines_8hpp_1ac389dbca21e58410d552988f3ec954c3" kindref="member">GRID</ref>);</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(cursor-&gt;<ref refid="class_cursor_1a737cccaafed3d0a03977b9c5f4cfe7cf" kindref="member">getY</ref>()&gt;<ref refid="_map_editor_8hpp_1a16e53f6b916d898e45d90f8e59baeb8a" kindref="member">RES_Y</ref>-2*<ref refid="_defines_8hpp_1ac389dbca21e58410d552988f3ec954c3" kindref="member">GRID</ref><sp/>&amp;&amp;<sp/>mapY&lt;<ref refid="_map_editor_8hpp_1a241aeeb764887ae5e3de58b98f04b16d" kindref="member">WIDTH</ref>*<ref refid="_defines_8hpp_1ac389dbca21e58410d552988f3ec954c3" kindref="member">GRID</ref>){</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>mapY+=<ref refid="_defines_8hpp_1ac389dbca21e58410d552988f3ec954c3" kindref="member">GRID</ref>;</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cursor-&gt;<ref refid="class_cursor_1ab2314c3d20498cb65a66f5be6c2e74d5" kindref="member">setY</ref>(cursor-&gt;<ref refid="class_cursor_1a737cccaafed3d0a03977b9c5f4cfe7cf" kindref="member">getY</ref>()-<ref refid="_defines_8hpp_1ac389dbca21e58410d552988f3ec954c3" kindref="member">GRID</ref>);</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(cursor-&gt;<ref refid="class_cursor_1a737cccaafed3d0a03977b9c5f4cfe7cf" kindref="member">getY</ref>()&lt;<ref refid="_defines_8hpp_1ac389dbca21e58410d552988f3ec954c3" kindref="member">GRID</ref><sp/>&amp;&amp;<sp/>mapY&gt;0){</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>mapY-=<ref refid="_defines_8hpp_1ac389dbca21e58410d552988f3ec954c3" kindref="member">GRID</ref>;</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cursor-&gt;<ref refid="class_cursor_1ab2314c3d20498cb65a66f5be6c2e74d5" kindref="member">setY</ref>(cursor-&gt;<ref refid="class_cursor_1a737cccaafed3d0a03977b9c5f4cfe7cf" kindref="member">getY</ref>()+<ref refid="_defines_8hpp_1ac389dbca21e58410d552988f3ec954c3" kindref="member">GRID</ref>);</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>redraw=</highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(redraw<sp/>&amp;&amp;<sp/>al_is_event_queue_empty(event_queue)){</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>map-&gt;<ref refid="class_c_map_1adedfa138aa67c2924e79809ad1dac85c" kindref="member">draw_map</ref>(mapX,mapY);</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cursor-&gt;<ref refid="class_cursor_1a5621772fb10182e95f88d7227f670de4" kindref="member">draw_cursor</ref>();;</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_map_editor_1ac956a51214ea40b1423156efda3e6e11" kindref="member">draw_grid</ref>();</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>al_flip_display();</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"></highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="132"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"></highlight></codeline>
+<codeline lineno="134" refid="class_map_editor_1ac956a51214ea40b1423156efda3e6e11" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_map_editor_1ac956a51214ea40b1423156efda3e6e11" kindref="member">MapEditor::draw_grid</ref>(){</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i=0;i&lt;<ref refid="_map_editor_8hpp_1a30362161c93e3f1a4ee4c673f535b5a8" kindref="member">LENGTH</ref>*<ref refid="_defines_8hpp_1ac389dbca21e58410d552988f3ec954c3" kindref="member">GRID</ref>;i+=<ref refid="_defines_8hpp_1ac389dbca21e58410d552988f3ec954c3" kindref="member">GRID</ref>)</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>al_draw_line(i,0,i,<ref refid="_map_editor_8hpp_1a241aeeb764887ae5e3de58b98f04b16d" kindref="member">WIDTH</ref>*GRID,al_map_rgb(0,0,0),2);</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>j=0;j&lt;<ref refid="_map_editor_8hpp_1a241aeeb764887ae5e3de58b98f04b16d" kindref="member">WIDTH</ref>*<ref refid="_defines_8hpp_1ac389dbca21e58410d552988f3ec954c3" kindref="member">GRID</ref>;j+=<ref refid="_defines_8hpp_1ac389dbca21e58410d552988f3ec954c3" kindref="member">GRID</ref>)</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>al_draw_line(0,j,<ref refid="_map_editor_8hpp_1a30362161c93e3f1a4ee4c673f535b5a8" kindref="member">LENGTH</ref>*GRID,j,al_map_rgb(0,0,0),2);</highlight></codeline>
+<codeline lineno="139"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="/home/clemente/projects/Troll-Killers/MapEditor.cpp"/>
+  </compounddef>
+</doxygen>

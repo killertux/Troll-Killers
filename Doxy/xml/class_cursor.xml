@@ -1,0 +1,486 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.10">
+  <compounddef id="class_cursor" kind="class" language="C++" prot="public">
+    <compoundname>Cursor</compoundname>
+    <includes refid="_cursor_8hpp" local="no">Cursor.hpp</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_cursor_1a15fe4819896d4960f8d33398905a61d5" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Cursor::x</definition>
+        <argsstring></argsstring>
+        <name>x</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/Cursor.hpp" line="12" column="1" bodyfile="/home/clemente/projects/Troll-Killers/Cursor.hpp" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_cursor_1a536df6c93667db288cd5ed0326215fec" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Cursor::y</definition>
+        <argsstring></argsstring>
+        <name>y</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/Cursor.hpp" line="12" column="1" bodyfile="/home/clemente/projects/Troll-Killers/Cursor.hpp" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_cursor_1aedc8e394213db1b43bd3eda124218f98" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Cursor::resX</definition>
+        <argsstring></argsstring>
+        <name>resX</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/Cursor.hpp" line="13" column="1" bodyfile="/home/clemente/projects/Troll-Killers/Cursor.hpp" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_cursor_1a9ed31af00e6c81352fe58450d38acfc7" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Cursor::resY</definition>
+        <argsstring></argsstring>
+        <name>resY</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/Cursor.hpp" line="13" column="1" bodyfile="/home/clemente/projects/Troll-Killers/Cursor.hpp" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_cursor_1a4481fbf1f941ae8144d86ddee22d1617" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Cursor::timer</definition>
+        <argsstring></argsstring>
+        <name>timer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/Cursor.hpp" line="14" column="1" bodyfile="/home/clemente/projects/Troll-Killers/Cursor.hpp" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_cursor_1ac926e9c689a79a712d6d698a1b2810d8" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Cursor::cTimer</definition>
+        <argsstring></argsstring>
+        <name>cTimer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/Cursor.hpp" line="15" column="1" bodyfile="/home/clemente/projects/Troll-Killers/Cursor.hpp" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_cursor_1a3e333461713b60a112f2b093e2f371cb" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Cursor::lengthInc</definition>
+        <argsstring></argsstring>
+        <name>lengthInc</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/Cursor.hpp" line="17" column="1" bodyfile="/home/clemente/projects/Troll-Killers/Cursor.hpp" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_cursor_1afbc761bf5f54cd46b9a17e29750bdfb8" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Cursor::widthInc</definition>
+        <argsstring></argsstring>
+        <name>widthInc</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/Cursor.hpp" line="18" column="1" bodyfile="/home/clemente/projects/Troll-Killers/Cursor.hpp" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_cursor_1a703d30412407c7dab2a20ff0471f9a80" prot="private" static="no" mutable="no">
+        <type><ref refid="_enums_8hpp_1a224b9163917ac32fc95a60d8c1eec3aa" kindref="member">Direction</ref></type>
+        <definition>Direction Cursor::dir</definition>
+        <argsstring></argsstring>
+        <name>dir</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/Cursor.hpp" line="20" column="1" bodyfile="/home/clemente/projects/Troll-Killers/Cursor.hpp" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_cursor_1a1fa4d395fcb10165cfc6145a7e6d9847" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Cursor::moved</definition>
+        <argsstring></argsstring>
+        <name>moved</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/Cursor.hpp" line="21" column="1" bodyfile="/home/clemente/projects/Troll-Killers/Cursor.hpp" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_cursor_1a53526391e70388b4b2264f1cd3d994ae" prot="private" static="no" mutable="no">
+        <type><ref refid="_enums_8hpp_1a9c13bb5b1d69698f9b47900990eaa598" kindref="member">Team</ref></type>
+        <definition>Team Cursor::team</definition>
+        <argsstring></argsstring>
+        <name>team</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/Cursor.hpp" line="23" column="1" bodyfile="/home/clemente/projects/Troll-Killers/Cursor.hpp" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_cursor_1a1eb62b5d24a2f4f2eeed301dc0b9a8ac" prot="private" static="no" mutable="no">
+        <type><ref refid="struct__object" kindref="compound">_object</ref></type>
+        <definition>_object Cursor::objCursor</definition>
+        <argsstring></argsstring>
+        <name>objCursor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/Cursor.hpp" line="24" column="1" bodyfile="/home/clemente/projects/Troll-Killers/Cursor.hpp" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_cursor_1a55e778349468dcec1e1bea7cdec709ec" prot="private" static="no" mutable="no">
+        <type><ref refid="_enums_8hpp_1a842c5e2e69277690b064bf363c017980" kindref="member">ObjectType</ref></type>
+        <definition>ObjectType Cursor::objSelected</definition>
+        <argsstring></argsstring>
+        <name>objSelected</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/Cursor.hpp" line="25" column="1" bodyfile="/home/clemente/projects/Troll-Killers/Cursor.hpp" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_cursor_1a3cbfae4aa46ddd61a5a8569566899cc2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Cursor::Cursor</definition>
+        <argsstring>(int x, int y, int resX, int resY, int timer)</argsstring>
+        <name>Cursor</name>
+        <param>
+          <type>int</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>resX</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>resY</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>timer</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/Cursor.hpp" line="27" column="1" bodyfile="/home/clemente/projects/Troll-Killers/Cursor.cpp" bodystart="3" bodyend="14"/>
+        <references refid="_enums_8hpp_1a224b9163917ac32fc95a60d8c1eec3aaa851e6f177be6e7d7bf0bc7408e932f1b" compoundref="_enums_8hpp" startline="15">STOPED</references>
+        <references refid="_enums_8hpp_1a842c5e2e69277690b064bf363c017980ac157bdf0b85a40d2619cbc8bc1ae5fe2" compoundref="_enums_8hpp" startline="7">NONE</references>
+        <references refid="_enums_8hpp_1a9c13bb5b1d69698f9b47900990eaa598af80f9a890089d211842d59625e561f88" compoundref="_enums_8hpp" startline="23">RED</references>
+      </memberdef>
+      <memberdef kind="function" id="class_cursor_1a5621772fb10182e95f88d7227f670de4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Cursor::draw_cursor</definition>
+        <argsstring>()</argsstring>
+        <name>draw_cursor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/Cursor.hpp" line="28" column="1" bodyfile="/home/clemente/projects/Troll-Killers/Cursor.cpp" bodystart="16" bodyend="26"/>
+        <references refid="_enums_8hpp_1a842c5e2e69277690b064bf363c017980ae552ab0a96c0384a6e918e726b7f6102" compoundref="_enums_8hpp" startline="6">RECTANGLE</references>
+        <references refid="struct__object_1adb6e178c2aa0bc48f5db6d85106c1680" compoundref="__object_8hpp" startline="7">_object::x</references>
+        <references refid="struct__object_1a48f88904fef6cb2f4ea22029174d76bc" compoundref="__object_8hpp" startline="7">_object::y</references>
+        <references refid="struct__object_1a9d23dfa35b2571bf0b89d4ca75f5c155" compoundref="__object_8hpp" startline="9">_object::length</references>
+        <references refid="struct__object_1a7dff64a3cc71a49786c1052bb6c250ca" compoundref="__object_8hpp" startline="9">_object::width</references>
+        <references refid="struct__object_1af5318fcc501c7951e1bf261de6c29b3b" compoundref="__object_8hpp" startline="10">_object::r</references>
+        <references refid="struct__object_1a89ebce79c5f2acba52f871e6833977ff" compoundref="__object_8hpp" startline="11">_object::g</references>
+        <references refid="struct__object_1a104af22ae68294943efb54edb7a46b0e" compoundref="__object_8hpp" startline="12">_object::b</references>
+        <references refid="_enums_8hpp_1a842c5e2e69277690b064bf363c017980aa79c827759ea48f0735386c4b1188911" compoundref="_enums_8hpp" startline="5">CIRCLE</references>
+        <references refid="struct__object_1a870a8b24b7b3dc9244f543f096e9dae6" compoundref="__object_8hpp" startline="8">_object::radius</references>
+        <referencedby refid="class_map_editor_1a5937c9b49b1e342c219f8a87d8e3dd7a" compoundref="_map_editor_8cpp" startline="47" endline="132">MapEditor::main_loop</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_cursor_1a475f603c81c80a68499051bc224e7bb8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Cursor::move_cursor</definition>
+        <argsstring>(ALLEGRO_KEYBOARD_STATE keyState)</argsstring>
+        <name>move_cursor</name>
+        <param>
+          <type>ALLEGRO_KEYBOARD_STATE</type>
+          <declname>keyState</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/Cursor.hpp" line="29" column="1" bodyfile="/home/clemente/projects/Troll-Killers/Cursor.cpp" bodystart="28" bodyend="87"/>
+        <references refid="_enums_8hpp_1a224b9163917ac32fc95a60d8c1eec3aaa851e6f177be6e7d7bf0bc7408e932f1b" compoundref="_enums_8hpp" startline="15">STOPED</references>
+        <references refid="_defines_8hpp_1ac389dbca21e58410d552988f3ec954c3" compoundref="_defines_8hpp" startline="8">GRID</references>
+        <references refid="_enums_8hpp_1a224b9163917ac32fc95a60d8c1eec3aaaba595d8bca8bc5e67c37c0a9d89becfa" compoundref="_enums_8hpp" startline="11">UP</references>
+        <references refid="_enums_8hpp_1a224b9163917ac32fc95a60d8c1eec3aaa9b0b4a95b99523966e0e34ffdadac9da" compoundref="_enums_8hpp" startline="12">DOWN</references>
+        <references refid="_enums_8hpp_1a224b9163917ac32fc95a60d8c1eec3aaadb45120aafd37a973140edee24708065" compoundref="_enums_8hpp" startline="13">LEFT</references>
+        <references refid="_enums_8hpp_1a224b9163917ac32fc95a60d8c1eec3aaaec8379af7490bb9eaaf579cf17876f38" compoundref="_enums_8hpp" startline="14">RIGHT</references>
+        <references refid="_enums_8hpp_1a842c5e2e69277690b064bf363c017980ae552ab0a96c0384a6e918e726b7f6102" compoundref="_enums_8hpp" startline="6">RECTANGLE</references>
+        <references refid="struct__object_1adb6e178c2aa0bc48f5db6d85106c1680" compoundref="__object_8hpp" startline="7">_object::x</references>
+        <references refid="struct__object_1a48f88904fef6cb2f4ea22029174d76bc" compoundref="__object_8hpp" startline="7">_object::y</references>
+        <references refid="_enums_8hpp_1a842c5e2e69277690b064bf363c017980aa79c827759ea48f0735386c4b1188911" compoundref="_enums_8hpp" startline="5">CIRCLE</references>
+        <referencedby refid="class_map_editor_1a5937c9b49b1e342c219f8a87d8e3dd7a" compoundref="_map_editor_8cpp" startline="47" endline="132">MapEditor::main_loop</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_cursor_1a32172f293dc42c6256ea95241ac1f1b6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int Cursor::getX</definition>
+        <argsstring>()</argsstring>
+        <name>getX</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/Cursor.hpp" line="31" column="1" bodyfile="/home/clemente/projects/Troll-Killers/Cursor.hpp" bodystart="31" bodyend="31"/>
+        <referencedby refid="class_map_editor_1a5937c9b49b1e342c219f8a87d8e3dd7a" compoundref="_map_editor_8cpp" startline="47" endline="132">MapEditor::main_loop</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_cursor_1a737cccaafed3d0a03977b9c5f4cfe7cf" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int Cursor::getY</definition>
+        <argsstring>()</argsstring>
+        <name>getY</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/Cursor.hpp" line="32" column="1" bodyfile="/home/clemente/projects/Troll-Killers/Cursor.hpp" bodystart="32" bodyend="32"/>
+        <referencedby refid="class_map_editor_1a5937c9b49b1e342c219f8a87d8e3dd7a" compoundref="_map_editor_8cpp" startline="47" endline="132">MapEditor::main_loop</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_cursor_1a3f54d9a590dfb9fca1bd390b8a9c7e54" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Cursor::setX</definition>
+        <argsstring>(int x)</argsstring>
+        <name>setX</name>
+        <param>
+          <type>int</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/Cursor.hpp" line="33" column="1" bodyfile="/home/clemente/projects/Troll-Killers/Cursor.hpp" bodystart="33" bodyend="33"/>
+        <referencedby refid="class_map_editor_1a5937c9b49b1e342c219f8a87d8e3dd7a" compoundref="_map_editor_8cpp" startline="47" endline="132">MapEditor::main_loop</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_cursor_1ab2314c3d20498cb65a66f5be6c2e74d5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Cursor::setY</definition>
+        <argsstring>(int y)</argsstring>
+        <name>setY</name>
+        <param>
+          <type>int</type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/Cursor.hpp" line="34" column="1" bodyfile="/home/clemente/projects/Troll-Killers/Cursor.hpp" bodystart="34" bodyend="34"/>
+        <referencedby refid="class_map_editor_1a5937c9b49b1e342c219f8a87d8e3dd7a" compoundref="_map_editor_8cpp" startline="47" endline="132">MapEditor::main_loop</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_cursor_1adc6a92102e4c6a08473b0b2745a8ebc4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Cursor::change_cursor</definition>
+        <argsstring>(int i)</argsstring>
+        <name>change_cursor</name>
+        <param>
+          <type>int</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/Cursor.hpp" line="36" column="1" bodyfile="/home/clemente/projects/Troll-Killers/Cursor.cpp" bodystart="89" bodyend="127"/>
+        <references refid="_enums_8hpp_1a842c5e2e69277690b064bf363c017980ae552ab0a96c0384a6e918e726b7f6102" compoundref="_enums_8hpp" startline="6">RECTANGLE</references>
+        <references refid="_enums_8hpp_1a842c5e2e69277690b064bf363c017980ac157bdf0b85a40d2619cbc8bc1ae5fe2" compoundref="_enums_8hpp" startline="7">NONE</references>
+        <references refid="_enums_8hpp_1a842c5e2e69277690b064bf363c017980aa79c827759ea48f0735386c4b1188911" compoundref="_enums_8hpp" startline="5">CIRCLE</references>
+        <references refid="struct__object_1a4ffae0568ef6772f8ebefa0997f79243" compoundref="__object_8hpp" startline="6">_object::type</references>
+        <references refid="struct__object_1adb6e178c2aa0bc48f5db6d85106c1680" compoundref="__object_8hpp" startline="7">_object::x</references>
+        <references refid="struct__object_1a48f88904fef6cb2f4ea22029174d76bc" compoundref="__object_8hpp" startline="7">_object::y</references>
+        <references refid="struct__object_1a9d23dfa35b2571bf0b89d4ca75f5c155" compoundref="__object_8hpp" startline="9">_object::length</references>
+        <references refid="_defines_8hpp_1ac389dbca21e58410d552988f3ec954c3" compoundref="_defines_8hpp" startline="8">GRID</references>
+        <references refid="struct__object_1a7dff64a3cc71a49786c1052bb6c250ca" compoundref="__object_8hpp" startline="9">_object::width</references>
+        <references refid="struct__object_1af5318fcc501c7951e1bf261de6c29b3b" compoundref="__object_8hpp" startline="10">_object::r</references>
+        <references refid="struct__object_1a89ebce79c5f2acba52f871e6833977ff" compoundref="__object_8hpp" startline="11">_object::g</references>
+        <references refid="struct__object_1a104af22ae68294943efb54edb7a46b0e" compoundref="__object_8hpp" startline="12">_object::b</references>
+        <references refid="struct__object_1a870a8b24b7b3dc9244f543f096e9dae6" compoundref="__object_8hpp" startline="8">_object::radius</references>
+        <references refid="_enums_8hpp_1a9c13bb5b1d69698f9b47900990eaa598af80f9a890089d211842d59625e561f88" compoundref="_enums_8hpp" startline="23">RED</references>
+        <references refid="_enums_8hpp_1a9c13bb5b1d69698f9b47900990eaa598a35d6719cb4d7577c031b3d79057a1b79" compoundref="_enums_8hpp" startline="24">BLUE</references>
+        <referencedby refid="class_map_editor_1a5937c9b49b1e342c219f8a87d8e3dd7a" compoundref="_map_editor_8cpp" startline="47" endline="132">MapEditor::main_loop</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_cursor_1a33ed388e90bb4af04e239b684f156587" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Cursor::change_team</definition>
+        <argsstring>()</argsstring>
+        <name>change_team</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/Cursor.hpp" line="37" column="1" bodyfile="/home/clemente/projects/Troll-Killers/Cursor.cpp" bodystart="129" bodyend="139"/>
+        <references refid="_enums_8hpp_1a9c13bb5b1d69698f9b47900990eaa598af80f9a890089d211842d59625e561f88" compoundref="_enums_8hpp" startline="23">RED</references>
+        <references refid="_enums_8hpp_1a9c13bb5b1d69698f9b47900990eaa598a35d6719cb4d7577c031b3d79057a1b79" compoundref="_enums_8hpp" startline="24">BLUE</references>
+        <references refid="struct__object_1a104af22ae68294943efb54edb7a46b0e" compoundref="__object_8hpp" startline="12">_object::b</references>
+        <references refid="struct__object_1a89ebce79c5f2acba52f871e6833977ff" compoundref="__object_8hpp" startline="11">_object::g</references>
+        <references refid="struct__object_1af5318fcc501c7951e1bf261de6c29b3b" compoundref="__object_8hpp" startline="10">_object::r</references>
+        <referencedby refid="class_map_editor_1a5937c9b49b1e342c219f8a87d8e3dd7a" compoundref="_map_editor_8cpp" startline="47" endline="132">MapEditor::main_loop</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_cursor_1ac01596d8124ec0d1d92b88212ca858e5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Cursor::increase_object</definition>
+        <argsstring>(Direction incDir)</argsstring>
+        <name>increase_object</name>
+        <param>
+          <type><ref refid="_enums_8hpp_1a224b9163917ac32fc95a60d8c1eec3aa" kindref="member">Direction</ref></type>
+          <declname>incDir</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/Cursor.hpp" line="38" column="1" bodyfile="/home/clemente/projects/Troll-Killers/Cursor.cpp" bodystart="141" bodyend="161"/>
+        <references refid="_enums_8hpp_1a224b9163917ac32fc95a60d8c1eec3aaaec8379af7490bb9eaaf579cf17876f38" compoundref="_enums_8hpp" startline="14">RIGHT</references>
+        <references refid="struct__object_1a9d23dfa35b2571bf0b89d4ca75f5c155" compoundref="__object_8hpp" startline="9">_object::length</references>
+        <references refid="_defines_8hpp_1ac389dbca21e58410d552988f3ec954c3" compoundref="_defines_8hpp" startline="8">GRID</references>
+        <references refid="_enums_8hpp_1a224b9163917ac32fc95a60d8c1eec3aaadb45120aafd37a973140edee24708065" compoundref="_enums_8hpp" startline="13">LEFT</references>
+        <references refid="_enums_8hpp_1a224b9163917ac32fc95a60d8c1eec3aaa9b0b4a95b99523966e0e34ffdadac9da" compoundref="_enums_8hpp" startline="12">DOWN</references>
+        <references refid="struct__object_1a7dff64a3cc71a49786c1052bb6c250ca" compoundref="__object_8hpp" startline="9">_object::width</references>
+        <references refid="_enums_8hpp_1a224b9163917ac32fc95a60d8c1eec3aaaba595d8bca8bc5e67c37c0a9d89becfa" compoundref="_enums_8hpp" startline="11">UP</references>
+        <referencedby refid="class_map_editor_1a5937c9b49b1e342c219f8a87d8e3dd7a" compoundref="_map_editor_8cpp" startline="47" endline="132">MapEditor::main_loop</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_cursor_1aaaa6b8912141e20abde48531eec76bba" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="struct__object" kindref="compound">_object</ref></type>
+        <definition>_object Cursor::getObject</definition>
+        <argsstring>(int mapX, int mapY)</argsstring>
+        <name>getObject</name>
+        <param>
+          <type>int</type>
+          <declname>mapX</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>mapY</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/Cursor.hpp" line="39" column="1" bodyfile="/home/clemente/projects/Troll-Killers/Cursor.hpp" bodystart="39" bodyend="39"/>
+        <references refid="struct__object_1adb6e178c2aa0bc48f5db6d85106c1680" compoundref="__object_8hpp" startline="7">_object::x</references>
+        <references refid="struct__object_1a48f88904fef6cb2f4ea22029174d76bc" compoundref="__object_8hpp" startline="7">_object::y</references>
+        <referencedby refid="class_map_editor_1a5937c9b49b1e342c219f8a87d8e3dd7a" compoundref="_map_editor_8cpp" startline="47" endline="132">MapEditor::main_loop</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_cursor_1a166a2e5d9dda3e7c4b1b552a019b7f41" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Cursor::object_selected</definition>
+        <argsstring>()</argsstring>
+        <name>object_selected</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/Cursor.hpp" line="40" column="1" bodyfile="/home/clemente/projects/Troll-Killers/Cursor.hpp" bodystart="40" bodyend="40"/>
+        <references refid="_enums_8hpp_1a842c5e2e69277690b064bf363c017980ac157bdf0b85a40d2619cbc8bc1ae5fe2" compoundref="_enums_8hpp" startline="7">NONE</references>
+        <referencedby refid="class_map_editor_1a5937c9b49b1e342c219f8a87d8e3dd7a" compoundref="_map_editor_8cpp" startline="47" endline="132">MapEditor::main_loop</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="127">
+        <label>Cursor</label>
+        <link refid="class_cursor"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/clemente/projects/Troll-Killers/Cursor.hpp" line="10" column="1" bodyfile="/home/clemente/projects/Troll-Killers/Cursor.hpp" bodystart="10" bodyend="41"/>
+    <listofallmembers>
+      <member refid="class_cursor_1adc6a92102e4c6a08473b0b2745a8ebc4" prot="public" virt="non-virtual"><scope>Cursor</scope><name>change_cursor</name></member>
+      <member refid="class_cursor_1a33ed388e90bb4af04e239b684f156587" prot="public" virt="non-virtual"><scope>Cursor</scope><name>change_team</name></member>
+      <member refid="class_cursor_1ac926e9c689a79a712d6d698a1b2810d8" prot="private" virt="non-virtual"><scope>Cursor</scope><name>cTimer</name></member>
+      <member refid="class_cursor_1a3cbfae4aa46ddd61a5a8569566899cc2" prot="public" virt="non-virtual"><scope>Cursor</scope><name>Cursor</name></member>
+      <member refid="class_cursor_1a703d30412407c7dab2a20ff0471f9a80" prot="private" virt="non-virtual"><scope>Cursor</scope><name>dir</name></member>
+      <member refid="class_cursor_1a5621772fb10182e95f88d7227f670de4" prot="public" virt="non-virtual"><scope>Cursor</scope><name>draw_cursor</name></member>
+      <member refid="class_cursor_1aaaa6b8912141e20abde48531eec76bba" prot="public" virt="non-virtual"><scope>Cursor</scope><name>getObject</name></member>
+      <member refid="class_cursor_1a32172f293dc42c6256ea95241ac1f1b6" prot="public" virt="non-virtual"><scope>Cursor</scope><name>getX</name></member>
+      <member refid="class_cursor_1a737cccaafed3d0a03977b9c5f4cfe7cf" prot="public" virt="non-virtual"><scope>Cursor</scope><name>getY</name></member>
+      <member refid="class_cursor_1ac01596d8124ec0d1d92b88212ca858e5" prot="public" virt="non-virtual"><scope>Cursor</scope><name>increase_object</name></member>
+      <member refid="class_cursor_1a3e333461713b60a112f2b093e2f371cb" prot="private" virt="non-virtual"><scope>Cursor</scope><name>lengthInc</name></member>
+      <member refid="class_cursor_1a475f603c81c80a68499051bc224e7bb8" prot="public" virt="non-virtual"><scope>Cursor</scope><name>move_cursor</name></member>
+      <member refid="class_cursor_1a1fa4d395fcb10165cfc6145a7e6d9847" prot="private" virt="non-virtual"><scope>Cursor</scope><name>moved</name></member>
+      <member refid="class_cursor_1a1eb62b5d24a2f4f2eeed301dc0b9a8ac" prot="private" virt="non-virtual"><scope>Cursor</scope><name>objCursor</name></member>
+      <member refid="class_cursor_1a166a2e5d9dda3e7c4b1b552a019b7f41" prot="public" virt="non-virtual"><scope>Cursor</scope><name>object_selected</name></member>
+      <member refid="class_cursor_1a55e778349468dcec1e1bea7cdec709ec" prot="private" virt="non-virtual"><scope>Cursor</scope><name>objSelected</name></member>
+      <member refid="class_cursor_1aedc8e394213db1b43bd3eda124218f98" prot="private" virt="non-virtual"><scope>Cursor</scope><name>resX</name></member>
+      <member refid="class_cursor_1a9ed31af00e6c81352fe58450d38acfc7" prot="private" virt="non-virtual"><scope>Cursor</scope><name>resY</name></member>
+      <member refid="class_cursor_1a3f54d9a590dfb9fca1bd390b8a9c7e54" prot="public" virt="non-virtual"><scope>Cursor</scope><name>setX</name></member>
+      <member refid="class_cursor_1ab2314c3d20498cb65a66f5be6c2e74d5" prot="public" virt="non-virtual"><scope>Cursor</scope><name>setY</name></member>
+      <member refid="class_cursor_1a53526391e70388b4b2264f1cd3d994ae" prot="private" virt="non-virtual"><scope>Cursor</scope><name>team</name></member>
+      <member refid="class_cursor_1a4481fbf1f941ae8144d86ddee22d1617" prot="private" virt="non-virtual"><scope>Cursor</scope><name>timer</name></member>
+      <member refid="class_cursor_1afbc761bf5f54cd46b9a17e29750bdfb8" prot="private" virt="non-virtual"><scope>Cursor</scope><name>widthInc</name></member>
+      <member refid="class_cursor_1a15fe4819896d4960f8d33398905a61d5" prot="private" virt="non-virtual"><scope>Cursor</scope><name>x</name></member>
+      <member refid="class_cursor_1a536df6c93667db288cd5ed0326215fec" prot="private" virt="non-virtual"><scope>Cursor</scope><name>y</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

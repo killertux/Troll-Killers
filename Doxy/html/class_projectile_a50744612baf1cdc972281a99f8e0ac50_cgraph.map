@@ -1,0 +1,6 @@
+<map id="Projectile::collide" name="Projectile::collide">
+<area shape="rect" id="node2" href="$class_projectile.html#a58707185f143d76efe3cfcec799a7ea5" title="Projectile::getAngle" alt="" coords="178,5,313,32"/>
+<area shape="rect" id="node3" href="$class_projectile.html#a274d46f885207253588d74f54ddb674d" title="Projectile::getX" alt="" coords="190,56,301,83"/>
+<area shape="rect" id="node4" href="$class_projectile.html#aa75120b722b0078d78e9d8416c0325a7" title="Projectile::getLength" alt="" coords="175,107,316,133"/>
+<area shape="rect" id="node5" href="$class_projectile.html#a3c5e30132bd9d414514c682e447ef0de" title="Projectile::getY" alt="" coords="190,157,301,184"/>
+</map>

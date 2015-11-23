@@ -1,0 +1,761 @@
+\hypertarget{class_c_character}{}\section{C\+Character Class Reference}
+\label{class_c_character}\index{C\+Character@{C\+Character}}
+
+
+{\ttfamily \#include $<$C\+Character.\+hpp$>$}
+
+
+
+Inheritance diagram for C\+Character\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{class_c_character__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for C\+Character\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{class_c_character__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_c_character_add20c9a63c5c11e8c0919e536d7636a2}{C\+Character} (\hyperlink{_enums_8hpp_ad9700e9db9d62004af4a04e4e13912c5}{Weapon} my\+Weapon)
+\item 
+\hyperlink{class_c_character_a8f8fb8991776a6b6a49c796e79968c91}{$\sim$\+C\+Character} ()
+\item 
+int16\+\_\+t \hyperlink{class_c_character_a317ea948f11c20c52b4eb915cbc6fd34}{get\+Id} ()
+\item 
+int16\+\_\+t \hyperlink{class_c_character_a27ef2164eae8c8858de7e22b8ae2b356}{get\+X} ()
+\item 
+int16\+\_\+t \hyperlink{class_c_character_a39af09fa51d180f49a58ffce78c9f25b}{get\+Y} ()
+\item 
+int16\+\_\+t \hyperlink{class_c_character_a7074f3d5a24d61766ce4d2fe354679ee}{get\+Velocity} ()
+\item 
+int \hyperlink{class_c_character_ae2e0ce8242ccb114248134e7d233fe80}{get\+Life} ()
+\item 
+\hyperlink{struct__object}{\+\_\+object} $\ast$ \hyperlink{class_c_character_af910f0944a8ba3afc92800fb696b7750}{get\+Player} ()
+\item 
+bool \hyperlink{class_c_character_aba453c8974f67b9a8621a63960263874}{get\+Dead} ()
+\item 
+\hyperlink{_enums_8hpp_a9c13bb5b1d69698f9b47900990eaa598}{Team} \hyperlink{class_c_character_a91ff320369ed4985b1c4b1762ce4fd9c}{get\+Team} ()
+\item 
+\hyperlink{_enums_8hpp_a224b9163917ac32fc95a60d8c1eec3aa}{Direction} \hyperlink{class_c_character_a367a85d8da544c05088712def127bf43}{get\+Dir} ()
+\item 
+void \hyperlink{class_c_character_a23914035239a49f1a2ce26248ce181f7}{set\+Dir} (\hyperlink{_enums_8hpp_a224b9163917ac32fc95a60d8c1eec3aa}{Direction} dir)
+\item 
+void \hyperlink{class_c_character_a2a9cb3e98cfe4c36ea292cdc38b999d8}{serialize} (char $\ast$buffer)
+\item 
+void \hyperlink{class_c_character_a80e38c97bd4d4fd9b7f017ec121f03a9}{draw} (int x, int y)
+\item 
+void \hyperlink{class_c_character_ad602f6042aeb6e500393bca375c4133b}{move} ()
+\item 
+void \hyperlink{class_c_character_adc71f8353440b2d5450938fa7c418aa7}{die} ()
+\item 
+bool \hyperlink{class_c_character_afe8285dd94fc52c099fb548840bc4e06}{try\+To\+Revive} ()
+\item 
+void \hyperlink{class_c_character_ad33d632d180cc5d487b0c39925caf278}{revive} (int16\+\_\+t x, int16\+\_\+t y)
+\item 
+void \hyperlink{class_c_character_a68c347ad267792fbed8ee9b1bae90967}{damage} (int dmg)
+\item 
+void \hyperlink{class_c_character_a84b44c9ef54291da3e28fb7f9dc05f20}{colision} (\hyperlink{struct__object}{\+\_\+object} $\ast$objects, int n)
+\item 
+void \hyperlink{class_c_character_a6d92d81e7bd039572e147ebe190fab6c}{set\+X} (int16\+\_\+t x)
+\item 
+void \hyperlink{class_c_character_a670de9c2ba79b716953a1dac2db9e4cf}{set\+Y} (int16\+\_\+t y)
+\item 
+void \hyperlink{class_c_character_abbabbe227437ea99b377e33c569da84c}{set\+Spawn\+X} (int16\+\_\+t x)
+\item 
+void \hyperlink{class_c_character_a0060a9e93f32488b4496545b9b3ef593}{set\+Spawn\+Y} (int16\+\_\+t y)
+\item 
+void \hyperlink{class_c_character_a4af37bf96b4950b67a538d1f5c1bc075}{set\+Team} (\hyperlink{_enums_8hpp_a9c13bb5b1d69698f9b47900990eaa598}{Team} team)
+\item 
+void \hyperlink{class_c_character_af64ec95c078f3e969cb6b961db81a488}{weapon\+Angle} (int map\+X, int map\+Y, int mouse\+X, int mouse\+Y)
+\item 
+void \hyperlink{class_c_character_a8aff509bd2bc8cb3eb7c3847533a3aed}{set\+Weapon\+Angle} (float angle)
+\item 
+void \hyperlink{class_c_character_a5fa507c6196ecc4132796dc250d7bb1d}{shoot} (A\+L\+L\+E\+G\+R\+O\+\_\+\+M\+O\+U\+S\+E\+\_\+\+S\+T\+A\+T\+E \&mouse\+State, \hyperlink{class_connection}{Connection} $\ast$conn)
+\item 
+int \hyperlink{class_c_character_ac7fd4192681975f1c1adf9933a7193b4}{get\+Weapon\+Dmg} ()
+\item 
+void \hyperlink{class_c_character_a98f733c8be0661e5e6b306d37a1dfeb5}{sound\+\_\+shoot} (int x, int y)
+\item 
+\hyperlink{class_projectile}{Projectile} $\ast$$\ast$ \hyperlink{class_c_character_a514a9a531863fe5ba308ec5805111e48}{get\+Projectiles} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_c_character_add20c9a63c5c11e8c0919e536d7636a2}{}\index{C\+Character@{C\+Character}!C\+Character@{C\+Character}}
+\index{C\+Character@{C\+Character}!C\+Character@{C\+Character}}
+\subsubsection[{C\+Character(\+Weapon my\+Weapon)}]{\setlength{\rightskip}{0pt plus 5cm}C\+Character\+::\+C\+Character (
+\begin{DoxyParamCaption}
+\item[{{\bf Weapon}}]{my\+Weapon}
+\end{DoxyParamCaption}
+)}\label{class_c_character_add20c9a63c5c11e8c0919e536d7636a2}
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=347pt]{class_c_character_add20c9a63c5c11e8c0919e536d7636a2_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_c_character_a8f8fb8991776a6b6a49c796e79968c91}{}\index{C\+Character@{C\+Character}!````~C\+Character@{$\sim$\+C\+Character}}
+\index{````~C\+Character@{$\sim$\+C\+Character}!C\+Character@{C\+Character}}
+\subsubsection[{$\sim$\+C\+Character()}]{\setlength{\rightskip}{0pt plus 5cm}C\+Character\+::$\sim$\+C\+Character (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_c_character_a8f8fb8991776a6b6a49c796e79968c91}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_c_character_a84b44c9ef54291da3e28fb7f9dc05f20}{}\index{C\+Character@{C\+Character}!colision@{colision}}
+\index{colision@{colision}!C\+Character@{C\+Character}}
+\subsubsection[{colision(\+\_\+object $\ast$objects, int n)}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Character\+::colision (
+\begin{DoxyParamCaption}
+\item[{{\bf \+\_\+object} $\ast$}]{objects, }
+\item[{int}]{n}
+\end{DoxyParamCaption}
+)}\label{class_c_character_a84b44c9ef54291da3e28fb7f9dc05f20}
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=306pt]{class_c_character_a84b44c9ef54291da3e28fb7f9dc05f20_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_character_a84b44c9ef54291da3e28fb7f9dc05f20_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_c_character_a68c347ad267792fbed8ee9b1bae90967}{}\index{C\+Character@{C\+Character}!damage@{damage}}
+\index{damage@{damage}!C\+Character@{C\+Character}}
+\subsubsection[{damage(int dmg)}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Character\+::damage (
+\begin{DoxyParamCaption}
+\item[{int}]{dmg}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_c_character_a68c347ad267792fbed8ee9b1bae90967}
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_character_a68c347ad267792fbed8ee9b1bae90967_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_c_character_adc71f8353440b2d5450938fa7c418aa7}{}\index{C\+Character@{C\+Character}!die@{die}}
+\index{die@{die}!C\+Character@{C\+Character}}
+\subsubsection[{die()}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Character\+::die (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_c_character_adc71f8353440b2d5450938fa7c418aa7}
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_character_adc71f8353440b2d5450938fa7c418aa7_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_c_character_a80e38c97bd4d4fd9b7f017ec121f03a9}{}\index{C\+Character@{C\+Character}!draw@{draw}}
+\index{draw@{draw}!C\+Character@{C\+Character}}
+\subsubsection[{draw(int x, int y)}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Character\+::draw (
+\begin{DoxyParamCaption}
+\item[{int}]{x, }
+\item[{int}]{y}
+\end{DoxyParamCaption}
+)}\label{class_c_character_a80e38c97bd4d4fd9b7f017ec121f03a9}
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_character_a80e38c97bd4d4fd9b7f017ec121f03a9_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_character_a80e38c97bd4d4fd9b7f017ec121f03a9_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_c_character_aba453c8974f67b9a8621a63960263874}{}\index{C\+Character@{C\+Character}!get\+Dead@{get\+Dead}}
+\index{get\+Dead@{get\+Dead}!C\+Character@{C\+Character}}
+\subsubsection[{get\+Dead()}]{\setlength{\rightskip}{0pt plus 5cm}bool C\+Character\+::get\+Dead (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_c_character_aba453c8974f67b9a8621a63960263874}
+\hypertarget{class_c_character_a367a85d8da544c05088712def127bf43}{}\index{C\+Character@{C\+Character}!get\+Dir@{get\+Dir}}
+\index{get\+Dir@{get\+Dir}!C\+Character@{C\+Character}}
+\subsubsection[{get\+Dir()}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Direction} C\+Character\+::get\+Dir (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_c_character_a367a85d8da544c05088712def127bf43}
+\hypertarget{class_c_character_a317ea948f11c20c52b4eb915cbc6fd34}{}\index{C\+Character@{C\+Character}!get\+Id@{get\+Id}}
+\index{get\+Id@{get\+Id}!C\+Character@{C\+Character}}
+\subsubsection[{get\+Id()}]{\setlength{\rightskip}{0pt plus 5cm}int16\+\_\+t C\+Character\+::get\+Id (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{class_c_character_a317ea948f11c20c52b4eb915cbc6fd34}
+
+
+Implements \hyperlink{class_i_g_object_a40fdbe0db5e995e22996567d77bf45c6}{I\+G\+Object}.
+
+\hypertarget{class_c_character_ae2e0ce8242ccb114248134e7d233fe80}{}\index{C\+Character@{C\+Character}!get\+Life@{get\+Life}}
+\index{get\+Life@{get\+Life}!C\+Character@{C\+Character}}
+\subsubsection[{get\+Life()}]{\setlength{\rightskip}{0pt plus 5cm}int C\+Character\+::get\+Life (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_c_character_ae2e0ce8242ccb114248134e7d233fe80}
+\hypertarget{class_c_character_af910f0944a8ba3afc92800fb696b7750}{}\index{C\+Character@{C\+Character}!get\+Player@{get\+Player}}
+\index{get\+Player@{get\+Player}!C\+Character@{C\+Character}}
+\subsubsection[{get\+Player()}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \+\_\+object}$\ast$ C\+Character\+::get\+Player (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_c_character_af910f0944a8ba3afc92800fb696b7750}
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_character_af910f0944a8ba3afc92800fb696b7750_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_c_character_a514a9a531863fe5ba308ec5805111e48}{}\index{C\+Character@{C\+Character}!get\+Projectiles@{get\+Projectiles}}
+\index{get\+Projectiles@{get\+Projectiles}!C\+Character@{C\+Character}}
+\subsubsection[{get\+Projectiles()}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Projectile}$\ast$$\ast$ C\+Character\+::get\+Projectiles (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_c_character_a514a9a531863fe5ba308ec5805111e48}
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_character_a514a9a531863fe5ba308ec5805111e48_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_character_a514a9a531863fe5ba308ec5805111e48_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_c_character_a91ff320369ed4985b1c4b1762ce4fd9c}{}\index{C\+Character@{C\+Character}!get\+Team@{get\+Team}}
+\index{get\+Team@{get\+Team}!C\+Character@{C\+Character}}
+\subsubsection[{get\+Team()}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Team} C\+Character\+::get\+Team (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_c_character_a91ff320369ed4985b1c4b1762ce4fd9c}
+\hypertarget{class_c_character_a7074f3d5a24d61766ce4d2fe354679ee}{}\index{C\+Character@{C\+Character}!get\+Velocity@{get\+Velocity}}
+\index{get\+Velocity@{get\+Velocity}!C\+Character@{C\+Character}}
+\subsubsection[{get\+Velocity()}]{\setlength{\rightskip}{0pt plus 5cm}int16\+\_\+t C\+Character\+::get\+Velocity (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{class_c_character_a7074f3d5a24d61766ce4d2fe354679ee}
+
+
+Implements \hyperlink{class_i_g_object_afc8764ec832e6a60c58dace401d65b32}{I\+G\+Object}.
+
+\hypertarget{class_c_character_ac7fd4192681975f1c1adf9933a7193b4}{}\index{C\+Character@{C\+Character}!get\+Weapon\+Dmg@{get\+Weapon\+Dmg}}
+\index{get\+Weapon\+Dmg@{get\+Weapon\+Dmg}!C\+Character@{C\+Character}}
+\subsubsection[{get\+Weapon\+Dmg()}]{\setlength{\rightskip}{0pt plus 5cm}int C\+Character\+::get\+Weapon\+Dmg (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_c_character_ac7fd4192681975f1c1adf9933a7193b4}
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_character_ac7fd4192681975f1c1adf9933a7193b4_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_character_ac7fd4192681975f1c1adf9933a7193b4_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_c_character_a27ef2164eae8c8858de7e22b8ae2b356}{}\index{C\+Character@{C\+Character}!get\+X@{get\+X}}
+\index{get\+X@{get\+X}!C\+Character@{C\+Character}}
+\subsubsection[{get\+X()}]{\setlength{\rightskip}{0pt plus 5cm}int16\+\_\+t C\+Character\+::get\+X (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{class_c_character_a27ef2164eae8c8858de7e22b8ae2b356}
+
+
+Implements \hyperlink{class_i_g_object_aa6ae1f7bd99277a3558a8e90d833fa7a}{I\+G\+Object}.
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_character_a27ef2164eae8c8858de7e22b8ae2b356_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_c_character_a39af09fa51d180f49a58ffce78c9f25b}{}\index{C\+Character@{C\+Character}!get\+Y@{get\+Y}}
+\index{get\+Y@{get\+Y}!C\+Character@{C\+Character}}
+\subsubsection[{get\+Y()}]{\setlength{\rightskip}{0pt plus 5cm}int16\+\_\+t C\+Character\+::get\+Y (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{class_c_character_a39af09fa51d180f49a58ffce78c9f25b}
+
+
+Implements \hyperlink{class_i_g_object_a3491bdb3a6b6ba8d66e07443a5b5951d}{I\+G\+Object}.
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_character_a39af09fa51d180f49a58ffce78c9f25b_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_c_character_ad602f6042aeb6e500393bca375c4133b}{}\index{C\+Character@{C\+Character}!move@{move}}
+\index{move@{move}!C\+Character@{C\+Character}}
+\subsubsection[{move()}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Character\+::move (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_c_character_ad602f6042aeb6e500393bca375c4133b}
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=297pt]{class_c_character_ad602f6042aeb6e500393bca375c4133b_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_character_ad602f6042aeb6e500393bca375c4133b_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_c_character_ad33d632d180cc5d487b0c39925caf278}{}\index{C\+Character@{C\+Character}!revive@{revive}}
+\index{revive@{revive}!C\+Character@{C\+Character}}
+\subsubsection[{revive(int16\+\_\+t x, int16\+\_\+t y)}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Character\+::revive (
+\begin{DoxyParamCaption}
+\item[{int16\+\_\+t}]{x, }
+\item[{int16\+\_\+t}]{y}
+\end{DoxyParamCaption}
+)}\label{class_c_character_ad33d632d180cc5d487b0c39925caf278}
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_character_ad33d632d180cc5d487b0c39925caf278_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_character_ad33d632d180cc5d487b0c39925caf278_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_c_character_a2a9cb3e98cfe4c36ea292cdc38b999d8}{}\index{C\+Character@{C\+Character}!serialize@{serialize}}
+\index{serialize@{serialize}!C\+Character@{C\+Character}}
+\subsubsection[{serialize(char $\ast$buffer)}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Character\+::serialize (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{buffer}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_c_character_a2a9cb3e98cfe4c36ea292cdc38b999d8}
+
+
+Implements \hyperlink{class_i_g_object_a6e2dd93acb47fc77668e2571bff3481e}{I\+G\+Object}.
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=327pt]{class_c_character_a2a9cb3e98cfe4c36ea292cdc38b999d8_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_character_a2a9cb3e98cfe4c36ea292cdc38b999d8_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_c_character_a23914035239a49f1a2ce26248ce181f7}{}\index{C\+Character@{C\+Character}!set\+Dir@{set\+Dir}}
+\index{set\+Dir@{set\+Dir}!C\+Character@{C\+Character}}
+\subsubsection[{set\+Dir(\+Direction dir)}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Character\+::set\+Dir (
+\begin{DoxyParamCaption}
+\item[{{\bf Direction}}]{dir}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_c_character_a23914035239a49f1a2ce26248ce181f7}
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_character_a23914035239a49f1a2ce26248ce181f7_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_c_character_abbabbe227437ea99b377e33c569da84c}{}\index{C\+Character@{C\+Character}!set\+Spawn\+X@{set\+Spawn\+X}}
+\index{set\+Spawn\+X@{set\+Spawn\+X}!C\+Character@{C\+Character}}
+\subsubsection[{set\+Spawn\+X(int16\+\_\+t x)}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Character\+::set\+Spawn\+X (
+\begin{DoxyParamCaption}
+\item[{int16\+\_\+t}]{x}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_c_character_abbabbe227437ea99b377e33c569da84c}
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_character_abbabbe227437ea99b377e33c569da84c_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_c_character_a0060a9e93f32488b4496545b9b3ef593}{}\index{C\+Character@{C\+Character}!set\+Spawn\+Y@{set\+Spawn\+Y}}
+\index{set\+Spawn\+Y@{set\+Spawn\+Y}!C\+Character@{C\+Character}}
+\subsubsection[{set\+Spawn\+Y(int16\+\_\+t y)}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Character\+::set\+Spawn\+Y (
+\begin{DoxyParamCaption}
+\item[{int16\+\_\+t}]{y}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_c_character_a0060a9e93f32488b4496545b9b3ef593}
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_character_a0060a9e93f32488b4496545b9b3ef593_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_c_character_a4af37bf96b4950b67a538d1f5c1bc075}{}\index{C\+Character@{C\+Character}!set\+Team@{set\+Team}}
+\index{set\+Team@{set\+Team}!C\+Character@{C\+Character}}
+\subsubsection[{set\+Team(\+Team team)}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Character\+::set\+Team (
+\begin{DoxyParamCaption}
+\item[{{\bf Team}}]{team}
+\end{DoxyParamCaption}
+)}\label{class_c_character_a4af37bf96b4950b67a538d1f5c1bc075}
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_character_a4af37bf96b4950b67a538d1f5c1bc075_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_c_character_a8aff509bd2bc8cb3eb7c3847533a3aed}{}\index{C\+Character@{C\+Character}!set\+Weapon\+Angle@{set\+Weapon\+Angle}}
+\index{set\+Weapon\+Angle@{set\+Weapon\+Angle}!C\+Character@{C\+Character}}
+\subsubsection[{set\+Weapon\+Angle(float angle)}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Character\+::set\+Weapon\+Angle (
+\begin{DoxyParamCaption}
+\item[{float}]{angle}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_c_character_a8aff509bd2bc8cb3eb7c3847533a3aed}
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_character_a8aff509bd2bc8cb3eb7c3847533a3aed_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_character_a8aff509bd2bc8cb3eb7c3847533a3aed_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_c_character_a6d92d81e7bd039572e147ebe190fab6c}{}\index{C\+Character@{C\+Character}!set\+X@{set\+X}}
+\index{set\+X@{set\+X}!C\+Character@{C\+Character}}
+\subsubsection[{set\+X(int16\+\_\+t x)}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Character\+::set\+X (
+\begin{DoxyParamCaption}
+\item[{int16\+\_\+t}]{x}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{class_c_character_a6d92d81e7bd039572e147ebe190fab6c}
+
+
+Implements \hyperlink{class_i_g_object_a4b810d1b4a785d7532104113ef5cf0ba}{I\+G\+Object}.
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=293pt]{class_c_character_a6d92d81e7bd039572e147ebe190fab6c_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_character_a6d92d81e7bd039572e147ebe190fab6c_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_c_character_a670de9c2ba79b716953a1dac2db9e4cf}{}\index{C\+Character@{C\+Character}!set\+Y@{set\+Y}}
+\index{set\+Y@{set\+Y}!C\+Character@{C\+Character}}
+\subsubsection[{set\+Y(int16\+\_\+t y)}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Character\+::set\+Y (
+\begin{DoxyParamCaption}
+\item[{int16\+\_\+t}]{y}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{class_c_character_a670de9c2ba79b716953a1dac2db9e4cf}
+
+
+Implements \hyperlink{class_i_g_object_a5092ff8b79a61c3856510adb0543f229}{I\+G\+Object}.
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=293pt]{class_c_character_a670de9c2ba79b716953a1dac2db9e4cf_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_character_a670de9c2ba79b716953a1dac2db9e4cf_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_c_character_a5fa507c6196ecc4132796dc250d7bb1d}{}\index{C\+Character@{C\+Character}!shoot@{shoot}}
+\index{shoot@{shoot}!C\+Character@{C\+Character}}
+\subsubsection[{shoot(\+A\+L\+L\+E\+G\+R\+O\+\_\+\+M\+O\+U\+S\+E\+\_\+\+S\+T\+A\+T\+E \&mouse\+State, Connection $\ast$conn)}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Character\+::shoot (
+\begin{DoxyParamCaption}
+\item[{A\+L\+L\+E\+G\+R\+O\+\_\+\+M\+O\+U\+S\+E\+\_\+\+S\+T\+A\+T\+E \&}]{mouse\+State, }
+\item[{{\bf Connection} $\ast$}]{conn}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_c_character_a5fa507c6196ecc4132796dc250d7bb1d}
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=301pt]{class_c_character_a5fa507c6196ecc4132796dc250d7bb1d_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_character_a5fa507c6196ecc4132796dc250d7bb1d_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_c_character_a98f733c8be0661e5e6b306d37a1dfeb5}{}\index{C\+Character@{C\+Character}!sound\+\_\+shoot@{sound\+\_\+shoot}}
+\index{sound\+\_\+shoot@{sound\+\_\+shoot}!C\+Character@{C\+Character}}
+\subsubsection[{sound\+\_\+shoot(int x, int y)}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Character\+::sound\+\_\+shoot (
+\begin{DoxyParamCaption}
+\item[{int}]{x, }
+\item[{int}]{y}
+\end{DoxyParamCaption}
+)}\label{class_c_character_a98f733c8be0661e5e6b306d37a1dfeb5}
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_character_a98f733c8be0661e5e6b306d37a1dfeb5_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_character_a98f733c8be0661e5e6b306d37a1dfeb5_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_c_character_afe8285dd94fc52c099fb548840bc4e06}{}\index{C\+Character@{C\+Character}!try\+To\+Revive@{try\+To\+Revive}}
+\index{try\+To\+Revive@{try\+To\+Revive}!C\+Character@{C\+Character}}
+\subsubsection[{try\+To\+Revive()}]{\setlength{\rightskip}{0pt plus 5cm}bool C\+Character\+::try\+To\+Revive (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_c_character_afe8285dd94fc52c099fb548840bc4e06}
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_character_afe8285dd94fc52c099fb548840bc4e06_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_c_character_af64ec95c078f3e969cb6b961db81a488}{}\index{C\+Character@{C\+Character}!weapon\+Angle@{weapon\+Angle}}
+\index{weapon\+Angle@{weapon\+Angle}!C\+Character@{C\+Character}}
+\subsubsection[{weapon\+Angle(int map\+X, int map\+Y, int mouse\+X, int mouse\+Y)}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Character\+::weapon\+Angle (
+\begin{DoxyParamCaption}
+\item[{int}]{map\+X, }
+\item[{int}]{map\+Y, }
+\item[{int}]{mouse\+X, }
+\item[{int}]{mouse\+Y}
+\end{DoxyParamCaption}
+)}\label{class_c_character_af64ec95c078f3e969cb6b961db81a488}
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_character_af64ec95c078f3e969cb6b961db81a488_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_character_af64ec95c078f3e969cb6b961db81a488_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/clemente/projects/\+Troll-\/\+Killers/\hyperlink{_c_character_8hpp}{C\+Character.\+hpp}\item 
+/home/clemente/projects/\+Troll-\/\+Killers/\hyperlink{_c_character_8cpp}{C\+Character.\+cpp}\end{DoxyCompactItemize}

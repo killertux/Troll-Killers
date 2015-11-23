@@ -1,0 +1,646 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.10">
+  <compounddef id="class_weapons" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>Weapons</compoundname>
+    <derivedcompoundref refid="class_pistol" prot="public" virt="non-virtual">Pistol</derivedcompoundref>
+    <derivedcompoundref refid="class_rifle" prot="public" virt="non-virtual">Rifle</derivedcompoundref>
+    <includes refid="_weapons_8hpp" local="no">Weapons.hpp</includes>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="class_weapons_1ad78bb71ca90aff95cd1ad5be59e7d6a6" prot="protected" static="no" mutable="no">
+        <type>ALLEGRO_BITMAP *</type>
+        <definition>ALLEGRO_BITMAP* Weapons::gun</definition>
+        <argsstring></argsstring>
+        <name>gun</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/Weapons.hpp" line="17" column="1" bodyfile="/home/clemente/projects/Troll-Killers/Weapons.hpp" bodystart="17" bodyend="-1"/>
+        <referencedby refid="class_pistol_1a0715c5243c875aeb8d8114954a463b47" compoundref="_pistol_8cpp" startline="3" endline="18">Pistol::Pistol</referencedby>
+        <referencedby refid="class_rifle_1abdb60e74bb89239350fc5453860df073" compoundref="_rifle_8cpp" startline="4" endline="18">Rifle::Rifle</referencedby>
+        <referencedby refid="class_weapons_1af1796ac8fd6145e5281bf35b1755a512" compoundref="_weapons_8cpp" startline="10" endline="14">~Weapons</referencedby>
+        <referencedby refid="class_weapons_1af9d9f25b33b8d7e6d649c0325bb2db9f" compoundref="_weapons_8cpp" startline="26" endline="36">draw</referencedby>
+        <referencedby refid="class_weapons_1a1444e3909bfb67a090d91993b7c4f515" compoundref="_weapons_8cpp" startline="37" endline="43">getWeaponTipX</referencedby>
+        <referencedby refid="class_weapons_1aa49e0f3bc1a4d53ebb433f0ccabd0f47" compoundref="_weapons_8cpp" startline="44" endline="50">getWeaponTipY</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_weapons_1a7287128c84711719a2d6afb85bf512e5" prot="protected" static="no" mutable="no">
+        <type>ALLEGRO_SAMPLE *</type>
+        <definition>ALLEGRO_SAMPLE* Weapons::sound</definition>
+        <argsstring></argsstring>
+        <name>sound</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/Weapons.hpp" line="18" column="1" bodyfile="/home/clemente/projects/Troll-Killers/Weapons.hpp" bodystart="18" bodyend="-1"/>
+        <referencedby refid="class_pistol_1a0715c5243c875aeb8d8114954a463b47" compoundref="_pistol_8cpp" startline="3" endline="18">Pistol::Pistol</referencedby>
+        <referencedby refid="class_pistol_1a0e99963f771cc143c32a0c72158e74f1" compoundref="_pistol_8cpp" startline="20" endline="38">Pistol::shoot</referencedby>
+        <referencedby refid="class_weapons_1af1796ac8fd6145e5281bf35b1755a512" compoundref="_weapons_8cpp" startline="10" endline="14">~Weapons</referencedby>
+        <referencedby refid="class_weapons_1a0fdaf9f3dee1b5684c993c7304c213b8" compoundref="_weapons_8cpp" startline="52" endline="58">play_sound</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_weapons_1a42908d6d74c3c4d95805caec5db1577d" prot="protected" static="no" mutable="no">
+        <type>int16_t</type>
+        <definition>int16_t Weapons::type</definition>
+        <argsstring></argsstring>
+        <name>type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/Weapons.hpp" line="20" column="1" bodyfile="/home/clemente/projects/Troll-Killers/Weapons.hpp" bodystart="20" bodyend="-1"/>
+        <referencedby refid="class_pistol_1a0715c5243c875aeb8d8114954a463b47" compoundref="_pistol_8cpp" startline="3" endline="18">Pistol::Pistol</referencedby>
+        <referencedby refid="class_rifle_1abdb60e74bb89239350fc5453860df073" compoundref="_rifle_8cpp" startline="4" endline="18">Rifle::Rifle</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_weapons_1af9bcea79386a27736973ae767ef8a408" prot="protected" static="no" mutable="no">
+        <type>int16_t</type>
+        <definition>int16_t Weapons::x</definition>
+        <argsstring></argsstring>
+        <name>x</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/Weapons.hpp" line="21" column="1" bodyfile="/home/clemente/projects/Troll-Killers/Weapons.hpp" bodystart="21" bodyend="-1"/>
+        <referencedby refid="class_weapons_1ad5123e66ada6a06e3260d4e4fd6fbf31" compoundref="_weapons_8cpp" startline="18" endline="24">calculateAngle</referencedby>
+        <referencedby refid="class_weapons_1af9d9f25b33b8d7e6d649c0325bb2db9f" compoundref="_weapons_8cpp" startline="26" endline="36">draw</referencedby>
+        <referencedby refid="class_weapons_1a1444e3909bfb67a090d91993b7c4f515" compoundref="_weapons_8cpp" startline="37" endline="43">getWeaponTipX</referencedby>
+        <referencedby refid="class_weapons_1a7ea90e9d30c37ce8fa7258405a944d77" compoundref="_weapons_8hpp" startline="33" endline="33">setX</referencedby>
+        <referencedby refid="class_weapons_1a878503b58548a7d1335845395f773969" compoundref="_weapons_8hpp" startline="37" endline="37">getX</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_weapons_1a35ff8124c657cb744f6d2731b1ec6e83" prot="protected" static="no" mutable="no">
+        <type>int16_t</type>
+        <definition>int16_t Weapons::y</definition>
+        <argsstring></argsstring>
+        <name>y</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/Weapons.hpp" line="21" column="1" bodyfile="/home/clemente/projects/Troll-Killers/Weapons.hpp" bodystart="21" bodyend="-1"/>
+        <referencedby refid="class_weapons_1ad5123e66ada6a06e3260d4e4fd6fbf31" compoundref="_weapons_8cpp" startline="18" endline="24">calculateAngle</referencedby>
+        <referencedby refid="class_weapons_1af9d9f25b33b8d7e6d649c0325bb2db9f" compoundref="_weapons_8cpp" startline="26" endline="36">draw</referencedby>
+        <referencedby refid="class_weapons_1aa49e0f3bc1a4d53ebb433f0ccabd0f47" compoundref="_weapons_8cpp" startline="44" endline="50">getWeaponTipY</referencedby>
+        <referencedby refid="class_weapons_1a0d95e4fd724cb6c6336ec5d7eaf57842" compoundref="_weapons_8hpp" startline="34" endline="34">setY</referencedby>
+        <referencedby refid="class_weapons_1a20570863ba58ad562fdef6c95af794ee" compoundref="_weapons_8hpp" startline="38" endline="38">getY</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_weapons_1a51aba0764e4873f32acc1f627328346f" prot="protected" static="no" mutable="no">
+        <type>int16_t</type>
+        <definition>int16_t Weapons::radius</definition>
+        <argsstring></argsstring>
+        <name>radius</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/Weapons.hpp" line="21" column="1" bodyfile="/home/clemente/projects/Troll-Killers/Weapons.hpp" bodystart="21" bodyend="-1"/>
+        <referencedby refid="class_weapons_1ad5123e66ada6a06e3260d4e4fd6fbf31" compoundref="_weapons_8cpp" startline="18" endline="24">calculateAngle</referencedby>
+        <referencedby refid="class_weapons_1af9d9f25b33b8d7e6d649c0325bb2db9f" compoundref="_weapons_8cpp" startline="26" endline="36">draw</referencedby>
+        <referencedby refid="class_weapons_1a1444e3909bfb67a090d91993b7c4f515" compoundref="_weapons_8cpp" startline="37" endline="43">getWeaponTipX</referencedby>
+        <referencedby refid="class_weapons_1aa49e0f3bc1a4d53ebb433f0ccabd0f47" compoundref="_weapons_8cpp" startline="44" endline="50">getWeaponTipY</referencedby>
+        <referencedby refid="class_weapons_1a7c8697cb11fa00b90882d14eb8e586df" compoundref="_weapons_8hpp" startline="35" endline="35">setRadius</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_weapons_1af3fd2ec73d872c5e4890453c8abdcdbb" prot="protected" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Weapons::angle</definition>
+        <argsstring></argsstring>
+        <name>angle</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/Weapons.hpp" line="22" column="1" bodyfile="/home/clemente/projects/Troll-Killers/Weapons.hpp" bodystart="22" bodyend="-1"/>
+        <referencedby refid="class_pistol_1a0e99963f771cc143c32a0c72158e74f1" compoundref="_pistol_8cpp" startline="20" endline="38">Pistol::shoot</referencedby>
+        <referencedby refid="class_rifle_1a9cb3a65794113297417d2b96e7103784" compoundref="_rifle_8cpp" startline="20" endline="37">Rifle::shoot</referencedby>
+        <referencedby refid="class_weapons_1ad5123e66ada6a06e3260d4e4fd6fbf31" compoundref="_weapons_8cpp" startline="18" endline="24">calculateAngle</referencedby>
+        <referencedby refid="class_weapons_1af9d9f25b33b8d7e6d649c0325bb2db9f" compoundref="_weapons_8cpp" startline="26" endline="36">draw</referencedby>
+        <referencedby refid="class_weapons_1a1444e3909bfb67a090d91993b7c4f515" compoundref="_weapons_8cpp" startline="37" endline="43">getWeaponTipX</referencedby>
+        <referencedby refid="class_weapons_1aa49e0f3bc1a4d53ebb433f0ccabd0f47" compoundref="_weapons_8cpp" startline="44" endline="50">getWeaponTipY</referencedby>
+        <referencedby refid="class_weapons_1a6dd8f827ee1b9115690fecb2005c8c8d" compoundref="_weapons_8hpp" startline="36" endline="36">setAngle</referencedby>
+        <referencedby refid="class_weapons_1ac408dbb1f31e53b844c07f16206e40f8" compoundref="_weapons_8hpp" startline="42" endline="42">getAngle</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_weapons_1abb0e1d78129cbe503bda16a936415b19" prot="protected" static="no" mutable="no">
+        <type>int16_t</type>
+        <definition>int16_t Weapons::dmg</definition>
+        <argsstring></argsstring>
+        <name>dmg</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/Weapons.hpp" line="23" column="1" bodyfile="/home/clemente/projects/Troll-Killers/Weapons.hpp" bodystart="23" bodyend="-1"/>
+        <referencedby refid="class_pistol_1a0715c5243c875aeb8d8114954a463b47" compoundref="_pistol_8cpp" startline="3" endline="18">Pistol::Pistol</referencedby>
+        <referencedby refid="class_rifle_1abdb60e74bb89239350fc5453860df073" compoundref="_rifle_8cpp" startline="4" endline="18">Rifle::Rifle</referencedby>
+        <referencedby refid="class_weapons_1a077953983902a53d6346d8f71a769a7d" compoundref="_weapons_8hpp" startline="41" endline="41">getDmg</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_weapons_1af178acf007397b21ce562313850288bb" prot="protected" static="no" mutable="no">
+        <type>int16_t</type>
+        <definition>int16_t Weapons::magSize</definition>
+        <argsstring></argsstring>
+        <name>magSize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/Weapons.hpp" line="24" column="1" bodyfile="/home/clemente/projects/Troll-Killers/Weapons.hpp" bodystart="24" bodyend="-1"/>
+        <referencedby refid="class_pistol_1a0715c5243c875aeb8d8114954a463b47" compoundref="_pistol_8cpp" startline="3" endline="18">Pistol::Pistol</referencedby>
+        <referencedby refid="class_rifle_1abdb60e74bb89239350fc5453860df073" compoundref="_rifle_8cpp" startline="4" endline="18">Rifle::Rifle</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_weapons_1ae99ad33ed5484eb34aca31d2561a5c61" prot="protected" static="no" mutable="no">
+        <type>int16_t</type>
+        <definition>int16_t Weapons::nProjectile</definition>
+        <argsstring></argsstring>
+        <name>nProjectile</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/Weapons.hpp" line="25" column="1" bodyfile="/home/clemente/projects/Troll-Killers/Weapons.hpp" bodystart="25" bodyend="-1"/>
+        <referencedby refid="class_pistol_1a0715c5243c875aeb8d8114954a463b47" compoundref="_pistol_8cpp" startline="3" endline="18">Pistol::Pistol</referencedby>
+        <referencedby refid="class_rifle_1abdb60e74bb89239350fc5453860df073" compoundref="_rifle_8cpp" startline="4" endline="18">Rifle::Rifle</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_weapons_1a9556c5663357877509683cd21da1fdf6" prot="protected" static="no" mutable="no">
+        <type>int16_t</type>
+        <definition>int16_t Weapons::shootTimer</definition>
+        <argsstring></argsstring>
+        <name>shootTimer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/Weapons.hpp" line="26" column="1" bodyfile="/home/clemente/projects/Troll-Killers/Weapons.hpp" bodystart="26" bodyend="-1"/>
+        <referencedby refid="class_pistol_1a0715c5243c875aeb8d8114954a463b47" compoundref="_pistol_8cpp" startline="3" endline="18">Pistol::Pistol</referencedby>
+        <referencedby refid="class_rifle_1abdb60e74bb89239350fc5453860df073" compoundref="_rifle_8cpp" startline="4" endline="18">Rifle::Rifle</referencedby>
+        <referencedby refid="class_rifle_1a9cb3a65794113297417d2b96e7103784" compoundref="_rifle_8cpp" startline="20" endline="37">Rifle::shoot</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_weapons_1a7bbd3fe9d22471b851371204d1738f73" prot="protected" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Weapons::dispersion</definition>
+        <argsstring></argsstring>
+        <name>dispersion</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/Weapons.hpp" line="27" column="1" bodyfile="/home/clemente/projects/Troll-Killers/Weapons.hpp" bodystart="27" bodyend="-1"/>
+        <referencedby refid="class_pistol_1a0715c5243c875aeb8d8114954a463b47" compoundref="_pistol_8cpp" startline="3" endline="18">Pistol::Pistol</referencedby>
+        <referencedby refid="class_pistol_1a0e99963f771cc143c32a0c72158e74f1" compoundref="_pistol_8cpp" startline="20" endline="38">Pistol::shoot</referencedby>
+        <referencedby refid="class_rifle_1abdb60e74bb89239350fc5453860df073" compoundref="_rifle_8cpp" startline="4" endline="18">Rifle::Rifle</referencedby>
+        <referencedby refid="class_rifle_1a9cb3a65794113297417d2b96e7103784" compoundref="_rifle_8cpp" startline="20" endline="37">Rifle::shoot</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_weapons_1a8495428b263ca37532201254df911dcc" prot="protected" static="no" mutable="no">
+        <type><ref refid="class_c_projectile" kindref="compound">CProjectile</ref> **</type>
+        <definition>CProjectile** Weapons::projectiles</definition>
+        <argsstring></argsstring>
+        <name>projectiles</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/Weapons.hpp" line="29" column="1" bodyfile="/home/clemente/projects/Troll-Killers/Weapons.hpp" bodystart="29" bodyend="-1"/>
+        <referencedby refid="class_pistol_1a0e99963f771cc143c32a0c72158e74f1" compoundref="_pistol_8cpp" startline="20" endline="38">Pistol::shoot</referencedby>
+        <referencedby refid="class_rifle_1a9cb3a65794113297417d2b96e7103784" compoundref="_rifle_8cpp" startline="20" endline="37">Rifle::shoot</referencedby>
+        <referencedby refid="class_weapons_1a09cf8402e87ff45026bc4f8abea316d7" compoundref="_weapons_8cpp" startline="5" endline="9">Weapons</referencedby>
+        <referencedby refid="class_weapons_1af1796ac8fd6145e5281bf35b1755a512" compoundref="_weapons_8cpp" startline="10" endline="14">~Weapons</referencedby>
+        <referencedby refid="class_weapons_1af9d9f25b33b8d7e6d649c0325bb2db9f" compoundref="_weapons_8cpp" startline="26" endline="36">draw</referencedby>
+        <referencedby refid="class_weapons_1ab424ac199565201128616e5a0aa9ff1f" compoundref="_weapons_8hpp" startline="43" endline="43">getProjectiles</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_weapons_1a09cf8402e87ff45026bc4f8abea316d7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Weapons::Weapons</definition>
+        <argsstring>()</argsstring>
+        <name>Weapons</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/Weapons.hpp" line="31" column="1" bodyfile="/home/clemente/projects/Troll-Killers/Weapons.cpp" bodystart="5" bodyend="9"/>
+        <references refid="class_weapons_1a8495428b263ca37532201254df911dcc" compoundref="_weapons_8hpp" startline="29">projectiles</references>
+        <references refid="_defines_8hpp_1a740030c7f156fdc0eb8036a0fde589ef" compoundref="_defines_8hpp" startline="11">SCREEN_PROJECTILES</references>
+      </memberdef>
+      <memberdef kind="function" id="class_weapons_1af1796ac8fd6145e5281bf35b1755a512" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>Weapons::~Weapons</definition>
+        <argsstring>()</argsstring>
+        <name>~Weapons</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/Weapons.hpp" line="32" column="1" bodyfile="/home/clemente/projects/Troll-Killers/Weapons.cpp" bodystart="10" bodyend="14"/>
+        <references refid="class_weapons_1a8495428b263ca37532201254df911dcc" compoundref="_weapons_8hpp" startline="29">projectiles</references>
+        <references refid="class_weapons_1ad78bb71ca90aff95cd1ad5be59e7d6a6" compoundref="_weapons_8hpp" startline="17">gun</references>
+        <references refid="class_weapons_1a7287128c84711719a2d6afb85bf512e5" compoundref="_weapons_8hpp" startline="18">sound</references>
+      </memberdef>
+      <memberdef kind="function" id="class_weapons_1a7ea90e9d30c37ce8fa7258405a944d77" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Weapons::setX</definition>
+        <argsstring>(int16_t x)</argsstring>
+        <name>setX</name>
+        <param>
+          <type>int16_t</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/Weapons.hpp" line="33" column="1" bodyfile="/home/clemente/projects/Troll-Killers/Weapons.hpp" bodystart="33" bodyend="33"/>
+        <references refid="class_weapons_1af9bcea79386a27736973ae767ef8a408" compoundref="_weapons_8hpp" startline="21">x</references>
+        <referencedby refid="class_c_character_1ad602f6042aeb6e500393bca375c4133b" compoundref="_c_character_8cpp" startline="54" endline="65">CCharacter::move</referencedby>
+        <referencedby refid="class_c_character_1a84b44c9ef54291da3e28fb7f9dc05f20" compoundref="_c_character_8cpp" startline="67" endline="101">CCharacter::colision</referencedby>
+        <referencedby refid="class_c_character_1a6d92d81e7bd039572e147ebe190fab6c" compoundref="_c_character_8hpp" startline="67" endline="67">CCharacter::setX</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_weapons_1a0d95e4fd724cb6c6336ec5d7eaf57842" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Weapons::setY</definition>
+        <argsstring>(int16_t y)</argsstring>
+        <name>setY</name>
+        <param>
+          <type>int16_t</type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/Weapons.hpp" line="34" column="1" bodyfile="/home/clemente/projects/Troll-Killers/Weapons.hpp" bodystart="34" bodyend="34"/>
+        <references refid="class_weapons_1a35ff8124c657cb744f6d2731b1ec6e83" compoundref="_weapons_8hpp" startline="21">y</references>
+        <referencedby refid="class_c_character_1ad602f6042aeb6e500393bca375c4133b" compoundref="_c_character_8cpp" startline="54" endline="65">CCharacter::move</referencedby>
+        <referencedby refid="class_c_character_1a84b44c9ef54291da3e28fb7f9dc05f20" compoundref="_c_character_8cpp" startline="67" endline="101">CCharacter::colision</referencedby>
+        <referencedby refid="class_c_character_1a670de9c2ba79b716953a1dac2db9e4cf" compoundref="_c_character_8hpp" startline="68" endline="68">CCharacter::setY</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_weapons_1a7c8697cb11fa00b90882d14eb8e586df" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Weapons::setRadius</definition>
+        <argsstring>(int16_t radius)</argsstring>
+        <name>setRadius</name>
+        <param>
+          <type>int16_t</type>
+          <declname>radius</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/Weapons.hpp" line="35" column="1" bodyfile="/home/clemente/projects/Troll-Killers/Weapons.hpp" bodystart="35" bodyend="35"/>
+        <references refid="class_weapons_1a51aba0764e4873f32acc1f627328346f" compoundref="_weapons_8hpp" startline="21">radius</references>
+        <referencedby refid="class_c_character_1add20c9a63c5c11e8c0919e536d7636a2" compoundref="_c_character_8cpp" startline="5" endline="21">CCharacter::CCharacter</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_weapons_1a6dd8f827ee1b9115690fecb2005c8c8d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Weapons::setAngle</definition>
+        <argsstring>(float angle)</argsstring>
+        <name>setAngle</name>
+        <param>
+          <type>float</type>
+          <declname>angle</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/Weapons.hpp" line="36" column="1" bodyfile="/home/clemente/projects/Troll-Killers/Weapons.hpp" bodystart="36" bodyend="36"/>
+        <references refid="class_weapons_1af3fd2ec73d872c5e4890453c8abdcdbb" compoundref="_weapons_8hpp" startline="22">angle</references>
+        <referencedby refid="class_c_character_1a8aff509bd2bc8cb3eb7c3847533a3aed" compoundref="_c_character_8hpp" startline="74" endline="74">CCharacter::setWeaponAngle</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_weapons_1a878503b58548a7d1335845395f773969" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int16_t</type>
+        <definition>int16_t Weapons::getX</definition>
+        <argsstring>()</argsstring>
+        <name>getX</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/Weapons.hpp" line="37" column="1" bodyfile="/home/clemente/projects/Troll-Killers/Weapons.hpp" bodystart="37" bodyend="37"/>
+        <references refid="class_weapons_1af9bcea79386a27736973ae767ef8a408" compoundref="_weapons_8hpp" startline="21">x</references>
+      </memberdef>
+      <memberdef kind="function" id="class_weapons_1a20570863ba58ad562fdef6c95af794ee" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int16_t</type>
+        <definition>int16_t Weapons::getY</definition>
+        <argsstring>()</argsstring>
+        <name>getY</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/Weapons.hpp" line="38" column="1" bodyfile="/home/clemente/projects/Troll-Killers/Weapons.hpp" bodystart="38" bodyend="38"/>
+        <references refid="class_weapons_1a35ff8124c657cb744f6d2731b1ec6e83" compoundref="_weapons_8hpp" startline="21">y</references>
+      </memberdef>
+      <memberdef kind="function" id="class_weapons_1a1444e3909bfb67a090d91993b7c4f515" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int16_t</type>
+        <definition>int16_t Weapons::getWeaponTipX</definition>
+        <argsstring>()</argsstring>
+        <name>getWeaponTipX</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/Weapons.hpp" line="39" column="1" bodyfile="/home/clemente/projects/Troll-Killers/Weapons.cpp" bodystart="37" bodyend="43"/>
+        <references refid="class_weapons_1ad78bb71ca90aff95cd1ad5be59e7d6a6" compoundref="_weapons_8hpp" startline="17">gun</references>
+        <references refid="class_weapons_1af3fd2ec73d872c5e4890453c8abdcdbb" compoundref="_weapons_8hpp" startline="22">angle</references>
+        <references refid="class_weapons_1af9bcea79386a27736973ae767ef8a408" compoundref="_weapons_8hpp" startline="21">x</references>
+        <references refid="class_weapons_1a51aba0764e4873f32acc1f627328346f" compoundref="_weapons_8hpp" startline="21">radius</references>
+        <referencedby refid="class_pistol_1a0e99963f771cc143c32a0c72158e74f1" compoundref="_pistol_8cpp" startline="20" endline="38">Pistol::shoot</referencedby>
+        <referencedby refid="class_rifle_1a9cb3a65794113297417d2b96e7103784" compoundref="_rifle_8cpp" startline="20" endline="37">Rifle::shoot</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_weapons_1aa49e0f3bc1a4d53ebb433f0ccabd0f47" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int16_t</type>
+        <definition>int16_t Weapons::getWeaponTipY</definition>
+        <argsstring>()</argsstring>
+        <name>getWeaponTipY</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/Weapons.hpp" line="40" column="1" bodyfile="/home/clemente/projects/Troll-Killers/Weapons.cpp" bodystart="44" bodyend="50"/>
+        <references refid="class_weapons_1ad78bb71ca90aff95cd1ad5be59e7d6a6" compoundref="_weapons_8hpp" startline="17">gun</references>
+        <references refid="class_weapons_1af3fd2ec73d872c5e4890453c8abdcdbb" compoundref="_weapons_8hpp" startline="22">angle</references>
+        <references refid="class_weapons_1a35ff8124c657cb744f6d2731b1ec6e83" compoundref="_weapons_8hpp" startline="21">y</references>
+        <references refid="class_weapons_1a51aba0764e4873f32acc1f627328346f" compoundref="_weapons_8hpp" startline="21">radius</references>
+        <referencedby refid="class_pistol_1a0e99963f771cc143c32a0c72158e74f1" compoundref="_pistol_8cpp" startline="20" endline="38">Pistol::shoot</referencedby>
+        <referencedby refid="class_rifle_1a9cb3a65794113297417d2b96e7103784" compoundref="_rifle_8cpp" startline="20" endline="37">Rifle::shoot</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_weapons_1a077953983902a53d6346d8f71a769a7d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int16_t</type>
+        <definition>int16_t Weapons::getDmg</definition>
+        <argsstring>()</argsstring>
+        <name>getDmg</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/Weapons.hpp" line="41" column="1" bodyfile="/home/clemente/projects/Troll-Killers/Weapons.hpp" bodystart="41" bodyend="41"/>
+        <references refid="class_weapons_1abb0e1d78129cbe503bda16a936415b19" compoundref="_weapons_8hpp" startline="23">dmg</references>
+        <referencedby refid="class_c_character_1ac7fd4192681975f1c1adf9933a7193b4" compoundref="_c_character_8hpp" startline="76" endline="76">CCharacter::getWeaponDmg</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_weapons_1ac408dbb1f31e53b844c07f16206e40f8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float Weapons::getAngle</definition>
+        <argsstring>()</argsstring>
+        <name>getAngle</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/Weapons.hpp" line="42" column="1" bodyfile="/home/clemente/projects/Troll-Killers/Weapons.hpp" bodystart="42" bodyend="42"/>
+        <references refid="class_weapons_1af3fd2ec73d872c5e4890453c8abdcdbb" compoundref="_weapons_8hpp" startline="22">angle</references>
+        <referencedby refid="class_c_character_1a2a9cb3e98cfe4c36ea292cdc38b999d8" compoundref="_c_character_8cpp" startline="27" endline="31">CCharacter::serialize</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_weapons_1ab424ac199565201128616e5a0aa9ff1f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_projectile" kindref="compound">Projectile</ref> **</type>
+        <definition>Projectile** Weapons::getProjectiles</definition>
+        <argsstring>()</argsstring>
+        <name>getProjectiles</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/Weapons.hpp" line="43" column="1" bodyfile="/home/clemente/projects/Troll-Killers/Weapons.hpp" bodystart="43" bodyend="43"/>
+        <references refid="class_weapons_1a8495428b263ca37532201254df911dcc" compoundref="_weapons_8hpp" startline="29">projectiles</references>
+        <referencedby refid="class_c_character_1a514a9a531863fe5ba308ec5805111e48" compoundref="_c_character_8hpp" startline="78" endline="78">CCharacter::getProjectiles</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_weapons_1a0fdaf9f3dee1b5684c993c7304c213b8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Weapons::play_sound</definition>
+        <argsstring>(float distance)</argsstring>
+        <name>play_sound</name>
+        <param>
+          <type>float</type>
+          <declname>distance</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/Weapons.hpp" line="44" column="1" bodyfile="/home/clemente/projects/Troll-Killers/Weapons.cpp" bodystart="52" bodyend="58"/>
+        <references refid="class_weapons_1a7287128c84711719a2d6afb85bf512e5" compoundref="_weapons_8hpp" startline="18">sound</references>
+        <referencedby refid="class_c_character_1a98f733c8be0661e5e6b306d37a1dfeb5" compoundref="_c_character_8cpp" startline="131" endline="134">CCharacter::sound_shoot</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_weapons_1ad5123e66ada6a06e3260d4e4fd6fbf31" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Weapons::calculateAngle</definition>
+        <argsstring>(int mapX, int mapY, int mouseX, int mouseY)</argsstring>
+        <name>calculateAngle</name>
+        <param>
+          <type>int</type>
+          <declname>mapX</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>mapY</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>mouseX</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>mouseY</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/Weapons.hpp" line="46" column="1" bodyfile="/home/clemente/projects/Troll-Killers/Weapons.cpp" bodystart="18" bodyend="24"/>
+        <references refid="class_weapons_1af9bcea79386a27736973ae767ef8a408" compoundref="_weapons_8hpp" startline="21">x</references>
+        <references refid="class_weapons_1a35ff8124c657cb744f6d2731b1ec6e83" compoundref="_weapons_8hpp" startline="21">y</references>
+        <references refid="class_weapons_1af3fd2ec73d872c5e4890453c8abdcdbb" compoundref="_weapons_8hpp" startline="22">angle</references>
+        <references refid="class_weapons_1a51aba0764e4873f32acc1f627328346f" compoundref="_weapons_8hpp" startline="21">radius</references>
+        <referencedby refid="class_c_character_1af64ec95c078f3e969cb6b961db81a488" compoundref="_c_character_8cpp" startline="107" endline="109">CCharacter::weaponAngle</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_weapons_1af9d9f25b33b8d7e6d649c0325bb2db9f" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void Weapons::draw</definition>
+        <argsstring>(int mapX, int mapY)</argsstring>
+        <name>draw</name>
+        <param>
+          <type>int</type>
+          <declname>mapX</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>mapY</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/Weapons.hpp" line="48" column="1" bodyfile="/home/clemente/projects/Troll-Killers/Weapons.cpp" bodystart="26" bodyend="36"/>
+        <references refid="class_weapons_1ad78bb71ca90aff95cd1ad5be59e7d6a6" compoundref="_weapons_8hpp" startline="17">gun</references>
+        <references refid="class_weapons_1a51aba0764e4873f32acc1f627328346f" compoundref="_weapons_8hpp" startline="21">radius</references>
+        <references refid="class_weapons_1af9bcea79386a27736973ae767ef8a408" compoundref="_weapons_8hpp" startline="21">x</references>
+        <references refid="class_weapons_1a35ff8124c657cb744f6d2731b1ec6e83" compoundref="_weapons_8hpp" startline="21">y</references>
+        <references refid="class_weapons_1af3fd2ec73d872c5e4890453c8abdcdbb" compoundref="_weapons_8hpp" startline="22">angle</references>
+        <references refid="_defines_8hpp_1a740030c7f156fdc0eb8036a0fde589ef" compoundref="_defines_8hpp" startline="11">SCREEN_PROJECTILES</references>
+        <references refid="class_weapons_1a8495428b263ca37532201254df911dcc" compoundref="_weapons_8hpp" startline="29">projectiles</references>
+        <references refid="class_c_projectile_1a164f1820536f396cc7118c0ab9bec69f" compoundref="_c_projectile_8cpp" startline="5" endline="10">CProjectile::draw</references>
+        <referencedby refid="class_c_character_1a80e38c97bd4d4fd9b7f017ec121f03a9" compoundref="_c_character_8cpp" startline="47" endline="52">CCharacter::draw</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_weapons_1a51990dae3d666006b2154cf501758936" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void Weapons::shoot</definition>
+        <argsstring>(ALLEGRO_MOUSE_STATE &amp;mouseState, Connection *conn)=0</argsstring>
+        <name>shoot</name>
+        <reimplementedby refid="class_rifle_1a9cb3a65794113297417d2b96e7103784">shoot</reimplementedby>
+        <reimplementedby refid="class_pistol_1a0e99963f771cc143c32a0c72158e74f1">shoot</reimplementedby>
+        <param>
+          <type>ALLEGRO_MOUSE_STATE &amp;</type>
+          <declname>mouseState</declname>
+        </param>
+        <param>
+          <type><ref refid="class_connection" kindref="compound">Connection</ref> *</type>
+          <declname>conn</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/Weapons.hpp" line="49" column="1"/>
+        <referencedby refid="class_c_character_1a5fa507c6196ecc4132796dc250d7bb1d" compoundref="_c_character_8hpp" startline="75" endline="75">CCharacter::shoot</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="185">
+        <label>Weapons</label>
+        <link refid="class_weapons"/>
+      </node>
+      <node id="186">
+        <label>Pistol</label>
+        <link refid="class_pistol"/>
+        <childnode refid="185" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="187">
+        <label>Rifle</label>
+        <link refid="class_rifle"/>
+        <childnode refid="185" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="190">
+        <label>Projectile</label>
+        <link refid="class_projectile"/>
+        <childnode refid="191" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="188">
+        <label>Weapons</label>
+        <link refid="class_weapons"/>
+        <childnode refid="189" relation="usage">
+          <edgelabel>#projectiles</edgelabel>
+        </childnode>
+      </node>
+      <node id="191">
+        <label>IGObject</label>
+        <link refid="class_i_g_object"/>
+      </node>
+      <node id="189">
+        <label>CProjectile</label>
+        <link refid="class_c_projectile"/>
+        <childnode refid="190" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/clemente/projects/Troll-Killers/Weapons.hpp" line="15" column="1" bodyfile="/home/clemente/projects/Troll-Killers/Weapons.hpp" bodystart="15" bodyend="50"/>
+    <listofallmembers>
+      <member refid="class_weapons_1af3fd2ec73d872c5e4890453c8abdcdbb" prot="protected" virt="non-virtual"><scope>Weapons</scope><name>angle</name></member>
+      <member refid="class_weapons_1ad5123e66ada6a06e3260d4e4fd6fbf31" prot="public" virt="non-virtual"><scope>Weapons</scope><name>calculateAngle</name></member>
+      <member refid="class_weapons_1a7bbd3fe9d22471b851371204d1738f73" prot="protected" virt="non-virtual"><scope>Weapons</scope><name>dispersion</name></member>
+      <member refid="class_weapons_1abb0e1d78129cbe503bda16a936415b19" prot="protected" virt="non-virtual"><scope>Weapons</scope><name>dmg</name></member>
+      <member refid="class_weapons_1af9d9f25b33b8d7e6d649c0325bb2db9f" prot="public" virt="virtual"><scope>Weapons</scope><name>draw</name></member>
+      <member refid="class_weapons_1ac408dbb1f31e53b844c07f16206e40f8" prot="public" virt="non-virtual"><scope>Weapons</scope><name>getAngle</name></member>
+      <member refid="class_weapons_1a077953983902a53d6346d8f71a769a7d" prot="public" virt="non-virtual"><scope>Weapons</scope><name>getDmg</name></member>
+      <member refid="class_weapons_1ab424ac199565201128616e5a0aa9ff1f" prot="public" virt="non-virtual"><scope>Weapons</scope><name>getProjectiles</name></member>
+      <member refid="class_weapons_1a1444e3909bfb67a090d91993b7c4f515" prot="public" virt="non-virtual"><scope>Weapons</scope><name>getWeaponTipX</name></member>
+      <member refid="class_weapons_1aa49e0f3bc1a4d53ebb433f0ccabd0f47" prot="public" virt="non-virtual"><scope>Weapons</scope><name>getWeaponTipY</name></member>
+      <member refid="class_weapons_1a878503b58548a7d1335845395f773969" prot="public" virt="non-virtual"><scope>Weapons</scope><name>getX</name></member>
+      <member refid="class_weapons_1a20570863ba58ad562fdef6c95af794ee" prot="public" virt="non-virtual"><scope>Weapons</scope><name>getY</name></member>
+      <member refid="class_weapons_1ad78bb71ca90aff95cd1ad5be59e7d6a6" prot="protected" virt="non-virtual"><scope>Weapons</scope><name>gun</name></member>
+      <member refid="class_weapons_1af178acf007397b21ce562313850288bb" prot="protected" virt="non-virtual"><scope>Weapons</scope><name>magSize</name></member>
+      <member refid="class_weapons_1ae99ad33ed5484eb34aca31d2561a5c61" prot="protected" virt="non-virtual"><scope>Weapons</scope><name>nProjectile</name></member>
+      <member refid="class_weapons_1a0fdaf9f3dee1b5684c993c7304c213b8" prot="public" virt="non-virtual"><scope>Weapons</scope><name>play_sound</name></member>
+      <member refid="class_weapons_1a8495428b263ca37532201254df911dcc" prot="protected" virt="non-virtual"><scope>Weapons</scope><name>projectiles</name></member>
+      <member refid="class_weapons_1a51aba0764e4873f32acc1f627328346f" prot="protected" virt="non-virtual"><scope>Weapons</scope><name>radius</name></member>
+      <member refid="class_weapons_1a6dd8f827ee1b9115690fecb2005c8c8d" prot="public" virt="non-virtual"><scope>Weapons</scope><name>setAngle</name></member>
+      <member refid="class_weapons_1a7c8697cb11fa00b90882d14eb8e586df" prot="public" virt="non-virtual"><scope>Weapons</scope><name>setRadius</name></member>
+      <member refid="class_weapons_1a7ea90e9d30c37ce8fa7258405a944d77" prot="public" virt="non-virtual"><scope>Weapons</scope><name>setX</name></member>
+      <member refid="class_weapons_1a0d95e4fd724cb6c6336ec5d7eaf57842" prot="public" virt="non-virtual"><scope>Weapons</scope><name>setY</name></member>
+      <member refid="class_weapons_1a51990dae3d666006b2154cf501758936" prot="public" virt="pure-virtual"><scope>Weapons</scope><name>shoot</name></member>
+      <member refid="class_weapons_1a9556c5663357877509683cd21da1fdf6" prot="protected" virt="non-virtual"><scope>Weapons</scope><name>shootTimer</name></member>
+      <member refid="class_weapons_1a7287128c84711719a2d6afb85bf512e5" prot="protected" virt="non-virtual"><scope>Weapons</scope><name>sound</name></member>
+      <member refid="class_weapons_1a42908d6d74c3c4d95805caec5db1577d" prot="protected" virt="non-virtual"><scope>Weapons</scope><name>type</name></member>
+      <member refid="class_weapons_1a09cf8402e87ff45026bc4f8abea316d7" prot="public" virt="non-virtual"><scope>Weapons</scope><name>Weapons</name></member>
+      <member refid="class_weapons_1af9bcea79386a27736973ae767ef8a408" prot="protected" virt="non-virtual"><scope>Weapons</scope><name>x</name></member>
+      <member refid="class_weapons_1a35ff8124c657cb744f6d2731b1ec6e83" prot="protected" virt="non-virtual"><scope>Weapons</scope><name>y</name></member>
+      <member refid="class_weapons_1af1796ac8fd6145e5281bf35b1755a512" prot="public" virt="virtual"><scope>Weapons</scope><name>~Weapons</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,5 @@
+<map id="Pistol::shoot" name="Pistol::shoot">
+<area shape="rect" id="node2" href="$class_weapons.html#a1444e3909bfb67a090d91993b7c4f515" title="Weapons::getWeaponTipX" alt="" coords="148,5,327,32"/>
+<area shape="rect" id="node3" href="$class_weapons.html#aa49e0f3bc1a4d53ebb433f0ccabd0f47" title="Weapons::getWeaponTipY" alt="" coords="148,56,327,83"/>
+<area shape="rect" id="node4" href="$class_connection.html#a3dda26c4c789d0f5e54fb50cae606022" title="Connection::send_packet\l_reliable" alt="" coords="152,107,323,149"/>
+</map>

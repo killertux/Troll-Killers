@@ -1,0 +1,171 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.10">
+  <compounddef id="class_s_map" kind="class" language="C++" prot="public">
+    <compoundname>SMap</compoundname>
+    <basecompoundref refid="class_map" prot="public" virt="non-virtual">Map</basecompoundref>
+    <includes refid="_s_map_8hpp" local="no">SMap.hpp</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_s_map_1abc5e710d3230ec7c39ad0433c35b1c3a" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int SMap::spawnCounter</definition>
+        <argsstring></argsstring>
+        <name>spawnCounter</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/SMap.hpp" line="8" column="1" bodyfile="/home/clemente/projects/Troll-Killers/SMap.hpp" bodystart="8" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_map_1ae8343aee1e9049c03650ea94c2637139" prot="private" static="no" mutable="no">
+        <type><ref refid="struct__object" kindref="compound">_object</ref> **</type>
+        <definition>_object** SMap::spawnList</definition>
+        <argsstring></argsstring>
+        <name>spawnList</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/SMap.hpp" line="9" column="1" bodyfile="/home/clemente/projects/Troll-Killers/SMap.hpp" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_map_1a37dfebb3e73aecc1957ae88701b4e435" prot="private" static="no" mutable="no">
+        <type>bool *</type>
+        <definition>bool* SMap::inUse</definition>
+        <argsstring></argsstring>
+        <name>inUse</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/SMap.hpp" line="10" column="1" bodyfile="/home/clemente/projects/Troll-Killers/SMap.hpp" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_map_1aaaa0dd2f1d2062b14ec12de476a917e5" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int SMap::nSpawn</definition>
+        <argsstring></argsstring>
+        <name>nSpawn</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/SMap.hpp" line="11" column="1" bodyfile="/home/clemente/projects/Troll-Killers/SMap.hpp" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_s_map_1a6ef62d8e6b17c21f21c535a4139e230e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SMap::calculateSpawn</definition>
+        <argsstring>()</argsstring>
+        <name>calculateSpawn</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/SMap.hpp" line="13" column="1" bodyfile="/home/clemente/projects/Troll-Killers/SMap.cpp" bodystart="3" bodyend="18"/>
+        <references refid="class_map_1ad428bf938f205ed6d1e7af2ddd09b7ce" compoundref="_map_8hpp" startline="36">Map::n_object</references>
+        <references refid="class_map_1a1028fa8db721f28473ba471ae70fde09" compoundref="_map_8hpp" startline="33">Map::objects</references>
+        <references refid="class_map_1a6e7ba89e3a0a05633ae7d27dd400190f" compoundref="_map_8hpp" startline="31">Map::type</references>
+        <references refid="_enums_8hpp_1a842c5e2e69277690b064bf363c017980aa79c827759ea48f0735386c4b1188911" compoundref="_enums_8hpp" startline="5">CIRCLE</references>
+        <referencedby refid="class_server_1ad5ec9462b520e59f7ea831e157ee5e59" compoundref="_server_8cpp" startline="3" endline="26">Server::Server</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_s_map_1a3577067cfaf16adb3afd60c30f7093b7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct__object" kindref="compound">_object</ref> *</type>
+        <definition>_object * SMap::getSpaw</definition>
+        <argsstring>()</argsstring>
+        <name>getSpaw</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/SMap.hpp" line="14" column="1" bodyfile="/home/clemente/projects/Troll-Killers/SMap.cpp" bodystart="20" bodyend="26"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_map_1a951815986813fc94884108ee2b72a4f1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool SMap::useSpawn</definition>
+        <argsstring>(_object *spawn)</argsstring>
+        <name>useSpawn</name>
+        <param>
+          <type><ref refid="struct__object" kindref="compound">_object</ref> *</type>
+          <declname>spawn</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/SMap.hpp" line="15" column="1" bodyfile="/home/clemente/projects/Troll-Killers/SMap.cpp" bodystart="28" bodyend="35"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="180">
+        <label>SMap</label>
+        <link refid="class_s_map"/>
+        <childnode refid="181" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="181">
+        <label>Map</label>
+        <link refid="class_map"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="184">
+        <label>_object</label>
+        <link refid="struct__object"/>
+      </node>
+      <node id="182">
+        <label>SMap</label>
+        <link refid="class_s_map"/>
+        <childnode refid="183" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="183">
+        <label>Map</label>
+        <link refid="class_map"/>
+        <childnode refid="184" relation="usage">
+          <edgelabel>#objects</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/clemente/projects/Troll-Killers/SMap.hpp" line="6" column="1" bodyfile="/home/clemente/projects/Troll-Killers/SMap.hpp" bodystart="6" bodyend="17"/>
+    <listofallmembers>
+      <member refid="class_s_map_1a6ef62d8e6b17c21f21c535a4139e230e" prot="public" virt="non-virtual"><scope>SMap</scope><name>calculateSpawn</name></member>
+      <member refid="class_map_1a958dfc5b0956b8a4cb1ac03b0ccfdce8" prot="public" virt="virtual"><scope>SMap</scope><name>deserialize</name></member>
+      <member refid="class_map_1a3e692a4d7e5ce0687bf4b93254714edf" prot="public" virt="non-virtual"><scope>SMap</scope><name>getObjects</name></member>
+      <member refid="class_s_map_1a3577067cfaf16adb3afd60c30f7093b7" prot="public" virt="non-virtual"><scope>SMap</scope><name>getSpaw</name></member>
+      <member refid="class_s_map_1a37dfebb3e73aecc1957ae88701b4e435" prot="private" virt="non-virtual"><scope>SMap</scope><name>inUse</name></member>
+      <member refid="class_map_1a48caa289073dbeff9c89a02cf89a2cc6" prot="protected" virt="non-virtual"><scope>SMap</scope><name>length</name></member>
+      <member refid="class_map_1a259bb70652389b9ecf0bc76ceca656a5" prot="public" virt="virtual"><scope>SMap</scope><name>load_map</name></member>
+      <member refid="class_map_1a0f5ad0fd4563497b4214038cbca8b582" prot="public" virt="non-virtual"><scope>SMap</scope><name>Map</name></member>
+      <member refid="class_map_1a6cb94f4c91b4634128ccf0219f84d1ab" prot="protected" virt="non-virtual"><scope>SMap</scope><name>max_objects</name></member>
+      <member refid="class_map_1ad428bf938f205ed6d1e7af2ddd09b7ce" prot="protected" virt="non-virtual"><scope>SMap</scope><name>n_object</name></member>
+      <member refid="class_map_1abe0a2d1af671ad7ca47651a8d207b23c" prot="protected" virt="non-virtual"><scope>SMap</scope><name>name</name></member>
+      <member refid="class_s_map_1aaaa0dd2f1d2062b14ec12de476a917e5" prot="private" virt="non-virtual"><scope>SMap</scope><name>nSpawn</name></member>
+      <member refid="class_map_1a1028fa8db721f28473ba471ae70fde09" prot="protected" virt="non-virtual"><scope>SMap</scope><name>objects</name></member>
+      <member refid="class_map_1afdd22d2739acb6a6eaf8864ee090107a" prot="public" virt="virtual"><scope>SMap</scope><name>save_map</name></member>
+      <member refid="class_map_1ac85777e48836aa23c8c7adac7ea50ea8" prot="public" virt="virtual"><scope>SMap</scope><name>serialize</name></member>
+      <member refid="class_s_map_1abc5e710d3230ec7c39ad0433c35b1c3a" prot="private" virt="non-virtual"><scope>SMap</scope><name>spawnCounter</name></member>
+      <member refid="class_s_map_1ae8343aee1e9049c03650ea94c2637139" prot="private" virt="non-virtual"><scope>SMap</scope><name>spawnList</name></member>
+      <member refid="class_map_1a6e7ba89e3a0a05633ae7d27dd400190f" prot="protected" virt="non-virtual"><scope>SMap</scope><name>type</name></member>
+      <member refid="class_s_map_1a951815986813fc94884108ee2b72a4f1" prot="public" virt="non-virtual"><scope>SMap</scope><name>useSpawn</name></member>
+      <member refid="class_map_1a15981e529cd48e04432898f9185683d3" prot="protected" virt="non-virtual"><scope>SMap</scope><name>width</name></member>
+      <member refid="class_map_1aa403fbe09394ccf39747588f5168e3b2" prot="public" virt="non-virtual"><scope>SMap</scope><name>~Map</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

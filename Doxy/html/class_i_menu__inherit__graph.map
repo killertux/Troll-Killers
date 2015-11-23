@@ -1,0 +1,4 @@
+<map id="IMenu" name="IMenu">
+<area shape="rect" id="node2" href="$class_menu_armas.html" title="{MenuArmas\n||+ MenuArmas()\l+ ~MenuArmas()\l+ botao()\l+ print_menu()\l+ botao_action()\l}" alt="" coords="5,175,125,311"/>
+<area shape="rect" id="node3" href="$class_menu_princ.html" title="{MenuPrinc\n||+ MenuPrinc()\l+ ~MenuPrinc()\l+ botao()\l+ print_menu()\l+ botao_action()\l}" alt="" coords="150,175,266,311"/>
+</map>

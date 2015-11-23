@@ -1,0 +1,4 @@
+<map id="Projectile" name="Projectile">
+<area shape="rect" id="node3" href="$class_c_projectile.html" title="{CProjectile\n||+ CProjectile()\l+ draw()\l}" alt="" coords="5,623,112,715"/>
+<area shape="rect" id="node2" href="$class_i_g_object.html" title="{IGObject\n||+ getId()\l+ getX()\l+ getY()\l+ getVelocity()\l+ serialize()\l+ setX()\l+ setY()\l+ ~IGObject()\l}" alt="" coords="5,5,112,185"/>
+</map>

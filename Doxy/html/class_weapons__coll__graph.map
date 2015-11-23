@@ -1,0 +1,5 @@
+<map id="Weapons" name="Weapons">
+<area shape="rect" id="node2" href="$class_c_projectile.html" title="{CProjectile\n||+ CProjectile()\l+ draw()\l}" alt="" coords="19,625,126,717"/>
+<area shape="rect" id="node3" href="$class_projectile.html" title="{Projectile\n|# velocity\l# id\l# x\l# y\l# length\l# angle\l|+ Projectile()\l+ Projectile()\l+ getId()\l+ getX()\l+ getY()\l+ getAngle()\l+ getVelocity()\l+ getLength()\l+ serialize()\l+ setX()\l+ setY()\l+ setAngle()\l+ move()\l+ collide()\l}" alt="" coords="19,235,126,576"/>
+<area shape="rect" id="node4" href="$class_i_g_object.html" title="{IGObject\n||+ getId()\l+ getX()\l+ getY()\l+ getVelocity()\l+ serialize()\l+ setX()\l+ setY()\l+ ~IGObject()\l}" alt="" coords="19,5,126,185"/>
+</map>

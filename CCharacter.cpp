@@ -12,6 +12,8 @@ CCharacter::CCharacter(Weapon myWeapon){
 	else if(myWeapon == RIFLE)
 		weapon = new Rifle;
 	weapon->setRadius(player.radius);
+	hit=al_load_sample("Sounds/hit.ogg");
+	victory=al_load_sample("Sounds/victory.ogg");
 	dead=false;
 	xSpawn=0;
 	ySpawn=0;
@@ -21,6 +23,8 @@ CCharacter::CCharacter(Weapon myWeapon){
 }
 
 CCharacter::~CCharacter(){
+	al_destroy_sample(hit);
+	al_destroy_sample(victory);
 	delete weapon;
 }
 
@@ -131,6 +135,24 @@ void CCharacter::revive(int16_t x, int16_t y){
 void CCharacter::sound_shoot(int x, int y){
 	float distance=sqrt(pow(x-player.x,2)+pow(y-player.y,2));
 	weapon->play_sound(distance);
+}
+
+void CCharacter::sound_hit(int x,int y){
+	float distance=sqrt(pow(x-player.x,2)+pow(y-player.y,2));
+	float volume=2*exp(-pow(distance,2)/pow(800,2));
+	if(volume >1)
+		volume=1;
+	std::cout << volume <<std::endl;
+	al_play_sample(hit,volume,0.0,1.0,ALLEGRO_PLAYMODE_ONCE,NULL);
+}
+
+void CCharacter::sound_victory(int x,int y){
+	float distance=sqrt(pow(x-player.x,2)+pow(y-player.y,2));
+	float volume=2*exp(-pow(distance,2)/pow(800,2));
+	if(volume >1)
+		volume=1;
+	std::cout << volume <<std::endl;
+	al_play_sample(victory,volume,0.0,1.0,ALLEGRO_PLAYMODE_ONCE,NULL);
 }
 
 

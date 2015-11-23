@@ -1,0 +1,561 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.8.10">
+  <compound refid="struct__data" kind="struct"><name>_data</name>
+    <member refid="struct__data_1afa7c65aa86c5c877d1b23746b27f7ccd" kind="variable"><name>type</name></member>
+    <member refid="struct__data_1abcb37fabf89158d59a0469a376d2d5f8" kind="variable"><name>buffer</name></member>
+  </compound>
+  <compound refid="struct__msg" kind="struct"><name>_msg</name>
+    <member refid="struct__msg_1a470db8b42735763fc80e93590da2eaf4" kind="variable"><name>buffer</name></member>
+    <member refid="struct__msg_1a5319cda008478b61e06ddf06c2cf166e" kind="variable"><name>id</name></member>
+  </compound>
+  <compound refid="struct__n_map" kind="struct"><name>_nMap</name>
+    <member refid="struct__n_map_1a79dda563cc2d4f715a9185f1a970150b" kind="variable"><name>type</name></member>
+    <member refid="struct__n_map_1a138f2aaca24cdaf5ec466c7889b21c15" kind="variable"><name>name</name></member>
+    <member refid="struct__n_map_1ac3f3bf64347ac2accba1e388da7bfa07" kind="variable"><name>objects</name></member>
+    <member refid="struct__n_map_1a772868c89751c4a27a7eccf076df5fc6" kind="variable"><name>length</name></member>
+    <member refid="struct__n_map_1a4e83d0ff1af678de2d5b318e549d0ec5" kind="variable"><name>width</name></member>
+    <member refid="struct__n_map_1a4570178b4b02516d89d54fc7be2ccd4f" kind="variable"><name>max_objects</name></member>
+    <member refid="struct__n_map_1ac41305de4abf61844a81b7a67992f2a8" kind="variable"><name>n_object</name></member>
+  </compound>
+  <compound refid="struct__object" kind="struct"><name>_object</name>
+    <member refid="struct__object_1a4ffae0568ef6772f8ebefa0997f79243" kind="variable"><name>type</name></member>
+    <member refid="struct__object_1adb6e178c2aa0bc48f5db6d85106c1680" kind="variable"><name>x</name></member>
+    <member refid="struct__object_1a48f88904fef6cb2f4ea22029174d76bc" kind="variable"><name>y</name></member>
+    <member refid="struct__object_1a870a8b24b7b3dc9244f543f096e9dae6" kind="variable"><name>radius</name></member>
+    <member refid="struct__object_1a9d23dfa35b2571bf0b89d4ca75f5c155" kind="variable"><name>length</name></member>
+    <member refid="struct__object_1a7dff64a3cc71a49786c1052bb6c250ca" kind="variable"><name>width</name></member>
+    <member refid="struct__object_1af5318fcc501c7951e1bf261de6c29b3b" kind="variable"><name>r</name></member>
+    <member refid="struct__object_1a89ebce79c5f2acba52f871e6833977ff" kind="variable"><name>g</name></member>
+    <member refid="struct__object_1a104af22ae68294943efb54edb7a46b0e" kind="variable"><name>b</name></member>
+  </compound>
+  <compound refid="class_c_character" kind="class"><name>CCharacter</name>
+    <member refid="class_c_character_1a38e57d10fe3a3741ef0a7a6cf8378718" kind="variable"><name>player</name></member>
+    <member refid="class_c_character_1a7e744691420269e6dc4e524ba9611c85" kind="variable"><name>velocity</name></member>
+    <member refid="class_c_character_1a2db87b3f9168adb8debd9f21e160bc32" kind="variable"><name>id</name></member>
+    <member refid="class_c_character_1a526734092e5bab0b0001fde33ea0135f" kind="variable"><name>dir</name></member>
+    <member refid="class_c_character_1a026073b71c94ddb6782eab2d6e47ec24" kind="variable"><name>team</name></member>
+    <member refid="class_c_character_1aa62c2a83a7e753e57c8f73a2104dbf4e" kind="variable"><name>myWeapon</name></member>
+    <member refid="class_c_character_1ab6f3e7a05d630ccb65cdef71b6a2be76" kind="variable"><name>dead</name></member>
+    <member refid="class_c_character_1a8ee57bcc6f394787a10b21ea8c818d10" kind="variable"><name>xSpawn</name></member>
+    <member refid="class_c_character_1a91420cab891f56fa688fef6c297b450b" kind="variable"><name>ySpawn</name></member>
+    <member refid="class_c_character_1af10982bf7ee0661ee03b1ea795b03a05" kind="variable"><name>internalSpawnTimer</name></member>
+    <member refid="class_c_character_1a04024a041ce0367aabedd600b5b2be41" kind="variable"><name>life</name></member>
+    <member refid="class_c_character_1a58be2fddfa5025fc3c20dce359482d7c" kind="variable"><name>weapon</name></member>
+    <member refid="class_c_character_1a9d639da0c8e8d6023825cc105bf07133" kind="function"><name>distance</name></member>
+    <member refid="class_c_character_1add20c9a63c5c11e8c0919e536d7636a2" kind="function"><name>CCharacter</name></member>
+    <member refid="class_c_character_1a8f8fb8991776a6b6a49c796e79968c91" kind="function"><name>~CCharacter</name></member>
+    <member refid="class_c_character_1a317ea948f11c20c52b4eb915cbc6fd34" kind="function"><name>getId</name></member>
+    <member refid="class_c_character_1a27ef2164eae8c8858de7e22b8ae2b356" kind="function"><name>getX</name></member>
+    <member refid="class_c_character_1a39af09fa51d180f49a58ffce78c9f25b" kind="function"><name>getY</name></member>
+    <member refid="class_c_character_1a7074f3d5a24d61766ce4d2fe354679ee" kind="function"><name>getVelocity</name></member>
+    <member refid="class_c_character_1ae2e0ce8242ccb114248134e7d233fe80" kind="function"><name>getLife</name></member>
+    <member refid="class_c_character_1af910f0944a8ba3afc92800fb696b7750" kind="function"><name>getPlayer</name></member>
+    <member refid="class_c_character_1aba453c8974f67b9a8621a63960263874" kind="function"><name>getDead</name></member>
+    <member refid="class_c_character_1a91ff320369ed4985b1c4b1762ce4fd9c" kind="function"><name>getTeam</name></member>
+    <member refid="class_c_character_1a367a85d8da544c05088712def127bf43" kind="function"><name>getDir</name></member>
+    <member refid="class_c_character_1a23914035239a49f1a2ce26248ce181f7" kind="function"><name>setDir</name></member>
+    <member refid="class_c_character_1a2a9cb3e98cfe4c36ea292cdc38b999d8" kind="function"><name>serialize</name></member>
+    <member refid="class_c_character_1a80e38c97bd4d4fd9b7f017ec121f03a9" kind="function"><name>draw</name></member>
+    <member refid="class_c_character_1ad602f6042aeb6e500393bca375c4133b" kind="function"><name>move</name></member>
+    <member refid="class_c_character_1adc71f8353440b2d5450938fa7c418aa7" kind="function"><name>die</name></member>
+    <member refid="class_c_character_1afe8285dd94fc52c099fb548840bc4e06" kind="function"><name>tryToRevive</name></member>
+    <member refid="class_c_character_1ad33d632d180cc5d487b0c39925caf278" kind="function"><name>revive</name></member>
+    <member refid="class_c_character_1a68c347ad267792fbed8ee9b1bae90967" kind="function"><name>damage</name></member>
+    <member refid="class_c_character_1a84b44c9ef54291da3e28fb7f9dc05f20" kind="function"><name>colision</name></member>
+    <member refid="class_c_character_1a6d92d81e7bd039572e147ebe190fab6c" kind="function"><name>setX</name></member>
+    <member refid="class_c_character_1a670de9c2ba79b716953a1dac2db9e4cf" kind="function"><name>setY</name></member>
+    <member refid="class_c_character_1abbabbe227437ea99b377e33c569da84c" kind="function"><name>setSpawnX</name></member>
+    <member refid="class_c_character_1a0060a9e93f32488b4496545b9b3ef593" kind="function"><name>setSpawnY</name></member>
+    <member refid="class_c_character_1a4af37bf96b4950b67a538d1f5c1bc075" kind="function"><name>setTeam</name></member>
+    <member refid="class_c_character_1af64ec95c078f3e969cb6b961db81a488" kind="function"><name>weaponAngle</name></member>
+    <member refid="class_c_character_1a8aff509bd2bc8cb3eb7c3847533a3aed" kind="function"><name>setWeaponAngle</name></member>
+    <member refid="class_c_character_1a5fa507c6196ecc4132796dc250d7bb1d" kind="function"><name>shoot</name></member>
+    <member refid="class_c_character_1ac7fd4192681975f1c1adf9933a7193b4" kind="function"><name>getWeaponDmg</name></member>
+    <member refid="class_c_character_1a98f733c8be0661e5e6b306d37a1dfeb5" kind="function"><name>sound_shoot</name></member>
+    <member refid="class_c_character_1a514a9a531863fe5ba308ec5805111e48" kind="function"><name>getProjectiles</name></member>
+  </compound>
+  <compound refid="class_client" kind="class"><name>Client</name>
+    <member refid="class_client_1aebf32abc580551f2d8eecca28c56395b" kind="variable"><name>display</name></member>
+    <member refid="class_client_1a436da0a5cb4ae99ee01dcf0d1b54cd40" kind="variable"><name>event_queue</name></member>
+    <member refid="class_client_1ac844c4380b1c515ee41f673f8ec17e32" kind="variable"><name>timer</name></member>
+    <member refid="class_client_1aae799bae7c4fa9f9d75ef23d4a1ce842" kind="variable"><name>mouseState</name></member>
+    <member refid="class_client_1a971b0cb1c863828a3cc40b84b1bc96c7" kind="variable"><name>ev</name></member>
+    <member refid="class_client_1a7ac208b52c0674219f3ad52cee9746f3" kind="variable"><name>soundtrack</name></member>
+    <member refid="class_client_1ae1c574be783d5e39277583e70a8c9658" kind="variable"><name>menus</name></member>
+    <member refid="class_client_1acfa3d286d4d74cdada8c801aa76c3922" kind="variable"><name>conn</name></member>
+    <member refid="class_client_1a6905fd4907e9f162033e165770521bd8" kind="variable"><name>config</name></member>
+    <member refid="class_client_1a43d34fbef2e5bffa1cfdcf7a42c52f8b" kind="variable"><name>map</name></member>
+    <member refid="class_client_1a50a4e0c8b183e732ab447e9c20c23415" kind="variable"><name>players</name></member>
+    <member refid="class_client_1a4f6107471d5d6deef489b64c1b1569b2" kind="variable"><name>recieverBuffer</name></member>
+    <member refid="class_client_1a1ed415d8e4f43a61dc7c0af15ab9752e" kind="variable"><name>senderBuffer</name></member>
+    <member refid="class_client_1a6664b0655a71d920e46fc76767923a25" kind="variable"><name>myId</name></member>
+    <member refid="class_client_1a60305bce1344ddf1f28ad1cacc1472e6" kind="variable"><name>buffer</name></member>
+    <member refid="class_client_1a33af1a6e12d17febb0765ef712ca0c6b" kind="variable"><name>myWeapon</name></member>
+    <member refid="class_client_1a9fb00ff457aba9c678f8012d0b1834cd" kind="variable"><name>res_x</name></member>
+    <member refid="class_client_1a687128f3349922694665e5517ad767a0" kind="variable"><name>res_y</name></member>
+    <member refid="class_client_1aad8864d1362eae7c50e53c0d131b7442" kind="variable"><name>port</name></member>
+    <member refid="class_client_1a348f007b5a17a83995f8d6be25ece283" kind="variable"><name>ip</name></member>
+    <member refid="class_client_1affa321e092d98fdc4187f1ecf94d7c72" kind="variable"><name>moved</name></member>
+    <member refid="class_client_1a24fda7ee5290704d22abf31e4f46ff0c" kind="variable"><name>storeKeys</name></member>
+    <member refid="class_client_1a56c57e318584f777223cf246dd9413f5" kind="variable"><name>mapX</name></member>
+    <member refid="class_client_1a6bfa6804f0c80a5383f965f7ef532fed" kind="variable"><name>mapY</name></member>
+    <member refid="class_client_1abf495a5e120521bd20ae3f8586c58682" kind="variable"><name>maxClients</name></member>
+    <member refid="class_client_1ae51af7aa6b8f591496a8f6a4a87a14bf" kind="function"><name>Client</name></member>
+    <member refid="class_client_1a840e519ca781888cbd54181572ebe3a7" kind="function"><name>~Client</name></member>
+    <member refid="class_client_1ab8104db60235ae805fb77a8cb161c4b8" kind="function"><name>setWeapon</name></member>
+    <member refid="class_client_1a8a2de145bff51cff643e5a8d773d35fe" kind="function"><name>menu</name></member>
+    <member refid="class_client_1abccb976632db0b3b5df925875b80b2e7" kind="function"><name>connect</name></member>
+    <member refid="class_client_1a9fbb2f61b005ee6ab3f73b9f449d95eb" kind="function"><name>main_loop</name></member>
+  </compound>
+  <compound refid="class_c_map" kind="class"><name>CMap</name>
+    <member refid="class_c_map_1a932d73c737c71739669e538ca5fc2f8b" kind="variable"><name>drawCircles</name></member>
+    <member refid="class_c_map_1a57a9b9c9b6d833102dd19852ec3767de" kind="function"><name>CMap</name></member>
+    <member refid="class_c_map_1a7ad71523562247ed2183e57eaed018e8" kind="function"><name>CMap</name></member>
+    <member refid="class_c_map_1abec86992ac01292170213a5d71f17895" kind="function"><name>new_object</name></member>
+    <member refid="class_c_map_1a9e069b9af7a4a243345dd0bfae24121a" kind="function"><name>destroy_object</name></member>
+    <member refid="class_c_map_1adedfa138aa67c2924e79809ad1dac85c" kind="function"><name>draw_map</name></member>
+    <member refid="class_c_map_1a6b9de17f30f934892113c02b4f53779d" kind="function"><name>setDrawCircles</name></member>
+    <member refid="class_c_map_1aa735d6c214fe5c973edf82f3eaa4431e" kind="function"><name>getObjects</name></member>
+    <member refid="class_c_map_1a1b1e0a1671eb60396ce30c393173a8a2" kind="function"><name>getNobject</name></member>
+    <member refid="class_c_map_1a9419f5696c22e9569612b79db2872e02" kind="function"><name>~CMap</name></member>
+  </compound>
+  <compound refid="class_configuration" kind="class"><name>Configuration</name>
+    <member refid="class_configuration_1a6c9643debf1bde0947724c5a11f8885b" kind="variable"><name>ptr</name></member>
+    <member refid="class_configuration_1ac60fced9c6afeae4d6d315090add484b" kind="variable"><name>buffer</name></member>
+    <member refid="class_configuration_1a9aec9b70a69a104247222c9caeffbdf9" kind="variable"><name>configFile</name></member>
+    <member refid="class_configuration_1aac972c997e08ae191ffab4eac2c622cd" kind="variable"><name>configLine</name></member>
+    <member refid="class_configuration_1ab4a552995111e8ef6c52c478000ceca4" kind="variable"><name>configLines</name></member>
+    <member refid="class_configuration_1ab8e90797739fd28b975bdbd504cefb08" kind="variable"><name>count</name></member>
+    <member refid="class_configuration_1a3023d06f381d79fcf3e197e4575a4491" kind="variable"><name>configChanged</name></member>
+    <member refid="class_configuration_1ae15c9e7010ab3c5dd3c2bc27b2b87f84" kind="function"><name>get_word</name></member>
+    <member refid="class_configuration_1a779947337bf652f0e773cb29f37f14ba" kind="function"><name>Configuration</name></member>
+    <member refid="class_configuration_1a0dd0fa189e239f4c9a036303f641441e" kind="function"><name>~Configuration</name></member>
+    <member refid="class_configuration_1a9eb938cc99deddd6b9730ee10576b55a" kind="function"><name>config_found</name></member>
+    <member refid="class_configuration_1a19490e0e191f69330f1f3efa988ed99a" kind="function"><name>config_create</name></member>
+    <member refid="class_configuration_1aed21dbeb0bcb1de61389deee612d9074" kind="function"><name>config_load</name></member>
+    <member refid="class_configuration_1aea42a72a64052e67db46c0369d731a5e" kind="function"><name>config_save</name></member>
+    <member refid="class_configuration_1aa73dc1019f3fe1678ff56321d2e32960" kind="function"><name>config_insert</name></member>
+    <member refid="class_configuration_1a8a66e437127dfe28d70690d53f6dfd7f" kind="function"><name>config_get</name></member>
+    <member refid="class_configuration_1a971a8c8fdd4e21f63c76e21ce19d7b61" kind="function"><name>config_remove</name></member>
+  </compound>
+  <compound refid="class_connection" kind="class"><name>Connection</name>
+    <member refid="class_connection_1af3d9b458d147a2b4519158fda3ca646a" kind="variable"><name>address</name></member>
+    <member refid="class_connection_1a1a8583d4b7ee2d8e7d0dc5bbf19c5b2d" kind="variable"><name>conn</name></member>
+    <member refid="class_connection_1a550cfafb366255611e04742850311034" kind="variable"><name>connS</name></member>
+    <member refid="class_connection_1a145978da681ae68f47ba1eb047ee52bb" kind="variable"><name>event</name></member>
+    <member refid="class_connection_1a074418e059d4e969b83a1a6502dc608e" kind="variable"><name>client</name></member>
+    <member refid="class_connection_1aaa882417cf6e0999a3728e52c269a2cc" kind="variable"><name>peer</name></member>
+    <member refid="class_connection_1ab4f2a78ee8c689035a2ed4a46a219d7a" kind="variable"><name>lastConnection</name></member>
+    <member refid="class_connection_1a15a2e9946fd3abb17f8c4c7cd8ebcc27" kind="variable"><name>packetLength</name></member>
+    <member refid="class_connection_1ae9bf27d20f26cb6c3c80ff44ad648632" kind="variable"><name>packetData</name></member>
+    <member refid="class_connection_1a0af9f92dbe2d73fd2618e5f2da994463" kind="variable"><name>packetBuffer</name></member>
+    <member refid="class_connection_1a77b262e1a938295da640ba3b843814e6" kind="variable"><name>peerID</name></member>
+    <member refid="class_connection_1a912b14110edc6995d6a0eb51737f0103" kind="function"><name>perror</name></member>
+    <member refid="class_connection_1a9de94289ca6259f94ef6aeba3b134a77" kind="function"><name>Connection</name></member>
+    <member refid="class_connection_1a2e4352edf667bea83001569e9da8a24d" kind="function"><name>~Connection</name></member>
+    <member refid="class_connection_1acdb1c6f1844698b2688cb611f7029d7c" kind="function"><name>create_server</name></member>
+    <member refid="class_connection_1a3dda26c4c789d0f5e54fb50cae606022" kind="function"><name>send_packet_reliable</name></member>
+    <member refid="class_connection_1a194e26770302ecac113375475df57e42" kind="function"><name>send_packet_unreliable</name></member>
+    <member refid="class_connection_1a2d554f43b1e9d4a71acdd1ba297fc11b" kind="function"><name>broadcast_packet</name></member>
+    <member refid="class_connection_1ace9a66bd4a77270df4587df1405d4033" kind="function"><name>send_flush</name></member>
+    <member refid="class_connection_1a67a66948fd3b286a0a4faaaedb69e56e" kind="function"><name>event_service</name></member>
+    <member refid="class_connection_1a75f10c526b51675497a81e1f2c26ba9e" kind="function"><name>event_type_connect</name></member>
+    <member refid="class_connection_1ab0db0e5c8463aca4ec668107b1a46349" kind="function"><name>event_type_receive</name></member>
+    <member refid="class_connection_1a58f2ca9fedd8369ebdf61725f31123ef" kind="function"><name>event_type_disconnect</name></member>
+    <member refid="class_connection_1a8e9748ced0d65d12e5781ef21b1e7928" kind="function"><name>create_client</name></member>
+    <member refid="class_connection_1a4eec19a6b526fafaf4fa87a433a0a2d4" kind="function"><name>getLastConnection</name></member>
+    <member refid="class_connection_1ab1a9ae7a0dea88ea63ea4a2d1cbec4d9" kind="function"><name>getPacketLength</name></member>
+    <member refid="class_connection_1a2431e1403029cf660aa897eba8ec978a" kind="function"><name>getPacketData</name></member>
+    <member refid="class_connection_1a6a9cbc7d881550fcc0e768e3ee7bf171" kind="function"><name>getPeerId</name></member>
+  </compound>
+  <compound refid="class_c_projectile" kind="class"><name>CProjectile</name>
+    <member refid="class_c_projectile_1af1fb343501445d3353584cb78545c7e0" kind="function"><name>CProjectile</name></member>
+    <member refid="class_c_projectile_1a164f1820536f396cc7118c0ab9bec69f" kind="function"><name>draw</name></member>
+  </compound>
+  <compound refid="class_cursor" kind="class"><name>Cursor</name>
+    <member refid="class_cursor_1a15fe4819896d4960f8d33398905a61d5" kind="variable"><name>x</name></member>
+    <member refid="class_cursor_1a536df6c93667db288cd5ed0326215fec" kind="variable"><name>y</name></member>
+    <member refid="class_cursor_1aedc8e394213db1b43bd3eda124218f98" kind="variable"><name>resX</name></member>
+    <member refid="class_cursor_1a9ed31af00e6c81352fe58450d38acfc7" kind="variable"><name>resY</name></member>
+    <member refid="class_cursor_1a4481fbf1f941ae8144d86ddee22d1617" kind="variable"><name>timer</name></member>
+    <member refid="class_cursor_1ac926e9c689a79a712d6d698a1b2810d8" kind="variable"><name>cTimer</name></member>
+    <member refid="class_cursor_1a3e333461713b60a112f2b093e2f371cb" kind="variable"><name>lengthInc</name></member>
+    <member refid="class_cursor_1afbc761bf5f54cd46b9a17e29750bdfb8" kind="variable"><name>widthInc</name></member>
+    <member refid="class_cursor_1a703d30412407c7dab2a20ff0471f9a80" kind="variable"><name>dir</name></member>
+    <member refid="class_cursor_1a1fa4d395fcb10165cfc6145a7e6d9847" kind="variable"><name>moved</name></member>
+    <member refid="class_cursor_1a53526391e70388b4b2264f1cd3d994ae" kind="variable"><name>team</name></member>
+    <member refid="class_cursor_1a1eb62b5d24a2f4f2eeed301dc0b9a8ac" kind="variable"><name>objCursor</name></member>
+    <member refid="class_cursor_1a55e778349468dcec1e1bea7cdec709ec" kind="variable"><name>objSelected</name></member>
+    <member refid="class_cursor_1a3cbfae4aa46ddd61a5a8569566899cc2" kind="function"><name>Cursor</name></member>
+    <member refid="class_cursor_1a5621772fb10182e95f88d7227f670de4" kind="function"><name>draw_cursor</name></member>
+    <member refid="class_cursor_1a475f603c81c80a68499051bc224e7bb8" kind="function"><name>move_cursor</name></member>
+    <member refid="class_cursor_1a32172f293dc42c6256ea95241ac1f1b6" kind="function"><name>getX</name></member>
+    <member refid="class_cursor_1a737cccaafed3d0a03977b9c5f4cfe7cf" kind="function"><name>getY</name></member>
+    <member refid="class_cursor_1a3f54d9a590dfb9fca1bd390b8a9c7e54" kind="function"><name>setX</name></member>
+    <member refid="class_cursor_1ab2314c3d20498cb65a66f5be6c2e74d5" kind="function"><name>setY</name></member>
+    <member refid="class_cursor_1adc6a92102e4c6a08473b0b2745a8ebc4" kind="function"><name>change_cursor</name></member>
+    <member refid="class_cursor_1a33ed388e90bb4af04e239b684f156587" kind="function"><name>change_team</name></member>
+    <member refid="class_cursor_1ac01596d8124ec0d1d92b88212ca858e5" kind="function"><name>increase_object</name></member>
+    <member refid="class_cursor_1aaaa6b8912141e20abde48531eec76bba" kind="function"><name>getObject</name></member>
+    <member refid="class_cursor_1a166a2e5d9dda3e7c4b1b552a019b7f41" kind="function"><name>object_selected</name></member>
+  </compound>
+  <compound refid="class_i_g_object" kind="class"><name>IGObject</name>
+    <member refid="class_i_g_object_1a40fdbe0db5e995e22996567d77bf45c6" kind="function"><name>getId</name></member>
+    <member refid="class_i_g_object_1aa6ae1f7bd99277a3558a8e90d833fa7a" kind="function"><name>getX</name></member>
+    <member refid="class_i_g_object_1a3491bdb3a6b6ba8d66e07443a5b5951d" kind="function"><name>getY</name></member>
+    <member refid="class_i_g_object_1afc8764ec832e6a60c58dace401d65b32" kind="function"><name>getVelocity</name></member>
+    <member refid="class_i_g_object_1a6e2dd93acb47fc77668e2571bff3481e" kind="function"><name>serialize</name></member>
+    <member refid="class_i_g_object_1a4b810d1b4a785d7532104113ef5cf0ba" kind="function"><name>setX</name></member>
+    <member refid="class_i_g_object_1a5092ff8b79a61c3856510adb0543f229" kind="function"><name>setY</name></member>
+    <member refid="class_i_g_object_1a9e22adafd5adb2ed8dcb20a90ea6df6d" kind="function"><name>~IGObject</name></member>
+  </compound>
+  <compound refid="class_i_menu" kind="class"><name>IMenu</name>
+    <member refid="class_i_menu_1a15171c488ff899861e4c1a435bc79596" kind="function"><name>print_menu</name></member>
+    <member refid="class_i_menu_1a2e8a43e5fa1ed784d97a985eb6a07649" kind="function"><name>~IMenu</name></member>
+    <member refid="class_i_menu_1a492260da0be9c0e8951761547d67e79e" kind="function"><name>botao</name></member>
+    <member refid="class_i_menu_1a984d46d1c193c7552580c2d94c7f0aee" kind="function"><name>botao_action</name></member>
+  </compound>
+  <compound refid="class_map" kind="class"><name>Map</name>
+    <member refid="class_map_1a6e7ba89e3a0a05633ae7d27dd400190f" kind="variable"><name>type</name></member>
+    <member refid="class_map_1abe0a2d1af671ad7ca47651a8d207b23c" kind="variable"><name>name</name></member>
+    <member refid="class_map_1a1028fa8db721f28473ba471ae70fde09" kind="variable"><name>objects</name></member>
+    <member refid="class_map_1a48caa289073dbeff9c89a02cf89a2cc6" kind="variable"><name>length</name></member>
+    <member refid="class_map_1a15981e529cd48e04432898f9185683d3" kind="variable"><name>width</name></member>
+    <member refid="class_map_1a6cb94f4c91b4634128ccf0219f84d1ab" kind="variable"><name>max_objects</name></member>
+    <member refid="class_map_1ad428bf938f205ed6d1e7af2ddd09b7ce" kind="variable"><name>n_object</name></member>
+    <member refid="class_map_1a0f5ad0fd4563497b4214038cbca8b582" kind="function"><name>Map</name></member>
+    <member refid="class_map_1afdd22d2739acb6a6eaf8864ee090107a" kind="function"><name>save_map</name></member>
+    <member refid="class_map_1a259bb70652389b9ecf0bc76ceca656a5" kind="function"><name>load_map</name></member>
+    <member refid="class_map_1ac85777e48836aa23c8c7adac7ea50ea8" kind="function"><name>serialize</name></member>
+    <member refid="class_map_1a958dfc5b0956b8a4cb1ac03b0ccfdce8" kind="function"><name>deserialize</name></member>
+    <member refid="class_map_1a3e692a4d7e5ce0687bf4b93254714edf" kind="function"><name>getObjects</name></member>
+    <member refid="class_map_1aa403fbe09394ccf39747588f5168e3b2" kind="function"><name>~Map</name></member>
+  </compound>
+  <compound refid="class_map_editor" kind="class"><name>MapEditor</name>
+    <member refid="class_map_editor_1a728e526271b6cc42611a6db77b5bce40" kind="variable"><name>display</name></member>
+    <member refid="class_map_editor_1ac52df6a3f75f12f6cbe1780fbca2a912" kind="variable"><name>event_queue</name></member>
+    <member refid="class_map_editor_1a322ca714d17965be67e74e186932098a" kind="variable"><name>timer</name></member>
+    <member refid="class_map_editor_1a1a987d2d62c33694f4d1548abec56804" kind="variable"><name>keyState</name></member>
+    <member refid="class_map_editor_1a894fd5966ee205cfc5b1d69e6f875983" kind="variable"><name>ev</name></member>
+    <member refid="class_map_editor_1ae7cce73cc0624acd793a0202661d3bb5" kind="variable"><name>cursor</name></member>
+    <member refid="class_map_editor_1a0071305ce232128f367234ee3ad7a408" kind="variable"><name>storeKeys</name></member>
+    <member refid="class_map_editor_1a6ed1bb5bdf94afdf132b252bdb6ee3a9" kind="variable"><name>mapX</name></member>
+    <member refid="class_map_editor_1a364b432643517a9742113d79a5d4b010" kind="variable"><name>mapY</name></member>
+    <member refid="class_map_editor_1af3022740eae6dc1af8c044ea12bdedf9" kind="variable"><name>map</name></member>
+    <member refid="class_map_editor_1a293c325d0b53afcf3924f006cdf60363" kind="function"><name>MapEditor</name></member>
+    <member refid="class_map_editor_1a46fe3ce9d636bc72461d00f4c2d6e594" kind="function"><name>~MapEditor</name></member>
+    <member refid="class_map_editor_1a5937c9b49b1e342c219f8a87d8e3dd7a" kind="function"><name>main_loop</name></member>
+    <member refid="class_map_editor_1ac956a51214ea40b1423156efda3e6e11" kind="function"><name>draw_grid</name></member>
+  </compound>
+  <compound refid="class_menu_armas" kind="class"><name>MenuArmas</name>
+    <member refid="class_menu_armas_1aa73ae25f816957ec9a0432f3f3236eb5" kind="variable"><name>fundo</name></member>
+    <member refid="class_menu_armas_1a18d7f70433de3d5f0451147a2c68c8be" kind="variable"><name>bot1</name></member>
+    <member refid="class_menu_armas_1a7abaff51e7513e01b12e7c7edecd4770" kind="variable"><name>bot2</name></member>
+    <member refid="class_menu_armas_1a666631937c8a59cd74ccd616cd8f83d6" kind="variable"><name>bot3</name></member>
+    <member refid="class_menu_armas_1a20c4d9a40175099489fb575778d5ee84" kind="variable"><name>bot1_s</name></member>
+    <member refid="class_menu_armas_1ae273d0ce554421476d2ef225c8667eec" kind="variable"><name>bot2_s</name></member>
+    <member refid="class_menu_armas_1a737a7ab6176716f36293281c92c205dd" kind="variable"><name>bot3_s</name></member>
+    <member refid="class_menu_armas_1a8298700ef37b5e10292ba8221df78071" kind="variable"><name>bot1S</name></member>
+    <member refid="class_menu_armas_1acea5022bdb2f3800d17ec05e421819ba" kind="variable"><name>bot2S</name></member>
+    <member refid="class_menu_armas_1a83c5e170a9b8515e0bf00fdb6f94fbbe" kind="variable"><name>bot3S</name></member>
+    <member refid="class_menu_armas_1a7c0890bf8615d174fb7057937b9ed23d" kind="variable"><name>res_x</name></member>
+    <member refid="class_menu_armas_1a1707c21fbdb11fbae1ba7403af2d168b" kind="variable"><name>res_y</name></member>
+    <member refid="class_menu_armas_1ab016179c4b0421f50d67292e915968b1" kind="function"><name>MenuArmas</name></member>
+    <member refid="class_menu_armas_1ab467d5debe435a27f146cfd7e3b4c72f" kind="function"><name>~MenuArmas</name></member>
+    <member refid="class_menu_armas_1afc0b66c4033827b51b26127d40c17645" kind="function"><name>botao</name></member>
+    <member refid="class_menu_armas_1a05bc5afc4ad1a0dd6cf35f27de53016b" kind="function"><name>print_menu</name></member>
+    <member refid="class_menu_armas_1a1abc753948db8a71cb6543755bb29db6" kind="function"><name>botao_action</name></member>
+  </compound>
+  <compound refid="class_menu_manager" kind="class"><name>MenuManager</name>
+    <member refid="class_menu_manager_1a9a2898f58872785945ccb5b1b258c025" kind="variable"><name>menu</name></member>
+    <member refid="class_menu_manager_1a879829655f8c6bb34aac676dc37f1f32" kind="variable"><name>res_x</name></member>
+    <member refid="class_menu_manager_1a8f9d225f69dac6a5813405e4f1ea2317" kind="variable"><name>res_y</name></member>
+    <member refid="class_menu_manager_1aebb773931450c858725e371da0d50b73" kind="function"><name>MenuManager</name></member>
+    <member refid="class_menu_manager_1a86de10f125cd9be03d15dd50e381f53d" kind="function"><name>main_loop</name></member>
+  </compound>
+  <compound refid="class_menu_princ" kind="class"><name>MenuPrinc</name>
+    <member refid="class_menu_princ_1a5bb00ee35e3f886d5d164d3d828277af" kind="variable"><name>fundo</name></member>
+    <member refid="class_menu_princ_1a3c112a221ea69bde46ac2c6449db1a0b" kind="variable"><name>bot1</name></member>
+    <member refid="class_menu_princ_1a4f6229a19aa451c7a62eabee259adfd7" kind="variable"><name>bot2</name></member>
+    <member refid="class_menu_princ_1a9df8eaa623199022778bfbcaa0bfaad0" kind="variable"><name>bot1_s</name></member>
+    <member refid="class_menu_princ_1a20eae499c4e00094f370ed4eb8c07435" kind="variable"><name>bot2_s</name></member>
+    <member refid="class_menu_princ_1a96e37bd2baf14b7ff20bb8c14cadd384" kind="variable"><name>bot1S</name></member>
+    <member refid="class_menu_princ_1a5b830f850c07ec5dac20c7083992fcc9" kind="variable"><name>bot2S</name></member>
+    <member refid="class_menu_princ_1a755a29ebf3f969fc90002938a0b1b256" kind="variable"><name>res_x</name></member>
+    <member refid="class_menu_princ_1a6649dc1c099e4994fd2b77a4c4e90934" kind="variable"><name>res_y</name></member>
+    <member refid="class_menu_princ_1a88bfd033f9794676fa2ccb380d7edf9c" kind="function"><name>MenuPrinc</name></member>
+    <member refid="class_menu_princ_1a57ac8c3362bd27feab99bcb92d54eaf5" kind="function"><name>~MenuPrinc</name></member>
+    <member refid="class_menu_princ_1ad6b330e90af4e4783104d987ae05895f" kind="function"><name>botao</name></member>
+    <member refid="class_menu_princ_1a4dd3850301fa43019bb64c0a79e985d1" kind="function"><name>print_menu</name></member>
+    <member refid="class_menu_princ_1a53554f00f838402761766788649037d5" kind="function"><name>botao_action</name></member>
+  </compound>
+  <compound refid="class_pistol" kind="class"><name>Pistol</name>
+    <member refid="class_pistol_1abf35f0254d82b6c7e9913d67dccaf314" kind="variable"><name>shooted</name></member>
+    <member refid="class_pistol_1a0715c5243c875aeb8d8114954a463b47" kind="function"><name>Pistol</name></member>
+    <member refid="class_pistol_1a0e99963f771cc143c32a0c72158e74f1" kind="function"><name>shoot</name></member>
+  </compound>
+  <compound refid="class_projectile" kind="class"><name>Projectile</name>
+    <member refid="class_projectile_1a0f40006b298e765555e5494f3bbdc929" kind="variable"><name>velocity</name></member>
+    <member refid="class_projectile_1a4d5668615b5f58f8c7a2b4e0bf41d493" kind="variable"><name>id</name></member>
+    <member refid="class_projectile_1a706363cbafcbe19aa68853b2821e63b5" kind="variable"><name>x</name></member>
+    <member refid="class_projectile_1a19d3eab0725a2679d39c6d316e3681ca" kind="variable"><name>y</name></member>
+    <member refid="class_projectile_1a123f18a0665fd6ae48dcbd900647defb" kind="variable"><name>length</name></member>
+    <member refid="class_projectile_1a5c3f2c4e44bd0607dbdb55ebfb86f88b" kind="variable"><name>angle</name></member>
+    <member refid="class_projectile_1a309d73855dcfacee8421900c4f5e4411" kind="function"><name>Projectile</name></member>
+    <member refid="class_projectile_1ac536ed2aad56af866a2078b9a85aa16d" kind="function"><name>Projectile</name></member>
+    <member refid="class_projectile_1a359ade45d958b4817e63fc06b25f55af" kind="function"><name>getId</name></member>
+    <member refid="class_projectile_1a274d46f885207253588d74f54ddb674d" kind="function"><name>getX</name></member>
+    <member refid="class_projectile_1a3c5e30132bd9d414514c682e447ef0de" kind="function"><name>getY</name></member>
+    <member refid="class_projectile_1a58707185f143d76efe3cfcec799a7ea5" kind="function"><name>getAngle</name></member>
+    <member refid="class_projectile_1a0417e5c4b9fca6aae57844c57bd78fc0" kind="function"><name>getVelocity</name></member>
+    <member refid="class_projectile_1aa75120b722b0078d78e9d8416c0325a7" kind="function"><name>getLength</name></member>
+    <member refid="class_projectile_1a30ea63ab82a2dc401b8145f61310a9ae" kind="function"><name>serialize</name></member>
+    <member refid="class_projectile_1a0ed37ed97cd4b930da3f7bffbc5e3aa6" kind="function"><name>setX</name></member>
+    <member refid="class_projectile_1a11e50cf592b5db73cf90a1f18ec5fe1b" kind="function"><name>setY</name></member>
+    <member refid="class_projectile_1a5bf8e186023fb20ec8c15476c894def2" kind="function"><name>setAngle</name></member>
+    <member refid="class_projectile_1ac5f6d2a73c1f82f2f11ae353d251acef" kind="function"><name>move</name></member>
+    <member refid="class_projectile_1a50744612baf1cdc972281a99f8e0ac50" kind="function"><name>collide</name></member>
+  </compound>
+  <compound refid="class_rifle" kind="class"><name>Rifle</name>
+    <member refid="class_rifle_1adc0c0d162c700037ccf746c87d65728f" kind="variable"><name>internalTimer</name></member>
+    <member refid="class_rifle_1abdb60e74bb89239350fc5453860df073" kind="function"><name>Rifle</name></member>
+    <member refid="class_rifle_1a9cb3a65794113297417d2b96e7103784" kind="function"><name>shoot</name></member>
+  </compound>
+  <compound refid="class_s_character" kind="class"><name>SCharacter</name>
+    <member refid="class_s_character_1a04d83fcbde630fbd0248010a4a0fb94e" kind="variable"><name>player</name></member>
+    <member refid="class_s_character_1a26344f63cf2d8b8e0bf8ba14a97d95be" kind="variable"><name>velocity</name></member>
+    <member refid="class_s_character_1a57437ebd550f7ae62c4f0478ad102361" kind="variable"><name>id</name></member>
+    <member refid="class_s_character_1a5a49e3d66d33b9692909d0a942748a93" kind="variable"><name>dir</name></member>
+    <member refid="class_s_character_1a0abd856412eb8320fc86e8bb5ebef4d4" kind="variable"><name>team</name></member>
+    <member refid="class_s_character_1ab1267dbad2f82ab8f63ce5649978fba0" kind="variable"><name>myWeapon</name></member>
+    <member refid="class_s_character_1afa4f6b488ce644985532d73016854e46" kind="variable"><name>ready</name></member>
+    <member refid="class_s_character_1aaa56aee926cdedadae1db5335f047cd1" kind="function"><name>SCharacter</name></member>
+    <member refid="class_s_character_1aafb443599efbd749337eb0190fc5eabe" kind="function"><name>~SCharacter</name></member>
+    <member refid="class_s_character_1aed3654ba330a24ac0990047e56bccd32" kind="function"><name>getId</name></member>
+    <member refid="class_s_character_1a023df9332c559507d8986facbb37dcad" kind="function"><name>getX</name></member>
+    <member refid="class_s_character_1acbdd136e3a70a94f2f08c7158f042de6" kind="function"><name>getY</name></member>
+    <member refid="class_s_character_1af36a0d74ed25de0dc9e29213b46f7928" kind="function"><name>getVelocity</name></member>
+    <member refid="class_s_character_1ab1ffdf2103c6277f1ff34c7b48920320" kind="function"><name>getMyWeapon</name></member>
+    <member refid="class_s_character_1a4384f9f73da73ddb603d4d85fdae00d7" kind="function"><name>getTeam</name></member>
+    <member refid="class_s_character_1a4c4daa4601c62ada0af0dccef8680c60" kind="function"><name>getDir</name></member>
+    <member refid="class_s_character_1a435234e99c79e6094daa3c554033d4ae" kind="function"><name>setDir</name></member>
+    <member refid="class_s_character_1ab99fa7f23b8c7c9ca45d78d5e9bb8742" kind="function"><name>serialize</name></member>
+    <member refid="class_s_character_1a84075df93e0ad219264a349a247b6986" kind="function"><name>getReady</name></member>
+    <member refid="class_s_character_1a4537343129f515509139a762f4d04390" kind="function"><name>make_ready</name></member>
+    <member refid="class_s_character_1a410a1a3d599fc8e91252805ce4c50f10" kind="function"><name>setX</name></member>
+    <member refid="class_s_character_1a7034f78acd75a886ecd02912b20ddcde" kind="function"><name>setY</name></member>
+    <member refid="class_s_character_1a50249c9fdf9c98080fce5d9ff0e944ca" kind="function"><name>setTeam</name></member>
+    <member refid="class_s_character_1a91f39c3163ed5bbadf6d49c6b69d52f6" kind="function"><name>setMyWeapon</name></member>
+  </compound>
+  <compound refid="class_server" kind="class"><name>Server</name>
+    <member refid="class_server_1a606bb36ed5bacc5026aea6f6bece3619" kind="variable"><name>conn</name></member>
+    <member refid="class_server_1a37c062aaf37464842fefcb23a77bf5b9" kind="variable"><name>writeThread</name></member>
+    <member refid="class_server_1a47b1e75d838be2d58750c906fc035156" kind="variable"><name>cmdThread</name></member>
+    <member refid="class_server_1a9d2677701eed2752e8930ba24bf09753" kind="variable"><name>dataMu</name></member>
+    <member refid="class_server_1a4a2cc61b0a844c5094949d2675bb078d" kind="variable"><name>newMu</name></member>
+    <member refid="class_server_1ac4c0b9f27b6bb91d93e978e4b4e9ca40" kind="variable"><name>cmdMu</name></member>
+    <member refid="class_server_1ab2b175f50ef367dad55a931be625b6b8" kind="variable"><name>map</name></member>
+    <member refid="class_server_1a536aece90c3305edc1fc3876956984ce" kind="variable"><name>players</name></member>
+    <member refid="class_server_1a08b27061b1d869d9a547248429b288e6" kind="variable"><name>config</name></member>
+    <member refid="class_server_1ae8ec2d4d5e08cf031f0c781faee820a0" kind="variable"><name>redTeamN</name></member>
+    <member refid="class_server_1a4bf9d78abea2fc89cd5faa5f1dbfe10c" kind="variable"><name>blueTeamN</name></member>
+    <member refid="class_server_1a926c9dae229a62b6d33fdbb41dca6d82" kind="variable"><name>port</name></member>
+    <member refid="class_server_1a6db125a7c251be8475df6536687491de" kind="variable"><name>users</name></member>
+    <member refid="class_server_1a1ea220d236455b0847203b6f01e6ae13" kind="variable"><name>msgs</name></member>
+    <member refid="class_server_1a6082277808dd745814bc1c199a03e63a" kind="function"><name>new_user</name></member>
+    <member refid="class_server_1aa167afe77bf791577c0b33b0a715fafa" kind="function"><name>user_handle</name></member>
+    <member refid="class_server_1ad5ec9462b520e59f7ea831e157ee5e59" kind="function"><name>Server</name></member>
+    <member refid="class_server_1a4b3aa2579cb1c8cd1d069582c14d0fa6" kind="function"><name>~Server</name></member>
+    <member refid="class_server_1a47beb8398c78f8ce814d8f3961880add" kind="function"><name>main_loop</name></member>
+  </compound>
+  <compound refid="class_s_map" kind="class"><name>SMap</name>
+    <member refid="class_s_map_1abc5e710d3230ec7c39ad0433c35b1c3a" kind="variable"><name>spawnCounter</name></member>
+    <member refid="class_s_map_1ae8343aee1e9049c03650ea94c2637139" kind="variable"><name>spawnList</name></member>
+    <member refid="class_s_map_1a37dfebb3e73aecc1957ae88701b4e435" kind="variable"><name>inUse</name></member>
+    <member refid="class_s_map_1aaaa0dd2f1d2062b14ec12de476a917e5" kind="variable"><name>nSpawn</name></member>
+    <member refid="class_s_map_1a6ef62d8e6b17c21f21c535a4139e230e" kind="function"><name>calculateSpawn</name></member>
+    <member refid="class_s_map_1a3577067cfaf16adb3afd60c30f7093b7" kind="function"><name>getSpaw</name></member>
+    <member refid="class_s_map_1a951815986813fc94884108ee2b72a4f1" kind="function"><name>useSpawn</name></member>
+  </compound>
+  <compound refid="class_weapons" kind="class"><name>Weapons</name>
+    <member refid="class_weapons_1ad78bb71ca90aff95cd1ad5be59e7d6a6" kind="variable"><name>gun</name></member>
+    <member refid="class_weapons_1a7287128c84711719a2d6afb85bf512e5" kind="variable"><name>sound</name></member>
+    <member refid="class_weapons_1a42908d6d74c3c4d95805caec5db1577d" kind="variable"><name>type</name></member>
+    <member refid="class_weapons_1af9bcea79386a27736973ae767ef8a408" kind="variable"><name>x</name></member>
+    <member refid="class_weapons_1a35ff8124c657cb744f6d2731b1ec6e83" kind="variable"><name>y</name></member>
+    <member refid="class_weapons_1a51aba0764e4873f32acc1f627328346f" kind="variable"><name>radius</name></member>
+    <member refid="class_weapons_1af3fd2ec73d872c5e4890453c8abdcdbb" kind="variable"><name>angle</name></member>
+    <member refid="class_weapons_1abb0e1d78129cbe503bda16a936415b19" kind="variable"><name>dmg</name></member>
+    <member refid="class_weapons_1af178acf007397b21ce562313850288bb" kind="variable"><name>magSize</name></member>
+    <member refid="class_weapons_1ae99ad33ed5484eb34aca31d2561a5c61" kind="variable"><name>nProjectile</name></member>
+    <member refid="class_weapons_1a9556c5663357877509683cd21da1fdf6" kind="variable"><name>shootTimer</name></member>
+    <member refid="class_weapons_1a7bbd3fe9d22471b851371204d1738f73" kind="variable"><name>dispersion</name></member>
+    <member refid="class_weapons_1a8495428b263ca37532201254df911dcc" kind="variable"><name>projectiles</name></member>
+    <member refid="class_weapons_1a09cf8402e87ff45026bc4f8abea316d7" kind="function"><name>Weapons</name></member>
+    <member refid="class_weapons_1af1796ac8fd6145e5281bf35b1755a512" kind="function"><name>~Weapons</name></member>
+    <member refid="class_weapons_1a7ea90e9d30c37ce8fa7258405a944d77" kind="function"><name>setX</name></member>
+    <member refid="class_weapons_1a0d95e4fd724cb6c6336ec5d7eaf57842" kind="function"><name>setY</name></member>
+    <member refid="class_weapons_1a7c8697cb11fa00b90882d14eb8e586df" kind="function"><name>setRadius</name></member>
+    <member refid="class_weapons_1a6dd8f827ee1b9115690fecb2005c8c8d" kind="function"><name>setAngle</name></member>
+    <member refid="class_weapons_1a878503b58548a7d1335845395f773969" kind="function"><name>getX</name></member>
+    <member refid="class_weapons_1a20570863ba58ad562fdef6c95af794ee" kind="function"><name>getY</name></member>
+    <member refid="class_weapons_1a1444e3909bfb67a090d91993b7c4f515" kind="function"><name>getWeaponTipX</name></member>
+    <member refid="class_weapons_1aa49e0f3bc1a4d53ebb433f0ccabd0f47" kind="function"><name>getWeaponTipY</name></member>
+    <member refid="class_weapons_1a077953983902a53d6346d8f71a769a7d" kind="function"><name>getDmg</name></member>
+    <member refid="class_weapons_1ac408dbb1f31e53b844c07f16206e40f8" kind="function"><name>getAngle</name></member>
+    <member refid="class_weapons_1ab424ac199565201128616e5a0aa9ff1f" kind="function"><name>getProjectiles</name></member>
+    <member refid="class_weapons_1a0fdaf9f3dee1b5684c993c7304c213b8" kind="function"><name>play_sound</name></member>
+    <member refid="class_weapons_1ad5123e66ada6a06e3260d4e4fd6fbf31" kind="function"><name>calculateAngle</name></member>
+    <member refid="class_weapons_1af9d9f25b33b8d7e6d649c0325bb2db9f" kind="function"><name>draw</name></member>
+    <member refid="class_weapons_1a51990dae3d666006b2154cf501758936" kind="function"><name>shoot</name></member>
+  </compound>
+  <compound refid="__data_8hpp" kind="file"><name>_data.hpp</name>
+    <member refid="__data_8hpp_1a6b20d41d6252e9871430c242cb1a56e7" kind="define"><name>BUFFER_SIZE</name></member>
+  </compound>
+  <compound refid="__object_8hpp" kind="file"><name>_object.hpp</name>
+  </compound>
+  <compound refid="_c_character_8cpp" kind="file"><name>CCharacter.cpp</name>
+  </compound>
+  <compound refid="_c_character_8hpp" kind="file"><name>CCharacter.hpp</name>
+    <member refid="_c_character_8hpp_1a87d55845fba6b4f31cb5dc142037855d" kind="define"><name>RESPAWN_TIMER</name></member>
+  </compound>
+  <compound refid="_client_8cpp" kind="file"><name>Client.cpp</name>
+  </compound>
+  <compound refid="_client_8hpp" kind="file"><name>Client.hpp</name>
+  </compound>
+  <compound refid="_c_map_8cpp" kind="file"><name>CMap.cpp</name>
+  </compound>
+  <compound refid="_c_map_8hpp" kind="file"><name>CMap.hpp</name>
+  </compound>
+  <compound refid="_configuration_8cpp" kind="file"><name>Configuration.cpp</name>
+  </compound>
+  <compound refid="_configuration_8hpp" kind="file"><name>Configuration.hpp</name>
+  </compound>
+  <compound refid="_connection_8cpp" kind="file"><name>Connection.cpp</name>
+  </compound>
+  <compound refid="_connection_8hpp" kind="file"><name>Connection.hpp</name>
+    <member refid="_connection_8hpp_1a70ed59adcb4159ac551058053e649640" kind="define"><name>SIZE</name></member>
+  </compound>
+  <compound refid="_c_projectile_8cpp" kind="file"><name>CProjectile.cpp</name>
+  </compound>
+  <compound refid="_c_projectile_8hpp" kind="file"><name>CProjectile.hpp</name>
+  </compound>
+  <compound refid="_cursor_8cpp" kind="file"><name>Cursor.cpp</name>
+  </compound>
+  <compound refid="_cursor_8hpp" kind="file"><name>Cursor.hpp</name>
+  </compound>
+  <compound refid="_defines_8hpp" kind="file"><name>Defines.hpp</name>
+    <member refid="_defines_8hpp_1ac92ca5ab87034a348decad7ee8d4bd1b" kind="define"><name>FPS</name></member>
+    <member refid="_defines_8hpp_1ac389dbca21e58410d552988f3ec954c3" kind="define"><name>GRID</name></member>
+    <member refid="_defines_8hpp_1a05710e80db10fe76fa57f629ca32b7e5" kind="define"><name>PLAYER_VELOCITY</name></member>
+    <member refid="_defines_8hpp_1a740030c7f156fdc0eb8036a0fde589ef" kind="define"><name>SCREEN_PROJECTILES</name></member>
+    <member refid="_defines_8hpp_1abac12aa2e8539d5db407c84aaf153775" kind="define"><name>PROTOCOL_N_PEERS</name></member>
+    <member refid="_defines_8hpp_1ad2387be544a1953389933a134ff410c3" kind="define"><name>PROTOCOL_MAP_FILE</name></member>
+    <member refid="_defines_8hpp_1affb5a969dac2f0b538edbf63898ec9ce" kind="define"><name>PROTOCOL_SET_POS_TEAM</name></member>
+    <member refid="_defines_8hpp_1ae7679bcf35d9a7f62b18c8ca58bccf18" kind="define"><name>PROTOCOL_CHARACTER</name></member>
+    <member refid="_defines_8hpp_1a607c7e7a8d4594497a05a234346a1218" kind="define"><name>PROTOCOL_NEW_USER</name></member>
+    <member refid="_defines_8hpp_1a8b3aa215e1dce2cab89f0f46876c4863" kind="define"><name>PROTOCOL_MY_WEAPON</name></member>
+    <member refid="_defines_8hpp_1abfd5abb7db0c7238febbc9197c051da7" kind="define"><name>PROTOCOL_NEW_SHOOT</name></member>
+    <member refid="_defines_8hpp_1a2141c224a3cefce061389c2790c8108e" kind="define"><name>PROTOCOL_DISCONNECT</name></member>
+    <member refid="_defines_8hpp_1ad9bc32817eb02e714806d967f02a0849" kind="define"><name>PROTOCOL_DELETE_BULLET</name></member>
+    <member refid="_defines_8hpp_1a4fb7e7cfa1e05039d679f0275c48ca03" kind="define"><name>PROTOCOL_REVIVE</name></member>
+    <member refid="_defines_8hpp_1a5e3a03196e1b60cbd0fe39558c74e1ac" kind="define"><name>PROTOCOL_HIT</name></member>
+  </compound>
+  <compound refid="editor_main_8cpp" kind="file"><name>editorMain.cpp</name>
+    <member refid="editor_main_8cpp_1ae66f6b31b5ad750f1fe042a706a4e3d4" kind="function"><name>main</name></member>
+  </compound>
+  <compound refid="_enums_8hpp" kind="file"><name>Enums.hpp</name>
+    <member refid="_enums_8hpp_1a842c5e2e69277690b064bf363c017980" kind="enum"><name>ObjectType</name></member>
+    <member refid="_enums_8hpp_1a842c5e2e69277690b064bf363c017980aa79c827759ea48f0735386c4b1188911" kind="enumvalue"><name>CIRCLE</name></member>
+    <member refid="_enums_8hpp_1a842c5e2e69277690b064bf363c017980ae552ab0a96c0384a6e918e726b7f6102" kind="enumvalue"><name>RECTANGLE</name></member>
+    <member refid="_enums_8hpp_1a842c5e2e69277690b064bf363c017980ac157bdf0b85a40d2619cbc8bc1ae5fe2" kind="enumvalue"><name>NONE</name></member>
+    <member refid="_enums_8hpp_1a224b9163917ac32fc95a60d8c1eec3aa" kind="enum"><name>Direction</name></member>
+    <member refid="_enums_8hpp_1a224b9163917ac32fc95a60d8c1eec3aaaba595d8bca8bc5e67c37c0a9d89becfa" kind="enumvalue"><name>UP</name></member>
+    <member refid="_enums_8hpp_1a224b9163917ac32fc95a60d8c1eec3aaa9b0b4a95b99523966e0e34ffdadac9da" kind="enumvalue"><name>DOWN</name></member>
+    <member refid="_enums_8hpp_1a224b9163917ac32fc95a60d8c1eec3aaadb45120aafd37a973140edee24708065" kind="enumvalue"><name>LEFT</name></member>
+    <member refid="_enums_8hpp_1a224b9163917ac32fc95a60d8c1eec3aaaec8379af7490bb9eaaf579cf17876f38" kind="enumvalue"><name>RIGHT</name></member>
+    <member refid="_enums_8hpp_1a224b9163917ac32fc95a60d8c1eec3aaa851e6f177be6e7d7bf0bc7408e932f1b" kind="enumvalue"><name>STOPED</name></member>
+    <member refid="_enums_8hpp_1a224b9163917ac32fc95a60d8c1eec3aaa2a84d47f8670a3209d5fd5c8be8c5ffd" kind="enumvalue"><name>UL</name></member>
+    <member refid="_enums_8hpp_1a224b9163917ac32fc95a60d8c1eec3aaa48f352c6b2ee876ca2d402ba78b3646b" kind="enumvalue"><name>UR</name></member>
+    <member refid="_enums_8hpp_1a224b9163917ac32fc95a60d8c1eec3aaa4e833cccfa9ee34732424662a9b3513e" kind="enumvalue"><name>DL</name></member>
+    <member refid="_enums_8hpp_1a224b9163917ac32fc95a60d8c1eec3aaa5dbd956e60d5dc6c0ad15606e75b5459" kind="enumvalue"><name>DR</name></member>
+    <member refid="_enums_8hpp_1a9c13bb5b1d69698f9b47900990eaa598" kind="enum"><name>Team</name></member>
+    <member refid="_enums_8hpp_1a9c13bb5b1d69698f9b47900990eaa598af80f9a890089d211842d59625e561f88" kind="enumvalue"><name>RED</name></member>
+    <member refid="_enums_8hpp_1a9c13bb5b1d69698f9b47900990eaa598a35d6719cb4d7577c031b3d79057a1b79" kind="enumvalue"><name>BLUE</name></member>
+    <member refid="_enums_8hpp_1a9c13bb5b1d69698f9b47900990eaa598a6f54193d5651448d47fc560fb50eea59" kind="enumvalue"><name>TNONE</name></member>
+    <member refid="_enums_8hpp_1ad9700e9db9d62004af4a04e4e13912c5" kind="enum"><name>Weapon</name></member>
+    <member refid="_enums_8hpp_1ad9700e9db9d62004af4a04e4e13912c5a69c752dd5a2fd5c747410d696d62bae7" kind="enumvalue"><name>RIFLE</name></member>
+    <member refid="_enums_8hpp_1ad9700e9db9d62004af4a04e4e13912c5aa270a057ccaf7cd6cb766319015e8b3d" kind="enumvalue"><name>PISTOL</name></member>
+  </compound>
+  <compound refid="_i_g_object_8hpp" kind="file"><name>IGObject.hpp</name>
+  </compound>
+  <compound refid="main_client_8cpp" kind="file"><name>mainClient.cpp</name>
+    <member refid="main_client_8cpp_1ae66f6b31b5ad750f1fe042a706a4e3d4" kind="function"><name>main</name></member>
+  </compound>
+  <compound refid="main_server_8cpp" kind="file"><name>mainServer.cpp</name>
+    <member refid="main_server_8cpp_1ae66f6b31b5ad750f1fe042a706a4e3d4" kind="function"><name>main</name></member>
+  </compound>
+  <compound refid="_map_8cpp" kind="file"><name>Map.cpp</name>
+  </compound>
+  <compound refid="_map_8hpp" kind="file"><name>Map.hpp</name>
+  </compound>
+  <compound refid="_map_editor_8cpp" kind="file"><name>MapEditor.cpp</name>
+  </compound>
+  <compound refid="_map_editor_8hpp" kind="file"><name>MapEditor.hpp</name>
+    <member refid="_map_editor_8hpp_1acdc7844fbd4d45737d4aa56834d37829" kind="define"><name>MAX_OBJECTS</name></member>
+    <member refid="_map_editor_8hpp_1a30362161c93e3f1a4ee4c673f535b5a8" kind="define"><name>LENGTH</name></member>
+    <member refid="_map_editor_8hpp_1a241aeeb764887ae5e3de58b98f04b16d" kind="define"><name>WIDTH</name></member>
+    <member refid="_map_editor_8hpp_1aa2c4ae08448fa684506564b4c128d47a" kind="define"><name>RES_X</name></member>
+    <member refid="_map_editor_8hpp_1a16e53f6b916d898e45d90f8e59baeb8a" kind="define"><name>RES_Y</name></member>
+    <member refid="_map_editor_8hpp_1a238feed3512d8b21b3854d082dcae6f4" kind="define"><name>MAP_FILE</name></member>
+  </compound>
+  <compound refid="_menu_8cpp" kind="file"><name>Menu.cpp</name>
+  </compound>
+  <compound refid="_menu_8hpp" kind="file"><name>Menu.hpp</name>
+    <member refid="_menu_8hpp_1a4d9d3d58dc5f7930f2e1408d4501590f" kind="define"><name>CHANGE_MENU</name></member>
+    <member refid="_menu_8hpp_1ad111e603bbebe5d87f6bc39264ce4733" kind="define"><name>EXIT</name></member>
+    <member refid="_menu_8hpp_1a2f110eaa4eb83e42b813c6ddf343b9ca" kind="define"><name>MENU_RIFLE</name></member>
+    <member refid="_menu_8hpp_1a42276d6e71bfe225d915a9d172981bc5" kind="define"><name>MENU_PISTOL</name></member>
+  </compound>
+  <compound refid="_menu_manager_8cpp" kind="file"><name>MenuManager.cpp</name>
+  </compound>
+  <compound refid="_menu_manager_8hpp" kind="file"><name>MenuManager.hpp</name>
+  </compound>
+  <compound refid="_pistol_8cpp" kind="file"><name>Pistol.cpp</name>
+  </compound>
+  <compound refid="_pistol_8hpp" kind="file"><name>Pistol.hpp</name>
+  </compound>
+  <compound refid="_projectile_8cpp" kind="file"><name>Projectile.cpp</name>
+  </compound>
+  <compound refid="_projectile_8hpp" kind="file"><name>Projectile.hpp</name>
+  </compound>
+  <compound refid="_r_e_a_d_m_e_8md" kind="file"><name>README.md</name>
+  </compound>
+  <compound refid="_rifle_8cpp" kind="file"><name>Rifle.cpp</name>
+  </compound>
+  <compound refid="_rifle_8hpp" kind="file"><name>Rifle.hpp</name>
+  </compound>
+  <compound refid="_s_character_8cpp" kind="file"><name>SCharacter.cpp</name>
+  </compound>
+  <compound refid="_s_character_8hpp" kind="file"><name>SCharacter.hpp</name>
+  </compound>
+  <compound refid="_server_8cpp" kind="file"><name>Server.cpp</name>
+  </compound>
+  <compound refid="_server_8hpp" kind="file"><name>Server.hpp</name>
+    <member refid="_server_8hpp_1a238feed3512d8b21b3854d082dcae6f4" kind="define"><name>MAP_FILE</name></member>
+  </compound>
+  <compound refid="_s_map_8cpp" kind="file"><name>SMap.cpp</name>
+  </compound>
+  <compound refid="_s_map_8hpp" kind="file"><name>SMap.hpp</name>
+  </compound>
+  <compound refid="_weapons_8cpp" kind="file"><name>Weapons.cpp</name>
+  </compound>
+  <compound refid="_weapons_8hpp" kind="file"><name>Weapons.hpp</name>
+  </compound>
+  <compound refid="md__home_clemente_projects__troll-_killers__r_e_a_d_m_e" kind="page"><name>md__home_clemente_projects_Troll-Killers_README</name>
+  </compound>
+  <compound refid="dir_a9ec1ef424966475f993eb98877e3088" kind="dir"><name>/home/clemente/projects</name>
+  </compound>
+  <compound refid="dir_0d653a1c4769308ea2f945b71240ac31" kind="dir"><name>/home/clemente/projects/Troll-Killers</name>
+  </compound>
+</doxygenindex>

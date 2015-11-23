@@ -1,0 +1,52 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.10">
+  <compounddef id="struct__msg" kind="struct" language="C++" prot="public">
+    <compoundname>_msg</compoundname>
+    <includes refid="_server_8hpp" local="no">Server.hpp</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct__msg_1a470db8b42735763fc80e93590da2eaf4" prot="public" static="no" mutable="no">
+        <type>char</type>
+        <definition>char _msg::buffer[BUFFER_SIZE]</definition>
+        <argsstring>[BUFFER_SIZE]</argsstring>
+        <name>buffer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/Server.hpp" line="21" column="1" bodyfile="/home/clemente/projects/Troll-Killers/Server.hpp" bodystart="21" bodyend="-1"/>
+        <referencedby refid="class_server_1a47beb8398c78f8ce814d8f3961880add" compoundref="_server_8cpp" startline="33" endline="68">Server::main_loop</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct__msg_1a5319cda008478b61e06ddf06c2cf166e" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int _msg::id</definition>
+        <argsstring></argsstring>
+        <name>id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/Server.hpp" line="22" column="1" bodyfile="/home/clemente/projects/Troll-Killers/Server.hpp" bodystart="22" bodyend="-1"/>
+        <referencedby refid="class_server_1a47beb8398c78f8ce814d8f3961880add" compoundref="_server_8cpp" startline="33" endline="68">Server::main_loop</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="99">
+        <label>_msg</label>
+        <link refid="struct__msg"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/clemente/projects/Troll-Killers/Server.hpp" line="20" column="1" bodyfile="/home/clemente/projects/Troll-Killers/Server.hpp" bodystart="20" bodyend="23"/>
+    <listofallmembers>
+      <member refid="struct__msg_1a470db8b42735763fc80e93590da2eaf4" prot="public" virt="non-virtual"><scope>_msg</scope><name>buffer</name></member>
+      <member refid="struct__msg_1a5319cda008478b61e06ddf06c2cf166e" prot="public" virt="non-virtual"><scope>_msg</scope><name>id</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

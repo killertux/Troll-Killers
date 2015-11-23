@@ -1,0 +1,195 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.10">
+  <compounddef id="_menu_8hpp" kind="file" language="C++">
+    <compoundname>Menu.hpp</compoundname>
+    <includes local="no">allegro5/allegro.h</includes>
+    <includes local="no">allegro5/allegro_image.h</includes>
+    <includes refid="_defines_8hpp" local="yes">Defines.hpp</includes>
+    <includes local="no">iostream</includes>
+    <includedby refid="_menu_manager_8hpp" local="yes">/home/clemente/projects/Troll-Killers/MenuManager.hpp</includedby>
+    <includedby refid="_menu_8cpp" local="yes">/home/clemente/projects/Troll-Killers/Menu.cpp</includedby>
+    <incdepgraph>
+      <node id="1634">
+        <label>allegro5/allegro_image.h</label>
+      </node>
+      <node id="1633">
+        <label>allegro5/allegro.h</label>
+      </node>
+      <node id="1632">
+        <label>/home/clemente/projects/Troll-Killers/Menu.hpp</label>
+        <link refid="Menu.hpp"/>
+        <childnode refid="1633" relation="include">
+        </childnode>
+        <childnode refid="1634" relation="include">
+        </childnode>
+        <childnode refid="1635" relation="include">
+        </childnode>
+        <childnode refid="1636" relation="include">
+        </childnode>
+      </node>
+      <node id="1636">
+        <label>iostream</label>
+      </node>
+      <node id="1635">
+        <label>Defines.hpp</label>
+        <link refid="_defines_8hpp"/>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1638">
+        <label>/home/clemente/projects/Troll-Killers/MenuManager.hpp</label>
+        <link refid="_menu_manager_8hpp"/>
+        <childnode refid="1639" relation="include">
+        </childnode>
+        <childnode refid="1642" relation="include">
+        </childnode>
+      </node>
+      <node id="1640">
+        <label>/home/clemente/projects/Troll-Killers/Client.cpp</label>
+        <link refid="_client_8cpp"/>
+      </node>
+      <node id="1639">
+        <label>/home/clemente/projects/Troll-Killers/Client.hpp</label>
+        <link refid="_client_8hpp"/>
+        <childnode refid="1640" relation="include">
+        </childnode>
+        <childnode refid="1638" relation="include">
+        </childnode>
+        <childnode refid="1641" relation="include">
+        </childnode>
+      </node>
+      <node id="1637">
+        <label>/home/clemente/projects/Troll-Killers/Menu.hpp</label>
+        <link refid="Menu.hpp"/>
+        <childnode refid="1638" relation="include">
+        </childnode>
+        <childnode refid="1643" relation="include">
+        </childnode>
+      </node>
+      <node id="1643">
+        <label>/home/clemente/projects/Troll-Killers/Menu.cpp</label>
+        <link refid="_menu_8cpp"/>
+      </node>
+      <node id="1641">
+        <label>/home/clemente/projects/Troll-Killers/mainClient.cpp</label>
+        <link refid="main_client_8cpp"/>
+      </node>
+      <node id="1642">
+        <label>/home/clemente/projects/Troll-Killers/MenuManager.cpp</label>
+        <link refid="_menu_manager_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_i_menu" prot="public">IMenu</innerclass>
+    <innerclass refid="class_menu_princ" prot="public">MenuPrinc</innerclass>
+    <innerclass refid="class_menu_armas" prot="public">MenuArmas</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="_menu_8hpp_1a4d9d3d58dc5f7930f2e1408d4501590f" prot="public" static="no">
+        <name>CHANGE_MENU</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/Menu.hpp" line="10" column="9" bodyfile="/home/clemente/projects/Troll-Killers/Menu.hpp" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_menu_8hpp_1ad111e603bbebe5d87f6bc39264ce4733" prot="public" static="no">
+        <name>EXIT</name>
+        <initializer>2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/Menu.hpp" line="11" column="9" bodyfile="/home/clemente/projects/Troll-Killers/Menu.hpp" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_menu_8hpp_1a2f110eaa4eb83e42b813c6ddf343b9ca" prot="public" static="no">
+        <name>MENU_RIFLE</name>
+        <initializer>3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/Menu.hpp" line="12" column="9" bodyfile="/home/clemente/projects/Troll-Killers/Menu.hpp" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_menu_8hpp_1a42276d6e71bfe225d915a9d172981bc5" prot="public" static="no">
+        <name>MENU_PISTOL</name>
+        <initializer>4</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/Menu.hpp" line="13" column="9" bodyfile="/home/clemente/projects/Troll-Killers/Menu.hpp" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>MENU_HPP</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MENU_HPP</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;allegro5/allegro.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;allegro5/allegro_image.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_defines_8hpp" kindref="compound">Defines.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">//#include<sp/>&quot;Client.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;iostream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10" refid="_menu_8hpp_1a4d9d3d58dc5f7930f2e1408d4501590f" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CHANGE_MENU<sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11" refid="_menu_8hpp_1ad111e603bbebe5d87f6bc39264ce4733" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EXIT<sp/>2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12" refid="_menu_8hpp_1a2f110eaa4eb83e42b813c6ddf343b9ca" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MENU_RIFLE<sp/>3</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13" refid="_menu_8hpp_1a42276d6e71bfe225d915a9d172981bc5" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MENU_PISTOL<sp/>4</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15" refid="class_i_menu" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_i_menu" kindref="compound">IMenu</ref><sp/>{</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_i_menu_1a15171c488ff899861e4c1a435bc79596" kindref="member">print_menu</ref>()=0;</highlight></codeline>
+<codeline lineno="18" refid="class_i_menu_1a2e8a43e5fa1ed784d97a985eb6a07649" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="class_i_menu_1a2e8a43e5fa1ed784d97a985eb6a07649" kindref="member">~IMenu</ref>(){}</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_i_menu_1a492260da0be9c0e8951761547d67e79e" kindref="member">botao</ref>(ALLEGRO_MOUSE_STATE<sp/>*mouseState)=0;</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_i_menu_1a984d46d1c193c7552580c2d94c7f0aee" kindref="member">botao_action</ref>()=0;</highlight></codeline>
+<codeline lineno="21"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23" refid="class_menu_princ" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_menu_princ" kindref="compound">MenuPrinc</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="class_i_menu" kindref="compound">IMenu</ref>{</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/>ALLEGRO_BITMAP<sp/>*fundo;</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/>ALLEGRO_BITMAP<sp/>*bot1;</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/>ALLEGRO_BITMAP<sp/>*bot2;</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/>ALLEGRO_BITMAP<sp/>*bot1_s;</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/>ALLEGRO_BITMAP<sp/>*bot2_s;</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>bot1S,bot2S;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>res_x,res_y;</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_menu_princ_1a88bfd033f9794676fa2ccb380d7edf9c" kindref="member">MenuPrinc</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>res_x,</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>res_y);</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="class_menu_princ_1a57ac8c3362bd27feab99bcb92d54eaf5" kindref="member">~MenuPrinc</ref>();</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_menu_princ_1ad6b330e90af4e4783104d987ae05895f" kindref="member">botao</ref>(ALLEGRO_MOUSE_STATE<sp/>*mouseState);</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_menu_princ_1a4dd3850301fa43019bb64c0a79e985d1" kindref="member">print_menu</ref>();</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_menu_princ_1a53554f00f838402761766788649037d5" kindref="member">botao_action</ref>();</highlight></codeline>
+<codeline lineno="37"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39" refid="class_menu_armas" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_menu_armas" kindref="compound">MenuArmas</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="class_i_menu" kindref="compound">IMenu</ref>{</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/>ALLEGRO_BITMAP<sp/>*fundo;</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/>ALLEGRO_BITMAP<sp/>*bot1;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/>ALLEGRO_BITMAP<sp/>*bot2;</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/>ALLEGRO_BITMAP<sp/>*bot3;</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/>ALLEGRO_BITMAP<sp/>*bot1_s;</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/>ALLEGRO_BITMAP<sp/>*bot2_s;</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/>ALLEGRO_BITMAP<sp/>*bot3_s;</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>bot1S,bot2S,bot3S;</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>res_x,res_y;</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_menu_armas_1ab016179c4b0421f50d67292e915968b1" kindref="member">MenuArmas</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>res_x,</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>res_y);</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="class_menu_armas_1ab467d5debe435a27f146cfd7e3b4c72f" kindref="member">~MenuArmas</ref>();</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_menu_armas_1afc0b66c4033827b51b26127d40c17645" kindref="member">botao</ref>(ALLEGRO_MOUSE_STATE<sp/>*mouseState);</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_menu_armas_1a05bc5afc4ad1a0dd6cf35f27de53016b" kindref="member">print_menu</ref>();</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_menu_armas_1a1abc753948db8a71cb6543755bb29db6" kindref="member">botao_action</ref>();</highlight></codeline>
+<codeline lineno="55"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/home/clemente/projects/Troll-Killers/Menu.hpp"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,312 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.10">
+  <compounddef id="class_configuration" kind="class" language="C++" prot="public">
+    <compoundname>Configuration</compoundname>
+    <includes refid="_configuration_8hpp" local="no">Configuration.hpp</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_configuration_1a6c9643debf1bde0947724c5a11f8885b" prot="private" static="no" mutable="no">
+        <type>FILE *</type>
+        <definition>FILE* Configuration::ptr</definition>
+        <argsstring></argsstring>
+        <name>ptr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/Configuration.hpp" line="12" column="1" bodyfile="/home/clemente/projects/Troll-Killers/Configuration.hpp" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_configuration_1ac60fced9c6afeae4d6d315090add484b" prot="private" static="no" mutable="no">
+        <type>char</type>
+        <definition>char Configuration::buffer[255]</definition>
+        <argsstring>[255]</argsstring>
+        <name>buffer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/Configuration.hpp" line="13" column="1" bodyfile="/home/clemente/projects/Troll-Killers/Configuration.hpp" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_configuration_1a9aec9b70a69a104247222c9caeffbdf9" prot="private" static="no" mutable="no">
+        <type>char</type>
+        <definition>char Configuration::configFile[255]</definition>
+        <argsstring>[255]</argsstring>
+        <name>configFile</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/Configuration.hpp" line="13" column="1" bodyfile="/home/clemente/projects/Troll-Killers/Configuration.hpp" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_configuration_1aac972c997e08ae191ffab4eac2c622cd" prot="private" static="no" mutable="no">
+        <type>char</type>
+        <definition>char Configuration::configLine[255][2][255]</definition>
+        <argsstring>[255][2][255]</argsstring>
+        <name>configLine</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/Configuration.hpp" line="14" column="1" bodyfile="/home/clemente/projects/Troll-Killers/Configuration.hpp" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_configuration_1ab4a552995111e8ef6c52c478000ceca4" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Configuration::configLines</definition>
+        <argsstring></argsstring>
+        <name>configLines</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/Configuration.hpp" line="15" column="1" bodyfile="/home/clemente/projects/Troll-Killers/Configuration.hpp" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_configuration_1ab8e90797739fd28b975bdbd504cefb08" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Configuration::count</definition>
+        <argsstring></argsstring>
+        <name>count</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/Configuration.hpp" line="16" column="1" bodyfile="/home/clemente/projects/Troll-Killers/Configuration.hpp" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_configuration_1a3023d06f381d79fcf3e197e4575a4491" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Configuration::configChanged</definition>
+        <argsstring></argsstring>
+        <name>configChanged</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/Configuration.hpp" line="17" column="1" bodyfile="/home/clemente/projects/Troll-Killers/Configuration.hpp" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_configuration_1ae15c9e7010ab3c5dd3c2bc27b2b87f84" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Configuration::get_word</definition>
+        <argsstring>(char *, char *, int)</argsstring>
+        <name>get_word</name>
+        <param>
+          <type>char *</type>
+          <defname>stringOut</defname>
+        </param>
+        <param>
+          <type>char *</type>
+          <defname>stringIn</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <defname>pos</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/Configuration.hpp" line="19" column="1" bodyfile="/home/clemente/projects/Troll-Killers/Configuration.cpp" bodystart="22" bodyend="35"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_configuration_1a779947337bf652f0e773cb29f37f14ba" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Configuration::Configuration</definition>
+        <argsstring>()</argsstring>
+        <name>Configuration</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/Configuration.hpp" line="23" column="1" bodyfile="/home/clemente/projects/Troll-Killers/Configuration.cpp" bodystart="3" bodyend="9"/>
+      </memberdef>
+      <memberdef kind="function" id="class_configuration_1a0dd0fa189e239f4c9a036303f641441e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Configuration::~Configuration</definition>
+        <argsstring>()</argsstring>
+        <name>~Configuration</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/Configuration.hpp" line="24" column="1" bodyfile="/home/clemente/projects/Troll-Killers/Configuration.cpp" bodystart="11" bodyend="20"/>
+      </memberdef>
+      <memberdef kind="function" id="class_configuration_1a9eb938cc99deddd6b9730ee10576b55a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Configuration::config_found</definition>
+        <argsstring>(const char *)</argsstring>
+        <name>config_found</name>
+        <param>
+          <type>const char *</type>
+          <defname>fileName</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/Configuration.hpp" line="26" column="1" bodyfile="/home/clemente/projects/Troll-Killers/Configuration.cpp" bodystart="53" bodyend="62"/>
+      </memberdef>
+      <memberdef kind="function" id="class_configuration_1a19490e0e191f69330f1f3efa988ed99a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Configuration::config_create</definition>
+        <argsstring>(const char *)</argsstring>
+        <name>config_create</name>
+        <param>
+          <type>const char *</type>
+          <defname>fileName</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/Configuration.hpp" line="27" column="1" bodyfile="/home/clemente/projects/Troll-Killers/Configuration.cpp" bodystart="64" bodyend="74"/>
+      </memberdef>
+      <memberdef kind="function" id="class_configuration_1aed21dbeb0bcb1de61389deee612d9074" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Configuration::config_load</definition>
+        <argsstring>(const char *)</argsstring>
+        <name>config_load</name>
+        <param>
+          <type>const char *</type>
+          <defname>fileName</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/Configuration.hpp" line="28" column="1" bodyfile="/home/clemente/projects/Troll-Killers/Configuration.cpp" bodystart="38" bodyend="51"/>
+        <referencedby refid="class_client_1ae51af7aa6b8f591496a8f6a4a87a14bf" compoundref="_client_8cpp" startline="3" endline="52">Client::Client</referencedby>
+        <referencedby refid="class_server_1ad5ec9462b520e59f7ea831e157ee5e59" compoundref="_server_8cpp" startline="3" endline="26">Server::Server</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_configuration_1aea42a72a64052e67db46c0369d731a5e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Configuration::config_save</definition>
+        <argsstring>()</argsstring>
+        <name>config_save</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/Configuration.hpp" line="29" column="1" bodyfile="/home/clemente/projects/Troll-Killers/Configuration.cpp" bodystart="100" bodyend="111"/>
+      </memberdef>
+      <memberdef kind="function" id="class_configuration_1aa73dc1019f3fe1678ff56321d2e32960" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Configuration::config_insert</definition>
+        <argsstring>(const char *, const char *)</argsstring>
+        <name>config_insert</name>
+        <param>
+          <type>const char *</type>
+          <defname>configTag</defname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <defname>data</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/Configuration.hpp" line="31" column="1" bodyfile="/home/clemente/projects/Troll-Killers/Configuration.cpp" bodystart="76" bodyend="87"/>
+      </memberdef>
+      <memberdef kind="function" id="class_configuration_1a8a66e437127dfe28d70690d53f6dfd7f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Configuration::config_get</definition>
+        <argsstring>(char *, const char *)</argsstring>
+        <name>config_get</name>
+        <param>
+          <type>char *</type>
+          <defname>stringOut</defname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <defname>configTag</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/Configuration.hpp" line="32" column="1" bodyfile="/home/clemente/projects/Troll-Killers/Configuration.cpp" bodystart="89" bodyend="98"/>
+        <referencedby refid="class_client_1ae51af7aa6b8f591496a8f6a4a87a14bf" compoundref="_client_8cpp" startline="3" endline="52">Client::Client</referencedby>
+        <referencedby refid="class_server_1ad5ec9462b520e59f7ea831e157ee5e59" compoundref="_server_8cpp" startline="3" endline="26">Server::Server</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_configuration_1a971a8c8fdd4e21f63c76e21ce19d7b61" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Configuration::config_remove</definition>
+        <argsstring>(const char *)</argsstring>
+        <name>config_remove</name>
+        <param>
+          <type>const char *</type>
+          <defname>configTag</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/Configuration.hpp" line="33" column="1" bodyfile="/home/clemente/projects/Troll-Killers/Configuration.cpp" bodystart="113" bodyend="129"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="117">
+        <label>Configuration</label>
+        <link refid="class_configuration"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/clemente/projects/Troll-Killers/Configuration.hpp" line="10" column="1" bodyfile="/home/clemente/projects/Troll-Killers/Configuration.hpp" bodystart="10" bodyend="35"/>
+    <listofallmembers>
+      <member refid="class_configuration_1ac60fced9c6afeae4d6d315090add484b" prot="private" virt="non-virtual"><scope>Configuration</scope><name>buffer</name></member>
+      <member refid="class_configuration_1a19490e0e191f69330f1f3efa988ed99a" prot="public" virt="non-virtual"><scope>Configuration</scope><name>config_create</name></member>
+      <member refid="class_configuration_1a9eb938cc99deddd6b9730ee10576b55a" prot="public" virt="non-virtual"><scope>Configuration</scope><name>config_found</name></member>
+      <member refid="class_configuration_1a8a66e437127dfe28d70690d53f6dfd7f" prot="public" virt="non-virtual"><scope>Configuration</scope><name>config_get</name></member>
+      <member refid="class_configuration_1aa73dc1019f3fe1678ff56321d2e32960" prot="public" virt="non-virtual"><scope>Configuration</scope><name>config_insert</name></member>
+      <member refid="class_configuration_1aed21dbeb0bcb1de61389deee612d9074" prot="public" virt="non-virtual"><scope>Configuration</scope><name>config_load</name></member>
+      <member refid="class_configuration_1a971a8c8fdd4e21f63c76e21ce19d7b61" prot="public" virt="non-virtual"><scope>Configuration</scope><name>config_remove</name></member>
+      <member refid="class_configuration_1aea42a72a64052e67db46c0369d731a5e" prot="public" virt="non-virtual"><scope>Configuration</scope><name>config_save</name></member>
+      <member refid="class_configuration_1a3023d06f381d79fcf3e197e4575a4491" prot="private" virt="non-virtual"><scope>Configuration</scope><name>configChanged</name></member>
+      <member refid="class_configuration_1a9aec9b70a69a104247222c9caeffbdf9" prot="private" virt="non-virtual"><scope>Configuration</scope><name>configFile</name></member>
+      <member refid="class_configuration_1aac972c997e08ae191ffab4eac2c622cd" prot="private" virt="non-virtual"><scope>Configuration</scope><name>configLine</name></member>
+      <member refid="class_configuration_1ab4a552995111e8ef6c52c478000ceca4" prot="private" virt="non-virtual"><scope>Configuration</scope><name>configLines</name></member>
+      <member refid="class_configuration_1a779947337bf652f0e773cb29f37f14ba" prot="public" virt="non-virtual"><scope>Configuration</scope><name>Configuration</name></member>
+      <member refid="class_configuration_1ab8e90797739fd28b975bdbd504cefb08" prot="private" virt="non-virtual"><scope>Configuration</scope><name>count</name></member>
+      <member refid="class_configuration_1ae15c9e7010ab3c5dd3c2bc27b2b87f84" prot="private" virt="non-virtual"><scope>Configuration</scope><name>get_word</name></member>
+      <member refid="class_configuration_1a6c9643debf1bde0947724c5a11f8885b" prot="private" virt="non-virtual"><scope>Configuration</scope><name>ptr</name></member>
+      <member refid="class_configuration_1a0dd0fa189e239f4c9a036303f641441e" prot="public" virt="non-virtual"><scope>Configuration</scope><name>~Configuration</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

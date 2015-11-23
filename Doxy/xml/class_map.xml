@@ -1,0 +1,374 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.10">
+  <compounddef id="class_map" kind="class" language="C++" prot="public">
+    <compoundname>Map</compoundname>
+    <derivedcompoundref refid="class_c_map" prot="public" virt="non-virtual">CMap</derivedcompoundref>
+    <derivedcompoundref refid="class_s_map" prot="public" virt="non-virtual">SMap</derivedcompoundref>
+    <includes refid="_map_8hpp" local="no">Map.hpp</includes>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="class_map_1a6e7ba89e3a0a05633ae7d27dd400190f" prot="protected" static="no" mutable="no">
+        <type>int8_t</type>
+        <definition>int8_t Map::type</definition>
+        <argsstring></argsstring>
+        <name>type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/Map.hpp" line="31" column="1" bodyfile="/home/clemente/projects/Troll-Killers/Map.hpp" bodystart="31" bodyend="-1"/>
+        <referencedby refid="class_c_map_1adedfa138aa67c2924e79809ad1dac85c" compoundref="_c_map_8cpp" startline="37" endline="46">CMap::draw_map</referencedby>
+        <referencedby refid="class_map_1a0f5ad0fd4563497b4214038cbca8b582" compoundref="_map_8cpp" startline="5" endline="9">Map</referencedby>
+        <referencedby refid="class_map_1afdd22d2739acb6a6eaf8864ee090107a" compoundref="_map_8cpp" startline="15" endline="37">save_map</referencedby>
+        <referencedby refid="class_map_1a259bb70652389b9ecf0bc76ceca656a5" compoundref="_map_8cpp" startline="39" endline="65">load_map</referencedby>
+        <referencedby refid="class_map_1ac85777e48836aa23c8c7adac7ea50ea8" compoundref="_map_8cpp" startline="68" endline="82">serialize</referencedby>
+        <referencedby refid="class_map_1a958dfc5b0956b8a4cb1ac03b0ccfdce8" compoundref="_map_8cpp" startline="84" endline="94">deserialize</referencedby>
+        <referencedby refid="class_s_map_1a6ef62d8e6b17c21f21c535a4139e230e" compoundref="_s_map_8cpp" startline="3" endline="18">SMap::calculateSpawn</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_map_1abe0a2d1af671ad7ca47651a8d207b23c" prot="protected" static="no" mutable="no">
+        <type>char</type>
+        <definition>char Map::name[50]</definition>
+        <argsstring>[50]</argsstring>
+        <name>name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/Map.hpp" line="32" column="1" bodyfile="/home/clemente/projects/Troll-Killers/Map.hpp" bodystart="32" bodyend="-1"/>
+        <referencedby refid="class_map_1afdd22d2739acb6a6eaf8864ee090107a" compoundref="_map_8cpp" startline="15" endline="37">save_map</referencedby>
+        <referencedby refid="class_map_1a259bb70652389b9ecf0bc76ceca656a5" compoundref="_map_8cpp" startline="39" endline="65">load_map</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_map_1a1028fa8db721f28473ba471ae70fde09" prot="protected" static="no" mutable="no">
+        <type><ref refid="struct__object" kindref="compound">_object</ref> *</type>
+        <definition>_object* Map::objects</definition>
+        <argsstring></argsstring>
+        <name>objects</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/Map.hpp" line="33" column="1" bodyfile="/home/clemente/projects/Troll-Killers/Map.hpp" bodystart="33" bodyend="-1"/>
+        <referencedby refid="class_c_map_1a57a9b9c9b6d833102dd19852ec3767de" compoundref="_c_map_8cpp" startline="3" endline="11">CMap::CMap</referencedby>
+        <referencedby refid="class_c_map_1a9419f5696c22e9569612b79db2872e02" compoundref="_c_map_8cpp" startline="19" endline="21">CMap::~CMap</referencedby>
+        <referencedby refid="class_c_map_1abec86992ac01292170213a5d71f17895" compoundref="_c_map_8cpp" startline="23" endline="26">CMap::new_object</referencedby>
+        <referencedby refid="class_c_map_1a9e069b9af7a4a243345dd0bfae24121a" compoundref="_c_map_8cpp" startline="28" endline="35">CMap::destroy_object</referencedby>
+        <referencedby refid="class_c_map_1adedfa138aa67c2924e79809ad1dac85c" compoundref="_c_map_8cpp" startline="37" endline="46">CMap::draw_map</referencedby>
+        <referencedby refid="class_c_map_1aa735d6c214fe5c973edf82f3eaa4431e" compoundref="_c_map_8hpp" startline="30" endline="30">CMap::getObjects</referencedby>
+        <referencedby refid="class_map_1a0f5ad0fd4563497b4214038cbca8b582" compoundref="_map_8cpp" startline="5" endline="9">Map</referencedby>
+        <referencedby refid="class_map_1aa403fbe09394ccf39747588f5168e3b2" compoundref="_map_8cpp" startline="11" endline="13">~Map</referencedby>
+        <referencedby refid="class_map_1afdd22d2739acb6a6eaf8864ee090107a" compoundref="_map_8cpp" startline="15" endline="37">save_map</referencedby>
+        <referencedby refid="class_map_1a259bb70652389b9ecf0bc76ceca656a5" compoundref="_map_8cpp" startline="39" endline="65">load_map</referencedby>
+        <referencedby refid="class_map_1ac85777e48836aa23c8c7adac7ea50ea8" compoundref="_map_8cpp" startline="68" endline="82">serialize</referencedby>
+        <referencedby refid="class_map_1a958dfc5b0956b8a4cb1ac03b0ccfdce8" compoundref="_map_8cpp" startline="84" endline="94">deserialize</referencedby>
+        <referencedby refid="class_map_1a3e692a4d7e5ce0687bf4b93254714edf" compoundref="_map_8hpp" startline="44" endline="44">getObjects</referencedby>
+        <referencedby refid="class_s_map_1a6ef62d8e6b17c21f21c535a4139e230e" compoundref="_s_map_8cpp" startline="3" endline="18">SMap::calculateSpawn</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_map_1a48caa289073dbeff9c89a02cf89a2cc6" prot="protected" static="no" mutable="no">
+        <type>int16_t</type>
+        <definition>int16_t Map::length</definition>
+        <argsstring></argsstring>
+        <name>length</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/Map.hpp" line="34" column="1" bodyfile="/home/clemente/projects/Troll-Killers/Map.hpp" bodystart="34" bodyend="-1"/>
+        <referencedby refid="class_c_map_1a57a9b9c9b6d833102dd19852ec3767de" compoundref="_c_map_8cpp" startline="3" endline="11">CMap::CMap</referencedby>
+        <referencedby refid="class_c_map_1adedfa138aa67c2924e79809ad1dac85c" compoundref="_c_map_8cpp" startline="37" endline="46">CMap::draw_map</referencedby>
+        <referencedby refid="class_map_1a0f5ad0fd4563497b4214038cbca8b582" compoundref="_map_8cpp" startline="5" endline="9">Map</referencedby>
+        <referencedby refid="class_map_1afdd22d2739acb6a6eaf8864ee090107a" compoundref="_map_8cpp" startline="15" endline="37">save_map</referencedby>
+        <referencedby refid="class_map_1a259bb70652389b9ecf0bc76ceca656a5" compoundref="_map_8cpp" startline="39" endline="65">load_map</referencedby>
+        <referencedby refid="class_map_1ac85777e48836aa23c8c7adac7ea50ea8" compoundref="_map_8cpp" startline="68" endline="82">serialize</referencedby>
+        <referencedby refid="class_map_1a958dfc5b0956b8a4cb1ac03b0ccfdce8" compoundref="_map_8cpp" startline="84" endline="94">deserialize</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_map_1a15981e529cd48e04432898f9185683d3" prot="protected" static="no" mutable="no">
+        <type>int16_t</type>
+        <definition>int16_t Map::width</definition>
+        <argsstring></argsstring>
+        <name>width</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/Map.hpp" line="34" column="1" bodyfile="/home/clemente/projects/Troll-Killers/Map.hpp" bodystart="34" bodyend="-1"/>
+        <referencedby refid="class_c_map_1a57a9b9c9b6d833102dd19852ec3767de" compoundref="_c_map_8cpp" startline="3" endline="11">CMap::CMap</referencedby>
+        <referencedby refid="class_c_map_1adedfa138aa67c2924e79809ad1dac85c" compoundref="_c_map_8cpp" startline="37" endline="46">CMap::draw_map</referencedby>
+        <referencedby refid="class_map_1a0f5ad0fd4563497b4214038cbca8b582" compoundref="_map_8cpp" startline="5" endline="9">Map</referencedby>
+        <referencedby refid="class_map_1afdd22d2739acb6a6eaf8864ee090107a" compoundref="_map_8cpp" startline="15" endline="37">save_map</referencedby>
+        <referencedby refid="class_map_1a259bb70652389b9ecf0bc76ceca656a5" compoundref="_map_8cpp" startline="39" endline="65">load_map</referencedby>
+        <referencedby refid="class_map_1ac85777e48836aa23c8c7adac7ea50ea8" compoundref="_map_8cpp" startline="68" endline="82">serialize</referencedby>
+        <referencedby refid="class_map_1a958dfc5b0956b8a4cb1ac03b0ccfdce8" compoundref="_map_8cpp" startline="84" endline="94">deserialize</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_map_1a6cb94f4c91b4634128ccf0219f84d1ab" prot="protected" static="no" mutable="no">
+        <type>int16_t</type>
+        <definition>int16_t Map::max_objects</definition>
+        <argsstring></argsstring>
+        <name>max_objects</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/Map.hpp" line="35" column="1" bodyfile="/home/clemente/projects/Troll-Killers/Map.hpp" bodystart="35" bodyend="-1"/>
+        <referencedby refid="class_c_map_1a57a9b9c9b6d833102dd19852ec3767de" compoundref="_c_map_8cpp" startline="3" endline="11">CMap::CMap</referencedby>
+        <referencedby refid="class_map_1a0f5ad0fd4563497b4214038cbca8b582" compoundref="_map_8cpp" startline="5" endline="9">Map</referencedby>
+        <referencedby refid="class_map_1afdd22d2739acb6a6eaf8864ee090107a" compoundref="_map_8cpp" startline="15" endline="37">save_map</referencedby>
+        <referencedby refid="class_map_1a259bb70652389b9ecf0bc76ceca656a5" compoundref="_map_8cpp" startline="39" endline="65">load_map</referencedby>
+        <referencedby refid="class_map_1ac85777e48836aa23c8c7adac7ea50ea8" compoundref="_map_8cpp" startline="68" endline="82">serialize</referencedby>
+        <referencedby refid="class_map_1a958dfc5b0956b8a4cb1ac03b0ccfdce8" compoundref="_map_8cpp" startline="84" endline="94">deserialize</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_map_1ad428bf938f205ed6d1e7af2ddd09b7ce" prot="protected" static="no" mutable="no">
+        <type>int16_t</type>
+        <definition>int16_t Map::n_object</definition>
+        <argsstring></argsstring>
+        <name>n_object</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/Map.hpp" line="36" column="1" bodyfile="/home/clemente/projects/Troll-Killers/Map.hpp" bodystart="36" bodyend="-1"/>
+        <referencedby refid="class_c_map_1a57a9b9c9b6d833102dd19852ec3767de" compoundref="_c_map_8cpp" startline="3" endline="11">CMap::CMap</referencedby>
+        <referencedby refid="class_c_map_1abec86992ac01292170213a5d71f17895" compoundref="_c_map_8cpp" startline="23" endline="26">CMap::new_object</referencedby>
+        <referencedby refid="class_c_map_1a9e069b9af7a4a243345dd0bfae24121a" compoundref="_c_map_8cpp" startline="28" endline="35">CMap::destroy_object</referencedby>
+        <referencedby refid="class_c_map_1adedfa138aa67c2924e79809ad1dac85c" compoundref="_c_map_8cpp" startline="37" endline="46">CMap::draw_map</referencedby>
+        <referencedby refid="class_c_map_1a1b1e0a1671eb60396ce30c393173a8a2" compoundref="_c_map_8hpp" startline="31" endline="31">CMap::getNobject</referencedby>
+        <referencedby refid="class_map_1a0f5ad0fd4563497b4214038cbca8b582" compoundref="_map_8cpp" startline="5" endline="9">Map</referencedby>
+        <referencedby refid="class_map_1afdd22d2739acb6a6eaf8864ee090107a" compoundref="_map_8cpp" startline="15" endline="37">save_map</referencedby>
+        <referencedby refid="class_map_1a259bb70652389b9ecf0bc76ceca656a5" compoundref="_map_8cpp" startline="39" endline="65">load_map</referencedby>
+        <referencedby refid="class_map_1ac85777e48836aa23c8c7adac7ea50ea8" compoundref="_map_8cpp" startline="68" endline="82">serialize</referencedby>
+        <referencedby refid="class_map_1a958dfc5b0956b8a4cb1ac03b0ccfdce8" compoundref="_map_8cpp" startline="84" endline="94">deserialize</referencedby>
+        <referencedby refid="class_s_map_1a6ef62d8e6b17c21f21c535a4139e230e" compoundref="_s_map_8cpp" startline="3" endline="18">SMap::calculateSpawn</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_map_1a0f5ad0fd4563497b4214038cbca8b582" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Map::Map</definition>
+        <argsstring>()</argsstring>
+        <name>Map</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/Map.hpp" line="38" column="1" bodyfile="/home/clemente/projects/Troll-Killers/Map.cpp" bodystart="5" bodyend="9"/>
+        <references refid="class_map_1ad428bf938f205ed6d1e7af2ddd09b7ce" compoundref="_map_8hpp" startline="36">n_object</references>
+        <references refid="class_map_1a48caa289073dbeff9c89a02cf89a2cc6" compoundref="_map_8hpp" startline="34">length</references>
+        <references refid="class_map_1a15981e529cd48e04432898f9185683d3" compoundref="_map_8hpp" startline="34">width</references>
+        <references refid="class_map_1a6cb94f4c91b4634128ccf0219f84d1ab" compoundref="_map_8hpp" startline="35">max_objects</references>
+        <references refid="class_map_1a6e7ba89e3a0a05633ae7d27dd400190f" compoundref="_map_8hpp" startline="31">type</references>
+        <references refid="_defines_8hpp_1ad2387be544a1953389933a134ff410c3" compoundref="_defines_8hpp" startline="16">PROTOCOL_MAP_FILE</references>
+        <references refid="class_map_1a1028fa8db721f28473ba471ae70fde09" compoundref="_map_8hpp" startline="33">objects</references>
+      </memberdef>
+      <memberdef kind="function" id="class_map_1afdd22d2739acb6a6eaf8864ee090107a" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool Map::save_map</definition>
+        <argsstring>(std::string pathname)</argsstring>
+        <name>save_map</name>
+        <param>
+          <type>std::string</type>
+          <declname>pathname</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/Map.hpp" line="39" column="1" bodyfile="/home/clemente/projects/Troll-Killers/Map.cpp" bodystart="15" bodyend="37"/>
+        <references refid="class_map_1abe0a2d1af671ad7ca47651a8d207b23c" compoundref="_map_8hpp" startline="32">name</references>
+        <references refid="class_map_1a48caa289073dbeff9c89a02cf89a2cc6" compoundref="_map_8hpp" startline="34">length</references>
+        <references refid="class_map_1a15981e529cd48e04432898f9185683d3" compoundref="_map_8hpp" startline="34">width</references>
+        <references refid="class_map_1a6cb94f4c91b4634128ccf0219f84d1ab" compoundref="_map_8hpp" startline="35">max_objects</references>
+        <references refid="class_map_1ad428bf938f205ed6d1e7af2ddd09b7ce" compoundref="_map_8hpp" startline="36">n_object</references>
+        <references refid="class_map_1a1028fa8db721f28473ba471ae70fde09" compoundref="_map_8hpp" startline="33">objects</references>
+        <references refid="class_map_1a6e7ba89e3a0a05633ae7d27dd400190f" compoundref="_map_8hpp" startline="31">type</references>
+        <referencedby refid="class_map_editor_1a5937c9b49b1e342c219f8a87d8e3dd7a" compoundref="_map_editor_8cpp" startline="47" endline="132">MapEditor::main_loop</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_map_1a259bb70652389b9ecf0bc76ceca656a5" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool Map::load_map</definition>
+        <argsstring>(std::string pathname)</argsstring>
+        <name>load_map</name>
+        <param>
+          <type>std::string</type>
+          <declname>pathname</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/Map.hpp" line="40" column="1" bodyfile="/home/clemente/projects/Troll-Killers/Map.cpp" bodystart="39" bodyend="65"/>
+        <references refid="class_map_1abe0a2d1af671ad7ca47651a8d207b23c" compoundref="_map_8hpp" startline="32">name</references>
+        <references refid="class_map_1a48caa289073dbeff9c89a02cf89a2cc6" compoundref="_map_8hpp" startline="34">length</references>
+        <references refid="class_map_1a15981e529cd48e04432898f9185683d3" compoundref="_map_8hpp" startline="34">width</references>
+        <references refid="class_map_1a6cb94f4c91b4634128ccf0219f84d1ab" compoundref="_map_8hpp" startline="35">max_objects</references>
+        <references refid="class_map_1ad428bf938f205ed6d1e7af2ddd09b7ce" compoundref="_map_8hpp" startline="36">n_object</references>
+        <references refid="class_map_1a1028fa8db721f28473ba471ae70fde09" compoundref="_map_8hpp" startline="33">objects</references>
+        <references refid="class_map_1a6e7ba89e3a0a05633ae7d27dd400190f" compoundref="_map_8hpp" startline="31">type</references>
+        <referencedby refid="class_map_editor_1a5937c9b49b1e342c219f8a87d8e3dd7a" compoundref="_map_editor_8cpp" startline="47" endline="132">MapEditor::main_loop</referencedby>
+        <referencedby refid="class_server_1ad5ec9462b520e59f7ea831e157ee5e59" compoundref="_server_8cpp" startline="3" endline="26">Server::Server</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_map_1ac85777e48836aa23c8c7adac7ea50ea8" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>int</type>
+        <definition>int Map::serialize</definition>
+        <argsstring>(char *buffer)</argsstring>
+        <name>serialize</name>
+        <param>
+          <type>char *</type>
+          <declname>buffer</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/Map.hpp" line="42" column="1" bodyfile="/home/clemente/projects/Troll-Killers/Map.cpp" bodystart="68" bodyend="82"/>
+        <references refid="class_map_1a6e7ba89e3a0a05633ae7d27dd400190f" compoundref="_map_8hpp" startline="31">type</references>
+        <references refid="class_map_1a48caa289073dbeff9c89a02cf89a2cc6" compoundref="_map_8hpp" startline="34">length</references>
+        <references refid="class_map_1a15981e529cd48e04432898f9185683d3" compoundref="_map_8hpp" startline="34">width</references>
+        <references refid="class_map_1a6cb94f4c91b4634128ccf0219f84d1ab" compoundref="_map_8hpp" startline="35">max_objects</references>
+        <references refid="class_map_1ad428bf938f205ed6d1e7af2ddd09b7ce" compoundref="_map_8hpp" startline="36">n_object</references>
+        <references refid="class_map_1a1028fa8db721f28473ba471ae70fde09" compoundref="_map_8hpp" startline="33">objects</references>
+        <references refid="struct__object_1a4ffae0568ef6772f8ebefa0997f79243" compoundref="__object_8hpp" startline="6">_object::type</references>
+        <references refid="struct__object_1adb6e178c2aa0bc48f5db6d85106c1680" compoundref="__object_8hpp" startline="7">_object::x</references>
+        <references refid="struct__object_1a48f88904fef6cb2f4ea22029174d76bc" compoundref="__object_8hpp" startline="7">_object::y</references>
+        <references refid="struct__object_1a870a8b24b7b3dc9244f543f096e9dae6" compoundref="__object_8hpp" startline="8">_object::radius</references>
+        <references refid="struct__object_1a9d23dfa35b2571bf0b89d4ca75f5c155" compoundref="__object_8hpp" startline="9">_object::length</references>
+        <references refid="struct__object_1a7dff64a3cc71a49786c1052bb6c250ca" compoundref="__object_8hpp" startline="9">_object::width</references>
+        <references refid="struct__object_1af5318fcc501c7951e1bf261de6c29b3b" compoundref="__object_8hpp" startline="10">_object::r</references>
+        <references refid="struct__object_1a89ebce79c5f2acba52f871e6833977ff" compoundref="__object_8hpp" startline="11">_object::g</references>
+        <references refid="struct__object_1a104af22ae68294943efb54edb7a46b0e" compoundref="__object_8hpp" startline="12">_object::b</references>
+      </memberdef>
+      <memberdef kind="function" id="class_map_1a958dfc5b0956b8a4cb1ac03b0ccfdce8" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void Map::deserialize</definition>
+        <argsstring>(char *buffer)</argsstring>
+        <name>deserialize</name>
+        <param>
+          <type>char *</type>
+          <declname>buffer</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/Map.hpp" line="43" column="1" bodyfile="/home/clemente/projects/Troll-Killers/Map.cpp" bodystart="84" bodyend="94"/>
+        <references refid="class_map_1a6e7ba89e3a0a05633ae7d27dd400190f" compoundref="_map_8hpp" startline="31">type</references>
+        <references refid="class_map_1a48caa289073dbeff9c89a02cf89a2cc6" compoundref="_map_8hpp" startline="34">length</references>
+        <references refid="class_map_1a15981e529cd48e04432898f9185683d3" compoundref="_map_8hpp" startline="34">width</references>
+        <references refid="class_map_1a6cb94f4c91b4634128ccf0219f84d1ab" compoundref="_map_8hpp" startline="35">max_objects</references>
+        <references refid="class_map_1ad428bf938f205ed6d1e7af2ddd09b7ce" compoundref="_map_8hpp" startline="36">n_object</references>
+        <references refid="class_map_1a1028fa8db721f28473ba471ae70fde09" compoundref="_map_8hpp" startline="33">objects</references>
+        <references refid="struct__object_1a4ffae0568ef6772f8ebefa0997f79243" compoundref="__object_8hpp" startline="6">_object::type</references>
+        <references refid="struct__object_1adb6e178c2aa0bc48f5db6d85106c1680" compoundref="__object_8hpp" startline="7">_object::x</references>
+        <references refid="struct__object_1a48f88904fef6cb2f4ea22029174d76bc" compoundref="__object_8hpp" startline="7">_object::y</references>
+        <references refid="struct__object_1a870a8b24b7b3dc9244f543f096e9dae6" compoundref="__object_8hpp" startline="8">_object::radius</references>
+        <references refid="struct__object_1a9d23dfa35b2571bf0b89d4ca75f5c155" compoundref="__object_8hpp" startline="9">_object::length</references>
+        <references refid="struct__object_1a7dff64a3cc71a49786c1052bb6c250ca" compoundref="__object_8hpp" startline="9">_object::width</references>
+        <references refid="struct__object_1af5318fcc501c7951e1bf261de6c29b3b" compoundref="__object_8hpp" startline="10">_object::r</references>
+        <references refid="struct__object_1a89ebce79c5f2acba52f871e6833977ff" compoundref="__object_8hpp" startline="11">_object::g</references>
+        <references refid="struct__object_1a104af22ae68294943efb54edb7a46b0e" compoundref="__object_8hpp" startline="12">_object::b</references>
+        <referencedby refid="class_client_1abccb976632db0b3b5df925875b80b2e7" compoundref="_client_8cpp" startline="266" endline="320">Client::connect</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_map_1a3e692a4d7e5ce0687bf4b93254714edf" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="struct__object" kindref="compound">_object</ref> *</type>
+        <definition>_object* Map::getObjects</definition>
+        <argsstring>()</argsstring>
+        <name>getObjects</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/Map.hpp" line="44" column="1" bodyfile="/home/clemente/projects/Troll-Killers/Map.hpp" bodystart="44" bodyend="44"/>
+        <references refid="class_map_1a1028fa8db721f28473ba471ae70fde09" compoundref="_map_8hpp" startline="33">objects</references>
+      </memberdef>
+      <memberdef kind="function" id="class_map_1aa403fbe09394ccf39747588f5168e3b2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Map::~Map</definition>
+        <argsstring>()</argsstring>
+        <name>~Map</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/Map.hpp" line="47" column="1" bodyfile="/home/clemente/projects/Troll-Killers/Map.cpp" bodystart="11" bodyend="13"/>
+        <references refid="class_map_1a1028fa8db721f28473ba471ae70fde09" compoundref="_map_8hpp" startline="33">objects</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="140">
+        <label>SMap</label>
+        <link refid="class_s_map"/>
+        <childnode refid="138" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="139">
+        <label>CMap</label>
+        <link refid="class_c_map"/>
+        <childnode refid="138" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="138">
+        <label>Map</label>
+        <link refid="class_map"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="142">
+        <label>_object</label>
+        <link refid="struct__object"/>
+      </node>
+      <node id="141">
+        <label>Map</label>
+        <link refid="class_map"/>
+        <childnode refid="142" relation="usage">
+          <edgelabel>#objects</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/clemente/projects/Troll-Killers/Map.hpp" line="29" column="1" bodyfile="/home/clemente/projects/Troll-Killers/Map.hpp" bodystart="29" bodyend="48"/>
+    <listofallmembers>
+      <member refid="class_map_1a958dfc5b0956b8a4cb1ac03b0ccfdce8" prot="public" virt="virtual"><scope>Map</scope><name>deserialize</name></member>
+      <member refid="class_map_1a3e692a4d7e5ce0687bf4b93254714edf" prot="public" virt="non-virtual"><scope>Map</scope><name>getObjects</name></member>
+      <member refid="class_map_1a48caa289073dbeff9c89a02cf89a2cc6" prot="protected" virt="non-virtual"><scope>Map</scope><name>length</name></member>
+      <member refid="class_map_1a259bb70652389b9ecf0bc76ceca656a5" prot="public" virt="virtual"><scope>Map</scope><name>load_map</name></member>
+      <member refid="class_map_1a0f5ad0fd4563497b4214038cbca8b582" prot="public" virt="non-virtual"><scope>Map</scope><name>Map</name></member>
+      <member refid="class_map_1a6cb94f4c91b4634128ccf0219f84d1ab" prot="protected" virt="non-virtual"><scope>Map</scope><name>max_objects</name></member>
+      <member refid="class_map_1ad428bf938f205ed6d1e7af2ddd09b7ce" prot="protected" virt="non-virtual"><scope>Map</scope><name>n_object</name></member>
+      <member refid="class_map_1abe0a2d1af671ad7ca47651a8d207b23c" prot="protected" virt="non-virtual"><scope>Map</scope><name>name</name></member>
+      <member refid="class_map_1a1028fa8db721f28473ba471ae70fde09" prot="protected" virt="non-virtual"><scope>Map</scope><name>objects</name></member>
+      <member refid="class_map_1afdd22d2739acb6a6eaf8864ee090107a" prot="public" virt="virtual"><scope>Map</scope><name>save_map</name></member>
+      <member refid="class_map_1ac85777e48836aa23c8c7adac7ea50ea8" prot="public" virt="virtual"><scope>Map</scope><name>serialize</name></member>
+      <member refid="class_map_1a6e7ba89e3a0a05633ae7d27dd400190f" prot="protected" virt="non-virtual"><scope>Map</scope><name>type</name></member>
+      <member refid="class_map_1a15981e529cd48e04432898f9185683d3" prot="protected" virt="non-virtual"><scope>Map</scope><name>width</name></member>
+      <member refid="class_map_1aa403fbe09394ccf39747588f5168e3b2" prot="public" virt="non-virtual"><scope>Map</scope><name>~Map</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

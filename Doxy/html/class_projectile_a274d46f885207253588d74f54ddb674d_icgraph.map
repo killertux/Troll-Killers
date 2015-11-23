@@ -1,0 +1,7 @@
+<map id="Projectile::getX" name="Projectile::getX">
+<area shape="rect" id="node2" href="$class_projectile.html#a50744612baf1cdc972281a99f8e0ac50" title="Projectile::collide" alt="" coords="164,5,285,32"/>
+<area shape="rect" id="node3" href="$class_client.html#a9fbb2f61b005ee6ab3f73b9f449d95eb" title="Client::main_loop" alt="" coords="333,5,456,32"/>
+<area shape="rect" id="node4" href="$class_menu_manager.html#a86de10f125cd9be03d15dd50e381f53d" title="MenuManager::main_loop" alt="" coords="504,5,675,32"/>
+<area shape="rect" id="node5" href="$class_client.html#a8a2de145bff51cff643e5a8d773d35fe" title="Client::menu" alt="" coords="723,5,819,32"/>
+<area shape="rect" id="node6" href="$main_client_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="867,5,917,32"/>
+</map>

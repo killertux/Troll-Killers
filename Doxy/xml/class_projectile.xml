@@ -1,0 +1,447 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.10">
+  <compounddef id="class_projectile" kind="class" language="C++" prot="public">
+    <compoundname>Projectile</compoundname>
+    <basecompoundref refid="class_i_g_object" prot="public" virt="non-virtual">IGObject</basecompoundref>
+    <derivedcompoundref refid="class_c_projectile" prot="public" virt="non-virtual">CProjectile</derivedcompoundref>
+    <includes refid="_projectile_8hpp" local="no">Projectile.hpp</includes>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="class_projectile_1a0f40006b298e765555e5494f3bbdc929" prot="protected" static="no" mutable="no">
+        <type>int16_t</type>
+        <definition>int16_t Projectile::velocity</definition>
+        <argsstring></argsstring>
+        <name>velocity</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/Projectile.hpp" line="12" column="1" bodyfile="/home/clemente/projects/Troll-Killers/Projectile.hpp" bodystart="12" bodyend="-1"/>
+        <referencedby refid="class_c_projectile_1af1fb343501445d3353584cb78545c7e0" compoundref="_c_projectile_8cpp" startline="12" endline="18">CProjectile::CProjectile</referencedby>
+        <referencedby refid="class_projectile_1a309d73855dcfacee8421900c4f5e4411" compoundref="_projectile_8cpp" startline="6" endline="12">Projectile</referencedby>
+        <referencedby refid="class_projectile_1ac5f6d2a73c1f82f2f11ae353d251acef" compoundref="_projectile_8cpp" startline="18" endline="24">move</referencedby>
+        <referencedby refid="class_projectile_1a0417e5c4b9fca6aae57844c57bd78fc0" compoundref="_projectile_8hpp" startline="24" endline="24">getVelocity</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_projectile_1a4d5668615b5f58f8c7a2b4e0bf41d493" prot="protected" static="no" mutable="no">
+        <type>int16_t</type>
+        <definition>int16_t Projectile::id</definition>
+        <argsstring></argsstring>
+        <name>id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/Projectile.hpp" line="13" column="1" bodyfile="/home/clemente/projects/Troll-Killers/Projectile.hpp" bodystart="13" bodyend="-1"/>
+        <referencedby refid="class_projectile_1a359ade45d958b4817e63fc06b25f55af" compoundref="_projectile_8hpp" startline="20" endline="20">getId</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_projectile_1a706363cbafcbe19aa68853b2821e63b5" prot="protected" static="no" mutable="no">
+        <type>int16_t</type>
+        <definition>int16_t Projectile::x</definition>
+        <argsstring></argsstring>
+        <name>x</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/Projectile.hpp" line="14" column="1" bodyfile="/home/clemente/projects/Troll-Killers/Projectile.hpp" bodystart="14" bodyend="-1"/>
+        <referencedby refid="class_c_projectile_1a164f1820536f396cc7118c0ab9bec69f" compoundref="_c_projectile_8cpp" startline="5" endline="10">CProjectile::draw</referencedby>
+        <referencedby refid="class_c_projectile_1af1fb343501445d3353584cb78545c7e0" compoundref="_c_projectile_8cpp" startline="12" endline="18">CProjectile::CProjectile</referencedby>
+        <referencedby refid="class_projectile_1a309d73855dcfacee8421900c4f5e4411" compoundref="_projectile_8cpp" startline="6" endline="12">Projectile</referencedby>
+        <referencedby refid="class_projectile_1ac5f6d2a73c1f82f2f11ae353d251acef" compoundref="_projectile_8cpp" startline="18" endline="24">move</referencedby>
+        <referencedby refid="class_projectile_1a50744612baf1cdc972281a99f8e0ac50" compoundref="_projectile_8cpp" startline="26" endline="46">collide</referencedby>
+        <referencedby refid="class_projectile_1a274d46f885207253588d74f54ddb674d" compoundref="_projectile_8hpp" startline="21" endline="21">getX</referencedby>
+        <referencedby refid="class_projectile_1a0ed37ed97cd4b930da3f7bffbc5e3aa6" compoundref="_projectile_8hpp" startline="28" endline="28">setX</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_projectile_1a19d3eab0725a2679d39c6d316e3681ca" prot="protected" static="no" mutable="no">
+        <type>int16_t</type>
+        <definition>int16_t Projectile::y</definition>
+        <argsstring></argsstring>
+        <name>y</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/Projectile.hpp" line="14" column="1" bodyfile="/home/clemente/projects/Troll-Killers/Projectile.hpp" bodystart="14" bodyend="-1"/>
+        <referencedby refid="class_c_projectile_1a164f1820536f396cc7118c0ab9bec69f" compoundref="_c_projectile_8cpp" startline="5" endline="10">CProjectile::draw</referencedby>
+        <referencedby refid="class_c_projectile_1af1fb343501445d3353584cb78545c7e0" compoundref="_c_projectile_8cpp" startline="12" endline="18">CProjectile::CProjectile</referencedby>
+        <referencedby refid="class_projectile_1a309d73855dcfacee8421900c4f5e4411" compoundref="_projectile_8cpp" startline="6" endline="12">Projectile</referencedby>
+        <referencedby refid="class_projectile_1ac5f6d2a73c1f82f2f11ae353d251acef" compoundref="_projectile_8cpp" startline="18" endline="24">move</referencedby>
+        <referencedby refid="class_projectile_1a50744612baf1cdc972281a99f8e0ac50" compoundref="_projectile_8cpp" startline="26" endline="46">collide</referencedby>
+        <referencedby refid="class_projectile_1a3c5e30132bd9d414514c682e447ef0de" compoundref="_projectile_8hpp" startline="22" endline="22">getY</referencedby>
+        <referencedby refid="class_projectile_1a11e50cf592b5db73cf90a1f18ec5fe1b" compoundref="_projectile_8hpp" startline="29" endline="29">setY</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_projectile_1a123f18a0665fd6ae48dcbd900647defb" prot="protected" static="no" mutable="no">
+        <type>int16_t</type>
+        <definition>int16_t Projectile::length</definition>
+        <argsstring></argsstring>
+        <name>length</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/Projectile.hpp" line="14" column="1" bodyfile="/home/clemente/projects/Troll-Killers/Projectile.hpp" bodystart="14" bodyend="-1"/>
+        <referencedby refid="class_c_projectile_1a164f1820536f396cc7118c0ab9bec69f" compoundref="_c_projectile_8cpp" startline="5" endline="10">CProjectile::draw</referencedby>
+        <referencedby refid="class_c_projectile_1af1fb343501445d3353584cb78545c7e0" compoundref="_c_projectile_8cpp" startline="12" endline="18">CProjectile::CProjectile</referencedby>
+        <referencedby refid="class_projectile_1a309d73855dcfacee8421900c4f5e4411" compoundref="_projectile_8cpp" startline="6" endline="12">Projectile</referencedby>
+        <referencedby refid="class_projectile_1aa75120b722b0078d78e9d8416c0325a7" compoundref="_projectile_8hpp" startline="25" endline="25">getLength</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_projectile_1a5c3f2c4e44bd0607dbdb55ebfb86f88b" prot="protected" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Projectile::angle</definition>
+        <argsstring></argsstring>
+        <name>angle</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/Projectile.hpp" line="15" column="1" bodyfile="/home/clemente/projects/Troll-Killers/Projectile.hpp" bodystart="15" bodyend="-1"/>
+        <referencedby refid="class_c_projectile_1a164f1820536f396cc7118c0ab9bec69f" compoundref="_c_projectile_8cpp" startline="5" endline="10">CProjectile::draw</referencedby>
+        <referencedby refid="class_c_projectile_1af1fb343501445d3353584cb78545c7e0" compoundref="_c_projectile_8cpp" startline="12" endline="18">CProjectile::CProjectile</referencedby>
+        <referencedby refid="class_projectile_1a309d73855dcfacee8421900c4f5e4411" compoundref="_projectile_8cpp" startline="6" endline="12">Projectile</referencedby>
+        <referencedby refid="class_projectile_1ac5f6d2a73c1f82f2f11ae353d251acef" compoundref="_projectile_8cpp" startline="18" endline="24">move</referencedby>
+        <referencedby refid="class_projectile_1a50744612baf1cdc972281a99f8e0ac50" compoundref="_projectile_8cpp" startline="26" endline="46">collide</referencedby>
+        <referencedby refid="class_projectile_1a58707185f143d76efe3cfcec799a7ea5" compoundref="_projectile_8hpp" startline="23" endline="23">getAngle</referencedby>
+        <referencedby refid="class_projectile_1a5bf8e186023fb20ec8c15476c894def2" compoundref="_projectile_8hpp" startline="30" endline="30">setAngle</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_projectile_1a309d73855dcfacee8421900c4f5e4411" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Projectile::Projectile</definition>
+        <argsstring>(int16_t x, int16_t y, int16_t length, int16_t velocity, float angle)</argsstring>
+        <name>Projectile</name>
+        <param>
+          <type>int16_t</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int16_t</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>int16_t</type>
+          <declname>length</declname>
+        </param>
+        <param>
+          <type>int16_t</type>
+          <declname>velocity</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>angle</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/Projectile.hpp" line="18" column="1" bodyfile="/home/clemente/projects/Troll-Killers/Projectile.cpp" bodystart="6" bodyend="12"/>
+        <references refid="class_projectile_1a0f40006b298e765555e5494f3bbdc929" compoundref="_projectile_8hpp" startline="12">velocity</references>
+        <references refid="class_projectile_1a706363cbafcbe19aa68853b2821e63b5" compoundref="_projectile_8hpp" startline="14">x</references>
+        <references refid="class_projectile_1a19d3eab0725a2679d39c6d316e3681ca" compoundref="_projectile_8hpp" startline="14">y</references>
+        <references refid="class_projectile_1a123f18a0665fd6ae48dcbd900647defb" compoundref="_projectile_8hpp" startline="14">length</references>
+        <references refid="class_projectile_1a5c3f2c4e44bd0607dbdb55ebfb86f88b" compoundref="_projectile_8hpp" startline="15">angle</references>
+      </memberdef>
+      <memberdef kind="function" id="class_projectile_1ac536ed2aad56af866a2078b9a85aa16d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Projectile::Projectile</definition>
+        <argsstring>()</argsstring>
+        <name>Projectile</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/Projectile.hpp" line="19" column="1" bodyfile="/home/clemente/projects/Troll-Killers/Projectile.cpp" bodystart="3" bodyend="4"/>
+      </memberdef>
+      <memberdef kind="function" id="class_projectile_1a359ade45d958b4817e63fc06b25f55af" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>int16_t</type>
+        <definition>int16_t Projectile::getId</definition>
+        <argsstring>()</argsstring>
+        <name>getId</name>
+        <reimplements refid="class_i_g_object_1a40fdbe0db5e995e22996567d77bf45c6">getId</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/Projectile.hpp" line="20" column="1" bodyfile="/home/clemente/projects/Troll-Killers/Projectile.hpp" bodystart="20" bodyend="20"/>
+        <references refid="class_projectile_1a4d5668615b5f58f8c7a2b4e0bf41d493" compoundref="_projectile_8hpp" startline="13">id</references>
+      </memberdef>
+      <memberdef kind="function" id="class_projectile_1a274d46f885207253588d74f54ddb674d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>int16_t</type>
+        <definition>int16_t Projectile::getX</definition>
+        <argsstring>()</argsstring>
+        <name>getX</name>
+        <reimplements refid="class_i_g_object_1aa6ae1f7bd99277a3558a8e90d833fa7a">getX</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/Projectile.hpp" line="21" column="1" bodyfile="/home/clemente/projects/Troll-Killers/Projectile.hpp" bodystart="21" bodyend="21"/>
+        <references refid="class_projectile_1a706363cbafcbe19aa68853b2821e63b5" compoundref="_projectile_8hpp" startline="14">x</references>
+        <referencedby refid="class_projectile_1a50744612baf1cdc972281a99f8e0ac50" compoundref="_projectile_8cpp" startline="26" endline="46">collide</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_projectile_1a3c5e30132bd9d414514c682e447ef0de" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>int16_t</type>
+        <definition>int16_t Projectile::getY</definition>
+        <argsstring>()</argsstring>
+        <name>getY</name>
+        <reimplements refid="class_i_g_object_1a3491bdb3a6b6ba8d66e07443a5b5951d">getY</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/Projectile.hpp" line="22" column="1" bodyfile="/home/clemente/projects/Troll-Killers/Projectile.hpp" bodystart="22" bodyend="22"/>
+        <references refid="class_projectile_1a19d3eab0725a2679d39c6d316e3681ca" compoundref="_projectile_8hpp" startline="14">y</references>
+        <referencedby refid="class_projectile_1a50744612baf1cdc972281a99f8e0ac50" compoundref="_projectile_8cpp" startline="26" endline="46">collide</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_projectile_1a58707185f143d76efe3cfcec799a7ea5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float Projectile::getAngle</definition>
+        <argsstring>()</argsstring>
+        <name>getAngle</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/Projectile.hpp" line="23" column="1" bodyfile="/home/clemente/projects/Troll-Killers/Projectile.hpp" bodystart="23" bodyend="23"/>
+        <references refid="class_projectile_1a5c3f2c4e44bd0607dbdb55ebfb86f88b" compoundref="_projectile_8hpp" startline="15">angle</references>
+        <referencedby refid="class_projectile_1a50744612baf1cdc972281a99f8e0ac50" compoundref="_projectile_8cpp" startline="26" endline="46">collide</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_projectile_1a0417e5c4b9fca6aae57844c57bd78fc0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>int16_t</type>
+        <definition>int16_t Projectile::getVelocity</definition>
+        <argsstring>()</argsstring>
+        <name>getVelocity</name>
+        <reimplements refid="class_i_g_object_1afc8764ec832e6a60c58dace401d65b32">getVelocity</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/Projectile.hpp" line="24" column="1" bodyfile="/home/clemente/projects/Troll-Killers/Projectile.hpp" bodystart="24" bodyend="24"/>
+        <references refid="class_projectile_1a0f40006b298e765555e5494f3bbdc929" compoundref="_projectile_8hpp" startline="12">velocity</references>
+      </memberdef>
+      <memberdef kind="function" id="class_projectile_1aa75120b722b0078d78e9d8416c0325a7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int16_t</type>
+        <definition>int16_t Projectile::getLength</definition>
+        <argsstring>()</argsstring>
+        <name>getLength</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/Projectile.hpp" line="25" column="1" bodyfile="/home/clemente/projects/Troll-Killers/Projectile.hpp" bodystart="25" bodyend="25"/>
+        <references refid="class_projectile_1a123f18a0665fd6ae48dcbd900647defb" compoundref="_projectile_8hpp" startline="14">length</references>
+        <referencedby refid="class_projectile_1a50744612baf1cdc972281a99f8e0ac50" compoundref="_projectile_8cpp" startline="26" endline="46">collide</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_projectile_1a30ea63ab82a2dc401b8145f61310a9ae" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void Projectile::serialize</definition>
+        <argsstring>(char *buffer)</argsstring>
+        <name>serialize</name>
+        <reimplements refid="class_i_g_object_1a6e2dd93acb47fc77668e2571bff3481e">serialize</reimplements>
+        <param>
+          <type>char *</type>
+          <declname>buffer</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/Projectile.hpp" line="26" column="1" bodyfile="/home/clemente/projects/Troll-Killers/Projectile.cpp" bodystart="14" bodyend="16"/>
+      </memberdef>
+      <memberdef kind="function" id="class_projectile_1a0ed37ed97cd4b930da3f7bffbc5e3aa6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>void Projectile::setX</definition>
+        <argsstring>(int16_t x)</argsstring>
+        <name>setX</name>
+        <reimplements refid="class_i_g_object_1a4b810d1b4a785d7532104113ef5cf0ba">setX</reimplements>
+        <param>
+          <type>int16_t</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/Projectile.hpp" line="28" column="1" bodyfile="/home/clemente/projects/Troll-Killers/Projectile.hpp" bodystart="28" bodyend="28"/>
+        <references refid="class_projectile_1a706363cbafcbe19aa68853b2821e63b5" compoundref="_projectile_8hpp" startline="14">x</references>
+      </memberdef>
+      <memberdef kind="function" id="class_projectile_1a11e50cf592b5db73cf90a1f18ec5fe1b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>void Projectile::setY</definition>
+        <argsstring>(int16_t y)</argsstring>
+        <name>setY</name>
+        <reimplements refid="class_i_g_object_1a5092ff8b79a61c3856510adb0543f229">setY</reimplements>
+        <param>
+          <type>int16_t</type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/Projectile.hpp" line="29" column="1" bodyfile="/home/clemente/projects/Troll-Killers/Projectile.hpp" bodystart="29" bodyend="29"/>
+        <references refid="class_projectile_1a19d3eab0725a2679d39c6d316e3681ca" compoundref="_projectile_8hpp" startline="14">y</references>
+      </memberdef>
+      <memberdef kind="function" id="class_projectile_1a5bf8e186023fb20ec8c15476c894def2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Projectile::setAngle</definition>
+        <argsstring>(float angle)</argsstring>
+        <name>setAngle</name>
+        <param>
+          <type>float</type>
+          <declname>angle</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/Projectile.hpp" line="30" column="1" bodyfile="/home/clemente/projects/Troll-Killers/Projectile.hpp" bodystart="30" bodyend="30"/>
+        <references refid="class_projectile_1a5c3f2c4e44bd0607dbdb55ebfb86f88b" compoundref="_projectile_8hpp" startline="15">angle</references>
+      </memberdef>
+      <memberdef kind="function" id="class_projectile_1ac5f6d2a73c1f82f2f11ae353d251acef" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Projectile::move</definition>
+        <argsstring>()</argsstring>
+        <name>move</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/Projectile.hpp" line="34" column="1" bodyfile="/home/clemente/projects/Troll-Killers/Projectile.cpp" bodystart="18" bodyend="24"/>
+        <references refid="class_projectile_1a0f40006b298e765555e5494f3bbdc929" compoundref="_projectile_8hpp" startline="12">velocity</references>
+        <references refid="class_projectile_1a5c3f2c4e44bd0607dbdb55ebfb86f88b" compoundref="_projectile_8hpp" startline="15">angle</references>
+        <references refid="class_projectile_1a706363cbafcbe19aa68853b2821e63b5" compoundref="_projectile_8hpp" startline="14">x</references>
+        <references refid="class_projectile_1a19d3eab0725a2679d39c6d316e3681ca" compoundref="_projectile_8hpp" startline="14">y</references>
+        <referencedby refid="class_client_1a9fbb2f61b005ee6ab3f73b9f449d95eb" compoundref="_client_8cpp" startline="64" endline="264">Client::main_loop</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_projectile_1a50744612baf1cdc972281a99f8e0ac50" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Projectile::collide</definition>
+        <argsstring>(Projectile *projectile, _object &amp;object)</argsstring>
+        <name>collide</name>
+        <param>
+          <type><ref refid="class_projectile" kindref="compound">Projectile</ref> *</type>
+          <declname>projectile</declname>
+        </param>
+        <param>
+          <type><ref refid="struct__object" kindref="compound">_object</ref> &amp;</type>
+          <declname>object</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/Projectile.hpp" line="32" column="1" bodyfile="/home/clemente/projects/Troll-Killers/Projectile.cpp" bodystart="26" bodyend="46"/>
+        <references refid="class_projectile_1a5c3f2c4e44bd0607dbdb55ebfb86f88b" compoundref="_projectile_8hpp" startline="15">angle</references>
+        <references refid="class_projectile_1a58707185f143d76efe3cfcec799a7ea5" compoundref="_projectile_8hpp" startline="23" endline="23">getAngle</references>
+        <references refid="class_projectile_1a706363cbafcbe19aa68853b2821e63b5" compoundref="_projectile_8hpp" startline="14">x</references>
+        <references refid="class_projectile_1a274d46f885207253588d74f54ddb674d" compoundref="_projectile_8hpp" startline="21" endline="21">getX</references>
+        <references refid="class_projectile_1aa75120b722b0078d78e9d8416c0325a7" compoundref="_projectile_8hpp" startline="25" endline="25">getLength</references>
+        <references refid="class_projectile_1a19d3eab0725a2679d39c6d316e3681ca" compoundref="_projectile_8hpp" startline="14">y</references>
+        <references refid="class_projectile_1a3c5e30132bd9d414514c682e447ef0de" compoundref="_projectile_8hpp" startline="22" endline="22">getY</references>
+        <references refid="_enums_8hpp_1a842c5e2e69277690b064bf363c017980ae552ab0a96c0384a6e918e726b7f6102" compoundref="_enums_8hpp" startline="6">RECTANGLE</references>
+        <references refid="_enums_8hpp_1a842c5e2e69277690b064bf363c017980aa79c827759ea48f0735386c4b1188911" compoundref="_enums_8hpp" startline="5">CIRCLE</references>
+        <referencedby refid="class_client_1a9fbb2f61b005ee6ab3f73b9f449d95eb" compoundref="_client_8cpp" startline="64" endline="264">Client::main_loop</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="162">
+        <label>Projectile</label>
+        <link refid="class_projectile"/>
+        <childnode refid="163" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="163">
+        <label>IGObject</label>
+        <link refid="class_i_g_object"/>
+      </node>
+      <node id="164">
+        <label>CProjectile</label>
+        <link refid="class_c_projectile"/>
+        <childnode refid="162" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="165">
+        <label>Projectile</label>
+        <link refid="class_projectile"/>
+        <childnode refid="166" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="166">
+        <label>IGObject</label>
+        <link refid="class_i_g_object"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/clemente/projects/Troll-Killers/Projectile.hpp" line="10" column="1" bodyfile="/home/clemente/projects/Troll-Killers/Projectile.hpp" bodystart="10" bodyend="35"/>
+    <listofallmembers>
+      <member refid="class_projectile_1a5c3f2c4e44bd0607dbdb55ebfb86f88b" prot="protected" virt="non-virtual"><scope>Projectile</scope><name>angle</name></member>
+      <member refid="class_projectile_1a50744612baf1cdc972281a99f8e0ac50" prot="public" virt="non-virtual"><scope>Projectile</scope><name>collide</name></member>
+      <member refid="class_projectile_1a58707185f143d76efe3cfcec799a7ea5" prot="public" virt="non-virtual"><scope>Projectile</scope><name>getAngle</name></member>
+      <member refid="class_projectile_1a359ade45d958b4817e63fc06b25f55af" prot="public" virt="virtual"><scope>Projectile</scope><name>getId</name></member>
+      <member refid="class_projectile_1aa75120b722b0078d78e9d8416c0325a7" prot="public" virt="non-virtual"><scope>Projectile</scope><name>getLength</name></member>
+      <member refid="class_projectile_1a0417e5c4b9fca6aae57844c57bd78fc0" prot="public" virt="virtual"><scope>Projectile</scope><name>getVelocity</name></member>
+      <member refid="class_projectile_1a274d46f885207253588d74f54ddb674d" prot="public" virt="virtual"><scope>Projectile</scope><name>getX</name></member>
+      <member refid="class_projectile_1a3c5e30132bd9d414514c682e447ef0de" prot="public" virt="virtual"><scope>Projectile</scope><name>getY</name></member>
+      <member refid="class_projectile_1a4d5668615b5f58f8c7a2b4e0bf41d493" prot="protected" virt="non-virtual"><scope>Projectile</scope><name>id</name></member>
+      <member refid="class_projectile_1a123f18a0665fd6ae48dcbd900647defb" prot="protected" virt="non-virtual"><scope>Projectile</scope><name>length</name></member>
+      <member refid="class_projectile_1ac5f6d2a73c1f82f2f11ae353d251acef" prot="public" virt="non-virtual"><scope>Projectile</scope><name>move</name></member>
+      <member refid="class_projectile_1a309d73855dcfacee8421900c4f5e4411" prot="public" virt="non-virtual"><scope>Projectile</scope><name>Projectile</name></member>
+      <member refid="class_projectile_1ac536ed2aad56af866a2078b9a85aa16d" prot="public" virt="non-virtual"><scope>Projectile</scope><name>Projectile</name></member>
+      <member refid="class_projectile_1a30ea63ab82a2dc401b8145f61310a9ae" prot="public" virt="virtual"><scope>Projectile</scope><name>serialize</name></member>
+      <member refid="class_projectile_1a5bf8e186023fb20ec8c15476c894def2" prot="public" virt="non-virtual"><scope>Projectile</scope><name>setAngle</name></member>
+      <member refid="class_projectile_1a0ed37ed97cd4b930da3f7bffbc5e3aa6" prot="public" virt="virtual"><scope>Projectile</scope><name>setX</name></member>
+      <member refid="class_projectile_1a11e50cf592b5db73cf90a1f18ec5fe1b" prot="public" virt="virtual"><scope>Projectile</scope><name>setY</name></member>
+      <member refid="class_projectile_1a0f40006b298e765555e5494f3bbdc929" prot="protected" virt="non-virtual"><scope>Projectile</scope><name>velocity</name></member>
+      <member refid="class_projectile_1a706363cbafcbe19aa68853b2821e63b5" prot="protected" virt="non-virtual"><scope>Projectile</scope><name>x</name></member>
+      <member refid="class_projectile_1a19d3eab0725a2679d39c6d316e3681ca" prot="protected" virt="non-virtual"><scope>Projectile</scope><name>y</name></member>
+      <member refid="class_i_g_object_1a9e22adafd5adb2ed8dcb20a90ea6df6d" prot="public" virt="virtual"><scope>Projectile</scope><name>~IGObject</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

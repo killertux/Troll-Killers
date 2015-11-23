@@ -1,0 +1,272 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.10">
+  <compounddef id="_map_editor_8hpp" kind="file" language="C++">
+    <compoundname>MapEditor.hpp</compoundname>
+    <includes local="no">allegro5/allegro.h</includes>
+    <includes local="no">allegro5/allegro_primitives.h</includes>
+    <includes refid="_c_map_8hpp" local="yes">CMap.hpp</includes>
+    <includes refid="_defines_8hpp" local="yes">Defines.hpp</includes>
+    <includes refid="_cursor_8hpp" local="yes">Cursor.hpp</includes>
+    <includes local="no">iostream</includes>
+    <includedby refid="editor_main_8cpp" local="yes">/home/clemente/projects/Troll-Killers/editorMain.cpp</includedby>
+    <includedby refid="_map_editor_8cpp" local="yes">/home/clemente/projects/Troll-Killers/MapEditor.cpp</includedby>
+    <incdepgraph>
+      <node id="1606">
+        <label>/home/clemente/projects/Troll-Killers/MapEditor.hpp</label>
+        <link refid="MapEditor.hpp"/>
+        <childnode refid="1607" relation="include">
+        </childnode>
+        <childnode refid="1608" relation="include">
+        </childnode>
+        <childnode refid="1609" relation="include">
+        </childnode>
+        <childnode refid="1617" relation="include">
+        </childnode>
+        <childnode refid="1620" relation="include">
+        </childnode>
+        <childnode refid="1621" relation="include">
+        </childnode>
+      </node>
+      <node id="1612">
+        <label>stdint.h</label>
+      </node>
+      <node id="1610">
+        <label>Enums.hpp</label>
+        <link refid="_enums_8hpp"/>
+      </node>
+      <node id="1611">
+        <label>_object.hpp</label>
+        <link refid="__object_8hpp"/>
+        <childnode refid="1612" relation="include">
+        </childnode>
+      </node>
+      <node id="1619">
+        <label>string</label>
+      </node>
+      <node id="1608">
+        <label>allegro5/allegro_primitives.h</label>
+      </node>
+      <node id="1618">
+        <label>fstream</label>
+      </node>
+      <node id="1607">
+        <label>allegro5/allegro.h</label>
+      </node>
+      <node id="1609">
+        <label>CMap.hpp</label>
+        <link refid="_c_map_8hpp"/>
+        <childnode refid="1610" relation="include">
+        </childnode>
+        <childnode refid="1611" relation="include">
+        </childnode>
+        <childnode refid="1613" relation="include">
+        </childnode>
+        <childnode refid="1619" relation="include">
+        </childnode>
+        <childnode refid="1618" relation="include">
+        </childnode>
+        <childnode refid="1607" relation="include">
+        </childnode>
+        <childnode refid="1608" relation="include">
+        </childnode>
+        <childnode refid="1615" relation="include">
+        </childnode>
+      </node>
+      <node id="1613">
+        <label>Map.hpp</label>
+        <link refid="_map_8hpp"/>
+        <childnode refid="1610" relation="include">
+        </childnode>
+        <childnode refid="1611" relation="include">
+        </childnode>
+        <childnode refid="1614" relation="include">
+        </childnode>
+        <childnode refid="1616" relation="include">
+        </childnode>
+        <childnode refid="1617" relation="include">
+        </childnode>
+        <childnode refid="1618" relation="include">
+        </childnode>
+      </node>
+      <node id="1614">
+        <label>_data.hpp</label>
+        <link refid="__data_8hpp"/>
+        <childnode refid="1612" relation="include">
+        </childnode>
+        <childnode refid="1615" relation="include">
+        </childnode>
+      </node>
+      <node id="1616">
+        <label>sstream</label>
+      </node>
+      <node id="1621">
+        <label>iostream</label>
+      </node>
+      <node id="1620">
+        <label>Cursor.hpp</label>
+        <link refid="_cursor_8hpp"/>
+        <childnode refid="1607" relation="include">
+        </childnode>
+        <childnode refid="1608" relation="include">
+        </childnode>
+        <childnode refid="1617" relation="include">
+        </childnode>
+        <childnode refid="1610" relation="include">
+        </childnode>
+        <childnode refid="1611" relation="include">
+        </childnode>
+      </node>
+      <node id="1617">
+        <label>Defines.hpp</label>
+        <link refid="_defines_8hpp"/>
+      </node>
+      <node id="1615">
+        <label>cstring</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1622">
+        <label>/home/clemente/projects/Troll-Killers/MapEditor.hpp</label>
+        <link refid="MapEditor.hpp"/>
+        <childnode refid="1623" relation="include">
+        </childnode>
+        <childnode refid="1624" relation="include">
+        </childnode>
+      </node>
+      <node id="1623">
+        <label>/home/clemente/projects/Troll-Killers/editorMain.cpp</label>
+        <link refid="editor_main_8cpp"/>
+      </node>
+      <node id="1624">
+        <label>/home/clemente/projects/Troll-Killers/MapEditor.cpp</label>
+        <link refid="_map_editor_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_map_editor" prot="public">MapEditor</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="_map_editor_8hpp_1acdc7844fbd4d45737d4aa56834d37829" prot="public" static="no">
+        <name>MAX_OBJECTS</name>
+        <initializer>500</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/MapEditor.hpp" line="19" column="9" bodyfile="/home/clemente/projects/Troll-Killers/MapEditor.hpp" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_map_editor_8hpp_1a30362161c93e3f1a4ee4c673f535b5a8" prot="public" static="no">
+        <name>LENGTH</name>
+        <initializer>30</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/MapEditor.hpp" line="20" column="9" bodyfile="/home/clemente/projects/Troll-Killers/MapEditor.hpp" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_map_editor_8hpp_1a241aeeb764887ae5e3de58b98f04b16d" prot="public" static="no">
+        <name>WIDTH</name>
+        <initializer>20</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/MapEditor.hpp" line="21" column="9" bodyfile="/home/clemente/projects/Troll-Killers/MapEditor.hpp" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_map_editor_8hpp_1aa2c4ae08448fa684506564b4c128d47a" prot="public" static="no">
+        <name>RES_X</name>
+        <initializer>1024</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/MapEditor.hpp" line="23" column="9" bodyfile="/home/clemente/projects/Troll-Killers/MapEditor.hpp" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_map_editor_8hpp_1a16e53f6b916d898e45d90f8e59baeb8a" prot="public" static="no">
+        <name>RES_Y</name>
+        <initializer>768</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/MapEditor.hpp" line="24" column="9" bodyfile="/home/clemente/projects/Troll-Killers/MapEditor.hpp" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_map_editor_8hpp_1a238feed3512d8b21b3854d082dcae6f4" prot="public" static="no">
+        <name>MAP_FILE</name>
+        <initializer>&quot;Maps/mapa.data&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/MapEditor.hpp" line="26" column="9" bodyfile="/home/clemente/projects/Troll-Killers/MapEditor.hpp" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>MapEditor.hpp</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/><sp/>Created<sp/>on:<sp/>4<sp/>de<sp/>nov<sp/>de<sp/>2015</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>Author:<sp/>clemente</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>MAPEDITOR_HPP_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MAPEDITOR_HPP_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;allegro5/allegro.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;allegro5/allegro_primitives.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_c_map_8hpp" kindref="compound">CMap.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_defines_8hpp" kindref="compound">Defines.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_cursor_8hpp" kindref="compound">Cursor.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;iostream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19" refid="_map_editor_8hpp_1acdc7844fbd4d45737d4aa56834d37829" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MAX_OBJECTS<sp/>500</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20" refid="_map_editor_8hpp_1a30362161c93e3f1a4ee4c673f535b5a8" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LENGTH<sp/>30</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21" refid="_map_editor_8hpp_1a241aeeb764887ae5e3de58b98f04b16d" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>WIDTH<sp/>20</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23" refid="_map_editor_8hpp_1aa2c4ae08448fa684506564b4c128d47a" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>RES_X<sp/>1024</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24" refid="_map_editor_8hpp_1a16e53f6b916d898e45d90f8e59baeb8a" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>RES_Y<sp/>768</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26" refid="_map_editor_8hpp_1a238feed3512d8b21b3854d082dcae6f4" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MAP_FILE<sp/>&quot;Maps/mapa.data&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28" refid="class_map_editor" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_map_editor" kindref="compound">MapEditor</ref><sp/>{</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/>ALLEGRO_DISPLAY<sp/>*display;</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/>ALLEGRO_EVENT_QUEUE<sp/>*event_queue;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/>ALLEGRO_TIMER<sp/>*timer;</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/>ALLEGRO_KEYBOARD_STATE<sp/>keyState;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/>ALLEGRO_EVENT<sp/>ev;</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_cursor" kindref="compound">Cursor</ref><sp/>*cursor;</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>storeKeys[ALLEGRO_KEY_MAX];</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>mapX,mapY;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_c_map" kindref="compound">CMap</ref><sp/>*map;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_map_editor_1a293c325d0b53afcf3924f006cdf60363" kindref="member">MapEditor</ref>();</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_map_editor_1a46fe3ce9d636bc72461d00f4c2d6e594" kindref="member">~MapEditor</ref>();</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_map_editor_1a5937c9b49b1e342c219f8a87d8e3dd7a" kindref="member">main_loop</ref>();</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_map_editor_1ac956a51214ea40b1423156efda3e6e11" kindref="member">draw_grid</ref>();</highlight></codeline>
+<codeline lineno="48"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>MAPEDITOR_HPP_<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="/home/clemente/projects/Troll-Killers/MapEditor.hpp"/>
+  </compounddef>
+</doxygen>

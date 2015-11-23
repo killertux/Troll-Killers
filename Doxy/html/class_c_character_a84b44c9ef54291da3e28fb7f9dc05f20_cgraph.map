@@ -1,0 +1,4 @@
+<map id="CCharacter::colision" name="CCharacter::colision">
+<area shape="rect" id="node2" href="$class_weapons.html#a7ea90e9d30c37ce8fa7258405a944d77" title="Weapons::setX" alt="" coords="195,5,307,32"/>
+<area shape="rect" id="node3" href="$class_weapons.html#a0d95e4fd724cb6c6336ec5d7eaf57842" title="Weapons::setY" alt="" coords="195,56,307,83"/>
+</map>

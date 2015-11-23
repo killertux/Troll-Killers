@@ -1,0 +1,335 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.10">
+  <compounddef id="_c_character_8cpp" kind="file" language="C++">
+    <compoundname>CCharacter.cpp</compoundname>
+    <includes refid="_c_character_8hpp" local="yes">CCharacter.hpp</includes>
+    <incdepgraph>
+      <node id="1091">
+        <label>IGObject.hpp</label>
+        <link refid="_i_g_object_8hpp"/>
+        <childnode refid="1092" relation="include">
+        </childnode>
+        <childnode refid="1093" relation="include">
+        </childnode>
+      </node>
+      <node id="1114">
+        <label>Pistol.hpp</label>
+        <link refid="_pistol_8hpp"/>
+        <childnode refid="1099" relation="include">
+        </childnode>
+        <childnode refid="1110" relation="include">
+        </childnode>
+        <childnode refid="1106" relation="include">
+        </childnode>
+      </node>
+      <node id="1089">
+        <label>/home/clemente/projects/Troll-Killers/CCharacter.cpp</label>
+        <link refid="CCharacter.cpp"/>
+        <childnode refid="1090" relation="include">
+        </childnode>
+      </node>
+      <node id="1104">
+        <label>CProjectile.hpp</label>
+        <link refid="_c_projectile_8hpp"/>
+        <childnode refid="1105" relation="include">
+        </childnode>
+        <childnode refid="1100" relation="include">
+        </childnode>
+        <childnode refid="1107" relation="include">
+        </childnode>
+        <childnode refid="1106" relation="include">
+        </childnode>
+      </node>
+      <node id="1101">
+        <label>allegro5/allegro_image.h</label>
+      </node>
+      <node id="1094">
+        <label>stdint.h</label>
+      </node>
+      <node id="1103">
+        <label>cmath</label>
+      </node>
+      <node id="1092">
+        <label>Enums.hpp</label>
+        <link refid="_enums_8hpp"/>
+      </node>
+      <node id="1096">
+        <label>_object.hpp</label>
+        <link refid="__object_8hpp"/>
+        <childnode refid="1094" relation="include">
+        </childnode>
+      </node>
+      <node id="1111">
+        <label>string</label>
+      </node>
+      <node id="1107">
+        <label>allegro5/allegro_primitives.h</label>
+      </node>
+      <node id="1105">
+        <label>Projectile.hpp</label>
+        <link refid="_projectile_8hpp"/>
+        <childnode refid="1091" relation="include">
+        </childnode>
+        <childnode refid="1096" relation="include">
+        </childnode>
+        <childnode refid="1106" relation="include">
+        </childnode>
+      </node>
+      <node id="1100">
+        <label>allegro5/allegro.h</label>
+      </node>
+      <node id="1113">
+        <label>cstdio</label>
+      </node>
+      <node id="1093">
+        <label>_data.hpp</label>
+        <link refid="__data_8hpp"/>
+        <childnode refid="1094" relation="include">
+        </childnode>
+        <childnode refid="1095" relation="include">
+        </childnode>
+      </node>
+      <node id="1099">
+        <label>Weapons.hpp</label>
+        <link refid="_weapons_8hpp"/>
+        <childnode refid="1100" relation="include">
+        </childnode>
+        <childnode refid="1101" relation="include">
+        </childnode>
+        <childnode refid="1102" relation="include">
+        </childnode>
+        <childnode refid="1097" relation="include">
+        </childnode>
+        <childnode refid="1092" relation="include">
+        </childnode>
+        <childnode refid="1103" relation="include">
+        </childnode>
+        <childnode refid="1104" relation="include">
+        </childnode>
+        <childnode refid="1108" relation="include">
+        </childnode>
+        <childnode refid="1112" relation="include">
+        </childnode>
+        <childnode refid="1113" relation="include">
+        </childnode>
+      </node>
+      <node id="1108">
+        <label>Connection.hpp</label>
+        <link refid="_connection_8hpp"/>
+        <childnode refid="1109" relation="include">
+        </childnode>
+        <childnode refid="1110" relation="include">
+        </childnode>
+        <childnode refid="1111" relation="include">
+        </childnode>
+        <childnode refid="1095" relation="include">
+        </childnode>
+      </node>
+      <node id="1112">
+        <label>sstream</label>
+      </node>
+      <node id="1098">
+        <label>Rifle.hpp</label>
+        <link refid="_rifle_8hpp"/>
+        <childnode refid="1099" relation="include">
+        </childnode>
+        <childnode refid="1110" relation="include">
+        </childnode>
+      </node>
+      <node id="1106">
+        <label>math.h</label>
+      </node>
+      <node id="1110">
+        <label>iostream</label>
+      </node>
+      <node id="1090">
+        <label>CCharacter.hpp</label>
+        <link refid="_c_character_8hpp"/>
+        <childnode refid="1091" relation="include">
+        </childnode>
+        <childnode refid="1092" relation="include">
+        </childnode>
+        <childnode refid="1096" relation="include">
+        </childnode>
+        <childnode refid="1093" relation="include">
+        </childnode>
+        <childnode refid="1097" relation="include">
+        </childnode>
+        <childnode refid="1098" relation="include">
+        </childnode>
+        <childnode refid="1114" relation="include">
+        </childnode>
+        <childnode refid="1112" relation="include">
+        </childnode>
+        <childnode refid="1106" relation="include">
+        </childnode>
+        <childnode refid="1113" relation="include">
+        </childnode>
+        <childnode refid="1108" relation="include">
+        </childnode>
+        <childnode refid="1110" relation="include">
+        </childnode>
+        <childnode refid="1100" relation="include">
+        </childnode>
+        <childnode refid="1107" relation="include">
+        </childnode>
+      </node>
+      <node id="1097">
+        <label>Defines.hpp</label>
+        <link refid="_defines_8hpp"/>
+      </node>
+      <node id="1109">
+        <label>enet/enet.h</label>
+      </node>
+      <node id="1095">
+        <label>cstring</label>
+      </node>
+      <node id="1102">
+        <label>allegro5/allegro_audio.h</label>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_c_character_8hpp" kindref="compound">CCharacter.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//A<sp/>lot<sp/>of<sp/>work<sp/>to<sp/>do</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5" refid="class_c_character_1add20c9a63c5c11e8c0919e536d7636a2" refkind="member"><highlight class="normal"><ref refid="class_c_character_1add20c9a63c5c11e8c0919e536d7636a2" kindref="member">CCharacter::CCharacter</ref>(<ref refid="_enums_8hpp_1ad9700e9db9d62004af4a04e4e13912c5" kindref="member">Weapon</ref><sp/>myWeapon){</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"><sp/><sp/><sp/><sp/>player.<ref refid="struct__object_1a870a8b24b7b3dc9244f543f096e9dae6" kindref="member">radius</ref>=<ref refid="_defines_8hpp_1ac389dbca21e58410d552988f3ec954c3" kindref="member">GRID</ref>/2-2;</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><sp/><sp/><sp/><sp/>dir=(int16_t)<sp/><ref refid="_enums_8hpp_1a224b9163917ac32fc95a60d8c1eec3aaa851e6f177be6e7d7bf0bc7408e932f1b" kindref="member">STOPED</ref>;</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/>velocity=<ref refid="_defines_8hpp_1a05710e80db10fe76fa57f629ca32b7e5" kindref="member">PLAYER_VELOCITY</ref>;</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;myWeapon=(int16_t)myWeapon;</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(myWeapon==<ref refid="_enums_8hpp_1ad9700e9db9d62004af4a04e4e13912c5aa270a057ccaf7cd6cb766319015e8b3d" kindref="member">PISTOL</ref>)</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>weapon<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_pistol" kindref="compound">Pistol</ref>;</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(myWeapon<sp/>==<sp/><ref refid="_enums_8hpp_1ad9700e9db9d62004af4a04e4e13912c5a69c752dd5a2fd5c747410d696d62bae7" kindref="member">RIFLE</ref>)</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>weapon<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_rifle" kindref="compound">Rifle</ref>;</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/>weapon-&gt;<ref refid="class_weapons_1a7c8697cb11fa00b90882d14eb8e586df" kindref="member">setRadius</ref>(player.<ref refid="struct__object_1a870a8b24b7b3dc9244f543f096e9dae6" kindref="member">radius</ref>);</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/>dead=</highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/>xSpawn=0;</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/>ySpawn=0;</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/>life=100;</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/>player.<ref refid="struct__object_1a4ffae0568ef6772f8ebefa0997f79243" kindref="member">type</ref>=<ref refid="_enums_8hpp_1a842c5e2e69277690b064bf363c017980aa79c827759ea48f0735386c4b1188911" kindref="member">CIRCLE</ref>;</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/>internalSpawnTimer=0;</highlight></codeline>
+<codeline lineno="21"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23" refid="class_c_character_1a8f8fb8991776a6b6a49c796e79968c91" refkind="member"><highlight class="normal"><ref refid="class_c_character_1a8f8fb8991776a6b6a49c796e79968c91" kindref="member">CCharacter::~CCharacter</ref>(){</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal"><sp/>weapon;</highlight></codeline>
+<codeline lineno="25"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27" refid="class_c_character_1a2a9cb3e98cfe4c36ea292cdc38b999d8" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_c_character_1a2a9cb3e98cfe4c36ea292cdc38b999d8" kindref="member">CCharacter::serialize</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>buffer){</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/>std::stringstream<sp/>stream;</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/>stream<sp/>&lt;&lt;<sp/>player.<ref refid="struct__object_1adb6e178c2aa0bc48f5db6d85106c1680" kindref="member">x</ref><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>player.<ref refid="struct__object_1a48f88904fef6cb2f4ea22029174d76bc" kindref="member">y</ref><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>&quot;</highlight><highlight class="normal">&lt;&lt;<sp/>dir<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>weapon-&gt;<ref refid="class_weapons_1ac408dbb1f31e53b844c07f16206e40f8" kindref="member">getAngle</ref>()<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/>std::sprintf(buffer,</highlight><highlight class="stringliteral">&quot;%s&quot;</highlight><highlight class="normal">,stream.str().c_str());</highlight></codeline>
+<codeline lineno="31"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33" refid="class_c_character_1a4af37bf96b4950b67a538d1f5c1bc075" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_c_character_1a4af37bf96b4950b67a538d1f5c1bc075" kindref="member">CCharacter::setTeam</ref>(<ref refid="_enums_8hpp_1a9c13bb5b1d69698f9b47900990eaa598" kindref="member">Team</ref><sp/>team){</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;team=(int16_t)team;</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(team==<ref refid="_enums_8hpp_1a9c13bb5b1d69698f9b47900990eaa598af80f9a890089d211842d59625e561f88" kindref="member">RED</ref>){</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>player.<ref refid="struct__object_1af5318fcc501c7951e1bf261de6c29b3b" kindref="member">r</ref>=255;</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>player.<ref refid="struct__object_1a89ebce79c5f2acba52f871e6833977ff" kindref="member">g</ref>=0;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>player.<ref refid="struct__object_1a104af22ae68294943efb54edb7a46b0e" kindref="member">b</ref>=0;</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(team==<ref refid="_enums_8hpp_1a9c13bb5b1d69698f9b47900990eaa598a35d6719cb4d7577c031b3d79057a1b79" kindref="member">BLUE</ref>){</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>player.<ref refid="struct__object_1af5318fcc501c7951e1bf261de6c29b3b" kindref="member">r</ref>=0;</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>player.<ref refid="struct__object_1a89ebce79c5f2acba52f871e6833977ff" kindref="member">g</ref>=0;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>player.<ref refid="struct__object_1a104af22ae68294943efb54edb7a46b0e" kindref="member">b</ref>=255;</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="44"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47" refid="class_c_character_1a80e38c97bd4d4fd9b7f017ec121f03a9" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_c_character_1a80e38c97bd4d4fd9b7f017ec121f03a9" kindref="member">CCharacter::draw</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>x,</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>y){</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(!dead){</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>al_draw_filled_circle(player.<ref refid="struct__object_1adb6e178c2aa0bc48f5db6d85106c1680" kindref="member">x</ref>-x,player.<ref refid="struct__object_1a48f88904fef6cb2f4ea22029174d76bc" kindref="member">y</ref>-y,player.<ref refid="struct__object_1a870a8b24b7b3dc9244f543f096e9dae6" kindref="member">radius</ref>,al_map_rgb(player.<ref refid="struct__object_1af5318fcc501c7951e1bf261de6c29b3b" kindref="member">r</ref>,player.<ref refid="struct__object_1a89ebce79c5f2acba52f871e6833977ff" kindref="member">g</ref>,player.<ref refid="struct__object_1a104af22ae68294943efb54edb7a46b0e" kindref="member">b</ref>));</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>weapon-&gt;<ref refid="class_weapons_1af9d9f25b33b8d7e6d649c0325bb2db9f" kindref="member">draw</ref>(x,y);</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="52"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54" refid="class_c_character_1ad602f6042aeb6e500393bca375c4133b" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_c_character_1ad602f6042aeb6e500393bca375c4133b" kindref="member">CCharacter::move</ref>(){</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(dir==<ref refid="_enums_8hpp_1a224b9163917ac32fc95a60d8c1eec3aaaba595d8bca8bc5e67c37c0a9d89becfa" kindref="member">UP</ref>)</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>player.<ref refid="struct__object_1a48f88904fef6cb2f4ea22029174d76bc" kindref="member">y</ref>-=velocity;</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(dir==<ref refid="_enums_8hpp_1a224b9163917ac32fc95a60d8c1eec3aaa9b0b4a95b99523966e0e34ffdadac9da" kindref="member">DOWN</ref>)</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>player.<ref refid="struct__object_1a48f88904fef6cb2f4ea22029174d76bc" kindref="member">y</ref>+=velocity;</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(dir==<ref refid="_enums_8hpp_1a224b9163917ac32fc95a60d8c1eec3aaadb45120aafd37a973140edee24708065" kindref="member">LEFT</ref>)</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>player.<ref refid="struct__object_1adb6e178c2aa0bc48f5db6d85106c1680" kindref="member">x</ref>-=velocity;</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(dir==<ref refid="_enums_8hpp_1a224b9163917ac32fc95a60d8c1eec3aaaec8379af7490bb9eaaf579cf17876f38" kindref="member">RIGHT</ref>)</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>player.<ref refid="struct__object_1adb6e178c2aa0bc48f5db6d85106c1680" kindref="member">x</ref>+=velocity;</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/>weapon-&gt;<ref refid="class_weapons_1a7ea90e9d30c37ce8fa7258405a944d77" kindref="member">setX</ref>(player.<ref refid="struct__object_1adb6e178c2aa0bc48f5db6d85106c1680" kindref="member">x</ref>);</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/>weapon-&gt;<ref refid="class_weapons_1a0d95e4fd724cb6c6336ec5d7eaf57842" kindref="member">setY</ref>(player.<ref refid="struct__object_1a48f88904fef6cb2f4ea22029174d76bc" kindref="member">y</ref>);</highlight></codeline>
+<codeline lineno="65"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67" refid="class_c_character_1a84b44c9ef54291da3e28fb7f9dc05f20" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_c_character_1a84b44c9ef54291da3e28fb7f9dc05f20" kindref="member">CCharacter::colision</ref>(<ref refid="struct__object" kindref="compound">_object</ref><sp/>*objects,</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>n){</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>centerX;</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>centerY;</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>hDistance;</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>vDistance;</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>done=</highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i=0;i&lt;n;i++){</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>centerX=objects[i].<ref refid="struct__object_1adb6e178c2aa0bc48f5db6d85106c1680" kindref="member">x</ref>+objects[i].<ref refid="struct__object_1a9d23dfa35b2571bf0b89d4ca75f5c155" kindref="member">length</ref>/2;</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>centerY=objects[i].<ref refid="struct__object_1a48f88904fef6cb2f4ea22029174d76bc" kindref="member">y</ref>+objects[i].<ref refid="struct__object_1a7dff64a3cc71a49786c1052bb6c250ca" kindref="member">width</ref>/2;</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>hDistance=objects[i].<ref refid="struct__object_1a9d23dfa35b2571bf0b89d4ca75f5c155" kindref="member">length</ref>/2+player.<ref refid="struct__object_1a870a8b24b7b3dc9244f543f096e9dae6" kindref="member">radius</ref>;</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vDistance=objects[i].<ref refid="struct__object_1a7dff64a3cc71a49786c1052bb6c250ca" kindref="member">width</ref>/2+player.<ref refid="struct__object_1a870a8b24b7b3dc9244f543f096e9dae6" kindref="member">radius</ref>;</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(objects[i].type==<ref refid="_enums_8hpp_1a842c5e2e69277690b064bf363c017980ae552ab0a96c0384a6e918e726b7f6102" kindref="member">RECTANGLE</ref><sp/>&amp;&amp;<sp/>distance(centerX,player.<ref refid="struct__object_1adb6e178c2aa0bc48f5db6d85106c1680" kindref="member">x</ref>)&lt;hDistance&amp;&amp;<sp/></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>distance(centerY,player.<ref refid="struct__object_1a48f88904fef6cb2f4ea22029174d76bc" kindref="member">y</ref>)&lt;vDistance){</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal">(!done){</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(dir==(int16_t)<ref refid="_enums_8hpp_1a224b9163917ac32fc95a60d8c1eec3aaaba595d8bca8bc5e67c37c0a9d89becfa" kindref="member">UP</ref>)</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>player.<ref refid="struct__object_1a48f88904fef6cb2f4ea22029174d76bc" kindref="member">y</ref>++;</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(dir==(int16_t)<ref refid="_enums_8hpp_1a224b9163917ac32fc95a60d8c1eec3aaa9b0b4a95b99523966e0e34ffdadac9da" kindref="member">DOWN</ref>)</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>player.<ref refid="struct__object_1a48f88904fef6cb2f4ea22029174d76bc" kindref="member">y</ref>--;</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(dir==(int16_t)<ref refid="_enums_8hpp_1a224b9163917ac32fc95a60d8c1eec3aaadb45120aafd37a973140edee24708065" kindref="member">LEFT</ref>)</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>player.<ref refid="struct__object_1adb6e178c2aa0bc48f5db6d85106c1680" kindref="member">x</ref>++;</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(dir==(int16_t)<ref refid="_enums_8hpp_1a224b9163917ac32fc95a60d8c1eec3aaaec8379af7490bb9eaaf579cf17876f38" kindref="member">RIGHT</ref>)</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>player.<ref refid="struct__object_1adb6e178c2aa0bc48f5db6d85106c1680" kindref="member">x</ref>--;</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(!(distance(centerX,player.<ref refid="struct__object_1adb6e178c2aa0bc48f5db6d85106c1680" kindref="member">x</ref>)&lt;hDistance<sp/>&amp;&amp;<sp/>distance(centerY,player.<ref refid="struct__object_1a48f88904fef6cb2f4ea22029174d76bc" kindref="member">y</ref>)&lt;vDistance)){</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>done=</highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>weapon-&gt;<ref refid="class_weapons_1a7ea90e9d30c37ce8fa7258405a944d77" kindref="member">setX</ref>(player.<ref refid="struct__object_1adb6e178c2aa0bc48f5db6d85106c1680" kindref="member">x</ref>);</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>weapon-&gt;<ref refid="class_weapons_1a0d95e4fd724cb6c6336ec5d7eaf57842" kindref="member">setY</ref>(player.<ref refid="struct__object_1a48f88904fef6cb2f4ea22029174d76bc" kindref="member">y</ref>);</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>dir=(int16_t)<ref refid="_enums_8hpp_1a224b9163917ac32fc95a60d8c1eec3aaa851e6f177be6e7d7bf0bc7408e932f1b" kindref="member">STOPED</ref>;</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(done)</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="101"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>CCharacter::distance(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>x1,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>x2){</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>sqrt(pow(x1-x2,2));</highlight></codeline>
+<codeline lineno="105"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight></codeline>
+<codeline lineno="107" refid="class_c_character_1af64ec95c078f3e969cb6b961db81a488" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_c_character_1af64ec95c078f3e969cb6b961db81a488" kindref="member">CCharacter::weaponAngle</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>mapX,</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>mapY,</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>mouseX,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>mouseY){</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/>weapon-&gt;<ref refid="class_weapons_1ad5123e66ada6a06e3260d4e4fd6fbf31" kindref="member">calculateAngle</ref>(mapX,mapY,mouseX,mouseY);</highlight></codeline>
+<codeline lineno="109"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight></codeline>
+<codeline lineno="111" refid="class_c_character_1afe8285dd94fc52c099fb548840bc4e06" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_c_character_1afe8285dd94fc52c099fb548840bc4e06" kindref="member">CCharacter::tryToRevive</ref>(){</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/>internalSpawnTimer++;</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(internalSpawnTimer&gt;<ref refid="_c_character_8hpp_1a87d55845fba6b4f31cb5dc142037855d" kindref="member">RESPAWN_TIMER</ref>){</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>internalSpawnTimer=0;</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_c_character_1a6d92d81e7bd039572e147ebe190fab6c" kindref="member">setX</ref>(xSpawn);</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_c_character_1a670de9c2ba79b716953a1dac2db9e4cf" kindref="member">setY</ref>(ySpawn);</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>dead=</highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>life=100;</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="122"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"></highlight></codeline>
+<codeline lineno="124" refid="class_c_character_1ad33d632d180cc5d487b0c39925caf278" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_c_character_1ad33d632d180cc5d487b0c39925caf278" kindref="member">CCharacter::revive</ref>(int16_t<sp/>x,<sp/>int16_t<sp/>y){</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_c_character_1a6d92d81e7bd039572e147ebe190fab6c" kindref="member">setX</ref>(x);</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_c_character_1a670de9c2ba79b716953a1dac2db9e4cf" kindref="member">setY</ref>(y);</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/>dead=</highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/>life=100;</highlight></codeline>
+<codeline lineno="129"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"></highlight></codeline>
+<codeline lineno="131" refid="class_c_character_1a98f733c8be0661e5e6b306d37a1dfeb5" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_c_character_1a98f733c8be0661e5e6b306d37a1dfeb5" kindref="member">CCharacter::sound_shoot</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>x,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>y){</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>distance=sqrt(pow(x-player.<ref refid="struct__object_1adb6e178c2aa0bc48f5db6d85106c1680" kindref="member">x</ref>,2)+pow(y-player.<ref refid="struct__object_1a48f88904fef6cb2f4ea22029174d76bc" kindref="member">y</ref>,2));</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/>weapon-&gt;<ref refid="class_weapons_1a0fdaf9f3dee1b5684c993c7304c213b8" kindref="member">play_sound</ref>(distance);</highlight></codeline>
+<codeline lineno="134"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"></highlight></codeline>
+<codeline lineno="136"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/home/clemente/projects/Troll-Killers/CCharacter.cpp"/>
+  </compounddef>
+</doxygen>

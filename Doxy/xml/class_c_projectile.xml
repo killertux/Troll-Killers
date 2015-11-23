@@ -1,0 +1,140 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.10">
+  <compounddef id="class_c_projectile" kind="class" language="C++" prot="public">
+    <compoundname>CProjectile</compoundname>
+    <basecompoundref refid="class_projectile" prot="public" virt="non-virtual">Projectile</basecompoundref>
+    <includes refid="_c_projectile_8hpp" local="no">CProjectile.hpp</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_c_projectile_1af1fb343501445d3353584cb78545c7e0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>CProjectile::CProjectile</definition>
+        <argsstring>(int16_t x, int16_t y, int16_t length, int16_t velocity, float angle)</argsstring>
+        <name>CProjectile</name>
+        <param>
+          <type>int16_t</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int16_t</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>int16_t</type>
+          <declname>length</declname>
+        </param>
+        <param>
+          <type>int16_t</type>
+          <declname>velocity</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>angle</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/CProjectile.hpp" line="13" column="1" bodyfile="/home/clemente/projects/Troll-Killers/CProjectile.cpp" bodystart="12" bodyend="18"/>
+        <references refid="class_projectile_1a0f40006b298e765555e5494f3bbdc929" compoundref="_projectile_8hpp" startline="12">Projectile::velocity</references>
+        <references refid="class_projectile_1a706363cbafcbe19aa68853b2821e63b5" compoundref="_projectile_8hpp" startline="14">Projectile::x</references>
+        <references refid="class_projectile_1a19d3eab0725a2679d39c6d316e3681ca" compoundref="_projectile_8hpp" startline="14">Projectile::y</references>
+        <references refid="class_projectile_1a123f18a0665fd6ae48dcbd900647defb" compoundref="_projectile_8hpp" startline="14">Projectile::length</references>
+        <references refid="class_projectile_1a5c3f2c4e44bd0607dbdb55ebfb86f88b" compoundref="_projectile_8hpp" startline="15">Projectile::angle</references>
+      </memberdef>
+      <memberdef kind="function" id="class_c_projectile_1a164f1820536f396cc7118c0ab9bec69f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CProjectile::draw</definition>
+        <argsstring>(int mapX, int mapY)</argsstring>
+        <name>draw</name>
+        <param>
+          <type>int</type>
+          <declname>mapX</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>mapY</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/CProjectile.hpp" line="14" column="1" bodyfile="/home/clemente/projects/Troll-Killers/CProjectile.cpp" bodystart="5" bodyend="10"/>
+        <references refid="class_projectile_1a123f18a0665fd6ae48dcbd900647defb" compoundref="_projectile_8hpp" startline="14">Projectile::length</references>
+        <references refid="class_projectile_1a5c3f2c4e44bd0607dbdb55ebfb86f88b" compoundref="_projectile_8hpp" startline="15">Projectile::angle</references>
+        <references refid="class_projectile_1a706363cbafcbe19aa68853b2821e63b5" compoundref="_projectile_8hpp" startline="14">Projectile::x</references>
+        <references refid="class_projectile_1a19d3eab0725a2679d39c6d316e3681ca" compoundref="_projectile_8hpp" startline="14">Projectile::y</references>
+        <referencedby refid="class_weapons_1af9d9f25b33b8d7e6d649c0325bb2db9f" compoundref="_weapons_8cpp" startline="26" endline="36">Weapons::draw</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="121">
+        <label>Projectile</label>
+        <link refid="class_projectile"/>
+        <childnode refid="122" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="122">
+        <label>IGObject</label>
+        <link refid="class_i_g_object"/>
+      </node>
+      <node id="120">
+        <label>CProjectile</label>
+        <link refid="class_c_projectile"/>
+        <childnode refid="121" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="124">
+        <label>Projectile</label>
+        <link refid="class_projectile"/>
+        <childnode refid="125" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="125">
+        <label>IGObject</label>
+        <link refid="class_i_g_object"/>
+      </node>
+      <node id="123">
+        <label>CProjectile</label>
+        <link refid="class_c_projectile"/>
+        <childnode refid="124" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/clemente/projects/Troll-Killers/CProjectile.hpp" line="10" column="1" bodyfile="/home/clemente/projects/Troll-Killers/CProjectile.hpp" bodystart="10" bodyend="15"/>
+    <listofallmembers>
+      <member refid="class_projectile_1a5c3f2c4e44bd0607dbdb55ebfb86f88b" prot="protected" virt="non-virtual"><scope>CProjectile</scope><name>angle</name></member>
+      <member refid="class_projectile_1a50744612baf1cdc972281a99f8e0ac50" prot="public" virt="non-virtual"><scope>CProjectile</scope><name>collide</name></member>
+      <member refid="class_c_projectile_1af1fb343501445d3353584cb78545c7e0" prot="public" virt="non-virtual"><scope>CProjectile</scope><name>CProjectile</name></member>
+      <member refid="class_c_projectile_1a164f1820536f396cc7118c0ab9bec69f" prot="public" virt="non-virtual"><scope>CProjectile</scope><name>draw</name></member>
+      <member refid="class_projectile_1a58707185f143d76efe3cfcec799a7ea5" prot="public" virt="non-virtual"><scope>CProjectile</scope><name>getAngle</name></member>
+      <member refid="class_projectile_1a359ade45d958b4817e63fc06b25f55af" prot="public" virt="virtual"><scope>CProjectile</scope><name>getId</name></member>
+      <member refid="class_projectile_1aa75120b722b0078d78e9d8416c0325a7" prot="public" virt="non-virtual"><scope>CProjectile</scope><name>getLength</name></member>
+      <member refid="class_projectile_1a0417e5c4b9fca6aae57844c57bd78fc0" prot="public" virt="virtual"><scope>CProjectile</scope><name>getVelocity</name></member>
+      <member refid="class_projectile_1a274d46f885207253588d74f54ddb674d" prot="public" virt="virtual"><scope>CProjectile</scope><name>getX</name></member>
+      <member refid="class_projectile_1a3c5e30132bd9d414514c682e447ef0de" prot="public" virt="virtual"><scope>CProjectile</scope><name>getY</name></member>
+      <member refid="class_projectile_1a4d5668615b5f58f8c7a2b4e0bf41d493" prot="protected" virt="non-virtual"><scope>CProjectile</scope><name>id</name></member>
+      <member refid="class_projectile_1a123f18a0665fd6ae48dcbd900647defb" prot="protected" virt="non-virtual"><scope>CProjectile</scope><name>length</name></member>
+      <member refid="class_projectile_1ac5f6d2a73c1f82f2f11ae353d251acef" prot="public" virt="non-virtual"><scope>CProjectile</scope><name>move</name></member>
+      <member refid="class_projectile_1a309d73855dcfacee8421900c4f5e4411" prot="public" virt="non-virtual"><scope>CProjectile</scope><name>Projectile</name></member>
+      <member refid="class_projectile_1ac536ed2aad56af866a2078b9a85aa16d" prot="public" virt="non-virtual"><scope>CProjectile</scope><name>Projectile</name></member>
+      <member refid="class_projectile_1a30ea63ab82a2dc401b8145f61310a9ae" prot="public" virt="virtual"><scope>CProjectile</scope><name>serialize</name></member>
+      <member refid="class_projectile_1a5bf8e186023fb20ec8c15476c894def2" prot="public" virt="non-virtual"><scope>CProjectile</scope><name>setAngle</name></member>
+      <member refid="class_projectile_1a0ed37ed97cd4b930da3f7bffbc5e3aa6" prot="public" virt="virtual"><scope>CProjectile</scope><name>setX</name></member>
+      <member refid="class_projectile_1a11e50cf592b5db73cf90a1f18ec5fe1b" prot="public" virt="virtual"><scope>CProjectile</scope><name>setY</name></member>
+      <member refid="class_projectile_1a0f40006b298e765555e5494f3bbdc929" prot="protected" virt="non-virtual"><scope>CProjectile</scope><name>velocity</name></member>
+      <member refid="class_projectile_1a706363cbafcbe19aa68853b2821e63b5" prot="protected" virt="non-virtual"><scope>CProjectile</scope><name>x</name></member>
+      <member refid="class_projectile_1a19d3eab0725a2679d39c6d316e3681ca" prot="protected" virt="non-virtual"><scope>CProjectile</scope><name>y</name></member>
+      <member refid="class_i_g_object_1a9e22adafd5adb2ed8dcb20a90ea6df6d" prot="public" virt="virtual"><scope>CProjectile</scope><name>~IGObject</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

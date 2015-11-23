@@ -1,0 +1,124 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.10">
+  <compounddef id="_s_map_8hpp" kind="file" language="C++">
+    <compoundname>SMap.hpp</compoundname>
+    <includes refid="_map_8hpp" local="yes">Map.hpp</includes>
+    <includedby refid="_server_8hpp" local="yes">/home/clemente/projects/Troll-Killers/Server.hpp</includedby>
+    <includedby refid="_s_map_8cpp" local="yes">/home/clemente/projects/Troll-Killers/SMap.cpp</includedby>
+    <incdepgraph>
+      <node id="1964">
+        <label>stdint.h</label>
+      </node>
+      <node id="1962">
+        <label>Enums.hpp</label>
+        <link refid="_enums_8hpp"/>
+      </node>
+      <node id="1963">
+        <label>_object.hpp</label>
+        <link refid="__object_8hpp"/>
+        <childnode refid="1964" relation="include">
+        </childnode>
+      </node>
+      <node id="1969">
+        <label>fstream</label>
+      </node>
+      <node id="1961">
+        <label>Map.hpp</label>
+        <link refid="_map_8hpp"/>
+        <childnode refid="1962" relation="include">
+        </childnode>
+        <childnode refid="1963" relation="include">
+        </childnode>
+        <childnode refid="1965" relation="include">
+        </childnode>
+        <childnode refid="1967" relation="include">
+        </childnode>
+        <childnode refid="1968" relation="include">
+        </childnode>
+        <childnode refid="1969" relation="include">
+        </childnode>
+      </node>
+      <node id="1965">
+        <label>_data.hpp</label>
+        <link refid="__data_8hpp"/>
+        <childnode refid="1964" relation="include">
+        </childnode>
+        <childnode refid="1966" relation="include">
+        </childnode>
+      </node>
+      <node id="1967">
+        <label>sstream</label>
+      </node>
+      <node id="1960">
+        <label>/home/clemente/projects/Troll-Killers/SMap.hpp</label>
+        <link refid="SMap.hpp"/>
+        <childnode refid="1961" relation="include">
+        </childnode>
+      </node>
+      <node id="1968">
+        <label>Defines.hpp</label>
+        <link refid="_defines_8hpp"/>
+      </node>
+      <node id="1966">
+        <label>cstring</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1973">
+        <label>/home/clemente/projects/Troll-Killers/Server.cpp</label>
+        <link refid="_server_8cpp"/>
+      </node>
+      <node id="1971">
+        <label>/home/clemente/projects/Troll-Killers/Server.hpp</label>
+        <link refid="_server_8hpp"/>
+        <childnode refid="1972" relation="include">
+        </childnode>
+        <childnode refid="1973" relation="include">
+        </childnode>
+      </node>
+      <node id="1970">
+        <label>/home/clemente/projects/Troll-Killers/SMap.hpp</label>
+        <link refid="SMap.hpp"/>
+        <childnode refid="1971" relation="include">
+        </childnode>
+        <childnode refid="1974" relation="include">
+        </childnode>
+      </node>
+      <node id="1972">
+        <label>/home/clemente/projects/Troll-Killers/mainServer.cpp</label>
+        <link refid="main_server_8cpp"/>
+      </node>
+      <node id="1974">
+        <label>/home/clemente/projects/Troll-Killers/SMap.cpp</label>
+        <link refid="_s_map_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_s_map" prot="public">SMap</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>SMAP_HPP</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SMAP_HPP</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_map_8hpp" kindref="compound">Map.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6" refid="class_s_map" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_s_map" kindref="compound">SMap</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="class_map" kindref="compound">Map</ref>{</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>spawnCounter;</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct__object" kindref="compound">_object</ref><sp/>**spawnList;</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>*inUse;</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nSpawn;</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_s_map_1a6ef62d8e6b17c21f21c535a4139e230e" kindref="member">calculateSpawn</ref>();</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct__object" kindref="compound">_object</ref><sp/>*<ref refid="class_s_map_1a3577067cfaf16adb3afd60c30f7093b7" kindref="member">getSpaw</ref>();</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_s_map_1a951815986813fc94884108ee2b72a4f1" kindref="member">useSpawn</ref>(<ref refid="struct__object" kindref="compound">_object</ref><sp/>*spawn);</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//void<sp/>freeSpawn(_object<sp/>spawn);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/home/clemente/projects/Troll-Killers/SMap.hpp"/>
+  </compounddef>
+</doxygen>

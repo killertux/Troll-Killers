@@ -1,0 +1,222 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.10">
+  <compounddef id="struct__object" kind="struct" language="C++" prot="public">
+    <compoundname>_object</compoundname>
+    <includes refid="__object_8hpp" local="no">_object.hpp</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct__object_1a4ffae0568ef6772f8ebefa0997f79243" prot="public" static="no" mutable="no">
+        <type>int8_t</type>
+        <definition>int8_t _object::type</definition>
+        <argsstring></argsstring>
+        <name>type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/_object.hpp" line="6" column="1" bodyfile="/home/clemente/projects/Troll-Killers/_object.hpp" bodystart="6" bodyend="-1"/>
+        <referencedby refid="class_c_character_1add20c9a63c5c11e8c0919e536d7636a2" compoundref="_c_character_8cpp" startline="5" endline="21">CCharacter::CCharacter</referencedby>
+        <referencedby refid="class_cursor_1adc6a92102e4c6a08473b0b2745a8ebc4" compoundref="_cursor_8cpp" startline="89" endline="127">Cursor::change_cursor</referencedby>
+        <referencedby refid="class_map_1ac85777e48836aa23c8c7adac7ea50ea8" compoundref="_map_8cpp" startline="68" endline="82">Map::serialize</referencedby>
+        <referencedby refid="class_map_1a958dfc5b0956b8a4cb1ac03b0ccfdce8" compoundref="_map_8cpp" startline="84" endline="94">Map::deserialize</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct__object_1adb6e178c2aa0bc48f5db6d85106c1680" prot="public" static="no" mutable="no">
+        <type>int16_t</type>
+        <definition>int16_t _object::x</definition>
+        <argsstring></argsstring>
+        <name>x</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/_object.hpp" line="7" column="1" bodyfile="/home/clemente/projects/Troll-Killers/_object.hpp" bodystart="7" bodyend="-1"/>
+        <referencedby refid="class_c_character_1a2a9cb3e98cfe4c36ea292cdc38b999d8" compoundref="_c_character_8cpp" startline="27" endline="31">CCharacter::serialize</referencedby>
+        <referencedby refid="class_c_character_1a80e38c97bd4d4fd9b7f017ec121f03a9" compoundref="_c_character_8cpp" startline="47" endline="52">CCharacter::draw</referencedby>
+        <referencedby refid="class_c_character_1ad602f6042aeb6e500393bca375c4133b" compoundref="_c_character_8cpp" startline="54" endline="65">CCharacter::move</referencedby>
+        <referencedby refid="class_c_character_1a84b44c9ef54291da3e28fb7f9dc05f20" compoundref="_c_character_8cpp" startline="67" endline="101">CCharacter::colision</referencedby>
+        <referencedby refid="class_c_character_1a98f733c8be0661e5e6b306d37a1dfeb5" compoundref="_c_character_8cpp" startline="131" endline="134">CCharacter::sound_shoot</referencedby>
+        <referencedby refid="class_c_character_1a27ef2164eae8c8858de7e22b8ae2b356" compoundref="_c_character_8hpp" startline="47" endline="47">CCharacter::getX</referencedby>
+        <referencedby refid="class_c_character_1a6d92d81e7bd039572e147ebe190fab6c" compoundref="_c_character_8hpp" startline="67" endline="67">CCharacter::setX</referencedby>
+        <referencedby refid="class_cursor_1a5621772fb10182e95f88d7227f670de4" compoundref="_cursor_8cpp" startline="16" endline="26">Cursor::draw_cursor</referencedby>
+        <referencedby refid="class_cursor_1a475f603c81c80a68499051bc224e7bb8" compoundref="_cursor_8cpp" startline="28" endline="87">Cursor::move_cursor</referencedby>
+        <referencedby refid="class_cursor_1adc6a92102e4c6a08473b0b2745a8ebc4" compoundref="_cursor_8cpp" startline="89" endline="127">Cursor::change_cursor</referencedby>
+        <referencedby refid="class_cursor_1aaaa6b8912141e20abde48531eec76bba" compoundref="_cursor_8hpp" startline="39" endline="39">Cursor::getObject</referencedby>
+        <referencedby refid="class_map_1ac85777e48836aa23c8c7adac7ea50ea8" compoundref="_map_8cpp" startline="68" endline="82">Map::serialize</referencedby>
+        <referencedby refid="class_map_1a958dfc5b0956b8a4cb1ac03b0ccfdce8" compoundref="_map_8cpp" startline="84" endline="94">Map::deserialize</referencedby>
+        <referencedby refid="class_s_character_1a023df9332c559507d8986facbb37dcad" compoundref="_s_character_8hpp" startline="26" endline="26">SCharacter::getX</referencedby>
+        <referencedby refid="class_s_character_1a410a1a3d599fc8e91252805ce4c50f10" compoundref="_s_character_8hpp" startline="37" endline="37">SCharacter::setX</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct__object_1a48f88904fef6cb2f4ea22029174d76bc" prot="public" static="no" mutable="no">
+        <type>int16_t</type>
+        <definition>int16_t _object::y</definition>
+        <argsstring></argsstring>
+        <name>y</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/_object.hpp" line="7" column="1" bodyfile="/home/clemente/projects/Troll-Killers/_object.hpp" bodystart="7" bodyend="-1"/>
+        <referencedby refid="class_c_character_1a2a9cb3e98cfe4c36ea292cdc38b999d8" compoundref="_c_character_8cpp" startline="27" endline="31">CCharacter::serialize</referencedby>
+        <referencedby refid="class_c_character_1a80e38c97bd4d4fd9b7f017ec121f03a9" compoundref="_c_character_8cpp" startline="47" endline="52">CCharacter::draw</referencedby>
+        <referencedby refid="class_c_character_1ad602f6042aeb6e500393bca375c4133b" compoundref="_c_character_8cpp" startline="54" endline="65">CCharacter::move</referencedby>
+        <referencedby refid="class_c_character_1a84b44c9ef54291da3e28fb7f9dc05f20" compoundref="_c_character_8cpp" startline="67" endline="101">CCharacter::colision</referencedby>
+        <referencedby refid="class_c_character_1a98f733c8be0661e5e6b306d37a1dfeb5" compoundref="_c_character_8cpp" startline="131" endline="134">CCharacter::sound_shoot</referencedby>
+        <referencedby refid="class_c_character_1a39af09fa51d180f49a58ffce78c9f25b" compoundref="_c_character_8hpp" startline="48" endline="48">CCharacter::getY</referencedby>
+        <referencedby refid="class_c_character_1a670de9c2ba79b716953a1dac2db9e4cf" compoundref="_c_character_8hpp" startline="68" endline="68">CCharacter::setY</referencedby>
+        <referencedby refid="class_cursor_1a5621772fb10182e95f88d7227f670de4" compoundref="_cursor_8cpp" startline="16" endline="26">Cursor::draw_cursor</referencedby>
+        <referencedby refid="class_cursor_1a475f603c81c80a68499051bc224e7bb8" compoundref="_cursor_8cpp" startline="28" endline="87">Cursor::move_cursor</referencedby>
+        <referencedby refid="class_cursor_1adc6a92102e4c6a08473b0b2745a8ebc4" compoundref="_cursor_8cpp" startline="89" endline="127">Cursor::change_cursor</referencedby>
+        <referencedby refid="class_cursor_1aaaa6b8912141e20abde48531eec76bba" compoundref="_cursor_8hpp" startline="39" endline="39">Cursor::getObject</referencedby>
+        <referencedby refid="class_map_1ac85777e48836aa23c8c7adac7ea50ea8" compoundref="_map_8cpp" startline="68" endline="82">Map::serialize</referencedby>
+        <referencedby refid="class_map_1a958dfc5b0956b8a4cb1ac03b0ccfdce8" compoundref="_map_8cpp" startline="84" endline="94">Map::deserialize</referencedby>
+        <referencedby refid="class_s_character_1acbdd136e3a70a94f2f08c7158f042de6" compoundref="_s_character_8hpp" startline="27" endline="27">SCharacter::getY</referencedby>
+        <referencedby refid="class_s_character_1a7034f78acd75a886ecd02912b20ddcde" compoundref="_s_character_8hpp" startline="38" endline="38">SCharacter::setY</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct__object_1a870a8b24b7b3dc9244f543f096e9dae6" prot="public" static="no" mutable="no">
+        <type>int16_t</type>
+        <definition>int16_t _object::radius</definition>
+        <argsstring></argsstring>
+        <name>radius</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/_object.hpp" line="8" column="1" bodyfile="/home/clemente/projects/Troll-Killers/_object.hpp" bodystart="8" bodyend="-1"/>
+        <referencedby refid="class_c_character_1add20c9a63c5c11e8c0919e536d7636a2" compoundref="_c_character_8cpp" startline="5" endline="21">CCharacter::CCharacter</referencedby>
+        <referencedby refid="class_c_character_1a80e38c97bd4d4fd9b7f017ec121f03a9" compoundref="_c_character_8cpp" startline="47" endline="52">CCharacter::draw</referencedby>
+        <referencedby refid="class_c_character_1a84b44c9ef54291da3e28fb7f9dc05f20" compoundref="_c_character_8cpp" startline="67" endline="101">CCharacter::colision</referencedby>
+        <referencedby refid="class_cursor_1a5621772fb10182e95f88d7227f670de4" compoundref="_cursor_8cpp" startline="16" endline="26">Cursor::draw_cursor</referencedby>
+        <referencedby refid="class_cursor_1adc6a92102e4c6a08473b0b2745a8ebc4" compoundref="_cursor_8cpp" startline="89" endline="127">Cursor::change_cursor</referencedby>
+        <referencedby refid="class_map_1ac85777e48836aa23c8c7adac7ea50ea8" compoundref="_map_8cpp" startline="68" endline="82">Map::serialize</referencedby>
+        <referencedby refid="class_map_1a958dfc5b0956b8a4cb1ac03b0ccfdce8" compoundref="_map_8cpp" startline="84" endline="94">Map::deserialize</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct__object_1a9d23dfa35b2571bf0b89d4ca75f5c155" prot="public" static="no" mutable="no">
+        <type>int16_t</type>
+        <definition>int16_t _object::length</definition>
+        <argsstring></argsstring>
+        <name>length</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/_object.hpp" line="9" column="1" bodyfile="/home/clemente/projects/Troll-Killers/_object.hpp" bodystart="9" bodyend="-1"/>
+        <referencedby refid="class_c_character_1a84b44c9ef54291da3e28fb7f9dc05f20" compoundref="_c_character_8cpp" startline="67" endline="101">CCharacter::colision</referencedby>
+        <referencedby refid="class_cursor_1a5621772fb10182e95f88d7227f670de4" compoundref="_cursor_8cpp" startline="16" endline="26">Cursor::draw_cursor</referencedby>
+        <referencedby refid="class_cursor_1adc6a92102e4c6a08473b0b2745a8ebc4" compoundref="_cursor_8cpp" startline="89" endline="127">Cursor::change_cursor</referencedby>
+        <referencedby refid="class_cursor_1ac01596d8124ec0d1d92b88212ca858e5" compoundref="_cursor_8cpp" startline="141" endline="161">Cursor::increase_object</referencedby>
+        <referencedby refid="class_map_1ac85777e48836aa23c8c7adac7ea50ea8" compoundref="_map_8cpp" startline="68" endline="82">Map::serialize</referencedby>
+        <referencedby refid="class_map_1a958dfc5b0956b8a4cb1ac03b0ccfdce8" compoundref="_map_8cpp" startline="84" endline="94">Map::deserialize</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct__object_1a7dff64a3cc71a49786c1052bb6c250ca" prot="public" static="no" mutable="no">
+        <type>int16_t</type>
+        <definition>int16_t _object::width</definition>
+        <argsstring></argsstring>
+        <name>width</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/_object.hpp" line="9" column="1" bodyfile="/home/clemente/projects/Troll-Killers/_object.hpp" bodystart="9" bodyend="-1"/>
+        <referencedby refid="class_c_character_1a84b44c9ef54291da3e28fb7f9dc05f20" compoundref="_c_character_8cpp" startline="67" endline="101">CCharacter::colision</referencedby>
+        <referencedby refid="class_cursor_1a5621772fb10182e95f88d7227f670de4" compoundref="_cursor_8cpp" startline="16" endline="26">Cursor::draw_cursor</referencedby>
+        <referencedby refid="class_cursor_1adc6a92102e4c6a08473b0b2745a8ebc4" compoundref="_cursor_8cpp" startline="89" endline="127">Cursor::change_cursor</referencedby>
+        <referencedby refid="class_cursor_1ac01596d8124ec0d1d92b88212ca858e5" compoundref="_cursor_8cpp" startline="141" endline="161">Cursor::increase_object</referencedby>
+        <referencedby refid="class_map_1ac85777e48836aa23c8c7adac7ea50ea8" compoundref="_map_8cpp" startline="68" endline="82">Map::serialize</referencedby>
+        <referencedby refid="class_map_1a958dfc5b0956b8a4cb1ac03b0ccfdce8" compoundref="_map_8cpp" startline="84" endline="94">Map::deserialize</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct__object_1af5318fcc501c7951e1bf261de6c29b3b" prot="public" static="no" mutable="no">
+        <type>int16_t</type>
+        <definition>int16_t _object::r</definition>
+        <argsstring></argsstring>
+        <name>r</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/_object.hpp" line="10" column="1" bodyfile="/home/clemente/projects/Troll-Killers/_object.hpp" bodystart="10" bodyend="-1"/>
+        <referencedby refid="class_c_character_1a4af37bf96b4950b67a538d1f5c1bc075" compoundref="_c_character_8cpp" startline="33" endline="44">CCharacter::setTeam</referencedby>
+        <referencedby refid="class_c_character_1a80e38c97bd4d4fd9b7f017ec121f03a9" compoundref="_c_character_8cpp" startline="47" endline="52">CCharacter::draw</referencedby>
+        <referencedby refid="class_cursor_1a5621772fb10182e95f88d7227f670de4" compoundref="_cursor_8cpp" startline="16" endline="26">Cursor::draw_cursor</referencedby>
+        <referencedby refid="class_cursor_1adc6a92102e4c6a08473b0b2745a8ebc4" compoundref="_cursor_8cpp" startline="89" endline="127">Cursor::change_cursor</referencedby>
+        <referencedby refid="class_cursor_1a33ed388e90bb4af04e239b684f156587" compoundref="_cursor_8cpp" startline="129" endline="139">Cursor::change_team</referencedby>
+        <referencedby refid="class_map_1ac85777e48836aa23c8c7adac7ea50ea8" compoundref="_map_8cpp" startline="68" endline="82">Map::serialize</referencedby>
+        <referencedby refid="class_map_1a958dfc5b0956b8a4cb1ac03b0ccfdce8" compoundref="_map_8cpp" startline="84" endline="94">Map::deserialize</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct__object_1a89ebce79c5f2acba52f871e6833977ff" prot="public" static="no" mutable="no">
+        <type>int16_t</type>
+        <definition>int16_t _object::g</definition>
+        <argsstring></argsstring>
+        <name>g</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/_object.hpp" line="11" column="1" bodyfile="/home/clemente/projects/Troll-Killers/_object.hpp" bodystart="11" bodyend="-1"/>
+        <referencedby refid="class_c_character_1a4af37bf96b4950b67a538d1f5c1bc075" compoundref="_c_character_8cpp" startline="33" endline="44">CCharacter::setTeam</referencedby>
+        <referencedby refid="class_c_character_1a80e38c97bd4d4fd9b7f017ec121f03a9" compoundref="_c_character_8cpp" startline="47" endline="52">CCharacter::draw</referencedby>
+        <referencedby refid="class_cursor_1a5621772fb10182e95f88d7227f670de4" compoundref="_cursor_8cpp" startline="16" endline="26">Cursor::draw_cursor</referencedby>
+        <referencedby refid="class_cursor_1adc6a92102e4c6a08473b0b2745a8ebc4" compoundref="_cursor_8cpp" startline="89" endline="127">Cursor::change_cursor</referencedby>
+        <referencedby refid="class_cursor_1a33ed388e90bb4af04e239b684f156587" compoundref="_cursor_8cpp" startline="129" endline="139">Cursor::change_team</referencedby>
+        <referencedby refid="class_map_1ac85777e48836aa23c8c7adac7ea50ea8" compoundref="_map_8cpp" startline="68" endline="82">Map::serialize</referencedby>
+        <referencedby refid="class_map_1a958dfc5b0956b8a4cb1ac03b0ccfdce8" compoundref="_map_8cpp" startline="84" endline="94">Map::deserialize</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct__object_1a104af22ae68294943efb54edb7a46b0e" prot="public" static="no" mutable="no">
+        <type>int16_t</type>
+        <definition>int16_t _object::b</definition>
+        <argsstring></argsstring>
+        <name>b</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/_object.hpp" line="12" column="1" bodyfile="/home/clemente/projects/Troll-Killers/_object.hpp" bodystart="12" bodyend="-1"/>
+        <referencedby refid="class_c_character_1a4af37bf96b4950b67a538d1f5c1bc075" compoundref="_c_character_8cpp" startline="33" endline="44">CCharacter::setTeam</referencedby>
+        <referencedby refid="class_c_character_1a80e38c97bd4d4fd9b7f017ec121f03a9" compoundref="_c_character_8cpp" startline="47" endline="52">CCharacter::draw</referencedby>
+        <referencedby refid="class_cursor_1a5621772fb10182e95f88d7227f670de4" compoundref="_cursor_8cpp" startline="16" endline="26">Cursor::draw_cursor</referencedby>
+        <referencedby refid="class_cursor_1adc6a92102e4c6a08473b0b2745a8ebc4" compoundref="_cursor_8cpp" startline="89" endline="127">Cursor::change_cursor</referencedby>
+        <referencedby refid="class_cursor_1a33ed388e90bb4af04e239b684f156587" compoundref="_cursor_8cpp" startline="129" endline="139">Cursor::change_team</referencedby>
+        <referencedby refid="class_map_1ac85777e48836aa23c8c7adac7ea50ea8" compoundref="_map_8cpp" startline="68" endline="82">Map::serialize</referencedby>
+        <referencedby refid="class_map_1a958dfc5b0956b8a4cb1ac03b0ccfdce8" compoundref="_map_8cpp" startline="84" endline="94">Map::deserialize</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="104">
+        <label>_object</label>
+        <link refid="struct__object"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/clemente/projects/Troll-Killers/_object.hpp" line="5" column="1" bodyfile="/home/clemente/projects/Troll-Killers/_object.hpp" bodystart="5" bodyend="13"/>
+    <listofallmembers>
+      <member refid="struct__object_1a104af22ae68294943efb54edb7a46b0e" prot="public" virt="non-virtual"><scope>_object</scope><name>b</name></member>
+      <member refid="struct__object_1a89ebce79c5f2acba52f871e6833977ff" prot="public" virt="non-virtual"><scope>_object</scope><name>g</name></member>
+      <member refid="struct__object_1a9d23dfa35b2571bf0b89d4ca75f5c155" prot="public" virt="non-virtual"><scope>_object</scope><name>length</name></member>
+      <member refid="struct__object_1af5318fcc501c7951e1bf261de6c29b3b" prot="public" virt="non-virtual"><scope>_object</scope><name>r</name></member>
+      <member refid="struct__object_1a870a8b24b7b3dc9244f543f096e9dae6" prot="public" virt="non-virtual"><scope>_object</scope><name>radius</name></member>
+      <member refid="struct__object_1a4ffae0568ef6772f8ebefa0997f79243" prot="public" virt="non-virtual"><scope>_object</scope><name>type</name></member>
+      <member refid="struct__object_1a7dff64a3cc71a49786c1052bb6c250ca" prot="public" virt="non-virtual"><scope>_object</scope><name>width</name></member>
+      <member refid="struct__object_1adb6e178c2aa0bc48f5db6d85106c1680" prot="public" virt="non-virtual"><scope>_object</scope><name>x</name></member>
+      <member refid="struct__object_1a48f88904fef6cb2f4ea22029174d76bc" prot="public" virt="non-virtual"><scope>_object</scope><name>y</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

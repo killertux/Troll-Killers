@@ -1,0 +1,111 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.10">
+  <compounddef id="class_i_menu" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>IMenu</compoundname>
+    <derivedcompoundref refid="class_menu_armas" prot="public" virt="non-virtual">MenuArmas</derivedcompoundref>
+    <derivedcompoundref refid="class_menu_princ" prot="public" virt="non-virtual">MenuPrinc</derivedcompoundref>
+    <includes refid="_menu_8hpp" local="no">Menu.hpp</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_i_menu_1a15171c488ff899861e4c1a435bc79596" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void IMenu::print_menu</definition>
+        <argsstring>()=0</argsstring>
+        <name>print_menu</name>
+        <reimplementedby refid="class_menu_princ_1a4dd3850301fa43019bb64c0a79e985d1">print_menu</reimplementedby>
+        <reimplementedby refid="class_menu_armas_1a05bc5afc4ad1a0dd6cf35f27de53016b">print_menu</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/Menu.hpp" line="17" column="1"/>
+        <referencedby refid="class_menu_manager_1a86de10f125cd9be03d15dd50e381f53d" compoundref="_menu_manager_8cpp" startline="10" endline="66">MenuManager::main_loop</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_i_menu_1a2e8a43e5fa1ed784d97a985eb6a07649" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual IMenu::~IMenu</definition>
+        <argsstring>()</argsstring>
+        <name>~IMenu</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/Menu.hpp" line="18" column="1" bodyfile="/home/clemente/projects/Troll-Killers/Menu.hpp" bodystart="18" bodyend="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_i_menu_1a492260da0be9c0e8951761547d67e79e" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void IMenu::botao</definition>
+        <argsstring>(ALLEGRO_MOUSE_STATE *mouseState)=0</argsstring>
+        <name>botao</name>
+        <reimplementedby refid="class_menu_princ_1ad6b330e90af4e4783104d987ae05895f">botao</reimplementedby>
+        <reimplementedby refid="class_menu_armas_1afc0b66c4033827b51b26127d40c17645">botao</reimplementedby>
+        <param>
+          <type>ALLEGRO_MOUSE_STATE *</type>
+          <declname>mouseState</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/Menu.hpp" line="19" column="1"/>
+        <referencedby refid="class_menu_manager_1a86de10f125cd9be03d15dd50e381f53d" compoundref="_menu_manager_8cpp" startline="10" endline="66">MenuManager::main_loop</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_i_menu_1a984d46d1c193c7552580c2d94c7f0aee" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>int</type>
+        <definition>virtual int IMenu::botao_action</definition>
+        <argsstring>()=0</argsstring>
+        <name>botao_action</name>
+        <reimplementedby refid="class_menu_princ_1a53554f00f838402761766788649037d5">botao_action</reimplementedby>
+        <reimplementedby refid="class_menu_armas_1a1abc753948db8a71cb6543755bb29db6">botao_action</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/Menu.hpp" line="20" column="1"/>
+        <referencedby refid="class_menu_manager_1a86de10f125cd9be03d15dd50e381f53d" compoundref="_menu_manager_8cpp" startline="10" endline="66">MenuManager::main_loop</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="135">
+        <label>MenuArmas</label>
+        <link refid="class_menu_armas"/>
+        <childnode refid="134" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="134">
+        <label>IMenu</label>
+        <link refid="class_i_menu"/>
+      </node>
+      <node id="136">
+        <label>MenuPrinc</label>
+        <link refid="class_menu_princ"/>
+        <childnode refid="134" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="137">
+        <label>IMenu</label>
+        <link refid="class_i_menu"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/clemente/projects/Troll-Killers/Menu.hpp" line="15" column="1" bodyfile="/home/clemente/projects/Troll-Killers/Menu.hpp" bodystart="15" bodyend="21"/>
+    <listofallmembers>
+      <member refid="class_i_menu_1a492260da0be9c0e8951761547d67e79e" prot="public" virt="pure-virtual"><scope>IMenu</scope><name>botao</name></member>
+      <member refid="class_i_menu_1a984d46d1c193c7552580c2d94c7f0aee" prot="public" virt="pure-virtual"><scope>IMenu</scope><name>botao_action</name></member>
+      <member refid="class_i_menu_1a15171c488ff899861e4c1a435bc79596" prot="public" virt="pure-virtual"><scope>IMenu</scope><name>print_menu</name></member>
+      <member refid="class_i_menu_1a2e8a43e5fa1ed784d97a985eb6a07649" prot="public" virt="virtual"><scope>IMenu</scope><name>~IMenu</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

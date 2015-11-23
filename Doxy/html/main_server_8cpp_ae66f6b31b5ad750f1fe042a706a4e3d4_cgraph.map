@@ -1,0 +1,11 @@
+<map id="main" name="main">
+<area shape="rect" id="node2" href="$class_server.html#a47beb8398c78f8ce814d8f3961880add" title="Server::main_loop" alt="" coords="104,203,231,229"/>
+<area shape="rect" id="node3" href="$class_connection.html#a67a66948fd3b286a0a4faaaedb69e56e" title="Connection::event_service" alt="" coords="281,5,459,32"/>
+<area shape="rect" id="node4" href="$class_connection.html#ab0db0e5c8463aca4ec668107b1a46349" title="Connection::event_type\l_receive" alt="" coords="290,57,450,98"/>
+<area shape="rect" id="node5" href="$class_connection.html#a2431e1403029cf660aa897eba8ec978a" title="Connection::getPacketData" alt="" coords="279,123,461,149"/>
+<area shape="rect" id="node6" href="$class_connection.html#a6a9cbc7d881550fcc0e768e3ee7bf171" title="Connection::getPeerId" alt="" coords="294,173,446,200"/>
+<area shape="rect" id="node7" href="$class_connection.html#a75f10c526b51675497a81e1f2c26ba9e" title="Connection::event_type\l_connect" alt="" coords="290,225,450,266"/>
+<area shape="rect" id="node8" href="$class_connection.html#a58f2ca9fedd8369ebdf61725f31123ef" title="Connection::event_type\l_disconnect" alt="" coords="290,290,450,331"/>
+<area shape="rect" id="node9" href="$class_s_character.html#a4384f9f73da73ddb603d4d85fdae00d7" title="SCharacter::getTeam" alt="" coords="297,356,443,383"/>
+<area shape="rect" id="node10" href="$class_connection.html#a2d554f43b1e9d4a71acdd1ba297fc11b" title="Connection::broadcast\l_packet" alt="" coords="293,407,447,449"/>
+</map>

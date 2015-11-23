@@ -1,0 +1,260 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.10">
+  <compounddef id="class_map_editor" kind="class" language="C++" prot="public">
+    <compoundname>MapEditor</compoundname>
+    <includes refid="_map_editor_8hpp" local="no">MapEditor.hpp</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_map_editor_1a728e526271b6cc42611a6db77b5bce40" prot="private" static="no" mutable="no">
+        <type>ALLEGRO_DISPLAY *</type>
+        <definition>ALLEGRO_DISPLAY* MapEditor::display</definition>
+        <argsstring></argsstring>
+        <name>display</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/MapEditor.hpp" line="30" column="1" bodyfile="/home/clemente/projects/Troll-Killers/MapEditor.hpp" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_map_editor_1ac52df6a3f75f12f6cbe1780fbca2a912" prot="private" static="no" mutable="no">
+        <type>ALLEGRO_EVENT_QUEUE *</type>
+        <definition>ALLEGRO_EVENT_QUEUE* MapEditor::event_queue</definition>
+        <argsstring></argsstring>
+        <name>event_queue</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/MapEditor.hpp" line="31" column="1" bodyfile="/home/clemente/projects/Troll-Killers/MapEditor.hpp" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_map_editor_1a322ca714d17965be67e74e186932098a" prot="private" static="no" mutable="no">
+        <type>ALLEGRO_TIMER *</type>
+        <definition>ALLEGRO_TIMER* MapEditor::timer</definition>
+        <argsstring></argsstring>
+        <name>timer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/MapEditor.hpp" line="32" column="1" bodyfile="/home/clemente/projects/Troll-Killers/MapEditor.hpp" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_map_editor_1a1a987d2d62c33694f4d1548abec56804" prot="private" static="no" mutable="no">
+        <type>ALLEGRO_KEYBOARD_STATE</type>
+        <definition>ALLEGRO_KEYBOARD_STATE MapEditor::keyState</definition>
+        <argsstring></argsstring>
+        <name>keyState</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/MapEditor.hpp" line="33" column="1" bodyfile="/home/clemente/projects/Troll-Killers/MapEditor.hpp" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_map_editor_1a894fd5966ee205cfc5b1d69e6f875983" prot="private" static="no" mutable="no">
+        <type>ALLEGRO_EVENT</type>
+        <definition>ALLEGRO_EVENT MapEditor::ev</definition>
+        <argsstring></argsstring>
+        <name>ev</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/MapEditor.hpp" line="34" column="1" bodyfile="/home/clemente/projects/Troll-Killers/MapEditor.hpp" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_map_editor_1ae7cce73cc0624acd793a0202661d3bb5" prot="private" static="no" mutable="no">
+        <type><ref refid="class_cursor" kindref="compound">Cursor</ref> *</type>
+        <definition>Cursor* MapEditor::cursor</definition>
+        <argsstring></argsstring>
+        <name>cursor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/MapEditor.hpp" line="36" column="1" bodyfile="/home/clemente/projects/Troll-Killers/MapEditor.hpp" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_map_editor_1a0071305ce232128f367234ee3ad7a408" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool MapEditor::storeKeys[ALLEGRO_KEY_MAX]</definition>
+        <argsstring>[ALLEGRO_KEY_MAX]</argsstring>
+        <name>storeKeys</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/MapEditor.hpp" line="37" column="1" bodyfile="/home/clemente/projects/Troll-Killers/MapEditor.hpp" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_map_editor_1a6ed1bb5bdf94afdf132b252bdb6ee3a9" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int MapEditor::mapX</definition>
+        <argsstring></argsstring>
+        <name>mapX</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/MapEditor.hpp" line="39" column="1" bodyfile="/home/clemente/projects/Troll-Killers/MapEditor.hpp" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_map_editor_1a364b432643517a9742113d79a5d4b010" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int MapEditor::mapY</definition>
+        <argsstring></argsstring>
+        <name>mapY</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/MapEditor.hpp" line="39" column="1" bodyfile="/home/clemente/projects/Troll-Killers/MapEditor.hpp" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_map_editor_1af3022740eae6dc1af8c044ea12bdedf9" prot="private" static="no" mutable="no">
+        <type><ref refid="class_c_map" kindref="compound">CMap</ref> *</type>
+        <definition>CMap* MapEditor::map</definition>
+        <argsstring></argsstring>
+        <name>map</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/MapEditor.hpp" line="41" column="1" bodyfile="/home/clemente/projects/Troll-Killers/MapEditor.hpp" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_map_editor_1a293c325d0b53afcf3924f006cdf60363" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>MapEditor::MapEditor</definition>
+        <argsstring>()</argsstring>
+        <name>MapEditor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/MapEditor.hpp" line="43" column="1" bodyfile="/home/clemente/projects/Troll-Killers/MapEditor.cpp" bodystart="10" bodyend="37"/>
+        <references refid="_map_editor_8hpp_1aa2c4ae08448fa684506564b4c128d47a" compoundref="_map_editor_8hpp" startline="23">RES_X</references>
+        <references refid="_map_editor_8hpp_1a16e53f6b916d898e45d90f8e59baeb8a" compoundref="_map_editor_8hpp" startline="24">RES_Y</references>
+        <references refid="_defines_8hpp_1ac92ca5ab87034a348decad7ee8d4bd1b" compoundref="_defines_8hpp" startline="7">FPS</references>
+        <references refid="_map_editor_8hpp_1acdc7844fbd4d45737d4aa56834d37829" compoundref="_map_editor_8hpp" startline="19">MAX_OBJECTS</references>
+        <references refid="_map_editor_8hpp_1a30362161c93e3f1a4ee4c673f535b5a8" compoundref="_map_editor_8hpp" startline="20">LENGTH</references>
+        <references refid="_defines_8hpp_1ac389dbca21e58410d552988f3ec954c3" compoundref="_defines_8hpp" startline="8">GRID</references>
+        <references refid="_map_editor_8hpp_1a241aeeb764887ae5e3de58b98f04b16d" compoundref="_map_editor_8hpp" startline="21">WIDTH</references>
+        <references refid="class_c_map_1a6b9de17f30f934892113c02b4f53779d" compoundref="_c_map_8hpp" startline="29" endline="29">CMap::setDrawCircles</references>
+      </memberdef>
+      <memberdef kind="function" id="class_map_editor_1a46fe3ce9d636bc72461d00f4c2d6e594" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>MapEditor::~MapEditor</definition>
+        <argsstring>()</argsstring>
+        <name>~MapEditor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/MapEditor.hpp" line="44" column="1" bodyfile="/home/clemente/projects/Troll-Killers/MapEditor.cpp" bodystart="39" bodyend="45"/>
+      </memberdef>
+      <memberdef kind="function" id="class_map_editor_1a5937c9b49b1e342c219f8a87d8e3dd7a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MapEditor::main_loop</definition>
+        <argsstring>()</argsstring>
+        <name>main_loop</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/MapEditor.hpp" line="46" column="1" bodyfile="/home/clemente/projects/Troll-Killers/MapEditor.cpp" bodystart="47" bodyend="132"/>
+        <references refid="class_cursor_1adc6a92102e4c6a08473b0b2745a8ebc4" compoundref="_cursor_8cpp" startline="89" endline="127">Cursor::change_cursor</references>
+        <references refid="class_cursor_1ac01596d8124ec0d1d92b88212ca858e5" compoundref="_cursor_8cpp" startline="141" endline="161">Cursor::increase_object</references>
+        <references refid="_enums_8hpp_1a224b9163917ac32fc95a60d8c1eec3aaaec8379af7490bb9eaaf579cf17876f38" compoundref="_enums_8hpp" startline="14">RIGHT</references>
+        <references refid="_enums_8hpp_1a224b9163917ac32fc95a60d8c1eec3aaadb45120aafd37a973140edee24708065" compoundref="_enums_8hpp" startline="13">LEFT</references>
+        <references refid="_enums_8hpp_1a224b9163917ac32fc95a60d8c1eec3aaa9b0b4a95b99523966e0e34ffdadac9da" compoundref="_enums_8hpp" startline="12">DOWN</references>
+        <references refid="_enums_8hpp_1a224b9163917ac32fc95a60d8c1eec3aaaba595d8bca8bc5e67c37c0a9d89becfa" compoundref="_enums_8hpp" startline="11">UP</references>
+        <references refid="class_cursor_1a166a2e5d9dda3e7c4b1b552a019b7f41" compoundref="_cursor_8hpp" startline="40" endline="40">Cursor::object_selected</references>
+        <references refid="class_c_map_1abec86992ac01292170213a5d71f17895" compoundref="_c_map_8cpp" startline="23" endline="26">CMap::new_object</references>
+        <references refid="class_cursor_1aaaa6b8912141e20abde48531eec76bba" compoundref="_cursor_8hpp" startline="39" endline="39">Cursor::getObject</references>
+        <references refid="class_c_map_1a9e069b9af7a4a243345dd0bfae24121a" compoundref="_c_map_8cpp" startline="28" endline="35">CMap::destroy_object</references>
+        <references refid="class_cursor_1a32172f293dc42c6256ea95241ac1f1b6" compoundref="_cursor_8hpp" startline="31" endline="31">Cursor::getX</references>
+        <references refid="class_cursor_1a737cccaafed3d0a03977b9c5f4cfe7cf" compoundref="_cursor_8hpp" startline="32" endline="32">Cursor::getY</references>
+        <references refid="class_cursor_1a33ed388e90bb4af04e239b684f156587" compoundref="_cursor_8cpp" startline="129" endline="139">Cursor::change_team</references>
+        <references refid="class_map_1afdd22d2739acb6a6eaf8864ee090107a" compoundref="_map_8cpp" startline="15" endline="37">Map::save_map</references>
+        <references refid="_map_editor_8hpp_1a238feed3512d8b21b3854d082dcae6f4" compoundref="_map_editor_8hpp" startline="26">MAP_FILE</references>
+        <references refid="class_map_1a259bb70652389b9ecf0bc76ceca656a5" compoundref="_map_8cpp" startline="39" endline="65">Map::load_map</references>
+        <references refid="class_cursor_1a475f603c81c80a68499051bc224e7bb8" compoundref="_cursor_8cpp" startline="28" endline="87">Cursor::move_cursor</references>
+        <references refid="_map_editor_8hpp_1aa2c4ae08448fa684506564b4c128d47a" compoundref="_map_editor_8hpp" startline="23">RES_X</references>
+        <references refid="_defines_8hpp_1ac389dbca21e58410d552988f3ec954c3" compoundref="_defines_8hpp" startline="8">GRID</references>
+        <references refid="_map_editor_8hpp_1a30362161c93e3f1a4ee4c673f535b5a8" compoundref="_map_editor_8hpp" startline="20">LENGTH</references>
+        <references refid="class_cursor_1a3f54d9a590dfb9fca1bd390b8a9c7e54" compoundref="_cursor_8hpp" startline="33" endline="33">Cursor::setX</references>
+        <references refid="_map_editor_8hpp_1a16e53f6b916d898e45d90f8e59baeb8a" compoundref="_map_editor_8hpp" startline="24">RES_Y</references>
+        <references refid="_map_editor_8hpp_1a241aeeb764887ae5e3de58b98f04b16d" compoundref="_map_editor_8hpp" startline="21">WIDTH</references>
+        <references refid="class_cursor_1ab2314c3d20498cb65a66f5be6c2e74d5" compoundref="_cursor_8hpp" startline="34" endline="34">Cursor::setY</references>
+        <references refid="class_c_map_1adedfa138aa67c2924e79809ad1dac85c" compoundref="_c_map_8cpp" startline="37" endline="46">CMap::draw_map</references>
+        <references refid="class_cursor_1a5621772fb10182e95f88d7227f670de4" compoundref="_cursor_8cpp" startline="16" endline="26">Cursor::draw_cursor</references>
+        <references refid="class_map_editor_1ac956a51214ea40b1423156efda3e6e11" compoundref="_map_editor_8cpp" startline="134" endline="139">draw_grid</references>
+        <referencedby refid="editor_main_8cpp_1ae66f6b31b5ad750f1fe042a706a4e3d4" compoundref="editor_main_8cpp" startline="9" endline="13">main</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_map_editor_1ac956a51214ea40b1423156efda3e6e11" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MapEditor::draw_grid</definition>
+        <argsstring>()</argsstring>
+        <name>draw_grid</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/MapEditor.hpp" line="47" column="1" bodyfile="/home/clemente/projects/Troll-Killers/MapEditor.cpp" bodystart="134" bodyend="139"/>
+        <references refid="_map_editor_8hpp_1a30362161c93e3f1a4ee4c673f535b5a8" compoundref="_map_editor_8hpp" startline="20">LENGTH</references>
+        <references refid="_defines_8hpp_1ac389dbca21e58410d552988f3ec954c3" compoundref="_defines_8hpp" startline="8">GRID</references>
+        <references refid="_map_editor_8hpp_1a241aeeb764887ae5e3de58b98f04b16d" compoundref="_map_editor_8hpp" startline="21">WIDTH</references>
+        <referencedby refid="class_map_editor_1a5937c9b49b1e342c219f8a87d8e3dd7a" compoundref="_map_editor_8cpp" startline="47" endline="132">main_loop</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="144">
+        <label>MapEditor</label>
+        <link refid="class_map_editor"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/clemente/projects/Troll-Killers/MapEditor.hpp" line="28" column="1" bodyfile="/home/clemente/projects/Troll-Killers/MapEditor.hpp" bodystart="28" bodyend="48"/>
+    <listofallmembers>
+      <member refid="class_map_editor_1ae7cce73cc0624acd793a0202661d3bb5" prot="private" virt="non-virtual"><scope>MapEditor</scope><name>cursor</name></member>
+      <member refid="class_map_editor_1a728e526271b6cc42611a6db77b5bce40" prot="private" virt="non-virtual"><scope>MapEditor</scope><name>display</name></member>
+      <member refid="class_map_editor_1ac956a51214ea40b1423156efda3e6e11" prot="public" virt="non-virtual"><scope>MapEditor</scope><name>draw_grid</name></member>
+      <member refid="class_map_editor_1a894fd5966ee205cfc5b1d69e6f875983" prot="private" virt="non-virtual"><scope>MapEditor</scope><name>ev</name></member>
+      <member refid="class_map_editor_1ac52df6a3f75f12f6cbe1780fbca2a912" prot="private" virt="non-virtual"><scope>MapEditor</scope><name>event_queue</name></member>
+      <member refid="class_map_editor_1a1a987d2d62c33694f4d1548abec56804" prot="private" virt="non-virtual"><scope>MapEditor</scope><name>keyState</name></member>
+      <member refid="class_map_editor_1a5937c9b49b1e342c219f8a87d8e3dd7a" prot="public" virt="non-virtual"><scope>MapEditor</scope><name>main_loop</name></member>
+      <member refid="class_map_editor_1af3022740eae6dc1af8c044ea12bdedf9" prot="private" virt="non-virtual"><scope>MapEditor</scope><name>map</name></member>
+      <member refid="class_map_editor_1a293c325d0b53afcf3924f006cdf60363" prot="public" virt="non-virtual"><scope>MapEditor</scope><name>MapEditor</name></member>
+      <member refid="class_map_editor_1a6ed1bb5bdf94afdf132b252bdb6ee3a9" prot="private" virt="non-virtual"><scope>MapEditor</scope><name>mapX</name></member>
+      <member refid="class_map_editor_1a364b432643517a9742113d79a5d4b010" prot="private" virt="non-virtual"><scope>MapEditor</scope><name>mapY</name></member>
+      <member refid="class_map_editor_1a0071305ce232128f367234ee3ad7a408" prot="private" virt="non-virtual"><scope>MapEditor</scope><name>storeKeys</name></member>
+      <member refid="class_map_editor_1a322ca714d17965be67e74e186932098a" prot="private" virt="non-virtual"><scope>MapEditor</scope><name>timer</name></member>
+      <member refid="class_map_editor_1a46fe3ce9d636bc72461d00f4c2d6e594" prot="public" virt="non-virtual"><scope>MapEditor</scope><name>~MapEditor</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,194 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.10">
+  <compounddef id="_rifle_8cpp" kind="file" language="C++">
+    <compoundname>Rifle.cpp</compoundname>
+    <includes refid="_rifle_8hpp" local="yes">Rifle.hpp</includes>
+    <incdepgraph>
+      <node id="1826">
+        <label>IGObject.hpp</label>
+        <link refid="_i_g_object_8hpp"/>
+        <childnode refid="1822" relation="include">
+        </childnode>
+        <childnode refid="1827" relation="include">
+        </childnode>
+      </node>
+      <node id="1824">
+        <label>CProjectile.hpp</label>
+        <link refid="_c_projectile_8hpp"/>
+        <childnode refid="1825" relation="include">
+        </childnode>
+        <childnode refid="1818" relation="include">
+        </childnode>
+        <childnode refid="1832" relation="include">
+        </childnode>
+        <childnode refid="1831" relation="include">
+        </childnode>
+      </node>
+      <node id="1819">
+        <label>allegro5/allegro_image.h</label>
+      </node>
+      <node id="1828">
+        <label>stdint.h</label>
+      </node>
+      <node id="1823">
+        <label>cmath</label>
+      </node>
+      <node id="1822">
+        <label>Enums.hpp</label>
+        <link refid="_enums_8hpp"/>
+      </node>
+      <node id="1830">
+        <label>_object.hpp</label>
+        <link refid="__object_8hpp"/>
+        <childnode refid="1828" relation="include">
+        </childnode>
+      </node>
+      <node id="1836">
+        <label>string</label>
+      </node>
+      <node id="1832">
+        <label>allegro5/allegro_primitives.h</label>
+      </node>
+      <node id="1825">
+        <label>Projectile.hpp</label>
+        <link refid="_projectile_8hpp"/>
+        <childnode refid="1826" relation="include">
+        </childnode>
+        <childnode refid="1830" relation="include">
+        </childnode>
+        <childnode refid="1831" relation="include">
+        </childnode>
+      </node>
+      <node id="1818">
+        <label>allegro5/allegro.h</label>
+      </node>
+      <node id="1838">
+        <label>cstdio</label>
+      </node>
+      <node id="1827">
+        <label>_data.hpp</label>
+        <link refid="__data_8hpp"/>
+        <childnode refid="1828" relation="include">
+        </childnode>
+        <childnode refid="1829" relation="include">
+        </childnode>
+      </node>
+      <node id="1817">
+        <label>Weapons.hpp</label>
+        <link refid="_weapons_8hpp"/>
+        <childnode refid="1818" relation="include">
+        </childnode>
+        <childnode refid="1819" relation="include">
+        </childnode>
+        <childnode refid="1820" relation="include">
+        </childnode>
+        <childnode refid="1821" relation="include">
+        </childnode>
+        <childnode refid="1822" relation="include">
+        </childnode>
+        <childnode refid="1823" relation="include">
+        </childnode>
+        <childnode refid="1824" relation="include">
+        </childnode>
+        <childnode refid="1833" relation="include">
+        </childnode>
+        <childnode refid="1837" relation="include">
+        </childnode>
+        <childnode refid="1838" relation="include">
+        </childnode>
+      </node>
+      <node id="1833">
+        <label>Connection.hpp</label>
+        <link refid="_connection_8hpp"/>
+        <childnode refid="1834" relation="include">
+        </childnode>
+        <childnode refid="1835" relation="include">
+        </childnode>
+        <childnode refid="1836" relation="include">
+        </childnode>
+        <childnode refid="1829" relation="include">
+        </childnode>
+      </node>
+      <node id="1837">
+        <label>sstream</label>
+      </node>
+      <node id="1816">
+        <label>Rifle.hpp</label>
+        <link refid="_rifle_8hpp"/>
+        <childnode refid="1817" relation="include">
+        </childnode>
+        <childnode refid="1835" relation="include">
+        </childnode>
+      </node>
+      <node id="1831">
+        <label>math.h</label>
+      </node>
+      <node id="1835">
+        <label>iostream</label>
+      </node>
+      <node id="1821">
+        <label>Defines.hpp</label>
+        <link refid="_defines_8hpp"/>
+      </node>
+      <node id="1834">
+        <label>enet/enet.h</label>
+      </node>
+      <node id="1815">
+        <label>/home/clemente/projects/Troll-Killers/Rifle.cpp</label>
+        <link refid="Rifle.cpp"/>
+        <childnode refid="1816" relation="include">
+        </childnode>
+      </node>
+      <node id="1829">
+        <label>cstring</label>
+      </node>
+      <node id="1820">
+        <label>allegro5/allegro_audio.h</label>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_rifle_8hpp" kindref="compound">Rifle.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4" refid="class_rifle_1abdb60e74bb89239350fc5453860df073" refkind="member"><highlight class="normal"><ref refid="class_rifle_1abdb60e74bb89239350fc5453860df073" kindref="member">Rifle::Rifle</ref>(){</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_weapons_1a42908d6d74c3c4d95805caec5db1577d" kindref="member">type</ref>=(int16_t)<ref refid="_enums_8hpp_1ad9700e9db9d62004af4a04e4e13912c5a69c752dd5a2fd5c747410d696d62bae7" kindref="member">RIFLE</ref>;</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_weapons_1abb0e1d78129cbe503bda16a936415b19" kindref="member">dmg</ref>=50;</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_weapons_1af178acf007397b21ce562313850288bb" kindref="member">magSize</ref>=20;</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_weapons_1ae99ad33ed5484eb34aca31d2561a5c61" kindref="member">nProjectile</ref>=1;</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_weapons_1a9556c5663357877509683cd21da1fdf6" kindref="member">shootTimer</ref>=35;</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_weapons_1a7bbd3fe9d22471b851371204d1738f73" kindref="member">dispersion</ref>=0.0872665;<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//5º</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/>internalTimer=0;</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_weapons_1ad78bb71ca90aff95cd1ad5be59e7d6a6" kindref="member">gun</ref><sp/>=<sp/>al_load_bitmap(</highlight><highlight class="stringliteral">&quot;Weapons/rifle.png&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="class_weapons_1ad78bb71ca90aff95cd1ad5be59e7d6a6" kindref="member">gun</ref>==NULL){</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Rifle<sp/>image<sp/>problem!\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>exit(-1);</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="18"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20" refid="class_rifle_1a9cb3a65794113297417d2b96e7103784" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_rifle_1a9cb3a65794113297417d2b96e7103784" kindref="member">Rifle::shoot</ref>(ALLEGRO_MOUSE_STATE<sp/>&amp;mouseState,<ref refid="class_connection" kindref="compound">Connection</ref><sp/>*conn){</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/>internalTimer++;</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct__data" kindref="compound">_data</ref><sp/>senderBuffer;</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">((mouseState.buttons<sp/>&amp;<sp/>1)<sp/>&amp;&amp;<sp/>internalTimer&gt;<ref refid="class_weapons_1a9556c5663357877509683cd21da1fdf6" kindref="member">shootTimer</ref>){</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>internalTimer=0;</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i=0;i&lt;<ref refid="_defines_8hpp_1a740030c7f156fdc0eb8036a0fde589ef" kindref="member">SCREEN_PROJECTILES</ref>;i++)</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="class_weapons_1a8495428b263ca37532201254df911dcc" kindref="member">projectiles</ref>[i]==NULL){</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>deviation=<sp/>(float)rand()/(float)(RAND_MAX/<ref refid="class_weapons_1a7bbd3fe9d22471b851371204d1738f73" kindref="member">dispersion</ref>)*2<sp/>-<ref refid="class_weapons_1a7bbd3fe9d22471b851371204d1738f73" kindref="member">dispersion</ref>;</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::stringstream<sp/>stream;</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_weapons_1a8495428b263ca37532201254df911dcc" kindref="member">projectiles</ref>[i]=</highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_c_projectile" kindref="compound">CProjectile</ref>(<ref refid="class_weapons_1a1444e3909bfb67a090d91993b7c4f515" kindref="member">getWeaponTipX</ref>(),<ref refid="class_weapons_1aa49e0f3bc1a4d53ebb433f0ccabd0f47" kindref="member">getWeaponTipY</ref>(),20,60,<ref refid="class_weapons_1af3fd2ec73d872c5e4890453c8abdcdbb" kindref="member">angle</ref>+deviation);</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>stream<sp/>&lt;&lt;<sp/>i<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/><ref refid="class_weapons_1a1444e3909bfb67a090d91993b7c4f515" kindref="member">getWeaponTipX</ref>()<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<ref refid="class_weapons_1aa49e0f3bc1a4d53ebb433f0ccabd0f47" kindref="member">getWeaponTipY</ref>()<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>20<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>60<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/><ref refid="class_weapons_1af3fd2ec73d872c5e4890453c8abdcdbb" kindref="member">angle</ref>+deviation<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>senderBuffer.<ref refid="struct__data_1afa7c65aa86c5c877d1b23746b27f7ccd" kindref="member">type</ref>=<ref refid="_defines_8hpp_1abfd5abb7db0c7238febbc9197c051da7" kindref="member">PROTOCOL_NEW_SHOOT</ref><sp/>;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::sprintf(senderBuffer.<ref refid="struct__data_1abcb37fabf89158d59a0469a376d2d5f8" kindref="member">buffer</ref>,</highlight><highlight class="stringliteral">&quot;%s&quot;</highlight><highlight class="normal">,stream.str().c_str());</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>conn-&gt;<ref refid="class_connection_1a3dda26c4c789d0f5e54fb50cae606022" kindref="member">send_packet_reliable</ref>(&amp;senderBuffer,strlen(senderBuffer.<ref refid="struct__data_1abcb37fabf89158d59a0469a376d2d5f8" kindref="member">buffer</ref>)+2,0);</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="37"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="/home/clemente/projects/Troll-Killers/Rifle.cpp"/>
+  </compounddef>
+</doxygen>

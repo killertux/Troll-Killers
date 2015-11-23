@@ -1,0 +1,100 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.10">
+  <compounddef id="_s_character_8cpp" kind="file" language="C++">
+    <compoundname>SCharacter.cpp</compoundname>
+    <includes refid="_s_character_8hpp" local="yes">SCharacter.hpp</includes>
+    <incdepgraph>
+      <node id="1874">
+        <label>IGObject.hpp</label>
+        <link refid="_i_g_object_8hpp"/>
+        <childnode refid="1875" relation="include">
+        </childnode>
+        <childnode refid="1876" relation="include">
+        </childnode>
+      </node>
+      <node id="1877">
+        <label>stdint.h</label>
+      </node>
+      <node id="1875">
+        <label>Enums.hpp</label>
+        <link refid="_enums_8hpp"/>
+      </node>
+      <node id="1879">
+        <label>_object.hpp</label>
+        <link refid="__object_8hpp"/>
+        <childnode refid="1877" relation="include">
+        </childnode>
+      </node>
+      <node id="1872">
+        <label>/home/clemente/projects/Troll-Killers/SCharacter.cpp</label>
+        <link refid="SCharacter.cpp"/>
+        <childnode refid="1873" relation="include">
+        </childnode>
+      </node>
+      <node id="1876">
+        <label>_data.hpp</label>
+        <link refid="__data_8hpp"/>
+        <childnode refid="1877" relation="include">
+        </childnode>
+        <childnode refid="1878" relation="include">
+        </childnode>
+      </node>
+      <node id="1873">
+        <label>SCharacter.hpp</label>
+        <link refid="_s_character_8hpp"/>
+        <childnode refid="1874" relation="include">
+        </childnode>
+        <childnode refid="1875" relation="include">
+        </childnode>
+        <childnode refid="1879" relation="include">
+        </childnode>
+        <childnode refid="1876" relation="include">
+        </childnode>
+        <childnode refid="1880" relation="include">
+        </childnode>
+        <childnode refid="1881" relation="include">
+        </childnode>
+      </node>
+      <node id="1880">
+        <label>iostream</label>
+      </node>
+      <node id="1881">
+        <label>Defines.hpp</label>
+        <link refid="_defines_8hpp"/>
+      </node>
+      <node id="1878">
+        <label>cstring</label>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_s_character_8hpp" kindref="compound">SCharacter.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//A<sp/>lot<sp/>of<sp/>work<sp/>to<sp/>do</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5" refid="class_s_character_1aaa56aee926cdedadae1db5335f047cd1" refkind="member"><highlight class="normal"><ref refid="class_s_character_1aaa56aee926cdedadae1db5335f047cd1" kindref="member">SCharacter::SCharacter</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">){</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"><sp/><sp/><sp/><sp/>velocity=<ref refid="_defines_8hpp_1a05710e80db10fe76fa57f629ca32b7e5" kindref="member">PLAYER_VELOCITY</ref>;</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">=id;</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/>dir=(int16_t)<ref refid="_enums_8hpp_1a224b9163917ac32fc95a60d8c1eec3aaa851e6f177be6e7d7bf0bc7408e932f1b" kindref="member">STOPED</ref>;</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/>ready=</highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="10"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="11" refid="class_s_character_1a4537343129f515509139a762f4d04390" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_s_character_1a4537343129f515509139a762f4d04390" kindref="member">SCharacter::make_ready</ref>(){</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/>ready=</highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="13"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16" refid="class_s_character_1aafb443599efbd749337eb0190fc5eabe" refkind="member"><highlight class="normal"><ref refid="class_s_character_1aafb443599efbd749337eb0190fc5eabe" kindref="member">SCharacter::~SCharacter</ref>(){</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20" refid="class_s_character_1ab99fa7f23b8c7c9ca45d78d5e9bb8742" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_s_character_1ab99fa7f23b8c7c9ca45d78d5e9bb8742" kindref="member">SCharacter::serialize</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>buffer){</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/home/clemente/projects/Troll-Killers/SCharacter.cpp"/>
+  </compounddef>
+</doxygen>

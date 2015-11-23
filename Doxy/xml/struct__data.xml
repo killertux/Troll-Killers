@@ -1,0 +1,60 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.10">
+  <compounddef id="struct__data" kind="struct" language="C++" prot="public">
+    <compoundname>_data</compoundname>
+    <includes refid="__data_8hpp" local="no">_data.hpp</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct__data_1afa7c65aa86c5c877d1b23746b27f7ccd" prot="public" static="no" mutable="no">
+        <type>int8_t</type>
+        <definition>int8_t _data::type</definition>
+        <argsstring></argsstring>
+        <name>type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/_data.hpp" line="11" column="1" bodyfile="/home/clemente/projects/Troll-Killers/_data.hpp" bodystart="11" bodyend="-1"/>
+        <referencedby refid="class_client_1a9fbb2f61b005ee6ab3f73b9f449d95eb" compoundref="_client_8cpp" startline="64" endline="264">Client::main_loop</referencedby>
+        <referencedby refid="class_client_1abccb976632db0b3b5df925875b80b2e7" compoundref="_client_8cpp" startline="266" endline="320">Client::connect</referencedby>
+        <referencedby refid="class_pistol_1a0e99963f771cc143c32a0c72158e74f1" compoundref="_pistol_8cpp" startline="20" endline="38">Pistol::shoot</referencedby>
+        <referencedby refid="class_rifle_1a9cb3a65794113297417d2b96e7103784" compoundref="_rifle_8cpp" startline="20" endline="37">Rifle::shoot</referencedby>
+        <referencedby refid="class_server_1a47beb8398c78f8ce814d8f3961880add" compoundref="_server_8cpp" startline="33" endline="68">Server::main_loop</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct__data_1abcb37fabf89158d59a0469a376d2d5f8" prot="public" static="no" mutable="no">
+        <type>char</type>
+        <definition>char _data::buffer[BUFFER_SIZE]</definition>
+        <argsstring>[BUFFER_SIZE]</argsstring>
+        <name>buffer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/_data.hpp" line="12" column="1" bodyfile="/home/clemente/projects/Troll-Killers/_data.hpp" bodystart="12" bodyend="-1"/>
+        <referencedby refid="class_client_1a9fbb2f61b005ee6ab3f73b9f449d95eb" compoundref="_client_8cpp" startline="64" endline="264">Client::main_loop</referencedby>
+        <referencedby refid="class_client_1abccb976632db0b3b5df925875b80b2e7" compoundref="_client_8cpp" startline="266" endline="320">Client::connect</referencedby>
+        <referencedby refid="class_pistol_1a0e99963f771cc143c32a0c72158e74f1" compoundref="_pistol_8cpp" startline="20" endline="38">Pistol::shoot</referencedby>
+        <referencedby refid="class_rifle_1a9cb3a65794113297417d2b96e7103784" compoundref="_rifle_8cpp" startline="20" endline="37">Rifle::shoot</referencedby>
+        <referencedby refid="class_server_1a47beb8398c78f8ce814d8f3961880add" compoundref="_server_8cpp" startline="33" endline="68">Server::main_loop</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="97">
+        <label>_data</label>
+        <link refid="struct__data"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/clemente/projects/Troll-Killers/_data.hpp" line="10" column="1" bodyfile="/home/clemente/projects/Troll-Killers/_data.hpp" bodystart="10" bodyend="13"/>
+    <listofallmembers>
+      <member refid="struct__data_1abcb37fabf89158d59a0469a376d2d5f8" prot="public" virt="non-virtual"><scope>_data</scope><name>buffer</name></member>
+      <member refid="struct__data_1afa7c65aa86c5c877d1b23746b27f7ccd" prot="public" virt="non-virtual"><scope>_data</scope><name>type</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

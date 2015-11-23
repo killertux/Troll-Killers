@@ -1,0 +1,162 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.10">
+  <compounddef id="class_pistol" kind="class" language="C++" prot="public">
+    <compoundname>Pistol</compoundname>
+    <basecompoundref refid="class_weapons" prot="public" virt="non-virtual">Weapons</basecompoundref>
+    <includes refid="_pistol_8hpp" local="no">Pistol.hpp</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_pistol_1abf35f0254d82b6c7e9913d67dccaf314" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Pistol::shooted</definition>
+        <argsstring></argsstring>
+        <name>shooted</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/Pistol.hpp" line="9" column="1" bodyfile="/home/clemente/projects/Troll-Killers/Pistol.hpp" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_pistol_1a0715c5243c875aeb8d8114954a463b47" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Pistol::Pistol</definition>
+        <argsstring>()</argsstring>
+        <name>Pistol</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/Pistol.hpp" line="11" column="1" bodyfile="/home/clemente/projects/Troll-Killers/Pistol.cpp" bodystart="3" bodyend="18"/>
+        <references refid="class_weapons_1a42908d6d74c3c4d95805caec5db1577d" compoundref="_weapons_8hpp" startline="20">Weapons::type</references>
+        <references refid="_enums_8hpp_1ad9700e9db9d62004af4a04e4e13912c5aa270a057ccaf7cd6cb766319015e8b3d" compoundref="_enums_8hpp" startline="30">PISTOL</references>
+        <references refid="class_weapons_1abb0e1d78129cbe503bda16a936415b19" compoundref="_weapons_8hpp" startline="23">Weapons::dmg</references>
+        <references refid="class_weapons_1af178acf007397b21ce562313850288bb" compoundref="_weapons_8hpp" startline="24">Weapons::magSize</references>
+        <references refid="class_weapons_1ae99ad33ed5484eb34aca31d2561a5c61" compoundref="_weapons_8hpp" startline="25">Weapons::nProjectile</references>
+        <references refid="class_weapons_1a9556c5663357877509683cd21da1fdf6" compoundref="_weapons_8hpp" startline="26">Weapons::shootTimer</references>
+        <references refid="class_weapons_1a7bbd3fe9d22471b851371204d1738f73" compoundref="_weapons_8hpp" startline="27">Weapons::dispersion</references>
+        <references refid="class_weapons_1ad78bb71ca90aff95cd1ad5be59e7d6a6" compoundref="_weapons_8hpp" startline="17">Weapons::gun</references>
+        <references refid="class_weapons_1a7287128c84711719a2d6afb85bf512e5" compoundref="_weapons_8hpp" startline="18">Weapons::sound</references>
+      </memberdef>
+      <memberdef kind="function" id="class_pistol_1a0e99963f771cc143c32a0c72158e74f1" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void Pistol::shoot</definition>
+        <argsstring>(ALLEGRO_MOUSE_STATE &amp;mouseState, Connection *conn)</argsstring>
+        <name>shoot</name>
+        <reimplements refid="class_weapons_1a51990dae3d666006b2154cf501758936">shoot</reimplements>
+        <param>
+          <type>ALLEGRO_MOUSE_STATE &amp;</type>
+          <declname>mouseState</declname>
+        </param>
+        <param>
+          <type><ref refid="class_connection" kindref="compound">Connection</ref> *</type>
+          <declname>conn</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/clemente/projects/Troll-Killers/Pistol.hpp" line="12" column="1" bodyfile="/home/clemente/projects/Troll-Killers/Pistol.cpp" bodystart="20" bodyend="38"/>
+        <references refid="class_weapons_1a7287128c84711719a2d6afb85bf512e5" compoundref="_weapons_8hpp" startline="18">Weapons::sound</references>
+        <references refid="_defines_8hpp_1a740030c7f156fdc0eb8036a0fde589ef" compoundref="_defines_8hpp" startline="11">SCREEN_PROJECTILES</references>
+        <references refid="class_weapons_1a8495428b263ca37532201254df911dcc" compoundref="_weapons_8hpp" startline="29">Weapons::projectiles</references>
+        <references refid="class_weapons_1a7bbd3fe9d22471b851371204d1738f73" compoundref="_weapons_8hpp" startline="27">Weapons::dispersion</references>
+        <references refid="class_weapons_1a1444e3909bfb67a090d91993b7c4f515" compoundref="_weapons_8cpp" startline="37" endline="43">Weapons::getWeaponTipX</references>
+        <references refid="class_weapons_1aa49e0f3bc1a4d53ebb433f0ccabd0f47" compoundref="_weapons_8cpp" startline="44" endline="50">Weapons::getWeaponTipY</references>
+        <references refid="class_weapons_1af3fd2ec73d872c5e4890453c8abdcdbb" compoundref="_weapons_8hpp" startline="22">Weapons::angle</references>
+        <references refid="struct__data_1afa7c65aa86c5c877d1b23746b27f7ccd" compoundref="__data_8hpp" startline="11">_data::type</references>
+        <references refid="_defines_8hpp_1abfd5abb7db0c7238febbc9197c051da7" compoundref="_defines_8hpp" startline="21">PROTOCOL_NEW_SHOOT</references>
+        <references refid="struct__data_1abcb37fabf89158d59a0469a376d2d5f8" compoundref="__data_8hpp" startline="12">_data::buffer</references>
+        <references refid="class_connection_1a3dda26c4c789d0f5e54fb50cae606022" compoundref="_connection_8cpp" startline="37" endline="43">Connection::send_packet_reliable</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="156">
+        <label>Weapons</label>
+        <link refid="class_weapons"/>
+      </node>
+      <node id="155">
+        <label>Pistol</label>
+        <link refid="class_pistol"/>
+        <childnode refid="156" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="160">
+        <label>Projectile</label>
+        <link refid="class_projectile"/>
+        <childnode refid="161" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="158">
+        <label>Weapons</label>
+        <link refid="class_weapons"/>
+        <childnode refid="159" relation="usage">
+          <edgelabel>#projectiles</edgelabel>
+        </childnode>
+      </node>
+      <node id="161">
+        <label>IGObject</label>
+        <link refid="class_i_g_object"/>
+      </node>
+      <node id="159">
+        <label>CProjectile</label>
+        <link refid="class_c_projectile"/>
+        <childnode refid="160" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="157">
+        <label>Pistol</label>
+        <link refid="class_pistol"/>
+        <childnode refid="158" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/clemente/projects/Troll-Killers/Pistol.hpp" line="8" column="1" bodyfile="/home/clemente/projects/Troll-Killers/Pistol.hpp" bodystart="8" bodyend="13"/>
+    <listofallmembers>
+      <member refid="class_weapons_1af3fd2ec73d872c5e4890453c8abdcdbb" prot="protected" virt="non-virtual"><scope>Pistol</scope><name>angle</name></member>
+      <member refid="class_weapons_1ad5123e66ada6a06e3260d4e4fd6fbf31" prot="public" virt="non-virtual"><scope>Pistol</scope><name>calculateAngle</name></member>
+      <member refid="class_weapons_1a7bbd3fe9d22471b851371204d1738f73" prot="protected" virt="non-virtual"><scope>Pistol</scope><name>dispersion</name></member>
+      <member refid="class_weapons_1abb0e1d78129cbe503bda16a936415b19" prot="protected" virt="non-virtual"><scope>Pistol</scope><name>dmg</name></member>
+      <member refid="class_weapons_1af9d9f25b33b8d7e6d649c0325bb2db9f" prot="public" virt="virtual"><scope>Pistol</scope><name>draw</name></member>
+      <member refid="class_weapons_1ac408dbb1f31e53b844c07f16206e40f8" prot="public" virt="non-virtual"><scope>Pistol</scope><name>getAngle</name></member>
+      <member refid="class_weapons_1a077953983902a53d6346d8f71a769a7d" prot="public" virt="non-virtual"><scope>Pistol</scope><name>getDmg</name></member>
+      <member refid="class_weapons_1ab424ac199565201128616e5a0aa9ff1f" prot="public" virt="non-virtual"><scope>Pistol</scope><name>getProjectiles</name></member>
+      <member refid="class_weapons_1a1444e3909bfb67a090d91993b7c4f515" prot="public" virt="non-virtual"><scope>Pistol</scope><name>getWeaponTipX</name></member>
+      <member refid="class_weapons_1aa49e0f3bc1a4d53ebb433f0ccabd0f47" prot="public" virt="non-virtual"><scope>Pistol</scope><name>getWeaponTipY</name></member>
+      <member refid="class_weapons_1a878503b58548a7d1335845395f773969" prot="public" virt="non-virtual"><scope>Pistol</scope><name>getX</name></member>
+      <member refid="class_weapons_1a20570863ba58ad562fdef6c95af794ee" prot="public" virt="non-virtual"><scope>Pistol</scope><name>getY</name></member>
+      <member refid="class_weapons_1ad78bb71ca90aff95cd1ad5be59e7d6a6" prot="protected" virt="non-virtual"><scope>Pistol</scope><name>gun</name></member>
+      <member refid="class_weapons_1af178acf007397b21ce562313850288bb" prot="protected" virt="non-virtual"><scope>Pistol</scope><name>magSize</name></member>
+      <member refid="class_weapons_1ae99ad33ed5484eb34aca31d2561a5c61" prot="protected" virt="non-virtual"><scope>Pistol</scope><name>nProjectile</name></member>
+      <member refid="class_pistol_1a0715c5243c875aeb8d8114954a463b47" prot="public" virt="non-virtual"><scope>Pistol</scope><name>Pistol</name></member>
+      <member refid="class_weapons_1a0fdaf9f3dee1b5684c993c7304c213b8" prot="public" virt="non-virtual"><scope>Pistol</scope><name>play_sound</name></member>
+      <member refid="class_weapons_1a8495428b263ca37532201254df911dcc" prot="protected" virt="non-virtual"><scope>Pistol</scope><name>projectiles</name></member>
+      <member refid="class_weapons_1a51aba0764e4873f32acc1f627328346f" prot="protected" virt="non-virtual"><scope>Pistol</scope><name>radius</name></member>
+      <member refid="class_weapons_1a6dd8f827ee1b9115690fecb2005c8c8d" prot="public" virt="non-virtual"><scope>Pistol</scope><name>setAngle</name></member>
+      <member refid="class_weapons_1a7c8697cb11fa00b90882d14eb8e586df" prot="public" virt="non-virtual"><scope>Pistol</scope><name>setRadius</name></member>
+      <member refid="class_weapons_1a7ea90e9d30c37ce8fa7258405a944d77" prot="public" virt="non-virtual"><scope>Pistol</scope><name>setX</name></member>
+      <member refid="class_weapons_1a0d95e4fd724cb6c6336ec5d7eaf57842" prot="public" virt="non-virtual"><scope>Pistol</scope><name>setY</name></member>
+      <member refid="class_pistol_1a0e99963f771cc143c32a0c72158e74f1" prot="public" virt="virtual"><scope>Pistol</scope><name>shoot</name></member>
+      <member refid="class_pistol_1abf35f0254d82b6c7e9913d67dccaf314" prot="private" virt="non-virtual"><scope>Pistol</scope><name>shooted</name></member>
+      <member refid="class_weapons_1a9556c5663357877509683cd21da1fdf6" prot="protected" virt="non-virtual"><scope>Pistol</scope><name>shootTimer</name></member>
+      <member refid="class_weapons_1a7287128c84711719a2d6afb85bf512e5" prot="protected" virt="non-virtual"><scope>Pistol</scope><name>sound</name></member>
+      <member refid="class_weapons_1a42908d6d74c3c4d95805caec5db1577d" prot="protected" virt="non-virtual"><scope>Pistol</scope><name>type</name></member>
+      <member refid="class_weapons_1a09cf8402e87ff45026bc4f8abea316d7" prot="public" virt="non-virtual"><scope>Pistol</scope><name>Weapons</name></member>
+      <member refid="class_weapons_1af9bcea79386a27736973ae767ef8a408" prot="protected" virt="non-virtual"><scope>Pistol</scope><name>x</name></member>
+      <member refid="class_weapons_1a35ff8124c657cb744f6d2731b1ec6e83" prot="protected" virt="non-virtual"><scope>Pistol</scope><name>y</name></member>
+      <member refid="class_weapons_1af1796ac8fd6145e5281bf35b1755a512" prot="public" virt="virtual"><scope>Pistol</scope><name>~Weapons</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

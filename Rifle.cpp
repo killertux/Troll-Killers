@@ -15,6 +15,7 @@ Rifle::Rifle(){
 		std::cout << "Rifle image problem!\n";
 		exit(-1);
 	}
+	sound= al_load_sample("Sounds/rifle.ogg");
 }
 
 void Rifle::shoot(ALLEGRO_MOUSE_STATE &mouseState,Connection *conn){
@@ -22,6 +23,7 @@ void Rifle::shoot(ALLEGRO_MOUSE_STATE &mouseState,Connection *conn){
 	_data senderBuffer;
 	if((mouseState.buttons & 1) && internalTimer>shootTimer){
 		internalTimer=0;
+		al_play_sample(sound,1.0,0.0,1.0,ALLEGRO_PLAYMODE_ONCE,NULL);
 		for(int i=0;i<SCREEN_PROJECTILES;i++)
 			if(projectiles[i]==NULL){
 				float deviation= (float)rand()/(float)(RAND_MAX/dispersion)*2 -dispersion;

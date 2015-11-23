@@ -131,8 +131,11 @@ void Client::main_loop(){
 					delete projectiles[bulletId];
 					projectiles[bulletId]=NULL;
 					players[playerId]->damage(dmg);
-					if(players[playerId]->getLife()<=0)
+					if(players[playerId]->getLife()<=0){
+						players[id]->sound_victory(players[myId]->getX(),players[myId]->getY());
 						players[playerId]->die();
+					}
+					players[playerId]->sound_hit(players[myId]->getX(),players[myId]->getY());
 				}
 			}
 			else if(conn.event_type_disconnect())
@@ -208,8 +211,11 @@ void Client::main_loop(){
 											std::sprintf(senderBuffer.buffer,"%d %d %d ",i,j,players[c]->getWeaponDmg());
 											conn.send_packet_reliable(&senderBuffer,strlen(senderBuffer.buffer)+2,0);
 											players[j]->damage(players[c]->getWeaponDmg());
-											if(players[j]->getLife()<=0)
+											players[j]->sound_hit(players[myId]->getX(),players[myId]->getY());
+											if(players[j]->getLife()<=0){
 												players[j]->die();
+												players[myId]->sound_victory(players[myId]->getX(),players[myId]->getY());
+											}
 										}
 										delete projectiles[i];
 										projectiles[i]=NULL;
