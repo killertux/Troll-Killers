@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="Client" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/Client" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/Client" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add directory="C:/Users/Clemente/Documents/GitHub/Troll-Killers/include" />
+			<Add directory="C:/Program Files (x86)/CodeBlocks/MinGW/allegro-5.0.10-mingw-4.7.0/include" />
+		</Compiler>
+		<Linker>
+			<Add library="C:\Program Files (x86)\CodeBlocks\MinGW\lib\libgdi32.a" />
+			<Add library="C:\Program Files (x86)\CodeBlocks\MinGW\allegro-5.0.10-mingw-4.7.0\lib\liballegro-5.0.10-monolith-mt.a" />
+			<Add library="C:\Users\Clemente\Downloads\enet-1.3.13.tar\enet-1.3.13\bin\Release\libenet.a" />
+		</Linker>
+		<Unit filename="CCharacter.cpp" />
+		<Unit filename="CCharacter.hpp" />
+		<Unit filename="CMap.cpp" />
+		<Unit filename="CMap.hpp" />
+		<Unit filename="CProjectile.cpp" />
+		<Unit filename="CProjectile.hpp" />
+		<Unit filename="Client.cbp" />
+		<Unit filename="Client.cpp" />
+		<Unit filename="Client.hpp" />
+		<Unit filename="Configuration.cpp" />
+		<Unit filename="Configuration.hpp" />
+		<Unit filename="Connection.cpp" />
+		<Unit filename="Connection.hpp" />
+		<Unit filename="Defines.hpp" />
+		<Unit filename="Enums.hpp" />
+		<Unit filename="IGObject.hpp" />
+		<Unit filename="Map.cpp" />
+		<Unit filename="Map.hpp" />
+		<Unit filename="Menu.cpp" />
+		<Unit filename="Menu.hpp" />
+		<Unit filename="MenuManager.cpp" />
+		<Unit filename="MenuManager.hpp" />
+		<Unit filename="Pistol.cpp" />
+		<Unit filename="Pistol.hpp" />
+		<Unit filename="Projectile.cpp" />
+		<Unit filename="Projectile.hpp" />
+		<Unit filename="Rifle.cpp" />
+		<Unit filename="Rifle.hpp" />
+		<Unit filename="SCharacter.cpp" />
+		<Unit filename="SCharacter.hpp" />
+		<Unit filename="Weapons.cpp" />
+		<Unit filename="Weapons.hpp" />
+		<Unit filename="_data.hpp" />
+		<Unit filename="_object.hpp" />
+		<Unit filename="client.cfg" />
+		<Unit filename="mainClient.cpp" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

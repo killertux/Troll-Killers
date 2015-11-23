@@ -32,12 +32,12 @@ private:
 	ALLEGRO_TIMER *timer;
 	ALLEGRO_KEYBOARD_STATE keyState;
 	ALLEGRO_EVENT ev;
-	
+
 	Cursor *cursor;
 	bool storeKeys[ALLEGRO_KEY_MAX];
-	
+
 	int mapX,mapY;
-	
+
 	CMap *map;
 public:
 	MapEditor();

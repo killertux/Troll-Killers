@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="Server" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/Server" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/Server" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add directory="include" />
+			<Add directory="C:/Users/Clemente/Downloads/boost_1_59_0/boost_1_59_0" />
+		</Compiler>
+		<Linker>
+			<Add library="C:\Users\Clemente\Downloads\boost_1_59_0\boost_1_59_0\stage\lib\libboost_system-mgw48-mt-d-1_59.a" />
+			<Add library="C:\Users\Clemente\Downloads\boost_1_59_0\boost_1_59_0\stage\lib\libboost_thread-mgw48-mt-d-1_59.a" />
+			<Add library="C:\Users\Clemente\Downloads\enet-1.3.13.tar\enet-1.3.13\bin\Release\libenet.a" />
+		</Linker>
+		<Unit filename="Configuration.cpp" />
+		<Unit filename="Configuration.hpp" />
+		<Unit filename="Connection.cpp" />
+		<Unit filename="Connection.hpp" />
+		<Unit filename="Defines.hpp" />
+		<Unit filename="Enums.hpp" />
+		<Unit filename="IGObject.hpp" />
+		<Unit filename="Map.cpp" />
+		<Unit filename="Map.hpp" />
+		<Unit filename="SCharacter.cpp" />
+		<Unit filename="SCharacter.hpp" />
+		<Unit filename="SMap.cpp" />
+		<Unit filename="SMap.hpp" />
+		<Unit filename="Server.cpp" />
+		<Unit filename="Server.hpp" />
+		<Unit filename="_data.hpp" />
+		<Unit filename="_object.hpp" />
+		<Unit filename="mainServer.cpp" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

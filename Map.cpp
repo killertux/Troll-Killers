@@ -69,11 +69,11 @@ int Map::serialize(char* buffer){
 	std::stringstream stream;
 	std::string tmp;
 	stream << type << " "<<length << " "<<width << " "<<max_objects<< " " << n_object;
-	sprintf(buffer,"%s%s",buffer,stream.str().c_str());
+	sprintf(buffer,"%s",stream.str().c_str());
 	stream.str(std::string());
 	for(int i=0;i<n_object;i++){
-		stream << objects[i].type << " " << objects[i].x<< " " << objects[i].y << " "<< objects[i].radius 
-		<< " "<< objects[i].length << " "<< objects[i].width<< " " << objects[i].r << " "<< objects[i].g 
+		stream << objects[i].type << " " << objects[i].x<< " " << objects[i].y << " "<< objects[i].radius
+		<< " "<< objects[i].length << " "<< objects[i].width<< " " << objects[i].r << " "<< objects[i].g
 		<< " "<< objects[i].b << " ";
 		sprintf(buffer,"%s%s",buffer,stream.str().c_str());
 		stream.str(std::string());

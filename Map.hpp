@@ -13,7 +13,7 @@
 #include "_data.hpp"
 #include <sstream>
 #include "Defines.hpp"
-#include <arpa/inet.h>
+//#include <arpa/inet.h>
 
 #include <fstream>
 
@@ -43,7 +43,7 @@ public:
 	virtual void deserialize(char *buffer);
 	_object *getObjects(){return objects;}
 
-	std::string getName(){return name;}
+	//std::string getName(){return name;}
 	~Map();
 };
 

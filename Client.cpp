@@ -8,7 +8,7 @@ Client::Client(){
 	al_init_image_addon();
 	al_install_keyboard();
 	al_install_mouse();
-	
+
 	config.config_load("client.cfg");
 	config.config_get(buffer,"Port");
 	port=strtol(buffer,NULL,0);
@@ -21,24 +21,24 @@ Client::Client(){
 	int fullscreen;
 	config.config_get(buffer,"Fullscreen");
 	fullscreen=strtol(buffer,NULL,0);
-	
+
 	if(fullscreen)
 		al_set_new_display_flags(ALLEGRO_FULLSCREEN);
-	
-	
+
+
 	display=al_create_display(res_x,res_y);
 	event_queue=al_create_event_queue();
 	timer=al_create_timer(1/FPS);
-	
+
 	al_register_event_source(event_queue,al_get_display_event_source(display));
 	al_register_event_source(event_queue,al_get_keyboard_event_source());
 	al_register_event_source(event_queue,al_get_mouse_event_source());
 	al_register_event_source(event_queue,al_get_timer_event_source(timer));
-	
+
 	//al_hide_mouse_cursor(display);
-	
+
 	maxClients=0;
-	
+
 	for(int i=0;i<ALLEGRO_KEY_MAX;i++)
 		storeKeys[i]=false;
 	mapX=mapY=0;
@@ -57,7 +57,7 @@ Client::~Client(){
 void Client::main_loop(){
 	bool done=false;
 	bool redraw=false;
-	
+
 	al_clear_to_color(al_map_rgb(255,255,255));
 	al_start_timer(timer);
 	while(!done){
@@ -130,7 +130,7 @@ void Client::main_loop(){
 			else if(conn.event_type_disconnect())
 				exit(-1);
 		}
-		
+
 		if(ev.type == ALLEGRO_EVENT_DISPLAY_CLOSE)
 			done=true;
 		else if(ev.type == ALLEGRO_EVENT_KEY_DOWN){
@@ -152,7 +152,7 @@ void Client::main_loop(){
 				players[myId]->setDir(RIGHT);
 			else
 				players[myId]->setDir(STOPED);
-			
+
 			mapX=players[myId]->getX()-res_x/2;
 			mapY=players[myId]->getY()-res_y/2;
 			for(int i=0;i<maxClients;i++)
@@ -160,13 +160,13 @@ void Client::main_loop(){
 					players[i]->move();
 				else if (moved[i])				// So it doesn't move to times
 					moved[i]=false;
-			
+
 			players[myId]->colision(map.getObjects(),map.getNobject());
-			
+
 			al_get_mouse_state(&mouseState);
 			players[myId]->weaponAngle(mapX,mapY,mouseState.x,mouseState.y);
-			
-			//Colision of the bullets 
+
+			//Colision of the bullets
 			for(int c=0;c<maxClients;c++)
 				if(players[c]!=NULL){
 				Projectile **projectiles=players[c]->getProjectiles();
@@ -212,8 +212,8 @@ void Client::main_loop(){
 						}
 					}
 				}
-			
-			
+
+
 			//Move all bullets;
 			for(int j=0;j<maxClients;j++){
 				if(players[j]!=NULL){
@@ -224,14 +224,14 @@ void Client::main_loop(){
 				}
 			}
 			players[myId]->shoot(mouseState,&conn);
-			
+
 			senderBuffer.type=PROTOCOL_CHARACTER;
 			players[myId]->serialize(senderBuffer.buffer);
 			conn.send_packet_unreliable(&senderBuffer,strlen(senderBuffer.buffer)+2,0);
 
 			redraw=true;
 		}
-		
+
 		if(redraw && al_is_event_queue_empty(event_queue)){
 			map.draw_map(mapX,mapY);
 			for(int i=0;i<maxClients;i++)
@@ -246,18 +246,17 @@ void Client::main_loop(){
 					conn.send_packet_reliable(&senderBuffer,strlen(senderBuffer.buffer)+2,0);
 				}
 			}
-			
+
 			/*	else if (players[i]!=NULL)
 					players[i]->draw(0,0);*/
 			al_flip_display();
 		}
-		
+
 	}
 }
 
 bool Client::connect(){
 	char *buffer;
-	int v=0;
 	bool bPeers,bMap,bSpawn;
 	bPeers=bMap=bSpawn=false;
 	if(!conn.create_client(ip,port))

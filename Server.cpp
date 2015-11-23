@@ -8,16 +8,14 @@ Server::Server(){
 	config.config_get(buffer,"Users");
 	users=strtol(buffer,NULL,0);
 	config.config_get(buffer,"Map");
-	
-	std::cout << buffer <<std::endl;
-	
+
 	std::cout << "Creating the server...\n";
 	conn.create_server(port,users);
 	std::cout << "Server created! \nListening to the port " << port << std::endl;
 	players = new SCharacter*[users];
 	for(int i=0;i<users;i++)
 		players[i]=NULL;
-	
+
 	if(!map.load_map(buffer)){
 		std::cout << "Error loading the map\n";
 		exit(0);
@@ -43,7 +41,7 @@ void Server::main_loop(){
 			newMu.lock();
 			if(conn.event_type_receive()){
 				newMu.unlock();
-				std::sprintf(msgTmp.buffer,"%s",conn.getPacketData());
+				std::sprintf(msgTmp.buffer,"%s",(char*)conn.getPacketData());
 				msgTmp.id=conn.getPeerId();
 				msgs.push(msgTmp);
 			} else newMu.unlock();
@@ -81,17 +79,17 @@ void Server::new_user(int id){
 	senderBuffer.type=PROTOCOL_N_PEERS;
 	senderBuffer.buffer[0]=users & 0xff;
 	senderBuffer.buffer[1]=id & 0xff;
-	
+
 	dataMu.lock();
 	conn.send_packet_reliable(&senderBuffer,sizeof(senderBuffer),id);
 	players[id]=new SCharacter(id);
 	dataMu.unlock();
-	
+
 	std::cout << "Waiting for his gun..\n";
-	
-	
+
+
 	while(!done){
-		dataMu.lock();		
+		dataMu.lock();
 		//while(msgs.size()>0){
 		if(msgs.size()>0){
 			msgTmp=msgs.top();
@@ -100,7 +98,7 @@ void Server::new_user(int id){
 				int16_t myWeapon;
 				stream <<((_data*)msgTmp.buffer)->buffer;
 				stream >> myWeapon;
-				
+
 				players[id]->setMyWeapon((Weapon)myWeapon);
 				msgs.pop();
 				done=true;
@@ -108,16 +106,17 @@ void Server::new_user(int id){
 		}
 		dataMu.unlock();
 	}
-	
-	
+
+
 	std::cout << "Sending the map...\n";
 	size=map.serialize(buffer);
 	//std::cout << size << " - " << buffer << std::endl;
-	
+
 	dataMu.lock();
 	conn.send_packet_reliable(buffer,size,id);
+	conn.send_flush();
 	dataMu.unlock();
-	
+
 	//Get the spawn area
 	std::cout << "Sending the spawn...\n";
 	_object* spawn;
@@ -141,7 +140,7 @@ void Server::new_user(int id){
 					done=true;
 				}
 			}
-			
+
 		}
 	} else {
 		bool done=false;
@@ -163,7 +162,7 @@ void Server::new_user(int id){
 					done=true;
 				}
 			}
-			
+
 		}
 	}
 	//send to everyone else that I exist;
@@ -171,30 +170,30 @@ void Server::new_user(int id){
 	senderBuffer.type=PROTOCOL_NEW_USER;
 	stream << (int16_t)id << " "  << spawn->x << " " << spawn->y<< " "<<(int16_t)players[id]->getTeam()<<" "<<players[id]->getMyWeapon()<<" ";
 	std::sprintf(senderBuffer.buffer,"%s",stream.str().c_str());
-	
+
 	if(players[id]->getMyWeapon()==(int16_t)PISTOL)
 		std::cout << "Pistol!\n";
 	if(players[id]->getMyWeapon()==(int16_t)RIFLE)
 		std::cout << "Rifle!\n";
-	
+
 	dataMu.lock();
 	for(int i=0;i<users;i++)
 		if(players[i]!=NULL && players[i]->getReady()){
 			conn.send_packet_reliable(&senderBuffer,(int)sizeof(senderBuffer),i);
 		}
 	dataMu.unlock();
-	
+
 	//Send who else exists
 	senderBuffer.type=PROTOCOL_NEW_USER;
 	dataMu.lock();
 	for(int i=0;i<users;i++)
 		if(players[i]!=NULL && players[i]->getReady()){
-			stream=std::stringstream("");
+			std::stringstream stream;;
 			stream << players[i]->getId() << " "  << players[i]->getX() << " " << players[i]->getY() << " "<<(int16_t)players[i]->getTeam()<<" "<<players[i]->getMyWeapon()<<" ";
 			std::sprintf(senderBuffer.buffer,"%s",stream.str().c_str());
 			conn.send_packet_reliable(&senderBuffer,(int)sizeof(senderBuffer),id);
 		}
-	
+
 	conn.send_flush();
 	dataMu.unlock();
 	\
@@ -212,7 +211,7 @@ void Server::user_handle(){
 	_data *recieverBuffer;
 	_data senderBuffer;
 
-			
+
 	while(!done){
 		dataMu.lock();		//I know, I shouldn't do that.... But fuck that shit.
 		if(msgs.size()>0){
@@ -226,9 +225,9 @@ void Server::user_handle(){
 				players[msgTmp.id]->setX(x);
 				players[msgTmp.id]->setY(y);
 				players[msgTmp.id]->setDir((Direction)dir);
-				stream=std::stringstream("");
 				for(int i=0;i<users;i++)
 					if(i!=msgTmp.id && players[i]!=NULL && players[i]->getReady()){
+                        std::stringstream stream;
 						senderBuffer.type=PROTOCOL_CHARACTER;
 						stream << msgTmp.id << " " << x << " " << y << " " << dir << " " << angle << " ";
 						std::sprintf(senderBuffer.buffer,"%s",stream.str().c_str());
@@ -243,9 +242,9 @@ void Server::user_handle(){
 				std::stringstream stream;
 				stream << ((_data*)msgTmp.buffer)->buffer;
 				stream >> bulletId >> x >> y >>length >>velocity >> angle;
-				stream=std::stringstream("");
 				for(int i=0;i<users;i++)
 					if(i!=msgTmp.id && players[i]!=NULL && players[i]->getReady()){
+                        std::stringstream stream;
 						senderBuffer.type=PROTOCOL_NEW_SHOOT;
 						stream << msgTmp.id << " " << bulletId << " " << x << " " << y << " " << length << " " <<velocity << " " <<angle << " ";
 						std::sprintf(senderBuffer.buffer,"%s",stream.str().c_str());
@@ -259,9 +258,9 @@ void Server::user_handle(){
 				std::stringstream stream;
 				stream << ((_data*)msgTmp.buffer)->buffer;
 				stream >> id;
-				stream=std::stringstream("");
 				for(int i=0;i<users;i++)
 					if(i!=msgTmp.id && players[i]!=NULL && players[i]->getReady()){
+                        std::stringstream stream;
 						senderBuffer.type=PROTOCOL_DELETE_BULLET;
 						stream << msgTmp.id << " " << id << " ";
 						std::sprintf(senderBuffer.buffer,"%s",stream.str().c_str());
@@ -275,9 +274,9 @@ void Server::user_handle(){
 				std::stringstream stream;
 				stream << ((_data*)msgTmp.buffer)->buffer;
 				stream >> x >>y;
-				stream=std::stringstream("");
 				for(int i=0;i<users;i++)
 					if(i!=msgTmp.id && players[i]!=NULL && players[i]->getReady()){
+                        std::stringstream stream;
 						senderBuffer.type=PROTOCOL_REVIVE;
 						stream << msgTmp.id << " " << x << " "<< y << " ";
 						std::sprintf(senderBuffer.buffer,"%s",stream.str().c_str());
@@ -291,9 +290,9 @@ void Server::user_handle(){
 				std::stringstream stream;
 				stream << ((_data*)msgTmp.buffer)->buffer;
 				stream >> bulletId >> playerId >> dmg;
-				stream=std::stringstream("");
 				for(int i=0;i<users;i++)
 					if(i!=msgTmp.id && players[i]!=NULL && players[i]->getReady()){
+                        std::stringstream stream;
 						senderBuffer.type=PROTOCOL_HIT;
 						stream << msgTmp.id << " " << bulletId <<" " << playerId <<" " << dmg << " ";
 						std::sprintf(senderBuffer.buffer,"%s",stream.str().c_str());
@@ -302,7 +301,6 @@ void Server::user_handle(){
 					msgs.pop();
 				conn.send_flush();
 			}
-			
 		}
 		dataMu.unlock();
 	}

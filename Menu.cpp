@@ -3,7 +3,7 @@
  MenuPrinc::MenuPrinc(int res_x,int res_y){
 	this->res_x=res_x;
 	this->res_y=res_y;
-	fundo = al_load_bitmap("Menu_Img/fundo1.png");
+	fundo = al_load_bitmap("Menu_Img/fundo1.jpg");
 	bot1 = al_load_bitmap("Menu_Img/connect1.jpg");
 	bot2 = al_load_bitmap("Menu_Img/quit1.jpg");
 	bot1_s = al_load_bitmap("Menu_Img/connect2.jpg");
@@ -86,10 +86,10 @@ int MenuPrinc::botao_action()
 {
 	if(bot1S)
 		return CHANGE_MENU;
-	
+
 	if(bot2S)
 		return EXIT;
-	
+
 	return 0;
 }
 
