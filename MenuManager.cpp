@@ -12,13 +12,13 @@ int MenuManager::main_loop(ALLEGRO_TIMER *timer,ALLEGRO_EVENT_QUEUE *event_queue
 	bool redraw=false;
 	ALLEGRO_EVENT ev;
 	ALLEGRO_MOUSE_STATE mouseState;
-	
+
 	al_clear_to_color(al_map_rgb(255,255,255));
 	al_start_timer(timer);
 	while(!done){
 		al_wait_for_event(event_queue, &ev);
 		if(ev.type == ALLEGRO_EVENT_DISPLAY_CLOSE)
-			done=true;
+			exit(0);
 		else if(ev.type == ALLEGRO_EVENT_KEY_DOWN){
 			if(ev.keyboard.keycode == ALLEGRO_KEY_ESCAPE){
 				exit(0);
@@ -27,7 +27,7 @@ int MenuManager::main_loop(ALLEGRO_TIMER *timer,ALLEGRO_EVENT_QUEUE *event_queue
 		else if(ev.type == ALLEGRO_EVENT_MOUSE_BUTTON_DOWN){
 			int result=menu->botao_action();
 			if(result==EXIT)
-				done=true;
+				exit(0);
 			else if(result==CHANGE_MENU){
 				delete menu;
 				menu=new MenuArmas(res_x,res_y);
@@ -56,7 +56,7 @@ int MenuManager::main_loop(ALLEGRO_TIMER *timer,ALLEGRO_EVENT_QUEUE *event_queue
 			menu->botao(&mouseState);
 			redraw=true;
 		}
-		
+
 		if(redraw && al_is_event_queue_empty(event_queue)){
 			menu->print_menu();
 			al_flip_display();
