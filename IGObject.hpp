@@ -1,3 +1,5 @@
+//An interface that describes the Characters and the projectiles
+
 #ifndef IGOBJECT_HPP
 #define IGOBJECT_HPP
 

@@ -13,7 +13,7 @@ enum Direction {
 	LEFT,
 	RIGHT,
 	STOPED,
-	UL,		//Up and left
+	UL,		//Up and left		//We dind't implement this yet
 	UR,		//Up and right
 	DL,		//Down and left
 	DR		//Down and right

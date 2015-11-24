@@ -27,13 +27,13 @@ CCharacter::~CCharacter(){
 	al_destroy_sample(victory);
 	delete weapon;
 }
-
+//serialize all
 void CCharacter::serialize(char* buffer){
 	std::stringstream stream;
 	stream << player.x << " " << player.y << " "<< dir << " " << weapon->getAngle() << " ";
 	std::sprintf(buffer,"%s",stream.str().c_str());
 }
-
+//Set my team
 void CCharacter::setTeam(Team team){
 	this->team=(int16_t)team;
 	if(team==RED){
@@ -46,15 +46,14 @@ void CCharacter::setTeam(Team team){
 		player.b=255;
 	}
 }
-
-
+//Draw myself
 void CCharacter::draw(int x,int y){
 	if(!dead){
 		al_draw_filled_circle(player.x-x,player.y-y,player.radius,al_map_rgb(player.r,player.g,player.b));
 		weapon->draw(x,y);
 	}
 }
-
+//I am alive!
 void CCharacter::move(){
 	if(dir==UP)
 		player.y-=velocity;
@@ -67,7 +66,7 @@ void CCharacter::move(){
 	weapon->setX(player.x);
 	weapon->setY(player.y);
 }
-
+//Fancy colision
 void CCharacter::colision(_object *objects,int n){
 	int centerX;
 	int centerY;
@@ -81,6 +80,7 @@ void CCharacter::colision(_object *objects,int n){
 		vDistance=objects[i].width/2+player.radius;
 		if(objects[i].type==RECTANGLE && distance(centerX,player.x)<hDistance&&
 			distance(centerY,player.y)<vDistance){
+			//Oh no! I am inside an object. I should go back!
 			while(!done){
 				if(dir==(int16_t)UP)
 					player.y++;
@@ -92,6 +92,7 @@ void CCharacter::colision(_object *objects,int n){
 					player.x--;
 
 				if(!(distance(centerX,player.x)<hDistance && distance(centerY,player.y)<vDistance)){
+					//Uff.. Now I am safe
 					done=true;
 					weapon->setX(player.x);
 					weapon->setY(player.y);
@@ -107,11 +108,11 @@ void CCharacter::colision(_object *objects,int n){
 float CCharacter::distance(int x1, int x2){
 	return sqrt(pow(x1-x2,2));
 }
-
+//Calculate the angle
 void CCharacter::weaponAngle(int mapX,int mapY,int mouseX, int mouseY){
 	weapon->calculateAngle(mapX,mapY,mouseX,mouseY);
 }
-
+//Spawn timer
 bool CCharacter::tryToRevive(){
 	internalSpawnTimer++;
 	if(internalSpawnTimer>RESPAWN_TIMER){
@@ -124,19 +125,19 @@ bool CCharacter::tryToRevive(){
 	}
 	return false;
 }
-
+//Like a fenix
 void CCharacter::revive(int16_t x, int16_t y){
 	setX(x);
 	setY(y);
 	dead=false;
 	life=100;
 }
-
+//Sounds
 void CCharacter::sound_shoot(int x, int y){
 	float distance=sqrt(pow(x-player.x,2)+pow(y-player.y,2));
 	weapon->play_sound(distance);
 }
-
+//Sounds
 void CCharacter::sound_hit(int x,int y){
 	float distance=sqrt(pow(x-player.x,2)+pow(y-player.y,2));
 	float volume=2*exp(-pow(distance,2)/pow(800,2));
@@ -144,7 +145,7 @@ void CCharacter::sound_hit(int x,int y){
 		volume=1;
 	al_play_sample(hit,volume,0.0,1.0,ALLEGRO_PLAYMODE_ONCE,NULL);
 }
-
+//Sounds
 void CCharacter::sound_victory(int x,int y){
 	float distance=sqrt(pow(x-player.x,2)+pow(y-player.y,2));
 	float volume=2*exp(-pow(distance,2)/pow(800,2));

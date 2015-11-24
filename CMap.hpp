@@ -19,7 +19,7 @@
 #include <cstring>
 
 class CMap:public Map{
-	bool drawCircles;
+	bool drawCircles;		//So we don't draw the spawn areas
 public:
 	CMap(std::string name,int max_objects,int length,int width);
 	CMap();

@@ -3,6 +3,15 @@
 
 //Character class to be handled by the client. A lot of allegro
 
+
+#include <iostream>
+#include <allegro5/allegro.h>
+#include <allegro5/allegro_primitives.h>
+#include <allegro5/allegro_audio.h>
+#include <sstream>
+#include <math.h>
+#include <cstdio>
+
 #include "IGObject.hpp"
 #include "Enums.hpp"
 #include "_object.hpp"
@@ -10,16 +19,7 @@
 #include "Defines.hpp"
 #include "Rifle.hpp"
 #include "Pistol.hpp"
-#include <sstream>
-#include <math.h>
-#include <cstdio>
 #include "Connection.hpp"
-
-#include <iostream>
-
-#include <allegro5/allegro.h>
-#include <allegro5/allegro_primitives.h>
-#include <allegro5/allegro_audio.h>
 
 #define RESPAWN_TIMER 60*5
 
@@ -56,32 +56,30 @@ public:
 	bool getDead(){return dead;}
 	Team getTeam(){return (Team)team;}
 	Direction getDir(){return (Direction)dir;}
+	int getWeaponDmg(){return weapon->getDmg();}
+	Projectile **getProjectiles(){return weapon->getProjectiles();}
+	
 	void setDir(Direction dir){this->dir=dir;}
-	void serialize(char *buffer);
-	
-	void draw(int x,int y);
-	void move();
-	void die(){dead=true;}
-	bool tryToRevive();
-	void revive(int16_t x,int16_t y);
-	void damage(int dmg){life-=dmg;}
-	
-	void colision(_object *objects,int n);
-	
+	void setWeaponAngle(float angle){weapon->setAngle(angle);}
 	void setX(int16_t x){this->player.x=x;weapon->setX(x);}
 	void setY(int16_t y){this->player.y=y;weapon->setY(y);}
 	void setSpawnX(int16_t x){this->xSpawn=x;}
 	void setSpawnY(int16_t y){this->ySpawn=y;}
 	void setTeam(Team team);
 	
+	void serialize(char *buffer);
+	void draw(int x,int y);
+	void move();
+	void die(){dead=true;}
+	bool tryToRevive();
+	void revive(int16_t x,int16_t y);
+	void damage(int dmg){life-=dmg;}
+	void colision(_object *objects,int n);
 	void weaponAngle(int mapX,int mapY,int mouseX,int mouseY);
-	void setWeaponAngle(float angle){weapon->setAngle(angle);}
 	void shoot(ALLEGRO_MOUSE_STATE &mouseState,Connection *conn){weapon->shoot(mouseState,conn);}
-	int getWeaponDmg(){return weapon->getDmg();}
 	void sound_shoot(int x,int y);
 	void sound_hit(int x,int y);
- 	void sound_victory(int x,int y);
-	Projectile **getProjectiles(){return weapon->getProjectiles();}
+	void sound_victory(int x,int y);
 };
 
 #endif

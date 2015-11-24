@@ -11,6 +11,20 @@ CCharacter.hpp
 /home/clemente/projects/Troll-Killers/CCharacter.hpp
 
 /home/clemente/projects/Troll-Killers/CCharacter.hpp
+iostream
+-
+allegro5/allegro.h
+-
+allegro5/allegro_primitives.h
+-
+allegro5/allegro_audio.h
+-
+sstream
+-
+math.h
+-
+cstdio
+-
 IGObject.hpp
 /home/clemente/projects/Troll-Killers/IGObject.hpp
 Enums.hpp
@@ -25,22 +39,8 @@ Rifle.hpp
 /home/clemente/projects/Troll-Killers/Rifle.hpp
 Pistol.hpp
 /home/clemente/projects/Troll-Killers/Pistol.hpp
-sstream
--
-math.h
--
-cstdio
--
 Connection.hpp
 /home/clemente/projects/Troll-Killers/Connection.hpp
-iostream
--
-allegro5/allegro.h
--
-allegro5/allegro_primitives.h
--
-allegro5/allegro_audio.h
--
 
 /home/clemente/projects/Troll-Killers/CMap.cpp
 CMap.hpp

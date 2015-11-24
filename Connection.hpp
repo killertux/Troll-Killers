@@ -1,11 +1,6 @@
-/*
- * MapEditor.hpp
- *
- *  Created on: 4 de nov de 2015
- *      Author: clemente
- */
-
-//Class that handle connection
+//--This class is quite old--
+//I rewrite part of this class this year. I still need to improve somethings.
+//One example is that I should use overload in the send packet
 
 #ifndef CONNECTION_HPP
 #define CONNECTION_HPP

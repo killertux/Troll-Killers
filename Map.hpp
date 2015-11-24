@@ -13,8 +13,6 @@
 #include "_data.hpp"
 #include <sstream>
 #include "Defines.hpp"
-//#include <arpa/inet.h>
-
 #include <fstream>
 
 struct _nMap{
