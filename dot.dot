@@ -1,0 +1,19 @@
+graph G {
+	IGObject -- CCharacter;
+	Map -- CMap;
+	Projectile -- CProjectile;
+	IMenu -- MenuArmas;
+	IMenu -- MenuPrinc;
+	Weapons -- Pistol;
+	IGObject -- Projectile;
+	Weapons -- Rifle;
+	IGObject -- SCharacter;
+	Map -- SMap;
+	Connection -- Client [style=dotted];
+	Connection -- Server [style=dotted];
+	Configuration -- Client [style=dotted];
+	Configuration -- Server [style=dotted];
+	CMap -- Client [style=dotted];
+	SMap -- Server [style=dotted];
+}
+
