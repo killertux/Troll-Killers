@@ -268,7 +268,7 @@
 	<string>
 	<cstring>
 
-1448235966 source:c:\users\clemente\documents\github\troll-killers\map.cpp
+1448250308 source:c:\users\clemente\documents\github\troll-killers\map.cpp
 	"Map.hpp"
 	<stdio.h>
 	"iostream"
@@ -305,10 +305,10 @@
 1430404928 c:\users\clemente\documents\github\troll-killers\include\enet\callbacks.h
 	<stdlib.h>
 
-1448235966 source:c:\users\clemente\documents\github\troll-killers\ccharacter.cpp
+1448322847 source:c:\users\clemente\documents\github\troll-killers\ccharacter.cpp
 	"CCharacter.hpp"
 
-1448235966 c:\users\clemente\documents\github\troll-killers\ccharacter.hpp
+1448322847 c:\users\clemente\documents\github\troll-killers\ccharacter.hpp
 	"IGObject.hpp"
 	"Enums.hpp"
 	"_object.hpp"
@@ -323,6 +323,7 @@
 	<iostream>
 	<allegro5/allegro.h>
 	<allegro5/allegro_primitives.h>
+	<allegro5/allegro_audio.h>
 
 1448235966 c:\users\clemente\documents\github\troll-killers\igobject.hpp
 	"Enums.hpp"
@@ -332,9 +333,10 @@
 	"Weapons.hpp"
 	<iostream>
 
-1448235967 c:\users\clemente\documents\github\troll-killers\weapons.hpp
+1448322870 c:\users\clemente\documents\github\troll-killers\weapons.hpp
 	<allegro5/allegro.h>
 	<allegro5/allegro_image.h>
+	<allegro5/allegro_audio.h>
 	"Defines.hpp"
 	"Enums.hpp"
 	<cmath>
@@ -356,16 +358,19 @@
 	"_object.hpp"
 	<math.h>
 
-1448235966 c:\users\clemente\documents\github\troll-killers\pistol.hpp
+1448322870 c:\users\clemente\documents\github\troll-killers\pistol.hpp
 	"Weapons.hpp"
 	<iostream>
+	<math.h>
 
-1448239060 source:c:\users\clemente\documents\github\troll-killers\client.cpp
+1448322847 source:c:\users\clemente\documents\github\troll-killers\client.cpp
 	"Client.hpp"
 
-1448235966 c:\users\clemente\documents\github\troll-killers\client.hpp
+1448322847 c:\users\clemente\documents\github\troll-killers\client.hpp
 	<allegro5/allegro.h>
 	<allegro5/allegro_primitives.h>
+	<allegro5/allegro_audio.h>
+	<allegro5/allegro_acodec.h>
 	<cstdio>
 	<cstring>
 	<sstream>
@@ -405,19 +410,19 @@
 1448235968 source:c:\users\clemente\documents\github\troll-killers\mainclient.cpp
 	"Client.hpp"
 
-1448239110 source:c:\users\clemente\documents\github\troll-killers\menu.cpp
+1448322870 source:c:\users\clemente\documents\github\troll-killers\menu.cpp
 	"Menu.hpp"
 
 1448235966 source:c:\users\clemente\documents\github\troll-killers\menumanager.cpp
 	"MenuManager.hpp"
 
-1448235966 source:c:\users\clemente\documents\github\troll-killers\pistol.cpp
+1448322870 source:c:\users\clemente\documents\github\troll-killers\pistol.cpp
 	"Pistol.hpp"
 
 1448235966 source:c:\users\clemente\documents\github\troll-killers\projectile.cpp
 	"Projectile.hpp"
 
-1448235966 source:c:\users\clemente\documents\github\troll-killers\rifle.cpp
+1448322870 source:c:\users\clemente\documents\github\troll-killers\rifle.cpp
 	"Rifle.hpp"
 
 1448235966 source:c:\users\clemente\documents\github\troll-killers\scharacter.cpp
@@ -431,7 +436,14 @@
 	<iostream>
 	"Defines.hpp"
 
-1448235967 source:c:\users\clemente\documents\github\troll-killers\weapons.cpp
+1448322870 source:c:\users\clemente\documents\github\troll-killers\weapons.cpp
 	"Weapons.hpp"
 	<iostream>
+
+1448236445 c:\program files (x86)\codeblocks\mingw\allegro-5.0.10-mingw-4.7.0\include\allegro5\allegro_audio.h
+	"allegro5/allegro.h"
+
+1448236444 c:\program files (x86)\codeblocks\mingw\allegro-5.0.10-mingw-4.7.0\include\allegro5\allegro_acodec.h
+	"allegro5/allegro.h"
+	"allegro5/allegro_audio.h"
 
