@@ -1,3 +1,6 @@
+//This class only exist for the MapEditor
+//It shouldn't be used anywhere else
+
 #ifndef CURSOR_HPP
 #define CURSOR_HPP
 
@@ -30,13 +33,13 @@ public:
 	
 	int getX(){return x;}
 	int getY(){return y;}
+	_object getObject(int mapX,int mapY){objCursor.x+=mapX;objCursor.y+=mapY;return objCursor;}
 	void setX(int x){this->x=x;}
 	void setY(int y){this->y=y;}
 	
 	void change_cursor(int i);
 	void change_team();
 	void increase_object(Direction incDir);
-	_object getObject(int mapX,int mapY){objCursor.x+=mapX;objCursor.y+=mapY;return objCursor;}
 	bool object_selected(){return (objSelected!=NONE)?true:false;}
 };
 

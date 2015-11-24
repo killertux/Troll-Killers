@@ -12,7 +12,7 @@ Cursor::Cursor(int x, int y, int resX, int resY, int timer){
 	objSelected=NONE;
 	team=RED;
 }
-
+//Draw my cursor
 void Cursor::draw_cursor(){
 	if(objSelected==RECTANGLE)
 		al_draw_filled_rectangle(objCursor.x,objCursor.y,objCursor.x+objCursor.length,
@@ -24,7 +24,7 @@ void Cursor::draw_cursor(){
 		al_draw_line(x,y-10,x,y+10,al_map_rgb(0,0,100),4);
 	}
 }
-
+//Move cursor. Quite complicated.... I just wanted it to work in the way that I desired
 void Cursor::move_cursor(ALLEGRO_KEYBOARD_STATE keyState){
 	if(!al_key_down(&keyState, ALLEGRO_KEY_LCTRL) && !al_key_down(&keyState, ALLEGRO_KEY_ALT)){
 		if(dir==STOPED){
@@ -85,7 +85,7 @@ void Cursor::move_cursor(ALLEGRO_KEYBOARD_STATE keyState){
 		objCursor.y=y+GRID/2;
 	}
 }
-
+//Here we cahnge the cursor
 void Cursor::change_cursor(int i){
 	if(objSelected==RECTANGLE && i>0)
 		objSelected=NONE;
@@ -125,7 +125,7 @@ void Cursor::change_cursor(int i){
 	lengthInc=1;
 	widthInc=1;
 }
-
+//Change the team of the spawn
 void Cursor::change_team(){
 	if(team==RED){
 		team=BLUE;
@@ -137,7 +137,7 @@ void Cursor::change_team(){
 		objCursor.g=objCursor.b=0;
 	}
 }
-
+//Increase our object
 void Cursor::increase_object(Direction incDir){
 	if(objSelected){
 		if(incDir==RIGHT){

@@ -1,0 +1,347 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+BLUE	Enums.hpp	24;"	e	enum:Team
+CCharacter	CCharacter.hpp	26;"	c	inherits:IGObject
+CCharacter	CCharacter.hpp	48;"	p	class:CCharacter	access:public
+CIRCLE	Enums.hpp	5;"	e	enum:ObjectType
+CMap	CMap.hpp	21;"	c	inherits:Map
+CMap	CMap.hpp	24;"	p	class:CMap	access:public
+CMap	CMap.hpp	25;"	p	class:CMap	access:public
+CProjectile	CProjectile.hpp	10;"	c	inherits:Projectile
+CProjectile	CProjectile.hpp	13;"	p	class:CProjectile	access:public
+Client	Client.hpp	22;"	c
+Client	Client.hpp	52;"	p	class:Client	access:public
+Client	MenuManager.hpp	9;"	x
+Configuration	Configuration.hpp	10;"	c
+Configuration	Configuration.hpp	23;"	p	class:Configuration	access:public
+Connection	Connection.hpp	20;"	c
+Connection	Connection.hpp	38;"	p	class:Connection	access:public
+Cursor	Cursor.hpp	10;"	c
+Cursor	Cursor.hpp	27;"	p	class:Cursor	access:public
+DL	Enums.hpp	18;"	e	enum:Direction
+DOWN	Enums.hpp	12;"	e	enum:Direction
+DR	Enums.hpp	19;"	e	enum:Direction
+Direction	Enums.hpp	10;"	g
+IGObject	IGObject.hpp	7;"	c
+IMenu	Menu.hpp	15;"	c
+LEFT	Enums.hpp	13;"	e	enum:Direction
+Map	Map.hpp	29;"	c
+Map	Map.hpp	38;"	p	class:Map	access:public
+MapEditor	MapEditor.hpp	28;"	c
+MapEditor	MapEditor.hpp	43;"	p	class:MapEditor	access:public
+MenuArmas	Menu.hpp	39;"	c	inherits:IMenu
+MenuArmas	Menu.hpp	50;"	p	class:MenuArmas	access:public
+MenuManager	MenuManager.hpp	11;"	c
+MenuManager	MenuManager.hpp	16;"	p	class:MenuManager	access:public
+MenuPrinc	Menu.hpp	23;"	c	inherits:IMenu
+MenuPrinc	Menu.hpp	32;"	p	class:MenuPrinc	access:public
+NONE	Enums.hpp	7;"	e	enum:ObjectType
+ObjectType	Enums.hpp	4;"	g
+PISTOL	Enums.hpp	30;"	e	enum:Weapon
+Pistol	Pistol.hpp	11;"	p	class:Pistol	access:public
+Pistol	Pistol.hpp	8;"	c	inherits:Weapons
+Projectile	Projectile.hpp	10;"	c	inherits:IGObject
+Projectile	Projectile.hpp	18;"	p	class:Projectile	access:public
+Projectile	Projectile.hpp	19;"	p	class:Projectile	access:public
+RECTANGLE	Enums.hpp	6;"	e	enum:ObjectType
+RED	Enums.hpp	23;"	e	enum:Team
+RIFLE	Enums.hpp	29;"	e	enum:Weapon
+RIGHT	Enums.hpp	14;"	e	enum:Direction
+Rifle	Rifle.hpp	10;"	p	class:Rifle	access:public
+Rifle	Rifle.hpp	7;"	c	inherits:Weapons
+SCharacter	SCharacter.hpp	13;"	c	inherits:IGObject
+SCharacter	SCharacter.hpp	23;"	p	class:SCharacter	access:public
+SMap	SMap.hpp	6;"	c	inherits:Map
+STOPED	Enums.hpp	15;"	e	enum:Direction
+Server	Server.hpp	25;"	c
+Server	Server.hpp	46;"	p	class:Server	access:public
+TNONE	Enums.hpp	25;"	e	enum:Team
+Team	Enums.hpp	22;"	g
+UL	Enums.hpp	16;"	e	enum:Direction
+UP	Enums.hpp	11;"	e	enum:Direction
+UR	Enums.hpp	17;"	e	enum:Direction
+Weapon	Enums.hpp	28;"	g
+Weapons	Weapons.hpp	15;"	c
+Weapons	Weapons.hpp	31;"	p	class:Weapons	access:public
+_data	_data.hpp	10;"	s
+_msg	Server.hpp	20;"	s
+_nMap	Map.hpp	20;"	s
+_object	_object.hpp	5;"	s
+address	Connection.hpp	22;"	m	class:Connection	access:private
+angle	Projectile.hpp	15;"	m	class:Projectile	access:protected
+angle	Weapons.hpp	22;"	m	class:Weapons	access:protected
+b	_object.hpp	12;"	m	struct:_object	access:public
+blueTeamN	Server.hpp	39;"	m	class:Server	access:private
+bot1	Menu.hpp	25;"	m	class:MenuPrinc	access:private
+bot1	Menu.hpp	41;"	m	class:MenuArmas	access:private
+bot1S	Menu.hpp	29;"	m	class:MenuPrinc	access:private
+bot1S	Menu.hpp	47;"	m	class:MenuArmas	access:private
+bot1_s	Menu.hpp	27;"	m	class:MenuPrinc	access:private
+bot1_s	Menu.hpp	44;"	m	class:MenuArmas	access:private
+bot2	Menu.hpp	26;"	m	class:MenuPrinc	access:private
+bot2	Menu.hpp	42;"	m	class:MenuArmas	access:private
+bot2S	Menu.hpp	29;"	m	class:MenuPrinc	access:private
+bot2S	Menu.hpp	47;"	m	class:MenuArmas	access:private
+bot2_s	Menu.hpp	28;"	m	class:MenuPrinc	access:private
+bot2_s	Menu.hpp	45;"	m	class:MenuArmas	access:private
+bot3	Menu.hpp	43;"	m	class:MenuArmas	access:private
+bot3S	Menu.hpp	47;"	m	class:MenuArmas	access:private
+bot3_s	Menu.hpp	46;"	m	class:MenuArmas	access:private
+botao	Menu.hpp	19;"	p	class:IMenu	access:public	implementation:pure virtual
+botao	Menu.hpp	34;"	p	class:MenuPrinc	access:public	implementation:virtual
+botao	Menu.hpp	52;"	p	class:MenuArmas	access:public	implementation:virtual
+botao_action	Menu.hpp	20;"	p	class:IMenu	access:public	implementation:pure virtual
+botao_action	Menu.hpp	36;"	p	class:MenuPrinc	access:public	implementation:virtual
+botao_action	Menu.hpp	54;"	p	class:MenuArmas	access:public	implementation:virtual
+broadcast_packet	Connection.hpp	44;"	p	class:Connection	access:public
+buffer	Client.hpp	39;"	m	class:Client	access:private
+buffer	Configuration.hpp	13;"	m	class:Configuration	access:private
+buffer	Server.hpp	21;"	m	struct:_msg	access:public
+buffer	_data.hpp	12;"	m	struct:_data	access:public
+cTimer	Cursor.hpp	15;"	m	class:Cursor	access:private
+calculateAngle	Weapons.hpp	46;"	p	class:Weapons	access:public
+calculateSpawn	SMap.hpp	13;"	p	class:SMap	access:public
+change_cursor	Cursor.hpp	36;"	p	class:Cursor	access:public
+change_team	Cursor.hpp	37;"	p	class:Cursor	access:public
+client	Connection.hpp	25;"	m	class:Connection	access:private
+cmdMu	Server.hpp	32;"	m	class:Server	access:private
+cmdThread	Server.hpp	29;"	m	class:Server	access:private
+colision	CCharacter.hpp	69;"	p	class:CCharacter	access:public
+collide	Projectile.hpp	32;"	p	class:Projectile	access:public
+config	Client.hpp	33;"	m	class:Client	access:private
+config	Server.hpp	36;"	m	class:Server	access:private
+configChanged	Configuration.hpp	17;"	m	class:Configuration	access:private
+configFile	Configuration.hpp	13;"	m	class:Configuration	access:private
+configLine	Configuration.hpp	14;"	m	class:Configuration	access:private
+configLines	Configuration.hpp	15;"	m	class:Configuration	access:private
+config_create	Configuration.hpp	27;"	p	class:Configuration	access:public
+config_found	Configuration.hpp	26;"	p	class:Configuration	access:public
+config_get	Configuration.hpp	32;"	p	class:Configuration	access:public
+config_insert	Configuration.hpp	31;"	p	class:Configuration	access:public
+config_load	Configuration.hpp	28;"	p	class:Configuration	access:public
+config_remove	Configuration.hpp	33;"	p	class:Configuration	access:public
+config_save	Configuration.hpp	29;"	p	class:Configuration	access:public
+conn	Client.hpp	32;"	m	class:Client	access:private
+conn	Connection.hpp	23;"	m	class:Connection	access:private
+conn	Server.hpp	27;"	m	class:Server	access:private
+connS	Connection.hpp	23;"	m	class:Connection	access:private
+connect	Client.hpp	59;"	p	class:Client	access:public
+count	Configuration.hpp	16;"	m	class:Configuration	access:private
+create_client	Connection.hpp	52;"	p	class:Connection	access:public
+create_server	Connection.hpp	41;"	p	class:Connection	access:public
+cursor	MapEditor.hpp	36;"	m	class:MapEditor	access:private
+dataMu	Server.hpp	30;"	m	class:Server	access:private
+dead	CCharacter.hpp	38;"	m	class:CCharacter	access:private
+deserialize	Map.hpp	43;"	p	class:Map	access:public	implementation:virtual
+destroy_object	CMap.hpp	27;"	p	class:CMap	access:public
+dir	CCharacter.hpp	34;"	m	class:CCharacter	access:private
+dir	Cursor.hpp	20;"	m	class:Cursor	access:private
+dir	SCharacter.hpp	18;"	m	class:SCharacter	access:private
+dispersion	Weapons.hpp	27;"	m	class:Weapons	access:protected
+display	Client.hpp	24;"	m	class:Client	access:private
+display	MapEditor.hpp	30;"	m	class:MapEditor	access:private
+distance	CCharacter.hpp	46;"	p	class:CCharacter	access:private
+dmg	Weapons.hpp	23;"	m	class:Weapons	access:protected
+draw	CCharacter.hpp	62;"	p	class:CCharacter	access:public
+draw	CProjectile.hpp	14;"	p	class:CProjectile	access:public
+draw	Weapons.hpp	48;"	p	class:Weapons	access:public	implementation:virtual
+drawCircles	CMap.hpp	22;"	m	class:CMap	access:private
+draw_cursor	Cursor.hpp	28;"	p	class:Cursor	access:public
+draw_grid	MapEditor.hpp	47;"	p	class:MapEditor	access:public
+draw_map	CMap.hpp	28;"	p	class:CMap	access:public
+ev	Client.hpp	28;"	m	class:Client	access:private
+ev	MapEditor.hpp	34;"	m	class:MapEditor	access:private
+event	Connection.hpp	24;"	m	class:Connection	access:private
+event_queue	Client.hpp	25;"	m	class:Client	access:private
+event_queue	MapEditor.hpp	31;"	m	class:MapEditor	access:private
+event_service	Connection.hpp	47;"	p	class:Connection	access:public
+event_type_connect	Connection.hpp	49;"	p	class:Connection	access:public
+event_type_disconnect	Connection.hpp	51;"	p	class:Connection	access:public
+event_type_receive	Connection.hpp	50;"	p	class:Connection	access:public
+fundo	Menu.hpp	24;"	m	class:MenuPrinc	access:private
+fundo	Menu.hpp	40;"	m	class:MenuArmas	access:private
+g	_object.hpp	11;"	m	struct:_object	access:public
+getId	IGObject.hpp	9;"	p	class:IGObject	access:public	implementation:pure virtual
+getSpaw	SMap.hpp	14;"	p	class:SMap	access:public
+getVelocity	IGObject.hpp	12;"	p	class:IGObject	access:public	implementation:pure virtual
+getWeaponTipX	Weapons.hpp	39;"	p	class:Weapons	access:public
+getWeaponTipY	Weapons.hpp	40;"	p	class:Weapons	access:public
+getX	IGObject.hpp	10;"	p	class:IGObject	access:public	implementation:pure virtual
+getY	IGObject.hpp	11;"	p	class:IGObject	access:public	implementation:pure virtual
+get_word	Configuration.hpp	19;"	p	class:Configuration	access:private
+gun	Weapons.hpp	17;"	m	class:Weapons	access:protected
+hit	CCharacter.hpp	28;"	m	class:CCharacter	access:private
+id	CCharacter.hpp	33;"	m	class:CCharacter	access:private
+id	Projectile.hpp	13;"	m	class:Projectile	access:protected
+id	SCharacter.hpp	17;"	m	class:SCharacter	access:private
+id	Server.hpp	22;"	m	struct:_msg	access:public
+inUse	SMap.hpp	10;"	m	class:SMap	access:private
+increase_object	Cursor.hpp	38;"	p	class:Cursor	access:public
+internalSpawnTimer	CCharacter.hpp	41;"	m	class:CCharacter	access:private
+internalTimer	Rifle.hpp	8;"	m	class:Rifle	access:private
+ip	Client.hpp	44;"	m	class:Client	access:private
+keyState	MapEditor.hpp	33;"	m	class:MapEditor	access:private
+lastConnection	Connection.hpp	30;"	m	class:Connection	access:private
+length	Map.hpp	24;"	m	struct:_nMap	access:public
+length	Map.hpp	34;"	m	class:Map	access:protected
+length	Projectile.hpp	14;"	m	class:Projectile	access:protected
+length	_object.hpp	9;"	m	struct:_object	access:public
+lengthInc	Cursor.hpp	17;"	m	class:Cursor	access:private
+life	CCharacter.hpp	42;"	m	class:CCharacter	access:private
+load_map	Map.hpp	40;"	p	class:Map	access:public	implementation:virtual
+magSize	Weapons.hpp	24;"	m	class:Weapons	access:protected
+main_loop	Client.hpp	61;"	p	class:Client	access:public
+main_loop	MapEditor.hpp	46;"	p	class:MapEditor	access:public
+main_loop	MenuManager.hpp	17;"	p	class:MenuManager	access:public
+main_loop	Server.hpp	48;"	p	class:Server	access:public
+make_ready	SCharacter.hpp	36;"	p	class:SCharacter	access:public
+map	Client.hpp	34;"	m	class:Client	access:private
+map	MapEditor.hpp	41;"	m	class:MapEditor	access:private
+map	Server.hpp	34;"	m	class:Server	access:private
+mapX	Client.hpp	48;"	m	class:Client	access:private
+mapX	MapEditor.hpp	39;"	m	class:MapEditor	access:private
+mapY	Client.hpp	48;"	m	class:Client	access:private
+mapY	MapEditor.hpp	39;"	m	class:MapEditor	access:private
+maxClients	Client.hpp	49;"	m	class:Client	access:private
+max_objects	Map.hpp	25;"	m	struct:_nMap	access:public
+max_objects	Map.hpp	35;"	m	class:Map	access:protected
+menu	MenuManager.hpp	13;"	m	class:MenuManager	access:private
+menus	Client.hpp	30;"	m	class:Client	access:private
+mouseState	Client.hpp	27;"	m	class:Client	access:private
+move	CCharacter.hpp	63;"	p	class:CCharacter	access:public
+move	Projectile.hpp	34;"	p	class:Projectile	access:public
+move_cursor	Cursor.hpp	29;"	p	class:Cursor	access:public
+moved	Client.hpp	46;"	m	class:Client	access:private
+moved	Cursor.hpp	21;"	m	class:Cursor	access:private
+msgs	Server.hpp	42;"	m	class:Server	access:private
+myId	Client.hpp	38;"	m	class:Client	access:private
+myWeapon	CCharacter.hpp	36;"	m	class:CCharacter	access:private
+myWeapon	Client.hpp	40;"	m	class:Client	access:private
+myWeapon	SCharacter.hpp	20;"	m	class:SCharacter	access:private
+nProjectile	Weapons.hpp	25;"	m	class:Weapons	access:protected
+nSpawn	SMap.hpp	11;"	m	class:SMap	access:private
+n_object	Map.hpp	26;"	m	struct:_nMap	access:public
+n_object	Map.hpp	36;"	m	class:Map	access:protected
+name	Map.hpp	22;"	m	struct:_nMap	access:public
+name	Map.hpp	32;"	m	class:Map	access:protected
+newMu	Server.hpp	31;"	m	class:Server	access:private
+new_object	CMap.hpp	26;"	p	class:CMap	access:public
+new_user	Server.hpp	43;"	p	class:Server	access:private
+objCursor	Cursor.hpp	24;"	m	class:Cursor	access:private
+objSelected	Cursor.hpp	25;"	m	class:Cursor	access:private
+objects	Map.hpp	23;"	m	struct:_nMap	access:public
+objects	Map.hpp	33;"	m	class:Map	access:protected
+packetBuffer	Connection.hpp	33;"	m	class:Connection	access:private
+packetData	Connection.hpp	32;"	m	class:Connection	access:private
+packetLength	Connection.hpp	31;"	m	class:Connection	access:private
+peer	Connection.hpp	27;"	m	class:Connection	access:private
+peerID	Connection.hpp	34;"	m	class:Connection	access:private
+perror	Connection.hpp	36;"	p	class:Connection	access:private
+play_sound	Weapons.hpp	44;"	p	class:Weapons	access:public
+player	CCharacter.hpp	31;"	m	class:CCharacter	access:private
+player	SCharacter.hpp	15;"	m	class:SCharacter	access:private
+players	Client.hpp	35;"	m	class:Client	access:private
+players	Server.hpp	35;"	m	class:Server	access:private
+port	Client.hpp	43;"	m	class:Client	access:private
+port	Server.hpp	40;"	m	class:Server	access:private
+print_menu	Menu.hpp	17;"	p	class:IMenu	access:public	implementation:pure virtual
+print_menu	Menu.hpp	35;"	p	class:MenuPrinc	access:public	implementation:virtual
+print_menu	Menu.hpp	53;"	p	class:MenuArmas	access:public	implementation:virtual
+projectiles	Weapons.hpp	29;"	m	class:Weapons	access:protected
+ptr	Configuration.hpp	12;"	m	class:Configuration	access:private
+r	_object.hpp	10;"	m	struct:_object	access:public
+radius	Weapons.hpp	21;"	m	class:Weapons	access:protected
+radius	_object.hpp	8;"	m	struct:_object	access:public
+ready	SCharacter.hpp	21;"	m	class:SCharacter	access:private
+recieverBuffer	Client.hpp	36;"	m	class:Client	access:private
+redTeamN	Server.hpp	38;"	m	class:Server	access:private
+resX	Cursor.hpp	13;"	m	class:Cursor	access:private
+resY	Cursor.hpp	13;"	m	class:Cursor	access:private
+res_x	Client.hpp	42;"	m	class:Client	access:private
+res_x	Menu.hpp	30;"	m	class:MenuPrinc	access:private
+res_x	Menu.hpp	48;"	m	class:MenuArmas	access:private
+res_x	MenuManager.hpp	14;"	m	class:MenuManager	access:private
+res_y	Client.hpp	42;"	m	class:Client	access:private
+res_y	Menu.hpp	30;"	m	class:MenuPrinc	access:private
+res_y	Menu.hpp	48;"	m	class:MenuArmas	access:private
+res_y	MenuManager.hpp	14;"	m	class:MenuManager	access:private
+revive	CCharacter.hpp	66;"	p	class:CCharacter	access:public
+save_map	Map.hpp	39;"	p	class:Map	access:public	implementation:virtual
+send_flush	Connection.hpp	45;"	p	class:Connection	access:public
+send_packet_reliable	Connection.hpp	42;"	p	class:Connection	access:public
+send_packet_unreliable	Connection.hpp	43;"	p	class:Connection	access:public
+senderBuffer	Client.hpp	37;"	m	class:Client	access:private
+serialize	CCharacter.hpp	60;"	p	class:CCharacter	access:public
+serialize	IGObject.hpp	14;"	p	class:IGObject	access:public	implementation:pure virtual
+serialize	Map.hpp	42;"	p	class:Map	access:public	implementation:virtual
+serialize	Projectile.hpp	26;"	p	class:Projectile	access:public
+serialize	SCharacter.hpp	33;"	p	class:SCharacter	access:public
+setTeam	CCharacter.hpp	75;"	p	class:CCharacter	access:public
+setX	IGObject.hpp	16;"	p	class:IGObject	access:public	implementation:pure virtual
+setY	IGObject.hpp	17;"	p	class:IGObject	access:public	implementation:pure virtual
+shoot	Pistol.hpp	12;"	p	class:Pistol	access:public	implementation:virtual
+shoot	Rifle.hpp	11;"	p	class:Rifle	access:public	implementation:virtual
+shoot	Weapons.hpp	49;"	p	class:Weapons	access:public	implementation:pure virtual
+shootTimer	Weapons.hpp	26;"	m	class:Weapons	access:protected
+shooted	Pistol.hpp	9;"	m	class:Pistol	access:private
+sound	Weapons.hpp	18;"	m	class:Weapons	access:protected
+sound_hit	CCharacter.hpp	82;"	p	class:CCharacter	access:public
+sound_shoot	CCharacter.hpp	81;"	p	class:CCharacter	access:public
+sound_victory	CCharacter.hpp	83;"	p	class:CCharacter	access:public
+soundtrack	Client.hpp	29;"	m	class:Client	access:private
+spawnCounter	SMap.hpp	8;"	m	class:SMap	access:private
+spawnList	SMap.hpp	9;"	m	class:SMap	access:private
+storeKeys	Client.hpp	47;"	m	class:Client	access:private
+storeKeys	MapEditor.hpp	37;"	m	class:MapEditor	access:private
+team	CCharacter.hpp	35;"	m	class:CCharacter	access:private
+team	Cursor.hpp	23;"	m	class:Cursor	access:private
+team	SCharacter.hpp	19;"	m	class:SCharacter	access:private
+timer	Client.hpp	26;"	m	class:Client	access:private
+timer	Cursor.hpp	14;"	m	class:Cursor	access:private
+timer	MapEditor.hpp	32;"	m	class:MapEditor	access:private
+tryToRevive	CCharacter.hpp	65;"	p	class:CCharacter	access:public
+type	Map.hpp	21;"	m	struct:_nMap	access:public
+type	Map.hpp	31;"	m	class:Map	access:protected
+type	Weapons.hpp	20;"	m	class:Weapons	access:protected
+type	_data.hpp	11;"	m	struct:_data	access:public
+type	_object.hpp	6;"	m	struct:_object	access:public
+useSpawn	SMap.hpp	15;"	p	class:SMap	access:public
+user_handle	Server.hpp	44;"	p	class:Server	access:private
+users	Server.hpp	40;"	m	class:Server	access:private
+velocity	CCharacter.hpp	32;"	m	class:CCharacter	access:private
+velocity	Projectile.hpp	12;"	m	class:Projectile	access:protected
+velocity	SCharacter.hpp	16;"	m	class:SCharacter	access:private
+victory	CCharacter.hpp	29;"	m	class:CCharacter	access:private
+weapon	CCharacter.hpp	44;"	m	class:CCharacter	access:private
+weaponAngle	CCharacter.hpp	77;"	p	class:CCharacter	access:public
+width	Map.hpp	24;"	m	struct:_nMap	access:public
+width	Map.hpp	34;"	m	class:Map	access:protected
+width	_object.hpp	9;"	m	struct:_object	access:public
+widthInc	Cursor.hpp	18;"	m	class:Cursor	access:private
+writeThread	Server.hpp	28;"	m	class:Server	access:private
+x	Cursor.hpp	12;"	m	class:Cursor	access:private
+x	Projectile.hpp	14;"	m	class:Projectile	access:protected
+x	Weapons.hpp	21;"	m	class:Weapons	access:protected
+x	_object.hpp	7;"	m	struct:_object	access:public
+xSpawn	CCharacter.hpp	39;"	m	class:CCharacter	access:private
+y	Cursor.hpp	12;"	m	class:Cursor	access:private
+y	Projectile.hpp	14;"	m	class:Projectile	access:protected
+y	Weapons.hpp	21;"	m	class:Weapons	access:protected
+y	_object.hpp	7;"	m	struct:_object	access:public
+ySpawn	CCharacter.hpp	40;"	m	class:CCharacter	access:private
+~CCharacter	CCharacter.hpp	49;"	p	class:CCharacter	access:public
+~CMap	CMap.hpp	32;"	p	class:CMap	access:public
+~Client	Client.hpp	53;"	p	class:Client	access:public
+~Configuration	Configuration.hpp	24;"	p	class:Configuration	access:public
+~Connection	Connection.hpp	39;"	p	class:Connection	access:public
+~Map	Map.hpp	47;"	p	class:Map	access:public
+~MapEditor	MapEditor.hpp	44;"	p	class:MapEditor	access:public
+~MenuArmas	Menu.hpp	51;"	p	class:MenuArmas	access:public	implementation:virtual
+~MenuPrinc	Menu.hpp	33;"	p	class:MenuPrinc	access:public	implementation:virtual
+~SCharacter	SCharacter.hpp	24;"	p	class:SCharacter	access:public
+~Server	Server.hpp	47;"	p	class:Server	access:public
+~Weapons	Weapons.hpp	32;"	p	class:Weapons	access:public	implementation:virtual

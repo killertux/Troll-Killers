@@ -53,11 +53,8 @@ public:
 	~Client();
 	
 	void setWeapon(Weapon myWeapon){this->myWeapon=myWeapon;}
-	
 	void menu(){menus->main_loop(timer,event_queue,this);}
-	
 	bool connect();
-	
 	void main_loop();
 };
 

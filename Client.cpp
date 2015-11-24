@@ -14,6 +14,7 @@ Client::Client(){
 
 	soundtrack=al_load_sample("Sounds/main.ogg");
 
+	//Config file related instructions;
 	config.config_load("client.cfg");
 	config.config_get(buffer,"Port");
 	port=strtol(buffer,NULL,0);
@@ -69,7 +70,7 @@ void Client::main_loop(){
 	al_start_timer(timer);
 	while(!done){
 		al_wait_for_event(event_queue, &ev);
-		while(conn.event_service(0)>0){
+		while(conn.event_service(0)>0){		//While there is packets in the queue coming from the server. We need to work
 			if(conn.event_type_receive()){
 				buffer=(char*)conn.getPacketData();
 				if(((_data*)buffer)->type==PROTOCOL_NEW_USER){
@@ -237,9 +238,12 @@ void Client::main_loop(){
 							projectiles[i]->move();
 				}
 			}
+			
+			//Only alive players can shoot!
 			if(!players[myId]->getDead())
-                players[myId]->shoot(mouseState,&conn);
-
+				players[myId]->shoot(mouseState,&conn);
+			
+			//Send where we are
 			senderBuffer.type=PROTOCOL_CHARACTER;
 			players[myId]->serialize(senderBuffer.buffer);
 			conn.send_packet_unreliable(&senderBuffer,strlen(senderBuffer.buffer)+2,0);
@@ -261,22 +265,19 @@ void Client::main_loop(){
 					conn.send_packet_reliable(&senderBuffer,strlen(senderBuffer.buffer)+2,0);
 				}
 			}
-
-			/*	else if (players[i]!=NULL)
-					players[i]->draw(0,0);*/
 			al_flip_display();
 		}
 
 	}
 }
-
+//Connect routines
 bool Client::connect(){
 	char *buffer;
 	bool bPeers,bMap,bSpawn;
 	bPeers=bMap=bSpawn=false;
 	if(!conn.create_client(ip,port))
 		return false;
-	while(conn.event_service(10000)!=0){
+	while(conn.event_service(10000)!=0){	//If we stay here waiting for more than 10s. We will give up!
 		if(conn.event_type_receive()){
 			buffer=(char*)conn.getPacketData();
 			if(buffer[0]==PROTOCOL_N_PEERS){
@@ -320,6 +321,7 @@ bool Client::connect(){
 				bSpawn=true;
 			}
 		}
+		//Everything was done!. Now we shall continue
 		if(bPeers && bMap && bSpawn)
 			return true;
 	}

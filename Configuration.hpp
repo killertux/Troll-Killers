@@ -1,5 +1,6 @@
-//This is very old
-//I need to redo
+//This class is very old
+//I am just using it because I wanted to use an config file
+//and I don't had time to create a new one
 
 #ifndef CONFIG_HPP
 #define CONFIG_HPP
