@@ -31,10 +31,16 @@
 		<Compiler>
 			<Add option="-Wall" />
 		</Compiler>
+		<Unit filename="CCharacter.cpp" />
+		<Unit filename="CCharacter.hpp" />
 		<Unit filename="CMap.cpp" />
 		<Unit filename="CMap.hpp" />
-		<Unit filename="CWeapons.cpp" />
-		<Unit filename="CWeapons.hpp" />
+		<Unit filename="CProjectile.cpp" />
+		<Unit filename="CProjectile.hpp" />
+		<Unit filename="Client.cpp" />
+		<Unit filename="Client.hpp" />
+		<Unit filename="Configuration.cpp" />
+		<Unit filename="Configuration.hpp" />
 		<Unit filename="Connection.cpp" />
 		<Unit filename="Connection.hpp" />
 		<Unit filename="Cursor.cpp" />
@@ -48,8 +54,18 @@
 		<Unit filename="MapEditor.hpp" />
 		<Unit filename="Menu.cpp" />
 		<Unit filename="Menu.hpp" />
+		<Unit filename="MenuManager.cpp" />
+		<Unit filename="MenuManager.hpp" />
+		<Unit filename="Pistol.cpp" />
+		<Unit filename="Pistol.hpp" />
+		<Unit filename="Projectile.cpp" />
+		<Unit filename="Projectile.hpp" />
+		<Unit filename="Rifle.cpp" />
+		<Unit filename="Rifle.hpp" />
 		<Unit filename="SCharacter.cpp" />
 		<Unit filename="SCharacter.hpp" />
+		<Unit filename="SMap.cpp" />
+		<Unit filename="SMap.hpp" />
 		<Unit filename="Server.cpp" />
 		<Unit filename="Server.hpp" />
 		<Unit filename="Weapons.cpp" />
@@ -57,6 +73,8 @@
 		<Unit filename="_data.hpp" />
 		<Unit filename="_object.hpp" />
 		<Unit filename="editorMain.cpp" />
+		<Unit filename="mainClient.cpp" />
+		<Unit filename="mainServer.cpp" />
 		<Extensions>
 			<code_completion />
 			<envvars />
