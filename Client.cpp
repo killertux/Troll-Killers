@@ -11,7 +11,7 @@ Client::Client(){
 	al_install_audio();
 	al_init_acodec_addon();
 	al_reserve_samples(16);
-	
+
 	soundtrack=al_load_sample("Sounds/main.ogg");
 
 	config.config_load("client.cfg");
@@ -39,7 +39,7 @@ Client::Client(){
 	al_register_event_source(event_queue,al_get_keyboard_event_source());
 	al_register_event_source(event_queue,al_get_mouse_event_source());
 	al_register_event_source(event_queue,al_get_timer_event_source(timer));
-	
+
 	al_play_sample(soundtrack,0.7,0.0,1.0,ALLEGRO_PLAYMODE_LOOP,NULL);
 	//al_hide_mouse_cursor(display);
 
@@ -237,7 +237,8 @@ void Client::main_loop(){
 							projectiles[i]->move();
 				}
 			}
-			players[myId]->shoot(mouseState,&conn);
+			if(!players[myId]->getDead())
+                players[myId]->shoot(mouseState,&conn);
 
 			senderBuffer.type=PROTOCOL_CHARACTER;
 			players[myId]->serialize(senderBuffer.buffer);
