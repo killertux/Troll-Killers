@@ -16,9 +16,9 @@ Pistol::Pistol(){
 	}
 	sound= al_load_sample("Sounds/pistol.ogg");
 }
-
+//Here we shoot
 void Pistol::shoot(ALLEGRO_MOUSE_STATE &mouseState,Connection *conn){
-	if((mouseState.buttons & 1) && !shooted){
+	if((mouseState.buttons & 1) && !shooted){	//Because it is an semi-automatic
 		_data senderBuffer;
 		al_play_sample(sound,1.0,0.0,1.0,ALLEGRO_PLAYMODE_ONCE,NULL);
 		shooted=true;

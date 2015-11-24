@@ -49,18 +49,18 @@ iostream
 /home/clemente/projects/Troll-Killers/iostream
 
 /home/clemente/projects/Troll-Killers/Map.hpp
+fstream
+-
+sstream
+-
 Enums.hpp
 /home/clemente/projects/Troll-Killers/Enums.hpp
 _object.hpp
 /home/clemente/projects/Troll-Killers/_object.hpp
 _data.hpp
 /home/clemente/projects/Troll-Killers/_data.hpp
-sstream
--
 Defines.hpp
 /home/clemente/projects/Troll-Killers/Defines.hpp
-fstream
--
 
 /home/clemente/projects/Troll-Killers/SCharacter.cpp
 SCharacter.hpp

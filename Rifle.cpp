@@ -19,7 +19,7 @@ Rifle::Rifle(){
 }
 
 void Rifle::shoot(ALLEGRO_MOUSE_STATE &mouseState,Connection *conn){
-	internalTimer++;
+	internalTimer++;			//Because it is an automatic
 	_data senderBuffer;
 	if((mouseState.buttons & 1) && internalTimer>shootTimer){
 		internalTimer=0;

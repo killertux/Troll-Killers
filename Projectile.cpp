@@ -12,7 +12,7 @@ Projectile::Projectile(int16_t x, int16_t y, int16_t length, int16_t velocity,fl
 }
 
 void Projectile::serialize(char* buffer){
-
+///Future notes: Use this!
 }
 
 void Projectile::move(){

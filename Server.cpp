@@ -196,7 +196,6 @@ void Server::new_user(int id){
 
 	conn.send_flush();
 	dataMu.unlock();
-	\
 	newMu.lock();
 	players[id]->setX(spawn->x);
 	players[id]->setY(spawn->y);

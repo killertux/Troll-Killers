@@ -18,6 +18,6 @@ SCharacter::~SCharacter(){
 }
 
 void SCharacter::serialize(char* buffer){
-
+//Future notes: Use this.
 }
 

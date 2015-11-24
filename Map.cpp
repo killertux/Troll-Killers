@@ -12,6 +12,7 @@ Map::~Map(){
 	delete [] objects;
 }
 
+//Not Endianness-safe
 bool Map::save_map(std::string pathname){
 	std::ofstream file(pathname.c_str(),std::ios::out | std::ios::binary);
 	if(!file)
@@ -35,7 +36,7 @@ bool Map::save_map(std::string pathname){
 	file.close();
 	return 1;
 }
-
+//Not Endianness-safe
 bool Map::load_map(std::string pathname)
 {
 	std::ifstream file(pathname.c_str(),std::ios::in | std::ios::binary);
@@ -64,23 +65,23 @@ bool Map::load_map(std::string pathname)
 	return 1;
 }
 
-
+//Endianness-safe		-	At least it should be :/
 int Map::serialize(char* buffer){
 	std::stringstream stream;
 	std::string tmp;
 	stream << type << " "<<length << " "<<width << " "<<max_objects<< " " << n_object;
-	sprintf(buffer,"%s",stream.str().c_str());
+	std::sprintf(buffer,"%s",stream.str().c_str());
 	stream.str(std::string());
 	for(int i=0;i<n_object;i++){
 		stream << objects[i].type << " " << objects[i].x<< " " << objects[i].y << " "<< objects[i].radius
 		<< " "<< objects[i].length << " "<< objects[i].width<< " " << objects[i].r << " "<< objects[i].g
 		<< " "<< objects[i].b << " ";
-		sprintf(buffer,"%s%s",buffer,stream.str().c_str());
+		std::sprintf(buffer,"%s%s",buffer,stream.str().c_str());
 		stream.str(std::string());
 	}
 	return std::strlen(buffer);
 }
-
+//Endianness-safe
 void Map::deserialize(char* buffer){
 	std::stringstream stream;
 	stream << buffer;

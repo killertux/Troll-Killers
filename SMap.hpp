@@ -13,7 +13,7 @@ public:
 	void calculateSpawn();
 	_object *getSpaw();
 	bool useSpawn(_object *spawn);
-	//void freeSpawn(_object spawn);
+	//void freeSpawn(_object spawn);		//I need to implement his...
 };
 
 #endif

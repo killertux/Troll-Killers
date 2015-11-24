@@ -17,7 +17,7 @@ protected:
 public:
 	Projectile(int16_t x,int16_t y,int16_t length,int16_t velocity,float angle);
 	Projectile();
-	int16_t getId(){return id;}			//We won't be using this
+	int16_t getId(){return id;}			
 	int16_t getX(){return x;}
 	int16_t getY(){return y;}
 	float getAngle(){return angle;}

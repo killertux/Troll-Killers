@@ -8,14 +8,15 @@
 #ifndef MAP_HPP
 #define MAP_HPP
 
+#include <fstream>
+#include <sstream>
 #include "Enums.hpp"
 #include "_object.hpp"
 #include "_data.hpp"
-#include <sstream>
 #include "Defines.hpp"
-#include <fstream>
 
-struct _nMap{
+
+struct _nMap{				//Last edit: IS a bad idea to use this...
 	int8_t type;			//Reserved to network usage
 	char name[50];			//We are not using std::String to be portable.
 	_object *objects;

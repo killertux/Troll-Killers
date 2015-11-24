@@ -14,9 +14,6 @@
 #include "Configuration.hpp"
 #include "Defines.hpp"
 
-#define MAP_FILE "Maps/mapa.data"
-//#define MAP_FILE "Maps/mapa.data"
-
 struct _msg{
 	char buffer[BUFFER_SIZE];
 	int id;
@@ -29,7 +26,7 @@ private:
 	boost::thread *cmdThread;
 	boost::mutex dataMu;
 	boost::mutex newMu;
-	boost::mutex cmdMu;
+	boost::mutex cmdMu;		//For using an shell- Not implemented yet!
 	
 	SMap map;
 	SCharacter **players;
@@ -39,7 +36,7 @@ private:
 	int blueTeamN;
 	int port,users;
 	
-	std::stack<_msg> msgs;
+	std::stack<_msg> msgs;		//Queues are probably better...
 	void new_user(int id);
 	void user_handle();
 public:
