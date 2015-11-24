@@ -12,7 +12,7 @@
 #define MENU_RIFLE 3
 #define MENU_PISTOL 4
 
-class IMenu {
+class IMenu { //Declaração da interface Menu
 public:
 	virtual void print_menu()=0;
 	virtual ~IMenu(){}
@@ -20,7 +20,7 @@ public:
  	virtual int botao_action()=0;
 };
 
-class MenuPrinc : public IMenu{
+class MenuPrinc : public IMenu{//Declaração da classe , Menu Principal , que possui imagem de fundo , botões e flags para sinalizar se o mouse está em cima dos botões
 	ALLEGRO_BITMAP *fundo;
 	ALLEGRO_BITMAP *bot1;
 	ALLEGRO_BITMAP *bot2;
@@ -36,7 +36,7 @@ public:
 	virtual int botao_action();
 };
 
-class MenuArmas : public IMenu{
+class MenuArmas : public IMenu{//Declaração da classe , Menu de Armas, que possui imagem de fundo , botões e flags para sinalizar se o mouse está em cima dos botões
 	ALLEGRO_BITMAP *fundo;
 	ALLEGRO_BITMAP *bot1;
 	ALLEGRO_BITMAP *bot2;

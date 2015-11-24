@@ -12,20 +12,20 @@
 #include <sstream>
 #include <cstdio>
 
-class Weapons{
+class Weapons{//Classe geral de armas, contendo as variáveis necessárias , como imagem , dados da arma e o som emitido
 protected:
 	ALLEGRO_BITMAP *gun;
 	ALLEGRO_SAMPLE *sound;
-	
+
 	int16_t type;				//What Type of gun am I?
 	int16_t x,y,radius;			//This radius is from the player;
-	float angle;
+	float angle;                //Angulo em que os tiros podem sair, quanto maior o angulo , maior a possivel dispersão dos tiros
 	int16_t dmg;
 	int16_t magSize;
 	int16_t nProjectile;
 	int16_t shootTimer;
 	float dispersion;
-	
+
 	CProjectile **projectiles;
 public:
 	Weapons();
@@ -42,9 +42,9 @@ public:
 	float getAngle(){return angle;}
 	Projectile **getProjectiles(){return (Projectile**)projectiles;}
 	void play_sound(float distance);
-	
+
 	void calculateAngle(int mapX,int mapY,int mouseX,int mouseY);
-	
+
 	virtual void draw(int mapX,int mapY);
 	virtual void shoot(ALLEGRO_MOUSE_STATE &mouseState,Connection *conn)=0;
 };
