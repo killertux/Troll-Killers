@@ -79,7 +79,7 @@ void CCharacter::colision(_object *objects,int n){
 		centerY=objects[i].y+objects[i].width/2;
 		hDistance=objects[i].length/2+player.radius;
 		vDistance=objects[i].width/2+player.radius;
-		if(objects[i].type==RECTANGLE && distance(centerX,player.x)<hDistance&& 
+		if(objects[i].type==RECTANGLE && distance(centerX,player.x)<hDistance&&
 			distance(centerY,player.y)<vDistance){
 			while(!done){
 				if(dir==(int16_t)UP)
@@ -90,7 +90,7 @@ void CCharacter::colision(_object *objects,int n){
 					player.x++;
 				else if(dir==(int16_t)RIGHT)
 					player.x--;
-				
+
 				if(!(distance(centerX,player.x)<hDistance && distance(centerY,player.y)<vDistance)){
 					done=true;
 					weapon->setX(player.x);
@@ -142,7 +142,6 @@ void CCharacter::sound_hit(int x,int y){
 	float volume=2*exp(-pow(distance,2)/pow(800,2));
 	if(volume >1)
 		volume=1;
-	std::cout << volume <<std::endl;
 	al_play_sample(hit,volume,0.0,1.0,ALLEGRO_PLAYMODE_ONCE,NULL);
 }
 
@@ -151,7 +150,6 @@ void CCharacter::sound_victory(int x,int y){
 	float volume=2*exp(-pow(distance,2)/pow(800,2));
 	if(volume >1)
 		volume=1;
-	std::cout << volume <<std::endl;
 	al_play_sample(victory,volume,0.0,1.0,ALLEGRO_PLAYMODE_ONCE,NULL);
 }
 
